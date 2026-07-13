@@ -81,7 +81,8 @@ Tags for specific tools, frameworks, and services.
 | `github-actions` | GitHub Actions CI/CD |
 | `uvicorn` | Uvicorn ASGI server |
 | `pydantic` | Pydantic data validation |
-| `httpx` | HTTPX HTTP client |
+| `gemini` | Google Gemini APIs and models |
+| `groq` | Groq inference platform |
 | `pytest` | Pytest testing framework |
 
 > Add new technology tags as you document them. Remove tags only when no documents reference them.

@@ -116,11 +116,36 @@
 
 ## LLM Systems
 
-### LLM Engineering
+### LLM Engineering — Phase 4
 
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
+| Document | Status | Description |
+|----------|--------|-------------|
+| [Phase 4 Index](../../domains/llm-engineering/README.md) | Published | Module hub and learning path |
+| [Introduction to LLM Engineering](../../domains/llm-engineering/introduction-to-llm-engineering.md) | Published | LLM fundamentals and ecosystem |
+| [How LLMs Work](../../domains/llm-engineering/how-llms-work.md) | Published | Inference pipeline internals |
+| [Tokens and Tokenization](../../domains/llm-engineering/tokens-and-tokenization.md) | Published | BPE, counting, cost |
+| [Context Windows](../../domains/llm-engineering/context-windows.md) | Published | Budgeting and truncation |
+| [Embeddings — LLM Perspective](../../domains/llm-engineering/embeddings-llm-perspective.md) | Published | Vectors and similarity |
+| [Transformer Intuition](../../domains/llm-engineering/transformer-intuition.md) | Published | Decoder architecture |
+| [Attention Mechanism](../../domains/llm-engineering/attention-mechanism.md) | Published | Q/K/V and long context |
+| [KV Cache](../../domains/llm-engineering/kv-cache.md) | Published | Prefill, decode, memory |
+| [LLM Inference](../../domains/llm-engineering/llm-inference.md) | Published | Batching, streaming, latency |
+| [Sampling and Decoding](../../domains/llm-engineering/sampling-and-decoding.md) | Published | Temperature, top-p, penalties |
+| [Structured Outputs](../../domains/llm-engineering/structured-outputs.md) | Published | JSON mode, Pydantic |
+| [Function Calling and Tools](../../domains/llm-engineering/function-calling-and-tools.md) | Published | Tool orchestration |
+| [LLM Streaming](../../domains/llm-engineering/llm-streaming.md) | Published | SSE and UX |
+| [Vision and Multimodal](../../domains/llm-engineering/vision-and-multimodal-models.md) | Published | Images, audio, video |
+| [Model Comparison Guide](../../domains/llm-engineering/model-comparison-guide.md) | Published | 9 model families |
+| [LLM Cost Optimization](../../domains/llm-engineering/llm-cost-optimization.md) | Published | Token and cost control |
+| [LLM Performance Optimization](../../domains/llm-engineering/llm-performance-optimization.md) | Published | Latency and routing |
+| [LLM Security Fundamentals](../../domains/llm-engineering/llm-security-fundamentals.md) | Published | Injection, secrets |
+| [LLM Engineering Mistakes](../../domains/llm-engineering/llm-engineering-mistakes.md) | Published | 12 failure patterns |
+| [OpenAI Provider](../../domains/llm-engineering/providers/openai.md) | Published | OpenAI API guide |
+| [Google Gemini Provider](../../domains/llm-engineering/providers/google-gemini.md) | Published | Gemini API guide |
+| [Anthropic Claude Provider](../../domains/llm-engineering/providers/anthropic-claude.md) | Published | Claude API guide |
+| [Groq Provider](../../domains/llm-engineering/providers/groq.md) | Published | Groq fast inference |
+| [OpenRouter Provider](../../domains/llm-engineering/providers/openrouter.md) | Published | Multi-provider routing |
+| [Ollama Provider](../../domains/llm-engineering/providers/ollama.md) | Published | Local inference |
 
 [Domain index →](../../domains/llm-engineering/README.md)
 

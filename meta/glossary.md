@@ -128,15 +128,19 @@ Compact, URL-safe token format for transmitting claims between parties. Commonly
 
 ## L
 
+### KV Cache
+Key-value cache storing attention keys and values from prior tokens during autoregressive generation, avoiding recomputation and dramatically reducing decode latency. See [KV Cache](../domains/llm-engineering/kv-cache.md).
+
+### LLM Engineering
+The discipline of integrating, optimizing, and operating large language models in production — inference, tokenization, context, provider APIs, cost control. See [LLM Engineering](../domains/llm-engineering/README.md).
+
 ### LLM (Large Language Model)
-A neural network trained on vast text data to understand and generate human language. See [LLM Engineering](../domains/llm-engineering/).
+A neural network trained on vast text data to understand and generate human language. See [Introduction to LLM Engineering](../domains/llm-engineering/introduction-to-llm-engineering.md).
 
 ### LangGraph
 A framework for building stateful, graph-based agent workflows. See [AI Workflows](../domains/ai-workflows/).
 
 ---
-
-## M
 
 ### MCP (Model Context Protocol)
 Open protocol for connecting AI models to external tools and data sources. See [MCP](../domains/mcp/).

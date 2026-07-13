@@ -28,7 +28,7 @@ This is **not** a machine learning research repository or a deep learning theory
 
 | I want to... | Go to... |
 |--------------|----------|
-| Start learning | [Phase 2 Foundations](domains/foundations/README.md) → [Phase 3 Backend](domains/backend-engineering/README.md) |
+| Start learning | [Phase 4 LLM Engineering](domains/llm-engineering/README.md) |
 | Find a topic | [Master Index](meta/indexes/MASTER-INDEX.md) |
 | Browse by domain | [Domains](domains/README.md) |
 | Write a new document | [Templates](meta/templates/) + [Style Guide](meta/style-guide.md) |
@@ -148,29 +148,27 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow. Summary:
 - [x] Project structure, reference architectures, mistakes guide
 - [x] 10 backend templates, 8+ code examples
 
-### Phase 4: Core Content
+### Phase 4: LLM Engineering (Complete)
 
-- [ ] Python engineering fundamentals
-- [ ] FastAPI and backend patterns
-- [ ] LLM integration guides
+- [x] 26 documents — fundamentals through production (Sections 1–20)
+- [x] 6 provider guides (OpenAI, Gemini, Claude, Groq, OpenRouter, Ollama)
+- [x] 12 API integration examples, 3 cheat sheets
+
+### Phase 5: Retrieval & Agents
+
 - [ ] Prompt engineering patterns library
+- [ ] Context engineering guides
 - [ ] RAG pipeline tutorials
-
-### Phase 2: Agents and Workflows
-
 - [ ] Agent architecture patterns
 - [ ] MCP integration guides
-- [ ] LangGraph workflow examples
-- [ ] Multi-agent system designs
 
-### Phase 3: Production
+### Phase 6: Production AI
 
 - [ ] Deployment guides (Docker, cloud)
-- [ ] Monitoring and observability setup
 - [ ] AI evaluation frameworks
-- [ ] Security and safety practices
+- [ ] Advanced observability and safety
 
-### Phase 4: Depth
+### Ongoing Depth
 
 - [ ] System design case studies
 - [ ] Interview preparation guides

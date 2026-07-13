@@ -27,6 +27,9 @@ Cheat sheets follow the [Cheat Sheet template](../meta/templates/cheat-sheet.md)
 | Topic | Domain | Status |
 |-------|--------|--------|
 | FastAPI | fastapi | [fastapi-backend-cheat-sheet.md](fastapi-backend-cheat-sheet.md) | Published |
+| LLM Sampling | llm-engineering | [llm-sampling-parameters.md](llm-sampling-parameters.md) | Published |
+| LLM Provider APIs | llm-engineering | [llm-provider-apis.md](llm-provider-apis.md) | Published |
+| LLM Tokens & Pricing | llm-engineering | [llm-token-limits-pricing.md](llm-token-limits-pricing.md) | Published |
 | PostgreSQL | databases/postgresql | Planned |
 | Docker | docker | Planned |
 | LLM API Integration | llm-engineering | Planned |
