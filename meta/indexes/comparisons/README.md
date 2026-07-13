@@ -8,6 +8,7 @@
 
 | Comparison | Options Covered | Status |
 |------------|----------------|--------|
+| [MCP Strategies](../../domains/mcp/mcp-comparison-guides.md) | MCP vs REST, transports, primitives, auth | Published |
 | [Agent Strategies](../../domains/ai-agents/agent-comparison-guides.md) | Frameworks, supervisor vs swarm, ReAct vs reflection | Published |
 | [RAG Strategies](../../domains/rag/rag-comparison-guides.md) | Chunking, vector DBs, retrieval, rerankers | Published |
 | [Context Engineering Strategies](../../domains/context-engineering/context-comparison-guides.md) | Prompt vs context, memory, compression | Published |

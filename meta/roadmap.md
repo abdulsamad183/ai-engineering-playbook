@@ -149,19 +149,19 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 ---
 
-## Phase 9: MCP & A2A
+## Phase 9: MCP & AI Protocol Engineering
 
-**Goal:** Deploy, evaluate, and operate AI systems in production.
+**Goal:** Design, implement, secure, and scale Model Context Protocol systems.
 
 **Duration:** 3–4 weeks
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 9.1 | Deployment | [deployment](../../domains/deployment/) | Docker, cloud, scaling |
-| 9.2 | AI evaluation | [ai-evaluation](../../domains/ai-evaluation/) | Metrics, benchmarks, monitoring |
-| 9.3 | Observability & safety | [monitoring](../../domains/monitoring/) | Traces, alerts, guardrails |
+| 9.1 | MCP handbook | [mcp](../../domains/mcp/) | 20 sections + comparisons |
+| 9.2 | Server & client builds | [mcp](../../domains/mcp/) | Reference implementations |
+| 9.3 | Production MCP | [mcp](../../domains/mcp/) | Security, multi-server, observability |
 
-**Milestone:** Production deployment with eval dashboards and incident runbooks.
+**Milestone:** Production MCP server with tools, resources, auth, and tests. ✅
 
 ---
 

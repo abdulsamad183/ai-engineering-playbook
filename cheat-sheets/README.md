@@ -64,6 +64,15 @@ Cheat sheets follow the [Cheat Sheet template](../meta/templates/cheat-sheet.md)
 | Agent Framework Selection | ai-agents | [agent-framework-selection-cheat-sheet.md](agent-framework-selection-cheat-sheet.md) | Published |
 | Agent Production | ai-agents | [agent-production-deployment-checklist.md](agent-production-deployment-checklist.md) | Published |
 | Agent Debugging | ai-agents | [agent-debugging-checklist.md](agent-debugging-checklist.md) | Published |
+| MCP Lifecycle | mcp | [mcp-lifecycle-cheat-sheet.md](mcp-lifecycle-cheat-sheet.md) | Published |
+| MCP Message Types | mcp | [mcp-message-types-cheat-sheet.md](mcp-message-types-cheat-sheet.md) | Published |
+| MCP Transport Selection | mcp | [mcp-transport-selection-cheat-sheet.md](mcp-transport-selection-cheat-sheet.md) | Published |
+| MCP Tool Design | mcp | [mcp-tool-design-checklist.md](mcp-tool-design-checklist.md) | Published |
+| MCP Resource Design | mcp | [mcp-resource-design-checklist.md](mcp-resource-design-checklist.md) | Published |
+| MCP Server Deployment | mcp | [mcp-server-deployment-checklist.md](mcp-server-deployment-checklist.md) | Published |
+| MCP Client Implementation | mcp | [mcp-client-implementation-checklist.md](mcp-client-implementation-checklist.md) | Published |
+| MCP Security | mcp | [mcp-security-checklist.md](mcp-security-checklist.md) | Published |
+| MCP Debugging | mcp | [mcp-debugging-checklist.md](mcp-debugging-checklist.md) | Published |
 | PostgreSQL | databases/postgresql | Planned |
 | Docker | docker | Planned |
 | LLM API Integration | llm-engineering | Planned |

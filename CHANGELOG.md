@@ -1,5 +1,15 @@
 ## [Unreleased]
 
+## [0.8.0] - 2026-07-13
+
+### Added
+
+- **Phase 9: Model Context Protocol (MCP) & AI Protocol Engineering** — 21 documents
+  - Sections 1–20: introduction through real-world architectures
+  - Comparison guides for transports, primitives, and integration strategies
+- 13 Python MCP examples (server, client, transports, multi-server, auth, FastAPI)
+- 9 MCP cheat sheets
+
 ## [0.7.0] - 2026-07-13
 
 ### Added
@@ -60,7 +70,8 @@
 
 - Repository foundation and Phase 2: AI Engineering Foundations
 
-[Unreleased]: https://github.com/hp/ai-engineering-playbook/compare/v0.7.0...HEAD
+[Unreleased]: https://github.com/hp/ai-engineering-playbook/compare/v0.8.0...HEAD
+[0.8.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v0.8.0
 [0.7.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v0.7.0
 [0.6.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v0.6.0
 [0.5.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v0.5.0

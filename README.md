@@ -28,7 +28,7 @@ This is **not** a machine learning research repository or a deep learning theory
 
 | I want to... | Go to... |
 |--------------|----------|
-| Start learning | [Phase 8 AI Agents](domains/ai-agents/README.md) |
+| Start learning | [Phase 9 MCP](domains/mcp/README.md) |
 | Find a topic | [Master Index](meta/indexes/MASTER-INDEX.md) |
 | Browse by domain | [Domains](domains/README.md) |
 | Write a new document | [Templates](meta/templates/) + [Style Guide](meta/style-guide.md) |
@@ -174,9 +174,13 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow. Summary:
 - [x] 27 documents (20 sections + 6 frameworks + comparisons)
 - [x] 6 Python examples, 8 cheat sheets
 
-### Phase 9: MCP & Multi-Agent
+### Phase 9: MCP & AI Protocol Engineering (Complete)
 
-- [ ] MCP integration guides
+- [x] 21 documents (20 sections + comparisons)
+- [x] 13 Python examples, 9 cheat sheets
+
+### Phase 10: A2A & Multi-Agent Protocols
+
 - [ ] A2A protocols
 - [ ] Multi-agent communication depth
 

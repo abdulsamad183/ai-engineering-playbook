@@ -146,7 +146,19 @@ A framework for building stateful, graph-based agent workflows. See [AI Workflow
 ---
 
 ### MCP (Model Context Protocol)
-Open protocol for connecting AI models to external tools and data sources. See [MCP](../domains/mcp/).
+Open protocol specification for standardized communication between AI hosts and servers exposing **tools**, **resources**, and **prompts** over pluggable transports (STDIO, HTTP). See [MCP Handbook](../domains/mcp/README.md).
+
+### MCP Host
+Application embedding an MCP client (IDE, agent runtime, chat app). Discovers capabilities and invokes servers on behalf of the user or agent.
+
+### MCP Server
+Process exposing tools, resources, and prompts via the MCP message protocol. See [Build an MCP Server](../domains/mcp/build-an-mcp-server.md).
+
+### MCP Tool
+Named, schema-defined capability invoked via `tools/call` — the protocol primitive for agent actions. See [MCP Tools](../domains/mcp/mcp-tools.md).
+
+### MCP Resource
+URI-addressable read-only context fetched via `resources/read`. See [MCP Resources](../domains/mcp/mcp-resources.md).
 
 ### Multi-Agent System
 Architecture where multiple specialized agents collaborate to solve complex tasks. See [Multi-Agent Systems](../domains/multi-agent-systems/).

@@ -295,11 +295,32 @@
 
 [Domain index →](../../domains/agent-architectures/README.md)
 
-### MCP
+### MCP — Phase 9
 
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
+| Document | Status | Description |
+|----------|--------|-------------|
+| [Phase 9 Index](../../domains/mcp/README.md) | Published | MCP engineering handbook hub |
+| [Introduction to MCP](../../domains/mcp/introduction-to-mcp.md) | Published | Why MCP exists, ecosystem |
+| [MCP Architecture](../../domains/mcp/mcp-architecture.md) | Published | Client, transport, server layers |
+| [MCP Lifecycle](../../domains/mcp/mcp-lifecycle.md) | Published | Initialize through termination |
+| [MCP Core Concepts](../../domains/mcp/mcp-core-concepts.md) | Published | Clients, servers, primitives |
+| [MCP Client](../../domains/mcp/mcp-client.md) | Published | Connection, discovery, retries |
+| [MCP Server](../../domains/mcp/mcp-server.md) | Published | Registration, routing, shutdown |
+| [MCP Resources](../../domains/mcp/mcp-resources.md) | Published | URI design, discovery, caching |
+| [MCP Prompts](../../domains/mcp/mcp-prompts.md) | Published | Templates, registry, validation |
+| [MCP Tools](../../domains/mcp/mcp-tools.md) | Published | Schemas, permissions, streaming |
+| [Transport Layer](../../domains/mcp/mcp-transport-layer.md) | Published | STDIO, HTTP, SSE, WebSockets |
+| [Message Protocol](../../domains/mcp/mcp-message-protocol.md) | Published | JSON-RPC messages |
+| [Authentication](../../domains/mcp/mcp-authentication.md) | Published | OAuth, RBAC, secrets |
+| [Streaming](../../domains/mcp/mcp-streaming.md) | Published | Partial results, cancellation |
+| [Multi-Server MCP](../../domains/mcp/multi-server-mcp.md) | Published | Routing, federation, failover |
+| [Build an MCP Server](../../domains/mcp/build-an-mcp-server.md) | Published | Production server tutorial |
+| [Build an MCP Client](../../domains/mcp/build-an-mcp-client.md) | Published | Production client tutorial |
+| [Production MCP](../../domains/mcp/production-mcp.md) | Published | Observability, scaling, HA |
+| [MCP Security](../../domains/mcp/mcp-security.md) | Published | Sandboxing, audit, injection |
+| [MCP Mistakes](../../domains/mcp/mcp-engineering-mistakes.md) | Published | Troubleshooting playbook |
+| [Real-World Architectures](../../domains/mcp/mcp-real-world-architectures.md) | Published | Six production patterns |
+| [MCP Comparison Guides](../../domains/mcp/mcp-comparison-guides.md) | Published | Decision matrices |
 
 [Domain index →](../../domains/mcp/README.md)
 
