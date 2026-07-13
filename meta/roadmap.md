@@ -388,5 +388,5 @@ gantt
 
 - [Domains Overview](../../domains/README.md)
 - [Master Index](indexes/MASTER-INDEX.md)
-- [Projects](../../projects/)
+- [Capstone Walkthrough](capstone-walkthrough.md)
 - [Examples](../../examples/)

@@ -36,7 +36,6 @@ graph TB
     subgraph "Layer 3: Knowledge"
         DOMAINS[Domains]
         KNOWLEDGE[Personal Knowledge]
-        PROJECTS[Projects]
     end
 
     subgraph "Layer 4: Practice"
@@ -95,7 +94,6 @@ ai-engineering-playbook/
 │   ├── architecture-decisions/
 │   └── ...
 │
-├── projects/                 # Project case studies
 ├── examples/                 # Runnable code examples
 ├── prompts/                  # Prompt pattern library
 ├── cheat-sheets/             # Quick reference cards

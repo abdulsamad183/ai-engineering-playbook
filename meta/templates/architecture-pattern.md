@@ -96,7 +96,7 @@ How this variation differs and when to choose it.
 
 ## Real-World Examples
 
-- [Project or case study](../../projects/path/to/project.md)
+- [Capstone walkthrough](../capstone-walkthrough.md)
 - [Knowledge entry](../../knowledge/architecture-decisions/)
 
 ---

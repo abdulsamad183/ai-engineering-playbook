@@ -40,7 +40,7 @@ Unlike `domains/` (curated reference content), knowledge entries are:
 1. Use the same front matter as domain documents (see [style guide](../meta/style-guide.md)).
 2. Include the date in the filename for chronological sorting.
 3. Be specific — include numbers, timelines, and concrete outcomes.
-4. Link to related domain documents and projects.
+4. Link to related domain documents.
 5. For ADRs, use sequential numbering: `ADR-001`, `ADR-002`, etc.
 
 ### What Makes a Good Entry
@@ -48,7 +48,7 @@ Unlike `domains/` (curated reference content), knowledge entries are:
 - **Specific:** "RAG chunk size of 512 tokens gave 23% better recall than 256" not "chunk size matters"
 - **Actionable:** What would you do differently? What should others do?
 - **Honest:** Document failures, not just successes
-- **Linked:** Connect to domain docs, projects, and other knowledge entries
+- **Linked:** Connect to domain docs and other knowledge entries
 
 ---
 
@@ -72,5 +72,5 @@ Each ADR should capture:
 ## See Also
 
 - [Domains](../domains/) — reference documentation
-- [Projects](../projects/) — project case studies
+- [Capstone Walkthrough](../meta/capstone-walkthrough.md)
 - [Contributing Guide](../CONTRIBUTING.md#adding-personal-knowledge)

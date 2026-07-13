@@ -69,4 +69,4 @@ See [CONTRIBUTING.md](../CONTRIBUTING.md#adding-code-examples).
 
 - [Domains](../domains/) — reference documentation
 - [Tutorials](../meta/templates/tutorial.md) — step-by-step guides
-- [Projects](../projects/) — full project case studies
+- [Capstone Walkthrough](../meta/capstone-walkthrough.md) — end-to-end RAG API tutorial

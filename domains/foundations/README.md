@@ -110,6 +110,7 @@ Follow this order for the recommended path:
 
 ## See Also
 
+- [Capstone Walkthrough](../../meta/capstone-walkthrough.md) — build a RAG API end-to-end
 - [Learning Roadmap](../../meta/roadmap.md)
 - [Master Index](../../meta/indexes/MASTER-INDEX.md)
 - [Glossary](../../meta/glossary.md)

@@ -12,6 +12,7 @@ Choose what you need right now:
 
 | Your goal | Go here | What you'll find |
 |-----------|---------|------------------|
+| **Build your first end-to-end app** | [Capstone Walkthrough](meta/capstone-walkthrough.md) | RAG chat API from templates → Docker → CI |
 | **Learn AI engineering** (structured path) | [Learning Roadmap](meta/roadmap.md) | Phases 1–15 in order, with milestones |
 | **Learn a specific topic** | [Handbooks below ↓](#complete-handbooks) | 15 complete modules — jump to any topic |
 | **Build something today** | [Engineering Templates](templates/README.md) | Copy-paste FastAPI, RAG, agent, MCP starters |
@@ -83,6 +84,7 @@ Foundations → Backend & FastAPI → LLM Engineering → Prompt Engineering
 
 | Step | Module | Link |
 |------|--------|------|
+| 0 | **Capstone (hands-on)** | [RAG Chat API walkthrough](meta/capstone-walkthrough.md) |
 | 1 | Foundations | [domains/foundations/](domains/foundations/README.md) |
 | 2 | Backend + FastAPI | [domains/backend-engineering/](domains/backend-engineering/README.md) · [domains/fastapi/](domains/fastapi/README.md) |
 | 3 | LLM Engineering | [domains/llm-engineering/](domains/llm-engineering/README.md) |
@@ -140,7 +142,7 @@ Quick answers — no hunting:
 
 | I want to… | Go to |
 |------------|-------|
-| Build a RAG app | [RAG Handbook](domains/rag/README.md) → [RAG Starter](templates/engineering/rag-starter/README.md) → [RAG examples](examples/rag/) |
+| Build a RAG app | [Capstone Walkthrough](meta/capstone-walkthrough.md) → [RAG Handbook](domains/rag/README.md) → [RAG Starter](templates/engineering/rag-starter/README.md) |
 | Build an AI agent | [AI Agents Handbook](domains/ai-agents/README.md) → [Agent Starter](templates/engineering/agent-starter/README.md) |
 | Integrate an LLM API | [LLM Engineering](domains/llm-engineering/README.md) → [Provider guides](domains/llm-engineering/README.md#providers-section-15) |
 | Write better prompts | [Prompt Engineering](domains/prompt-engineering/README.md) → [Prompt templates](prompts/templates/) |
@@ -163,7 +165,6 @@ ai-engineering-playbook/
 ├── cheat-sheets/  ← One-page quick references
 ├── meta/          ← Roadmap, glossary, indexes, style guide
 ├── knowledge/     ← Lessons learned, ADRs, benchmarks
-├── projects/      ← Case studies
 └── assets/        ← Diagrams and images
 ```
 

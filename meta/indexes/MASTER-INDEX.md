@@ -24,6 +24,7 @@
 | [Glossary](../glossary.md) | Domain terminology |
 | [Architecture Overview](../architecture-overview.md) | Repository structure and design philosophy |
 | [Learning Roadmap](../roadmap.md) | Recommended learning path |
+| [Capstone Walkthrough](../capstone-walkthrough.md) | End-to-end RAG chat API tutorial |
 | [Templates](../templates/) | Document templates |
 
 ---

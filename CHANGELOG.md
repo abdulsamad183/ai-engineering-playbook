@@ -1,5 +1,19 @@
 ## [Unreleased]
 
+## [1.2.1] - 2026-07-13
+
+### Added
+
+- [Capstone Walkthrough](meta/capstone-walkthrough.md) — end-to-end RAG chat API tutorial (templates → eval → Docker → CI)
+
+### Removed
+
+- `projects/` directory — project case studies no longer part of the playbook
+
+### Changed
+
+- Main README extended with capstone links; repository map updated
+
 ## [1.2.0] - 2026-07-13
 
 ### Added
