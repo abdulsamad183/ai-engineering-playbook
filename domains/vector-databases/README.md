@@ -1,32 +1,13 @@
 # Vector Databases
 
-> Vector database selection, indexing, and similarity search.
+> Vector database engineering for RAG is covered in Phase 7.
 
----
+## Primary Documentation
 
-## Documents
-
-| Document | Status | Description |
-|----------|--------|-------------|
-| *(No documents yet)* | — | — |
-
----
-
-## Related Domains
-
-- See [domains overview](../README.md) for related domains.
-
-## Templates
-
-When adding content to this domain, use the appropriate [template](../../meta/templates/):
-
-- Concept → `concept.md`
-- Technology → `technology.md`
-- Tutorial → `tutorial.md`
-- Production Guide → `production-guide.md`
+- [Vector Databases for RAG](../rag/vector-databases.md) — Phase 7 Section 7
+- [Provider Guides](../rag/providers/README.md) — FAISS, Chroma, PGVector, Pinecone, Milvus, Weaviate, Qdrant
 
 ## See Also
 
-- [Master Index](../../meta/indexes/MASTER-INDEX.md)
-- [Learning Roadmap](../../meta/roadmap.md)
-- [Contributing Guide](../../CONTRIBUTING.md)
+- [Phase 7 RAG](../rag/README.md)
+- [RAG Comparison Guides](../rag/rag-comparison-guides.md)

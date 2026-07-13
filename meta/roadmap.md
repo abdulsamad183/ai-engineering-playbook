@@ -118,42 +118,24 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 ---
 
-## Phase 7: RAG and Embeddings
+## Phase 7: RAG (Complete)
 
-**Goal:** Enable semantic search and knowledge retrieval.
+**Goal:** Build production-grade retrieval-augmented generation systems.
 
-**Duration:** 3–4 weeks
-
-| Order | Topic | Domain | Key Outcomes |
-|-------|-------|--------|-------------|
-| 7.1 | Embedding fundamentals | [embeddings](../../domains/embeddings/) | How embeddings work, model selection |
-| 7.2 | Vector databases | [vector-databases](../../domains/vector-databases/) | Storage, indexing, similarity search |
-| 7.3 | Chunking strategies | [embeddings](../../domains/embeddings/) | Fixed-size, semantic, recursive chunking |
-| 7.4 | Retrieval strategies | [rag](../../domains/rag/) | Similarity search, hybrid search, reranking |
-
-**Milestone:** Build a document ingestion and semantic search pipeline.
-
----
-
-## Phase 8: RAG Systems
-
-**Goal:** Build production retrieval augmented generation systems.
-
-**Duration:** 4–5 weeks
+**Duration:** 4–6 weeks
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 8.1 | RAG architecture | [rag](../../domains/rag/) | Pipeline design, component selection |
-| 8.2 | Ingestion pipelines | [rag](../../domains/rag/) | Document loading, chunking, embedding, storage |
-| 8.3 | Query pipelines | [rag](../../domains/rag/) | Query transformation, retrieval, generation |
-| 8.4 | RAG evaluation | [ai-evaluation](../../domains/ai-evaluation/) | Retrieval metrics, answer quality, faithfulness |
-| 8.5 | Advanced RAG patterns | [rag](../../domains/rag/) | HyDE, multi-query, parent-document retrieval |
+| 7.1 | RAG handbook | [rag](../../domains/rag/) | 21 sections: ingest through production |
+| 7.2 | Vector databases | [rag/providers](../../domains/rag/providers/) | 7 provider guides |
+| 7.3 | Evaluation | [rag/rag-evaluation.md](../../domains/rag/rag-evaluation.md) | Golden sets, recall@K, RAGAS |
+| 7.4 | Advanced RAG | [rag/advanced-rag-architectures.md](../../domains/rag/advanced-rag-architectures.md) | GraphRAG, agentic patterns |
 
-**Milestone:** Deploy a RAG system with evaluation metrics and monitoring.
+**Milestone:** Hybrid RAG with CI eval gate and tenant ACL filters. ✅
 
 ---
 
-## Phase 9: AI Agents
+## Phase 8: AI Agents
 
 **Goal:** Build autonomous AI agents that use tools and reason.
 
@@ -161,13 +143,27 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 9.1 | Agent fundamentals | [ai-agents](../../domains/ai-agents/) | ReAct, tool use, agent loops |
-| 9.2 | Agent architectures | [agent-architectures](../../domains/agent-architectures/) | Single-agent, planner-executor, hierarchical |
-| 9.3 | Tool design | [ai-agents](../../domains/ai-agents/) | Tool schemas, error handling, validation |
-| 9.4 | MCP (Model Context Protocol) | [mcp](../../domains/mcp/) | MCP servers, tool integration, client setup |
-| 9.5 | A2A (Agent-to-Agent) | [a2a](../../domains/a2a/) | Inter-agent communication protocols |
+| 8.1 | Agent architecture | [ai-agents](../../domains/ai-agents/) | ReAct, planning, tool use |
+| 8.2 | MCP integration | [mcp](../../domains/mcp/) | Tool servers and clients |
+| 8.3 | Multi-agent systems | [multi-agent-systems](../../domains/multi-agent-systems/) | Coordination patterns |
 
-**Milestone:** Build an agent that uses 3+ tools to complete multi-step tasks.
+**Milestone:** Deploy an agent with RAG tools and observability.
+
+---
+
+## Phase 9: Production AI
+
+**Goal:** Deploy, evaluate, and operate AI systems in production.
+
+**Duration:** 3–4 weeks
+
+| Order | Topic | Domain | Key Outcomes |
+|-------|-------|--------|-------------|
+| 9.1 | Deployment | [deployment](../../domains/deployment/) | Docker, cloud, scaling |
+| 9.2 | AI evaluation | [ai-evaluation](../../domains/ai-evaluation/) | Metrics, benchmarks, monitoring |
+| 9.3 | Observability & safety | [monitoring](../../domains/monitoring/) | Traces, alerts, guardrails |
+
+**Milestone:** Production deployment with eval dashboards and incident runbooks.
 
 ---
 

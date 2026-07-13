@@ -28,7 +28,7 @@ This is **not** a machine learning research repository or a deep learning theory
 
 | I want to... | Go to... |
 |--------------|----------|
-| Start learning | [Phase 6 Context Engineering](domains/context-engineering/README.md) |
+| Start learning | [Phase 7 RAG](domains/rag/README.md) |
 | Find a topic | [Master Index](meta/indexes/MASTER-INDEX.md) |
 | Browse by domain | [Domains](domains/README.md) |
 | Write a new document | [Templates](meta/templates/) + [Style Guide](meta/style-guide.md) |
@@ -165,13 +165,18 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow. Summary:
 - [x] 21 documents — handbook from introduction through production
 - [x] 11 Python examples, 7 cheat sheets
 
-### Phase 7: Retrieval & Agents
+### Phase 7: RAG (Complete)
 
-- [ ] RAG pipeline tutorials
+- [x] 29 documents — handbook + 7 vector DB providers
+- [x] 13 Python examples, 9 cheat sheets
+
+### Phase 8: AI Agents
+
 - [ ] Agent architecture patterns
 - [ ] MCP integration guides
+- [ ] Multi-agent systems
 
-### Phase 8: Production AI
+### Phase 9: Production AI
 
 - [ ] Deployment guides (Docker, cloud)
 - [ ] AI evaluation frameworks

@@ -46,6 +46,16 @@ Cheat sheets follow the [Cheat Sheet template](../meta/templates/cheat-sheet.md)
 | Context Ranking | context-engineering | [context-ranking-checklist.md](context-ranking-checklist.md) | Published |
 | Context Compression | context-engineering | [context-compression-checklist.md](context-compression-checklist.md) | Published |
 | Context Personalization | context-engineering | [context-personalization-checklist.md](context-personalization-checklist.md) | Published |
+| Context Personalization | context-engineering | [context-personalization-checklist.md](context-personalization-checklist.md) | Published |
+| RAG Chunking | rag | [rag-chunking-selection-cheat-sheet.md](rag-chunking-selection-cheat-sheet.md) | Published |
+| RAG Embeddings | rag | [rag-embedding-selection-cheat-sheet.md](rag-embedding-selection-cheat-sheet.md) | Published |
+| RAG Vector DB | rag | [rag-vector-database-selection-cheat-sheet.md](rag-vector-database-selection-cheat-sheet.md) | Published |
+| RAG Retrieval | rag | [rag-retrieval-strategy-cheat-sheet.md](rag-retrieval-strategy-cheat-sheet.md) | Published |
+| RAG Reranking | rag | [rag-reranking-checklist.md](rag-reranking-checklist.md) | Published |
+| RAG Evaluation | rag | [rag-evaluation-checklist.md](rag-evaluation-checklist.md) | Published |
+| RAG Production | rag | [rag-production-deployment-checklist.md](rag-production-deployment-checklist.md) | Published |
+| RAG Hallucination Debug | rag | [rag-hallucination-debugging-checklist.md](rag-hallucination-debugging-checklist.md) | Published |
+| RAG Performance | rag | [rag-performance-optimization-checklist.md](rag-performance-optimization-checklist.md) | Published |
 | PostgreSQL | databases/postgresql | Planned |
 | Docker | docker | Planned |
 | LLM API Integration | llm-engineering | Planned |

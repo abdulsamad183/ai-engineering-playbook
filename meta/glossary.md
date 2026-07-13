@@ -187,10 +187,13 @@ Design pattern that abstracts data access behind a domain-friendly interface, en
 Architectural style for designing networked APIs using HTTP methods, stateless requests, and resource-based URLs. See [HTTP Fundamentals for AI](../domains/apis/http-fundamentals-for-ai.md).
 
 ### RAG (Retrieval Augmented Generation)
-Architecture pattern that retrieves relevant context from a knowledge base before generating a response. See [RAG](../domains/rag/).
+Architecture pattern that retrieves relevant knowledge from an index before generating LLM responses. Full handbook: [RAG](../domains/rag/README.md).
+
+### Retrieval
+The process of finding candidate documents or passages from an index for a given query. See [Retrieval Strategies](../domains/rag/retrieval-strategies.md).
 
 ### Reranking
-Re-scoring retrieved documents with a more accurate (but slower) model to improve relevance.
+Re-scoring retrieved documents with a more accurate (but slower) model to improve relevance. See [Reranking](../domains/rag/reranking.md).
 
 ### ReAct
 Agent pattern combining Reasoning and Acting — the agent alternates between thinking and using tools.

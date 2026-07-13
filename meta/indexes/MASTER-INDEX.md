@@ -225,11 +225,33 @@
 
 ## Retrieval and Agents
 
-### RAG
+### RAG — Phase 7
 
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
+| Document | Status | Description |
+|----------|--------|-------------|
+| [Phase 7 Index](../../domains/rag/README.md) | Published | Module hub — largest handbook section |
+| [Introduction to RAG](../../domains/rag/introduction-to-rag.md) | Published | RAG fundamentals and types |
+| [End-to-End RAG Architecture](../../domains/rag/end-to-end-rag-architecture.md) | Published | Complete pipeline |
+| [Document Ingestion Pipeline](../../domains/rag/document-ingestion-pipeline.md) | Published | PDF, code, web ingestion |
+| [Chunking](../../domains/rag/chunking.md) | Published | All chunking strategies |
+| [Metadata Engineering](../../domains/rag/metadata-engineering.md) | Published | ACL, filtering, lineage |
+| [Embeddings for RAG](../../domains/rag/embeddings-for-rag.md) | Published | Models, metrics, versioning |
+| [Vector Databases](../../domains/rag/vector-databases.md) | Published | ANN, HNSW, IVF fundamentals |
+| [Retrieval Strategies](../../domains/rag/retrieval-strategies.md) | Published | Dense, hybrid, multi-hop |
+| [BM25](../../domains/rag/bm25.md) | Published | Lexical retrieval |
+| [Query Engineering](../../domains/rag/query-engineering.md) | Published | HyDE, rewriting, routing |
+| [Reranking](../../domains/rag/reranking.md) | Published | Cross-encoders, API rerankers |
+| [RAG Context Compression](../../domains/rag/rag-context-compression.md) | Published | Passage budgeting |
+| [RAG Prompt Assembly](../../domains/rag/rag-prompt-assembly.md) | Published | Context formatting |
+| [Citations and Grounding](../../domains/rag/citations-and-grounding.md) | Published | Attribution, traceability |
+| [Hallucination Prevention](../../domains/rag/hallucination-prevention.md) | Published | Abstention, validation |
+| [RAG Evaluation](../../domains/rag/rag-evaluation.md) | Published | Metrics, RAGAS, golden sets |
+| [Advanced RAG Architectures](../../domains/rag/advanced-rag-architectures.md) | Published | GraphRAG, Self-RAG, agentic |
+| [Production RAG](../../domains/rag/production-rag.md) | Published | Ops, scaling, multi-tenant |
+| [RAG System Design](../../domains/rag/rag-system-design.md) | Published | Enterprise patterns |
+| [RAG Mistakes](../../domains/rag/rag-mistakes.md) | Published | Troubleshooting |
+| [RAG Comparison Guides](../../domains/rag/rag-comparison-guides.md) | Published | Decision matrices |
+| [Vector DB Providers](../../domains/rag/providers/README.md) | Published | FAISS, Chroma, PGVector, Pinecone, Milvus, Weaviate, Qdrant |
 
 [Domain index →](../../domains/rag/README.md)
 

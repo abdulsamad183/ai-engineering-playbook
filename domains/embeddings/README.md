@@ -1,32 +1,13 @@
 # Embeddings
 
-> Vector embeddings, models, chunking, and semantic representation.
+> Embedding fundamentals for RAG are covered in Phase 7.
 
----
+## Primary Documentation
 
-## Documents
-
-| Document | Status | Description |
-|----------|--------|-------------|
-| *(No documents yet)* | — | — |
-
----
-
-## Related Domains
-
-- See [domains overview](../README.md) for related domains.
-
-## Templates
-
-When adding content to this domain, use the appropriate [template](../../meta/templates/):
-
-- Concept → `concept.md`
-- Technology → `technology.md`
-- Tutorial → `tutorial.md`
-- Production Guide → `production-guide.md`
+- [Embeddings for RAG](../rag/embeddings-for-rag.md) — Phase 7 Section 6
+- [LLM Engineering Embeddings](../llm-engineering/embeddings.md) — transformer fundamentals
 
 ## See Also
 
-- [Master Index](../../meta/indexes/MASTER-INDEX.md)
-- [Learning Roadmap](../../meta/roadmap.md)
-- [Contributing Guide](../../CONTRIBUTING.md)
+- [Phase 7 RAG](../rag/README.md)
+- [Vector Databases](../rag/vector-databases.md)

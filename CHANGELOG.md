@@ -1,5 +1,16 @@
 ## [Unreleased]
 
+## [0.6.0] - 2026-07-13
+
+### Added
+
+- **Phase 7: Retrieval-Augmented Generation (RAG)** — 29 documents forming the largest handbook module
+  - Sections 1–21: introduction through production system design
+  - 7 vector database provider guides (FAISS, Chroma, PGVector, Pinecone, Milvus, Weaviate, Qdrant)
+  - Comparison guides and advanced architecture coverage (GraphRAG, Self-RAG, agentic RAG)
+- 13 Python examples including complete pipeline and FastAPI endpoint
+- 9 RAG cheat sheets
+
 ## [0.5.0] - 2026-07-13
 
 ### Added
@@ -39,7 +50,8 @@
 
 - Repository foundation and Phase 2: AI Engineering Foundations
 
-[Unreleased]: https://github.com/hp/ai-engineering-playbook/compare/v0.5.0...HEAD
+[Unreleased]: https://github.com/hp/ai-engineering-playbook/compare/v0.6.0...HEAD
+[0.6.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v0.6.0
 [0.5.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v0.5.0
 [0.4.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v0.4.0
 [0.3.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v0.3.0
