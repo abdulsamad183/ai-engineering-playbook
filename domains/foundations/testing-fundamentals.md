@@ -13,6 +13,7 @@ related:
   - ../logging/logging-and-error-handling.md
   - ../python-engineering/python-for-ai-engineering.md
   - ../backend-engineering/backend-fundamentals-for-ai.md
+  - ../backend-engineering/testing-backend-for-ai.md
 keywords: [pytest, fixtures, mocking, TestClient, integration tests, regression tests, LLM testing, dependency override]
 author: hp
 ---
@@ -828,6 +829,7 @@ test_rag_service_empty_retrieval_still_calls_llm()
 
 ### Next Topics
 
+- [Testing Backend for AI (Phase 3)](../backend-engineering/testing-backend-for-ai.md) — FastAPI test depth, test DB, coverage gates
 - [AI Evaluation Domain](../ai-evaluation/README.md)
 - [CICD Domain](../cicd/README.md)
 - [Debugging Domain](../debugging/README.md)
@@ -835,7 +837,7 @@ test_rag_service_empty_retrieval_still_calls_llm()
 ### Future Reading
 
 - [AI Safety](../ai-safety/README.md) — red-team testing
-- [Performance Optimization](../performance-optimization/README.md) — load testing
+- [Backend Performance for AI](../performance-optimization/backend-performance-for-ai.md) — load testing complement
 
 ---
 

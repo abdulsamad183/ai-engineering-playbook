@@ -9,6 +9,7 @@
 | Document | Status | Description |
 |----------|--------|-------------|
 | [Logging and Error Handling](logging-and-error-handling.md) | Published | Structured logging, exception handling, retries, production diagnostics |
+| [Backend Logging for AI](backend-logging-for-ai.md) | Published | Phase 3 — JSON logging, request/correlation IDs, audit logs, log pipelines |
 
 ---
 

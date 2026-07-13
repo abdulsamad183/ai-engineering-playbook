@@ -8,7 +8,8 @@
 
 | Document | Status | Description |
 |----------|--------|-------------|
-| *(No documents yet)* | — | — |
+| [Authentication and Authorization for AI](authentication-authorization-for-ai.md) | Published | JWT, OAuth2, API keys, sessions, RBAC, refresh tokens, FastAPI protected routes |
+| [Security for AI Backends](security-for-ai-backends.md) | Published | HTTPS, CORS, CSRF, injection, SSRF, validation, secrets, rate limiting, headers |
 
 ---
 

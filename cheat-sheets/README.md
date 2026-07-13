@@ -26,7 +26,7 @@ Cheat sheets follow the [Cheat Sheet template](../meta/templates/cheat-sheet.md)
 
 | Topic | Domain | Status |
 |-------|--------|--------|
-| FastAPI | fastapi | Planned |
+| FastAPI | fastapi | [fastapi-backend-cheat-sheet.md](fastapi-backend-cheat-sheet.md) | Published |
 | PostgreSQL | databases/postgresql | Planned |
 | Docker | docker | Planned |
 | LLM API Integration | llm-engineering | Planned |

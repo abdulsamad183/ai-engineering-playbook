@@ -12,6 +12,8 @@ related:
   - engineering-best-practices.md
   - ../python-engineering/python-for-ai-engineering.md
   - ../backend-engineering/backend-fundamentals-for-ai.md
+  - ../backend-engineering/backend-architecture-for-ai.md
+  - ../fastapi/fastapi-complete-guide.md
   - ../software-architecture/architecture-patterns-foundation.md
 keywords: [clean architecture, SOLID, repository pattern, service layer, dependency injection, modular design]
 author: hp

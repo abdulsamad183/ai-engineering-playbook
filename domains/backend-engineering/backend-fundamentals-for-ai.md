@@ -679,12 +679,23 @@ app = FastAPI(lifespan=lifespan)
 
 ### Next Topics
 
+- [Backend Architecture for AI](backend-architecture-for-ai.md) — Phase 3 deep dive into layered, clean, and hexagonal architecture
+- [Production Project Structure for AI](production-project-structure-for-ai.md) — Phase 3 canonical folder layout
+- [AI Backend Reference Architecture](ai-backend-reference-architecture.md) — Phase 3 chat, RAG, agent, SaaS architectures
+- [Backend Engineering Mistakes](backend-engineering-mistakes.md) — Phase 3 production troubleshooting guide
+- [HTTP Clients for AI Backends](http-clients-for-ai-backends.md) — Phase 3 deep dive into httpx, retries, pooling, and LLM API calls
+- [Validation for AI APIs](validation-for-ai-apis.md) — Phase 3 deep dive into Pydantic v2 schemas and response validation
+- [Error Handling for AI Backends](error-handling-for-ai-backends.md) — Phase 3 deep dive into exception hierarchy and graceful degradation
 - [FastAPI Foundation](../fastapi/fastapi-foundation.md) — routers, testing, lifespan, AI-specific patterns
 - [HTTP Fundamentals for AI](../apis/http-fundamentals-for-ai.md) — authentication, caching, API design
 
 ### Future Reading
 
-- [FastAPI domain](../fastapi/README.md) — advanced FastAPI guides (coming soon)
+- [FastAPI Complete Guide](../fastapi/fastapi-complete-guide.md) — Phase 3 comprehensive FastAPI reference
+- [Backend Architecture for AI](backend-architecture-for-ai.md) — architectural patterns for AI backends
+- [Production Project Structure for AI](production-project-structure-for-ai.md) — folder layout reference
+- [AI Backend Reference Architecture](ai-backend-reference-architecture.md) — runtime architecture patterns
+- [Backend Engineering Mistakes](backend-engineering-mistakes.md) — production troubleshooting
 - [AI Application Architecture](../ai-application-architecture/README.md)
 - [Observability](../observability/README.md) — logging, tracing, metrics for AI services
 - [Model Serving](../model-serving/README.md)

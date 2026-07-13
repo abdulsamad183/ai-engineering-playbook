@@ -17,6 +17,9 @@
 | Document | Status | Description |
 |----------|--------|-------------|
 | [databases-for-ai-applications.md](databases-for-ai-applications.md) | Published | Database selection, design, and operations for AI applications |
+| [postgresql/sqlalchemy-for-ai-applications.md](postgresql/sqlalchemy-for-ai-applications.md) | Published | SQLAlchemy 2.0 async ORM and repository pattern |
+| [postgresql/alembic-migrations-for-ai.md](postgresql/alembic-migrations-for-ai.md) | Published | Alembic migrations and schema versioning |
+| [redis/redis-backend-patterns-for-ai.md](redis/redis-backend-patterns-for-ai.md) | Published | Redis backend service integration patterns |
 
 ---
 

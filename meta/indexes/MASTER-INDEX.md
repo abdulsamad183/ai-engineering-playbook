@@ -56,11 +56,25 @@
 
 [Domain index →](../../domains/python-engineering/README.md)
 
-### Backend Engineering
+### Backend Engineering — Phase 2
 
 | Document | Status | Description |
 |----------|--------|-------------|
 | [Backend Fundamentals for AI](../../domains/backend-engineering/backend-fundamentals-for-ai.md) | Published | Request lifecycle, middleware, async, streaming |
+
+### Backend Engineering — Phase 3
+
+| Document | Status | Description |
+|----------|--------|-------------|
+| [Backend Architecture for AI](../../domains/backend-engineering/backend-architecture-for-ai.md) | Published | Layered, clean, hexagonal architecture |
+| [HTTP Clients for AI Backends](../../domains/backend-engineering/http-clients-for-ai-backends.md) | Published | httpx, retries, pooling, streaming, LLM APIs |
+| [Validation for AI APIs](../../domains/backend-engineering/validation-for-ai-apis.md) | Published | Pydantic v2, validators, response validation |
+| [Error Handling for AI Backends](../../domains/backend-engineering/error-handling-for-ai-backends.md) | Published | Exception hierarchy, fallbacks, degradation |
+| [Async Programming for AI Backends](../../domains/backend-engineering/async-programming-for-ai-backends.md) | Published | asyncio, event loop, concurrency patterns |
+| [File Handling for AI](../../domains/backend-engineering/file-handling-for-ai.md) | Published | Uploads, object storage, multimodal formats |
+| [Background Processing for AI](../../domains/backend-engineering/background-processing-for-ai.md) | Published | Celery, ARQ, workers, ingestion jobs |
+| [Configuration Management for Backends](../../domains/backend-engineering/configuration-management-for-backends.md) | Published | Phase 3 — settings, env separation, feature flags |
+| [Testing Backend for AI](../../domains/backend-engineering/testing-backend-for-ai.md) | Published | pytest, API/integration tests, mocking, coverage |
 
 [Domain index →](../../domains/backend-engineering/README.md)
 
@@ -80,13 +94,21 @@
 
 [Domain index →](../../domains/fastapi/README.md)
 
-### Databases
+### Databases — Phase 2
 
 | Document | Status | Description |
 |----------|--------|-------------|
 | [Databases for AI Applications](../../domains/databases/databases-for-ai-applications.md) | Published | SQL, Redis, object storage, vector DB overview |
-| [PostgreSQL for AI](../../domains/databases/postgresql/postgresql-for-ai.md) | Published | pgvector, JSONB, migrations |
+| [PostgreSQL for AI](../../domains/databases/postgresql/postgresql-for-ai.md) | Published | pgvector, JSONB, production tuning |
 | [Redis for AI](../../domains/databases/redis/redis-for-ai.md) | Published | Caching, rate limiting, sessions |
+
+### Databases — Phase 3
+
+| Document | Status | Description |
+|----------|--------|-------------|
+| [SQLAlchemy for AI Applications](../../domains/databases/postgresql/sqlalchemy-for-ai-applications.md) | Published | Async ORM, models, repositories, schema design |
+| [Alembic Migrations for AI](../../domains/databases/postgresql/alembic-migrations-for-ai.md) | Published | Migrations, rollbacks, zero-downtime, CI |
+| [Redis Backend Patterns for AI](../../domains/databases/redis/redis-backend-patterns-for-ai.md) | Published | Backend services, jobs, locks, performance |
 
 [Domain index →](../../domains/databases/README.md)
 
@@ -272,9 +294,9 @@
 
 ### Monitoring
 
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
+| Document | Status | Description |
+|----------|--------|-------------|
+| [Monitoring Foundation for AI Backends](../../domains/monitoring/monitoring-foundation-for-ai-backends.md) | Published | Phase 3 — health, metrics, tracing, OTel, Prometheus, Grafana |
 
 [Domain index →](../../domains/monitoring/README.md)
 
@@ -283,6 +305,7 @@
 | Document | Status | Description |
 |----------|--------|-------------|
 | [Logging and Error Handling](../../domains/logging/logging-and-error-handling.md) | Published | Structured logs, retries, graceful failures |
+| [Backend Logging for AI](../../domains/logging/backend-logging-for-ai.md) | Published | Phase 3 — JSON logs, correlation IDs, audit logging |
 
 [Domain index →](../../domains/logging/README.md)
 
@@ -294,19 +317,20 @@
 
 [Domain index →](../../domains/observability/README.md)
 
-### Security
+### Security — Phase 3
 
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
+| Document | Status | Description |
+|----------|--------|-------------|
+| [Authentication and Authorization for AI](../../domains/security/authentication-authorization-for-ai.md) | Published | JWT, OAuth2, API keys, RBAC, protected routes |
+| [Security for AI Backends](../../domains/security/security-for-ai-backends.md) | Published | HTTPS, CORS, injection, SSRF, rate limiting, headers |
 
 [Domain index →](../../domains/security/README.md)
 
-### Performance Optimization
+### Performance Optimization — Phase 3
 
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
+| Document | Status | Description |
+|----------|--------|-------------|
+| [Backend Performance for AI](../../domains/performance-optimization/backend-performance-for-ai.md) | Published | Profiling, caching, pooling, pagination, streaming |
 
 [Domain index →](../../domains/performance-optimization/README.md)
 

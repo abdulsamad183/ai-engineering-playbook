@@ -9,7 +9,9 @@ updated: 2026-07-13
 version: "1.0"
 related:
   - ../databases-for-ai-applications.md
+  - redis-backend-patterns-for-ai.md
   - ../postgresql/postgresql-for-ai.md
+  - ../postgresql/sqlalchemy-for-ai-applications.md
   - ../../rag/README.md
   - ../../backend-engineering/backend-fundamentals-for-ai.md
   - ../../foundations/software-engineering-for-ai.md
@@ -576,6 +578,8 @@ async def consume_stream(redis_client: redis.Redis, stream: str, group: str, con
 
 ## Python Client Patterns
 
+> **Phase 3 deep dive:** Backend service architecture, connection lifecycle, caching services, job queues, and distributed locks — see [Redis Backend Patterns for AI](redis-backend-patterns-for-ai.md).
+
 ### Connection Setup
 
 ```python
@@ -742,15 +746,17 @@ async def redis_health(redis_client: redis.Redis = Depends(get_redis)):
 
 ### Related Topics
 
+- [Redis Backend Patterns for AI](redis-backend-patterns-for-ai.md) — service layer, jobs, locks
 - [PostgreSQL for AI](../postgresql/postgresql-for-ai.md)
+- [SQLAlchemy for AI Applications](../postgresql/sqlalchemy-for-ai-applications.md)
 - [Backend Fundamentals for AI](../../backend-engineering/backend-fundamentals-for-ai.md)
 - [RAG Domain](../../rag/README.md) — semantic caching at scale
 - [Performance Optimization Domain](../../performance-optimization/README.md)
 
 ### Next Topics
 
-- [RAG Domain](../../rag/README.md)
-- [Observability Domain](../../observability/README.md) — monitoring Redis
+- [Redis Backend Patterns for AI](redis-backend-patterns-for-ai.md)
+- [SQLAlchemy for AI Applications](../postgresql/sqlalchemy-for-ai-applications.md)
 
 ---
 

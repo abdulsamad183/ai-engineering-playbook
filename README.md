@@ -28,7 +28,7 @@ This is **not** a machine learning research repository or a deep learning theory
 
 | I want to... | Go to... |
 |--------------|----------|
-| Start learning | [Phase 2 Foundations](domains/foundations/README.md) → [Learning Roadmap](meta/roadmap.md) |
+| Start learning | [Phase 2 Foundations](domains/foundations/README.md) → [Phase 3 Backend](domains/backend-engineering/README.md) |
 | Find a topic | [Master Index](meta/indexes/MASTER-INDEX.md) |
 | Browse by domain | [Domains](domains/README.md) |
 | Write a new document | [Templates](meta/templates/) + [Style Guide](meta/style-guide.md) |
@@ -136,12 +136,19 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow. Summary:
 
 ### Foundation (Phase 2 — Complete)
 
-- [x] Repository structure and domain scaffolding
-- [x] Documentation standards and 18 templates
-- [x] Indexing system and learning roadmap
-- [x] **Phase 2: AI Engineering Foundations** (15 topics, 18 documents, 6 code examples)
+- [x] AI Engineering Foundations (15 topics)
 
-### Phase 1: Core Content
+### Phase 3: Backend Engineering (Complete)
+
+- [x] Backend architecture, FastAPI complete guide, API design, auth
+- [x] SQLAlchemy, Alembic, Redis backend patterns
+- [x] Background processing, async, file handling, HTTP clients
+- [x] Validation, error handling, logging, monitoring foundation
+- [x] Configuration, testing, security, performance
+- [x] Project structure, reference architectures, mistakes guide
+- [x] 10 backend templates, 8+ code examples
+
+### Phase 4: Core Content
 
 - [ ] Python engineering fundamentals
 - [ ] FastAPI and backend patterns

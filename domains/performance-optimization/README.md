@@ -8,7 +8,7 @@
 
 | Document | Status | Description |
 |----------|--------|-------------|
-| *(No documents yet)* | — | — |
+| [Backend Performance for AI](backend-performance-for-ai.md) | Published | Profiling, caching, connection pooling, async optimization, pagination, streaming |
 
 ---
 

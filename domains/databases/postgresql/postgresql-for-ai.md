@@ -9,6 +9,8 @@ updated: 2026-07-13
 version: "1.0"
 related:
   - ../databases-for-ai-applications.md
+  - sqlalchemy-for-ai-applications.md
+  - alembic-migrations-for-ai.md
   - ../redis/redis-for-ai.md
   - ../../rag/README.md
   - ../../vector-databases/README.md
@@ -367,6 +369,8 @@ LIMIT 5;
 
 ## Async Access with SQLAlchemy
 
+> **Phase 3 deep dive:** Full SQLAlchemy 2.0 coverage — sessions, models, relationships, queries, transactions, and repository implementations — is in [SQLAlchemy for AI Applications](sqlalchemy-for-ai-applications.md).
+
 Use `asyncpg` driver with SQLAlchemy 2.0 async session for non-blocking database access in FastAPI applications.
 
 ### Engine and Session Setup
@@ -503,6 +507,8 @@ class PostgresConversationRepository(ConversationRepository):
 ---
 
 ## Migrations with Alembic
+
+> **Phase 3 deep dive:** Alembic workflows, rollbacks, zero-downtime patterns, pgvector migrations, and CI integration — see [Alembic Migrations for AI](alembic-migrations-for-ai.md).
 
 ### Project Setup
 
@@ -714,6 +720,8 @@ CREATE TABLE usage_events_2026_07 PARTITION OF usage_events
 
 ### Related Topics
 
+- [SQLAlchemy for AI Applications](sqlalchemy-for-ai-applications.md) — ORM, repositories, transactions
+- [Alembic Migrations for AI](alembic-migrations-for-ai.md) — schema versioning
 - [Redis for AI](../redis/redis-for-ai.md)
 - [RAG Domain](../../rag/README.md)
 - [Vector Databases Domain](../../vector-databases/README.md)
@@ -721,8 +729,9 @@ CREATE TABLE usage_events_2026_07 PARTITION OF usage_events
 
 ### Next Topics
 
-- [RAG Domain](../../rag/README.md) — when building retrieval pipelines
-- [Vector Databases Domain](../../vector-databases/README.md) — scaling vector search
+- [SQLAlchemy for AI Applications](sqlalchemy-for-ai-applications.md)
+- [Alembic Migrations for AI](alembic-migrations-for-ai.md)
+- [Redis Backend Patterns for AI](../redis/redis-backend-patterns-for-ai.md)
 
 ---
 

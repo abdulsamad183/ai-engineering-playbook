@@ -1,18 +1,16 @@
 # Redis Examples
 
-> Runnable code examples for Redis.
+| Example | Description |
+|---------|-------------|
+| [example-redis-caching.py](example-redis-caching.py) | LLM response cache and rate limiting |
 
----
+## Prerequisites
 
-## Examples
-
-| Example | Description | Status |
-|---------|-------------|--------|
-| *(No examples yet)* | — | — |
-
----
+```bash
+pip install redis
+docker run -d -p 6379:6379 redis:7-alpine
+```
 
 ## See Also
 
-- [Examples Overview](../README.md)
-- [Contributing Guide](../../CONTRIBUTING.md#adding-code-examples)
+- [Redis Backend Patterns for AI](../../domains/databases/redis/redis-backend-patterns-for-ai.md)

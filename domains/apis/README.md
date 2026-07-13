@@ -9,6 +9,7 @@
 | Document | Status | Description |
 |----------|--------|-------------|
 | [HTTP Fundamentals for AI](http-fundamentals-for-ai.md) | Published | HTTP, REST, auth, streaming, webhooks, and API security for AI engineers |
+| [API Design for AI](api-design-for-ai.md) | Published | REST design, versioning, pagination, idempotency, error envelopes, streaming APIs |
 
 ---
 

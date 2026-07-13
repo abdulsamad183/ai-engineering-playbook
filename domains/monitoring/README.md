@@ -8,7 +8,7 @@
 
 | Document | Status | Description |
 |----------|--------|-------------|
-| *(No documents yet)* | — | — |
+| [Monitoring Foundation for AI Backends](monitoring-foundation-for-ai-backends.md) | Published | Phase 3 — health endpoints, metrics, tracing, OpenTelemetry, Prometheus, Grafana |
 
 ---
 

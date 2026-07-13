@@ -39,6 +39,23 @@
 | **Prompt Pattern** | Reusable prompt templates | [prompt-pattern.md](prompt-pattern.md) |
 | **Agent Workflow** | Agent workflow designs | [agent-workflow.md](agent-workflow.md) |
 
+### Backend Code Templates (Phase 3)
+
+| Template | Use For | File |
+|----------|---------|------|
+| **FastAPI Application** | New project scaffold | [backend/fastapi-application.md](backend/fastapi-application.md) |
+| **API Endpoint** | Single route handler | [backend/api-endpoint.md](backend/api-endpoint.md) |
+| **Repository** | Data access layer | [backend/repository.md](backend/repository.md) |
+| **Service** | Business logic layer | [backend/service.md](backend/service.md) |
+| **Database Model** | SQLAlchemy model | [backend/database-model.md](backend/database-model.md) |
+| **API Response** | Response envelope | [backend/api-response.md](backend/api-response.md) |
+| **Auth Module** | Authentication setup | [backend/authentication-module.md](backend/authentication-module.md) |
+| **Middleware** | Custom middleware | [backend/middleware.md](backend/middleware.md) |
+| **Background Task** | Job patterns | [backend/background-task.md](backend/background-task.md) |
+| **Test File** | pytest setup | [backend/test-file.md](backend/test-file.md) |
+
+See [backend templates README](backend/README.md).
+
 ---
 
 ## Template Selection Guide

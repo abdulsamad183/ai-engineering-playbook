@@ -9,7 +9,10 @@ updated: 2026-07-13
 version: "1.0"
 related:
   - postgresql/postgresql-for-ai.md
+  - postgresql/sqlalchemy-for-ai-applications.md
+  - postgresql/alembic-migrations-for-ai.md
   - redis/redis-for-ai.md
+  - redis/redis-backend-patterns-for-ai.md
   - ../rag/README.md
   - ../vector-databases/README.md
   - ../backend-engineering/backend-fundamentals-for-ai.md
@@ -935,6 +938,9 @@ See [Backend Fundamentals for AI](../backend-engineering/backend-fundamentals-fo
 
 - [PostgreSQL for AI](postgresql/postgresql-for-ai.md) — pgvector, JSONB, async patterns
 - [Redis for AI](redis/redis-for-ai.md) — caching, rate limiting, streaming
+- [SQLAlchemy for AI Applications](postgresql/sqlalchemy-for-ai-applications.md) — ORM, repositories, schema design
+- [Alembic Migrations for AI](postgresql/alembic-migrations-for-ai.md) — schema versioning
+- [Redis Backend Patterns for AI](redis/redis-backend-patterns-for-ai.md) — backend service integration
 - [Backend Fundamentals for AI](../backend-engineering/backend-fundamentals-for-ai.md) — API design, health checks
 - [RAG Domain](../rag/README.md) — retrieval pipelines, vector store deep dive
 - [Vector Databases Domain](../vector-databases/README.md) — ANN algorithms, store comparison
@@ -942,7 +948,10 @@ See [Backend Fundamentals for AI](../backend-engineering/backend-fundamentals-fo
 ### Next Topics
 
 - [PostgreSQL for AI](postgresql/postgresql-for-ai.md)
+- [SQLAlchemy for AI Applications](postgresql/sqlalchemy-for-ai-applications.md)
+- [Alembic Migrations for AI](postgresql/alembic-migrations-for-ai.md)
 - [Redis for AI](redis/redis-for-ai.md)
+- [Redis Backend Patterns for AI](redis/redis-backend-patterns-for-ai.md)
 - [RAG Domain](../rag/README.md) — when you build retrieval
 
 ### Future Reading

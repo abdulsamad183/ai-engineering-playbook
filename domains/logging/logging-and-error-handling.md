@@ -874,8 +874,8 @@ See [Observability Domain](../observability/README.md) and [Monitoring Domain](.
 
 ### Next Topics
 
-- [Observability Domain](../observability/README.md)
-- [Monitoring Domain](../monitoring/README.md)
+- [Backend Logging for AI](backend-logging-for-ai.md)
+- [Monitoring Foundation for AI Backends](../monitoring/monitoring-foundation-for-ai-backends.md)
 - [Production Incidents Domain](../production-incidents/README.md)
 
 ### Future Reading

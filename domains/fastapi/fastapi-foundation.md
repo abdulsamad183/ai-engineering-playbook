@@ -811,13 +811,16 @@ async def readiness(
 
 ### Next Topics
 
+- [FastAPI Complete Guide](fastapi-complete-guide.md) — Phase 3 comprehensive production reference
+- [Backend Architecture for AI](../backend-engineering/backend-architecture-for-ai.md) — where AI logic lives in the stack
 - [AI Application Architecture](../ai-application-architecture/README.md) — end-to-end system design
 - [Observability](../observability/README.md) — tracing LLM calls and API latency
 - [Security](../security/README.md) — API auth, input sanitization, prompt injection defenses
 
 ### Future Reading
 
-- Advanced FastAPI guides (middleware auth patterns, OAuth2, pagination) — coming in this domain
+- [FastAPI Complete Guide](fastapi-complete-guide.md) — SSE, WebSockets, OpenAPI customization, production deployment
+- OAuth2 and advanced auth patterns — coming in this domain
 - [Model Serving](../model-serving/README.md) — when to move inference out of the API process
 - [CICD](../cicd/README.md) — testing and deploying AI APIs
 
