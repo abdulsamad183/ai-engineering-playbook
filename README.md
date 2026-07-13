@@ -28,7 +28,7 @@ This is **not** a machine learning research repository or a deep learning theory
 
 | I want to... | Go to... |
 |--------------|----------|
-| Start learning | [Phase 4 LLM Engineering](domains/llm-engineering/README.md) |
+| Start learning | [Phase 5 Prompt Engineering](domains/prompt-engineering/README.md) |
 | Find a topic | [Master Index](meta/indexes/MASTER-INDEX.md) |
 | Browse by domain | [Domains](domains/README.md) |
 | Write a new document | [Templates](meta/templates/) + [Style Guide](meta/style-guide.md) |
@@ -154,15 +154,20 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow. Summary:
 - [x] 6 provider guides (OpenAI, Gemini, Claude, Groq, OpenRouter, Ollama)
 - [x] 12 API integration examples, 3 cheat sheets
 
-### Phase 5: Retrieval & Agents
+### Phase 5: Prompt Engineering (Complete)
 
-- [ ] Prompt engineering patterns library
+- [x] 19 documents — handbook from introduction through production
+- [x] 16 prompt templates in `prompts/templates/`
+- [x] 9 Python examples, 9 cheat sheets
+
+### Phase 6: Retrieval & Agents
+
 - [ ] Context engineering guides
 - [ ] RAG pipeline tutorials
 - [ ] Agent architecture patterns
 - [ ] MCP integration guides
 
-### Phase 6: Production AI
+### Phase 7: Production AI
 
 - [ ] Deployment guides (Docker, cloud)
 - [ ] AI evaluation frameworks

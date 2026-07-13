@@ -166,14 +166,19 @@ A component that coordinates workflow execution, routing tasks between agents or
 ## P
 
 ### Prompt Engineering
-The practice of designing effective prompts to get reliable, high-quality outputs from LLMs. See [Prompt Engineering](../domains/prompt-engineering/).
+The discipline of designing, testing, versioning, and optimizing prompts as maintainable software artifacts in production AI systems. See [Prompt Engineering](../domains/prompt-engineering/README.md).
+
+### Prompt Injection
+Attack where untrusted input attempts to override system instructions. See [Prompt Security](../domains/prompt-engineering/prompt-security.md).
+
+### Few-Shot Prompting
+Providing a small number of input-output examples in the prompt to demonstrate desired behavior. See [Prompting Strategies](../domains/prompt-engineering/prompting-strategies.md).
+
+### Prompt Chaining
+Connecting multiple prompt steps in sequence, passing intermediate outputs between stages. See [Prompt Chaining](../domains/prompt-engineering/prompt-chaining.md).
 
 ### Prompt Pattern
-A reusable prompt template for a specific use case. See [Prompts](../prompts/).
-
----
-
-## R
+A reusable prompt structure for a specific task type. See [Prompt Patterns](../domains/prompt-engineering/prompt-patterns.md) and [Prompt Templates](../prompts/templates/).
 
 ### Repository Pattern
 Design pattern that abstracts data access behind a domain-friendly interface, enabling swappable storage implementations and testable services. See [Software Engineering for AI](../domains/foundations/software-engineering-for-ai.md).

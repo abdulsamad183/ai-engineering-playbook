@@ -16,6 +16,7 @@ examples/
 ├── sql/                 # SQL queries and patterns
 ├── redis/               # Redis caching patterns
 ├── llm-applications/    # LLM integration examples
+├── prompt-engineering/  # Prompt patterns and pipelines
 ├── rag/                 # RAG pipeline examples
 ├── langgraph/           # LangGraph workflow examples
 ├── mcp/                 # MCP server and client examples

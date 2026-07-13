@@ -8,6 +8,7 @@
 
 | Comparison | Options Covered | Status |
 |------------|----------------|--------|
+| [Prompt Engineering Strategies](../../domains/prompt-engineering/prompt-comparison-guides.md) | Zero-shot vs few-shot, XML vs JSON, CoT vs ReAct, chaining vs single prompt | Published |
 | [Vector Databases](vector-databases.md) | pgvector, Pinecone, Weaviate, Qdrant, Chroma | Planned |
 | [Embedding Models](embedding-models.md) | OpenAI, Cohere, open-source models | Planned |
 | [Agent Frameworks](agent-frameworks.md) | LangGraph, CrewAI, AutoGen, custom | Planned |

@@ -8,10 +8,12 @@
 
 ```
 prompts/
-├── patterns/          # Reusable prompt patterns by use case
-│   ├── code-review.md
-│   ├── summarization.md
+├── templates/         # 16 production templates (Phase 5)
+│   ├── question-answering.md
+│   ├── classification.md
+│   ├── agent-planning.md
 │   └── ...
+├── patterns/          # Pattern catalog (see domain docs)
 └── README.md
 ```
 

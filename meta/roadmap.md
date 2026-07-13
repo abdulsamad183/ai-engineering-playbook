@@ -83,20 +83,21 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 ---
 
-## Phase 5: Prompt Engineering
+## Phase 5: Prompt Engineering (Complete)
 
-**Goal:** Design effective prompts for reliable AI outputs.
+**Goal:** Treat prompts as maintainable software artifacts for production AI systems.
 
 **Duration:** 2–3 weeks
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 5.1 | Prompt design principles | [prompt-engineering](../../domains/prompt-engineering/) | Clarity, specificity, role assignment |
-| 5.2 | Structured outputs | [prompt-engineering](../../domains/prompt-engineering/) | JSON mode, schema validation, parsing |
-| 5.3 | Few-shot and chain-of-thought | [prompt-engineering](../../domains/prompt-engineering/) | Example selection, reasoning patterns |
-| 5.4 | Prompt patterns library | [prompts](../../prompts/) | Reusable templates for common tasks |
+| 5.1 | Prompt engineering handbook | [prompt-engineering](../../domains/prompt-engineering/) | 18 sections: anatomy through production |
+| 5.2 | Structured prompting | [prompt-engineering](../../domains/prompt-engineering/structured-prompting.md) | XML, JSON, Markdown, tagged formats |
+| 5.3 | Reasoning & chaining | [prompt-engineering](../../domains/prompt-engineering/) | CoT, ReAct, ToT, multi-step pipelines |
+| 5.4 | Testing & evaluation | [prompt-engineering](../../domains/prompt-engineering/) | Golden datasets, regression, metrics |
+| 5.5 | Prompt patterns library | [prompts/templates](../../prompts/templates/) | 16 reusable production templates |
 
-**Milestone:** Create a prompt pattern library with 5+ tested templates.
+**Milestone:** Versioned prompt with golden dataset, CI regression tests, and structured output validation. ✅
 
 ---
 
