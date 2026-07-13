@@ -1,0 +1,11 @@
+# Default owner for the entire repository
+* @hp
+
+# Standards and templates require review before changes
+/meta/ @hp
+/meta/templates/ @hp
+/meta/style-guide.md @hp
+/meta/naming-conventions.md @hp
+
+# Index files affect discoverability across the repository
+/meta/indexes/ @hp

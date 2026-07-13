@@ -1,0 +1,34 @@
+# Example: RAG System Architecture
+
+> Reference architecture diagram for a retrieval augmented generation system.
+> Source template for [Mermaid conventions](../../meta/mermaid-conventions.md).
+
+```mermaid
+graph TB
+    subgraph "Ingestion Pipeline"
+        DOC[Documents] --> LOAD[Document Loader]
+        LOAD --> CHUNK[Text Chunker]
+        CHUNK --> EMBED[Embedding Model]
+    end
+
+    subgraph "Storage"
+        EMBED --> VDB[(Vector Database)]
+        EMBED --> META[(Metadata DB)]
+    end
+
+    subgraph "Query Pipeline"
+        QUERY[User Query] --> QEMBED[Query Embedding]
+        QEMBED --> RETRIEVE[Retriever]
+        RETRIEVE --> VDB
+        RETRIEVE --> RERANK[Reranker]
+        RERANK --> AUGMENT[Prompt Augmentation]
+        AUGMENT --> LLM[LLM]
+        LLM --> RESPONSE[Response]
+    end
+
+    subgraph "Observability"
+        LLM --> TRACE[Tracing]
+        RETRIEVE --> TRACE
+        TRACE --> METRICS[Metrics Dashboard]
+    end
+```
