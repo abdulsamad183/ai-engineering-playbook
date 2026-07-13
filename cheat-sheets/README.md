@@ -106,6 +106,12 @@ Cheat sheets follow the [Cheat Sheet template](../meta/templates/cheat-sheet.md)
 | Interview MCP | interview-preparation | [interview-mcp-cheat-sheet.md](interview-mcp-cheat-sheet.md) | Published |
 | Interview Evaluation | interview-preparation | [interview-evaluation-cheat-sheet.md](interview-evaluation-cheat-sheet.md) | Published |
 | Interview System Design | interview-preparation | [interview-system-design-cheat-sheet.md](interview-system-design-cheat-sheet.md) | Published |
+| Transformer Concepts | papers | [transformer-concepts-cheat-sheet.md](transformer-concepts-cheat-sheet.md) | Published |
+| Reasoning Methods | papers | [reasoning-methods-cheat-sheet.md](reasoning-methods-cheat-sheet.md) | Published |
+| Retrieval Papers | papers | [retrieval-papers-cheat-sheet.md](retrieval-papers-cheat-sheet.md) | Published |
+| Agent Architectures Papers | papers | [agent-architectures-papers-cheat-sheet.md](agent-architectures-papers-cheat-sheet.md) | Published |
+| Paper Comparison Matrix | papers | [paper-comparison-matrix-cheat-sheet.md](paper-comparison-matrix-cheat-sheet.md) | Published |
+| AI Research Timeline | papers | [ai-research-timeline-cheat-sheet.md](ai-research-timeline-cheat-sheet.md) | Published |
 | PostgreSQL | databases/postgresql | Planned |
 | Docker | docker | Planned |
 | LLM API Integration | llm-engineering | Planned |

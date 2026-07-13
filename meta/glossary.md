@@ -70,12 +70,18 @@ Design pattern where dependencies are provided to a component rather than create
 ### Docker
 Containerization platform for packaging applications with their dependencies. See [Docker](../domains/docker/).
 
+### DSPy
+Declarative framework for programming with LMs — treats prompts as optimizable programs rather than hand-written strings. See [DSPy](../domains/papers/dspy.md).
+
 ---
 
 ## E
 
 ### Embedding
 A dense vector representation of text (or other data) that captures semantic meaning. See [Embeddings](../domains/embeddings/).
+
+### Engineering Templates
+Production-ready starter code in `templates/engineering/` for bootstrapping AI APIs, RAG, agents, and deployment. See [Templates Hub](../templates/README.md).
 
 ### AI Evaluation
 Systematic measurement of AI system quality — LLMs, prompts, RAG, agents, latency, cost, and business impact — using metrics, benchmarks, golden datasets, and continuous monitoring. See [AI Evaluation Handbook](../domains/ai-evaluation/README.md).
@@ -117,6 +123,9 @@ LLM capability to invoke predefined functions/tools based on user input. Also ca
 
 ### Guardrails
 Safety mechanisms that validate, filter, or constrain AI outputs before they reach users. See [AI Safety](../domains/ai-safety/).
+
+### GraphRAG
+Retrieval architecture using knowledge graphs and community summaries for global and local reasoning over corpora. See [Retrieval Papers](../domains/papers/retrieval-papers.md).
 
 ---
 
@@ -237,6 +246,9 @@ Agent pattern combining Reasoning and Acting — the agent alternates between th
 ---
 
 ## S
+
+### Self-RAG
+Retrieval-augmented generation with self-reflection — the model decides when to retrieve, critique relevance, and verify answers. See [Retrieval Papers](../domains/papers/retrieval-papers.md).
 
 ### Service Layer
 Application layer that orchestrates domain logic and coordinates between repositories and external services. Routes delegate to services; services do not know about HTTP. See [Software Engineering for AI](../domains/foundations/software-engineering-for-ai.md).

@@ -29,6 +29,8 @@ This is **not** a machine learning research repository or a deep learning theory
 | I want to... | Go to... |
 |--------------|----------|
 | Start learning | [Interview Handbook](domains/interview-preparation/README.md) |
+| Copy starter code | [Engineering Templates](templates/README.md) |
+| Research background | [AI Research Papers](domains/papers/README.md) |
 | Find a topic | [Master Index](meta/indexes/MASTER-INDEX.md) |
 | Browse by domain | [Domains](domains/README.md) |
 | Write a new document | [Templates](meta/templates/) + [Style Guide](meta/style-guide.md) |
@@ -52,6 +54,7 @@ ai-engineering-playbook/
 ├── projects/         # Project case studies
 ├── prompts/          # Reusable prompt patterns
 ├── cheat-sheets/     # Quick reference cards
+├── templates/        # Production-ready engineering starters
 ├── assets/           # Diagrams, images, slides
 └── resources/        # Bookmarks and external links
 ```
@@ -199,8 +202,17 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow. Summary:
 - [x] 22 documents (20 sections + mocks + company patterns)
 - [x] 12 interview cheat sheets
 
+### Phase 14: Engineering Templates & Reusable Assets (Complete)
+
+- [x] 14 template sections — FastAPI, RAG, agent, MCP, Docker, CI/CD, logging, monitoring
+- [x] Prompt library, evaluation harnesses, deployment configs, boilerplates, utilities
+
+### Phase 15: AI Research Papers & Literature Review (Complete)
+
+- [x] 10 handbook sections — transformers through future research
+- [x] 6 research cheat sheets
+
 ### Ongoing Depth
-- [ ] Research paper summaries
 - [ ] Production incident postmortems
 - [ ] Technology comparison matrices
 

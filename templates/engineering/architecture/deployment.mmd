@@ -1,0 +1,14 @@
+```mermaid
+flowchart TB
+    subgraph Cloud
+        LB[Load Balancer]
+        API1[API Replica]
+        API2[API Replica]
+        VDB[(Vector DB)]
+        PG[(Postgres)]
+    end
+    Users --> LB --> API1
+    LB --> API2
+    API1 --> VDB
+    API1 --> PG
+```

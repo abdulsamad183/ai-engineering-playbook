@@ -1,0 +1,7 @@
+```mermaid
+flowchart TD
+    C[Client] --> N[nginx]
+    N --> API[FastAPI]
+    API --> LLM[LLM API]
+    API --> DB[(Postgres)]
+```

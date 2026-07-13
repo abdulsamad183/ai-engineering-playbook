@@ -227,7 +227,39 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 ---
 
-## Phase 14: AI Workflows and Multi-Agent Systems
+## Phase 14: Engineering Templates & Reusable Assets
+
+**Goal:** Ship new AI products in minutes using production-ready starters.
+
+**Duration:** 1 week (reference while building)
+
+| Order | Topic | Location | Key Outcomes |
+|-------|-------|----------|--------------|
+| 14.1 | API starter | [templates/engineering/fastapi-starter](../../templates/engineering/fastapi-starter/) | Modular FastAPI + Docker + CI |
+| 14.2 | RAG & agent starters | [templates/engineering/](../../templates/engineering/) | Pipelines and agent runtime |
+| 14.3 | Ops templates | [templates/engineering/](../../templates/engineering/) | Logging, monitoring, deploy |
+
+**Milestone:** New repo bootstrapped from templates with health check and CI green. ✅
+
+---
+
+## Phase 15: AI Research Papers & Literature Review
+
+**Goal:** Connect research papers to production architecture decisions.
+
+**Duration:** 2–3 weeks (read alongside Phases 4–9)
+
+| Order | Topic | Domain | Key Outcomes |
+|-------|-------|--------|--------------|
+| 15.1 | Transformer foundations | [papers](../../domains/papers/) | Attention, encoder-decoder impact |
+| 15.2 | Reasoning & retrieval papers | [papers](../../domains/papers/) | ReAct, Self-RAG, GraphRAG |
+| 15.3 | Synthesis | [papers](../../domains/papers/) | Comparisons, takeaways, future work |
+
+**Milestone:** Explain three paper architectures in a system design interview. ✅
+
+---
+
+## Phase 16: AI Workflows and Multi-Agent Systems
 
 **Goal:** Orchestrate complex AI processes and multi-agent collaboration.
 
@@ -235,16 +267,16 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 14.1 | Workflow orchestration | [ai-workflows](../../domains/ai-workflows/) | State machines, DAGs, conditional routing |
-| 14.2 | LangGraph and frameworks | [ai-workflows](../../domains/ai-workflows/) | Graph-based agent workflows |
-| 14.3 | Multi-agent systems | [multi-agent-systems](../../domains/multi-agent-systems/) | Delegation, handoffs, collaboration patterns |
-| 14.4 | Human-in-the-loop | [ai-workflows](../../domains/ai-workflows/) | Approval flows, feedback integration |
+| 16.1 | Workflow orchestration | [ai-workflows](../../domains/ai-workflows/) | State machines, DAGs, conditional routing |
+| 16.2 | LangGraph and frameworks | [ai-workflows](../../domains/ai-workflows/) | Graph-based agent workflows |
+| 16.3 | Multi-agent systems | [multi-agent-systems](../../domains/multi-agent-systems/) | Delegation, handoffs, collaboration patterns |
+| 16.4 | Human-in-the-loop | [ai-workflows](../../domains/ai-workflows/) | Approval flows, feedback integration |
 
 **Milestone:** Build a multi-agent workflow with human-in-the-loop approval.
 
 ---
 
-## Phase 15: Cloud & Advanced Deployment
+## Phase 17: Cloud & Advanced Deployment
 
 **Goal:** Cloud-native deployment and model serving depth (extends Phase 12).
 
@@ -252,15 +284,15 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 15.1 | Cloud deployment | [cloud-deployment](../../domains/cloud-deployment/) | Managed services, regions |
-| 15.2 | Model serving | [model-serving](../../domains/model-serving/) | Load balancing, GPU serving |
-| 15.3 | Inference optimization | [inference-optimization](../../domains/inference-optimization/) | Batching, caching |
+| 17.1 | Cloud deployment | [cloud-deployment](../../domains/cloud-deployment/) | Managed services, regions |
+| 17.2 | Model serving | [model-serving](../../domains/model-serving/) | Load balancing, GPU serving |
+| 17.3 | Inference optimization | [inference-optimization](../../domains/inference-optimization/) | Batching, caching |
 
 **Milestone:** Cloud-deployed AI API with autoscaling.
 
 ---
 
-## Phase 16: Monitoring, Observability, and Optimization (Depth)
+## Phase 18: Monitoring, Observability, and Optimization (Depth)
 
 **Goal:** Operate AI systems reliably in production.
 
@@ -268,18 +300,18 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 16.1 | Logging depth | [logging](../../domains/logging/) | Structured logging, PII redaction |
-| 16.2 | Monitoring depth | [monitoring](../../domains/monitoring/) | Dashboards, alerting, SLIs/SLOs |
-| 16.3 | Observability depth | [observability](../../domains/observability/) | Tracing, LLM-specific telemetry |
-| 16.4 | Performance optimization | [performance-optimization](../../domains/performance-optimization/) | Latency, throughput, cost |
-| 16.5 | Security in production | [security](../../domains/security/) | Input validation, key rotation |
-| 16.6 | AI safety and guardrails | [ai-safety](../../domains/ai-safety/) | Content filtering, bias detection |
+| 18.1 | Logging depth | [logging](../../domains/logging/) | Structured logging, PII redaction |
+| 18.2 | Monitoring depth | [monitoring](../../domains/monitoring/) | Dashboards, alerting, SLIs/SLOs |
+| 18.3 | Observability depth | [observability](../../domains/observability/) | Tracing, LLM-specific telemetry |
+| 18.4 | Performance optimization | [performance-optimization](../../domains/performance-optimization/) | Latency, throughput, cost |
+| 18.5 | Security in production | [security](../../domains/security/) | Input validation, key rotation |
+| 18.6 | AI safety and guardrails | [ai-safety](../../domains/ai-safety/) | Content filtering, bias detection |
 
 **Milestone:** Set up full observability for an AI application with cost tracking and alerting.
 
 ---
 
-## Phase 17: Extended Architecture (Depth)
+## Phase 19: Extended Architecture (Depth)
 
 **Goal:** Deep-dive architecture domains beyond Phase 11 handbook.
 
@@ -287,10 +319,10 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 17.1 | AI application architecture | [ai-application-architecture](../../domains/ai-application-architecture/) | Component design, data flow |
-| 17.2 | Design patterns | [design-patterns](../../domains/design-patterns/) | Reusable AI engineering patterns |
-| 17.3 | Distributed systems | [distributed-systems](../../domains/distributed-systems/) | Scaling, consistency, fault tolerance |
-| 17.4 | Software architecture | [software-architecture](../../domains/software-architecture/) | Clean architecture for AI apps |
+| 19.1 | AI application architecture | [ai-application-architecture](../../domains/ai-application-architecture/) | Component design, data flow |
+| 19.2 | Design patterns | [design-patterns](../../domains/design-patterns/) | Reusable AI engineering patterns |
+| 19.3 | Distributed systems | [distributed-systems](../../domains/distributed-systems/) | Scaling, consistency, fault tolerance |
+| 19.4 | Software architecture | [software-architecture](../../domains/software-architecture/) | Clean architecture for AI apps |
 
 ---
 

@@ -1,0 +1,10 @@
+```mermaid
+flowchart LR
+    Q[User Query] --> E[Embed Query]
+    E --> VS[(Vector Store)]
+    VS --> R[Top-K Retrieval]
+    R --> RR[Reranker]
+    RR --> P[Prompt Assembly]
+    P --> LLM[LLM]
+    LLM --> A[Answer + Citations]
+```

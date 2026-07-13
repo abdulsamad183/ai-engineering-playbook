@@ -1,0 +1,10 @@
+```mermaid
+flowchart TD
+    G[Goal] --> PL[Planner]
+    PL --> EX[Executor]
+    EX --> T[Tools]
+    T --> OBS[Observations]
+    OBS --> MEM[Memory]
+    MEM --> PL
+    EX --> OUT[Final Output]
+```

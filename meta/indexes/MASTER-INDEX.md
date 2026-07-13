@@ -636,13 +636,43 @@
 
 [Domain index →](../../domains/interview-preparation/README.md)
 
-### Papers
+### Papers — Phase 15
 
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
+| Document | Status | Description |
+|----------|--------|-------------|
+| [Papers Index](../../domains/papers/README.md) | Published | Research handbook hub |
+| [Attention Is All You Need](../../domains/papers/attention-is-all-you-need.md) | Published | Transformer foundations |
+| [Agent Reasoning Papers](../../domains/papers/agent-reasoning-papers.md) | Published | ReAct, ToT, Reflexion, Voyager, CAMEL |
+| [Retrieval Papers](../../domains/papers/retrieval-papers.md) | Published | Self-RAG, GraphRAG, RAPTOR, CRAG |
+| [Prompt Engineering Papers](../../domains/papers/prompt-engineering-papers.md) | Published | CoT, few-shot, instruction tuning |
+| [DSPy](../../domains/papers/dspy.md) | Published | Programming model and optimization |
+| [SWE-Agent](../../domains/papers/swe-agent.md) | Published | Software engineering agents |
+| [Research Evolution](../../domains/papers/research-evolution.md) | Published | Historical timeline |
+| [Research Comparison Guides](../../domains/papers/research-comparison-guides.md) | Published | Paper comparison tables |
+| [Engineering Takeaways](../../domains/papers/engineering-takeaways.md) | Published | What to implement and avoid |
+| [Future Research](../../domains/papers/future-research.md) | Published | Open problems and directions |
 
 [Domain index →](../../domains/papers/README.md)
+
+### Engineering Templates — Phase 14
+
+| Asset | Status | Description |
+|-------|--------|-------------|
+| [Templates Hub](../../templates/README.md) | Published | Engineering toolkit hub |
+| [FastAPI Starter](../../templates/engineering/fastapi-starter/README.md) | Published | Modular AI API scaffold |
+| [RAG Starter](../../templates/engineering/rag-starter/README.md) | Published | Retrieval pipeline template |
+| [Agent Starter](../../templates/engineering/agent-starter/README.md) | Published | Planner/executor agent |
+| [MCP Starter](../../templates/engineering/mcp-starter/README.md) | Published | Server and client |
+| [Docker Starter](../../templates/engineering/docker/README.md) | Published | Compose and multi-stage |
+| [GitHub Actions](../../templates/engineering/github-actions/README.md) | Published | CI/CD workflows |
+| [Logging](../../templates/engineering/logging/README.md) | Published | Structured JSON logging |
+| [Monitoring](../../templates/engineering/monitoring/README.md) | Published | OTEL, LangFuse, Phoenix |
+| [Prompt Library](../../templates/engineering/prompts/README.md) | Published | Parameterized prompts |
+| [Evaluation](../../templates/engineering/evaluation/README.md) | Published | Eval harnesses |
+| [Deployment](../../templates/engineering/deployment/README.md) | Published | Render, Railway, Vercel |
+| [Boilerplates](../../templates/engineering/boilerplates/README.md) | Published | Product scaffolds |
+| [Utilities](../../templates/engineering/utilities/README.md) | Published | Shared helpers |
+| [Architecture Diagrams](../../templates/engineering/architecture/README.md) | Published | Mermaid templates |
 
 ### Research Notes
 

@@ -1,0 +1,8 @@
+```mermaid
+flowchart LR
+    APP[Application] --> OTEL[OpenTelemetry]
+    OTEL --> COL[Collector]
+    COL --> MET[Metrics]
+    COL --> TRACE[Traces]
+    APP --> LF[LangFuse/Phoenix]
+```

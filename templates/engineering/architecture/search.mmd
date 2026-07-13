@@ -1,0 +1,9 @@
+```mermaid
+flowchart LR
+    U[User] --> API[Search API]
+    API --> HY[Hybrid Retrieval]
+    HY --> BM25[Keyword]
+    HY --> VEC[Vector]
+    HY --> R[Rerank]
+    R --> LLM[LLM]
+```

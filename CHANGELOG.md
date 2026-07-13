@@ -1,5 +1,19 @@
 ## [Unreleased]
 
+## [1.2.0] - 2026-07-13
+
+### Added
+
+- **Phase 14: Engineering Templates & Reusable Assets** — 14 template sections
+  - FastAPI, RAG, agent, and MCP starters with tests and CI
+  - Docker, GitHub Actions, logging, monitoring, deployment configs
+  - Prompt library, evaluation harnesses, boilerplates, utilities, architecture diagrams
+- **Phase 15: AI Research Papers & Literature Review** — 10 handbook sections
+  - Transformer foundations through future research directions
+  - Agent reasoning, retrieval, prompting, DSPy, and SWE-Agent summaries
+  - Comparison guides, engineering takeaways, and evolution timeline
+- 6 research cheat sheets (transformers, reasoning, retrieval, agents, comparisons, timeline)
+
 ## [1.1.0] - 2026-07-13
 
 ### Added

@@ -1,0 +1,22 @@
+services:
+  api:
+    build:
+      context: ../fastapi-starter
+    ports:
+      - "8000:8000"
+    env_file: ../fastapi-starter/.env.example
+    depends_on:
+      - redis
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+  qdrant:
+    image: qdrant/qdrant:latest
+    ports:
+      - "6333:6333"
+    volumes:
+      - qdrant_data:/qdrant/storage
+
+volumes:
+  qdrant_data:
