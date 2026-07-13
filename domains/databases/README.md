@@ -16,13 +16,17 @@
 
 | Document | Status | Description |
 |----------|--------|-------------|
-| *(No documents yet)* | — | — |
+| [databases-for-ai-applications.md](databases-for-ai-applications.md) | Published | Database selection, design, and operations for AI applications |
 
 ---
 
 ## Related Domains
 
-- See [domains overview](../README.md) for related domains.
+- [RAG](../rag/README.md) — retrieval pipelines and vector store deep dive
+- [Vector Databases](../vector-databases/README.md) — ANN algorithms and store comparison
+- [Backend Engineering](../backend-engineering/README.md) — API design and service patterns
+- [Foundations](../foundations/README.md) — software engineering principles
+- See [domains overview](../README.md) for all domains.
 
 ## Templates
 

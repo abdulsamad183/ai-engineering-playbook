@@ -8,11 +8,12 @@
 
 | Document | Status | Description |
 |----------|--------|-------------|
-| *(No documents yet)* | — | — |
+| [postgresql-for-ai.md](postgresql-for-ai.md) | Published | PostgreSQL patterns for AI — pgvector, JSONB, async SQLAlchemy, production tuning |
 
 ---
 
 ## See Also
 
+- [Databases for AI Applications](../databases-for-ai-applications.md)
 - [Databases Overview](../README.md)
 - [Master Index](../../../meta/indexes/MASTER-INDEX.md)

@@ -28,11 +28,19 @@
 
 ---
 
-## Foundations
+## Foundations — Phase 2
 
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
+| Document | Status | Description |
+|----------|--------|-------------|
+| [Phase 2 Index](../../domains/foundations/README.md) | Published | Module hub and learning path |
+| [AI Engineering Overview](../../domains/foundations/ai-engineering-overview.md) | Published | Role definition, stack, production principles |
+| [Software Engineering for AI](../../domains/foundations/software-engineering-for-ai.md) | Published | Clean architecture, SOLID, patterns |
+| [AI Application Lifecycle](../../domains/foundations/ai-application-lifecycle.md) | Published | Idea to iteration lifecycle |
+| [Development Workflow](../../domains/foundations/development-workflow.md) | Published | Professional engineering workflow |
+| [Configuration and Secrets](../../domains/foundations/configuration-and-secrets.md) | Published | Env vars, secrets, Pydantic settings |
+| [Testing Fundamentals](../../domains/foundations/testing-fundamentals.md) | Published | pytest, mocking, API testing |
+| [Git and GitHub Workflow](../../domains/foundations/git-github-workflow.md) | Published | Branching, PRs, CI/CD, releases |
+| [Engineering Best Practices](../../domains/foundations/engineering-best-practices.md) | Published | Code reviews, naming, maintainability |
 
 [Domain index →](../../domains/foundations/README.md)
 
@@ -42,41 +50,43 @@
 
 ### Python Engineering
 
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
+| Document | Status | Description |
+|----------|--------|-------------|
+| [Python for AI Engineering](../../domains/python-engineering/python-for-ai-engineering.md) | Published | Async, typing, Pydantic, project layout |
 
 [Domain index →](../../domains/python-engineering/README.md)
 
 ### Backend Engineering
 
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
+| Document | Status | Description |
+|----------|--------|-------------|
+| [Backend Fundamentals for AI](../../domains/backend-engineering/backend-fundamentals-for-ai.md) | Published | Request lifecycle, middleware, async, streaming |
 
 [Domain index →](../../domains/backend-engineering/README.md)
 
 ### APIs
 
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
+| Document | Status | Description |
+|----------|--------|-------------|
+| [HTTP Fundamentals for AI](../../domains/apis/http-fundamentals-for-ai.md) | Published | REST, auth, JWT, streaming, rate limiting |
 
 [Domain index →](../../domains/apis/README.md)
 
 ### FastAPI
 
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
+| Document | Status | Description |
+|----------|--------|-------------|
+| [FastAPI Foundation](../../domains/fastapi/fastapi-foundation.md) | Published | FastAPI patterns for AI applications |
 
 [Domain index →](../../domains/fastapi/README.md)
 
 ### Databases
 
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
+| Document | Status | Description |
+|----------|--------|-------------|
+| [Databases for AI Applications](../../domains/databases/databases-for-ai-applications.md) | Published | SQL, Redis, object storage, vector DB overview |
+| [PostgreSQL for AI](../../domains/databases/postgresql/postgresql-for-ai.md) | Published | pgvector, JSONB, migrations |
+| [Redis for AI](../../domains/databases/redis/redis-for-ai.md) | Published | Caching, rate limiting, sessions |
 
 [Domain index →](../../domains/databases/README.md)
 
@@ -270,9 +280,9 @@
 
 ### Logging
 
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
+| Document | Status | Description |
+|----------|--------|-------------|
+| [Logging and Error Handling](../../domains/logging/logging-and-error-handling.md) | Published | Structured logs, retries, graceful failures |
 
 [Domain index →](../../domains/logging/README.md)
 
@@ -322,9 +332,9 @@
 
 ### Software Architecture
 
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
+| Document | Status | Description |
+|----------|--------|-------------|
+| [Architecture Patterns Foundation](../../domains/software-architecture/architecture-patterns-foundation.md) | Published | Client-server, layered, event-driven, monolith |
 
 [Domain index →](../../domains/software-architecture/README.md)
 
@@ -366,9 +376,9 @@
 
 ### Common Mistakes
 
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
+| Document | Status | Description |
+|----------|--------|-------------|
+| [Common Engineering Mistakes](../../domains/common-mistakes/common-engineering-mistakes.md) | Published | 20 mistakes with bad vs good patterns |
 
 [Domain index →](../../domains/common-mistakes/README.md)
 

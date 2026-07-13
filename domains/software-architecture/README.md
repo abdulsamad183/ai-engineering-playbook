@@ -8,7 +8,7 @@
 
 | Document | Status | Description |
 |----------|--------|-------------|
-| *(No documents yet)* | — | — |
+| [Architecture Patterns Foundation](architecture-patterns-foundation.md) | Published | Client-server, layered, event-driven, microservices, and more |
 
 ---
 

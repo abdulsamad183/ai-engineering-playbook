@@ -8,7 +8,7 @@
 
 | Document | Status | Description |
 |----------|--------|-------------|
-| *(No documents yet)* | — | — |
+| [HTTP Fundamentals for AI](http-fundamentals-for-ai.md) | Published | HTTP, REST, auth, streaming, webhooks, and API security for AI engineers |
 
 ---
 

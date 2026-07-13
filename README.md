@@ -28,7 +28,7 @@ This is **not** a machine learning research repository or a deep learning theory
 
 | I want to... | Go to... |
 |--------------|----------|
-| Start learning | [Learning Roadmap](meta/roadmap.md) |
+| Start learning | [Phase 2 Foundations](domains/foundations/README.md) → [Learning Roadmap](meta/roadmap.md) |
 | Find a topic | [Master Index](meta/indexes/MASTER-INDEX.md) |
 | Browse by domain | [Domains](domains/README.md) |
 | Write a new document | [Templates](meta/templates/) + [Style Guide](meta/style-guide.md) |
@@ -134,12 +134,12 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow. Summary:
 
 ## Roadmap
 
-### Foundation (Current)
+### Foundation (Phase 2 — Complete)
 
 - [x] Repository structure and domain scaffolding
 - [x] Documentation standards and 18 templates
 - [x] Indexing system and learning roadmap
-- [x] Asset and example organization
+- [x] **Phase 2: AI Engineering Foundations** (15 topics, 18 documents, 6 code examples)
 
 ### Phase 1: Core Content
 

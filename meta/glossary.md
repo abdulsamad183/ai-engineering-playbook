@@ -10,6 +10,9 @@
 ### Agent
 An AI system that autonomously plans and executes tasks using an LLM for reasoning and tools for action. See [AI Agents](../domains/ai-agents/).
 
+### AI Engineering
+The discipline of designing, building, deploying, evaluating, and maintaining software systems that integrate AI models into production applications. See [AI Engineering Overview](../domains/foundations/ai-engineering-overview.md).
+
 ### Agent Loop
 The iterative cycle of an agent: receive input → reason → select tool → execute → observe result → repeat or respond.
 
@@ -41,6 +44,12 @@ Splitting documents into smaller segments for embedding and retrieval. See [Embe
 
 ### Context Engineering
 The practice of designing and managing what information an LLM sees in its context window. See [Context Engineering](../domains/context-engineering/).
+
+### Clean Architecture
+Software architecture pattern that separates business logic from frameworks and infrastructure via dependency inversion. AI orchestration lives in the domain layer. See [Software Engineering for AI](../domains/foundations/software-engineering-for-ai.md).
+
+### Connection Pooling
+Reusing a pool of pre-established database connections to avoid connection setup overhead on every request. Critical for AI apps that hold connections during slow LLM calls. See [Databases for AI](../domains/databases/databases-for-ai-applications.md).
 
 ### Context Window
 The maximum number of tokens an LLM can process in a single request (input + output combined).
@@ -110,6 +119,13 @@ The process of loading, processing, chunking, embedding, and storing documents f
 
 ---
 
+## J
+
+### JWT (JSON Web Token)
+Compact, URL-safe token format for transmitting claims between parties. Commonly used for stateless API authentication. See [HTTP Fundamentals for AI](../domains/apis/http-fundamentals-for-ai.md).
+
+---
+
 ## L
 
 ### LLM (Large Language Model)
@@ -132,6 +148,9 @@ Architecture where multiple specialized agents collaborate to solve complex task
 
 ## O
 
+### OAuth
+Open authorization standard for delegated access — allowing applications to access resources on behalf of a user without sharing credentials. See [HTTP Fundamentals for AI](../domains/apis/http-fundamentals-for-ai.md).
+
 ### Observability
 The ability to understand system behavior through logs, metrics, and traces. See [Observability](../domains/observability/).
 
@@ -152,6 +171,12 @@ A reusable prompt template for a specific use case. See [Prompts](../prompts/).
 
 ## R
 
+### Repository Pattern
+Design pattern that abstracts data access behind a domain-friendly interface, enabling swappable storage implementations and testable services. See [Software Engineering for AI](../domains/foundations/software-engineering-for-ai.md).
+
+### REST (Representational State Transfer)
+Architectural style for designing networked APIs using HTTP methods, stateless requests, and resource-based URLs. See [HTTP Fundamentals for AI](../domains/apis/http-fundamentals-for-ai.md).
+
 ### RAG (Retrieval Augmented Generation)
 Architecture pattern that retrieves relevant context from a knowledge base before generating a response. See [RAG](../domains/rag/).
 
@@ -165,8 +190,14 @@ Agent pattern combining Reasoning and Acting — the agent alternates between th
 
 ## S
 
+### Service Layer
+Application layer that orchestrates domain logic and coordinates between repositories and external services. Routes delegate to services; services do not know about HTTP. See [Software Engineering for AI](../domains/foundations/software-engineering-for-ai.md).
+
 ### Semantic Search
 Search based on meaning rather than exact keyword matching, powered by embeddings.
+
+### SSE (Server-Sent Events)
+HTTP-based streaming protocol for pushing real-time updates from server to client. Used for streaming LLM token output. See [HTTP Fundamentals for AI](../domains/apis/http-fundamentals-for-ai.md).
 
 ### Streaming
 Delivering LLM output token-by-token rather than waiting for the complete response.

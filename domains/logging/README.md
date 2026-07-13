@@ -8,7 +8,7 @@
 
 | Document | Status | Description |
 |----------|--------|-------------|
-| *(No documents yet)* | — | — |
+| [Logging and Error Handling](logging-and-error-handling.md) | Published | Structured logging, exception handling, retries, production diagnostics |
 
 ---
 

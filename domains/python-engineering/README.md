@@ -8,7 +8,7 @@
 
 | Document | Status | Description |
 |----------|--------|-------------|
-| *(No documents yet)* | — | — |
+| [Python for AI Engineering](python-for-ai-engineering.md) | published | Production Python patterns — tooling, typing, async, concurrency, and project structure for AI applications |
 
 ---
 

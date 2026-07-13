@@ -8,7 +8,7 @@
 
 | Document | Status | Description |
 |----------|--------|-------------|
-| *(No documents yet)* | — | — |
+| [Common Engineering Mistakes](common-engineering-mistakes.md) | Published | Production reference — 20 engineering mistakes with bad/good examples, checklist, and interview prep |
 
 ---
 
