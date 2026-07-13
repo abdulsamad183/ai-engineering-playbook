@@ -176,11 +176,32 @@
 
 [Domain index →](../../domains/prompt-engineering/README.md)
 
-### Context Engineering
+### Context Engineering — Phase 6
 
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
+| Document | Status | Description |
+|----------|--------|-------------|
+| [Phase 6 Index](../../domains/context-engineering/README.md) | Published | Module hub and learning path |
+| [Introduction to Context Engineering](../../domains/context-engineering/introduction-to-context-engineering.md) | Published | CE as engineering discipline |
+| [Context Architecture](../../domains/context-engineering/context-architecture.md) | Published | Pipeline and component design |
+| [Context Windows](../../domains/context-engineering/context-windows.md) | Published | Application-level window engineering |
+| [Conversation State](../../domains/context-engineering/conversation-state.md) | Published | Session and agent state |
+| [Memory Systems](../../domains/context-engineering/memory-systems.md) | Published | Six memory types |
+| [Conversation History](../../domains/context-engineering/conversation-history.md) | Published | Pruning, summarization, threads |
+| [Context Selection](../../domains/context-engineering/context-selection.md) | Published | Filtering and prioritization |
+| [Context Ranking](../../domains/context-engineering/context-ranking.md) | Published | Hybrid ranking strategies |
+| [Dynamic Context](../../domains/context-engineering/dynamic-context.md) | Published | Runtime context assembly |
+| [Context Compression](../../domains/context-engineering/context-compression.md) | Published | Token reduction techniques |
+| [Long Context Strategies](../../domains/context-engineering/long-context-strategies.md) | Published | Map-reduce, hierarchical, hybrid |
+| [Retrieval Context](../../domains/context-engineering/retrieval-context.md) | Published | Knowledge injection foundation |
+| [Context Budgeting](../../domains/context-engineering/context-budgeting.md) | Published | Token and cost allocation |
+| [Context Caching](../../domains/context-engineering/context-caching.md) | Published | Latency and cost caching |
+| [Context Personalization](../../domains/context-engineering/context-personalization.md) | Published | Profiles and preferences |
+| [Multi-Agent Context Sharing](../../domains/context-engineering/multi-agent-context-sharing.md) | Published | Blackboard and coordination |
+| [Context Quality](../../domains/context-engineering/context-quality.md) | Published | Context metrics |
+| [Context Security](../../domains/context-engineering/context-security.md) | Published | PII, isolation, leakage |
+| [Production Context Engineering](../../domains/context-engineering/production-context-engineering.md) | Published | Observability, A/B testing |
+| [Context Engineering Mistakes](../../domains/context-engineering/context-engineering-mistakes.md) | Published | Troubleshooting guide |
+| [Context Comparison Guides](../../domains/context-engineering/context-comparison-guides.md) | Published | Strategy comparison tables |
 
 [Domain index →](../../domains/context-engineering/README.md)
 

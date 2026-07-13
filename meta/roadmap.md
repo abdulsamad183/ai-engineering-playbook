@@ -101,23 +101,24 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 ---
 
-## Phase 6: Context Engineering
+## Phase 6: Context Engineering (Complete)
 
-**Goal:** Manage what the model sees and remembers.
+**Goal:** Design systems that manage what the model sees within token budgets.
 
 **Duration:** 2–3 weeks
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 6.1 | Context window management | [context-engineering](../../domains/context-engineering/) | Token budgeting, truncation strategies |
-| 6.2 | Conversation memory | [context-engineering](../../domains/context-engineering/) | Short-term, long-term, summarization |
-| 6.3 | System prompt design | [context-engineering](../../domains/context-engineering/) | Layered context, dynamic system prompts |
+| 6.1 | Context engineering handbook | [context-engineering](../../domains/context-engineering/) | 20 sections: architecture through production |
+| 6.2 | Memory and state | [context-engineering](../../domains/context-engineering/memory-systems.md) | Six memory types, conversation state |
+| 6.3 | Selection and ranking | [context-engineering](../../domains/context-engineering/) | Filter, rank, compress, budget |
+| 6.4 | Retrieval context foundation | [context-engineering](../../domains/context-engineering/retrieval-context.md) | Grounding before full RAG phase |
 
-**Milestone:** Implement a conversation system with intelligent context management.
+**Milestone:** Context engine with traced assembly, layered budgets, and retrieval integration. ✅
 
 ---
 
-## Phase 7: Embeddings and Retrieval
+## Phase 7: RAG and Embeddings
 
 **Goal:** Enable semantic search and knowledge retrieval.
 

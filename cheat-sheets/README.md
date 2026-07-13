@@ -39,6 +39,13 @@ Cheat sheets follow the [Cheat Sheet template](../meta/templates/cheat-sheet.md)
 | Prompt Delimiters | prompt-engineering | [prompt-delimiters-cheat-sheet.md](prompt-delimiters-cheat-sheet.md) | Published |
 | XML Prompting | prompt-engineering | [xml-prompting-cheat-sheet.md](xml-prompting-cheat-sheet.md) | Published |
 | JSON Prompting | prompt-engineering | [json-prompting-cheat-sheet.md](json-prompting-cheat-sheet.md) | Published |
+| Context Debugging | context-engineering | [context-debugging-checklist.md](context-debugging-checklist.md) | Published |
+| Context Engineering Workflow | context-engineering | [context-engineering-workflow-cheat-sheet.md](context-engineering-workflow-cheat-sheet.md) | Published |
+| Memory Types | context-engineering | [memory-types-cheat-sheet.md](memory-types-cheat-sheet.md) | Published |
+| Context Budgeting | context-engineering | [context-budgeting-cheat-sheet.md](context-budgeting-cheat-sheet.md) | Published |
+| Context Ranking | context-engineering | [context-ranking-checklist.md](context-ranking-checklist.md) | Published |
+| Context Compression | context-engineering | [context-compression-checklist.md](context-compression-checklist.md) | Published |
+| Context Personalization | context-engineering | [context-personalization-checklist.md](context-personalization-checklist.md) | Published |
 | PostgreSQL | databases/postgresql | Planned |
 | Docker | docker | Planned |
 | LLM API Integration | llm-engineering | Planned |

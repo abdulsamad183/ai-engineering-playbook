@@ -1,5 +1,15 @@
 ## [Unreleased]
 
+## [0.5.0] - 2026-07-13
+
+### Added
+
+- **Phase 6: Context Engineering** — 21 documents forming a complete context engineering handbook
+  - Sections 1–20: introduction through production (architecture, memory, ranking, compression, security)
+  - Comparison guides for context engineering strategies
+- 11 Python examples (memory, assembly, ranking, budgeting, caching, pruning)
+- 7 context engineering cheat sheets
+
 ## [0.4.0] - 2026-07-13
 
 ### Added
@@ -29,7 +39,8 @@
 
 - Repository foundation and Phase 2: AI Engineering Foundations
 
-[Unreleased]: https://github.com/hp/ai-engineering-playbook/compare/v0.4.0...HEAD
+[Unreleased]: https://github.com/hp/ai-engineering-playbook/compare/v0.5.0...HEAD
+[0.5.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v0.5.0
 [0.4.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v0.4.0
 [0.3.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v0.3.0
 [0.2.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v0.2.0

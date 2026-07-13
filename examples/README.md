@@ -17,6 +17,7 @@ examples/
 ├── redis/               # Redis caching patterns
 ├── llm-applications/    # LLM integration examples
 ├── prompt-engineering/  # Prompt patterns and pipelines
+├── context-engineering/ # Context assembly and memory
 ├── rag/                 # RAG pipeline examples
 ├── langgraph/           # LangGraph workflow examples
 ├── mcp/                 # MCP server and client examples

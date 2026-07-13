@@ -43,16 +43,16 @@ Prompting technique where the model shows its reasoning steps before producing a
 Splitting documents into smaller segments for embedding and retrieval. See [Embeddings](../domains/embeddings/).
 
 ### Context Engineering
-The practice of designing and managing what information an LLM sees in its context window. See [Context Engineering](../domains/context-engineering/).
+The discipline of designing systems that determine what information an LLM receives, how it is organized within token budgets, and how it evolves over time. Distinct from prompt engineering. See [Context Engineering](../domains/context-engineering/README.md).
+
+### Context Window
+The maximum number of tokens an LLM can process in a single request (input + output combined). Application-level management is covered in [Context Windows](../domains/context-engineering/context-windows.md).
 
 ### Clean Architecture
 Software architecture pattern that separates business logic from frameworks and infrastructure via dependency inversion. AI orchestration lives in the domain layer. See [Software Engineering for AI](../domains/foundations/software-engineering-for-ai.md).
 
 ### Connection Pooling
 Reusing a pool of pre-established database connections to avoid connection setup overhead on every request. Critical for AI apps that hold connections during slow LLM calls. See [Databases for AI](../domains/databases/databases-for-ai-applications.md).
-
-### Context Window
-The maximum number of tokens an LLM can process in a single request (input + output combined).
 
 ### CI/CD
 Continuous Integration and Continuous Deployment — automated pipelines for testing and deploying code. See [CI/CD](../domains/cicd/).
