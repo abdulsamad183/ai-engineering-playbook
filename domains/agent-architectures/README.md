@@ -1,32 +1,14 @@
 # Agent Architectures
 
-> Agent system design patterns and architectural approaches.
+> Multi-agent and system architecture patterns are documented in Phase 8.
 
----
+## Primary Documentation
 
-## Documents
-
-| Document | Status | Description |
-|----------|--------|-------------|
-| *(No documents yet)* | — | — |
-
----
-
-## Related Domains
-
-- See [domains overview](../README.md) for related domains.
-
-## Templates
-
-When adding content to this domain, use the appropriate [template](../../meta/templates/):
-
-- Concept → `concept.md`
-- Technology → `technology.md`
-- Tutorial → `tutorial.md`
-- Production Guide → `production-guide.md`
+- [Multi-Agent Systems](../ai-agents/multi-agent-systems.md) — supervisor, swarm, debate, blackboard
+- [Agent Case Studies](../ai-agents/agent-case-studies.md) — coding, research, support patterns
+- [Agent Architecture](../ai-agents/agent-architecture.md) — single-agent stack
 
 ## See Also
 
-- [Master Index](../../meta/indexes/MASTER-INDEX.md)
-- [Learning Roadmap](../../meta/roadmap.md)
-- [Contributing Guide](../../CONTRIBUTING.md)
+- [Phase 8 AI Agents](../ai-agents/README.md)
+- [Multi-Agent Systems Domain](../multi-agent-systems/README.md)

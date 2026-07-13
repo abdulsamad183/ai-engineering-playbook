@@ -28,7 +28,7 @@ This is **not** a machine learning research repository or a deep learning theory
 
 | I want to... | Go to... |
 |--------------|----------|
-| Start learning | [Phase 7 RAG](domains/rag/README.md) |
+| Start learning | [Phase 8 AI Agents](domains/ai-agents/README.md) |
 | Find a topic | [Master Index](meta/indexes/MASTER-INDEX.md) |
 | Browse by domain | [Domains](domains/README.md) |
 | Write a new document | [Templates](meta/templates/) + [Style Guide](meta/style-guide.md) |
@@ -167,16 +167,20 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow. Summary:
 
 ### Phase 7: RAG (Complete)
 
-- [x] 29 documents — handbook + 7 vector DB providers
-- [x] 13 Python examples, 9 cheat sheets
+- [x] 29 documents, 13 examples, 9 cheat sheets
 
-### Phase 8: AI Agents
+### Phase 8: AI Agents (Complete)
 
-- [ ] Agent architecture patterns
+- [x] 27 documents (20 sections + 6 frameworks + comparisons)
+- [x] 6 Python examples, 8 cheat sheets
+
+### Phase 9: MCP & Multi-Agent
+
 - [ ] MCP integration guides
-- [ ] Multi-agent systems
+- [ ] A2A protocols
+- [ ] Multi-agent communication depth
 
-### Phase 9: Production AI
+### Phase 10: Production AI
 
 - [ ] Deployment guides (Docker, cloud)
 - [ ] AI evaluation frameworks

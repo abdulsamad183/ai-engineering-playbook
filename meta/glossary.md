@@ -8,7 +8,10 @@
 ## A
 
 ### Agent
-An AI system that autonomously plans and executes tasks using an LLM for reasoning and tools for action. See [AI Agents](../domains/ai-agents/).
+An autonomous software system that pursues goals through perceive-decide-act loops using LLMs for reasoning and tools for action. See [Agent Engineering](../domains/ai-agents/README.md).
+
+### Agent Engineering
+The discipline of designing, orchestrating, evaluating, and operating production AI agent systems. See [AI Agents](../domains/ai-agents/README.md).
 
 ### AI Engineering
 The discipline of designing, building, deploying, evaluating, and maintaining software systems that integrate AI models into production applications. See [AI Engineering Overview](../domains/foundations/ai-engineering-overview.md).

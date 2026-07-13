@@ -8,6 +8,7 @@
 
 | Comparison | Options Covered | Status |
 |------------|----------------|--------|
+| [Agent Strategies](../../domains/ai-agents/agent-comparison-guides.md) | Frameworks, supervisor vs swarm, ReAct vs reflection | Published |
 | [RAG Strategies](../../domains/rag/rag-comparison-guides.md) | Chunking, vector DBs, retrieval, rerankers | Published |
 | [Context Engineering Strategies](../../domains/context-engineering/context-comparison-guides.md) | Prompt vs context, memory, compression | Published |
 | [Prompt Engineering Strategies](../../domains/prompt-engineering/prompt-comparison-guides.md) | Zero-shot vs few-shot, XML vs JSON, CoT vs ReAct | Published |

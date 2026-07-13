@@ -255,19 +255,43 @@
 
 [Domain index →](../../domains/rag/README.md)
 
-### AI Agents
+### AI Agents — Phase 8
 
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
+| Document | Status | Description |
+|----------|--------|-------------|
+| [Phase 8 Index](../../domains/ai-agents/README.md) | Published | Agent engineering handbook hub |
+| [Introduction to Agent Engineering](../../domains/ai-agents/introduction-to-agent-engineering.md) | Published | Agents as software discipline |
+| [Agent Architecture](../../domains/ai-agents/agent-architecture.md) | Published | Planner-executor-reflection stack |
+| [Agent Fundamentals](../../domains/ai-agents/agent-fundamentals.md) | Published | Goals, perception, action |
+| [Reasoning Patterns](../../domains/ai-agents/agent-reasoning-patterns.md) | Published | ReAct, reflection, ToT |
+| [Agent Planning](../../domains/ai-agents/agent-planning.md) | Published | Decomposition, replanning |
+| [Agent Memory Systems](../../domains/ai-agents/agent-memory-systems.md) | Published | Layered agent memory |
+| [Tool Use](../../domains/ai-agents/tool-use.md) | Published | Registry, execution, permissions |
+| [Agent State Management](../../domains/ai-agents/agent-state-management.md) | Published | Checkpointing, recovery |
+| [Task Graphs](../../domains/ai-agents/task-graphs.md) | Published | DAG execution |
+| [Event-Driven Agents](../../domains/ai-agents/event-driven-agents.md) | Published | Pub/sub, triggers |
+| [Multi-Agent Systems](../../domains/ai-agents/multi-agent-systems.md) | Published | Supervisor, swarm, debate |
+| [Human-in-the-Loop](../../domains/ai-agents/human-in-the-loop.md) | Published | Approval, escalation |
+| [Agent Communication](../../domains/ai-agents/agent-communication.md) | Published | Coordination patterns |
+| [Agent Frameworks](../../domains/ai-agents/frameworks/README.md) | Published | 6 framework guides |
+| [Build Your Own Framework](../../domains/ai-agents/build-your-own-agent-framework.md) | Published | Minimal agent framework |
+| [Agent Evaluation](../../domains/ai-agents/agent-evaluation.md) | Published | Task success, tool accuracy |
+| [Production Agent Engineering](../../domains/ai-agents/production-agent-engineering.md) | Published | Observability, scaling |
+| [Agent Security](../../domains/ai-agents/agent-security.md) | Published | Sandboxing, injection |
+| [Agent Engineering Mistakes](../../domains/ai-agents/agent-engineering-mistakes.md) | Published | Troubleshooting |
+| [Agent Case Studies](../../domains/ai-agents/agent-case-studies.md) | Published | Coding, research, support |
+| [Agent Comparison Guides](../../domains/ai-agents/agent-comparison-guides.md) | Published | Framework & pattern matrices |
 
 [Domain index →](../../domains/ai-agents/README.md)
 
 ### Agent Architectures
 
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
+| Document | Status | Description |
+|----------|--------|-------------|
+| [Multi-Agent Systems](../../domains/ai-agents/multi-agent-systems.md) | Published | Architecture catalog (Phase 8) |
+| [Agent Case Studies](../../domains/ai-agents/agent-case-studies.md) | Published | Real-world patterns |
+
+[Domain index →](../../domains/agent-architectures/README.md)
 
 [Domain index →](../../domains/agent-architectures/README.md)
 

@@ -1,18 +1,14 @@
-# Agents Examples
+# Agent Engineering Examples
 
-> Runnable code examples for Agents.
+> Phase 8 patterns. See [AI Agents](../../domains/ai-agents/README.md).
 
----
+| Example | Pattern |
+|---------|---------|
+| [example-single-agent-react.py](example-single-agent-react.py) | ReAct loop |
+| [example-tool-agent.py](example-tool-agent.py) | Tool registry |
+| [example-custom-agent-framework.py](example-custom-agent-framework.py) | BYO framework |
+| [example-supervisor-pattern.py](example-supervisor-pattern.py) | Supervisor multi-agent |
+| [example-debate-pattern.py](example-debate-pattern.py) | Debate pattern |
+| [example-human-approval.py](example-human-approval.py) | HITL approval queue |
 
-## Examples
-
-| Example | Description | Status |
-|---------|-------------|--------|
-| *(No examples yet)* | — | — |
-
----
-
-## See Also
-
-- [Examples Overview](../README.md)
-- [Contributing Guide](../../CONTRIBUTING.md#adding-code-examples)
+Framework guides: [frameworks/](../../domains/ai-agents/frameworks/)

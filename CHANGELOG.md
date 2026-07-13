@@ -1,5 +1,15 @@
 ## [Unreleased]
 
+## [0.7.0] - 2026-07-13
+
+### Added
+
+- **Phase 8: AI Agents & Agent Engineering** — 27 documents
+  - Sections 1–20: introduction through case studies
+  - 6 framework guides (LangGraph, CrewAI, AutoGen, Semantic Kernel, PydanticAI, OpenAI Agents SDK)
+  - Build-your-own-agent-framework reference
+- 6 Python agent examples, 8 cheat sheets
+
 ## [0.6.0] - 2026-07-13
 
 ### Added
@@ -50,7 +60,8 @@
 
 - Repository foundation and Phase 2: AI Engineering Foundations
 
-[Unreleased]: https://github.com/hp/ai-engineering-playbook/compare/v0.6.0...HEAD
+[Unreleased]: https://github.com/hp/ai-engineering-playbook/compare/v0.7.0...HEAD
+[0.7.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v0.7.0
 [0.6.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v0.6.0
 [0.5.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v0.5.0
 [0.4.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v0.4.0

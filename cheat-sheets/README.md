@@ -56,6 +56,14 @@ Cheat sheets follow the [Cheat Sheet template](../meta/templates/cheat-sheet.md)
 | RAG Production | rag | [rag-production-deployment-checklist.md](rag-production-deployment-checklist.md) | Published |
 | RAG Hallucination Debug | rag | [rag-hallucination-debugging-checklist.md](rag-hallucination-debugging-checklist.md) | Published |
 | RAG Performance | rag | [rag-performance-optimization-checklist.md](rag-performance-optimization-checklist.md) | Published |
+| Agent Lifecycle | ai-agents | [agent-lifecycle-cheat-sheet.md](agent-lifecycle-cheat-sheet.md) | Published |
+| Agent Planning | ai-agents | [agent-planning-checklist.md](agent-planning-checklist.md) | Published |
+| Agent Memory | ai-agents | [agent-memory-checklist.md](agent-memory-checklist.md) | Published |
+| Agent Tool Design | ai-agents | [agent-tool-design-checklist.md](agent-tool-design-checklist.md) | Published |
+| Multi-Agent Selection | ai-agents | [multi-agent-architecture-selection-cheat-sheet.md](multi-agent-architecture-selection-cheat-sheet.md) | Published |
+| Agent Framework Selection | ai-agents | [agent-framework-selection-cheat-sheet.md](agent-framework-selection-cheat-sheet.md) | Published |
+| Agent Production | ai-agents | [agent-production-deployment-checklist.md](agent-production-deployment-checklist.md) | Published |
+| Agent Debugging | ai-agents | [agent-debugging-checklist.md](agent-debugging-checklist.md) | Published |
 | PostgreSQL | databases/postgresql | Planned |
 | Docker | docker | Planned |
 | LLM API Integration | llm-engineering | Planned |

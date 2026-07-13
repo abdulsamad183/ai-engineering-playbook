@@ -135,23 +135,21 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 ---
 
-## Phase 8: AI Agents
+## Phase 8: AI Agents (Complete)
 
-**Goal:** Build autonomous AI agents that use tools and reason.
+**Goal:** Build production autonomous agent systems.
 
-**Duration:** 4–6 weeks
+| Order | Topic | Outcomes |
+|-------|-------|----------|
+| 8.1 | Agent handbook | 20 sections + frameworks |
+| 8.2 | Multi-agent patterns | Supervisor, swarm, HITL |
+| 8.3 | BYO framework | Minimal extensible core |
 
-| Order | Topic | Domain | Key Outcomes |
-|-------|-------|--------|-------------|
-| 8.1 | Agent architecture | [ai-agents](../../domains/ai-agents/) | ReAct, planning, tool use |
-| 8.2 | MCP integration | [mcp](../../domains/mcp/) | Tool servers and clients |
-| 8.3 | Multi-agent systems | [multi-agent-systems](../../domains/multi-agent-systems/) | Coordination patterns |
-
-**Milestone:** Deploy an agent with RAG tools and observability.
+**Milestone:** ReAct agent with eval suite and HITL. ✅
 
 ---
 
-## Phase 9: Production AI
+## Phase 9: MCP & A2A
 
 **Goal:** Deploy, evaluate, and operate AI systems in production.
 

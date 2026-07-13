@@ -19,6 +19,7 @@ examples/
 ├── prompt-engineering/  # Prompt patterns and pipelines
 ├── context-engineering/ # Context assembly and memory
 ├── rag/                 # RAG pipeline examples
+├── agents/              # AI agent patterns
 ├── langgraph/           # LangGraph workflow examples
 ├── mcp/                 # MCP server and client examples
 ├── agents/              # AI agent examples
