@@ -73,6 +73,15 @@ Cheat sheets follow the [Cheat Sheet template](../meta/templates/cheat-sheet.md)
 | MCP Client Implementation | mcp | [mcp-client-implementation-checklist.md](mcp-client-implementation-checklist.md) | Published |
 | MCP Security | mcp | [mcp-security-checklist.md](mcp-security-checklist.md) | Published |
 | MCP Debugging | mcp | [mcp-debugging-checklist.md](mcp-debugging-checklist.md) | Published |
+| Evaluation Workflow | ai-evaluation | [evaluation-workflow-cheat-sheet.md](evaluation-workflow-cheat-sheet.md) | Published |
+| Metric Selection | ai-evaluation | [metric-selection-cheat-sheet.md](metric-selection-cheat-sheet.md) | Published |
+| RAG Evaluation | ai-evaluation | [rag-evaluation-checklist.md](rag-evaluation-checklist.md) | Published |
+| Prompt Evaluation | ai-evaluation | [prompt-evaluation-checklist.md](prompt-evaluation-checklist.md) | Published |
+| Agent Evaluation | ai-evaluation | [agent-evaluation-checklist.md](agent-evaluation-checklist.md) | Published |
+| Latency Evaluation | ai-evaluation | [latency-evaluation-checklist.md](latency-evaluation-checklist.md) | Published |
+| Cost Evaluation | ai-evaluation | [cost-evaluation-checklist.md](cost-evaluation-checklist.md) | Published |
+| A/B Testing | ai-evaluation | [ab-testing-checklist.md](ab-testing-checklist.md) | Published |
+| Production Evaluation | ai-evaluation | [production-evaluation-readiness-checklist.md](production-evaluation-readiness-checklist.md) | Published |
 | PostgreSQL | databases/postgresql | Planned |
 | Docker | docker | Planned |
 | LLM API Integration | llm-engineering | Planned |

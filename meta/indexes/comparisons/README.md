@@ -8,6 +8,7 @@
 
 | Comparison | Options Covered | Status |
 |------------|----------------|--------|
+| [AI Evaluation Strategies](../../domains/ai-evaluation/ai-evaluation-comparison-guides.md) | Offline vs online, RAGAS vs DeepEval, metrics | Published |
 | [MCP Strategies](../../domains/mcp/mcp-comparison-guides.md) | MCP vs REST, transports, primitives, auth | Published |
 | [Agent Strategies](../../domains/ai-agents/agent-comparison-guides.md) | Frameworks, supervisor vs swarm, ReAct vs reflection | Published |
 | [RAG Strategies](../../domains/rag/rag-comparison-guides.md) | Chunking, vector DBs, retrieval, rerankers | Published |

@@ -1,10 +1,12 @@
 # RAG Evaluation Checklist
 
-- [ ] Golden set ≥100 questions with gold doc IDs
-- [ ] recall@5 and MRR tracked in CI
-- [ ] RAGAS or custom faithfulness eval
-- [ ] Separate retrieval vs generation failures
-- [ ] Regression gate on index/prompt changes
-- [ ] Human audit sample weekly
+- [ ] Golden set with questions + relevant doc IDs
+- [ ] Retrieval recall@k and context precision
+- [ ] Faithfulness and answer relevance
+- [ ] Citation accuracy (if applicable)
+- [ ] Index version pinned per run
+- [ ] RAGAS or equivalent nightly job
+- [ ] Online sample async scoring
+- [ ] Human review queue for low faithfulness
 
-See [RAG Evaluation](../domains/rag/rag-evaluation.md).
+See [RAG Evaluation](../domains/ai-evaluation/rag-evaluation.md).

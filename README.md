@@ -28,7 +28,7 @@ This is **not** a machine learning research repository or a deep learning theory
 
 | I want to... | Go to... |
 |--------------|----------|
-| Start learning | [Phase 9 MCP](domains/mcp/README.md) |
+| Start learning | [Phase 10 AI Evaluation](domains/ai-evaluation/README.md) |
 | Find a topic | [Master Index](meta/indexes/MASTER-INDEX.md) |
 | Browse by domain | [Domains](domains/README.md) |
 | Write a new document | [Templates](meta/templates/) + [Style Guide](meta/style-guide.md) |
@@ -179,16 +179,16 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow. Summary:
 - [x] 21 documents (20 sections + comparisons)
 - [x] 13 Python examples, 9 cheat sheets
 
-### Phase 10: A2A & Multi-Agent Protocols
+### Phase 10: AI Evaluation & LLMOps (Complete)
 
-- [ ] A2A protocols
-- [ ] Multi-agent communication depth
+- [x] 26 documents (20 sections + 5 frameworks + comparisons)
+- [x] 12 Python examples, 9 cheat sheets
 
-### Phase 10: Production AI
+### Phase 11: Production AI & Observability
 
 - [ ] Deployment guides (Docker, cloud)
-- [ ] AI evaluation frameworks
 - [ ] Advanced observability and safety
+- [ ] A2A protocols
 
 ### Ongoing Depth
 

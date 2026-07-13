@@ -165,7 +165,23 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 ---
 
-## Phase 10: AI Workflows and Multi-Agent Systems
+## Phase 10: AI Evaluation & LLMOps Evaluation
+
+**Goal:** Design, implement, automate, and monitor evaluation pipelines for production AI systems.
+
+**Duration:** 3–4 weeks
+
+| Order | Topic | Domain | Key Outcomes |
+|-------|-------|--------|-------------|
+| 10.1 | Evaluation handbook | [ai-evaluation](../../domains/ai-evaluation/) | 20 sections + frameworks |
+| 10.2 | RAG & agent eval | [ai-evaluation](../../domains/ai-evaluation/) | RAGAS, metrics, golden sets |
+| 10.3 | Continuous eval | [ai-evaluation](../../domains/ai-evaluation/) | CI/CD, A/B, dashboards |
+
+**Milestone:** Golden dataset + CI regression gate + quality dashboard. ✅
+
+---
+
+## Phase 11: AI Workflows and Multi-Agent Systems
 
 **Goal:** Orchestrate complex AI processes and multi-agent collaboration.
 
@@ -173,30 +189,12 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 10.1 | Workflow orchestration | [ai-workflows](../../domains/ai-workflows/) | State machines, DAGs, conditional routing |
-| 10.2 | LangGraph and frameworks | [ai-workflows](../../domains/ai-workflows/) | Graph-based agent workflows |
-| 10.3 | Multi-agent systems | [multi-agent-systems](../../domains/multi-agent-systems/) | Delegation, handoffs, collaboration patterns |
-| 10.4 | Human-in-the-loop | [ai-workflows](../../domains/ai-workflows/) | Approval flows, feedback integration |
+| 11.1 | Workflow orchestration | [ai-workflows](../../domains/ai-workflows/) | State machines, DAGs, conditional routing |
+| 11.2 | LangGraph and frameworks | [ai-workflows](../../domains/ai-workflows/) | Graph-based agent workflows |
+| 11.3 | Multi-agent systems | [multi-agent-systems](../../domains/multi-agent-systems/) | Delegation, handoffs, collaboration patterns |
+| 11.4 | Human-in-the-loop | [ai-workflows](../../domains/ai-workflows/) | Approval flows, feedback integration |
 
 **Milestone:** Build a multi-agent workflow with human-in-the-loop approval.
-
----
-
-## Phase 11: AI Evaluation
-
-**Goal:** Measure and improve AI system quality systematically.
-
-**Duration:** 3–4 weeks
-
-| Order | Topic | Domain | Key Outcomes |
-|-------|-------|--------|-------------|
-| 11.1 | Evaluation fundamentals | [ai-evaluation](../../domains/ai-evaluation/) | Metrics, datasets, benchmarks |
-| 11.2 | LLM-as-judge | [ai-evaluation](../../domains/ai-evaluation/) | Automated evaluation with LLMs |
-| 11.3 | RAG evaluation | [ai-evaluation](../../domains/ai-evaluation/) | Retrieval and generation metrics |
-| 11.4 | Agent evaluation | [ai-evaluation](../../domains/ai-evaluation/) | Task completion, tool use accuracy |
-| 11.5 | Continuous evaluation | [ai-evaluation](../../domains/ai-evaluation/) | Regression testing, eval in CI/CD |
-
-**Milestone:** Create an evaluation suite that runs in CI and catches regressions.
 
 ---
 

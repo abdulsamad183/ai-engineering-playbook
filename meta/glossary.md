@@ -77,8 +77,20 @@ Containerization platform for packaging applications with their dependencies. Se
 ### Embedding
 A dense vector representation of text (or other data) that captures semantic meaning. See [Embeddings](../domains/embeddings/).
 
-### Evaluation
-Systematic measurement of AI system quality using metrics, benchmarks, and test datasets. See [AI Evaluation](../domains/ai-evaluation/).
+### AI Evaluation
+Systematic measurement of AI system quality — LLMs, prompts, RAG, agents, latency, cost, and business impact — using metrics, benchmarks, golden datasets, and continuous monitoring. See [AI Evaluation Handbook](../domains/ai-evaluation/README.md).
+
+### LLMOps
+Operational practices for deploying and maintaining LLM applications: versioning, evaluation, monitoring, and continuous improvement. See [Introduction to AI Evaluation](../domains/ai-evaluation/introduction-to-ai-evaluation.md).
+
+### Golden Dataset
+Curated, versioned evaluation set with ground truth used for regression testing and quality gates. See [Evaluation Datasets](../domains/ai-evaluation/evaluation-datasets.md).
+
+### Faithfulness (RAG)
+Metric measuring whether generated answers are supported by retrieved context. See [LLM Evaluation Metrics](../domains/ai-evaluation/llm-evaluation-metrics.md).
+
+### RAGAS
+Retrieval Augmented Generation Assessment framework for RAG pipeline metrics. See [RAGAS Guide](../domains/ai-evaluation/frameworks/ragas.md).
 
 ---
 

@@ -352,11 +352,33 @@
 
 ## Production
 
-### AI Evaluation
+### AI Evaluation — Phase 10
 
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
+| Document | Status | Description |
+|----------|--------|-------------|
+| [Phase 10 Index](../../domains/ai-evaluation/README.md) | Published | AI evaluation handbook hub |
+| [Introduction to AI Evaluation](../../domains/ai-evaluation/introduction-to-ai-evaluation.md) | Published | Offline vs online, LLMOps |
+| [Evaluation Architecture](../../domains/ai-evaluation/evaluation-architecture.md) | Published | End-to-end pipeline |
+| [Evaluation Datasets](../../domains/ai-evaluation/evaluation-datasets.md) | Published | Golden sets, versioning |
+| [Core Metrics](../../domains/ai-evaluation/core-metrics.md) | Published | Accuracy, F1, BLEU, ROUGE |
+| [LLM Evaluation Metrics](../../domains/ai-evaluation/llm-evaluation-metrics.md) | Published | Faithfulness, relevance |
+| [Hallucination Detection](../../domains/ai-evaluation/hallucination-detection.md) | Published | Types and strategies |
+| [RAG Evaluation](../../domains/ai-evaluation/rag-evaluation.md) | Published | RAGAS, retrieval metrics |
+| [Prompt Evaluation](../../domains/ai-evaluation/prompt-evaluation.md) | Published | Regression, robustness |
+| [Agent Evaluation](../../domains/ai-evaluation/agent-evaluation.md) | Published | Task completion, tools |
+| [Evaluation Frameworks](../../domains/ai-evaluation/evaluation-frameworks.md) | Published | Framework selection |
+| [Human Evaluation](../../domains/ai-evaluation/human-evaluation.md) | Published | Rubrics, agreement |
+| [Latency Evaluation](../../domains/ai-evaluation/latency-evaluation.md) | Published | P95, TTFT budgets |
+| [Cost Evaluation](../../domains/ai-evaluation/cost-evaluation.md) | Published | Token and infra cost |
+| [Benchmarking](../../domains/ai-evaluation/benchmarking.md) | Published | Public and internal benches |
+| [A/B Testing](../../domains/ai-evaluation/ab-testing.md) | Published | Experiments, canary |
+| [Continuous Evaluation](../../domains/ai-evaluation/continuous-evaluation.md) | Published | CI/CD, drift detection |
+| [Evaluation Dashboards](../../domains/ai-evaluation/evaluation-dashboards.md) | Published | Quality and exec views |
+| [Production Evaluation](../../domains/ai-evaluation/production-evaluation.md) | Published | Scale, governance |
+| [Evaluation Mistakes](../../domains/ai-evaluation/evaluation-mistakes.md) | Published | Troubleshooting |
+| [Evaluation Case Studies](../../domains/ai-evaluation/evaluation-case-studies.md) | Published | Real-world patterns |
+| [Comparison Guides](../../domains/ai-evaluation/ai-evaluation-comparison-guides.md) | Published | Decision matrices |
+| [Framework Guides](../../domains/ai-evaluation/frameworks/README.md) | Published | RAGAS, DeepEval, etc. |
 
 [Domain index →](../../domains/ai-evaluation/README.md)
 

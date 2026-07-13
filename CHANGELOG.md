@@ -1,5 +1,16 @@
 ## [Unreleased]
 
+## [0.9.0] - 2026-07-13
+
+### Added
+
+- **Phase 10: AI Evaluation & LLMOps Evaluation** — 26 documents
+  - Sections 1–20: introduction through case studies
+  - 5 framework guides (RAGAS, DeepEval, LangSmith, Phoenix, OpenAI Evals)
+  - Comparison guides and production evaluation coverage
+- 12 Python evaluation examples
+- 9 evaluation cheat sheets
+
 ## [0.8.0] - 2026-07-13
 
 ### Added
@@ -70,7 +81,8 @@
 
 - Repository foundation and Phase 2: AI Engineering Foundations
 
-[Unreleased]: https://github.com/hp/ai-engineering-playbook/compare/v0.8.0...HEAD
+[Unreleased]: https://github.com/hp/ai-engineering-playbook/compare/v0.9.0...HEAD
+[0.9.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v0.9.0
 [0.8.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v0.8.0
 [0.7.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v0.7.0
 [0.6.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v0.6.0
