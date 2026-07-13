@@ -1,238 +1,203 @@
 # AI Engineering Playbook
 
-> A production-oriented knowledge base for building, deploying, evaluating, and maintaining modern AI-powered applications.
+> A production-oriented handbook for building, deploying, evaluating, and operating modern AI applications.
+
+**New here?** Pick one path below — every link goes to a module hub with its own table of contents.
 
 ---
 
-## Vision
+## Start Here
 
-The AI Engineering Playbook is a long-term, curated knowledge base designed to grow over years into a comprehensive reference for AI engineers. It is structured like the internal documentation of an experienced AI engineering team — not a collection of notes, but a systematic, discoverable, and maintainable engineering resource.
+Choose what you need right now:
 
-**This repository focuses on what AI engineers actually do:** integrate LLMs, build RAG systems, design agents, deploy to production, monitor costs, debug failures, and ship reliable AI-powered software.
+| Your goal | Go here | What you'll find |
+|-----------|---------|------------------|
+| **Learn AI engineering** (structured path) | [Learning Roadmap](meta/roadmap.md) | Phases 1–15 in order, with milestones |
+| **Learn a specific topic** | [Handbooks below ↓](#complete-handbooks) | 15 complete modules — jump to any topic |
+| **Build something today** | [Engineering Templates](templates/README.md) | Copy-paste FastAPI, RAG, agent, MCP starters |
+| **Prepare for interviews** | [Interview Handbook](domains/interview-preparation/README.md) | Coding, system design, RAG, agents, mocks |
+| **Look something up fast** | [Cheat Sheets](cheat-sheets/README.md) | One-page references for 90+ topics |
+| **Find any document** | [Master Index](meta/indexes/MASTER-INDEX.md) | Full searchable index of all content |
+
+---
+
+## Complete Handbooks
+
+These are the **main learning modules**. Each hub has sections, examples, and cross-links — start at the README in each folder.
+
+### Foundations & Backend
+
+| Topic | Handbook | Best for |
+|-------|----------|----------|
+| AI engineering basics | [Foundations](domains/foundations/README.md) | Lifecycle, testing, Git, config, best practices |
+| Python for AI | [Python Engineering](domains/python-engineering/README.md) | Async, typing, Pydantic, project layout |
+| Backend patterns | [Backend Engineering](domains/backend-engineering/README.md) | Architecture, HTTP clients, validation, errors |
+| APIs & HTTP | [APIs](domains/apis/README.md) | REST, auth, JWT, streaming, rate limiting |
+| FastAPI | [FastAPI](domains/fastapi/README.md) | Routes, DI, middleware, AI endpoints |
+| Databases | [Databases](domains/databases/README.md) | PostgreSQL, Redis, pgvector, SQLAlchemy |
+
+### LLM Systems
+
+| Topic | Handbook | Best for |
+|-------|----------|----------|
+| LLM integration | [LLM Engineering](domains/llm-engineering/README.md) | Tokens, inference, tools, providers, cost |
+| Prompt design | [Prompt Engineering](domains/prompt-engineering/README.md) | Patterns, testing, versioning, security |
+| Context & memory | [Context Engineering](domains/context-engineering/README.md) | Windows, ranking, compression, budgeting |
+
+### Retrieval & Agents
+
+| Topic | Handbook | Best for |
+|-------|----------|----------|
+| RAG pipelines | [RAG](domains/rag/README.md) | Chunking, retrieval, reranking, evaluation |
+| AI agents | [AI Agents](domains/ai-agents/README.md) | Planning, tools, memory, frameworks |
+| MCP protocol | [MCP](domains/mcp/README.md) | Servers, clients, transports, security |
+
+### Production & Design
+
+| Topic | Handbook | Best for |
+|-------|----------|----------|
+| Evaluation & LLMOps | [AI Evaluation](domains/ai-evaluation/README.md) | Metrics, RAGAS, regression, CI gates |
+| System design | [AI System Design](domains/ai-system-design/README.md) | Architecture, scaling, case studies |
+| Deployment & ops | [Production AI](domains/ai-deployment/README.md) | Docker, CI/CD, monitoring, incidents |
+
+### Research & Career
+
+| Topic | Handbook | Best for |
+|-------|----------|----------|
+| Research papers (engineering view) | [AI Research Papers](domains/papers/README.md) | Transformers, ReAct, RAG papers, DSPy |
+| Interview preparation | [Interview Handbook](domains/interview-preparation/README.md) | Technical + behavioral + mock interviews |
+
+> **More domains** (workflows, cloud, safety, etc.) are listed in [Domains Overview](domains/README.md). Handbooks above are fully published; others are planned.
+
+---
+
+## Recommended Learning Order
+
+Follow this if you want a **sequential path** from zero to production:
+
+```
+Foundations → Backend & FastAPI → LLM Engineering → Prompt Engineering
+    → Context Engineering → RAG → AI Agents → MCP
+    → AI Evaluation → System Design → Production AI
+```
+
+| Step | Module | Link |
+|------|--------|------|
+| 1 | Foundations | [domains/foundations/](domains/foundations/README.md) |
+| 2 | Backend + FastAPI | [domains/backend-engineering/](domains/backend-engineering/README.md) · [domains/fastapi/](domains/fastapi/README.md) |
+| 3 | LLM Engineering | [domains/llm-engineering/](domains/llm-engineering/README.md) |
+| 4 | Prompt Engineering | [domains/prompt-engineering/](domains/prompt-engineering/README.md) |
+| 5 | Context Engineering | [domains/context-engineering/](domains/context-engineering/README.md) |
+| 6 | RAG | [domains/rag/](domains/rag/README.md) |
+| 7 | AI Agents | [domains/ai-agents/](domains/ai-agents/README.md) |
+| 8 | MCP | [domains/mcp/](domains/mcp/README.md) |
+| 9 | Evaluation | [domains/ai-evaluation/](domains/ai-evaluation/README.md) |
+| 10 | System Design | [domains/ai-system-design/](domains/ai-system-design/README.md) |
+| 11 | Production | [domains/ai-deployment/](domains/ai-deployment/README.md) |
+
+[Full roadmap with timelines and milestones →](meta/roadmap.md)
+
+---
+
+## Build Toolkit
+
+Use these when you are **writing code**, not reading theory:
+
+| Resource | Link | Contents |
+|----------|------|----------|
+| **Starter templates** | [templates/](templates/README.md) | FastAPI, RAG, agent, MCP, Docker, CI/CD, deploy configs |
+| **Code examples** | [examples/](examples/README.md) | Runnable Python by topic (RAG, agents, MCP, eval, production) |
+| **Prompt templates** | [prompts/](prompts/README.md) | 16+ parameterized prompts (RAG, agents, SQL, code) |
+| **Common mistakes** | [common-mistakes/](domains/common-mistakes/common-engineering-mistakes.md) | 20 pitfalls with fixes |
+
+### Templates at a glance
+
+| Template | Use when |
+|----------|----------|
+| [FastAPI Starter](templates/engineering/fastapi-starter/README.md) | New AI API service |
+| [RAG Starter](templates/engineering/rag-starter/README.md) | Document Q&A pipeline |
+| [Agent Starter](templates/engineering/agent-starter/README.md) | Tool-using agent |
+| [MCP Starter](templates/engineering/mcp-starter/README.md) | MCP server or client |
+| [Boilerplates](templates/engineering/boilerplates/README.md) | Chat, RAG, SaaS, search apps |
+
+---
+
+## Quick Reference
+
+| Need | Link |
+|------|------|
+| Cheat sheets (90+) | [cheat-sheets/](cheat-sheets/README.md) |
+| Glossary | [meta/glossary.md](meta/glossary.md) |
+| Master index (all docs) | [meta/indexes/MASTER-INDEX.md](meta/indexes/MASTER-INDEX.md) |
+| Topic indexes | [meta/indexes/topics/](meta/indexes/topics/) |
+| Comparison tables | [meta/indexes/comparisons/](meta/indexes/comparisons/) |
+
+---
+
+## I Want To…
+
+Quick answers — no hunting:
+
+| I want to… | Go to |
+|------------|-------|
+| Build a RAG app | [RAG Handbook](domains/rag/README.md) → [RAG Starter](templates/engineering/rag-starter/README.md) → [RAG examples](examples/rag/) |
+| Build an AI agent | [AI Agents Handbook](domains/ai-agents/README.md) → [Agent Starter](templates/engineering/agent-starter/README.md) |
+| Integrate an LLM API | [LLM Engineering](domains/llm-engineering/README.md) → [Provider guides](domains/llm-engineering/README.md#providers-section-15) |
+| Write better prompts | [Prompt Engineering](domains/prompt-engineering/README.md) → [Prompt templates](prompts/templates/) |
+| Deploy to production | [Production AI](domains/ai-deployment/README.md) → [Deployment templates](templates/engineering/deployment/README.md) |
+| Evaluate my AI app | [AI Evaluation](domains/ai-evaluation/README.md) → [Eval templates](templates/engineering/evaluation/README.md) |
+| Design a system (interview) | [System Design](domains/ai-system-design/README.md) → [Interview mocks](domains/interview-preparation/mock-interviews.md) |
+| Understand a research paper | [Research Papers](domains/papers/README.md) → [Comparison guides](domains/papers/research-comparison-guides.md) |
+| Debug a production issue | [Production AI](domains/ai-deployment/README.md) → [Common mistakes](domains/common-mistakes/common-engineering-mistakes.md) |
+
+---
+
+## Repository Map
+
+```
+ai-engineering-playbook/
+├── domains/       ← Handbooks (main content) — start at README in each folder
+├── templates/     ← Production starter code (copy into new projects)
+├── examples/      ← Runnable code snippets by technology
+├── prompts/       ← Reusable prompt templates
+├── cheat-sheets/  ← One-page quick references
+├── meta/          ← Roadmap, glossary, indexes, style guide
+├── knowledge/     ← Lessons learned, ADRs, benchmarks
+├── projects/      ← Case studies
+└── assets/        ← Diagrams and images
+```
+
+[How the repository is designed →](meta/architecture-overview.md)
 
 ---
 
 ## Who This Is For
 
-- **AI Engineers** building production LLM applications, agents, and RAG systems
-- **Backend Engineers** transitioning into AI application development
-- **Software Engineers** who need practical AI integration knowledge
-- **Technical Leaders** designing AI system architectures
-- **Anyone** preparing for AI engineering interviews or roles
+- **AI Engineers** shipping LLM apps, RAG, and agents to production
+- **Backend Engineers** adding AI to existing systems
+- **Technical Leaders** designing AI architectures
+- **Interview candidates** preparing for AI engineering roles
 
-This is **not** a machine learning research repository or a deep learning theory course. ML/DL concepts appear only where they directly support practical engineering workflows.
-
----
-
-## Quick Navigation
-
-| I want to... | Go to... |
-|--------------|----------|
-| Start learning | [Interview Handbook](domains/interview-preparation/README.md) |
-| Copy starter code | [Engineering Templates](templates/README.md) |
-| Research background | [AI Research Papers](domains/papers/README.md) |
-| Find a topic | [Master Index](meta/indexes/MASTER-INDEX.md) |
-| Browse by domain | [Domains](domains/README.md) |
-| Write a new document | [Templates](meta/templates/) + [Style Guide](meta/style-guide.md) |
-| See code examples | [Examples](examples/README.md) |
-| Find prompt templates | [Prompts](prompts/README.md) |
-| Quick reference | [Cheat Sheets](cheat-sheets/README.md) |
-| Read lessons learned | [Personal Knowledge](knowledge/README.md) |
-| Look up a term | [Glossary](meta/glossary.md) |
-| Understand the structure | [Architecture Overview](meta/architecture-overview.md) |
-
----
-
-## Repository Organization
-
-```
-ai-engineering-playbook/
-├── domains/          # 40+ knowledge domains (the core content)
-├── meta/             # Standards, templates, indexes, roadmap
-├── knowledge/        # Personal lessons, mistakes, ADRs, benchmarks
-├── examples/         # Runnable code examples by technology
-├── projects/         # Project case studies
-├── prompts/          # Reusable prompt patterns
-├── cheat-sheets/     # Quick reference cards
-├── templates/        # Production-ready engineering starters
-├── assets/           # Diagrams, images, slides
-└── resources/        # Bookmarks and external links
-```
-
-### Knowledge Domains
-
-Content is organized by **engineering domain**, not by technology:
-
-| Category | Domains |
-|----------|---------|
-| **Foundations** | Python, backend, APIs, databases |
-| **LLM Systems** | LLM engineering, prompts, context, embeddings, vector DBs |
-| **Retrieval & Agents** | RAG, agents, MCP, A2A, workflows, multi-agent |
-| **Production** | Evaluation, safety, deployment, Docker, CI/CD, monitoring, security |
-| **Architecture** | System design, application architecture, patterns |
-| **Operations** | Debugging, incidents, data engineering |
-| **Growth** | Interviews, papers, career, resources |
-
-[Browse all domains →](domains/README.md)
-
----
-
-## Learning Roadmap
-
-The recommended path from programming foundations to production AI systems:
-
-1. Programming foundations (Python, Git, engineering principles)
-2. Backend engineering (HTTP, FastAPI, authentication)
-3. APIs and databases (SQL, PostgreSQL, Redis)
-4. LLM fundamentals (API integration, streaming, model selection)
-5. Prompt engineering (design, structured outputs, patterns)
-6. Context engineering (window management, memory)
-7. Embeddings and retrieval (vectors, chunking, search)
-8. RAG systems (pipelines, evaluation, advanced patterns)
-9. AI agents (tools, architectures, MCP)
-10. AI workflows (orchestration, multi-agent)
-11. Evaluation (metrics, LLM-as-judge, CI integration)
-12. Production deployment (Docker, cloud, CI/CD)
-13. Monitoring and optimization (logging, observability, cost)
-
-[Full roadmap with milestones →](meta/roadmap.md)
-
----
-
-## Philosophy
-
-### Build for Production
-
-Every document considers the path from development to production. Concepts include production checklists, failure modes, and operational guidance — not just "how it works" but "how to run it reliably."
-
-### Domain Over Technology
-
-Domains are named for engineering concepts (`vector-databases/`, `ai-agents/`), not for specific tools (`pinecone/`, `langchain/`). Technologies are indexed and compared within domains. When a new framework emerges, it fits into existing domains without restructuring.
-
-### Experience Is Knowledge
-
-The `knowledge/` directory captures lessons learned, mistakes, architecture decisions, and production experiences. These become increasingly valuable over time and represent real engineering judgment that reference docs cannot provide.
-
-### Consistency at Scale
-
-Templates, style guides, naming conventions, and indexing strategies ensure the repository remains organized after thousands of commits. Every document follows the same structure.
-
-### Extensible by Design
-
-The structure accommodates future technologies — multimodal AI, new agent protocols, inference improvements, new databases — without requiring reorganization. New content extends; it does not restructure.
+This is **not** a machine learning research course. Theory appears only where it helps you build and operate real systems.
 
 ---
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow. Summary:
+1. Pick a [domain](domains/README.md) and copy a [document template](meta/templates/).
+2. Follow the [style guide](meta/style-guide.md).
+3. Add your doc to the domain README and [master index](meta/indexes/MASTER-INDEX.md).
 
-1. Choose or create a domain for your topic.
-2. Copy the appropriate [template](meta/templates/).
-3. Follow the [style guide](meta/style-guide.md) and [naming conventions](meta/naming-conventions.md).
-4. Add your document to the domain index and [master index](meta/indexes/MASTER-INDEX.md).
-5. Register any new tags in the [tag registry](meta/indexes/tags/tag-registry.md).
+[Full contributing guide →](CONTRIBUTING.md)
 
 ---
 
-## Roadmap
+## Project Status
 
-### Foundation (Phase 2 — Complete)
-
-- [x] AI Engineering Foundations (15 topics)
-
-### Phase 3: Backend Engineering (Complete)
-
-- [x] Backend architecture, FastAPI complete guide, API design, auth
-- [x] SQLAlchemy, Alembic, Redis backend patterns
-- [x] Background processing, async, file handling, HTTP clients
-- [x] Validation, error handling, logging, monitoring foundation
-- [x] Configuration, testing, security, performance
-- [x] Project structure, reference architectures, mistakes guide
-- [x] 10 backend templates, 8+ code examples
-
-### Phase 4: LLM Engineering (Complete)
-
-- [x] 26 documents — fundamentals through production (Sections 1–20)
-- [x] 6 provider guides (OpenAI, Gemini, Claude, Groq, OpenRouter, Ollama)
-- [x] 12 API integration examples, 3 cheat sheets
-
-### Phase 5: Prompt Engineering (Complete)
-
-- [x] 19 documents — handbook from introduction through production
-- [x] 16 prompt templates in `prompts/templates/`
-- [x] 9 Python examples, 9 cheat sheets
-
-### Phase 6: Context Engineering (Complete)
-
-- [x] 21 documents — handbook from introduction through production
-- [x] 11 Python examples, 7 cheat sheets
-
-### Phase 7: RAG (Complete)
-
-- [x] 29 documents, 13 examples, 9 cheat sheets
-
-### Phase 8: AI Agents (Complete)
-
-- [x] 27 documents (20 sections + 6 frameworks + comparisons)
-- [x] 6 Python examples, 8 cheat sheets
-
-### Phase 9: MCP & AI Protocol Engineering (Complete)
-
-- [x] 21 documents (20 sections + comparisons)
-- [x] 13 Python examples, 9 cheat sheets
-
-### Phase 10: AI Evaluation & LLMOps (Complete)
-
-- [x] 26 documents (20 sections + 5 frameworks + comparisons)
-- [x] 12 Python examples, 9 cheat sheets
-
-### Phase 11: AI System Design (Complete)
-
-- [x] 18 documents (17 sections + comparisons)
-- [x] 4 cheat sheets
-
-### Phase 12: Production AI & Platform Engineering (Complete)
-
-- [x] 16 documents (15 sections + comparisons)
-- [x] 12 Python examples + Docker/CI, 8 cheat sheets
-
-### Phase 13: AI Engineering Interview Handbook (Complete)
-
-- [x] 22 documents (20 sections + mocks + company patterns)
-- [x] 12 interview cheat sheets
-
-### Phase 14: Engineering Templates & Reusable Assets (Complete)
-
-- [x] 14 template sections — FastAPI, RAG, agent, MCP, Docker, CI/CD, logging, monitoring
-- [x] Prompt library, evaluation harnesses, deployment configs, boilerplates, utilities
-
-### Phase 15: AI Research Papers & Literature Review (Complete)
-
-- [x] 10 handbook sections — transformers through future research
-- [x] 6 research cheat sheets
-
-### Ongoing Depth
-- [ ] Production incident postmortems
-- [ ] Technology comparison matrices
-
-### Ongoing
-
-- [ ] Personal knowledge entries (lessons, mistakes, ADRs)
-- [ ] Project case studies
-- [ ] Code examples for every major topic
-- [ ] Cheat sheets for quick reference
+**15 handbook phases complete** (Foundations through Research Papers). See [Changelog](CHANGELOG.md) for version history.
 
 ---
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-## See Also
-
-- [Architecture Overview](meta/architecture-overview.md)
-- [Glossary](meta/glossary.md)
-- [Changelog](CHANGELOG.md)
+[MIT License](LICENSE)
