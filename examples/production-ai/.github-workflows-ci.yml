@@ -1,0 +1,34 @@
+# GitHub Actions CI/CD for AI services (reference)
+# Copy to .github/workflows/ci.yml in your project
+
+name: AI Service CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test-and-eval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install -r requirements.txt pytest
+      - name: Unit tests
+        run: pytest -q || true
+      - name: AI regression eval
+        run: python examples/ai-evaluation/example-regression-testing.py
+      - name: Build Docker image
+        run: docker build -t ai-service:${{ github.sha }} .
+
+  deploy-staging:
+    needs: test-and-eval
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploy to staging with image tag ${{ github.sha }}"

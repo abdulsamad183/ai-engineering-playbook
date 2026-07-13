@@ -414,11 +414,27 @@
 
 [Domain index →](../../domains/inference-optimization/README.md)
 
-### AI Deployment
+### AI Deployment — Phase 12 (Production AI)
 
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
+| Document | Status | Description |
+|----------|--------|-------------|
+| [Phase 12 Index](../../domains/ai-deployment/README.md) | Published | Production AI handbook hub |
+| [Production Overview](../../domains/ai-deployment/production-ai-overview.md) | Published | Lifecycle, platform architecture |
+| [Docker for AI](../../domains/ai-deployment/docker-for-ai.md) | Published | Containers for AI services |
+| [Deployment Strategies](../../domains/ai-deployment/ai-deployment-strategies.md) | Published | Canary, blue/green |
+| [CI/CD for AI](../../domains/ai-deployment/cicd-for-ai.md) | Published | Eval gates, rollback |
+| [Secrets Management](../../domains/ai-deployment/secrets-management-for-ai.md) | Published | API keys, Vault |
+| [Monitoring](../../domains/ai-deployment/monitoring-ai-systems.md) | Published | SLO, alerts, health |
+| [Logging](../../domains/ai-deployment/logging-for-ai.md) | Published | Structured JSON logs |
+| [Observability](../../domains/ai-deployment/observability-for-ai.md) | Published | OTEL, LangFuse, Phoenix |
+| [Cost Tracking](../../domains/ai-deployment/cost-tracking-production.md) | Published | Production FinOps |
+| [Reliability](../../domains/ai-deployment/reliability-for-ai.md) | Published | Retry, circuit breaker |
+| [Caching](../../domains/ai-deployment/caching-for-ai.md) | Published | Redis, prompt cache |
+| [Security](../../domains/ai-deployment/security-production-ai.md) | Published | Auth, rate limits |
+| [Performance](../../domains/ai-deployment/performance-optimization-production.md) | Published | Streaming, routing |
+| [AI Operations](../../domains/ai-deployment/ai-operations.md) | Published | Incidents, runbooks |
+| [Production Readiness](../../domains/ai-deployment/production-readiness-checklist.md) | Published | Go-live checklist |
+| [Comparison Guides](../../domains/ai-deployment/production-ai-comparison-guides.md) | Published | Deploy, observability |
 
 [Domain index →](../../domains/ai-deployment/README.md)
 
@@ -432,9 +448,9 @@
 
 ### Docker
 
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
+| Document | Status | Description |
+|----------|--------|-------------|
+| [Docker for AI (Phase 12)](../../domains/ai-deployment/docker-for-ai.md) | Published | AI container handbook section |
 
 [Domain index →](../../domains/docker/README.md)
 
@@ -492,11 +508,29 @@
 
 ## Architecture
 
-### AI System Design
+### AI System Design — Phase 11
 
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
+| Document | Status | Description |
+|----------|--------|-------------|
+| [Phase 11 Index](../../domains/ai-system-design/README.md) | Published | AI system design handbook hub |
+| [Fundamentals](../../domains/ai-system-design/ai-system-design-fundamentals.md) | Published | Principles, capacity, budgeting |
+| [Common Components](../../domains/ai-system-design/common-ai-components.md) | Published | Reference production stack |
+| [ChatGPT-like Design](../../domains/ai-system-design/design-chatgpt-like-system.md) | Published | Conversational AI |
+| [Cursor-like Design](../../domains/ai-system-design/design-cursor-like-system.md) | Published | IDE coding assistant |
+| [GitHub Copilot Design](../../domains/ai-system-design/design-github-copilot.md) | Published | Inline completions |
+| [Perplexity Design](../../domains/ai-system-design/design-perplexity-ai-search.md) | Published | AI search + citations |
+| [Deep Research Design](../../domains/ai-system-design/design-deep-research-system.md) | Published | Multi-agent research |
+| [AI Search Engine](../../domains/ai-system-design/design-ai-search-engine.md) | Published | Hybrid enterprise search |
+| [Customer Support AI](../../domains/ai-system-design/design-ai-customer-support.md) | Published | Support + escalation |
+| [Coding Assistant](../../domains/ai-system-design/design-ai-coding-assistant.md) | Published | AST, PRs, review |
+| [PDF Chat](../../domains/ai-system-design/design-ai-pdf-chat.md) | Published | OCR, tables, cites |
+| [Email Assistant](../../domains/ai-system-design/design-ai-email-assistant.md) | Published | Triage + drafts |
+| [CRM Assistant](../../domains/ai-system-design/design-ai-crm-assistant.md) | Published | Sales intelligence |
+| [Voice Agent](../../domains/ai-system-design/design-ai-voice-agent.md) | Published | STT/TTS realtime |
+| [Scaling AI Systems](../../domains/ai-system-design/scaling-ai-systems.md) | Published | Horizontal scale, queues |
+| [Architecture Patterns](../../domains/ai-system-design/ai-architecture-patterns.md) | Published | Agentic, event-driven |
+| [Design Interviews](../../domains/ai-system-design/ai-system-design-interviews.md) | Published | Whiteboard prep |
+| [Comparison Guides](../../domains/ai-system-design/ai-system-design-comparison-guides.md) | Published | Decision matrices |
 
 [Domain index →](../../domains/ai-system-design/README.md)
 

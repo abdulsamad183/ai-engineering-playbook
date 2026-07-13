@@ -24,6 +24,7 @@ examples/
 ├── mcp/                 # MCP server and client examples
 ├── agents/              # AI agent examples
 ├── ai-evaluation/       # Evaluation framework examples
+├── production-ai/       # Phase 12 Docker, CI/CD, observability
 └── deployment/          # Deployment configuration examples
 ```
 

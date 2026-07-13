@@ -82,6 +82,18 @@ Cheat sheets follow the [Cheat Sheet template](../meta/templates/cheat-sheet.md)
 | Cost Evaluation | ai-evaluation | [cost-evaluation-checklist.md](cost-evaluation-checklist.md) | Published |
 | A/B Testing | ai-evaluation | [ab-testing-checklist.md](ab-testing-checklist.md) | Published |
 | Production Evaluation | ai-evaluation | [production-evaluation-readiness-checklist.md](production-evaluation-readiness-checklist.md) | Published |
+| System Design Interview | ai-system-design | [ai-system-design-interview-cheat-sheet.md](ai-system-design-interview-cheat-sheet.md) | Published |
+| Capacity Estimation | ai-system-design | [ai-capacity-estimation-cheat-sheet.md](ai-capacity-estimation-cheat-sheet.md) | Published |
+| Latency Budget | ai-system-design | [ai-latency-budget-cheat-sheet.md](ai-latency-budget-cheat-sheet.md) | Published |
+| Architecture Selection | ai-system-design | [ai-architecture-selection-cheat-sheet.md](ai-architecture-selection-cheat-sheet.md) | Published |
+| Production Deployment | ai-deployment | [production-deployment-cheat-sheet.md](production-deployment-cheat-sheet.md) | Published |
+| Docker AI | ai-deployment | [docker-ai-cheat-sheet.md](docker-ai-cheat-sheet.md) | Published |
+| CI/CD AI | ai-deployment | [cicd-ai-workflow-cheat-sheet.md](cicd-ai-workflow-cheat-sheet.md) | Published |
+| Monitoring AI | ai-deployment | [monitoring-ai-checklist.md](monitoring-ai-checklist.md) | Published |
+| Observability AI | ai-deployment | [observability-ai-checklist.md](observability-ai-checklist.md) | Published |
+| Reliability AI | ai-deployment | [reliability-ai-checklist.md](reliability-ai-checklist.md) | Published |
+| Incident Response AI | ai-deployment | [incident-response-ai-checklist.md](incident-response-ai-checklist.md) | Published |
+| Production Readiness | ai-deployment | [production-readiness-checklist.md](production-readiness-checklist.md) | Published |
 | PostgreSQL | databases/postgresql | Planned |
 | Docker | docker | Planned |
 | LLM API Integration | llm-engineering | Planned |

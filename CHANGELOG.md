@@ -1,5 +1,19 @@
 ## [Unreleased]
 
+## [1.0.0] - 2026-07-13
+
+### Added
+
+- **Phase 11: AI System Design** — 18 documents
+  - Sections 1–17: fundamentals through interview prep
+  - 12 product/system design case studies (ChatGPT, Cursor, Copilot, Perplexity, etc.)
+  - Comparison guides and scaling patterns
+- **Phase 12: Production AI & AI Platform Engineering** — 16 documents
+  - Sections 1–15: Docker through production readiness
+  - Comparison guides for deployment and observability
+- 12 production Python examples + Dockerfile + CI workflow reference
+- 12 cheat sheets (4 system design + 8 production)
+
 ## [0.9.0] - 2026-07-13
 
 ### Added
@@ -81,7 +95,8 @@
 
 - Repository foundation and Phase 2: AI Engineering Foundations
 
-[Unreleased]: https://github.com/hp/ai-engineering-playbook/compare/v0.9.0...HEAD
+[Unreleased]: https://github.com/hp/ai-engineering-playbook/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v1.0.0
 [0.9.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v0.9.0
 [0.8.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v0.8.0
 [0.7.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v0.7.0

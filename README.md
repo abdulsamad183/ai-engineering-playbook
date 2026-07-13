@@ -28,7 +28,7 @@ This is **not** a machine learning research repository or a deep learning theory
 
 | I want to... | Go to... |
 |--------------|----------|
-| Start learning | [Phase 10 AI Evaluation](domains/ai-evaluation/README.md) |
+| Start learning | [Phase 11 AI System Design](domains/ai-system-design/README.md) |
 | Find a topic | [Master Index](meta/indexes/MASTER-INDEX.md) |
 | Browse by domain | [Domains](domains/README.md) |
 | Write a new document | [Templates](meta/templates/) + [Style Guide](meta/style-guide.md) |
@@ -184,11 +184,15 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow. Summary:
 - [x] 26 documents (20 sections + 5 frameworks + comparisons)
 - [x] 12 Python examples, 9 cheat sheets
 
-### Phase 11: Production AI & Observability
+### Phase 11: AI System Design (Complete)
 
-- [ ] Deployment guides (Docker, cloud)
-- [ ] Advanced observability and safety
-- [ ] A2A protocols
+- [x] 18 documents (17 sections + comparisons)
+- [x] 4 cheat sheets
+
+### Phase 12: Production AI & Platform Engineering (Complete)
+
+- [x] 16 documents (15 sections + comparisons)
+- [x] 12 Python examples + Docker/CI, 8 cheat sheets
 
 ### Ongoing Depth
 

@@ -92,6 +92,12 @@ Metric measuring whether generated answers are supported by retrieved context. S
 ### RAGAS
 Retrieval Augmented Generation Assessment framework for RAG pipeline metrics. See [RAGAS Guide](../domains/ai-evaluation/frameworks/ragas.md).
 
+### AI Platform Engineering
+Operational discipline for deploying, monitoring, securing, and scaling LLM applications in production. See [Production AI Handbook](../domains/ai-deployment/README.md).
+
+### Latency Budget
+Allocated time per layer (API, retrieval, LLM, tools) in an AI request path. See [AI System Design Fundamentals](../domains/ai-system-design/ai-system-design-fundamentals.md).
+
 ---
 
 ## F

@@ -1,32 +1,10 @@
 # Docker
 
-> Containerization with Docker for AI applications.
+> Containerization for AI applications — see **Phase 12** handbook section.
 
----
+| Document | Link |
+|----------|------|
+| Docker for AI | [docker-for-ai.md](../ai-deployment/docker-for-ai.md) |
+| Examples | [examples/production-ai/](../../examples/production-ai/) |
 
-## Documents
-
-| Document | Status | Description |
-|----------|--------|-------------|
-| *(No documents yet)* | — | — |
-
----
-
-## Related Domains
-
-- See [domains overview](../README.md) for related domains.
-
-## Templates
-
-When adding content to this domain, use the appropriate [template](../../meta/templates/):
-
-- Concept → `concept.md`
-- Technology → `technology.md`
-- Tutorial → `tutorial.md`
-- Production Guide → `production-guide.md`
-
-## See Also
-
-- [Master Index](../../meta/indexes/MASTER-INDEX.md)
-- [Learning Roadmap](../../meta/roadmap.md)
-- [Contributing Guide](../../CONTRIBUTING.md)
+[Phase 12 Production AI Hub](../ai-deployment/README.md)

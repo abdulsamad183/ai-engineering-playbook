@@ -181,7 +181,38 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 ---
 
-## Phase 11: AI Workflows and Multi-Agent Systems
+## Phase 11: AI System Design
+
+**Goal:** Design end-to-end production AI systems; senior interview preparation.
+
+**Duration:** 4–5 weeks
+
+| Order | Topic | Domain | Key Outcomes |
+|-------|-------|--------|-------------|
+| 11.1 | System design handbook | [ai-system-design](../../domains/ai-system-design/) | 17 sections + product designs |
+| 11.2 | Scaling & patterns | [ai-system-design](../../domains/ai-system-design/) | Scale, tradeoffs, interviews |
+
+**Milestone:** Whiteboard design for ChatGPT-class + enterprise RAG systems. ✅
+
+---
+
+## Phase 12: Production AI & AI Platform Engineering
+
+**Goal:** Deploy, operate, monitor, and scale AI applications reliably.
+
+**Duration:** 4–5 weeks
+
+| Order | Topic | Domain | Key Outcomes |
+|-------|-------|--------|-------------|
+| 12.1 | Production handbook | [ai-deployment](../../domains/ai-deployment/) | Docker, deploy, CI/CD |
+| 12.2 | Observability & ops | [ai-deployment](../../domains/ai-deployment/) | Logging, tracing, incidents |
+| 12.3 | Reliability & security | [ai-deployment](../../domains/ai-deployment/) | Cache, retry, readiness |
+
+**Milestone:** Dockerized AI API with CI eval gate + observability. ✅
+
+---
+
+## Phase 13: AI Workflows and Multi-Agent Systems
 
 **Goal:** Orchestrate complex AI processes and multi-agent collaboration.
 
@@ -189,35 +220,32 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 11.1 | Workflow orchestration | [ai-workflows](../../domains/ai-workflows/) | State machines, DAGs, conditional routing |
-| 11.2 | LangGraph and frameworks | [ai-workflows](../../domains/ai-workflows/) | Graph-based agent workflows |
-| 11.3 | Multi-agent systems | [multi-agent-systems](../../domains/multi-agent-systems/) | Delegation, handoffs, collaboration patterns |
-| 11.4 | Human-in-the-loop | [ai-workflows](../../domains/ai-workflows/) | Approval flows, feedback integration |
+| 13.1 | Workflow orchestration | [ai-workflows](../../domains/ai-workflows/) | State machines, DAGs, conditional routing |
+| 13.2 | LangGraph and frameworks | [ai-workflows](../../domains/ai-workflows/) | Graph-based agent workflows |
+| 13.3 | Multi-agent systems | [multi-agent-systems](../../domains/multi-agent-systems/) | Delegation, handoffs, collaboration patterns |
+| 13.4 | Human-in-the-loop | [ai-workflows](../../domains/ai-workflows/) | Approval flows, feedback integration |
 
 **Milestone:** Build a multi-agent workflow with human-in-the-loop approval.
 
 ---
 
-## Phase 12: Production Deployment
+## Phase 14: Cloud & Advanced Deployment
 
-**Goal:** Deploy AI applications reliably to production.
+**Goal:** Cloud-native deployment and model serving depth (extends Phase 12).
 
 **Duration:** 4–5 weeks
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 12.1 | Docker for AI apps | [docker](../../domains/docker/) | Containerization, multi-stage builds |
-| 12.2 | Environment management | [ai-deployment](../../domains/ai-deployment/) | Config, secrets, feature flags |
-| 12.3 | Cloud deployment | [cloud-deployment](../../domains/cloud-deployment/) | Cloud concepts, managed services |
-| 12.4 | CI/CD for AI | [cicd](../../domains/cicd/) | Automated testing, deployment pipelines |
-| 12.5 | Model serving | [model-serving](../../domains/model-serving/) | API deployment, load balancing |
-| 12.6 | Inference optimization | [inference-optimization](../../domains/inference-optimization/) | Batching, caching, model selection |
+| 14.1 | Cloud deployment | [cloud-deployment](../../domains/cloud-deployment/) | Managed services, regions |
+| 14.2 | Model serving | [model-serving](../../domains/model-serving/) | Load balancing, GPU serving |
+| 14.3 | Inference optimization | [inference-optimization](../../domains/inference-optimization/) | Batching, caching |
 
-**Milestone:** Deploy an AI application with CI/CD, health checks, and rollback capability.
+**Milestone:** Cloud-deployed AI API with autoscaling.
 
 ---
 
-## Phase 13: Monitoring, Observability, and Optimization
+## Phase 15: Monitoring, Observability, and Optimization (Depth)
 
 **Goal:** Operate AI systems reliably in production.
 
@@ -225,12 +253,12 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 13.1 | Logging | [logging](../../domains/logging/) | Structured logging, PII redaction |
-| 13.2 | Monitoring | [monitoring](../../domains/monitoring/) | Dashboards, alerting, SLIs/SLOs |
-| 13.3 | Observability | [observability](../../domains/observability/) | Tracing, LLM-specific telemetry |
-| 13.4 | Performance optimization | [performance-optimization](../../domains/performance-optimization/) | Latency, throughput, cost |
-| 13.5 | Security in production | [security](../../domains/security/) | Input validation, output filtering, key rotation |
-| 13.6 | AI safety and guardrails | [ai-safety](../../domains/ai-safety/) | Content filtering, bias detection |
+| 15.1 | Logging depth | [logging](../../domains/logging/) | Structured logging, PII redaction |
+| 15.2 | Monitoring depth | [monitoring](../../domains/monitoring/) | Dashboards, alerting, SLIs/SLOs |
+| 15.3 | Observability depth | [observability](../../domains/observability/) | Tracing, LLM-specific telemetry |
+| 15.4 | Performance optimization | [performance-optimization](../../domains/performance-optimization/) | Latency, throughput, cost |
+| 15.5 | Security in production | [security](../../domains/security/) | Input validation, key rotation |
+| 15.6 | AI safety and guardrails | [ai-safety](../../domains/ai-safety/) | Content filtering, bias detection |
 
 **Milestone:** Set up full observability for an AI application with cost tracking and alerting.
 
