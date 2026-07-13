@@ -94,6 +94,18 @@ Cheat sheets follow the [Cheat Sheet template](../meta/templates/cheat-sheet.md)
 | Reliability AI | ai-deployment | [reliability-ai-checklist.md](reliability-ai-checklist.md) | Published |
 | Incident Response AI | ai-deployment | [incident-response-ai-checklist.md](incident-response-ai-checklist.md) | Published |
 | Production Readiness | ai-deployment | [production-readiness-checklist.md](production-readiness-checklist.md) | Published |
+| Interview Python | interview-preparation | [interview-python-cheat-sheet.md](interview-python-cheat-sheet.md) | Published |
+| Interview FastAPI | interview-preparation | [interview-fastapi-cheat-sheet.md](interview-fastapi-cheat-sheet.md) | Published |
+| Interview SQL | interview-preparation | [interview-sql-cheat-sheet.md](interview-sql-cheat-sheet.md) | Published |
+| Interview PostgreSQL | interview-preparation | [interview-postgresql-cheat-sheet.md](interview-postgresql-cheat-sheet.md) | Published |
+| Interview Redis | interview-preparation | [interview-redis-cheat-sheet.md](interview-redis-cheat-sheet.md) | Published |
+| Interview Docker | interview-preparation | [interview-docker-cheat-sheet.md](interview-docker-cheat-sheet.md) | Published |
+| Interview LLM | interview-preparation | [interview-llm-cheat-sheet.md](interview-llm-cheat-sheet.md) | Published |
+| Interview RAG | interview-preparation | [interview-rag-cheat-sheet.md](interview-rag-cheat-sheet.md) | Published |
+| Interview Agents | interview-preparation | [interview-agents-cheat-sheet.md](interview-agents-cheat-sheet.md) | Published |
+| Interview MCP | interview-preparation | [interview-mcp-cheat-sheet.md](interview-mcp-cheat-sheet.md) | Published |
+| Interview Evaluation | interview-preparation | [interview-evaluation-cheat-sheet.md](interview-evaluation-cheat-sheet.md) | Published |
+| Interview System Design | interview-preparation | [interview-system-design-cheat-sheet.md](interview-system-design-cheat-sheet.md) | Published |
 | PostgreSQL | databases/postgresql | Planned |
 | Docker | docker | Planned |
 | LLM API Integration | llm-engineering | Planned |

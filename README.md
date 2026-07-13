@@ -28,7 +28,7 @@ This is **not** a machine learning research repository or a deep learning theory
 
 | I want to... | Go to... |
 |--------------|----------|
-| Start learning | [Phase 11 AI System Design](domains/ai-system-design/README.md) |
+| Start learning | [Interview Handbook](domains/interview-preparation/README.md) |
 | Find a topic | [Master Index](meta/indexes/MASTER-INDEX.md) |
 | Browse by domain | [Domains](domains/README.md) |
 | Write a new document | [Templates](meta/templates/) + [Style Guide](meta/style-guide.md) |
@@ -194,10 +194,12 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow. Summary:
 - [x] 16 documents (15 sections + comparisons)
 - [x] 12 Python examples + Docker/CI, 8 cheat sheets
 
-### Ongoing Depth
+### Phase 13: AI Engineering Interview Handbook (Complete)
 
-- [ ] System design case studies
-- [ ] Interview preparation guides
+- [x] 22 documents (20 sections + mocks + company patterns)
+- [x] 12 interview cheat sheets
+
+### Ongoing Depth
 - [ ] Research paper summaries
 - [ ] Production incident postmortems
 - [ ] Technology comparison matrices

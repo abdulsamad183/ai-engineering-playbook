@@ -1,5 +1,15 @@
 ## [Unreleased]
 
+## [1.1.0] - 2026-07-13
+
+### Added
+
+- **Phase 13: AI Engineering Interview Handbook** — 22 documents
+  - Sections 1–20: strategy through behavioral interviews
+  - Mock interview packs (Junior, Mid, Senior, Staff)
+  - Company interview patterns for AI product organizations
+- 12 interview cheat sheets (Python through system design)
+
 ## [1.0.0] - 2026-07-13
 
 ### Added
@@ -95,7 +105,8 @@
 
 - Repository foundation and Phase 2: AI Engineering Foundations
 
-[Unreleased]: https://github.com/hp/ai-engineering-playbook/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/hp/ai-engineering-playbook/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v1.1.0
 [1.0.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v1.0.0
 [0.9.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v0.9.0
 [0.8.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v0.8.0

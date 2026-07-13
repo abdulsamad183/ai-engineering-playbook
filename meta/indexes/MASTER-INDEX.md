@@ -606,11 +606,33 @@
 
 ## Career and Research
 
-### Interview Preparation
+### Interview Preparation — Phase 13
 
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
+| Document | Status | Description |
+|----------|--------|-------------|
+| [Interview Handbook Index](../../domains/interview-preparation/README.md) | Published | AI engineering interview hub |
+| [Interview Strategy](../../domains/interview-preparation/interview-strategy.md) | Published | Process and roadmap |
+| [Python Interviews](../../domains/interview-preparation/python-interviews.md) | Published | Coding + async |
+| [FastAPI Interviews](../../domains/interview-preparation/fastapi-interviews.md) | Published | API + streaming |
+| [SQL Interviews](../../domains/interview-preparation/sql-interviews.md) | Published | Joins, windows |
+| [PostgreSQL Interviews](../../domains/interview-preparation/postgresql-interviews.md) | Published | MVCC, pgvector |
+| [Redis Interviews](../../domains/interview-preparation/redis-interviews.md) | Published | Cache, rate limits |
+| [Docker Interviews](../../domains/interview-preparation/docker-interviews.md) | Published | Containers |
+| [LLM Interviews](../../domains/interview-preparation/llm-engineering-interviews.md) | Published | Tokens, tools |
+| [Prompt Interviews](../../domains/interview-preparation/prompt-engineering-interviews.md) | Published | ReAct, eval |
+| [Context Interviews](../../domains/interview-preparation/context-engineering-interviews.md) | Published | Memory, assembly |
+| [RAG Interviews](../../domains/interview-preparation/rag-interviews.md) | Published | Hybrid, GraphRAG |
+| [Agent Interviews](../../domains/interview-preparation/ai-agents-interviews.md) | Published | ReAct, frameworks |
+| [MCP Interviews](../../domains/interview-preparation/mcp-interviews.md) | Published | Protocol depth |
+| [Evaluation Interviews](../../domains/interview-preparation/ai-evaluation-interviews.md) | Published | RAGAS, A/B |
+| [System Design Interviews](../../domains/interview-preparation/system-design-interview-guide.md) | Published | Whiteboard exercises |
+| [Production Interviews](../../domains/interview-preparation/production-ai-interviews.md) | Published | Ops, observability |
+| [Resume & Projects](../../domains/interview-preparation/resume-project-interviews.md) | Published | Deep dives |
+| [Live Coding](../../domains/interview-preparation/live-coding-machine-coding.md) | Published | Machine coding |
+| [Debugging Interviews](../../domains/interview-preparation/debugging-interviews.md) | Published | Prod scenarios |
+| [Behavioral](../../domains/interview-preparation/behavioral-leadership-interviews.md) | Published | STAR, leadership |
+| [Mock Interviews](../../domains/interview-preparation/mock-interviews.md) | Published | Junior → Staff |
+| [Company Patterns](../../domains/interview-preparation/company-interview-patterns.md) | Published | AI org types |
 
 [Domain index →](../../domains/interview-preparation/README.md)
 

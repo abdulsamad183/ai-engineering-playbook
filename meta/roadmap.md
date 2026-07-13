@@ -212,7 +212,22 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 ---
 
-## Phase 13: AI Workflows and Multi-Agent Systems
+## Phase 13: AI Engineering Interview Handbook
+
+**Goal:** Prepare for technical, coding, system design, and behavioral AI engineering interviews.
+
+**Duration:** 4–8 weeks (parallel with phases 2–12 review)
+
+| Order | Topic | Domain | Key Outcomes |
+|-------|-------|--------|-------------|
+| 13.1 | Interview handbook | [interview-preparation](../../domains/interview-preparation/) | 20 sections + mocks |
+| 13.2 | Practice packs | [interview-preparation](../../domains/interview-preparation/) | Junior → Staff mocks |
+
+**Milestone:** Complete mock interview at target level with rubric self-score. ✅
+
+---
+
+## Phase 14: AI Workflows and Multi-Agent Systems
 
 **Goal:** Orchestrate complex AI processes and multi-agent collaboration.
 
@@ -220,16 +235,16 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 13.1 | Workflow orchestration | [ai-workflows](../../domains/ai-workflows/) | State machines, DAGs, conditional routing |
-| 13.2 | LangGraph and frameworks | [ai-workflows](../../domains/ai-workflows/) | Graph-based agent workflows |
-| 13.3 | Multi-agent systems | [multi-agent-systems](../../domains/multi-agent-systems/) | Delegation, handoffs, collaboration patterns |
-| 13.4 | Human-in-the-loop | [ai-workflows](../../domains/ai-workflows/) | Approval flows, feedback integration |
+| 14.1 | Workflow orchestration | [ai-workflows](../../domains/ai-workflows/) | State machines, DAGs, conditional routing |
+| 14.2 | LangGraph and frameworks | [ai-workflows](../../domains/ai-workflows/) | Graph-based agent workflows |
+| 14.3 | Multi-agent systems | [multi-agent-systems](../../domains/multi-agent-systems/) | Delegation, handoffs, collaboration patterns |
+| 14.4 | Human-in-the-loop | [ai-workflows](../../domains/ai-workflows/) | Approval flows, feedback integration |
 
 **Milestone:** Build a multi-agent workflow with human-in-the-loop approval.
 
 ---
 
-## Phase 14: Cloud & Advanced Deployment
+## Phase 15: Cloud & Advanced Deployment
 
 **Goal:** Cloud-native deployment and model serving depth (extends Phase 12).
 
@@ -237,15 +252,15 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 14.1 | Cloud deployment | [cloud-deployment](../../domains/cloud-deployment/) | Managed services, regions |
-| 14.2 | Model serving | [model-serving](../../domains/model-serving/) | Load balancing, GPU serving |
-| 14.3 | Inference optimization | [inference-optimization](../../domains/inference-optimization/) | Batching, caching |
+| 15.1 | Cloud deployment | [cloud-deployment](../../domains/cloud-deployment/) | Managed services, regions |
+| 15.2 | Model serving | [model-serving](../../domains/model-serving/) | Load balancing, GPU serving |
+| 15.3 | Inference optimization | [inference-optimization](../../domains/inference-optimization/) | Batching, caching |
 
 **Milestone:** Cloud-deployed AI API with autoscaling.
 
 ---
 
-## Phase 15: Monitoring, Observability, and Optimization (Depth)
+## Phase 16: Monitoring, Observability, and Optimization (Depth)
 
 **Goal:** Operate AI systems reliably in production.
 
@@ -253,32 +268,29 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 15.1 | Logging depth | [logging](../../domains/logging/) | Structured logging, PII redaction |
-| 15.2 | Monitoring depth | [monitoring](../../domains/monitoring/) | Dashboards, alerting, SLIs/SLOs |
-| 15.3 | Observability depth | [observability](../../domains/observability/) | Tracing, LLM-specific telemetry |
-| 15.4 | Performance optimization | [performance-optimization](../../domains/performance-optimization/) | Latency, throughput, cost |
-| 15.5 | Security in production | [security](../../domains/security/) | Input validation, key rotation |
-| 15.6 | AI safety and guardrails | [ai-safety](../../domains/ai-safety/) | Content filtering, bias detection |
+| 16.1 | Logging depth | [logging](../../domains/logging/) | Structured logging, PII redaction |
+| 16.2 | Monitoring depth | [monitoring](../../domains/monitoring/) | Dashboards, alerting, SLIs/SLOs |
+| 16.3 | Observability depth | [observability](../../domains/observability/) | Tracing, LLM-specific telemetry |
+| 16.4 | Performance optimization | [performance-optimization](../../domains/performance-optimization/) | Latency, throughput, cost |
+| 16.5 | Security in production | [security](../../domains/security/) | Input validation, key rotation |
+| 16.6 | AI safety and guardrails | [ai-safety](../../domains/ai-safety/) | Content filtering, bias detection |
 
 **Milestone:** Set up full observability for an AI application with cost tracking and alerting.
 
 ---
 
-## Phase 14: System Design and Architecture
+## Phase 17: Extended Architecture (Depth)
 
-**Goal:** Design scalable, maintainable AI systems.
+**Goal:** Deep-dive architecture domains beyond Phase 11 handbook.
 
-**Duration:** Ongoing (parallel with Phases 8–13)
+**Duration:** Ongoing
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 14.1 | AI system design | [ai-system-design](../../domains/ai-system-design/) | End-to-end system design |
-| 14.2 | AI application architecture | [ai-application-architecture](../../domains/ai-application-architecture/) | Component design, data flow |
-| 14.3 | Design patterns | [design-patterns](../../domains/design-patterns/) | Reusable AI engineering patterns |
-| 14.4 | Distributed systems | [distributed-systems](../../domains/distributed-systems/) | Scaling, consistency, fault tolerance |
-| 14.5 | Software architecture | [software-architecture](../../domains/software-architecture/) | Clean architecture for AI apps |
-
-**Milestone:** Design and document a complete AI system architecture.
+| 17.1 | AI application architecture | [ai-application-architecture](../../domains/ai-application-architecture/) | Component design, data flow |
+| 17.2 | Design patterns | [design-patterns](../../domains/design-patterns/) | Reusable AI engineering patterns |
+| 17.3 | Distributed systems | [distributed-systems](../../domains/distributed-systems/) | Scaling, consistency, fault tolerance |
+| 17.4 | Software architecture | [software-architecture](../../domains/software-architecture/) | Clean architecture for AI apps |
 
 ---
 

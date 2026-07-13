@@ -98,6 +98,9 @@ Operational discipline for deploying, monitoring, securing, and scaling LLM appl
 ### Latency Budget
 Allocated time per layer (API, retrieval, LLM, tools) in an AI request path. See [AI System Design Fundamentals](../domains/ai-system-design/ai-system-design-fundamentals.md).
 
+### AI Engineering Interview
+Structured preparation for technical, coding, system design, and behavioral rounds in AI roles. See [Interview Handbook](../domains/interview-preparation/README.md).
+
 ---
 
 ## F
