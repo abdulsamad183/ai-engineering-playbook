@@ -1,5 +1,13 @@
 ## [Unreleased]
 
+## [1.4.1] - 2026-07-23
+
+### Changed
+
+- Home page rewritten: playbook overview, organization layers, three use paths, clear learning sequence
+- Learning roadmap simplified with at-a-glance map and staged table
+- MkDocs nav reduced to **Home · Learn · Handbooks · Build · Reference**
+
 ## [1.4.0] - 2026-07-23
 
 ### Added

@@ -43,17 +43,13 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
-    - navigation.expand
     - navigation.path
     - navigation.top
     - navigation.indexes
     - navigation.footer
     - search.suggest
     - search.highlight
-    - search.share
     - content.code.copy
-    - content.code.annotate
-    - content.tabs.link
     - toc.follow
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -138,58 +134,64 @@ extra_javascript:
   - https://unpkg.com/mermaid@10/dist/mermaid.min.js
   - javascripts/mermaid-init.js
 
-# Curated navigation — hubs first; linked pages still build & are searchable
+# Curated navigation — few tabs, clear purpose
 nav:
   - Home: index.md
-  - Start:
-    - Capstone Walkthrough: meta/capstone-walkthrough.md
+  - Learn:
     - Learning Roadmap: meta/roadmap.md
-    - Master Index: meta/indexes/MASTER-INDEX.md
-    - Glossary: meta/glossary.md
-    - Architecture Overview: meta/architecture-overview.md
-  - Foundations:
-    - Overview: domains/foundations/README.md
-    - Python Engineering: domains/python-engineering/README.md
-    - Backend Engineering: domains/backend-engineering/README.md
+    - Capstone Walkthrough: meta/capstone-walkthrough.md
+  - Handbooks:
+    - Foundations: domains/foundations/README.md
+    - Python: domains/python-engineering/README.md
+    - Backend: domains/backend-engineering/README.md
     - APIs: domains/apis/README.md
     - FastAPI: domains/fastapi/README.md
     - Databases: domains/databases/README.md
-  - LLM Systems:
     - LLM Engineering: domains/llm-engineering/README.md
     - Prompt Engineering: domains/prompt-engineering/README.md
     - Context Engineering: domains/context-engineering/README.md
-    - Embeddings: domains/embeddings/README.md
-    - Vector Databases: domains/vector-databases/README.md
-  - Retrieval & Agents:
     - RAG: domains/rag/README.md
     - AI Agents: domains/ai-agents/README.md
     - MCP: domains/mcp/README.md
-  - Production:
     - AI Evaluation: domains/ai-evaluation/README.md
-    - AI System Design: domains/ai-system-design/README.md
+    - System Design: domains/ai-system-design/README.md
     - Production AI: domains/ai-deployment/README.md
     - AI Safety: domains/ai-safety/README.md
     - Debugging: domains/debugging/README.md
     - Common Mistakes: domains/common-mistakes/README.md
-  - Research & Career:
     - Research Papers: domains/papers/README.md
     - Interview Prep: domains/interview-preparation/README.md
-  - Toolkit:
-    - Engineering Templates: templates/README.md
-    - Templates Index: templates/engineering/README.md
-    - Prompt Library: prompts/README.md
-    - Code Examples: examples/README.md
+  - Build:
+    - Templates: templates/README.md
+    - Starters: templates/engineering/README.md
+    - Examples: examples/README.md
+    - Prompts: prompts/README.md
+  - Reference:
     - Cheat Sheets: cheat-sheets/README.md
-    - Knowledge Base: knowledge/README.md
-    - Bookmarks: resources/README.md
-  - Meta:
-    - Docs site guide: docs-site.md
-    - Style Guide: meta/style-guide.md
+    - Glossary: meta/glossary.md
+    - Master Index: meta/indexes/MASTER-INDEX.md
+    - Knowledge: knowledge/README.md
     - Domains Overview: domains/README.md
-    - Capstone: meta/capstone-walkthrough.md
+    - Docs Site Guide: docs-site.md
+
 not_in_nav: |
   meta/templates/**
   meta/indexes/topics/**
   meta/indexes/technologies/**
   meta/indexes/patterns/**
   meta/indexes/comparisons/**
+  meta/architecture-overview.md
+  meta/style-guide.md
+  meta/naming-conventions.md
+  meta/indexing-strategy.md
+  meta/mermaid-conventions.md
+  domains/embeddings/**
+  domains/vector-databases/**
+  domains/a2a/**
+  domains/ai-workflows/**
+  domains/multi-agent-systems/**
+  domains/cloud-deployment/**
+  domains/model-serving/**
+  domains/career-notes/**
+  domains/research-notes/**
+  resources/**

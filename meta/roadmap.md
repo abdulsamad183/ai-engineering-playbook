@@ -1,392 +1,235 @@
 # Learning Roadmap
 
-> Recommended learning path for modern AI engineering.
-> Designed to be extended as new technologies emerge — not dependent on any specific framework or model.
+> One clear path: foundations → LLMs → RAG → agents → production.  
+> Details below; start with the **map**, then open each phase.
+
+---
+
+## At a glance
+
+```mermaid
+flowchart TB
+  subgraph core [Core path — follow in order]
+    P1[1. Foundations & Python]
+    P2[2. Backend & FastAPI]
+    P3[3. Databases]
+    P4[4. LLM Engineering]
+    P5[5. Prompt Engineering]
+    P6[6. Context Engineering]
+    P7[7. RAG]
+    P8[8. AI Agents]
+    P9[9. MCP]
+    P10[10. Evaluation]
+    P11[11. System Design]
+    P12[12. Production]
+    P1 --> P2 --> P3 --> P4 --> P5 --> P6 --> P7 --> P8 --> P9 --> P10 --> P11 --> P12
+  end
+
+  subgraph side [Add when needed]
+    CAP[Capstone build]
+    SAFE[AI Safety]
+    DBG[Debugging]
+    INT[Interview Prep]
+    PAP[Research Papers]
+  end
+
+  P7 -.-> CAP
+  P12 -.-> SAFE
+  P12 -.-> DBG
+```
+
+| Stage | Goal | Primary handbook |
+|-------|------|------------------|
+| **0 Capstone** | Ship one RAG API end-to-end | [Capstone walkthrough](capstone-walkthrough.md) |
+| **1–3** | Software & data foundations | [Foundations](../domains/foundations/README.md) · [Backend](../domains/backend-engineering/README.md) · [Databases](../domains/databases/README.md) |
+| **4–6** | Talk to models well | [LLM](../domains/llm-engineering/README.md) · [Prompts](../domains/prompt-engineering/README.md) · [Context](../domains/context-engineering/README.md) |
+| **7–9** | Grounded & agentic systems | [RAG](../domains/rag/README.md) · [Agents](../domains/ai-agents/README.md) · [MCP](../domains/mcp/README.md) |
+| **10–12** | Quality & operations | [Evaluation](../domains/ai-evaluation/README.md) · [System Design](../domains/ai-system-design/README.md) · [Production](../domains/ai-deployment/README.md) |
+
+**How to use this roadmap**
+
+1. Pick your current stage from the table.  
+2. Open the handbook hub — complete its learning path / checklist.  
+3. Hit the milestone, then move to the next stage.  
+4. Use side tracks (safety, debugging, interviews) only when relevant.
+
+Estimated effort assumes ~10–15 hours/week. Skip stages you already know; don’t skip **evaluation** and **production** if you plan to ship.
 
 ---
 
 ## Philosophy
 
-This roadmap prioritizes **building production AI applications** over theoretical machine learning. You will learn to write code, design systems, integrate models, and deploy reliable AI-powered software. Traditional ML/DL theory is included only where it directly supports practical engineering workflows.
-
-The path is sequential within each phase but parallel across phases once prerequisites are met. Estimated times assume focused part-time study (10–15 hours/week).
+This path prioritizes **shipping production AI applications** over ML theory. You write code, design systems, integrate models, and operate them. Research papers appear later as engineering context, not as the starting point.
 
 ---
 
 ## Phase 1: Programming Foundations
 
-**Goal:** Solid Python and software engineering fundamentals.
+**Goal:** Solid Python and software engineering fundamentals.  
+**Duration:** 4–6 weeks · **Hub:** [Foundations](../domains/foundations/README.md) · [Python](../domains/python-engineering/README.md)
 
-**Duration:** 4–6 weeks
+| Order | Topic | Domain | Key outcomes |
+|-------|-------|--------|--------------|
+| 1.1 | Python fundamentals | [python-engineering](../domains/python-engineering/README.md) | Functions, classes, errors |
+| 1.2 | Advanced Python | [python-engineering](../domains/python-engineering/README.md) | Async, typing, tooling |
+| 1.3 | Git & workflow | [foundations](../domains/foundations/README.md) | Branching, PRs, commits |
+| 1.4 | Engineering principles | [foundations](../domains/foundations/README.md) | SOLID, testing mindset |
 
-| Order | Topic | Domain | Key Outcomes |
-|-------|-------|--------|-------------|
-| 1.1 | Python fundamentals | [python-engineering](../domains/python-engineering/) | Variables, functions, classes, error handling |
-| 1.2 | Python advanced patterns | [python-engineering](../domains/python-engineering/) | Async/await, type hints, decorators, context managers |
-| 1.3 | Package management and tooling | [python-engineering](../domains/python-engineering/) | venv, pip, ruff, pytest |
-| 1.4 | Git and version control | [foundations](../domains/foundations/) | Branching, PRs, conventional commits |
-| 1.5 | Software engineering principles | [foundations](../domains/foundations/) | SOLID, clean code, testing mindset |
-
-**Milestone:** Write a well-structured Python CLI tool with tests and type hints.
+**Milestone:** A structured Python CLI with tests and type hints.
 
 ---
 
 ## Phase 2: Backend Engineering
 
-**Goal:** Build reliable server-side applications.
+**Goal:** Reliable server-side APIs.  
+**Duration:** 4–6 weeks · **Hub:** [Backend](../domains/backend-engineering/README.md) · [FastAPI](../domains/fastapi/README.md) · [APIs](../domains/apis/README.md)
 
-**Duration:** 4–6 weeks
+| Order | Topic | Domain | Key outcomes |
+|-------|-------|--------|--------------|
+| 2.1 | HTTP & REST | [apis](../domains/apis/README.md) | Status codes, auth basics |
+| 2.2 | FastAPI | [fastapi](../domains/fastapi/README.md) | Routes, DI, models |
+| 2.3 | Backend patterns | [backend-engineering](../domains/backend-engineering/README.md) | Services, errors, async |
+| 2.4 | Auth | [security](../domains/security/README.md) | API keys, JWT |
 
-| Order | Topic | Domain | Key Outcomes |
-|-------|-------|--------|-------------|
-| 2.1 | HTTP and REST fundamentals | [apis](../domains/apis/) | Methods, status codes, headers, REST principles |
-| 2.2 | FastAPI basics | [fastapi](../domains/fastapi/) | Routes, dependency injection, request/response models |
-| 2.3 | FastAPI advanced | [fastapi](../domains/fastapi/) | Middleware, background tasks, WebSockets |
-| 2.4 | Backend patterns | [backend-engineering](../domains/backend-engineering/) | Service layer, repository pattern, error handling |
-| 2.5 | Authentication and authorization | [security](../domains/security/) | API keys, JWT, OAuth basics |
-
-**Milestone:** Build a REST API with authentication, validation, and automated tests.
+**Milestone:** REST API with auth, validation, and tests.
 
 ---
 
-## Phase 3: Databases and Data Storage
+## Phase 3: Databases
 
-**Goal:** Store, query, and manage data for AI applications.
+**Goal:** Persist and cache data for AI apps.  
+**Duration:** 3–4 weeks · **Hub:** [Databases](../domains/databases/README.md)
 
-**Duration:** 3–4 weeks
+| Order | Topic | Domain | Key outcomes |
+|-------|-------|--------|--------------|
+| 3.1 | SQL / Postgres | [postgresql](../domains/databases/postgresql/README.md) | Schema, JSONB, migrations |
+| 3.2 | Redis | [redis](../domains/databases/redis/README.md) | Cache, sessions, limits |
 
-| Order | Topic | Domain | Key Outcomes |
-|-------|-------|--------|-------------|
-| 3.1 | SQL fundamentals | [databases/sql](../domains/databases/sql/) | SELECT, JOIN, INSERT, indexes |
-| 3.2 | PostgreSQL | [databases/postgresql](../domains/databases/postgresql/) | Setup, migrations, JSON columns |
-| 3.3 | Redis | [databases/redis](../domains/databases/redis/) | Caching, session storage, rate limiting |
-| 3.4 | Data modeling for AI apps | [data-engineering](../domains/data-engineering/) | Conversation storage, document metadata |
-
-**Milestone:** Design and implement a database schema for a chat application with caching.
+**Milestone:** Chat-app schema with caching.
 
 ---
 
-## Phase 4: LLM Fundamentals
+## Phase 4: LLM Engineering
 
-**Goal:** Understand how LLMs work and how to integrate them.
+**Goal:** Integrate LLMs safely and efficiently.  
+**Duration:** 3–4 weeks · **Hub:** [LLM Engineering](../domains/llm-engineering/README.md)
 
-**Duration:** 3–4 weeks
+| Order | Topic | Key outcomes |
+|-------|-------|--------------|
+| 4.1 | How LLMs work (practical) | Tokens, context, sampling |
+| 4.2 | Provider APIs | Chat, streaming, tools |
+| 4.3 | Cost & resilience | Retries, fallbacks, budgets |
 
-| Order | Topic | Domain | Key Outcomes |
-|-------|-------|--------|-------------|
-| 4.1 | How LLMs work (practical) | [llm-engineering](../domains/llm-engineering/) | Tokens, context windows, temperature, model families |
-| 4.2 | LLM API integration | [llm-engineering](../domains/llm-engineering/) | Chat completions, streaming, function calling |
-| 4.3 | Model selection | [model-integration](../domains/model-integration/) | Choosing models by task, cost, latency |
-| 4.4 | Error handling and resilience | [llm-engineering](../domains/llm-engineering/) | Retries, fallbacks, timeout management |
-
-**Milestone:** Build a streaming chat API endpoint with error handling and model fallback.
+**Milestone:** Streaming chat endpoint with error handling.
 
 ---
 
-## Phase 5: Prompt Engineering (Complete)
+## Phase 5: Prompt Engineering
 
-**Goal:** Treat prompts as maintainable software artifacts for production AI systems.
+**Goal:** Treat prompts as versioned software.  
+**Duration:** 2–3 weeks · **Hub:** [Prompt Engineering](../domains/prompt-engineering/README.md) · [Prompt library](../prompts/README.md)
 
-**Duration:** 2–3 weeks
+| Order | Topic | Key outcomes |
+|-------|-------|--------------|
+| 5.1 | Anatomy & patterns | Clear, testable prompts |
+| 5.2 | Structured outputs | JSON / schema discipline |
+| 5.3 | Eval & versioning | Golden sets, regression |
 
-| Order | Topic | Domain | Key Outcomes |
-|-------|-------|--------|-------------|
-| 5.1 | Prompt engineering handbook | [prompt-engineering](../domains/prompt-engineering/) | 18 sections: anatomy through production |
-| 5.2 | Structured prompting | [prompt-engineering](../domains/prompt-engineering/structured-prompting.md) | XML, JSON, Markdown, tagged formats |
-| 5.3 | Reasoning & chaining | [prompt-engineering](../domains/prompt-engineering/) | CoT, ReAct, ToT, multi-step pipelines |
-| 5.4 | Testing & evaluation | [prompt-engineering](../domains/prompt-engineering/) | Golden datasets, regression, metrics |
-| 5.5 | Prompt patterns library | [prompts/templates](../prompts/templates/) | 16 reusable production templates |
-
-**Milestone:** Versioned prompt with golden dataset, CI regression tests, and structured output validation. ✅
+**Milestone:** Versioned prompt with CI regression. ✅
 
 ---
 
-## Phase 6: Context Engineering (Complete)
+## Phase 6: Context Engineering
 
-**Goal:** Design systems that manage what the model sees within token budgets.
+**Goal:** Assemble the right context under token budgets.  
+**Duration:** 2–3 weeks · **Hub:** [Context Engineering](../domains/context-engineering/README.md)
 
-**Duration:** 2–3 weeks
-
-| Order | Topic | Domain | Key Outcomes |
-|-------|-------|--------|-------------|
-| 6.1 | Context engineering handbook | [context-engineering](../domains/context-engineering/) | 20 sections: architecture through production |
-| 6.2 | Memory and state | [context-engineering](../domains/context-engineering/memory-systems.md) | Six memory types, conversation state |
-| 6.3 | Selection and ranking | [context-engineering](../domains/context-engineering/) | Filter, rank, compress, budget |
-| 6.4 | Retrieval context foundation | [context-engineering](../domains/context-engineering/retrieval-context.md) | Grounding before full RAG phase |
-
-**Milestone:** Context engine with traced assembly, layered budgets, and retrieval integration. ✅
+**Milestone:** Context assembler with budgets, ranking, and traces. ✅
 
 ---
 
-## Phase 7: RAG (Complete)
+## Phase 7: RAG
 
-**Goal:** Build production-grade retrieval-augmented generation systems.
+**Goal:** Ground answers in your data.  
+**Duration:** 4–5 weeks · **Hub:** [RAG](../domains/rag/README.md)
 
-**Duration:** 4–6 weeks
+**Milestone:** Ingest → retrieve → cite → evaluate pipeline. ✅
 
-| Order | Topic | Domain | Key Outcomes |
-|-------|-------|--------|-------------|
-| 7.1 | RAG handbook | [rag](../domains/rag/) | 21 sections: ingest through production |
-| 7.2 | Vector databases | [rag/providers](../domains/rag/providers/) | 7 provider guides |
-| 7.3 | Evaluation | [rag/rag-evaluation.md](../domains/rag/rag-evaluation.md) | Golden sets, recall@K, RAGAS |
-| 7.4 | Advanced RAG | [rag/advanced-rag-architectures.md](../domains/rag/advanced-rag-architectures.md) | GraphRAG, agentic patterns |
-
-**Milestone:** Hybrid RAG with CI eval gate and tenant ACL filters. ✅
+**Build:** [Capstone walkthrough](capstone-walkthrough.md) · [RAG starter](../templates/engineering/rag-starter/README.md)
 
 ---
 
-## Phase 8: AI Agents (Complete)
+## Phase 8: AI Agents
 
-**Goal:** Build production autonomous agent systems.
+**Goal:** Plan, use tools, and recover from failures.  
+**Duration:** 4–6 weeks · **Hub:** [AI Agents](../domains/ai-agents/README.md)
 
-| Order | Topic | Outcomes |
-|-------|-------|----------|
-| 8.1 | Agent handbook | 20 sections + frameworks |
-| 8.2 | Multi-agent patterns | Supervisor, swarm, HITL |
-| 8.3 | BYO framework | Minimal extensible core |
-
-**Milestone:** ReAct agent with eval suite and HITL. ✅
+**Milestone:** Agent with max-step guard, tool registry, checkpoints. ✅
 
 ---
 
-## Phase 9: MCP & AI Protocol Engineering
+## Phase 9: MCP
 
-**Goal:** Design, implement, secure, and scale Model Context Protocol systems.
+**Goal:** Standardize tools/resources via Model Context Protocol.  
+**Duration:** 2–3 weeks · **Hub:** [MCP](../domains/mcp/README.md)
 
-**Duration:** 3–4 weeks
-
-| Order | Topic | Domain | Key Outcomes |
-|-------|-------|--------|-------------|
-| 9.1 | MCP handbook | [mcp](../domains/mcp/) | 20 sections + comparisons |
-| 9.2 | Server & client builds | [mcp](../domains/mcp/) | Reference implementations |
-| 9.3 | Production MCP | [mcp](../domains/mcp/) | Security, multi-server, observability |
-
-**Milestone:** Production MCP server with tools, resources, auth, and tests. ✅
+**Milestone:** Working MCP server + client. ✅
 
 ---
 
-## Phase 10: AI Evaluation & LLMOps Evaluation
+## Phase 10: Evaluation & LLMOps
 
-**Goal:** Design, implement, automate, and monitor evaluation pipelines for production AI systems.
+**Goal:** Measure quality before and after ship.  
+**Duration:** 3–4 weeks · **Hub:** [AI Evaluation](../domains/ai-evaluation/README.md)
 
-**Duration:** 3–4 weeks
-
-| Order | Topic | Domain | Key Outcomes |
-|-------|-------|--------|-------------|
-| 10.1 | Evaluation handbook | [ai-evaluation](../domains/ai-evaluation/) | 20 sections + frameworks |
-| 10.2 | RAG & agent eval | [ai-evaluation](../domains/ai-evaluation/) | RAGAS, metrics, golden sets |
-| 10.3 | Continuous eval | [ai-evaluation](../domains/ai-evaluation/) | CI/CD, A/B, dashboards |
-
-**Milestone:** Golden dataset + CI regression gate + quality dashboard. ✅
+**Milestone:** Golden set + CI eval gate. ✅
 
 ---
 
 ## Phase 11: AI System Design
 
-**Goal:** Design end-to-end production AI systems; senior interview preparation.
+**Goal:** Design products and scale them.  
+**Duration:** 3–4 weeks · **Hub:** [AI System Design](../domains/ai-system-design/README.md)
 
-**Duration:** 4–5 weeks
-
-| Order | Topic | Domain | Key Outcomes |
-|-------|-------|--------|-------------|
-| 11.1 | System design handbook | [ai-system-design](../domains/ai-system-design/) | 17 sections + product designs |
-| 11.2 | Scaling & patterns | [ai-system-design](../domains/ai-system-design/) | Scale, tradeoffs, interviews |
-
-**Milestone:** Whiteboard design for ChatGPT-class + enterprise RAG systems. ✅
+**Milestone:** One full system design write-up (interview-ready). ✅
 
 ---
 
-## Phase 12: Production AI & AI Platform Engineering
+## Phase 12: Production AI
 
-**Goal:** Deploy, operate, monitor, and scale AI applications reliably.
+**Goal:** Deploy, observe, and operate.  
+**Duration:** 4–5 weeks · **Hub:** [Production AI](../domains/ai-deployment/README.md)
 
-**Duration:** 4–5 weeks
-
-| Order | Topic | Domain | Key Outcomes |
-|-------|-------|--------|-------------|
-| 12.1 | Production handbook | [ai-deployment](../domains/ai-deployment/) | Docker, deploy, CI/CD |
-| 12.2 | Observability & ops | [ai-deployment](../domains/ai-deployment/) | Logging, tracing, incidents |
-| 12.3 | Reliability & security | [ai-deployment](../domains/ai-deployment/) | Cache, retry, readiness |
-
-**Milestone:** Dockerized AI API with CI eval gate + observability. ✅
+**Milestone:** Dockerized API with CI, health checks, and basic observability. ✅
 
 ---
 
-## Phase 13: AI Engineering Interview Handbook
+## Side tracks
 
-**Goal:** Prepare for technical, coding, system design, and behavioral AI engineering interviews.
-
-**Duration:** 4–8 weeks (parallel with phases 2–12 review)
-
-| Order | Topic | Domain | Key Outcomes |
-|-------|-------|--------|-------------|
-| 13.1 | Interview handbook | [interview-preparation](../domains/interview-preparation/) | 20 sections + mocks |
-| 13.2 | Practice packs | [interview-preparation](../domains/interview-preparation/) | Junior → Staff mocks |
-
-**Milestone:** Complete mock interview at target level with rubric self-score. ✅
+| Track | When | Hub |
+|-------|------|-----|
+| Templates & assets | Building in parallel | [Templates](../templates/README.md) |
+| Safety | Before public launch | [AI Safety](../domains/ai-safety/README.md) |
+| Debugging | When something breaks | [Debugging](../domains/debugging/README.md) |
+| Interviews | Job search | [Interview Prep](../domains/interview-preparation/README.md) |
+| Papers | Deepening theory | [Research Papers](../domains/papers/README.md) |
 
 ---
 
-## Phase 14: Engineering Templates & Reusable Assets
+## Later depth (optional)
 
-**Goal:** Ship new AI products in minutes using production-ready starters.
+These domains are **planned or thin** — use after the core path:
 
-**Duration:** 1 week (reference while building)
+- Workflows & multi-agent depth  
+- Cloud / model serving / inference optimization  
+- Extended architecture domains  
 
-| Order | Topic | Location | Key Outcomes |
-|-------|-------|----------|--------------|
-| 14.1 | API starter | [templates/engineering/fastapi-starter](../templates/engineering/fastapi-starter/) | Modular FastAPI + Docker + CI |
-| 14.2 | RAG & agent starters | [templates/engineering/](../templates/engineering/) | Pipelines and agent runtime |
-| 14.3 | Ops templates | [templates/engineering/](../templates/engineering/) | Logging, monitoring, deploy |
-
-**Milestone:** New repo bootstrapped from templates with health check and CI green. ✅
+See [Domains Overview](../domains/README.md) for Published vs Planned.
 
 ---
 
-## Phase 15: AI Research Papers & Literature Review
+## See also
 
-**Goal:** Connect research papers to production architecture decisions.
-
-**Duration:** 2–3 weeks (read alongside Phases 4–9)
-
-| Order | Topic | Domain | Key Outcomes |
-|-------|-------|--------|--------------|
-| 15.1 | Transformer foundations | [papers](../domains/papers/) | Attention, encoder-decoder impact |
-| 15.2 | Reasoning & retrieval papers | [papers](../domains/papers/) | ReAct, Self-RAG, GraphRAG |
-| 15.3 | Synthesis | [papers](../domains/papers/) | Comparisons, takeaways, future work |
-
-**Milestone:** Explain three paper architectures in a system design interview. ✅
-
----
-
-## Phase 16: AI Workflows and Multi-Agent Systems
-
-**Goal:** Orchestrate complex AI processes and multi-agent collaboration.
-
-**Duration:** 3–4 weeks
-
-| Order | Topic | Domain | Key Outcomes |
-|-------|-------|--------|-------------|
-| 16.1 | Workflow orchestration | [ai-workflows](../domains/ai-workflows/) | State machines, DAGs, conditional routing |
-| 16.2 | LangGraph and frameworks | [ai-workflows](../domains/ai-workflows/) | Graph-based agent workflows |
-| 16.3 | Multi-agent systems | [multi-agent-systems](../domains/multi-agent-systems/) | Delegation, handoffs, collaboration patterns |
-| 16.4 | Human-in-the-loop | [ai-workflows](../domains/ai-workflows/) | Approval flows, feedback integration |
-
-**Milestone:** Build a multi-agent workflow with human-in-the-loop approval.
-
----
-
-## Phase 17: Cloud & Advanced Deployment
-
-**Goal:** Cloud-native deployment and model serving depth (extends Phase 12).
-
-**Duration:** 4–5 weeks
-
-| Order | Topic | Domain | Key Outcomes |
-|-------|-------|--------|-------------|
-| 17.1 | Cloud deployment | [cloud-deployment](../domains/cloud-deployment/) | Managed services, regions |
-| 17.2 | Model serving | [model-serving](../domains/model-serving/) | Load balancing, GPU serving |
-| 17.3 | Inference optimization | [inference-optimization](../domains/inference-optimization/) | Batching, caching |
-
-**Milestone:** Cloud-deployed AI API with autoscaling.
-
----
-
-## Phase 18: Monitoring, Observability, and Optimization (Depth)
-
-**Goal:** Operate AI systems reliably in production.
-
-**Duration:** 3–4 weeks
-
-| Order | Topic | Domain | Key Outcomes |
-|-------|-------|--------|-------------|
-| 18.1 | Logging depth | [logging](../domains/logging/) | Structured logging, PII redaction |
-| 18.2 | Monitoring depth | [monitoring](../domains/monitoring/) | Dashboards, alerting, SLIs/SLOs |
-| 18.3 | Observability depth | [observability](../domains/observability/) | Tracing, LLM-specific telemetry |
-| 18.4 | Performance optimization | [performance-optimization](../domains/performance-optimization/) | Latency, throughput, cost |
-| 18.5 | Security in production | [security](../domains/security/) | Input validation, key rotation |
-| 18.6 | AI safety and guardrails | [ai-safety](../domains/ai-safety/) | Content filtering, bias detection |
-
-**Milestone:** Set up full observability for an AI application with cost tracking and alerting.
-
----
-
-## Phase 19: Extended Architecture (Depth)
-
-**Goal:** Deep-dive architecture domains beyond Phase 11 handbook.
-
-**Duration:** Ongoing
-
-| Order | Topic | Domain | Key Outcomes |
-|-------|-------|--------|-------------|
-| 19.1 | AI application architecture | [ai-application-architecture](../domains/ai-application-architecture/) | Component design, data flow |
-| 19.2 | Design patterns | [design-patterns](../domains/design-patterns/) | Reusable AI engineering patterns |
-| 19.3 | Distributed systems | [distributed-systems](../domains/distributed-systems/) | Scaling, consistency, fault tolerance |
-| 19.4 | Software architecture | [software-architecture](../domains/software-architecture/) | Clean architecture for AI apps |
-
----
-
-## Extending the Roadmap
-
-This roadmap is designed to grow. When adding new phases or topics:
-
-1. **Identify the prerequisite phase** — what must be learned first?
-2. **Define clear outcomes** — what can the learner build or do?
-3. **Link to domain folders** — where will the content live?
-4. **Add a milestone project** — practical application of the knowledge.
-5. **Update this document** — add the new phase or insert into an existing phase.
-
-### Future Topics (Placeholders)
-
-These topics will be added as the field evolves:
-
-- Multimodal AI (vision, audio, video integration)
-- AI automation systems (workflow automation beyond agents)
-- Edge inference and on-device AI
-- Fine-tuning and model customization (when practically needed)
-- New agent protocols and communication standards
-- AI-native databases and storage systems
-
----
-
-## Visual Overview
-
-```mermaid
-gantt
-    title AI Engineering Learning Roadmap
-    dateFormat YYYY-MM
-    axisFormat %b
-
-    section Foundations
-    Python & Engineering     :p1, 2026-01, 6w
-    Backend & APIs           :p2, after p1, 6w
-    Databases                :p3, after p2, 4w
-
-    section AI Core
-    LLM Fundamentals         :p4, after p3, 4w
-    Prompt Engineering       :p5, after p4, 3w
-    Context Engineering      :p6, after p5, 3w
-
-    section Retrieval
-    Embeddings & Vectors     :p7, after p6, 4w
-    RAG Systems              :p8, after p7, 5w
-
-    section Agents
-    AI Agents                :p9, after p8, 6w
-    Workflows & Multi-Agent  :p10, after p9, 4w
-
-    section Production
-    Evaluation               :p11, after p8, 4w
-    Deployment               :p12, after p10, 5w
-    Monitoring & Ops         :p13, after p12, 4w
-    System Design            :p14, after p8, 8w
-```
-
----
-
-## See Also
-
-- [Domains Overview](../domains/README.md)
+- [Home — how the playbook is organized](../README.md)
+- [Capstone walkthrough](capstone-walkthrough.md)
 - [Master Index](indexes/MASTER-INDEX.md)
-- [Capstone Walkthrough](capstone-walkthrough.md)
-- [Examples](../examples/)
