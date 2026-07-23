@@ -26,4 +26,4 @@ log_event(logger, "llm_call", model="gpt-4o", tokens=512)
 ## Related
 
 - [FastAPI middleware](../fastapi-starter/src/app/api/middleware.py)
-- [Production Observability](../../domains/ai-deployment/observability-for-ai-systems.md)
+- [Production Observability](../../../domains/ai-deployment/observability-for-ai.md)

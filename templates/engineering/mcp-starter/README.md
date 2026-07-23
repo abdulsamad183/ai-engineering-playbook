@@ -53,4 +53,4 @@ python client.py   # list tools
 ## Related Templates
 
 - [Architecture: MCP](../architecture/mcp.mmd)
-- [MCP Handbook](../../domains/mcp/README.md)
+- [MCP Handbook](../../../domains/mcp/README.md)

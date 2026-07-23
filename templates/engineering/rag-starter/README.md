@@ -115,4 +115,4 @@ PYTHONPATH=src python -m rag.main
 
 ## See Also
 
-- [RAG Handbook](../../domains/rag/README.md)
+- [RAG Handbook](../../../domains/rag/README.md)

@@ -17,5 +17,5 @@
 
 ## Related
 
-- [Production Deployment Handbook](../../domains/ai-deployment/README.md)
+- [Production Deployment Handbook](../../../domains/ai-deployment/README.md)
 - [Docker Compose](../docker/docker-compose.yml)

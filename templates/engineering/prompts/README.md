@@ -6,7 +6,7 @@
 
 ## Purpose
 
-Extend the main [prompts/templates](../../prompts/templates/) library with agent, reflection, and report templates using `{{variable}}` placeholders.
+Extend the main [prompts/templates](../../../prompts/templates/) library with agent, reflection, and report templates using `{{variable}}` placeholders.
 
 ---
 
@@ -26,5 +26,5 @@ Load with [utilities/playbook_utils/prompts.py](../utilities/playbook_utils/prom
 
 ## Related
 
-- [Prompt Templates Guide](../../domains/prompt-engineering/prompt-templates-guide.md)
-- [Full prompt library](../../prompts/templates/README.md)
+- [Prompt Templates Guide](../../../domains/prompt-engineering/prompt-templates-guide.md)
+- [Full prompt library](../../../prompts/templates/README.md)

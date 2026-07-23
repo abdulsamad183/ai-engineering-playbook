@@ -22,4 +22,4 @@ Copy `.github/workflows/` into your repository root. Customize Python version an
 ## Related
 
 - [FastAPI starter CI](../fastapi-starter/.github/workflows/ci.yml)
-- [Git and GitHub Workflow](../../domains/foundations/git-github-workflow.md)
+- [Git and GitHub Workflow](../../../domains/foundations/git-github-workflow.md)

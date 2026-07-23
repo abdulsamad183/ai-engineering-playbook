@@ -8,7 +8,7 @@ created: 2026-07-13
 updated: 2026-07-13
 version: "1.0"
 related:
-  - ../logging/logging-for-ai-applications.md
+  - ../logging/backend-logging-for-ai.md
   - human-in-the-loop.md
 keywords: [production agents, tracing, scaling, checkpointing]
 author: hp

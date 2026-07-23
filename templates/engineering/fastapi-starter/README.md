@@ -143,5 +143,5 @@ curl http://localhost:8000/api/v1/health
 
 ## See Also
 
-- [FastAPI Foundation](../../domains/fastapi/fastapi-foundation.md)
-- [Backend Architecture for AI](../../domains/backend-engineering/backend-architecture-for-ai.md)
+- [FastAPI Foundation](../../../domains/fastapi/fastapi-foundation.md)
+- [Backend Architecture for AI](../../../domains/backend-engineering/backend-architecture-for-ai.md)

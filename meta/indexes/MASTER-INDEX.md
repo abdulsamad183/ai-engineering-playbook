@@ -1,7 +1,7 @@
 # Master Index
 
 > Complete index of all published documents in the AI Engineering Playbook.
-> Last updated: 2026-07-13
+> Last updated: 2026-07-23
 
 ---
 
@@ -385,9 +385,14 @@
 
 ### AI Safety
 
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
+| Document | Status | Description |
+|----------|--------|-------------|
+| [AI Safety Index](../../domains/ai-safety/README.md) | Published | Safety handbook hub |
+| [Introduction to AI Safety](../../domains/ai-safety/introduction-to-ai-safety.md) | Published | Why safety matters for engineers |
+| [Prompt Injection & Jailbreaks](../../domains/ai-safety/prompt-injection-and-jailbreaks.md) | Published | Attacks and defenses |
+| [Guardrails & Content Filtering](../../domains/ai-safety/guardrails-and-content-filtering.md) | Published | Layered guardrails, PII |
+| [Safe Tool Use](../../domains/ai-safety/safe-tool-use.md) | Published | Allowlists, HITL, least privilege |
+| [Production Safety Checklist](../../domains/ai-safety/production-ai-safety-checklist.md) | Published | Ship checklist |
 
 [Domain index →](../../domains/ai-safety/README.md)
 
@@ -581,9 +586,14 @@
 
 ### Debugging
 
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
+| Document | Status | Description |
+|----------|--------|-------------|
+| [Debugging Index](../../domains/debugging/README.md) | Published | Debugging handbook hub |
+| [Introduction to AI Debugging](../../domains/debugging/introduction-to-ai-debugging.md) | Published | Non-determinism, triage mindset |
+| [Debugging RAG Pipelines](../../domains/debugging/debugging-rag-pipelines.md) | Published | Retrieval and hallucination failures |
+| [Debugging Agents](../../domains/debugging/debugging-agents.md) | Published | Loops, tools, bad plans |
+| [Debugging LLM APIs](../../domains/debugging/debugging-llm-apis.md) | Published | Timeouts, rate limits, streaming |
+| [AI Debugging Playbook](../../domains/debugging/ai-debugging-playbook.md) | Published | Step-by-step triage |
 
 [Domain index →](../../domains/debugging/README.md)
 

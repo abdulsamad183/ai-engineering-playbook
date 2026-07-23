@@ -21,11 +21,11 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 1.1 | Python fundamentals | [python-engineering](../../domains/python-engineering/) | Variables, functions, classes, error handling |
-| 1.2 | Python advanced patterns | [python-engineering](../../domains/python-engineering/) | Async/await, type hints, decorators, context managers |
-| 1.3 | Package management and tooling | [python-engineering](../../domains/python-engineering/) | venv, pip, ruff, pytest |
-| 1.4 | Git and version control | [foundations](../../domains/foundations/) | Branching, PRs, conventional commits |
-| 1.5 | Software engineering principles | [foundations](../../domains/foundations/) | SOLID, clean code, testing mindset |
+| 1.1 | Python fundamentals | [python-engineering](../domains/python-engineering/) | Variables, functions, classes, error handling |
+| 1.2 | Python advanced patterns | [python-engineering](../domains/python-engineering/) | Async/await, type hints, decorators, context managers |
+| 1.3 | Package management and tooling | [python-engineering](../domains/python-engineering/) | venv, pip, ruff, pytest |
+| 1.4 | Git and version control | [foundations](../domains/foundations/) | Branching, PRs, conventional commits |
+| 1.5 | Software engineering principles | [foundations](../domains/foundations/) | SOLID, clean code, testing mindset |
 
 **Milestone:** Write a well-structured Python CLI tool with tests and type hints.
 
@@ -39,11 +39,11 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 2.1 | HTTP and REST fundamentals | [apis](../../domains/apis/) | Methods, status codes, headers, REST principles |
-| 2.2 | FastAPI basics | [fastapi](../../domains/fastapi/) | Routes, dependency injection, request/response models |
-| 2.3 | FastAPI advanced | [fastapi](../../domains/fastapi/) | Middleware, background tasks, WebSockets |
-| 2.4 | Backend patterns | [backend-engineering](../../domains/backend-engineering/) | Service layer, repository pattern, error handling |
-| 2.5 | Authentication and authorization | [security](../../domains/security/) | API keys, JWT, OAuth basics |
+| 2.1 | HTTP and REST fundamentals | [apis](../domains/apis/) | Methods, status codes, headers, REST principles |
+| 2.2 | FastAPI basics | [fastapi](../domains/fastapi/) | Routes, dependency injection, request/response models |
+| 2.3 | FastAPI advanced | [fastapi](../domains/fastapi/) | Middleware, background tasks, WebSockets |
+| 2.4 | Backend patterns | [backend-engineering](../domains/backend-engineering/) | Service layer, repository pattern, error handling |
+| 2.5 | Authentication and authorization | [security](../domains/security/) | API keys, JWT, OAuth basics |
 
 **Milestone:** Build a REST API with authentication, validation, and automated tests.
 
@@ -57,10 +57,10 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 3.1 | SQL fundamentals | [databases/sql](../../domains/databases/sql/) | SELECT, JOIN, INSERT, indexes |
-| 3.2 | PostgreSQL | [databases/postgresql](../../domains/databases/postgresql/) | Setup, migrations, JSON columns |
-| 3.3 | Redis | [databases/redis](../../domains/databases/redis/) | Caching, session storage, rate limiting |
-| 3.4 | Data modeling for AI apps | [data-engineering](../../domains/data-engineering/) | Conversation storage, document metadata |
+| 3.1 | SQL fundamentals | [databases/sql](../domains/databases/sql/) | SELECT, JOIN, INSERT, indexes |
+| 3.2 | PostgreSQL | [databases/postgresql](../domains/databases/postgresql/) | Setup, migrations, JSON columns |
+| 3.3 | Redis | [databases/redis](../domains/databases/redis/) | Caching, session storage, rate limiting |
+| 3.4 | Data modeling for AI apps | [data-engineering](../domains/data-engineering/) | Conversation storage, document metadata |
 
 **Milestone:** Design and implement a database schema for a chat application with caching.
 
@@ -74,10 +74,10 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 4.1 | How LLMs work (practical) | [llm-engineering](../../domains/llm-engineering/) | Tokens, context windows, temperature, model families |
-| 4.2 | LLM API integration | [llm-engineering](../../domains/llm-engineering/) | Chat completions, streaming, function calling |
-| 4.3 | Model selection | [model-integration](../../domains/model-integration/) | Choosing models by task, cost, latency |
-| 4.4 | Error handling and resilience | [llm-engineering](../../domains/llm-engineering/) | Retries, fallbacks, timeout management |
+| 4.1 | How LLMs work (practical) | [llm-engineering](../domains/llm-engineering/) | Tokens, context windows, temperature, model families |
+| 4.2 | LLM API integration | [llm-engineering](../domains/llm-engineering/) | Chat completions, streaming, function calling |
+| 4.3 | Model selection | [model-integration](../domains/model-integration/) | Choosing models by task, cost, latency |
+| 4.4 | Error handling and resilience | [llm-engineering](../domains/llm-engineering/) | Retries, fallbacks, timeout management |
 
 **Milestone:** Build a streaming chat API endpoint with error handling and model fallback.
 
@@ -91,11 +91,11 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 5.1 | Prompt engineering handbook | [prompt-engineering](../../domains/prompt-engineering/) | 18 sections: anatomy through production |
-| 5.2 | Structured prompting | [prompt-engineering](../../domains/prompt-engineering/structured-prompting.md) | XML, JSON, Markdown, tagged formats |
-| 5.3 | Reasoning & chaining | [prompt-engineering](../../domains/prompt-engineering/) | CoT, ReAct, ToT, multi-step pipelines |
-| 5.4 | Testing & evaluation | [prompt-engineering](../../domains/prompt-engineering/) | Golden datasets, regression, metrics |
-| 5.5 | Prompt patterns library | [prompts/templates](../../prompts/templates/) | 16 reusable production templates |
+| 5.1 | Prompt engineering handbook | [prompt-engineering](../domains/prompt-engineering/) | 18 sections: anatomy through production |
+| 5.2 | Structured prompting | [prompt-engineering](../domains/prompt-engineering/structured-prompting.md) | XML, JSON, Markdown, tagged formats |
+| 5.3 | Reasoning & chaining | [prompt-engineering](../domains/prompt-engineering/) | CoT, ReAct, ToT, multi-step pipelines |
+| 5.4 | Testing & evaluation | [prompt-engineering](../domains/prompt-engineering/) | Golden datasets, regression, metrics |
+| 5.5 | Prompt patterns library | [prompts/templates](../prompts/templates/) | 16 reusable production templates |
 
 **Milestone:** Versioned prompt with golden dataset, CI regression tests, and structured output validation. ✅
 
@@ -109,10 +109,10 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 6.1 | Context engineering handbook | [context-engineering](../../domains/context-engineering/) | 20 sections: architecture through production |
-| 6.2 | Memory and state | [context-engineering](../../domains/context-engineering/memory-systems.md) | Six memory types, conversation state |
-| 6.3 | Selection and ranking | [context-engineering](../../domains/context-engineering/) | Filter, rank, compress, budget |
-| 6.4 | Retrieval context foundation | [context-engineering](../../domains/context-engineering/retrieval-context.md) | Grounding before full RAG phase |
+| 6.1 | Context engineering handbook | [context-engineering](../domains/context-engineering/) | 20 sections: architecture through production |
+| 6.2 | Memory and state | [context-engineering](../domains/context-engineering/memory-systems.md) | Six memory types, conversation state |
+| 6.3 | Selection and ranking | [context-engineering](../domains/context-engineering/) | Filter, rank, compress, budget |
+| 6.4 | Retrieval context foundation | [context-engineering](../domains/context-engineering/retrieval-context.md) | Grounding before full RAG phase |
 
 **Milestone:** Context engine with traced assembly, layered budgets, and retrieval integration. ✅
 
@@ -126,10 +126,10 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 7.1 | RAG handbook | [rag](../../domains/rag/) | 21 sections: ingest through production |
-| 7.2 | Vector databases | [rag/providers](../../domains/rag/providers/) | 7 provider guides |
-| 7.3 | Evaluation | [rag/rag-evaluation.md](../../domains/rag/rag-evaluation.md) | Golden sets, recall@K, RAGAS |
-| 7.4 | Advanced RAG | [rag/advanced-rag-architectures.md](../../domains/rag/advanced-rag-architectures.md) | GraphRAG, agentic patterns |
+| 7.1 | RAG handbook | [rag](../domains/rag/) | 21 sections: ingest through production |
+| 7.2 | Vector databases | [rag/providers](../domains/rag/providers/) | 7 provider guides |
+| 7.3 | Evaluation | [rag/rag-evaluation.md](../domains/rag/rag-evaluation.md) | Golden sets, recall@K, RAGAS |
+| 7.4 | Advanced RAG | [rag/advanced-rag-architectures.md](../domains/rag/advanced-rag-architectures.md) | GraphRAG, agentic patterns |
 
 **Milestone:** Hybrid RAG with CI eval gate and tenant ACL filters. ✅
 
@@ -157,9 +157,9 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 9.1 | MCP handbook | [mcp](../../domains/mcp/) | 20 sections + comparisons |
-| 9.2 | Server & client builds | [mcp](../../domains/mcp/) | Reference implementations |
-| 9.3 | Production MCP | [mcp](../../domains/mcp/) | Security, multi-server, observability |
+| 9.1 | MCP handbook | [mcp](../domains/mcp/) | 20 sections + comparisons |
+| 9.2 | Server & client builds | [mcp](../domains/mcp/) | Reference implementations |
+| 9.3 | Production MCP | [mcp](../domains/mcp/) | Security, multi-server, observability |
 
 **Milestone:** Production MCP server with tools, resources, auth, and tests. ✅
 
@@ -173,9 +173,9 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 10.1 | Evaluation handbook | [ai-evaluation](../../domains/ai-evaluation/) | 20 sections + frameworks |
-| 10.2 | RAG & agent eval | [ai-evaluation](../../domains/ai-evaluation/) | RAGAS, metrics, golden sets |
-| 10.3 | Continuous eval | [ai-evaluation](../../domains/ai-evaluation/) | CI/CD, A/B, dashboards |
+| 10.1 | Evaluation handbook | [ai-evaluation](../domains/ai-evaluation/) | 20 sections + frameworks |
+| 10.2 | RAG & agent eval | [ai-evaluation](../domains/ai-evaluation/) | RAGAS, metrics, golden sets |
+| 10.3 | Continuous eval | [ai-evaluation](../domains/ai-evaluation/) | CI/CD, A/B, dashboards |
 
 **Milestone:** Golden dataset + CI regression gate + quality dashboard. ✅
 
@@ -189,8 +189,8 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 11.1 | System design handbook | [ai-system-design](../../domains/ai-system-design/) | 17 sections + product designs |
-| 11.2 | Scaling & patterns | [ai-system-design](../../domains/ai-system-design/) | Scale, tradeoffs, interviews |
+| 11.1 | System design handbook | [ai-system-design](../domains/ai-system-design/) | 17 sections + product designs |
+| 11.2 | Scaling & patterns | [ai-system-design](../domains/ai-system-design/) | Scale, tradeoffs, interviews |
 
 **Milestone:** Whiteboard design for ChatGPT-class + enterprise RAG systems. ✅
 
@@ -204,9 +204,9 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 12.1 | Production handbook | [ai-deployment](../../domains/ai-deployment/) | Docker, deploy, CI/CD |
-| 12.2 | Observability & ops | [ai-deployment](../../domains/ai-deployment/) | Logging, tracing, incidents |
-| 12.3 | Reliability & security | [ai-deployment](../../domains/ai-deployment/) | Cache, retry, readiness |
+| 12.1 | Production handbook | [ai-deployment](../domains/ai-deployment/) | Docker, deploy, CI/CD |
+| 12.2 | Observability & ops | [ai-deployment](../domains/ai-deployment/) | Logging, tracing, incidents |
+| 12.3 | Reliability & security | [ai-deployment](../domains/ai-deployment/) | Cache, retry, readiness |
 
 **Milestone:** Dockerized AI API with CI eval gate + observability. ✅
 
@@ -220,8 +220,8 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 13.1 | Interview handbook | [interview-preparation](../../domains/interview-preparation/) | 20 sections + mocks |
-| 13.2 | Practice packs | [interview-preparation](../../domains/interview-preparation/) | Junior → Staff mocks |
+| 13.1 | Interview handbook | [interview-preparation](../domains/interview-preparation/) | 20 sections + mocks |
+| 13.2 | Practice packs | [interview-preparation](../domains/interview-preparation/) | Junior → Staff mocks |
 
 **Milestone:** Complete mock interview at target level with rubric self-score. ✅
 
@@ -235,9 +235,9 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Location | Key Outcomes |
 |-------|-------|----------|--------------|
-| 14.1 | API starter | [templates/engineering/fastapi-starter](../../templates/engineering/fastapi-starter/) | Modular FastAPI + Docker + CI |
-| 14.2 | RAG & agent starters | [templates/engineering/](../../templates/engineering/) | Pipelines and agent runtime |
-| 14.3 | Ops templates | [templates/engineering/](../../templates/engineering/) | Logging, monitoring, deploy |
+| 14.1 | API starter | [templates/engineering/fastapi-starter](../templates/engineering/fastapi-starter/) | Modular FastAPI + Docker + CI |
+| 14.2 | RAG & agent starters | [templates/engineering/](../templates/engineering/) | Pipelines and agent runtime |
+| 14.3 | Ops templates | [templates/engineering/](../templates/engineering/) | Logging, monitoring, deploy |
 
 **Milestone:** New repo bootstrapped from templates with health check and CI green. ✅
 
@@ -251,9 +251,9 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|--------------|
-| 15.1 | Transformer foundations | [papers](../../domains/papers/) | Attention, encoder-decoder impact |
-| 15.2 | Reasoning & retrieval papers | [papers](../../domains/papers/) | ReAct, Self-RAG, GraphRAG |
-| 15.3 | Synthesis | [papers](../../domains/papers/) | Comparisons, takeaways, future work |
+| 15.1 | Transformer foundations | [papers](../domains/papers/) | Attention, encoder-decoder impact |
+| 15.2 | Reasoning & retrieval papers | [papers](../domains/papers/) | ReAct, Self-RAG, GraphRAG |
+| 15.3 | Synthesis | [papers](../domains/papers/) | Comparisons, takeaways, future work |
 
 **Milestone:** Explain three paper architectures in a system design interview. ✅
 
@@ -267,10 +267,10 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 16.1 | Workflow orchestration | [ai-workflows](../../domains/ai-workflows/) | State machines, DAGs, conditional routing |
-| 16.2 | LangGraph and frameworks | [ai-workflows](../../domains/ai-workflows/) | Graph-based agent workflows |
-| 16.3 | Multi-agent systems | [multi-agent-systems](../../domains/multi-agent-systems/) | Delegation, handoffs, collaboration patterns |
-| 16.4 | Human-in-the-loop | [ai-workflows](../../domains/ai-workflows/) | Approval flows, feedback integration |
+| 16.1 | Workflow orchestration | [ai-workflows](../domains/ai-workflows/) | State machines, DAGs, conditional routing |
+| 16.2 | LangGraph and frameworks | [ai-workflows](../domains/ai-workflows/) | Graph-based agent workflows |
+| 16.3 | Multi-agent systems | [multi-agent-systems](../domains/multi-agent-systems/) | Delegation, handoffs, collaboration patterns |
+| 16.4 | Human-in-the-loop | [ai-workflows](../domains/ai-workflows/) | Approval flows, feedback integration |
 
 **Milestone:** Build a multi-agent workflow with human-in-the-loop approval.
 
@@ -284,9 +284,9 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 17.1 | Cloud deployment | [cloud-deployment](../../domains/cloud-deployment/) | Managed services, regions |
-| 17.2 | Model serving | [model-serving](../../domains/model-serving/) | Load balancing, GPU serving |
-| 17.3 | Inference optimization | [inference-optimization](../../domains/inference-optimization/) | Batching, caching |
+| 17.1 | Cloud deployment | [cloud-deployment](../domains/cloud-deployment/) | Managed services, regions |
+| 17.2 | Model serving | [model-serving](../domains/model-serving/) | Load balancing, GPU serving |
+| 17.3 | Inference optimization | [inference-optimization](../domains/inference-optimization/) | Batching, caching |
 
 **Milestone:** Cloud-deployed AI API with autoscaling.
 
@@ -300,12 +300,12 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 18.1 | Logging depth | [logging](../../domains/logging/) | Structured logging, PII redaction |
-| 18.2 | Monitoring depth | [monitoring](../../domains/monitoring/) | Dashboards, alerting, SLIs/SLOs |
-| 18.3 | Observability depth | [observability](../../domains/observability/) | Tracing, LLM-specific telemetry |
-| 18.4 | Performance optimization | [performance-optimization](../../domains/performance-optimization/) | Latency, throughput, cost |
-| 18.5 | Security in production | [security](../../domains/security/) | Input validation, key rotation |
-| 18.6 | AI safety and guardrails | [ai-safety](../../domains/ai-safety/) | Content filtering, bias detection |
+| 18.1 | Logging depth | [logging](../domains/logging/) | Structured logging, PII redaction |
+| 18.2 | Monitoring depth | [monitoring](../domains/monitoring/) | Dashboards, alerting, SLIs/SLOs |
+| 18.3 | Observability depth | [observability](../domains/observability/) | Tracing, LLM-specific telemetry |
+| 18.4 | Performance optimization | [performance-optimization](../domains/performance-optimization/) | Latency, throughput, cost |
+| 18.5 | Security in production | [security](../domains/security/) | Input validation, key rotation |
+| 18.6 | AI safety and guardrails | [ai-safety](../domains/ai-safety/) | Content filtering, bias detection |
 
 **Milestone:** Set up full observability for an AI application with cost tracking and alerting.
 
@@ -319,10 +319,10 @@ The path is sequential within each phase but parallel across phases once prerequ
 
 | Order | Topic | Domain | Key Outcomes |
 |-------|-------|--------|-------------|
-| 19.1 | AI application architecture | [ai-application-architecture](../../domains/ai-application-architecture/) | Component design, data flow |
-| 19.2 | Design patterns | [design-patterns](../../domains/design-patterns/) | Reusable AI engineering patterns |
-| 19.3 | Distributed systems | [distributed-systems](../../domains/distributed-systems/) | Scaling, consistency, fault tolerance |
-| 19.4 | Software architecture | [software-architecture](../../domains/software-architecture/) | Clean architecture for AI apps |
+| 19.1 | AI application architecture | [ai-application-architecture](../domains/ai-application-architecture/) | Component design, data flow |
+| 19.2 | Design patterns | [design-patterns](../domains/design-patterns/) | Reusable AI engineering patterns |
+| 19.3 | Distributed systems | [distributed-systems](../domains/distributed-systems/) | Scaling, consistency, fault tolerance |
+| 19.4 | Software architecture | [software-architecture](../domains/software-architecture/) | Clean architecture for AI apps |
 
 ---
 
@@ -386,7 +386,7 @@ gantt
 
 ## See Also
 
-- [Domains Overview](../../domains/README.md)
+- [Domains Overview](../domains/README.md)
 - [Master Index](indexes/MASTER-INDEX.md)
 - [Capstone Walkthrough](capstone-walkthrough.md)
-- [Examples](../../examples/)
+- [Examples](../examples/)

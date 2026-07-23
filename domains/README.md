@@ -2,6 +2,8 @@
 
 > Knowledge organized by engineering domain — the core content of the AI Engineering Playbook.
 
+**Status legend:** **Published** = substantive docs beyond the README · **Planned** = folder reserved, content still to come. Empty domains are kept on purpose; do not delete them.
+
 ---
 
 ## How Domains Work
@@ -100,92 +102,92 @@ graph TB
 
 ### Foundations
 
-| Domain | Description |
-|--------|-------------|
-| [foundations](foundations/) | Core concepts and prerequisites |
-| [python-engineering](python-engineering/) | Python for AI applications |
+| Domain | Description | Status |
+|--------|-------------|--------|
+| [foundations](foundations/) | Core concepts and prerequisites | Published |
+| [python-engineering](python-engineering/) | Python for AI applications | Published |
 
 ### Engineering
 
-| Domain | Description |
-|--------|-------------|
-| [backend-engineering](backend-engineering/) | Backend patterns and service design |
-| [apis](apis/) | API design for AI services |
-| [fastapi](fastapi/) | FastAPI framework |
-| [databases](databases/) | Database concepts and patterns |
-| [databases/sql](databases/sql/) | SQL for AI applications |
-| [databases/postgresql](databases/postgresql/) | PostgreSQL |
-| [databases/redis](databases/redis/) | Redis caching and data store |
+| Domain | Description | Status |
+|--------|-------------|--------|
+| [backend-engineering](backend-engineering/) | Backend patterns and service design | Published |
+| [apis](apis/) | API design for AI services | Published |
+| [fastapi](fastapi/) | FastAPI framework | Published |
+| [databases](databases/) | Database concepts and patterns | Published |
+| [databases/sql](databases/sql/) | SQL for AI applications | Planned |
+| [databases/postgresql](databases/postgresql/) | PostgreSQL | Published |
+| [databases/redis](databases/redis/) | Redis caching and data store | Published |
 
 ### LLM Systems
 
-| Domain | Description |
-|--------|-------------|
-| [llm-engineering](llm-engineering/) | LLM integration and API usage |
-| [prompt-engineering](prompt-engineering/) | Prompt design and optimization |
-| [context-engineering](context-engineering/) | Context window and memory management |
-| [embeddings](embeddings/) | Vector embeddings and chunking |
-| [vector-databases](vector-databases/) | Vector storage and similarity search |
+| Domain | Description | Status |
+|--------|-------------|--------|
+| [llm-engineering](llm-engineering/) | LLM integration and API usage | Published |
+| [prompt-engineering](prompt-engineering/) | Prompt design and optimization | Published |
+| [context-engineering](context-engineering/) | Context window and memory management | Published |
+| [embeddings](embeddings/) | Vector embeddings and chunking | Planned |
+| [vector-databases](vector-databases/) | Vector storage and similarity search | Planned |
 
 ### Retrieval and Agents
 
-| Domain | Description |
-|--------|-------------|
-| [rag](rag/) | Retrieval augmented generation |
-| [ai-agents](ai-agents/) | AI agent development |
-| [agent-architectures](agent-architectures/) | Agent system design patterns |
-| [mcp](mcp/) | Model Context Protocol |
-| [a2a](a2a/) | Agent-to-agent communication |
-| [ai-workflows](ai-workflows/) | Workflow orchestration |
-| [multi-agent-systems](multi-agent-systems/) | Multi-agent collaboration |
+| Domain | Description | Status |
+|--------|-------------|--------|
+| [rag](rag/) | Retrieval augmented generation | Published |
+| [ai-agents](ai-agents/) | AI agent development | Published |
+| [agent-architectures](agent-architectures/) | Agent system design patterns | Planned |
+| [mcp](mcp/) | Model Context Protocol | Published |
+| [a2a](a2a/) | Agent-to-agent communication | Planned |
+| [ai-workflows](ai-workflows/) | Workflow orchestration | Planned |
+| [multi-agent-systems](multi-agent-systems/) | Multi-agent collaboration | Planned |
 
 ### Production
 
-| Domain | Description |
-|--------|-------------|
-| [ai-evaluation](ai-evaluation/) | Evaluation and quality assurance |
-| [ai-safety](ai-safety/) | Safety and guardrails |
-| [model-integration](model-integration/) | Model selection and integration |
-| [model-serving](model-serving/) | Model deployment and serving |
-| [inference-optimization](inference-optimization/) | Inference performance |
-| [ai-deployment](ai-deployment/) | Production deployment |
-| [cloud-deployment](cloud-deployment/) | Cloud deployment strategies |
-| [docker](docker/) | Containerization |
-| [cicd](cicd/) | CI/CD pipelines |
-| [monitoring](monitoring/) | Monitoring and alerting |
-| [logging](logging/) | Structured logging |
-| [observability](observability/) | Tracing and telemetry |
-| [security](security/) | Security practices |
-| [performance-optimization](performance-optimization/) | Performance tuning |
+| Domain | Description | Status |
+|--------|-------------|--------|
+| [ai-evaluation](ai-evaluation/) | Evaluation and quality assurance | Published |
+| [ai-safety](ai-safety/) | Safety and guardrails | Planned |
+| [model-integration](model-integration/) | Model selection and integration | Planned |
+| [model-serving](model-serving/) | Model deployment and serving | Planned |
+| [inference-optimization](inference-optimization/) | Inference performance | Planned |
+| [ai-deployment](ai-deployment/) | Production deployment | Published |
+| [cloud-deployment](cloud-deployment/) | Cloud deployment strategies | Planned |
+| [docker](docker/) | Containerization | Planned |
+| [cicd](cicd/) | CI/CD pipelines | Planned |
+| [monitoring](monitoring/) | Monitoring and alerting | Published |
+| [logging](logging/) | Structured logging | Published |
+| [observability](observability/) | Tracing and telemetry | Planned |
+| [security](security/) | Security practices | Published |
+| [performance-optimization](performance-optimization/) | Performance tuning | Published |
 
 ### Architecture
 
-| Domain | Description |
-|--------|-------------|
-| [ai-system-design](ai-system-design/) | End-to-end system design |
-| [ai-application-architecture](ai-application-architecture/) | Application architecture |
-| [software-architecture](software-architecture/) | Software architecture principles |
-| [design-patterns](design-patterns/) | Reusable design patterns |
-| [distributed-systems](distributed-systems/) | Distributed system concepts |
+| Domain | Description | Status |
+|--------|-------------|--------|
+| [ai-system-design](ai-system-design/) | End-to-end system design | Published |
+| [ai-application-architecture](ai-application-architecture/) | Application architecture | Planned |
+| [software-architecture](software-architecture/) | Software architecture principles | Published |
+| [design-patterns](design-patterns/) | Reusable design patterns | Planned |
+| [distributed-systems](distributed-systems/) | Distributed system concepts | Planned |
 
 ### Operations
 
-| Domain | Description |
-|--------|-------------|
-| [data-engineering](data-engineering/) | Data pipelines for AI |
-| [debugging](debugging/) | Debugging AI applications |
-| [common-mistakes](common-mistakes/) | Mistakes and prevention |
-| [production-incidents](production-incidents/) | Incident postmortems |
+| Domain | Description | Status |
+|--------|-------------|--------|
+| [data-engineering](data-engineering/) | Data pipelines for AI | Planned |
+| [debugging](debugging/) | Debugging AI applications | Planned |
+| [common-mistakes](common-mistakes/) | Mistakes and prevention | Published |
+| [production-incidents](production-incidents/) | Incident postmortems | Planned |
 
 ### Growth
 
-| Domain | Description |
-|--------|-------------|
-| [interview-preparation](interview-preparation/) | Interview preparation |
-| [papers](papers/) | Research paper summaries |
-| [research-notes](research-notes/) | Research notes |
-| [career-notes](career-notes/) | Career development |
-| [resources](resources/) | External resources |
+| Domain | Description | Status |
+|--------|-------------|--------|
+| [interview-preparation](interview-preparation/) | Interview preparation | Published |
+| [papers](papers/) | Research paper summaries | Published |
+| [research-notes](research-notes/) | Research notes | Planned |
+| [career-notes](career-notes/) | Career development | Planned |
+| [resources](resources/) | External resources | Planned |
 
 ---
 

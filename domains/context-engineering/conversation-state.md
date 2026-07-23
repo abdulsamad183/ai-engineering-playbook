@@ -11,7 +11,7 @@ related:
   - conversation-history.md
   - memory-systems.md
   - dynamic-context.md
-  - ../backend-engineering/redis-for-ai-applications.md
+  - ../databases/redis/redis-for-ai.md
 keywords: [conversation state, session state, state machine, agent state, multi-turn]
 author: hp
 ---
@@ -213,7 +213,7 @@ class ConversationState:
 ### Prerequisites
 
 - [Context Architecture](context-architecture.md)
-- [Redis for AI](../backend-engineering/redis-for-ai-applications.md)
+- [Redis for AI](../databases/redis/redis-for-ai.md)
 
 ### Related Topics
 

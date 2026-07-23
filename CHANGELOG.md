@@ -1,5 +1,26 @@
 ## [Unreleased]
 
+## [1.3.0] - 2026-07-23
+
+### Added
+
+- **AI Safety handbook** — introduction, prompt injection, guardrails, safe tool use, production checklist
+- **Debugging handbook** — RAG/agent/API debugging + triage playbook
+- RAG and agent starter unit tests
+- Knowledge lesson: RAG citations beat longer context
+- Resource bookmarks (`tools.md`, `documentation.md`)
+- `meta/templates/case-study.md` (replaces project case-study workflow)
+
+### Fixed
+
+- Broken relative links in roadmap, engineering template READMEs, capstone, embeddings, tool-calling, Redis, Docker, logging, observability paths
+- Backend engineering example links pointing at missing files
+- Domains overview now marks Published vs Planned
+
+### Removed
+
+- `projects/` directory (earlier); `project.md` template deprecated in favor of case-study + knowledge retrospectives
+
 ## [1.2.1] - 2026-07-13
 
 ### Added

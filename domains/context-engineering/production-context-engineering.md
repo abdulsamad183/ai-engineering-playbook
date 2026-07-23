@@ -11,7 +11,7 @@ related:
   - context-architecture.md
   - context-quality.md
   - context-caching.md
-  - ../logging/logging-for-ai-applications.md
+  - ../logging/backend-logging-for-ai.md
   - ../monitoring/README.md
 keywords: [production context, observability, context analytics, A/B testing]
 author: hp
@@ -176,7 +176,7 @@ class ContextTrace:
 ### Prerequisites
 
 - [Context Architecture](context-architecture.md)
-- [Logging for AI](../logging/logging-for-ai-applications.md)
+- [Logging for AI](../logging/backend-logging-for-ai.md)
 
 ### Related Topics
 

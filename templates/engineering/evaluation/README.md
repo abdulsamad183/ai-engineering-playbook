@@ -17,10 +17,10 @@
 
 ## Usage
 
-Import modules into CI regression suites. Pair with [AI Evaluation handbook](../../domains/ai-evaluation/README.md).
+Import modules into CI regression suites. Pair with [AI Evaluation handbook](../../../domains/ai-evaluation/README.md).
 
 ---
 
 ## Related
 
-- [Regression testing example](../../examples/prompt-engineering/example-prompt-evaluation.py)
+- [Regression testing example](../../../examples/prompt-engineering/example-prompt-evaluation.py)

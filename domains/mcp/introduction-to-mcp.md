@@ -119,7 +119,7 @@ Before MCP, every AI product built **custom integrations** — N×M connectors, 
 3. **Agent frameworks** — LangChain tools, ad hoc
 4. **MCP** — protocol-level interoperability
 
-MCP complements [direct function calling](../llm-engineering/llm-tool-calling.md); it standardizes **how servers expose** capabilities.
+MCP complements [direct function calling](../llm-engineering/function-calling-and-tools.md); it standardizes **how servers expose** capabilities.
 
 ---
 

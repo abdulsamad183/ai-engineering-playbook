@@ -10,7 +10,7 @@ version: "1.0"
 related:
   - context-budgeting.md
   - dynamic-context.md
-  - ../backend-engineering/redis-for-ai-applications.md
+  - ../databases/redis/redis-for-ai.md
   - ../llm-engineering/llm-cost-optimization.md
 keywords: [prompt caching, context cache, cache invalidation, embeddings cache]
 author: hp
@@ -166,7 +166,7 @@ async def cached_retrieve(redis, key: str, fetch_fn, ttl: int = 300):
 
 ### Prerequisites
 
-- [Redis for AI](../backend-engineering/redis-for-ai-applications.md)
+- [Redis for AI](../databases/redis/redis-for-ai.md)
 - [Context Budgeting](context-budgeting.md)
 
 ### Related Topics

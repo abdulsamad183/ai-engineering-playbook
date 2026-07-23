@@ -8,8 +8,8 @@
 
 | File | Content | Status |
 |------|---------|--------|
-| `tools.md` | AI engineering tools and services | Planned |
-| `documentation.md` | Official docs and API references | Planned |
+| `tools.md` | AI engineering tools and services | Published |
+| `documentation.md` | Official docs and API references | Published |
 | `blogs.md` | Engineering blogs and newsletters | Planned |
 | `courses.md` | Courses and learning materials | Planned |
 | `communities.md` | Forums and communities | Planned |

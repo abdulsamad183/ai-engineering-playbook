@@ -10,7 +10,7 @@
 | [example-structured-xml-prompt.py](example-structured-xml-prompt.py) | XML prompts + parsing | [Structured Prompting](../../domains/prompt-engineering/structured-prompting.md) |
 | [example-prompt-evaluation.py](example-prompt-evaluation.py) | Golden dataset evaluation | [Prompt Evaluation](../../domains/prompt-engineering/prompt-evaluation.md) |
 | [example-rag-prompt.py](example-rag-prompt.py) | RAG-ready message assembly | [RAG Query Template](../../prompts/templates/rag-query.md) |
-| [example-function-calling-prompt.py](example-function-calling-prompt.py) | Tool definitions + parsing | [LLM Tool Calling](../../domains/llm-engineering/llm-tool-calling.md) |
+| [example-function-calling-prompt.py](example-function-calling-prompt.py) | Tool definitions + parsing | [LLM Tool Calling](../../domains/llm-engineering/function-calling-and-tools.md) |
 | [example-chatbot-support-prompt.py](example-chatbot-support-prompt.py) | Customer support chatbot | [Production Prompt Engineering](../../domains/prompt-engineering/production-prompt-engineering.md) |
 | [example-document-analysis.py](example-document-analysis.py) | Extract → classify → summarize | [Prompt Chaining](../../domains/prompt-engineering/prompt-chaining.md) |
 

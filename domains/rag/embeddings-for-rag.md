@@ -10,7 +10,7 @@ version: "1.0"
 related:
   - vector-databases.md
   - chunking.md
-  - ../llm-engineering/embeddings.md
+  - ../llm-engineering/embeddings-llm-perspective.md
 keywords: [embeddings, cosine similarity, dense retrieval, sparse, BGE, OpenAI embeddings]
 author: hp
 ---
@@ -52,7 +52,7 @@ flowchart LR
     IDX --> SEARCH
 ```
 
-> **See also:** [LLM Engineering Embeddings](../llm-engineering/embeddings.md) for transformer fundamentals.
+> **See also:** [LLM Engineering Embeddings](../llm-engineering/embeddings-llm-perspective.md) for transformer fundamentals.
 
 ---
 

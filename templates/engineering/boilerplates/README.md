@@ -74,5 +74,5 @@ FastAPI + auth + Postgres + Stripe webhook endpoint (add to `api/v1/endpoints/`)
 
 ## See Also
 
-- [AI System Design](../../domains/ai-system-design/README.md)
-- [Production AI](../../domains/ai-deployment/README.md)
+- [AI System Design](../../../domains/ai-system-design/README.md)
+- [Production AI](../../../domains/ai-deployment/README.md)

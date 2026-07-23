@@ -31,7 +31,7 @@
 | **Production Guide** | Production practices and checklists | [production-guide.md](production-guide.md) |
 | **Deployment Guide** | Step-by-step deployment instructions | [deployment-guide.md](deployment-guide.md) |
 | **Tutorial** | Hands-on learning guides | [tutorial.md](tutorial.md) |
-| **Project** | Project case studies and retrospectives | [project.md](project.md) |
+| **Case Study** | Project case studies and retrospectives (`knowledge/retrospectives/`) | [case-study.md](case-study.md) |
 | **Postmortem** | Incident reviews and action items | [postmortem.md](postmortem.md) |
 | **Interview Topic** | Interview preparation guides | [interview-topic.md](interview-topic.md) |
 | **Cheat Sheet** | Quick reference documents | [cheat-sheet.md](cheat-sheet.md) |
@@ -74,7 +74,7 @@ What are you writing?
 ├── Production practices for a topic? ────────── → Production Guide
 ├── How to deploy something? ─────────────────── → Deployment Guide
 ├── Step-by-step learning guide? ─────────────── → Tutorial
-├── Documenting a project you built? ─────────── → Project
+├── Documenting a project you built? ─────────── → Case Study
 ├── Reviewing a production incident? ─────────── → Postmortem
 ├── Preparing for interviews? ────────────────── → Interview Topic
 ├── Quick reference card? ────────────────────── → Cheat Sheet

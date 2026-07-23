@@ -60,6 +60,8 @@ These are the **main learning modules**. Each hub has sections, examples, and cr
 | Evaluation & LLMOps | [AI Evaluation](domains/ai-evaluation/README.md) | Metrics, RAGAS, regression, CI gates |
 | System design | [AI System Design](domains/ai-system-design/README.md) | Architecture, scaling, case studies |
 | Deployment & ops | [Production AI](domains/ai-deployment/README.md) | Docker, CI/CD, monitoring, incidents |
+| AI safety | [AI Safety](domains/ai-safety/README.md) | Injection, guardrails, safe tool use |
+| Debugging | [Debugging](domains/debugging/README.md) | RAG/agent/API triage playbooks |
 
 ### Research & Career
 
@@ -68,7 +70,7 @@ These are the **main learning modules**. Each hub has sections, examples, and cr
 | Research papers (engineering view) | [AI Research Papers](domains/papers/README.md) | Transformers, ReAct, RAG papers, DSPy |
 | Interview preparation | [Interview Handbook](domains/interview-preparation/README.md) | Technical + behavioral + mock interviews |
 
-> **More domains** (workflows, cloud, safety, etc.) are listed in [Domains Overview](domains/README.md). Handbooks above are fully published; others are planned.
+> **Planned domains** (workflows, cloud, multi-agent depth, etc.) are listed in [Domains Overview](domains/README.md) with status **Planned**. Prefer published handbooks above.
 
 ---
 
@@ -150,7 +152,8 @@ Quick answers — no hunting:
 | Evaluate my AI app | [AI Evaluation](domains/ai-evaluation/README.md) → [Eval templates](templates/engineering/evaluation/README.md) |
 | Design a system (interview) | [System Design](domains/ai-system-design/README.md) → [Interview mocks](domains/interview-preparation/mock-interviews.md) |
 | Understand a research paper | [Research Papers](domains/papers/README.md) → [Comparison guides](domains/papers/research-comparison-guides.md) |
-| Debug a production issue | [Production AI](domains/ai-deployment/README.md) → [Common mistakes](domains/common-mistakes/common-engineering-mistakes.md) |
+| Debug a production issue | [Debugging Handbook](domains/debugging/README.md) → [Common mistakes](domains/common-mistakes/common-engineering-mistakes.md) |
+| Harden against prompt injection | [AI Safety](domains/ai-safety/README.md) → [Prompt security](domains/prompt-engineering/prompt-security.md) |
 
 ---
 

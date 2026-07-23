@@ -104,7 +104,7 @@ Before starting:
 
 | Topic | Handbook section |
 |-------|------------------|
-| Chunking | [RAG chunking](../domains/rag/chunking-strategies.md) |
+| Chunking | [RAG chunking](../domains/rag/chunking.md) |
 | Retrieval | [RAG retrieval](../domains/rag/retrieval-strategies.md) |
 | Prompt design | [RAG prompts](../domains/prompt-engineering/prompt-templates-guide.md) |
 | Evaluation | [AI Evaluation intro](../domains/ai-evaluation/introduction-to-ai-evaluation.md) |
@@ -399,7 +399,7 @@ docker run -p 8000:8000 --env-file .env rag-chat-api
 curl http://localhost:8000/api/v1/health
 ```
 
-**Handbook:** [Production AI — Docker](../domains/ai-deployment/docker-for-ai-applications.md)
+**Handbook:** [Production AI — Docker](../domains/ai-deployment/docker-for-ai.md)
 
 ---
 

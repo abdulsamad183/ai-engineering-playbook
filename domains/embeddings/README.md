@@ -5,7 +5,7 @@
 ## Primary Documentation
 
 - [Embeddings for RAG](../rag/embeddings-for-rag.md) — Phase 7 Section 6
-- [LLM Engineering Embeddings](../llm-engineering/embeddings.md) — transformer fundamentals
+- [LLM Engineering Embeddings](../llm-engineering/embeddings-llm-perspective.md) — transformer fundamentals
 
 ## See Also
 

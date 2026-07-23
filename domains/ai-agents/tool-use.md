@@ -8,7 +8,7 @@ created: 2026-07-13
 updated: 2026-07-13
 version: "1.0"
 related:
-  - ../llm-engineering/llm-tool-calling.md
+  - ../llm-engineering/function-calling-and-tools.md
   - agent-security.md
   - ../mcp/README.md
 keywords: [tool use, tool registry, tool execution, permissions]
@@ -67,7 +67,7 @@ LangGraph: tool nodes. OpenAI Agents SDK: `function_tool`. PydanticAI: typed too
 
 ## Navigation
 
-- [Agent Security](agent-security.md) · [LLM Tool Calling](../llm-engineering/llm-tool-calling.md)
+- [Agent Security](agent-security.md) · [LLM Tool Calling](../llm-engineering/function-calling-and-tools.md)
 
 ---
 

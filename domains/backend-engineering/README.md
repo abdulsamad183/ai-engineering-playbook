@@ -104,15 +104,15 @@ flowchart TB
 
 | Example | Location | Related Topic |
 |---------|----------|---------------|
-| FastAPI starter | [examples/fastapi/example-fastapi-starter/](../../examples/fastapi/example-fastapi-starter/) | FastAPI |
+| FastAPI starter | [templates/engineering/fastapi-starter/](../../templates/engineering/fastapi-starter/) · [example-health-endpoint.py](../../examples/fastapi/example-health-endpoint.py) | FastAPI |
 | JWT authentication | [examples/fastapi/example-jwt-auth.py](../../examples/fastapi/example-jwt-auth.py) | Auth |
 | API key authentication | [examples/fastapi/example-api-key-auth.py](../../examples/fastapi/example-api-key-auth.py) | Auth |
-| PostgreSQL + SQLAlchemy | [examples/postgresql/example-sqlalchemy-async/](../../examples/postgresql/example-sqlalchemy-async/) | Database |
+| PostgreSQL + SQLAlchemy | See [sqlalchemy-for-ai-applications.md](../databases/postgresql/sqlalchemy-for-ai-applications.md) (no dedicated example dir) | Database |
 | Redis integration | [examples/redis/example-redis-caching.py](../../examples/redis/example-redis-caching.py) | Redis |
 | Health endpoint | [examples/fastapi/example-health-endpoint.py](../../examples/fastapi/example-health-endpoint.py) | Monitoring |
 | WebSocket API | [examples/fastapi/example-websocket-chat.py](../../examples/fastapi/example-websocket-chat.py) | FastAPI |
 | File upload API | [examples/fastapi/example-file-upload.py](../../examples/fastapi/example-file-upload.py) | File Handling |
-| Testing setup | [examples/fastapi/example-testing-setup/](../../examples/fastapi/example-testing-setup/) | Testing |
+| Testing / DI | [examples/fastapi/example-dependency-injection.py](../../examples/fastapi/example-dependency-injection.py) | Testing |
 
 ---
 

@@ -8,7 +8,7 @@
 
 | Entry | Date | Summary |
 |-------|------|---------|
-| *(No entries yet)* | — | — |
+| [Shorter retrieved citations beat longer context](2026-07-23-rag-citations-beat-longer-context.md) | 2026-07-23 | Reranked top citations beat stuffing more chunks |
 
 ---
 
