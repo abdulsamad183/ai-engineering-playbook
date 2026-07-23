@@ -2,7 +2,7 @@
 title: "MCP Transport Layer"
 description: "MCP transports — STDIO, HTTP, SSE, WebSockets, streaming, reconnection, comparison."
 domain: mcp
-tags: [mcp, transport, stdio, http, sse, websocket, phase-9]
+tags: [mcp, transport, stdio, http, sse, websocket]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **10** of Phase 9.
+Section **10**.
 
 | Transport | Use case | Pros | Cons |
 |-----------|----------|------|------|
@@ -55,4 +55,4 @@ flowchart TB
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 9 Section 10 |
+| 1.0 | 2026-07-13 | Initial publication |

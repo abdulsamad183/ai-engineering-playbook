@@ -2,7 +2,7 @@
 title: "Production Context Engineering"
 description: "Production best practices — scalable context systems, observability, monitoring, debugging, analytics, optimization, and experimentation."
 domain: context-engineering
-tags: [context-engineering, production, observability, monitoring, phase-6]
+tags: [context-engineering, production, observability, monitoring]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -43,7 +43,7 @@ author: hp
 
 Production context engineering requires the same rigor as any backend subsystem: SLOs, traces, dashboards, feature flags, and versioned policies.
 
-Section **19** of Phase 6.
+Section **19**.
 
 ```mermaid
 flowchart LR
@@ -192,4 +192,4 @@ class ContextTrace:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication — Phase 6 Section 19 |
+| 1.0 | 2026-07-13 | Initial publication |

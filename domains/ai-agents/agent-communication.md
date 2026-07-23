@@ -2,7 +2,7 @@
 title: "Agent Communication"
 description: "Message passing, shared memory, negotiation, coordination, synchronization, conflict resolution."
 domain: ai-agents
-tags: [ai-agents, communication, coordination, A2A, phase-8]
+tags: [ai-agents, communication, coordination, A2A]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **13** of Phase 8. Foundation for [A2A](../a2a/README.md) phase.
+Section **13**. Foundation for [A2A](../a2a/README.md) phase.
 
 | Mechanism | Description |
 |-----------|-------------|
@@ -45,4 +45,4 @@ Section **13** of Phase 8. Foundation for [A2A](../a2a/README.md) phase.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 8 Section 13 |
+| 1.0 | 2026-07-13 | Initial publication |

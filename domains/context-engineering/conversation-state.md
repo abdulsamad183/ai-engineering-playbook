@@ -2,7 +2,7 @@
 title: "Conversation State"
 description: "Conversation state management — state machines, session state, user state, agent state, temporary vs persistent state, and multi-turn evolution."
 domain: context-engineering
-tags: [context-engineering, state, session, multi-turn, phase-6]
+tags: [context-engineering, state, session, multi-turn]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -44,7 +44,7 @@ author: hp
 
 **Conversation state** is structured data representing where a dialogue stands — active topic, pending clarifications, tool call artifacts, workflow step — beyond raw message text. State drives what context is fetched and how the model should behave on the next turn.
 
-Section **4** of Phase 6.
+Section **4**.
 
 ```mermaid
 stateDiagram-v2
@@ -230,4 +230,4 @@ class ConversationState:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication — Phase 6 Section 4 |
+| 1.0 | 2026-07-13 | Initial publication |

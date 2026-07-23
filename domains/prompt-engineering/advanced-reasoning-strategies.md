@@ -2,7 +2,7 @@
 title: "Advanced Reasoning Strategies"
 description: "Chain-of-thought, ReAct, Tree of Thoughts, self-consistency, reflection loops, debate prompting, and multi-agent reasoning patterns for production AI systems."
 domain: prompt-engineering
-tags: [prompt-engineering, chain-of-thought, react, reasoning, agents, phase-5, production]
+tags: [prompt-engineering, chain-of-thought, react, reasoning, agents, production]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -54,12 +54,12 @@ author: hp
 Basic prompts ask the model for an answer.
 Advanced reasoning strategies ask the model to **show its work** — decomposing problems, exploring alternatives, using tools, critiquing its own output, and converging on higher-quality conclusions.
 
-This document is **Section 9** of Phase 5 in the AI Engineering Playbook.
+This document is **Section 9** of this handbook.
 It bridges prompt engineering and AI agents: every agent framework you will use in later phases is built on one or more of these reasoning patterns.
 
 ```mermaid
 flowchart LR
-    subgraph "Phase 5: Prompt Engineering"
+    subgraph "Prompt Engineering"
         S9[9. Advanced Reasoning]
         S10[10. Prompt Chaining]
         S11[11. Prompt Lifecycle]
@@ -67,11 +67,11 @@ flowchart LR
     end
 
     S9 --> S10 --> S11 --> S12
-    S9 --> AGENTS[Phase 8+: AI Agents]
+    S9 --> AGENTS[AI Agents]
     S10 --> WORKFLOWS[AI Workflows]
 ```
 
-> **Prerequisites:** Complete [Phase 4 LLM Engineering](../llm-engineering/README.md) and Sections 1–8 of Phase 5 before applying advanced reasoning strategies in production.
+> **Prerequisites:** Complete [LLM Engineering](../llm-engineering/README.md) and Sections 1–8 of this handbook before applying advanced reasoning strategies in production.
 
 ---
 
@@ -174,10 +174,10 @@ Step 3 — Revise: Produce an improved answer addressing the critique.
 ```
 Task: {task}
 
-Phase 1 — Draft:
+Step 1 — Draft:
 Write your initial response.
 
-Phase 2 — Self-Critique:
+Step 2 — Self-Critique:
 Review your draft against these criteria:
 - Correctness
 - Completeness
@@ -186,7 +186,7 @@ Review your draft against these criteria:
 
 List specific issues found.
 
-Phase 3 — Final:
+Step 3 — Final:
 Produce a revised response that fixes all identified issues.
 ```
 
@@ -713,8 +713,8 @@ The reasoning strategies in this document map directly to agent frameworks:
 
 ```mermaid
 flowchart LR
-    PE[Phase 5: Prompt Patterns] --> CE[Phase 6: Context Engineering]
-    CE --> AG[Phase 8+: AI Agents]
+    PE[Prompt Patterns] --> CE[Context Engineering]
+    CE --> AG[AI Agents]
     PE --> AG
 
     subgraph "Patterns → Agents"
@@ -931,7 +931,7 @@ Add step limits, logging, and eval cases for tool-call correctness.
 
 ### Prerequisites
 
-- [LLM Engineering](../llm-engineering/README.md) — Phase 4
+- [LLM Engineering](../llm-engineering/README.md)
 - [Sampling and Decoding](../llm-engineering/sampling-and-decoding.md)
 - [Function Calling and Tools](../llm-engineering/function-calling-and-tools.md)
 - [Structured Outputs](../llm-engineering/structured-outputs.md)
@@ -945,7 +945,7 @@ Add step limits, logging, and eval cases for tool-call correctness.
 ### Next Topics
 
 - [Prompt Chaining](prompt-chaining.md) — orchestrate multi-step reasoning
-- [Agent Architectures](../agent-architectures/README.md) — Phase 8+
+- [Agent Architectures](../agent-architectures/README.md)
 - [Multi-Agent Systems](../multi-agent-systems/README.md)
 - [AI Workflows](../ai-workflows/README.md)
 
@@ -961,4 +961,4 @@ Add step limits, logging, and eval cases for tool-call correctness.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial version — Section 9, Phase 5 |
+| 1.0 | 2026-07-13 | Initial publication — Section 9 |

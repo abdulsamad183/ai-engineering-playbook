@@ -2,7 +2,7 @@
 title: "Phoenix Evaluation"
 description: "Arize Phoenix evaluation overview — observability, embeddings, drift, ideal use cases."
 domain: ai-evaluation
-tags: [ai-evaluation, phoenix, arize, observability, phase-10]
+tags: [ai-evaluation, phoenix, arize, observability]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

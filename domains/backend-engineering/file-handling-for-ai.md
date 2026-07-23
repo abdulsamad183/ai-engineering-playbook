@@ -904,4 +904,4 @@ async def compute_sha256_stream(file: UploadFile) -> str:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 3 release |
+| 1.0 | 2026-07-13 | Initial release |

@@ -2,7 +2,7 @@
 title: "DeepEval Evaluation Framework"
 description: "DeepEval pipelines, built-in metrics, custom metrics, integration, automation."
 domain: ai-evaluation
-tags: [ai-evaluation, deepeval, framework, ci, phase-10]
+tags: [ai-evaluation, deepeval, framework, ci]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

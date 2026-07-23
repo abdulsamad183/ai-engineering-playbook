@@ -2,7 +2,7 @@
 title: "Context Windows"
 description: "Production guide to LLM context windows — history management, truncation, sliding windows, long-context models, lost-in-the-middle, compression, and production strategies."
 domain: llm-engineering
-tags: [context-window, history, truncation, compression, production, phase-4]
+tags: [context-window, history, truncation, compression, production]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -53,7 +53,7 @@ The **context window** is the maximum number of tokens a model can process in a 
 
 Managing context is one of the highest-impact skills in LLM engineering. Poor context management causes confused responses, runaway costs, API errors, and the "model forgot what I said" user experience.
 
-> **Prerequisites:** [Tokens and Tokenization](tokens-and-tokenization.md) · [How LLMs Work](how-llms-work.md) · [Phase 3 Backend Engineering](../backend-engineering/README.md)
+> **Prerequisites:** [Tokens and Tokenization](tokens-and-tokenization.md) · [How LLMs Work](how-llms-work.md) · [Backend Engineering](../backend-engineering/README.md)
 
 ---
 
@@ -909,9 +909,9 @@ def compute_utilization(input_tokens: int, max_input: int) -> ContextMetrics:
 - [Introduction to LLM Engineering](introduction-to-llm-engineering.md)
 - [How LLMs Work](how-llms-work.md)
 - [Tokens and Tokenization](tokens-and-tokenization.md)
-- [Phase 3 Backend Engineering](../backend-engineering/README.md)
+- [Backend Engineering](../backend-engineering/README.md)
 
-### Phase 4 — LLM Engineering
+### — LLM Engineering
 
 | # | Topic | Document |
 |---|-------|----------|
@@ -924,9 +924,9 @@ def compute_utilization(input_tokens: int, max_input: int) -> ContextMetrics:
 
 - [Tokens and Tokenization](tokens-and-tokenization.md) — counting and cost calculation
 - [AI Backend Reference Architecture](../backend-engineering/ai-backend-reference-architecture.md) — chat and RAG patterns
-- [Embeddings](../embeddings/README.md) — retrieval for RAG context (Phase 5+)
+- [Embeddings](../embeddings/README.md) — retrieval for RAG context 
 
-### Next Topics (Phase 5+)
+### Next Topics 
 
 - [Embeddings](../embeddings/README.md) — vector representations for retrieval
 - [RAG](../rag/README.md) — retrieval-augmented generation
@@ -950,4 +950,4 @@ def compute_utilization(input_tokens: int, max_input: int) -> ContextMetrics:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 4 Section 4 release |
+| 1.0 | 2026-07-13 | Initial publication |

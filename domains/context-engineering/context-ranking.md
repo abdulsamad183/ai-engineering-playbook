@@ -2,7 +2,7 @@
 title: "Context Ranking"
 description: "Ranking algorithms for context assembly — similarity, importance, recency, hybrid, metadata, and business-priority tradeoffs."
 domain: context-engineering
-tags: [context-engineering, ranking, hybrid-search, production, phase-6]
+tags: [context-engineering, ranking, hybrid-search, production]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -42,7 +42,7 @@ author: hp
 
 After selection, **ranking** orders candidates so the most valuable information survives budget cuts and receives attention-favored positions in the prompt.
 
-Section **8** of Phase 6.
+Section **8**.
 
 ```mermaid
 flowchart LR
@@ -192,4 +192,4 @@ def hybrid_score(sim: float, recency: float, importance: float, weights: tuple[f
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication — Phase 6 Section 8 |
+| 1.0 | 2026-07-13 | Initial publication |

@@ -2,7 +2,7 @@
 title: "Scaling AI Systems"
 description: "Horizontal scaling, queues, multi-region, rate limiting, caching, load balancing."
 domain: ai-system-design
-tags: [system-design, scaling, distributed, phase-11]
+tags: [system-design, scaling, distributed]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **15** of Phase 11.
+Section **15**.
 
 ## Strategies
 
@@ -64,4 +64,4 @@ Session in Redis; no local disk state →任意 scale pods.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 11 Section 15 |
+| 1.0 | 2026-07-13 | Initial publication |

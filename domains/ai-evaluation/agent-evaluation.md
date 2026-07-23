@@ -2,7 +2,7 @@
 title: "Agent Evaluation"
 description: "Task completion, planning, tool selection, recovery, multi-agent coordination, workflow success."
 domain: ai-evaluation
-tags: [ai-evaluation, agents, tool-accuracy, task-completion, phase-10]
+tags: [ai-evaluation, agents, tool-accuracy, task-completion]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **9** of Phase 10. Extends [Agent Evaluation (Phase 8)](../ai-agents/agent-evaluation.md) with production LLMOps metrics.
+Section **9**. Extends [Agent Evaluation](../ai-agents/agent-evaluation.md) with production LLMOps metrics.
 
 ```mermaid
 flowchart TB
@@ -72,4 +72,4 @@ def tool_selection_accuracy(trace: list[str], expected: list[str]) -> float:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 10 Section 9 |
+| 1.0 | 2026-07-13 | Initial publication |

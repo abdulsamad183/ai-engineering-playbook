@@ -2,7 +2,7 @@
 title: "Design: AI CRM Assistant"
 description: "CRM AI — customer profiles, memory, opportunities, workflow automation."
 domain: ai-system-design
-tags: [system-design, crm, sales, recommendations, phase-11]
+tags: [system-design, crm, sales, recommendations]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -52,4 +52,4 @@ flowchart LR
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 11 Section 13 |
+| 1.0 | 2026-07-13 | Initial publication |

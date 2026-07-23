@@ -2,7 +2,7 @@
 title: "Semantic Kernel for Agents"
 description: "Semantic Kernel — plugins, planners, enterprise .NET/Python agent patterns."
 domain: ai-agents
-tags: [ai-agents, Semantic Kernel, framework, phase-8]
+tags: [ai-agents, Semantic Kernel, framework]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

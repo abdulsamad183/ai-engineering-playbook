@@ -2,7 +2,7 @@
 title: "Design: AI PDF Chat"
 description: "PDF chat — ingestion, OCR, chunking, tables, images, citations, long documents."
 domain: ai-system-design
-tags: [system-design, pdf, document-chat, ocr, phase-11]
+tags: [system-design, pdf, document-chat, ocr]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -58,4 +58,4 @@ flowchart LR
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 11 Section 11 |
+| 1.0 | 2026-07-13 | Initial publication |

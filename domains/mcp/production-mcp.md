@@ -2,7 +2,7 @@
 title: "Production MCP Engineering"
 description: "Observability, logging, tracing, monitoring, scaling, caching, HA, rate limiting, cost optimization."
 domain: mcp
-tags: [mcp, production, observability, scaling, phase-9]
+tags: [mcp, production, observability, scaling]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **17** of Phase 9.
+Section **17**.
 
 ```mermaid
 flowchart TB
@@ -114,4 +114,4 @@ async def instrumented_call(session, name, args, request_id: str):
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 9 Section 17 |
+| 1.0 | 2026-07-13 | Initial publication |

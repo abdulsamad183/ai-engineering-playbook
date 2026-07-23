@@ -2,7 +2,7 @@
 title: "RAG Comparison Guides"
 description: "Decision matrices — chunking, embeddings, vector DBs, retrieval, rerankers, advanced architectures, eval frameworks."
 domain: rag
-tags: [rag, comparison, decision-matrix, phase-7]
+tags: [rag, comparison, decision-matrix]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -72,4 +72,4 @@ See [Embeddings for RAG](embeddings-for-rag.md) — match model to language, dom
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 7 comparisons |
+| 1.0 | 2026-07-13 | Initial publication |

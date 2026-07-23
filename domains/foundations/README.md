@@ -1,18 +1,18 @@
-# Foundations — Phase 2: AI Engineering Foundations
+# Foundations: AI Engineering Foundations
 
 > Prerequisite module for all subsequent phases (LLMs, RAG, Agents, Production AI).
-> Complete this module before advancing to Phase 3.
+> Complete this module before advancing to LLM Engineering and later handbooks.
 
 ---
 
 ## Module Overview
 
-Phase 2 builds the engineering foundation that every AI application depends on.
+This handbook builds the engineering foundation that every AI application depends on.
 The content is distributed across multiple domains but forms a single connected learning path.
 
 ```mermaid
 flowchart LR
-  subgraph "Phase 2: Foundations"
+  subgraph "Foundations"
     O[1. AI Engineering Overview]
     SE[2. Software Engineering]
     PY[3. Python]
@@ -96,7 +96,7 @@ Follow this order for the recommended path:
 
 ---
 
-## Phase 2 Completion Checklist
+## Completion Checklist
 
 - [ ] Read all 15 topic documents in the learning path order
 - [ ] Run all code examples locally
@@ -104,7 +104,7 @@ Follow this order for the recommended path:
 - [ ] Write unit tests with mocked LLM client
 - [ ] Document one architecture decision (ADR) in `knowledge/architecture-decisions/`
 
-**Unlocked after Phase 2:** [LLM Engineering](../llm-engineering/README.md) (Phase 3)
+**What this unlocks:** [LLM Engineering](../llm-engineering/README.md)
 
 ---
 

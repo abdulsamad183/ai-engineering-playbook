@@ -2,7 +2,7 @@
 title: "Metadata Engineering for RAG"
 description: "RAG metadata — document IDs, source tracking, permissions, tags, chunk relationships, and filtering strategies."
 domain: rag
-tags: [rag, metadata, filtering, permissions, phase-7]
+tags: [rag, metadata, filtering, permissions]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -35,7 +35,7 @@ author: hp
 
 ## Overview
 
-Section **5** of Phase 7.
+Section **5**.
 
 Every chunk should carry traceable metadata:
 
@@ -149,4 +149,4 @@ class ChunkMetadata:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication — Phase 7 Section 5 |
+| 1.0 | 2026-07-13 | Initial publication |

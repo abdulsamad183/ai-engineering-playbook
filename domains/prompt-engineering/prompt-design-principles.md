@@ -2,7 +2,7 @@
 title: "Prompt Design Principles"
 description: "Production principles for reliable prompts — clarity, specificity, deterministic prompting, decomposition, constraints, explicit reasoning, task decomposition, structured thinking, avoiding ambiguity, and reusable prompt patterns."
 domain: prompt-engineering
-tags: [prompt-engineering, design-principles, clarity, decomposition, production, phase-5]
+tags: [prompt-engineering, design-principles, clarity, decomposition, production]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -55,7 +55,7 @@ author: hp
 
 Prompt design principles are **repeatable rules** that improve output quality without relying on model-specific hacks. They apply across classification, extraction, generation, agents, and evaluation pipelines.
 
-This document is **Section 4** of Phase 5 — the capstone of the prompt engineering foundations module before advanced patterns (few-shot, chain-of-thought, prompt libraries).
+This document is **Section 4** of this handbook.
 
 ```mermaid
 mindmap
@@ -82,7 +82,7 @@ mindmap
       Eval regression
 ```
 
-> **Prerequisites:** [Phase 4: LLM Engineering](../llm-engineering/README.md) · [Sampling and Decoding](../llm-engineering/sampling-and-decoding.md) · [Structured Outputs](../llm-engineering/structured-outputs.md) · Sections 1–3 of this module
+> **Prerequisites:** [LLM Engineering](../llm-engineering/README.md) · [Sampling and Decoding](../llm-engineering/sampling-and-decoding.md) · [Structured Outputs](../llm-engineering/structured-outputs.md) · Sections 1–3 of this module
 
 ---
 
@@ -835,11 +835,11 @@ def prompt_quality_gate(eval_score: float, threshold: float, prompt_version: str
 - [Introduction to Prompt Engineering](introduction-to-prompt-engineering.md)
 - [Prompt Anatomy](prompt-anatomy.md)
 - [Message Types](message-types.md)
-- [Phase 4: LLM Engineering](../llm-engineering/README.md)
+- [LLM Engineering](../llm-engineering/README.md)
 - [Sampling and Decoding](../llm-engineering/sampling-and-decoding.md)
 - [Structured Outputs](../llm-engineering/structured-outputs.md)
 
-### Phase 5 — Prompt Engineering (This Module)
+### — Prompt Engineering (This Module)
 
 | # | Topic | Document |
 |---|-------|----------|
@@ -852,7 +852,7 @@ def prompt_quality_gate(eval_score: float, threshold: float, prompt_version: str
 
 - Few-shot and chain-of-thought patterns
 - Prompt patterns library
-- [Context Engineering](../context-engineering/README.md) — Phase 6
+- [Context Engineering](../context-engineering/README.md)
 
 ---
 
@@ -865,4 +865,4 @@ def prompt_quality_gate(eval_score: float, threshold: float, prompt_version: str
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 5 Section 4 release |
+| 1.0 | 2026-07-13 | Initial publication |

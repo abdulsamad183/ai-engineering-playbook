@@ -2,7 +2,7 @@
 title: "Prompt Anatomy"
 description: "Production guide to prompt components — instructions, role, goal, context, constraints, input, output requirements, examples, delimiters, variables, formatting, tool definitions, and response schemas. How each element influences model behavior."
 domain: prompt-engineering
-tags: [prompt-engineering, prompt-anatomy, system-prompt, structured-output, production, phase-5]
+tags: [prompt-engineering, prompt-anatomy, system-prompt, structured-output, production]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -58,7 +58,7 @@ author: hp
 
 Every token in a prompt competes for attention within the [context window](../llm-engineering/context-windows.md). Prompt anatomy is the practice of decomposing a prompt into **named components**, each with a specific behavioral influence.
 
-This document is **Section 2** of Phase 5. It builds on [Introduction to Prompt Engineering](introduction-to-prompt-engineering.md) and feeds directly into [Message Types](message-types.md) and [Prompt Design Principles](prompt-design-principles.md).
+This document is **Section 2** of this handbook. It builds on [Introduction to Prompt Engineering](introduction-to-prompt-engineering.md) and feeds directly into [Message Types](message-types.md) and [Prompt Design Principles](prompt-design-principles.md).
 
 ```mermaid
 flowchart TB
@@ -83,7 +83,7 @@ flowchart TB
   EX --> BEHAVIOR
 ```
 
-> **Prerequisites:** [Phase 4: LLM Engineering](../llm-engineering/README.md) · [Context Windows](../llm-engineering/context-windows.md) · [Structured Outputs](../llm-engineering/structured-outputs.md)
+> **Prerequisites:** [LLM Engineering](../llm-engineering/README.md) · [Context Windows](../llm-engineering/context-windows.md) · [Structured Outputs](../llm-engineering/structured-outputs.md)
 
 ---
 
@@ -851,12 +851,12 @@ def ablation_eval(
 
 ### Prerequisites
 
-- [Introduction to Prompt Engineering](introduction-to-prompt-engineering.md) — Phase 5 Section 1
-- [Phase 4: LLM Engineering](../llm-engineering/README.md)
+- [Introduction to Prompt Engineering](introduction-to-prompt-engineering.md) Section 1
+- [LLM Engineering](../llm-engineering/README.md)
 - [Context Windows](../llm-engineering/context-windows.md)
 - [Structured Outputs](../llm-engineering/structured-outputs.md)
 
-### Phase 5 — Prompt Engineering (This Module)
+### — Prompt Engineering (This Module)
 
 | # | Topic | Document |
 |---|-------|----------|
@@ -881,4 +881,4 @@ def ablation_eval(
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 5 Section 2 release |
+| 1.0 | 2026-07-13 | Initial publication |

@@ -2,7 +2,7 @@
 title: "Cost Evaluation"
 description: "Token, embedding, retrieval, tool, infrastructure, agent costs — per request and per task."
 domain: ai-evaluation
-tags: [ai-evaluation, cost, tokens, optimization, phase-10]
+tags: [ai-evaluation, cost, tokens, optimization]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **13** of Phase 10.
+Section **13**.
 
 ## Cost Components
 
@@ -61,4 +61,4 @@ def request_cost(input_tokens: int, output_tokens: int, price_in: float, price_o
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 10 Section 13 |
+| 1.0 | 2026-07-13 | Initial publication |

@@ -2,7 +2,7 @@
 title: "Context Security"
 description: "Securing context pipelines — PII, leakage, permission-aware retrieval, confidential data, secure memory, and tenant isolation."
 domain: context-engineering
-tags: [context-engineering, security, PII, tenant-isolation, phase-6]
+tags: [context-engineering, security, PII, tenant-isolation]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -41,7 +41,7 @@ author: hp
 
 Security failures in context systems cause cross-tenant data leaks, PII in provider logs, and injection via retrieved content. Defense in depth at **retrieval, memory, assembly, and logging** layers.
 
-Section **18** of Phase 6.
+Section **18**.
 
 ```mermaid
 flowchart TD
@@ -159,4 +159,4 @@ See also [Prompt Security](../prompt-engineering/prompt-security.md).
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication — Phase 6 Section 18 |
+| 1.0 | 2026-07-13 | Initial publication |

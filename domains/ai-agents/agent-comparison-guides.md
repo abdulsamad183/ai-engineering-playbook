@@ -2,7 +2,7 @@
 title: "Agent Comparison Guides"
 description: "Agent vs workflow, ReAct vs reflection, supervisor vs swarm, framework comparison, memory and planning strategies."
 domain: ai-agents
-tags: [ai-agents, comparison, frameworks, phase-8]
+tags: [ai-agents, comparison, frameworks]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -66,4 +66,4 @@ Use **single** until eval proves need for specialization. Multi-agent adds coord
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 8 comparisons |
+| 1.0 | 2026-07-13 | Initial publication |

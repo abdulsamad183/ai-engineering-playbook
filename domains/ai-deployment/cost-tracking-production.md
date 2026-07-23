@@ -2,7 +2,7 @@
 title: "Production Cost Tracking"
 description: "Token, embedding, agent, infrastructure costs — dashboards and optimization."
 domain: ai-deployment
-tags: [cost, production, finops, phase-12]
+tags: [cost, production, finops]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **9** of Phase 12.
+Section **9**.
 
 ## Cost Dimensions
 
@@ -50,4 +50,4 @@ Section **9** of Phase 12.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 12 Section 9 |
+| 1.0 | 2026-07-13 | Initial publication |

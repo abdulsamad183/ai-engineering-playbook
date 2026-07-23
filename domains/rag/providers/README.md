@@ -1,6 +1,6 @@
 # Vector Database Provider Guides
 
-> Implementation guides for Phase 7 Section 8.
+> Implementation guides for this handbook Section 8.
 
 | Provider | Guide | Best for |
 |----------|-------|----------|

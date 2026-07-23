@@ -2,7 +2,7 @@
 title: "Reranking for RAG"
 description: "Cross-encoders, bi-encoders, Cohere/Jina/BGE rerankers, LLM reranking — latency, cost, quality tradeoffs."
 domain: rag
-tags: [rag, reranking, cross-encoder, phase-7]
+tags: [rag, reranking, cross-encoder]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **12** of Phase 7. Bi-encoder retrieval is fast but approximate; **cross-encoders** score (query, passage) jointly for higher precision.
+Section **12**. Bi-encoder retrieval is fast but approximate; **cross-encoders** score (query, passage) jointly for higher precision.
 
 ```mermaid
 flowchart LR
@@ -62,4 +62,4 @@ ranked = sorted(zip(candidates, scores), key=lambda x: -x[1])
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 7 Section 12 |
+| 1.0 | 2026-07-13 | Initial publication |

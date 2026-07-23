@@ -2,7 +2,7 @@
 title: "RAG Evaluation"
 description: "RAG metrics — Precision@K, Recall@K, MRR, NDCG, faithfulness, RAGAS, DeepEval, golden datasets, regression testing."
 domain: rag
-tags: [rag, evaluation, RAGAS, metrics, phase-7]
+tags: [rag, evaluation, RAGAS, metrics]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -21,7 +21,7 @@ author: hp
 
 ## Overview
 
-Section **17** of Phase 7.
+Section **17**.
 
 ```mermaid
 flowchart LR
@@ -102,4 +102,4 @@ def recall_at_k(retrieved_ids: list[str], gold_ids: set[str], k: int) -> float:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 7 Section 17 |
+| 1.0 | 2026-07-13 | Initial publication |

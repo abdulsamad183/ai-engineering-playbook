@@ -2,7 +2,7 @@
 title: "Hallucination Detection"
 description: "Hallucination types, detection strategies, automated and human review, confidence estimation."
 domain: ai-evaluation
-tags: [ai-evaluation, hallucination, faithfulness, detection, phase-10]
+tags: [ai-evaluation, hallucination, faithfulness, detection]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -19,7 +19,7 @@ author: hp
 
 ## Overview
 
-Section **6** of Phase 10.
+Section **6**.
 
 ## Hallucination Types
 
@@ -80,4 +80,4 @@ def citation_hallucination(answer: str, valid_ids: set[str]) -> list[str]:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 10 Section 6 |
+| 1.0 | 2026-07-13 | Initial publication |

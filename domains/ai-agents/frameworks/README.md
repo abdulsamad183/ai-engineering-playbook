@@ -1,6 +1,6 @@
 # Agent Framework Guides
 
-> Phase 8 Section 14 — implementation guides for production agent frameworks.
+> implementation guides for production agent frameworks.
 
 | Framework | Guide | Best for |
 |-----------|-------|----------|

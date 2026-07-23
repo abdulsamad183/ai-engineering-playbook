@@ -2,7 +2,7 @@
 title: "SQL Interviews for AI Engineers"
 description: "SQL interview guide — joins, window functions, CTEs, indexes, transactions, optimization."
 domain: interview-preparation
-tags: [interview, sql, database, phase-13]
+tags: [interview, sql, database]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

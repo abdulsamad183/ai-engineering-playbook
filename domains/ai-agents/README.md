@@ -1,7 +1,7 @@
-# Phase 8: AI Agents & Agent Engineering
+# AI Agents & Agent Engineering
 
 > Comprehensive handbook for designing, orchestrating, evaluating, and scaling autonomous production agent systems.
-> **Prerequisites:** [Phase 7 RAG](../rag/README.md) · [Phase 6 Context Engineering](../context-engineering/README.md) · [Phase 5 Prompt Engineering](../prompt-engineering/README.md)
+> **Prerequisites:** [RAG](../rag/README.md) · [Context Engineering](../context-engineering/README.md) · [Prompt Engineering](../prompt-engineering/README.md)
 
 ---
 
@@ -110,7 +110,7 @@ flowchart TB
 
 ---
 
-## Phase 8 Completion Checklist
+## Completion Checklist
 
 - [ ] Read all 20 sections + 6 framework guides
 - [ ] Implement ReAct loop with max-step guard

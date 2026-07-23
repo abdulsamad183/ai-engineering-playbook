@@ -2,7 +2,7 @@
 title: "Introduction to Model Context Protocol"
 description: "MCP fundamentals — why it exists, problems solved, ecosystem, terminology, agents and enterprise use cases."
 domain: mcp
-tags: [mcp, foundation, protocol, integration, phase-9]
+tags: [mcp, foundation, protocol, integration]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -48,11 +48,11 @@ author: hp
 
 **Model Context Protocol (MCP)** defines how **hosts** (IDEs, agents, apps) discover and invoke **servers** that expose **tools**, **resources**, and **prompts** over a structured message protocol with pluggable **transports**.
 
-Section **1** of Phase 9.
+Section **1**.
 
 ```mermaid
 flowchart LR
-    subgraph "Phase 9: MCP"
+    subgraph "MCP"
         S1[1. Introduction]
         S2[2. Architecture]
         S3[3. Lifecycle]
@@ -61,7 +61,7 @@ flowchart LR
     S1 --> S2 --> S3 --> S4
 ```
 
-> **Prerequisites:** [Phase 8 AI Agents](../ai-agents/README.md) · [Phase 7 RAG](../rag/README.md) · [Tool Use](../ai-agents/tool-use.md)
+> **Prerequisites:** [AI Agents](../ai-agents/README.md) · [RAG](../rag/README.md) · [Tool Use](../ai-agents/tool-use.md)
 
 ---
 
@@ -240,7 +240,7 @@ async def list_agent_tools(mcp_client) -> list[dict]:
 
 ### Prerequisites
 
-- [AI Agents](../ai-agents/README.md) — Phase 8
+- [AI Agents](../ai-agents/README.md)
 
 ### Next
 
@@ -256,4 +256,4 @@ async def list_agent_tools(mcp_client) -> list[dict]:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 9 Section 1 |
+| 1.0 | 2026-07-13 | Initial publication |

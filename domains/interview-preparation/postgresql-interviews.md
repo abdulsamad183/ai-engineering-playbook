@@ -2,7 +2,7 @@
 title: "PostgreSQL Interviews for AI Engineers"
 description: "PostgreSQL — MVCC, indexing, JSONB, full-text search, pooling, partitioning."
 domain: interview-preparation
-tags: [interview, postgresql, database, phase-13]
+tags: [interview, postgresql, database]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

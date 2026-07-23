@@ -2,7 +2,7 @@
 title: "Retrieval Context"
 description: "Retrieval as context injection — documents, knowledge pipelines, citations, freshness, relevance, and grounding without full RAG implementation."
 domain: context-engineering
-tags: [context-engineering, retrieval, grounding, citations, phase-6]
+tags: [context-engineering, retrieval, grounding, citations]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -43,7 +43,7 @@ author: hp
 
 **Retrieval context** is external knowledge fetched at query time and injected into the prompt. It is the primary way applications supply facts the model was not trained on.
 
-Section **12** of Phase 6 — conceptual foundation for [RAG](../rag/README.md).
+Section **12** — conceptual foundation for [RAG](../rag/README.md).
 
 ```mermaid
 flowchart LR
@@ -127,7 +127,7 @@ Minimum similarity threshold. Empty retrieval → explicit "no relevant document
 | Abstain instruction | When context insufficient |
 | Post-check | Verify claims ⊆ retrieved text |
 
-Grounding is split between **prompt** (Phase 5) and **retrieval quality** (this section + RAG phase).
+Grounding is split between **prompt** and **retrieval quality** (this section + RAG phase).
 
 ---
 
@@ -189,7 +189,7 @@ def format_retrieval_context(chunks: list[RetrievedChunk]) -> str:
 
 ### Related Topics
 
-- [RAG](../rag/README.md) — Phase 7+
+- [RAG](../rag/README.md)
 - [Context Ranking](context-ranking.md)
 
 ### Next
@@ -202,4 +202,4 @@ def format_retrieval_context(chunks: list[RetrievedChunk]) -> str:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication — Phase 6 Section 12 |
+| 1.0 | 2026-07-13 | Initial publication |

@@ -2,7 +2,7 @@
 title: "AI Research Timeline Cheat Sheet"
 description: "Quick reference for AI research evolution — transformers to agents to MCP."
 domain: papers
-tags: [cheat-sheet, timeline, evolution, phase-papers]
+tags: [cheat-sheet, timeline, evolution]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

@@ -2,7 +2,7 @@
 title: "SWE-Agent"
 description: "Engineering guide to SWE-Agent — architecture, tools, planning, and evaluation for autonomous software engineering agents."
 domain: papers
-tags: [paper, agents, SWE-Agent, coding-agent, phase-papers]
+tags: [paper, agents, SWE-Agent, coding-agent]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

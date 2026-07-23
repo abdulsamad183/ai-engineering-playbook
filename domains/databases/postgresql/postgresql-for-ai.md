@@ -369,7 +369,7 @@ LIMIT 5;
 
 ## Async Access with SQLAlchemy
 
-> **Phase 3 deep dive:** Full SQLAlchemy 2.0 coverage — sessions, models, relationships, queries, transactions, and repository implementations — is in [SQLAlchemy for AI Applications](sqlalchemy-for-ai-applications.md).
+> **Deep dive:** Full SQLAlchemy 2.0 coverage — sessions, models, relationships, queries, transactions, and repository implementations — is in [SQLAlchemy for AI Applications](sqlalchemy-for-ai-applications.md).
 
 Use `asyncpg` driver with SQLAlchemy 2.0 async session for non-blocking database access in FastAPI applications.
 
@@ -508,7 +508,7 @@ class PostgresConversationRepository(ConversationRepository):
 
 ## Migrations with Alembic
 
-> **Phase 3 deep dive:** Alembic workflows, rollbacks, zero-downtime patterns, pgvector migrations, and CI integration — see [Alembic Migrations for AI](alembic-migrations-for-ai.md).
+> **Deep dive:** Alembic workflows, rollbacks, zero-downtime patterns, pgvector migrations, and CI integration — see [Alembic Migrations for AI](alembic-migrations-for-ai.md).
 
 ### Project Setup
 

@@ -2,7 +2,7 @@
 title: "Transformer Concepts Cheat Sheet"
 description: "Quick reference for transformer architecture — attention, KV cache, positional encoding, and model variants."
 domain: papers
-tags: [cheat-sheet, transformers, attention, phase-papers]
+tags: [cheat-sheet, transformers, attention]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

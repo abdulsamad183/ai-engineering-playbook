@@ -2,7 +2,7 @@
 title: "AI Architecture Patterns"
 description: "Request-response, event-driven, pipeline, agentic, pub/sub, microservices, modular monolith."
 domain: ai-system-design
-tags: [system-design, patterns, architecture, phase-11]
+tags: [system-design, patterns, architecture]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **16** of Phase 11.
+Section **16**.
 
 | Pattern | AI use case |
 |---------|-------------|
@@ -60,4 +60,4 @@ Microservices add network latency — avoid premature split.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 11 Section 16 |
+| 1.0 | 2026-07-13 | Initial publication |

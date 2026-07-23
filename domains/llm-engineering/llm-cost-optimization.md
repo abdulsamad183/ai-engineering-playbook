@@ -18,7 +18,7 @@ author: hp
 
 # LLM Cost Optimization
 
-> Section 17 of Phase 4 — LLM costs scale with tokens × price × traffic. Unlike traditional compute, a single prompt design mistake can multiply spend overnight. Cost optimization is continuous engineering, not a one-time model downgrade.
+> Section 17 of this handbook — LLM costs scale with tokens × price × traffic. Unlike traditional compute, a single prompt design mistake can multiply spend overnight. Cost optimization is continuous engineering, not a one-time model downgrade.
 
 ## Table of Contents
 
@@ -507,7 +507,7 @@ Use before launch and monthly in production.
 - [LLM Inference](llm-inference.md) — Section 9
 - [Model Comparison Guide](model-comparison-guide.md) — Section 16
 
-### Phase 4 — LLM Engineering
+### — LLM Engineering
 
 | # | Topic | Document |
 |---|-------|----------|
@@ -566,4 +566,4 @@ Use before launch and monthly in production.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 4 release — Section 17 |
+| 1.0 | 2026-07-13 | Initial release — Section 17 |

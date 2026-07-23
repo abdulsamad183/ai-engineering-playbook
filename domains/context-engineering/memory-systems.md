@@ -2,7 +2,7 @@
 title: "Memory Systems"
 description: "AI application memory — short-term, long-term, episodic, semantic, procedural, and working memory with storage, retrieval, expiration, and update strategies."
 domain: context-engineering
-tags: [context-engineering, memory, episodic, semantic, production, phase-6]
+tags: [context-engineering, memory, episodic, semantic, production]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -46,7 +46,7 @@ author: hp
 
 **Memory** is durable or semi-durable information an application recalls to enrich context — distinct from conversation transcripts and retrieved documents. Production assistants need layered memory types with explicit write and recall policies.
 
-Section **5** of Phase 6.
+Section **5**.
 
 ```mermaid
 flowchart TB
@@ -297,4 +297,4 @@ class MemoryStore:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication — Phase 6 Section 5 |
+| 1.0 | 2026-07-13 | Initial publication |

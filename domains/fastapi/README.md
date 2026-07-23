@@ -9,7 +9,7 @@
 | Document | Status | Description |
 |----------|--------|-------------|
 | [FastAPI Foundation](fastapi-foundation.md) | Published | Foundation-level FastAPI patterns for AI apps |
-| [FastAPI Complete Guide](fastapi-complete-guide.md) | Published | Phase 3 comprehensive FastAPI production reference |
+| [FastAPI Complete Guide](fastapi-complete-guide.md) | Published | FastAPI production reference |
 
 ---
 

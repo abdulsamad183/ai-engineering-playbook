@@ -2,7 +2,7 @@
 title: "Design: AI Email Assistant"
 description: "Email AI — classification, drafts, retrieval, calendar, summarization."
 domain: ai-system-design
-tags: [system-design, email, classification, calendar, phase-11]
+tags: [system-design, email, classification, calendar]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -52,4 +52,4 @@ flowchart TB
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 11 Section 12 |
+| 1.0 | 2026-07-13 | Initial publication |

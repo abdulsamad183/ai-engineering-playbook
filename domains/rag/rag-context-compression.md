@@ -2,7 +2,7 @@
 title: "RAG Context Compression"
 description: "Passage compression, filtering, summarization, redundancy removal, token budgeting for retrieved context."
 domain: rag
-tags: [rag, compression, token-budget, phase-7]
+tags: [rag, compression, token-budget]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **13** of Phase 7. After reranking, fit passages into retrieval token budget without losing answer-critical sentences.
+Section **13**. After reranking, fit passages into retrieval token budget without losing answer-critical sentences.
 
 ## Techniques
 
@@ -40,4 +40,4 @@ See [Context Compression](../context-engineering/context-compression.md) for gen
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 7 Section 13 |
+| 1.0 | 2026-07-13 | Initial publication |

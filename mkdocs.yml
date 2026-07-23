@@ -134,33 +134,38 @@ extra_javascript:
   - https://unpkg.com/mermaid@10/dist/mermaid.min.js
   - javascripts/mermaid-init.js
 
-# Curated navigation — few tabs, clear purpose
+# Curated navigation — few tabs, capability-grouped handbooks
 nav:
   - Home: index.md
   - Learn:
     - Learning Roadmap: meta/roadmap.md
     - Capstone Walkthrough: meta/capstone-walkthrough.md
   - Handbooks:
-    - Foundations: domains/foundations/README.md
-    - Python: domains/python-engineering/README.md
-    - Backend: domains/backend-engineering/README.md
-    - APIs: domains/apis/README.md
-    - FastAPI: domains/fastapi/README.md
-    - Databases: domains/databases/README.md
-    - LLM Engineering: domains/llm-engineering/README.md
-    - Prompt Engineering: domains/prompt-engineering/README.md
-    - Context Engineering: domains/context-engineering/README.md
-    - RAG: domains/rag/README.md
-    - AI Agents: domains/ai-agents/README.md
-    - MCP: domains/mcp/README.md
-    - AI Evaluation: domains/ai-evaluation/README.md
-    - System Design: domains/ai-system-design/README.md
-    - Production AI: domains/ai-deployment/README.md
-    - AI Safety: domains/ai-safety/README.md
-    - Debugging: domains/debugging/README.md
-    - Common Mistakes: domains/common-mistakes/README.md
-    - Research Papers: domains/papers/README.md
-    - Interview Prep: domains/interview-preparation/README.md
+    - Foundations:
+      - Overview: domains/foundations/README.md
+      - Python: domains/python-engineering/README.md
+      - Backend: domains/backend-engineering/README.md
+      - APIs: domains/apis/README.md
+      - FastAPI: domains/fastapi/README.md
+      - Databases: domains/databases/README.md
+    - Core:
+      - LLM Engineering: domains/llm-engineering/README.md
+      - Prompt Engineering: domains/prompt-engineering/README.md
+      - Context Engineering: domains/context-engineering/README.md
+    - Retrieval & Agents:
+      - RAG: domains/rag/README.md
+      - AI Agents: domains/ai-agents/README.md
+      - MCP: domains/mcp/README.md
+    - Production:
+      - AI Evaluation: domains/ai-evaluation/README.md
+      - System Design: domains/ai-system-design/README.md
+      - Production AI: domains/ai-deployment/README.md
+    - Craft & Growth:
+      - AI Safety: domains/ai-safety/README.md
+      - Debugging: domains/debugging/README.md
+      - Common Mistakes: domains/common-mistakes/README.md
+      - Research Papers: domains/papers/README.md
+      - Interview Prep: domains/interview-preparation/README.md
   - Build:
     - Templates: templates/README.md
     - Starters: templates/engineering/README.md

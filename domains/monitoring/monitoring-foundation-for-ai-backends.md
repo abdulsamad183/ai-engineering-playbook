@@ -1,6 +1,6 @@
 ---
 title: "Monitoring Foundation for AI Backends"
-description: "Phase 3 high-level guide to monitoring AI backends — health endpoints, metrics, distributed tracing, OpenTelemetry, Prometheus, and Grafana overview for production observability."
+description: "high-level guide to monitoring AI backends — health endpoints, metrics, distributed tracing, OpenTelemetry, Prometheus, and Grafana overview for production observability."
 domain: monitoring
 tags: [monitoring, observability, prometheus, grafana, opentelemetry, health-checks, production, backend]
 status: published
@@ -19,7 +19,7 @@ author: hp
 
 # Monitoring Foundation for AI Backends
 
-> Phase 3 high-level reference for observing AI backends in production — health endpoints, metrics, traces, and the standard open-source observability stack.
+> high-level reference for observing AI backends in production — health endpoints, metrics, traces, and the standard open-source observability stack.
 
 ## Table of Contents
 
@@ -49,7 +49,7 @@ author: hp
 Monitoring tells you **whether your AI backend is healthy, fast, and cost-effective** — before users file tickets.
 Logs explain what happened on one request; metrics show trends across thousands; traces show where time is spent in multi-stage pipelines.
 
-This document is a **Phase 3 foundation guide**. It is intentionally **high-level** — enough to design and discuss production observability without diving into vendor-specific setup guides.
+This document is a **deep dive**. It is intentionally **high-level** — enough to design and discuss production observability without diving into vendor-specific setup guides.
 
 It assumes you have read:
 
@@ -96,7 +96,7 @@ graph TB
 AI backends have **variable latency**, **external dependencies**, and **per-request cost**.
 Traditional uptime checks are necessary but not sufficient — you need stage-level visibility.
 
-See [Backend Fundamentals for AI](../backend-engineering/backend-fundamentals-for-ai.md) for the `/health` endpoint pattern introduced in Phase 2.
+See [Backend Fundamentals for AI](../backend-engineering/backend-fundamentals-for-ai.md) for the `/health` endpoint pattern introduced in this handbook.
 
 ---
 
@@ -710,4 +710,4 @@ class Settings(BaseSettings):
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 3 release |
+| 1.0 | 2026-07-13 | Initial release |

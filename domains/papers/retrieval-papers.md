@@ -2,7 +2,7 @@
 title: "Retrieval Papers"
 description: "Engineering guide to Self-RAG, GraphRAG, RAPTOR, and CRAG — architectures, when to adopt, and production tradeoffs."
 domain: papers
-tags: [paper, rag, Self-RAG, GraphRAG, RAPTOR, CRAG, phase-papers]
+tags: [paper, rag, Self-RAG, GraphRAG, RAPTOR, CRAG]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

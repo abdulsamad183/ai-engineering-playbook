@@ -2,7 +2,7 @@
 title: "Context Comparison Guides"
 description: "Decision reference for context engineering tradeoffs — prompt vs context, memory types, static vs dynamic, compression, ranking, personalization, long-context."
 domain: context-engineering
-tags: [context-engineering, comparison, production, phase-6]
+tags: [context-engineering, comparison, production]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -17,7 +17,7 @@ author: hp
 
 # Context Comparison Guides
 
-> Supplementary guide for Phase 6 — decision tables for context engineering tradeoffs.
+> supplementary guide — decision tables for context engineering tradeoffs.
 
 ## Table of Contents
 
@@ -162,4 +162,4 @@ flowchart TD
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication — Phase 6 comparisons |
+| 1.0 | 2026-07-13 | Initial publication comparisons |

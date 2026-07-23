@@ -18,7 +18,7 @@ author: hp
 
 # Function Calling and Tools
 
-> Section 12 of Phase 4 — function calling is how LLMs interact with the real world. Tools turn a text generator into an agent that queries databases, calls APIs, and executes code. Get the orchestration loop right and you have a reliable agent; get it wrong and you have an unpredictable demo.
+> Section 12 of this handbook — function calling is how LLMs interact with the real world. Tools turn a text generator into an agent that queries databases, calls APIs, and executes code. Get the orchestration loop right and you have a reliable agent; get it wrong and you have an unpredictable demo.
 
 ## Table of Contents
 
@@ -1133,4 +1133,4 @@ async def instrumented_agent_loop(user_message: str, **kwargs) -> AgentResult:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 4 release — Section 12 |
+| 1.0 | 2026-07-13 | Initial release — Section 12 |

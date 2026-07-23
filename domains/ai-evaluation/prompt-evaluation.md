@@ -2,7 +2,7 @@
 title: "Prompt Evaluation"
 description: "Prompt consistency, robustness, sensitivity, regression, comparisons, token efficiency."
 domain: ai-evaluation
-tags: [ai-evaluation, prompt, regression, robustness, phase-10]
+tags: [ai-evaluation, prompt, regression, robustness]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **8** of Phase 10. Complements [Prompt Engineering evaluation](../prompt-engineering/prompt-evaluation.md) with system-level LLMOps focus.
+Section **8**. Complements [Prompt Engineering evaluation](../prompt-engineering/prompt-evaluation.md) with system-level LLMOps focus.
 
 ## Dimensions
 
@@ -76,4 +76,4 @@ async def prompt_regression(baseline_fn, candidate_fn, cases: list) -> dict:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 10 Section 8 |
+| 1.0 | 2026-07-13 | Initial publication |

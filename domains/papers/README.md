@@ -2,7 +2,7 @@
 title: "AI Research Papers"
 description: "Engineering-oriented summaries of foundational AI research — transformers, reasoning, RAG, prompting, agents, and what to build from each."
 domain: papers
-tags: [papers, research, transformers, agents, rag, prompting, phase-papers]
+tags: [papers, research, transformers, agents, rag, prompting]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -20,7 +20,7 @@ author: hp
 # AI Research Papers
 
 > Engineering handbook for the research that shaped modern AI systems — not paper reproductions, but actionable architecture and tradeoff guidance.
-> **Prerequisites:** [Phase 4 LLM Engineering](../llm-engineering/README.md) · [Phase 5 Prompt Engineering](../prompt-engineering/README.md)
+> **Prerequisites:** [LLM Engineering](../llm-engineering/README.md) · [Prompt Engineering](../prompt-engineering/README.md)
 
 ---
 

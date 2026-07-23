@@ -2,7 +2,7 @@
 title: "MCP Streaming"
 description: "Streaming requests and responses, partial results, cancellation, backpressure, large outputs."
 domain: mcp
-tags: [mcp, streaming, sse, cancellation, phase-9]
+tags: [mcp, streaming, sse, cancellation]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **13** of Phase 9. Streaming delivers **incremental tool results** and **progress** without blocking the host.
+Section **13**. Streaming delivers **incremental tool results** and **progress** without blocking the host.
 
 ```mermaid
 flowchart LR
@@ -83,4 +83,4 @@ async def stream_search(query: str, emit):
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 9 Section 13 |
+| 1.0 | 2026-07-13 | Initial publication |

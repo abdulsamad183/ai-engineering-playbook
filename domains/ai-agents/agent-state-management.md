@@ -2,7 +2,7 @@
 title: "Agent State Management"
 description: "Agent state, checkpointing, recovery, rollback, state machines, session and persistent state."
 domain: ai-agents
-tags: [ai-agents, state, checkpointing, recovery, phase-8]
+tags: [ai-agents, state, checkpointing, recovery]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **8** of Phase 8.
+Section **8**.
 
 ```mermaid
 stateDiagram-v2
@@ -74,4 +74,4 @@ class AgentState:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 8 Section 8 |
+| 1.0 | 2026-07-13 | Initial publication |

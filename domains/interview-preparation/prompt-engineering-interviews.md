@@ -2,7 +2,7 @@
 title: "Prompt Engineering Interviews"
 description: "Prompt interview questions — few-shot, chaining, ReAct, testing, evaluation, optimization."
 domain: interview-preparation
-tags: [interview, prompt-engineering, react, phase-13]
+tags: [interview, prompt-engineering, react]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

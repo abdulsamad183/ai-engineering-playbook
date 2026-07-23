@@ -1,6 +1,6 @@
 ---
 title: "HTTP Clients for AI Backends"
-description: "Phase 3 deep dive into HTTP clients for AI backends — httpx, retries, timeouts, connection pooling, streaming, authentication, LLM API integration, and external API patterns with FastAPI production examples."
+description: "deep dive into HTTP clients for AI backends — httpx, retries, timeouts, connection pooling, streaming, authentication, LLM API integration, and external API patterns with FastAPI production examples."
 domain: backend-engineering
 tags: [backend, httpx, http, retries, streaming, llm, production, intermediate]
 status: published
@@ -21,7 +21,7 @@ author: hp
 
 # HTTP Clients for AI Backends
 
-> Phase 3 reference for production HTTP clients in AI backends — shared `httpx.AsyncClient` instances, tuned timeouts, connection pools, streaming LLM responses, and resilient calls to external APIs.
+> reference for production HTTP clients in AI backends — shared `httpx.AsyncClient` instances, tuned timeouts, connection pools, streaming LLM responses, and resilient calls to external APIs.
 
 ## Table of Contents
 
@@ -49,7 +49,7 @@ author: hp
 
 Every AI backend is a **composition of HTTP calls**: LLM completions, embedding APIs, vector database REST gateways, web search tools, CRM lookups, and webhook notifications. How you configure the HTTP client layer determines whether your service survives 500 concurrent chat users or collapses under connection exhaustion and unbounded retries.
 
-This document is a **Phase 3 deep dive**. It assumes you have read:
+This document is a **deep dive**. It assumes you have read:
 
 - [Async Programming for AI Backends](async-programming-for-ai-backends.md) — event loop, non-blocking I/O
 - [HTTP Fundamentals for AI](../apis/http-fundamentals-for-ai.md) — status codes, headers, streaming
@@ -929,4 +929,4 @@ Set `httpx` and `httpcore` loggers to `WARNING` in production — see [Logging a
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 3 release |
+| 1.0 | 2026-07-13 | Initial release |

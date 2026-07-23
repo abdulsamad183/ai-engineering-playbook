@@ -2,7 +2,7 @@
 title: "MCP Engineering Mistakes"
 description: "Troubleshooting — invalid schemas, transport failures, stale capabilities, sessions, retry storms."
 domain: mcp
-tags: [mcp, mistakes, troubleshooting, debugging, phase-9]
+tags: [mcp, mistakes, troubleshooting, debugging]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **19** of Phase 9 — troubleshooting playbook.
+Section **19** — troubleshooting playbook.
 
 ## Issue Catalog
 
@@ -102,4 +102,4 @@ Section **19** of Phase 9 — troubleshooting playbook.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 9 Section 19 |
+| 1.0 | 2026-07-13 | Initial publication |

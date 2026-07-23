@@ -829,7 +829,7 @@ test_rag_service_empty_retrieval_still_calls_llm()
 
 ### Next Topics
 
-- [Testing Backend for AI (Phase 3)](../backend-engineering/testing-backend-for-ai.md) — FastAPI test depth, test DB, coverage gates
+- [Testing Backend for AI](../backend-engineering/testing-backend-for-ai.md) — FastAPI test depth, test DB, coverage gates
 - [AI Evaluation Domain](../ai-evaluation/README.md)
 - [CICD Domain](../cicd/README.md)
 - [Debugging Domain](../debugging/README.md)

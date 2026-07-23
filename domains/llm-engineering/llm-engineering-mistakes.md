@@ -18,7 +18,7 @@ author: hp
 
 # LLM Engineering Mistakes
 
-> Section 20 of Phase 4 — the gap between a working demo and a production LLM system is a graveyard of predictable mistakes. This document catalogs the failures that recur across teams, with symptoms, root causes, diagnostics, fixes, and prevention for each.
+> Section 20 of this handbook — the gap between a working demo and a production LLM system is a graveyard of predictable mistakes. This document catalogs the failures that recur across teams, with symptoms, root causes, diagnostics, fixes, and prevention for each.
 
 ## Table of Contents
 
@@ -54,7 +54,7 @@ Each mistake follows a consistent diagnostic framework:
 | **Fix** | Concrete remediation steps |
 | **Prevention** | Practices that stop recurrence |
 
-Cross-references point to detailed guides in Phase 4.
+Cross-references point to detailed guides in this handbook.
 
 > **Production Standard:** When an LLM feature fails in production, check this list before blaming the model. Most incidents are system design failures.
 
@@ -800,10 +800,10 @@ Before shipping any LLM feature:
 
 ### Prerequisites
 
-- Sections 1–12 of Phase 4 (foundational LLM engineering)
+- Sections 1–12 of this handbook (foundational LLM engineering)
 - [Common Engineering Mistakes](../common-mistakes/common-engineering-mistakes.md) — general AI app mistakes
 
-### Phase 4 — LLM Engineering
+### — LLM Engineering
 
 | # | Topic | Document |
 |---|-------|----------|
@@ -845,7 +845,7 @@ Before shipping any LLM feature:
 - [LLM Security Fundamentals](llm-security-fundamentals.md) — Section 19
 - [Common Engineering Mistakes](../common-mistakes/common-engineering-mistakes.md)
 
-### Next Topics (Phase 5+)
+### Next Topics 
 
 - [Prompt Engineering](../prompt-engineering/README.md)
 - [RAG](../rag/README.md)
@@ -864,4 +864,4 @@ Before shipping any LLM feature:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 4 release — Section 20 |
+| 1.0 | 2026-07-13 | Initial release — Section 20 |

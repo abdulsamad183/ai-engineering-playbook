@@ -2,7 +2,7 @@
 title: "OpenAI Evals"
 description: "OpenAI Evals overview — eval registry, templates, strengths and limitations."
 domain: ai-evaluation
-tags: [ai-evaluation, openai, evals, framework, phase-10]
+tags: [ai-evaluation, openai, evals, framework]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

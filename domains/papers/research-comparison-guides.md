@@ -2,7 +2,7 @@
 title: "Research Comparison Guides"
 description: "Side-by-side comparison tables for agent reasoning, retrieval, prompting, and coding agent papers — decision guides for engineers."
 domain: papers
-tags: [papers, comparison, ReAct, GraphRAG, DSPy, phase-papers]
+tags: [papers, comparison, ReAct, GraphRAG, DSPy]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

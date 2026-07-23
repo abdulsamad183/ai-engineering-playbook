@@ -811,7 +811,7 @@ async def readiness(
 
 ### Next Topics
 
-- [FastAPI Complete Guide](fastapi-complete-guide.md) — Phase 3 comprehensive production reference
+- [FastAPI Complete Guide](fastapi-complete-guide.md) comprehensive production reference
 - [Backend Architecture for AI](../backend-engineering/backend-architecture-for-ai.md) — where AI logic lives in the stack
 - [AI Application Architecture](../ai-application-architecture/README.md) — end-to-end system design
 - [Observability](../observability/README.md) — tracing LLM calls and API latency

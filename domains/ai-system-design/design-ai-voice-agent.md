@@ -2,7 +2,7 @@
 title: "Design: AI Voice Agent"
 description: "Voice AI — STT, VAD, streaming, TTS, interruptions, real-time tools."
 domain: ai-system-design
-tags: [system-design, voice, stt, tts, realtime, phase-11]
+tags: [system-design, voice, stt, tts, realtime]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -63,4 +63,4 @@ flowchart LR
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 11 Section 14 |
+| 1.0 | 2026-07-13 | Initial publication |

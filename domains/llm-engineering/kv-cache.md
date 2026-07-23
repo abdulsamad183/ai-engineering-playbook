@@ -18,7 +18,7 @@ author: hp
 
 # KV Cache — Inference Engineering
 
-> **Section 8 of Phase 4: LLM Fundamentals.** Autoregressive LLMs generate one token at a time. Without caching, each step would recompute attention keys and values for the entire history. The KV cache is the critical optimization that makes real-time streaming chat economically and physically possible.
+> **Section 8 of this handbook: LLM Fundamentals.** Autoregressive LLMs generate one token at a time. Without caching, each step would recompute attention keys and values for the entire history. The KV cache is the critical optimization that makes real-time streaming chat economically and physically possible.
 
 ## Table of Contents
 
@@ -517,7 +517,7 @@ Track metrics that map to prefill and decode behavior.
 - [Attention Mechanism](attention-mechanism.md) — Section 7: Q/K/V and attention scores
 - [Transformer Intuition](transformer-intuition.md) — Section 6: decoder blocks and layers
 
-### Phase 4: LLM Fundamentals (This Series)
+### LLM Fundamentals (This Series)
 
 | Section | Document | Topic |
 |---------|----------|-------|
@@ -533,9 +533,9 @@ Track metrics that map to prefill and decode behavior.
 - [How LLMs Work](how-llms-work.md) — streaming APIs and token accounting
 - [Context Engineering](../context-engineering/README.md) — designing prompts for cache efficiency
 
-### Next Topics (Beyond Phase 4)
+### Next Topics
 
-- [Prompt Engineering](../prompt-engineering/README.md) — Phase 5
+- [Prompt Engineering](../prompt-engineering/README.md)
 - [RAG Systems](../rag/README.md) — retrieval with prefix caching considerations
 - [Model Serving](../model-serving/README.md) — deployment patterns
 

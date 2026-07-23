@@ -17,7 +17,7 @@ author: hp
 
 # Prompt Security
 
-> Section 16 of Phase 5 — prompts are the security boundary between your application's intent and the model's behavior. A well-crafted system prompt is necessary but not sufficient; attackers target the entire prompt assembly pipeline. Prompt security is defense-in-depth around instructions, data, and outputs.
+> Section 16 of this handbook — prompts are the security boundary between your application's intent and the model's behavior. A well-crafted system prompt is necessary but not sufficient; attackers target the entire prompt assembly pipeline. Prompt security is defense-in-depth around instructions, data, and outputs.
 
 ## Table of Contents
 
@@ -658,7 +658,7 @@ security_gates:
 - [Prompt Testing](prompt-testing.md) — Section 13
 - [LLM Security Fundamentals](../llm-engineering/llm-security-fundamentals.md)
 
-### Phase 5 — Prompt Engineering
+### — Prompt Engineering
 
 | # | Topic | Document |
 |---|-------|----------|
@@ -704,4 +704,4 @@ security_gates:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 5 release — Section 16 |
+| 1.0 | 2026-07-13 | Initial release — Section 16 |

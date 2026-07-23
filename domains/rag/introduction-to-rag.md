@@ -2,7 +2,7 @@
 title: "Introduction to Retrieval-Augmented Generation"
 description: "Foundation for RAG — what it is, why it exists, LLM limitations, grounding, enterprise use cases, architecture, lifecycle, ecosystem, and types of RAG."
 domain: rag
-tags: [rag, foundation, retrieval, grounding, production, phase-7]
+tags: [rag, foundation, retrieval, grounding, production]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -55,11 +55,11 @@ author: hp
 
 Production RAG is **knowledge engineering** — ingestion quality, metadata, chunking, retrieval, evaluation, and operations matter as much as the LLM.
 
-This is **Section 1** of Phase 7.
+This document is **Section 1** of this handbook.
 
 ```mermaid
 flowchart LR
-    subgraph "Phase 7: RAG"
+    subgraph "RAG"
         S1[1. Introduction]
         S2[2. Architecture]
         S3[3. Ingestion]
@@ -68,7 +68,7 @@ flowchart LR
     S1 --> S2 --> S3 --> S4
 ```
 
-> **Prerequisites:** [Phase 6 Context Engineering](../context-engineering/README.md) · [Phase 5 Prompt Engineering](../prompt-engineering/README.md) · [Phase 4 LLM Engineering](../llm-engineering/README.md)
+> **Prerequisites:** [Context Engineering](../context-engineering/README.md) · [Prompt Engineering](../prompt-engineering/README.md) · [LLM Engineering](../llm-engineering/README.md)
 
 ---
 
@@ -338,7 +338,7 @@ async def rag_query(query: str, index, llm, top_k: int = 5) -> dict:
 
 ### Prerequisites
 
-- [Context Engineering](../context-engineering/README.md) — Phase 6
+- [Context Engineering](../context-engineering/README.md)
 - [Retrieval Context](../context-engineering/retrieval-context.md)
 
 ### Next
@@ -355,4 +355,4 @@ async def rag_query(query: str, index, llm, top_k: int = 5) -> dict:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication — Phase 7 Section 1 |
+| 1.0 | 2026-07-13 | Initial publication |

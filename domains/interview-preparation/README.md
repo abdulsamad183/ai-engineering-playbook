@@ -95,12 +95,12 @@ flowchart TB
 
 | Interview section | Deep dive phase |
 |-------------------|-----------------|
-| RAG | [Phase 7](../rag/README.md) |
-| Agents | [Phase 8](../ai-agents/README.md) |
-| MCP | [Phase 9](../mcp/README.md) |
-| Evaluation | [Phase 10](../ai-evaluation/README.md) |
-| System Design | [Phase 11](../ai-system-design/README.md) |
-| Production | [Phase 12](../ai-deployment/README.md) |
+| RAG | [handbook](../rag/README.md) |
+| Agents | [handbook](../ai-agents/README.md) |
+| MCP | [handbook](../mcp/README.md) |
+| Evaluation | [handbook](../ai-evaluation/README.md) |
+| System Design | [handbook](../ai-system-design/README.md) |
+| Production | [handbook](../ai-deployment/README.md) |
 
 ---
 

@@ -2,7 +2,7 @@
 title: "Engineering Takeaways"
 description: "Consolidated implement/avoid guide from AI research papers — what to build in production and what to skip."
 domain: papers
-tags: [papers, engineering, takeaways, production, phase-papers]
+tags: [papers, engineering, takeaways, production]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

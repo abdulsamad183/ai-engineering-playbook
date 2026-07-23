@@ -2,7 +2,7 @@
 title: "Event-Driven Agents"
 description: "Event bus, triggers, pub/sub, async execution, reactive agent architectures."
 domain: ai-agents
-tags: [ai-agents, events, pub-sub, async, phase-8]
+tags: [ai-agents, events, pub-sub, async]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **10** of Phase 8.
+Section **10**.
 
 ```mermaid
 flowchart LR
@@ -55,4 +55,4 @@ flowchart LR
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 8 Section 10 |
+| 1.0 | 2026-07-13 | Initial publication |

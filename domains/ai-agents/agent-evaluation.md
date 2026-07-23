@@ -2,7 +2,7 @@
 title: "Agent Evaluation"
 description: "Evaluating agents — task success, tool accuracy, planning quality, latency, cost, reliability, failure recovery."
 domain: ai-agents
-tags: [ai-agents, evaluation, metrics, phase-8]
+tags: [ai-agents, evaluation, metrics]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **16** of Phase 8.
+Section **16**.
 
 | Metric | Measures |
 |--------|----------|
@@ -57,4 +57,4 @@ Section **16** of Phase 8.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 8 Section 16 |
+| 1.0 | 2026-07-13 | Initial publication |

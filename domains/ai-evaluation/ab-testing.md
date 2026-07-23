@@ -2,7 +2,7 @@
 title: "A/B Testing for AI Systems"
 description: "Experimental design, prompt/model/RAG/agent A/B tests, statistics, rollout, canary."
 domain: ai-evaluation
-tags: [ai-evaluation, ab-testing, experimentation, canary, phase-10]
+tags: [ai-evaluation, ab-testing, experimentation, canary]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **15** of Phase 10.
+Section **15**.
 
 ```mermaid
 flowchart TB
@@ -77,4 +77,4 @@ def assign_variant(user_id: str, experiment: str) -> str:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 10 Section 15 |
+| 1.0 | 2026-07-13 | Initial publication |

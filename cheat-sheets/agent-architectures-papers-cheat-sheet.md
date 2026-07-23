@@ -2,7 +2,7 @@
 title: "Agent Architectures Papers Cheat Sheet"
 description: "Quick reference mapping agent research papers to production patterns — ReAct, Reflexion, Voyager, CAMEL, SWE-Agent."
 domain: papers
-tags: [cheat-sheet, agents, ReAct, SWE-Agent, CAMEL, phase-papers]
+tags: [cheat-sheet, agents, ReAct, SWE-Agent, CAMEL]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

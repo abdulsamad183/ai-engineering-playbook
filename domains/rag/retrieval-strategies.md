@@ -2,7 +2,7 @@
 title: "Retrieval Strategies for RAG"
 description: "Dense, sparse, hybrid, hierarchical, multi-stage, multi-query, parent-child retrieval — comparison and production guidance."
 domain: rag
-tags: [rag, retrieval, hybrid, dense, phase-7]
+tags: [rag, retrieval, hybrid, dense]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -22,7 +22,7 @@ author: hp
 
 ## Overview
 
-Section **9** of Phase 7.
+Section **9**.
 
 | Strategy | Mechanism | Best for |
 |----------|-----------|----------|
@@ -58,4 +58,4 @@ flowchart LR
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 7 Section 9 |
+| 1.0 | 2026-07-13 | Initial publication |

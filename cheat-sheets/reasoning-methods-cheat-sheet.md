@@ -2,7 +2,7 @@
 title: "Reasoning Methods Cheat Sheet"
 description: "Quick reference for agent reasoning patterns — ReAct, ToT, Reflexion, CoT, and when to use each."
 domain: papers
-tags: [cheat-sheet, reasoning, ReAct, ToT, Reflexion, phase-papers]
+tags: [cheat-sheet, reasoning, ReAct, ToT, Reflexion]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

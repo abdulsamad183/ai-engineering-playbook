@@ -2,7 +2,7 @@
 title: "Common AI System Components"
 description: "Reusable production stack — gateway, auth, FastAPI, agents, RAG, vector DB, Redis, queues, monitoring."
 domain: ai-system-design
-tags: [system-design, components, architecture, phase-11]
+tags: [system-design, components, architecture]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **2** of Phase 11 — the reference stack for production AI applications.
+Section **2** — the reference stack for production AI applications.
 
 ```mermaid
 flowchart TB
@@ -89,4 +89,4 @@ flowchart TB
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 11 Section 2 |
+| 1.0 | 2026-07-13 | Initial publication |

@@ -2,7 +2,7 @@
 title: "DSPy"
 description: "Engineering guide to DSPy — programming model, optimization, compiler pipeline, and production workflow for systematic prompt engineering."
 domain: papers
-tags: [paper, dspy, prompt-optimization, programming-model, phase-papers]
+tags: [paper, dspy, prompt-optimization, programming-model]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

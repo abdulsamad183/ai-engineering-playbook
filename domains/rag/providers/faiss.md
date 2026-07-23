@@ -2,7 +2,7 @@
 title: "FAISS for RAG"
 description: "FAISS vector search — architecture, indexes, scaling, Python examples, production use cases."
 domain: rag
-tags: [rag, faiss, vector-database, self-hosted, phase-7]
+tags: [rag, faiss, vector-database, self-hosted]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

@@ -2,7 +2,7 @@
 title: "AI System Design Interview Guide"
 description: "Whiteboard exercises — ChatGPT, Cursor, Copilot, Perplexity, RAG, voice, support systems."
 domain: interview-preparation
-tags: [interview, system-design, whiteboard, phase-13]
+tags: [interview, system-design, whiteboard]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **15** — interview exercises linked to [Phase 11 designs](../ai-system-design/README.md).
+Section **15** — interview exercises linked to [designs](../ai-system-design/README.md).
 
 ## Whiteboard Framework (45 min)
 

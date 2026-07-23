@@ -18,7 +18,7 @@ author: hp
 
 # Prompt Evaluation
 
-> Section 14 of Phase 5 — testing tells you whether a prompt breaks; evaluation tells you whether it is good. Prompt evaluation quantifies output quality across dimensions that matter to users and business outcomes, enabling data-driven iteration instead of subjective debate.
+> Section 14 of this handbook — testing tells you whether a prompt breaks; evaluation tells you whether it is good. Prompt evaluation quantifies output quality across dimensions that matter to users and business outcomes, enabling data-driven iteration instead of subjective debate.
 
 ## Table of Contents
 
@@ -726,7 +726,7 @@ Prompt: invoice-extraction v2.3.0 | Model: gpt-4.1-mini | Eval: 2026-07-13
 - [Prompt Testing](prompt-testing.md) — Section 13
 - [Prompt Lifecycle](prompt-lifecycle.md) — Section 11
 
-### Phase 5 — Prompt Engineering
+### — Prompt Engineering
 
 | # | Topic | Document |
 |---|-------|----------|
@@ -773,4 +773,4 @@ Prompt: invoice-extraction v2.3.0 | Model: gpt-4.1-mini | Eval: 2026-07-13
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 5 release — Section 14 |
+| 1.0 | 2026-07-13 | Initial release — Section 14 |

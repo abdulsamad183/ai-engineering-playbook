@@ -2,7 +2,7 @@
 title: "AI Agents Interviews"
 description: "Agent interviews — ReAct, planning, tools, multi-agent, LangGraph, frameworks, HITL."
 domain: interview-preparation
-tags: [interview, agents, react, langgraph, phase-13]
+tags: [interview, agents, react, langgraph]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

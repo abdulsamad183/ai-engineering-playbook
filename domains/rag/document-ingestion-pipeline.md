@@ -2,7 +2,7 @@
 title: "Document Ingestion Pipeline"
 description: "Production document ingestion — PDF, DOCX, HTML, Markdown, code, websites, OCR, transcripts, structured data, cleaning, normalization, deduplication."
 domain: rag
-tags: [rag, ingestion, parsing, pipeline, phase-7]
+tags: [rag, ingestion, parsing, pipeline]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -39,7 +39,7 @@ author: hp
 
 ## Overview
 
-Section **3** of Phase 7. Ingestion quality caps retrieval quality — garbage in, hallucinations out.
+Section **3**. Ingestion quality caps retrieval quality — garbage in, hallucinations out.
 
 ```mermaid
 flowchart LR
@@ -202,4 +202,4 @@ def parse_pdf(path: str) -> str:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication — Phase 7 Section 3 |
+| 1.0 | 2026-07-13 | Initial publication |

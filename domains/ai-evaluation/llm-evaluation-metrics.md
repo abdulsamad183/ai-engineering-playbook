@@ -2,7 +2,7 @@
 title: "LLM Evaluation Metrics"
 description: "Faithfulness, relevance, correctness, groundedness, safety, instruction following, tool accuracy."
 domain: ai-evaluation
-tags: [ai-evaluation, llm-metrics, faithfulness, groundedness, phase-10]
+tags: [ai-evaluation, llm-metrics, faithfulness, groundedness]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -19,7 +19,7 @@ author: hp
 
 ## Overview
 
-Section **5** of Phase 10. LLM-specific metrics capture semantic quality beyond n-gram overlap.
+Section **5**. LLM-specific metrics capture semantic quality beyond n-gram overlap.
 
 ## Metric Catalog
 
@@ -81,4 +81,4 @@ async def score_faithfulness(answer: str, context: str, judge_fn) -> float:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 10 Section 5 |
+| 1.0 | 2026-07-13 | Initial publication |

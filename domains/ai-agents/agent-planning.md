@@ -2,7 +2,7 @@
 title: "Agent Planning"
 description: "Planning algorithms, decomposition, sequential/parallel/dynamic planning, replanning, hierarchical planning, execution graphs."
 domain: ai-agents
-tags: [ai-agents, planning, task-decomposition, phase-8]
+tags: [ai-agents, planning, task-decomposition]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -19,7 +19,7 @@ author: hp
 
 ## Overview
 
-Section **5** of Phase 8.
+Section **5**.
 
 ```mermaid
 flowchart TD
@@ -84,4 +84,4 @@ def topological_order(steps: list[PlanStep]) -> list[PlanStep]:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 8 Section 5 |
+| 1.0 | 2026-07-13 | Initial publication |

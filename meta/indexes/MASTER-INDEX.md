@@ -4,7 +4,6 @@
 > Last updated: 2026-07-23
 
 ---
-
 ## How to Use This Index
 
 - Browse by domain below, or use topic/technology indexes for cross-cutting views.
@@ -12,7 +11,6 @@
 - See [indexing strategy](../indexing-strategy.md) for how to add new entries.
 
 ---
-
 ## Meta
 
 | Document | Description |
@@ -29,11 +27,13 @@
 
 ---
 
-## Foundations — Phase 2
+## Foundations
+
+### Foundations
 
 | Document | Status | Description |
 |----------|--------|-------------|
-| [Phase 2 Index](../../domains/foundations/README.md) | Published | Module hub and learning path |
+| [Module hub](../../domains/foundations/README.md) | Published | Module hub and learning path |
 | [AI Engineering Overview](../../domains/foundations/ai-engineering-overview.md) | Published | Role definition, stack, production principles |
 | [Software Engineering for AI](../../domains/foundations/software-engineering-for-ai.md) | Published | Clean architecture, SOLID, patterns |
 | [AI Application Lifecycle](../../domains/foundations/ai-application-lifecycle.md) | Published | Idea to iteration lifecycle |
@@ -45,10 +45,6 @@
 
 [Domain index →](../../domains/foundations/README.md)
 
----
-
-## Engineering
-
 ### Python Engineering
 
 | Document | Status | Description |
@@ -57,16 +53,11 @@
 
 [Domain index →](../../domains/python-engineering/README.md)
 
-### Backend Engineering — Phase 2
+### Backend Engineering
 
 | Document | Status | Description |
 |----------|--------|-------------|
 | [Backend Fundamentals for AI](../../domains/backend-engineering/backend-fundamentals-for-ai.md) | Published | Request lifecycle, middleware, async, streaming |
-
-### Backend Engineering — Phase 3
-
-| Document | Status | Description |
-|----------|--------|-------------|
 | [Backend Architecture for AI](../../domains/backend-engineering/backend-architecture-for-ai.md) | Published | Layered, clean, hexagonal architecture |
 | [HTTP Clients for AI Backends](../../domains/backend-engineering/http-clients-for-ai-backends.md) | Published | httpx, retries, pooling, streaming, LLM APIs |
 | [Validation for AI APIs](../../domains/backend-engineering/validation-for-ai-apis.md) | Published | Pydantic v2, validators, response validation |
@@ -74,7 +65,7 @@
 | [Async Programming for AI Backends](../../domains/backend-engineering/async-programming-for-ai-backends.md) | Published | asyncio, event loop, concurrency patterns |
 | [File Handling for AI](../../domains/backend-engineering/file-handling-for-ai.md) | Published | Uploads, object storage, multimodal formats |
 | [Background Processing for AI](../../domains/backend-engineering/background-processing-for-ai.md) | Published | Celery, ARQ, workers, ingestion jobs |
-| [Configuration Management for Backends](../../domains/backend-engineering/configuration-management-for-backends.md) | Published | Phase 3 — settings, env separation, feature flags |
+| [Configuration Management for Backends](../../domains/backend-engineering/configuration-management-for-backends.md) | Published | settings, env separation, feature flags |
 | [Testing Backend for AI](../../domains/backend-engineering/testing-backend-for-ai.md) | Published | pytest, API/integration tests, mocking, coverage |
 
 [Domain index →](../../domains/backend-engineering/README.md)
@@ -95,33 +86,55 @@
 
 [Domain index →](../../domains/fastapi/README.md)
 
-### Databases — Phase 2
+### Databases
 
 | Document | Status | Description |
 |----------|--------|-------------|
 | [Databases for AI Applications](../../domains/databases/databases-for-ai-applications.md) | Published | SQL, Redis, object storage, vector DB overview |
 | [PostgreSQL for AI](../../domains/databases/postgresql/postgresql-for-ai.md) | Published | pgvector, JSONB, production tuning |
 | [Redis for AI](../../domains/databases/redis/redis-for-ai.md) | Published | Caching, rate limiting, sessions |
-
-### Databases — Phase 3
-
-| Document | Status | Description |
-|----------|--------|-------------|
 | [SQLAlchemy for AI Applications](../../domains/databases/postgresql/sqlalchemy-for-ai-applications.md) | Published | Async ORM, models, repositories, schema design |
 | [Alembic Migrations for AI](../../domains/databases/postgresql/alembic-migrations-for-ai.md) | Published | Migrations, rollbacks, zero-downtime, CI |
 | [Redis Backend Patterns for AI](../../domains/databases/redis/redis-backend-patterns-for-ai.md) | Published | Backend services, jobs, locks, performance |
 
 [Domain index →](../../domains/databases/README.md)
 
----
-
-## LLM Systems
-
-### LLM Engineering — Phase 4
+### Security
 
 | Document | Status | Description |
 |----------|--------|-------------|
-| [Phase 4 Index](../../domains/llm-engineering/README.md) | Published | Module hub and learning path |
+| [Authentication and Authorization for AI](../../domains/security/authentication-authorization-for-ai.md) | Published | JWT, OAuth2, API keys, RBAC, protected routes |
+| [Security for AI Backends](../../domains/security/security-for-ai-backends.md) | Published | HTTPS, CORS, injection, SSRF, rate limiting, headers |
+
+[Domain index →](../../domains/security/README.md)
+
+### Performance Optimization
+
+| Document | Status | Description |
+|----------|--------|-------------|
+| [Backend Performance for AI](../../domains/performance-optimization/backend-performance-for-ai.md) | Published | Profiling, caching, pooling, pagination, streaming |
+
+[Domain index →](../../domains/performance-optimization/README.md)
+
+---
+
+### Software Architecture
+
+| Document | Status | Description |
+|----------|--------|-------------|
+| [Architecture Patterns Foundation](../../domains/software-architecture/architecture-patterns-foundation.md) | Published | Client-server, layered, event-driven, monolith |
+
+[Domain index →](../../domains/software-architecture/README.md)
+
+---
+
+## Core (LLM Interaction)
+
+### LLM Engineering
+
+| Document | Status | Description |
+|----------|--------|-------------|
+| [Module hub](../../domains/llm-engineering/README.md) | Published | Module hub and learning path |
 | [Introduction to LLM Engineering](../../domains/llm-engineering/introduction-to-llm-engineering.md) | Published | LLM fundamentals and ecosystem |
 | [How LLMs Work](../../domains/llm-engineering/how-llms-work.md) | Published | Inference pipeline internals |
 | [Tokens and Tokenization](../../domains/llm-engineering/tokens-and-tokenization.md) | Published | BPE, counting, cost |
@@ -150,11 +163,11 @@
 
 [Domain index →](../../domains/llm-engineering/README.md)
 
-### Prompt Engineering — Phase 5
+### Prompt Engineering
 
 | Document | Status | Description |
 |----------|--------|-------------|
-| [Phase 5 Index](../../domains/prompt-engineering/README.md) | Published | Module hub and learning path |
+| [Module hub](../../domains/prompt-engineering/README.md) | Published | Module hub and learning path |
 | [Introduction to Prompt Engineering](../../domains/prompt-engineering/introduction-to-prompt-engineering.md) | Published | PE as software discipline |
 | [Prompt Anatomy](../../domains/prompt-engineering/prompt-anatomy.md) | Published | Components of production prompts |
 | [Message Types](../../domains/prompt-engineering/message-types.md) | Published | System, user, assistant, tool |
@@ -177,11 +190,11 @@
 
 [Domain index →](../../domains/prompt-engineering/README.md)
 
-### Context Engineering — Phase 6
+### Context Engineering
 
 | Document | Status | Description |
 |----------|--------|-------------|
-| [Phase 6 Index](../../domains/context-engineering/README.md) | Published | Module hub and learning path |
+| [Module hub](../../domains/context-engineering/README.md) | Published | Module hub and learning path |
 | [Introduction to Context Engineering](../../domains/context-engineering/introduction-to-context-engineering.md) | Published | CE as engineering discipline |
 | [Context Architecture](../../domains/context-engineering/context-architecture.md) | Published | Pipeline and component design |
 | [Context Windows](../../domains/context-engineering/context-windows.md) | Published | Application-level window engineering |
@@ -206,31 +219,15 @@
 
 [Domain index →](../../domains/context-engineering/README.md)
 
-### Embeddings
-
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
-
-[Domain index →](../../domains/embeddings/README.md)
-
-### Vector Databases
-
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
-
-[Domain index →](../../domains/vector-databases/README.md)
-
 ---
 
-## Retrieval and Agents
+## Retrieval & Agents
 
-### RAG — Phase 7
+### RAG
 
 | Document | Status | Description |
 |----------|--------|-------------|
-| [Phase 7 Index](../../domains/rag/README.md) | Published | Module hub — largest handbook section |
+| [Module hub](../../domains/rag/README.md) | Published | Module hub — largest handbook section |
 | [Introduction to RAG](../../domains/rag/introduction-to-rag.md) | Published | RAG fundamentals and types |
 | [End-to-End RAG Architecture](../../domains/rag/end-to-end-rag-architecture.md) | Published | Complete pipeline |
 | [Document Ingestion Pipeline](../../domains/rag/document-ingestion-pipeline.md) | Published | PDF, code, web ingestion |
@@ -256,11 +253,29 @@
 
 [Domain index →](../../domains/rag/README.md)
 
-### AI Agents — Phase 8
+### Embeddings
+
+| Document | Status |
+|----------|--------|
+| *(No documents yet)* | — |
+
+[Domain index →](../../domains/embeddings/README.md)
+
+### Vector Databases
+
+| Document | Status |
+|----------|--------|
+| *(No documents yet)* | — |
+
+[Domain index →](../../domains/vector-databases/README.md)
+
+---
+
+### AI Agents
 
 | Document | Status | Description |
 |----------|--------|-------------|
-| [Phase 8 Index](../../domains/ai-agents/README.md) | Published | Agent engineering handbook hub |
+| [Module hub](../../domains/ai-agents/README.md) | Published | Agent engineering handbook hub |
 | [Introduction to Agent Engineering](../../domains/ai-agents/introduction-to-agent-engineering.md) | Published | Agents as software discipline |
 | [Agent Architecture](../../domains/ai-agents/agent-architecture.md) | Published | Planner-executor-reflection stack |
 | [Agent Fundamentals](../../domains/ai-agents/agent-fundamentals.md) | Published | Goals, perception, action |
@@ -289,18 +304,16 @@
 
 | Document | Status | Description |
 |----------|--------|-------------|
-| [Multi-Agent Systems](../../domains/ai-agents/multi-agent-systems.md) | Published | Architecture catalog (Phase 8) |
+| [Multi-Agent Systems](../../domains/ai-agents/multi-agent-systems.md) | Published | Architecture catalog |
 | [Agent Case Studies](../../domains/ai-agents/agent-case-studies.md) | Published | Real-world patterns |
 
 [Domain index →](../../domains/agent-architectures/README.md)
 
-[Domain index →](../../domains/agent-architectures/README.md)
-
-### MCP — Phase 9
+### MCP
 
 | Document | Status | Description |
 |----------|--------|-------------|
-| [Phase 9 Index](../../domains/mcp/README.md) | Published | MCP engineering handbook hub |
+| [Module hub](../../domains/mcp/README.md) | Published | MCP engineering handbook hub |
 | [Introduction to MCP](../../domains/mcp/introduction-to-mcp.md) | Published | Why MCP exists, ecosystem |
 | [MCP Architecture](../../domains/mcp/mcp-architecture.md) | Published | Client, transport, server layers |
 | [MCP Lifecycle](../../domains/mcp/mcp-lifecycle.md) | Published | Initialize through termination |
@@ -353,11 +366,11 @@
 
 ## Production
 
-### AI Evaluation — Phase 10
+### AI Evaluation
 
 | Document | Status | Description |
 |----------|--------|-------------|
-| [Phase 10 Index](../../domains/ai-evaluation/README.md) | Published | AI evaluation handbook hub |
+| [Module hub](../../domains/ai-evaluation/README.md) | Published | AI evaluation handbook hub |
 | [Introduction to AI Evaluation](../../domains/ai-evaluation/introduction-to-ai-evaluation.md) | Published | Offline vs online, LLMOps |
 | [Evaluation Architecture](../../domains/ai-evaluation/evaluation-architecture.md) | Published | End-to-end pipeline |
 | [Evaluation Datasets](../../domains/ai-evaluation/evaluation-datasets.md) | Published | Golden sets, versioning |
@@ -383,18 +396,55 @@
 
 [Domain index →](../../domains/ai-evaluation/README.md)
 
-### AI Safety
+### AI System Design
 
 | Document | Status | Description |
 |----------|--------|-------------|
-| [AI Safety Index](../../domains/ai-safety/README.md) | Published | Safety handbook hub |
-| [Introduction to AI Safety](../../domains/ai-safety/introduction-to-ai-safety.md) | Published | Why safety matters for engineers |
-| [Prompt Injection & Jailbreaks](../../domains/ai-safety/prompt-injection-and-jailbreaks.md) | Published | Attacks and defenses |
-| [Guardrails & Content Filtering](../../domains/ai-safety/guardrails-and-content-filtering.md) | Published | Layered guardrails, PII |
-| [Safe Tool Use](../../domains/ai-safety/safe-tool-use.md) | Published | Allowlists, HITL, least privilege |
-| [Production Safety Checklist](../../domains/ai-safety/production-ai-safety-checklist.md) | Published | Ship checklist |
+| [Module hub](../../domains/ai-system-design/README.md) | Published | AI system design handbook hub |
+| [Fundamentals](../../domains/ai-system-design/ai-system-design-fundamentals.md) | Published | Principles, capacity, budgeting |
+| [Common Components](../../domains/ai-system-design/common-ai-components.md) | Published | Reference production stack |
+| [ChatGPT-like Design](../../domains/ai-system-design/design-chatgpt-like-system.md) | Published | Conversational AI |
+| [Cursor-like Design](../../domains/ai-system-design/design-cursor-like-system.md) | Published | IDE coding assistant |
+| [GitHub Copilot Design](../../domains/ai-system-design/design-github-copilot.md) | Published | Inline completions |
+| [Perplexity Design](../../domains/ai-system-design/design-perplexity-ai-search.md) | Published | AI search + citations |
+| [Deep Research Design](../../domains/ai-system-design/design-deep-research-system.md) | Published | Multi-agent research |
+| [AI Search Engine](../../domains/ai-system-design/design-ai-search-engine.md) | Published | Hybrid enterprise search |
+| [Customer Support AI](../../domains/ai-system-design/design-ai-customer-support.md) | Published | Support + escalation |
+| [Coding Assistant](../../domains/ai-system-design/design-ai-coding-assistant.md) | Published | AST, PRs, review |
+| [PDF Chat](../../domains/ai-system-design/design-ai-pdf-chat.md) | Published | OCR, tables, cites |
+| [Email Assistant](../../domains/ai-system-design/design-ai-email-assistant.md) | Published | Triage + drafts |
+| [CRM Assistant](../../domains/ai-system-design/design-ai-crm-assistant.md) | Published | Sales intelligence |
+| [Voice Agent](../../domains/ai-system-design/design-ai-voice-agent.md) | Published | STT/TTS realtime |
+| [Scaling AI Systems](../../domains/ai-system-design/scaling-ai-systems.md) | Published | Horizontal scale, queues |
+| [Architecture Patterns](../../domains/ai-system-design/ai-architecture-patterns.md) | Published | Agentic, event-driven |
+| [Design Interviews](../../domains/ai-system-design/ai-system-design-interviews.md) | Published | Whiteboard prep |
+| [Comparison Guides](../../domains/ai-system-design/ai-system-design-comparison-guides.md) | Published | Decision matrices |
 
-[Domain index →](../../domains/ai-safety/README.md)
+[Domain index →](../../domains/ai-system-design/README.md)
+
+### AI Deployment (Production AI)
+
+| Document | Status | Description |
+|----------|--------|-------------|
+| [Module hub](../../domains/ai-deployment/README.md) | Published | Production AI handbook hub |
+| [Production Overview](../../domains/ai-deployment/production-ai-overview.md) | Published | Lifecycle, platform architecture |
+| [Docker for AI](../../domains/ai-deployment/docker-for-ai.md) | Published | Containers for AI services |
+| [Deployment Strategies](../../domains/ai-deployment/ai-deployment-strategies.md) | Published | Canary, blue/green |
+| [CI/CD for AI](../../domains/ai-deployment/cicd-for-ai.md) | Published | Eval gates, rollback |
+| [Secrets Management](../../domains/ai-deployment/secrets-management-for-ai.md) | Published | API keys, Vault |
+| [Monitoring](../../domains/ai-deployment/monitoring-ai-systems.md) | Published | SLO, alerts, health |
+| [Logging](../../domains/ai-deployment/logging-for-ai.md) | Published | Structured JSON logs |
+| [Observability](../../domains/ai-deployment/observability-for-ai.md) | Published | OTEL, LangFuse, Phoenix |
+| [Cost Tracking](../../domains/ai-deployment/cost-tracking-production.md) | Published | Production FinOps |
+| [Reliability](../../domains/ai-deployment/reliability-for-ai.md) | Published | Retry, circuit breaker |
+| [Caching](../../domains/ai-deployment/caching-for-ai.md) | Published | Redis, prompt cache |
+| [Security](../../domains/ai-deployment/security-production-ai.md) | Published | Auth, rate limits |
+| [Performance](../../domains/ai-deployment/performance-optimization-production.md) | Published | Streaming, routing |
+| [AI Operations](../../domains/ai-deployment/ai-operations.md) | Published | Incidents, runbooks |
+| [Production Readiness](../../domains/ai-deployment/production-readiness-checklist.md) | Published | Go-live checklist |
+| [Comparison Guides](../../domains/ai-deployment/production-ai-comparison-guides.md) | Published | Deploy, observability |
+
+[Domain index →](../../domains/ai-deployment/README.md)
 
 ### Model Integration
 
@@ -420,30 +470,6 @@
 
 [Domain index →](../../domains/inference-optimization/README.md)
 
-### AI Deployment — Phase 12 (Production AI)
-
-| Document | Status | Description |
-|----------|--------|-------------|
-| [Phase 12 Index](../../domains/ai-deployment/README.md) | Published | Production AI handbook hub |
-| [Production Overview](../../domains/ai-deployment/production-ai-overview.md) | Published | Lifecycle, platform architecture |
-| [Docker for AI](../../domains/ai-deployment/docker-for-ai.md) | Published | Containers for AI services |
-| [Deployment Strategies](../../domains/ai-deployment/ai-deployment-strategies.md) | Published | Canary, blue/green |
-| [CI/CD for AI](../../domains/ai-deployment/cicd-for-ai.md) | Published | Eval gates, rollback |
-| [Secrets Management](../../domains/ai-deployment/secrets-management-for-ai.md) | Published | API keys, Vault |
-| [Monitoring](../../domains/ai-deployment/monitoring-ai-systems.md) | Published | SLO, alerts, health |
-| [Logging](../../domains/ai-deployment/logging-for-ai.md) | Published | Structured JSON logs |
-| [Observability](../../domains/ai-deployment/observability-for-ai.md) | Published | OTEL, LangFuse, Phoenix |
-| [Cost Tracking](../../domains/ai-deployment/cost-tracking-production.md) | Published | Production FinOps |
-| [Reliability](../../domains/ai-deployment/reliability-for-ai.md) | Published | Retry, circuit breaker |
-| [Caching](../../domains/ai-deployment/caching-for-ai.md) | Published | Redis, prompt cache |
-| [Security](../../domains/ai-deployment/security-production-ai.md) | Published | Auth, rate limits |
-| [Performance](../../domains/ai-deployment/performance-optimization-production.md) | Published | Streaming, routing |
-| [AI Operations](../../domains/ai-deployment/ai-operations.md) | Published | Incidents, runbooks |
-| [Production Readiness](../../domains/ai-deployment/production-readiness-checklist.md) | Published | Go-live checklist |
-| [Comparison Guides](../../domains/ai-deployment/production-ai-comparison-guides.md) | Published | Deploy, observability |
-
-[Domain index →](../../domains/ai-deployment/README.md)
-
 ### Cloud Deployment
 
 | Document | Status |
@@ -456,7 +482,7 @@
 
 | Document | Status | Description |
 |----------|--------|-------------|
-| [Docker for AI (Phase 12)](../../domains/ai-deployment/docker-for-ai.md) | Published | AI container handbook section |
+| [Docker for AI](../../domains/ai-deployment/docker-for-ai.md) | Published | AI container handbook section |
 
 [Domain index →](../../domains/docker/README.md)
 
@@ -472,7 +498,7 @@
 
 | Document | Status | Description |
 |----------|--------|-------------|
-| [Monitoring Foundation for AI Backends](../../domains/monitoring/monitoring-foundation-for-ai-backends.md) | Published | Phase 3 — health, metrics, tracing, OTel, Prometheus, Grafana |
+| [Monitoring Foundation for AI Backends](../../domains/monitoring/monitoring-foundation-for-ai-backends.md) | Published | health, metrics, tracing, OTel, Prometheus, Grafana |
 
 [Domain index →](../../domains/monitoring/README.md)
 
@@ -481,7 +507,7 @@
 | Document | Status | Description |
 |----------|--------|-------------|
 | [Logging and Error Handling](../../domains/logging/logging-and-error-handling.md) | Published | Structured logs, retries, graceful failures |
-| [Backend Logging for AI](../../domains/logging/backend-logging-for-ai.md) | Published | Phase 3 — JSON logs, correlation IDs, audit logging |
+| [Backend Logging for AI](../../domains/logging/backend-logging-for-ai.md) | Published | JSON logs, correlation IDs, audit logging |
 
 [Domain index →](../../domains/logging/README.md)
 
@@ -493,52 +519,23 @@
 
 [Domain index →](../../domains/observability/README.md)
 
-### Security — Phase 3
+### Data Engineering
 
-| Document | Status | Description |
-|----------|--------|-------------|
-| [Authentication and Authorization for AI](../../domains/security/authentication-authorization-for-ai.md) | Published | JWT, OAuth2, API keys, RBAC, protected routes |
-| [Security for AI Backends](../../domains/security/security-for-ai-backends.md) | Published | HTTPS, CORS, injection, SSRF, rate limiting, headers |
+| Document | Status |
+|----------|--------|
+| *(No documents yet)* | — |
 
-[Domain index →](../../domains/security/README.md)
+[Domain index →](../../domains/data-engineering/README.md)
 
-### Performance Optimization — Phase 3
+### Production Incidents
 
-| Document | Status | Description |
-|----------|--------|-------------|
-| [Backend Performance for AI](../../domains/performance-optimization/backend-performance-for-ai.md) | Published | Profiling, caching, pooling, pagination, streaming |
+| Document | Status |
+|----------|--------|
+| *(No documents yet)* | — |
 
-[Domain index →](../../domains/performance-optimization/README.md)
+[Domain index →](../../domains/production-incidents/README.md)
 
 ---
-
-## Architecture
-
-### AI System Design — Phase 11
-
-| Document | Status | Description |
-|----------|--------|-------------|
-| [Phase 11 Index](../../domains/ai-system-design/README.md) | Published | AI system design handbook hub |
-| [Fundamentals](../../domains/ai-system-design/ai-system-design-fundamentals.md) | Published | Principles, capacity, budgeting |
-| [Common Components](../../domains/ai-system-design/common-ai-components.md) | Published | Reference production stack |
-| [ChatGPT-like Design](../../domains/ai-system-design/design-chatgpt-like-system.md) | Published | Conversational AI |
-| [Cursor-like Design](../../domains/ai-system-design/design-cursor-like-system.md) | Published | IDE coding assistant |
-| [GitHub Copilot Design](../../domains/ai-system-design/design-github-copilot.md) | Published | Inline completions |
-| [Perplexity Design](../../domains/ai-system-design/design-perplexity-ai-search.md) | Published | AI search + citations |
-| [Deep Research Design](../../domains/ai-system-design/design-deep-research-system.md) | Published | Multi-agent research |
-| [AI Search Engine](../../domains/ai-system-design/design-ai-search-engine.md) | Published | Hybrid enterprise search |
-| [Customer Support AI](../../domains/ai-system-design/design-ai-customer-support.md) | Published | Support + escalation |
-| [Coding Assistant](../../domains/ai-system-design/design-ai-coding-assistant.md) | Published | AST, PRs, review |
-| [PDF Chat](../../domains/ai-system-design/design-ai-pdf-chat.md) | Published | OCR, tables, cites |
-| [Email Assistant](../../domains/ai-system-design/design-ai-email-assistant.md) | Published | Triage + drafts |
-| [CRM Assistant](../../domains/ai-system-design/design-ai-crm-assistant.md) | Published | Sales intelligence |
-| [Voice Agent](../../domains/ai-system-design/design-ai-voice-agent.md) | Published | STT/TTS realtime |
-| [Scaling AI Systems](../../domains/ai-system-design/scaling-ai-systems.md) | Published | Horizontal scale, queues |
-| [Architecture Patterns](../../domains/ai-system-design/ai-architecture-patterns.md) | Published | Agentic, event-driven |
-| [Design Interviews](../../domains/ai-system-design/ai-system-design-interviews.md) | Published | Whiteboard prep |
-| [Comparison Guides](../../domains/ai-system-design/ai-system-design-comparison-guides.md) | Published | Decision matrices |
-
-[Domain index →](../../domains/ai-system-design/README.md)
 
 ### AI Application Architecture
 
@@ -547,14 +544,6 @@
 | *(No documents yet)* | — |
 
 [Domain index →](../../domains/ai-application-architecture/README.md)
-
-### Software Architecture
-
-| Document | Status | Description |
-|----------|--------|-------------|
-| [Architecture Patterns Foundation](../../domains/software-architecture/architecture-patterns-foundation.md) | Published | Client-server, layered, event-driven, monolith |
-
-[Domain index →](../../domains/software-architecture/README.md)
 
 ### Design Patterns
 
@@ -574,15 +563,20 @@
 
 ---
 
-## Data and Operations
+## Craft & Growth
 
-### Data Engineering
+### AI Safety
 
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
+| Document | Status | Description |
+|----------|--------|-------------|
+| [AI Safety Index](../../domains/ai-safety/README.md) | Published | Safety handbook hub |
+| [Introduction to AI Safety](../../domains/ai-safety/introduction-to-ai-safety.md) | Published | Why safety matters for engineers |
+| [Prompt Injection & Jailbreaks](../../domains/ai-safety/prompt-injection-and-jailbreaks.md) | Published | Attacks and defenses |
+| [Guardrails & Content Filtering](../../domains/ai-safety/guardrails-and-content-filtering.md) | Published | Layered guardrails, PII |
+| [Safe Tool Use](../../domains/ai-safety/safe-tool-use.md) | Published | Allowlists, HITL, least privilege |
+| [Production Safety Checklist](../../domains/ai-safety/production-ai-safety-checklist.md) | Published | Ship checklist |
 
-[Domain index →](../../domains/data-engineering/README.md)
+[Domain index →](../../domains/ai-safety/README.md)
 
 ### Debugging
 
@@ -605,19 +599,7 @@
 
 [Domain index →](../../domains/common-mistakes/README.md)
 
-### Production Incidents
-
-| Document | Status |
-|----------|--------|
-| *(No documents yet)* | — |
-
-[Domain index →](../../domains/production-incidents/README.md)
-
----
-
-## Career and Research
-
-### Interview Preparation — Phase 13
+### Interview Preparation
 
 | Document | Status | Description |
 |----------|--------|-------------|
@@ -647,7 +629,7 @@
 
 [Domain index →](../../domains/interview-preparation/README.md)
 
-### Papers — Phase 15
+### Papers
 
 | Document | Status | Description |
 |----------|--------|-------------|
@@ -665,7 +647,7 @@
 
 [Domain index →](../../domains/papers/README.md)
 
-### Engineering Templates — Phase 14
+### Engineering Templates
 
 | Asset | Status | Description |
 |-------|--------|-------------|

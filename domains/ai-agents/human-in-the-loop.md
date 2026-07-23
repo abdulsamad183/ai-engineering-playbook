@@ -2,7 +2,7 @@
 title: "Human-in-the-Loop for Agents"
 description: "Approval workflows, escalation, human feedback, review queues, safe execution, override."
 domain: ai-agents
-tags: [ai-agents, HITL, approval, safety, phase-8]
+tags: [ai-agents, HITL, approval, safety]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **12** of Phase 8.
+Section **12**.
 
 ```mermaid
 sequenceDiagram
@@ -57,4 +57,4 @@ sequenceDiagram
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 8 Section 12 |
+| 1.0 | 2026-07-13 | Initial publication |

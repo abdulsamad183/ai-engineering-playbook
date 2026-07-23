@@ -2,7 +2,7 @@
 title: "Design: AI Customer Support"
 description: "Support AI — ticket routing, CRM, tools, escalation, memory, evaluation."
 domain: ai-system-design
-tags: [system-design, customer-support, crm, hitl, phase-11]
+tags: [system-design, customer-support, crm, hitl]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -60,4 +60,4 @@ flowchart TB
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 11 Section 9 |
+| 1.0 | 2026-07-13 | Initial publication |

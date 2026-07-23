@@ -18,7 +18,7 @@ author: hp
 
 # Structured Outputs
 
-> Section 11 of Phase 4 — free-form text is fine for chat, but production systems need typed, validated data. Structured outputs turn probabilistic generation into dependable contracts your application can parse and trust.
+> Section 11 of this handbook — free-form text is fine for chat, but production systems need typed, validated data. Structured outputs turn probabilistic generation into dependable contracts your application can parse and trust.
 
 ## Table of Contents
 
@@ -1010,4 +1010,4 @@ METRICS = [
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 4 release — Section 11 |
+| 1.0 | 2026-07-13 | Initial release — Section 11 |

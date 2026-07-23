@@ -763,4 +763,4 @@ celery_app.conf.task_routes = {
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 3 release |
+| 1.0 | 2026-07-13 | Initial release |

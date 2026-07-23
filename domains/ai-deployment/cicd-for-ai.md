@@ -2,7 +2,7 @@
 title: "CI/CD for AI Applications"
 description: "GitHub Actions, build/test/deploy pipelines, eval gates, rollback."
 domain: ai-deployment
-tags: [cicd, github-actions, regression, phase-12]
+tags: [cicd, github-actions, regression]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **4** of Phase 12.
+Section **4**.
 
 ```mermaid
 flowchart LR
@@ -58,4 +58,4 @@ See [`.github-workflows-ci.yml`](../../examples/production-ai/.github-workflows-
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 12 Section 4 |
+| 1.0 | 2026-07-13 | Initial publication |

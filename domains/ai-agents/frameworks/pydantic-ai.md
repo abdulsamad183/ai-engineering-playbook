@@ -2,7 +2,7 @@
 title: "PydanticAI for Agents"
 description: "PydanticAI — type-safe agents, structured outputs, dependency injection."
 domain: ai-agents
-tags: [ai-agents, PydanticAI, framework, phase-8]
+tags: [ai-agents, PydanticAI, framework]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

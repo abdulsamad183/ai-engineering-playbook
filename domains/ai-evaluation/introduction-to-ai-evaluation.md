@@ -2,7 +2,7 @@
 title: "Introduction to AI Evaluation"
 description: "AI evaluation fundamentals — offline vs online, continuous evaluation, LLMOps, evaluation-driven development."
 domain: ai-evaluation
-tags: [ai-evaluation, foundation, llmops, metrics, phase-10]
+tags: [ai-evaluation, foundation, llmops, metrics]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -46,11 +46,11 @@ author: hp
 
 **AI evaluation** measures whether LLM-powered systems — prompts, RAG pipelines, agents, MCP workflows — meet quality, reliability, latency, cost, and business requirements in production.
 
-Section **1** of Phase 10.
+Section **1**.
 
 ```mermaid
 flowchart LR
-    subgraph "Phase 10: AI Evaluation"
+    subgraph "AI Evaluation"
         S1[1. Introduction]
         S2[2. Architecture]
         S3[3. Datasets]
@@ -59,7 +59,7 @@ flowchart LR
     S1 --> S2 --> S3 --> S4
 ```
 
-> **Prerequisites:** [Phase 9 MCP](../mcp/README.md) · [Phase 8 Agents](../ai-agents/README.md) · [Phase 7 RAG](../rag/README.md) · [Prompt Evaluation](../prompt-engineering/prompt-evaluation.md)
+> **Prerequisites:** [MCP](../mcp/README.md) · [Agents](../ai-agents/README.md) · [RAG](../rag/README.md) · [Prompt Evaluation](../prompt-engineering/prompt-evaluation.md)
 
 ---
 
@@ -254,4 +254,4 @@ def load_golden_set(path: str) -> list[EvalCase]:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 10 Section 1 |
+| 1.0 | 2026-07-13 | Initial publication |

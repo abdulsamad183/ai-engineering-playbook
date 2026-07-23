@@ -2,7 +2,7 @@
 title: "End-to-End RAG Architecture"
 description: "Complete RAG pipeline — documents through cleaning, parsing, chunking, embeddings, retrieval, ranking, compression, prompt assembly, LLM, and citations."
 domain: rag
-tags: [rag, architecture, pipeline, production, phase-7]
+tags: [rag, architecture, pipeline, production]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -42,7 +42,7 @@ author: hp
 
 ## Overview
 
-Section **2** of Phase 7. This document maps the full pipeline engineers must implement, operate, and debug.
+Section **2**. This document maps the full pipeline engineers must implement, operate, and debug.
 
 ```mermaid
 flowchart TD
@@ -138,7 +138,7 @@ Fit passages to token budget. See [RAG Context Compression](rag-context-compress
 Format context + grounding rules. See [RAG Prompt Assembly](rag-prompt-assembly.md).
 
 ### LLM
-Generate answer with [Phase 5](../prompt-engineering/README.md) templates.
+Generate answer with [handbook](../prompt-engineering/README.md) templates.
 
 ### Citations
 Map claims to `chunk_id`. See [Citations and Grounding](citations-and-grounding.md).
@@ -279,4 +279,4 @@ class RAGOrchestrator:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication — Phase 7 Section 2 |
+| 1.0 | 2026-07-13 | Initial publication |

@@ -2,7 +2,7 @@
 title: "Agent Architecture"
 description: "Complete agent architecture — goal, planner, memory, reasoning, tool selection, execution, observation, reflection, state update."
 domain: ai-agents
-tags: [ai-agents, architecture, planner, executor, phase-8]
+tags: [ai-agents, architecture, planner, executor]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -22,7 +22,7 @@ author: hp
 
 ## Overview
 
-Section **2** of Phase 8.
+Section **2**.
 
 ```mermaid
 flowchart TD
@@ -99,4 +99,4 @@ class AgentOrchestrator:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 8 Section 2 |
+| 1.0 | 2026-07-13 | Initial publication |

@@ -2,7 +2,7 @@
 title: "CrewAI for Agents"
 description: "CrewAI — role-based agents, tasks, crews, production considerations."
 domain: ai-agents
-tags: [ai-agents, CrewAI, framework, phase-8]
+tags: [ai-agents, CrewAI, framework]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

@@ -2,7 +2,7 @@
 title: "Context Budgeting"
 description: "Token, cost, and latency budgeting — allocation across history, retrieval, memory, and user input with practical strategies."
 domain: context-engineering
-tags: [context-engineering, budgeting, tokens, cost, phase-6]
+tags: [context-engineering, budgeting, tokens, cost]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -41,7 +41,7 @@ author: hp
 
 Without budgets, history consumes the window before retrieval loads, or oversized retrieval crowds out the user's question. **Context budgeting** assigns caps per layer and enforces them before the API call.
 
-Section **13** of Phase 6.
+Section **13**.
 
 ```mermaid
 pie title Token Budget (8K input example)
@@ -186,4 +186,4 @@ def enforce_budget(layers: dict[str, list[ContextBlock]], budget: LayerBudget) -
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication — Phase 6 Section 13 |
+| 1.0 | 2026-07-13 | Initial publication |

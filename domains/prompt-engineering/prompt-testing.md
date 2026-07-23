@@ -19,7 +19,7 @@ author: hp
 
 # Prompt Testing
 
-> Section 13 of Phase 5 — a prompt that works in a notebook is not a prompt that works in production. Prompt testing is the engineering discipline of verifying that instructions, examples, and constraints produce reliable outputs across real inputs, model versions, and edge cases before users encounter failures.
+> Section 13 of this handbook — a prompt that works in a notebook is not a prompt that works in production. Prompt testing is the engineering discipline of verifying that instructions, examples, and constraints produce reliable outputs across real inputs, model versions, and edge cases before users encounter failures.
 
 ## Table of Contents
 
@@ -723,7 +723,7 @@ jobs:
 - [Testing Fundamentals](../foundations/testing-fundamentals.md)
 - [Structured Outputs](../llm-engineering/structured-outputs.md)
 
-### Phase 5 — Prompt Engineering
+### — Prompt Engineering
 
 | # | Topic | Document |
 |---|-------|----------|
@@ -771,4 +771,4 @@ jobs:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 5 release — Section 13 |
+| 1.0 | 2026-07-13 | Initial release — Section 13 |

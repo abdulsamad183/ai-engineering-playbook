@@ -2,7 +2,7 @@
 title: "Production AI Security"
 description: "Auth, prompt injection, tool security, tenant isolation, rate limiting."
 domain: ai-deployment
-tags: [security, production, prompt-injection, phase-12]
+tags: [security, production, prompt-injection]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **12** of Phase 12.
+Section **12**.
 
 ## Controls
 
@@ -44,4 +44,4 @@ Section **12** of Phase 12.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 12 Section 12 |
+| 1.0 | 2026-07-13 | Initial publication |

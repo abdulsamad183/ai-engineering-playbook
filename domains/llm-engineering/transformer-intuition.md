@@ -18,7 +18,7 @@ author: hp
 
 # Transformer Intuition for Engineers
 
-> **Section 6 of Phase 4: LLM Fundamentals.** You do not need to implement a transformer from scratch to ship production AI systems — but you do need a mental model of how tokens flow through layers, why attention exists, and what encoder vs decoder means when you choose models and APIs.
+> **Section 6 of this handbook: LLM Fundamentals.** You do not need to implement a transformer from scratch to ship production AI systems — but you do need a mental model of how tokens flow through layers, why attention exists, and what encoder vs decoder means when you choose models and APIs.
 
 ## Table of Contents
 
@@ -460,7 +460,7 @@ Log `input_tokens`, `output_tokens`, `time_to_first_token`, and `tokens_per_seco
 - [How LLMs Work (Practical)](how-llms-work.md) — Sections 1–4: tokens, context, sampling
 - [Embeddings — LLM Perspective](embeddings-llm-perspective.md) — Section 5: vectors and similarity
 
-### Phase 4: LLM Fundamentals (This Series)
+### LLM Fundamentals (This Series)
 
 | Section | Document | Topic |
 |---------|----------|-------|
@@ -485,7 +485,7 @@ Log `input_tokens`, `output_tokens`, `time_to_first_token`, and `tokens_per_seco
 ## See Also
 
 - [LLM Engineering Domain Index](README.md)
-- [Learning Roadmap](../../meta/roadmap.md) — Phase 4: LLM Fundamentals
+- [Learning Roadmap](../../meta/roadmap.md): LLM Fundamentals
 
 ## Changelog
 

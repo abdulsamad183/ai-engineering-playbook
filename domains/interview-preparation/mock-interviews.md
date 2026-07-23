@@ -2,7 +2,7 @@
 title: "Mock AI Engineering Interviews"
 description: "Complete mock interview sets — Junior, Mid, Senior, Staff with agendas and rubrics."
 domain: interview-preparation
-tags: [interview, mock, practice, phase-13]
+tags: [interview, mock, practice]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

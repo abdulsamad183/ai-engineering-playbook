@@ -2,7 +2,7 @@
 title: "Company Interview Patterns for AI Products"
 description: "Interview patterns at LLM, developer tools, enterprise AI, and research-driven companies."
 domain: interview-preparation
-tags: [interview, companies, patterns, phase-13]
+tags: [interview, companies, patterns]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

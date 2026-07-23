@@ -2,7 +2,7 @@
 title: "Agent Engineering Mistakes"
 description: "Troubleshooting infinite loops, poor planning, tool misuse, stale memory, race conditions, retry storms."
 domain: ai-agents
-tags: [ai-agents, mistakes, troubleshooting, phase-8]
+tags: [ai-agents, mistakes, troubleshooting]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -17,7 +17,7 @@ author: hp
 
 ## Overview
 
-Section **19** of Phase 8.
+Section **19**.
 
 | Issue | Symptoms | Fix |
 |-------|----------|-----|
@@ -46,4 +46,4 @@ Each: **Diagnose** via trace; **Prevent** via eval + budgets.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 8 Section 19 |
+| 1.0 | 2026-07-13 | Initial publication |

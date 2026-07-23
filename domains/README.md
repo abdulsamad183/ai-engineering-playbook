@@ -4,6 +4,8 @@
 
 **Status legend:** **Published** = substantive docs beyond the README · **Planned** = folder reserved, content still to come. Empty domains are kept on purpose; do not delete them.
 
+Domains are grouped by **capability** (Foundations → Core → Retrieval & Agents → Production → Craft & Growth), matching the [Learning Roadmap](../meta/roadmap.md) and home page.
+
 ---
 
 ## How Domains Work
@@ -17,28 +19,27 @@ Documents within a domain follow the [style guide](../meta/style-guide.md) and u
 ## Domain Map
 
 ```mermaid
-graph TB
+flowchart TB
     subgraph Foundations
         F[foundations]
         PY[python-engineering]
-    end
-
-    subgraph Engineering
         BE[backend-engineering]
         API[apis]
         FA[fastapi]
         DB[databases]
+        SEC[security]
+        PERF[performance-optimization]
     end
 
-    subgraph "LLM Systems"
+    subgraph Core [Core LLM Interaction]
         LLM[llm-engineering]
         PE[prompt-engineering]
         CE[context-engineering]
-        EM[embeddings]
-        VD[vector-databases]
     end
 
-    subgraph "Retrieval & Agents"
+    subgraph RA [Retrieval and Agents]
+        EM[embeddings]
+        VD[vector-databases]
         RAG[rag]
         AGT[ai-agents]
         AA[agent-architectures]
@@ -50,50 +51,32 @@ graph TB
 
     subgraph Production
         EVAL[ai-evaluation]
-        SAFE[ai-safety]
+        SD[ai-system-design]
+        DEP[ai-deployment]
         MI[model-integration]
         MS[model-serving]
         IO[inference-optimization]
-        DEP[ai-deployment]
         CLOUD[cloud-deployment]
         DOCK[docker]
         CI[cicd]
         MON[monitoring]
         LOG[logging]
         OBS[observability]
-        SEC[security]
-        PERF[performance-optimization]
     end
 
-    subgraph Architecture
-        SD[ai-system-design]
-        AA2[ai-application-architecture]
-        SA[software-architecture]
-        DP[design-patterns]
-        DS[distributed-systems]
-    end
-
-    subgraph Operations
-        DE[data-engineering]
+    subgraph Craft [Craft and Growth]
+        SAFE[ai-safety]
         DBG[debugging]
         CM[common-mistakes]
-        PI[production-incidents]
-    end
-
-    subgraph Growth
         INT[interview-preparation]
         PAP[papers]
-        RN[research-notes]
-        CN[career-notes]
-        RES[resources]
     end
 
-    F --> PY --> BE --> API
-    API --> LLM --> PE --> CE --> EM --> VD --> RAG
-    RAG --> AGT --> AA --> MCP
-    AGT --> WF --> MA
-    RAG --> EVAL
-    MA --> DEP --> MON
+    F --> BE --> LLM --> PE --> CE --> RAG
+    RAG --> AGT --> MCP
+    RAG --> EVAL --> DEP
+    DEP --> SAFE
+    DEP --> DBG
 ```
 
 ---
@@ -106,11 +89,6 @@ graph TB
 |--------|-------------|--------|
 | [foundations](foundations/) | Core concepts and prerequisites | Published |
 | [python-engineering](python-engineering/) | Python for AI applications | Published |
-
-### Engineering
-
-| Domain | Description | Status |
-|--------|-------------|--------|
 | [backend-engineering](backend-engineering/) | Backend patterns and service design | Published |
 | [apis](apis/) | API design for AI services | Published |
 | [fastapi](fastapi/) | FastAPI framework | Published |
@@ -118,22 +96,25 @@ graph TB
 | [databases/sql](databases/sql/) | SQL for AI applications | Planned |
 | [databases/postgresql](databases/postgresql/) | PostgreSQL | Published |
 | [databases/redis](databases/redis/) | Redis caching and data store | Published |
+| [security](security/) | Security practices | Published |
+| [performance-optimization](performance-optimization/) | Performance tuning | Published |
+| [software-architecture](software-architecture/) | Software architecture principles | Published |
 
-### LLM Systems
+### Core (LLM Interaction)
 
 | Domain | Description | Status |
 |--------|-------------|--------|
 | [llm-engineering](llm-engineering/) | LLM integration and API usage | Published |
 | [prompt-engineering](prompt-engineering/) | Prompt design and optimization | Published |
 | [context-engineering](context-engineering/) | Context window and memory management | Published |
-| [embeddings](embeddings/) | Vector embeddings and chunking | Planned |
-| [vector-databases](vector-databases/) | Vector storage and similarity search | Planned |
 
-### Retrieval and Agents
+### Retrieval & Agents
 
 | Domain | Description | Status |
 |--------|-------------|--------|
 | [rag](rag/) | Retrieval augmented generation | Published |
+| [embeddings](embeddings/) | Vector embeddings and chunking | Planned |
+| [vector-databases](vector-databases/) | Vector storage and similarity search | Planned |
 | [ai-agents](ai-agents/) | AI agent development | Published |
 | [agent-architectures](agent-architectures/) | Agent system design patterns | Planned |
 | [mcp](mcp/) | Model Context Protocol | Published |
@@ -146,43 +127,30 @@ graph TB
 | Domain | Description | Status |
 |--------|-------------|--------|
 | [ai-evaluation](ai-evaluation/) | Evaluation and quality assurance | Published |
-| [ai-safety](ai-safety/) | Safety and guardrails | Planned |
+| [ai-system-design](ai-system-design/) | End-to-end system design | Published |
+| [ai-deployment](ai-deployment/) | Production deployment | Published |
 | [model-integration](model-integration/) | Model selection and integration | Planned |
 | [model-serving](model-serving/) | Model deployment and serving | Planned |
 | [inference-optimization](inference-optimization/) | Inference performance | Planned |
-| [ai-deployment](ai-deployment/) | Production deployment | Published |
 | [cloud-deployment](cloud-deployment/) | Cloud deployment strategies | Planned |
 | [docker](docker/) | Containerization | Planned |
 | [cicd](cicd/) | CI/CD pipelines | Planned |
 | [monitoring](monitoring/) | Monitoring and alerting | Published |
 | [logging](logging/) | Structured logging | Published |
 | [observability](observability/) | Tracing and telemetry | Planned |
-| [security](security/) | Security practices | Published |
-| [performance-optimization](performance-optimization/) | Performance tuning | Published |
-
-### Architecture
-
-| Domain | Description | Status |
-|--------|-------------|--------|
-| [ai-system-design](ai-system-design/) | End-to-end system design | Published |
 | [ai-application-architecture](ai-application-architecture/) | Application architecture | Planned |
-| [software-architecture](software-architecture/) | Software architecture principles | Published |
 | [design-patterns](design-patterns/) | Reusable design patterns | Planned |
 | [distributed-systems](distributed-systems/) | Distributed system concepts | Planned |
-
-### Operations
-
-| Domain | Description | Status |
-|--------|-------------|--------|
 | [data-engineering](data-engineering/) | Data pipelines for AI | Planned |
-| [debugging](debugging/) | Debugging AI applications | Planned |
-| [common-mistakes](common-mistakes/) | Mistakes and prevention | Published |
 | [production-incidents](production-incidents/) | Incident postmortems | Planned |
 
-### Growth
+### Craft & Growth
 
 | Domain | Description | Status |
 |--------|-------------|--------|
+| [ai-safety](ai-safety/) | Safety and guardrails | Published |
+| [debugging](debugging/) | Debugging AI applications | Published |
+| [common-mistakes](common-mistakes/) | Mistakes and prevention | Published |
 | [interview-preparation](interview-preparation/) | Interview preparation | Published |
 | [papers](papers/) | Research paper summaries | Published |
 | [research-notes](research-notes/) | Research notes | Planned |

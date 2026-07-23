@@ -742,8 +742,8 @@ Define explicit gates between stages. A gate is a checklist that must pass befor
 
 ### Future Reading
 
-- [LLM Engineering](../llm-engineering/README.md) — Phase 3: model APIs, streaming, function calling
-- [RAG Systems](../rag/README.md) — Phase 4: retrieval-augmented generation
+- [LLM Engineering](../llm-engineering/README.md): model APIs, streaming, function calling
+- [RAG Systems](../rag/README.md): retrieval-augmented generation
 - [AI Deployment](../ai-deployment/README.md) — production infrastructure and scaling
 - [AI Evaluation](../ai-evaluation/README.md) — advanced evaluation strategies
 - [Observability](../observability/README.md) — logging, tracing, and metrics

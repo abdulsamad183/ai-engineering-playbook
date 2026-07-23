@@ -2,7 +2,7 @@
 title: "Long Context Strategies"
 description: "Strategies for long inputs — long-context models, chunk prioritization, window management, recursive summarization, hierarchical context, and hybrid approaches."
 domain: context-engineering
-tags: [context-engineering, long-context, map-reduce, hierarchical, phase-6]
+tags: [context-engineering, long-context, map-reduce, hierarchical]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -42,7 +42,7 @@ author: hp
 
 Long documents, codebases, and multi-hour conversations exceed sensible single-pass windows. Production systems combine **retrieval**, **hierarchical summarization**, and **multi-pass reasoning** — even when using 128K+ models.
 
-Section **11** of Phase 6.
+Section **11**.
 
 ```mermaid
 flowchart TB
@@ -171,4 +171,4 @@ flowchart TD
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication — Phase 6 Section 11 |
+| 1.0 | 2026-07-13 | Initial publication |

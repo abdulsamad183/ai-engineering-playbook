@@ -2,7 +2,7 @@
 title: "AI Operations"
 description: "Incident response, debugging, RCA, runbooks, postmortems, playbooks."
 domain: ai-deployment
-tags: [aiops, incident, runbook, postmortem, phase-12]
+tags: [aiops, incident, runbook, postmortem]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **14** of Phase 12.
+Section **14**.
 
 ## Incident Response
 
@@ -52,4 +52,4 @@ Section **14** of Phase 12.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 12 Section 14 |
+| 1.0 | 2026-07-13 | Initial publication |

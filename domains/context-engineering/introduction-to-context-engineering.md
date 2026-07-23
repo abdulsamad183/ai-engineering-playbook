@@ -2,7 +2,7 @@
 title: "Introduction to Context Engineering"
 description: "Foundation for context engineering — what context is, why prompts alone fail, context as a system, lifecycle, pipeline, orchestration, and why production failures are usually context problems."
 domain: context-engineering
-tags: [context-engineering, foundation, memory, production, phase-6]
+tags: [context-engineering, foundation, memory, production]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -54,11 +54,11 @@ author: hp
 
 Most engineers start by perfecting system prompts. Production systems fail when context is wrong: stale memory, irrelevant retrieval, duplicated information, overflowed windows, or missing permissions boundaries. The model is often capable; the **context system** is not.
 
-This document is **Section 1** of Phase 6 in the AI Engineering Playbook.
+This document is **Section 1** of this handbook.
 
 ```mermaid
 flowchart LR
-    subgraph "Phase 6: Context Engineering"
+    subgraph "Context Engineering"
         S1[1. Introduction]
         S2[2. Architecture]
         S3[3. Context Windows]
@@ -67,7 +67,7 @@ flowchart LR
     S1 --> S2 --> S3 --> S4
 ```
 
-> **Prerequisites:** [Phase 5: Prompt Engineering](../prompt-engineering/README.md) and [Phase 4: LLM Engineering](../llm-engineering/README.md) — especially [Context Windows](../llm-engineering/context-windows.md).
+> **Prerequisites:** [Prompt Engineering](../prompt-engineering/README.md) and [LLM Engineering](../llm-engineering/README.md) — especially [Context Windows](../llm-engineering/context-windows.md).
 
 ---
 
@@ -271,7 +271,7 @@ Context assembly is a **trust boundary**. Untrusted user content must be delimit
 1. Treat context assembly as a dedicated service/module
 2. Define explicit token budgets per layer
 3. Measure context quality, not just output quality
-4. Cross-link prompts (Phase 5) with context policies (Phase 6)
+4. Cross-link prompts with context policies
 5. Replay production failures with full context snapshots
 
 ---
@@ -290,7 +290,7 @@ Context assembly is a **trust boundary**. Untrusted user content must be delimit
 ## Common Mistakes
 
 - Conflating prompt templates with context pipelines
-- Ignoring Phase 4 token limits when designing memory
+- Ignoring model token limits when designing memory
 - Skipping deduplication between memory and retrieval
 
 ---
@@ -356,8 +356,8 @@ class ContextEngine:
 
 ### Prerequisites
 
-- [Prompt Engineering](../prompt-engineering/README.md) — Phase 5
-- [LLM Engineering](../llm-engineering/README.md) — Phase 4
+- [Prompt Engineering](../prompt-engineering/README.md)
+- [LLM Engineering](../llm-engineering/README.md)
 - [Context Windows (LLM)](../llm-engineering/context-windows.md)
 
 ### Related Topics
@@ -385,4 +385,4 @@ class ContextEngine:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication — Phase 6 Section 1 |
+| 1.0 | 2026-07-13 | Initial publication |

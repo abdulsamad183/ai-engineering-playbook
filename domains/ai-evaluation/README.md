@@ -1,7 +1,7 @@
-# Phase 10: AI Evaluation & LLMOps Evaluation
+# AI Evaluation & LLMOps Evaluation
 
 > Definitive engineering reference for measuring, validating, monitoring, and continuously improving production AI systems.
-> **Prerequisites:** [Phase 9 MCP](../mcp/README.md) · [Phase 8 Agents](../ai-agents/README.md) · [Phase 7 RAG](../rag/README.md)
+> **Prerequisites:** [MCP](../mcp/README.md) · [Agents](../ai-agents/README.md) · [RAG](../rag/README.md)
 
 ---
 
@@ -122,6 +122,6 @@ flowchart TB
 
 ## See Also
 
-- [RAG Evaluation (Phase 7)](../rag/rag-evaluation.md)
-- [Agent Evaluation (Phase 8)](../ai-agents/agent-evaluation.md)
-- [Prompt Evaluation (Phase 5)](../prompt-engineering/prompt-evaluation.md)
+- [RAG Evaluation](../rag/rag-evaluation.md)
+- [Agent Evaluation](../ai-agents/agent-evaluation.md)
+- [Prompt Evaluation](../prompt-engineering/prompt-evaluation.md)

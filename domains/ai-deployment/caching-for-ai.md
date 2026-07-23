@@ -2,7 +2,7 @@
 title: "Caching for AI Applications"
 description: "Redis, prompt, embedding, response, retrieval, context caching."
 domain: ai-deployment
-tags: [caching, redis, performance, phase-12]
+tags: [caching, redis, performance]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **11** of Phase 12.
+Section **11**.
 
 ```mermaid
 flowchart LR
@@ -51,4 +51,4 @@ Bump `prompt_version` or `index_version` in cache key.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 12 Section 11 |
+| 1.0 | 2026-07-13 | Initial publication |

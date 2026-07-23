@@ -2,7 +2,7 @@
 title: "Latency Evaluation"
 description: "E2E latency, TTFT, streaming, retrieval, tool, agent latency, P95/P99 budgets."
 domain: ai-evaluation
-tags: [ai-evaluation, latency, performance, ttft, phase-10]
+tags: [ai-evaluation, latency, performance, ttft]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **12** of Phase 10.
+Section **12**.
 
 ## Latency Types
 
@@ -75,4 +75,4 @@ def timer(bucket: dict, name: str):
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 10 Section 12 |
+| 1.0 | 2026-07-13 | Initial publication |

@@ -2,7 +2,7 @@
 title: "MCP Server"
 description: "MCP server architecture — registration, tool/resource/prompt exposure, routing, auth, lifecycle."
 domain: mcp
-tags: [mcp, server, registration, routing, phase-9]
+tags: [mcp, server, registration, routing]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **6** of Phase 9.
+Section **6**.
 
 ## Architecture
 
@@ -76,4 +76,4 @@ async def main():
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 9 Section 6 |
+| 1.0 | 2026-07-13 | Initial publication |

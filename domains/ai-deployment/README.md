@@ -1,7 +1,7 @@
-# Phase 12: Production AI & AI Platform Engineering
+# Production AI & AI Platform Engineering
 
 > Deploy, operate, monitor, secure, and scale AI applications — AI platform engineering, not generic DevOps.
-> **Prerequisites:** [Phase 11 System Design](../ai-system-design/README.md) · [Phase 10 Evaluation](../ai-evaluation/README.md)
+> **Prerequisites:** [System Design](../ai-system-design/README.md) · [Evaluation](../ai-evaluation/README.md)
 
 ---
 
@@ -84,4 +84,4 @@ flowchart TB
 
 ## See Also
 
-- [AI System Design (Phase 11)](../ai-system-design/README.md)
+- [AI System Design](../ai-system-design/README.md)

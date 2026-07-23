@@ -2,7 +2,7 @@
 title: "AI System Design Fundamentals"
 description: "Principles, requirements, capacity estimation, latency and cost budgeting, build vs buy."
 domain: ai-system-design
-tags: [system-design, fundamentals, architecture, phase-11]
+tags: [system-design, fundamentals, architecture]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -19,7 +19,7 @@ author: hp
 
 ## Overview
 
-Section **1** of Phase 11 — the largest interview preparation module in the playbook.
+Section **1** — the largest interview preparation module in the playbook.
 
 > AI system design is the discipline of architecting end-to-end LLM applications with explicit tradeoffs for latency, cost, reliability, and quality.
 
@@ -124,4 +124,4 @@ Set alerts at 2× expected; route cheap model for classification.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 11 Section 1 |
+| 1.0 | 2026-07-13 | Initial publication |

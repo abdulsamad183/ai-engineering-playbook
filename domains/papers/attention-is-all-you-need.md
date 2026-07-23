@@ -2,7 +2,7 @@
 title: "Attention Is All You Need"
 description: "Engineering guide to the Transformer architecture — self-attention, positional encoding, encoder-decoder, and what it means for LLM APIs."
 domain: papers
-tags: [paper, transformers, attention, foundations, phase-papers]
+tags: [paper, transformers, attention, foundations]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

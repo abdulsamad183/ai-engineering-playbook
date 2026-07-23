@@ -2,7 +2,7 @@
 title: "Prompt Lifecycle"
 description: "End-to-end prompt lifecycle from design through production — prototyping, testing, evaluation, optimization, versioning, monitoring, and continuous iteration."
 domain: prompt-engineering
-tags: [prompt-engineering, lifecycle, evaluation, testing, production, monitoring, phase-5]
+tags: [prompt-engineering, lifecycle, evaluation, testing, production, monitoring]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -50,12 +50,12 @@ author: hp
 A prompt is not a one-time string you paste into an API call.
 In production, prompts are **versioned assets** with a full lifecycle — designed, tested, evaluated, deployed, monitored, and iteratively improved like any other software component.
 
-This document is **Section 11** of Phase 5 in the AI Engineering Playbook.
+This document is **Section 11** of this handbook.
 It defines the nine stages every production prompt passes through and the gates that separate prototype experiments from deployed systems.
 
 ```mermaid
 flowchart LR
-    subgraph "Phase 5: Prompt Engineering"
+    subgraph "Prompt Engineering"
         S9[9. Advanced Reasoning]
         S10[10. Prompt Chaining]
         S11[11. Prompt Lifecycle]
@@ -66,7 +66,7 @@ flowchart LR
     S11 --> PROD[Production AI Systems]
 ```
 
-> **Prerequisites:** Sections 1–10 of Phase 5, [Testing Fundamentals](../foundations/testing-fundamentals.md), and [AI Application Lifecycle](../foundations/ai-application-lifecycle.md).
+> **Prerequisites:** Sections 1–10 of this handbook, [Testing Fundamentals](../foundations/testing-fundamentals.md), and [AI Application Lifecycle](../foundations/ai-application-lifecycle.md).
 
 ---
 
@@ -1008,7 +1008,7 @@ Add production failure cases to eval set, iterate through Optimization, re-evalu
 
 - [Prompt Versioning](prompt-versioning.md) — version control mechanics
 - [Observability](../observability/README.md)
-- [Context Engineering](../context-engineering/README.md) — Phase 6
+- [Context Engineering](../context-engineering/README.md)
 
 ---
 
@@ -1022,4 +1022,4 @@ Add production failure cases to eval set, iterate through Optimization, re-evalu
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial version — Section 11, Phase 5 |
+| 1.0 | 2026-07-13 | Initial publication — Section 11 |

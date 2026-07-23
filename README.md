@@ -47,7 +47,7 @@ flowchart TB
 | Layer | Folder | What lives here |
 |-------|--------|-----------------|
 | **Handbooks** | `domains/` | Deep guides (RAG, agents, LLM, production…). Start at each folder’s `README.md`. |
-| **Path** | `meta/roadmap.md` | Ordered learning phases and milestones. |
+| **Path** | `meta/roadmap.md` | Ordered learning path and milestones by capability. |
 | **Capstone** | `meta/capstone-walkthrough.md` | One end-to-end build that stitches several handbooks together. |
 | **Starters** | `templates/` | Copy-paste production scaffolds (FastAPI, RAG, agent, MCP, Docker, CI). |
 | **Examples** | `examples/` | Small runnable scripts by topic. |
@@ -78,48 +78,34 @@ Pick **one** entry path — ignore the rest until you need them.
 
 ## Learning path (clear sequence)
 
-Follow this order. Each step has a handbook; finish the milestone before skipping ahead.
+Follow this order by **capability**. Each step has a handbook; finish the milestone before skipping ahead.
 
 ```mermaid
 flowchart LR
-  A[1 Foundations] --> B[2 Backend]
-  B --> C[3 LLMs]
-  C --> D[4 Prompts]
-  D --> E[5 Context]
-  E --> F[6 RAG]
-  F --> G[7 Agents]
-  G --> H[8 MCP]
-  H --> I[9 Eval]
-  I --> J[10 Design]
-  J --> K[11 Production]
+  A[Foundations] --> B[Core]
+  B --> C[Retrieval and Agents]
+  C --> D[Production]
+  D --> E[Craft and Growth]
 ```
 
-| # | Focus | Open this |
-|---|--------|-----------|
+| # | Capability | Open this |
+|---|------------|-----------|
 | 0 | Hands-on first win (optional but recommended) | [Capstone walkthrough](meta/capstone-walkthrough.md) |
-| 1 | Engineering foundations | [Foundations](domains/foundations/README.md) |
-| 2 | APIs & services | [Backend](domains/backend-engineering/README.md) · [FastAPI](domains/fastapi/README.md) |
-| 3 | LLM APIs & providers | [LLM Engineering](domains/llm-engineering/README.md) |
-| 4 | Prompt design as software | [Prompt Engineering](domains/prompt-engineering/README.md) |
-| 5 | Memory & context windows | [Context Engineering](domains/context-engineering/README.md) |
-| 6 | Retrieval systems | [RAG](domains/rag/README.md) |
-| 7 | Tool-using agents | [AI Agents](domains/ai-agents/README.md) |
-| 8 | Model Context Protocol | [MCP](domains/mcp/README.md) |
-| 9 | Quality & LLMOps | [AI Evaluation](domains/ai-evaluation/README.md) |
-| 10 | System design | [AI System Design](domains/ai-system-design/README.md) |
-| 11 | Ship & operate | [Production AI](domains/ai-deployment/README.md) |
+| 1 | Foundations — engineering, APIs, data | [Foundations](domains/foundations/README.md) · [Backend](domains/backend-engineering/README.md) · [FastAPI](domains/fastapi/README.md) · [Databases](domains/databases/README.md) |
+| 2 | Core — LLM interaction | [LLM Engineering](domains/llm-engineering/README.md) · [Prompt Engineering](domains/prompt-engineering/README.md) · [Context Engineering](domains/context-engineering/README.md) |
+| 3 | Retrieval & Agents | [RAG](domains/rag/README.md) · [AI Agents](domains/ai-agents/README.md) · [MCP](domains/mcp/README.md) |
+| 4 | Production — quality & ops | [AI Evaluation](domains/ai-evaluation/README.md) · [AI System Design](domains/ai-system-design/README.md) · [Production AI](domains/ai-deployment/README.md) |
+| 5 | Craft & Growth (as needed) | [AI Safety](domains/ai-safety/README.md) · [Debugging](domains/debugging/README.md) · [Interview Prep](domains/interview-preparation/README.md) · [Research Papers](domains/papers/README.md) |
 
-Side tracks when you need them: [AI Safety](domains/ai-safety/README.md) · [Debugging](domains/debugging/README.md) · [Interview Prep](domains/interview-preparation/README.md) · [Research Papers](domains/papers/README.md)
-
-Full phase detail (durations, milestones): **[Learning Roadmap](meta/roadmap.md)**
+Full detail (durations, milestones): **[Learning Roadmap](meta/roadmap.md)**
 
 ---
 
 ## Handbooks
 
-Each link is a **module hub** (table of contents + learning path). Published modules only.
+Each link is a **module hub** (table of contents + learning path). Published modules only. Grouped by capability.
 
-### Foundations & backend
+### Foundations
 
 | Handbook | You will learn |
 |----------|----------------|
@@ -130,7 +116,7 @@ Each link is a **module hub** (table of contents + learning path). Published mod
 | [FastAPI](domains/fastapi/README.md) | Routes, DI, AI endpoints |
 | [Databases](domains/databases/README.md) | Postgres, Redis, pgvector, SQLAlchemy |
 
-### LLM systems
+### Core (LLM Interaction)
 
 | Handbook | You will learn |
 |----------|----------------|
@@ -138,7 +124,7 @@ Each link is a **module hub** (table of contents + learning path). Published mod
 | [Prompt Engineering](domains/prompt-engineering/README.md) | Patterns, versioning, eval, security |
 | [Context Engineering](domains/context-engineering/README.md) | Memory, ranking, compression, budgets |
 
-### Retrieval & agents
+### Retrieval & Agents
 
 | Handbook | You will learn |
 |----------|----------------|
@@ -146,21 +132,21 @@ Each link is a **module hub** (table of contents + learning path). Published mod
 | [AI Agents](domains/ai-agents/README.md) | Planning, tools, memory, frameworks |
 | [MCP](domains/mcp/README.md) | Servers, clients, transports, security |
 
-### Production & craft
+### Production
 
 | Handbook | You will learn |
 |----------|----------------|
 | [AI Evaluation](domains/ai-evaluation/README.md) | Metrics, golden sets, CI gates |
 | [AI System Design](domains/ai-system-design/README.md) | Architecture, scaling, case studies |
 | [Production AI](domains/ai-deployment/README.md) | Docker, CI/CD, observability, incidents |
-| [AI Safety](domains/ai-safety/README.md) | Injection, guardrails, safe tools |
-| [Debugging](domains/debugging/README.md) | Triage for RAG, agents, and APIs |
-| [Common Mistakes](domains/common-mistakes/common-engineering-mistakes.md) | 20 pitfalls with fixes |
 
-### Research & career
+### Craft & Growth
 
 | Handbook | You will learn |
 |----------|----------------|
+| [AI Safety](domains/ai-safety/README.md) | Injection, guardrails, safe tools |
+| [Debugging](domains/debugging/README.md) | Triage for RAG, agents, and APIs |
+| [Common Mistakes](domains/common-mistakes/common-engineering-mistakes.md) | 20 pitfalls with fixes |
 | [Research Papers](domains/papers/README.md) | Engineering takeaways from key papers |
 | [Interview Prep](domains/interview-preparation/README.md) | Coding, design, mocks, behavioral |
 

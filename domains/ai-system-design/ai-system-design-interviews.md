@@ -2,7 +2,7 @@
 title: "AI System Design Interviews"
 description: "Whiteboard questions, senior scenarios, tradeoffs, capacity exercises."
 domain: ai-system-design
-tags: [system-design, interview, whiteboard, phase-11]
+tags: [system-design, interview, whiteboard]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **17** of Phase 11 — interview preparation hub.
+Section **17** — interview preparation hub.
 
 ## Whiteboard Framework
 
@@ -72,4 +72,4 @@ Given: 500K DAU, 10 messages/session, 2K tokens/msg average → tokens/day, QPS,
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 11 Section 17 |
+| 1.0 | 2026-07-13 | Initial publication |

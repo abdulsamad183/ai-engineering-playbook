@@ -2,7 +2,7 @@
 title: "MCP Core Concepts"
 description: "MCP clients, servers, resources, prompts, tools, messages, sessions, capabilities, notifications."
 domain: mcp
-tags: [mcp, concepts, tools, resources, prompts, phase-9]
+tags: [mcp, concepts, tools, resources, prompts]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -20,7 +20,7 @@ author: hp
 
 ## Overview
 
-Section **4** of Phase 9.
+Section **4**.
 
 | Component | Responsibility |
 |-----------|----------------|
@@ -55,4 +55,4 @@ Section **4** of Phase 9.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 9 Section 4 |
+| 1.0 | 2026-07-13 | Initial publication |

@@ -2,7 +2,7 @@
 title: "Multi-Server MCP"
 description: "Multiple MCP servers — routing, aggregation, federation, discovery, load balancing, failover."
 domain: mcp
-tags: [mcp, multi-server, federation, routing, phase-9]
+tags: [mcp, multi-server, federation, routing]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **14** of Phase 9. Production hosts connect to **many MCP servers** — filesystem, database, CRM — through a client orchestration layer.
+Section **14**. Production hosts connect to **many MCP servers** — filesystem, database, CRM — through a client orchestration layer.
 
 ```mermaid
 flowchart TB
@@ -99,4 +99,4 @@ async def route_tool_call(name: str, args: dict, clients: dict):
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 9 Section 14 |
+| 1.0 | 2026-07-13 | Initial publication |

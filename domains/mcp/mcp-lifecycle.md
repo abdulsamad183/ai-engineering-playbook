@@ -2,7 +2,7 @@
 title: "MCP Lifecycle"
 description: "MCP session lifecycle — discovery, capability negotiation, initialization, requests, streaming, termination."
 domain: mcp
-tags: [mcp, lifecycle, session, initialization, phase-9]
+tags: [mcp, lifecycle, session, initialization]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **3** of Phase 9.
+Section **3**.
 
 ```mermaid
 stateDiagram-v2
@@ -59,4 +59,4 @@ stateDiagram-v2
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 9 Section 3 |
+| 1.0 | 2026-07-13 | Initial publication |

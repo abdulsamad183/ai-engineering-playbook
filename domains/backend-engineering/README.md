@@ -1,18 +1,18 @@
-# Phase 3: Backend Engineering for AI Applications
+# Backend Engineering for AI Applications
 
 > Production-oriented backend reference for building ChatGPT-like apps, RAG systems, agents, and AI SaaS products.
-> **Prerequisite:** [Phase 2 Foundations](../foundations/README.md)
+> **Prerequisite:** [Foundations](../foundations/README.md)
 
 ---
 
 ## Module Overview
 
-Phase 3 teaches everything an AI engineer needs to build production-ready backend services.
+This handbook teaches everything an AI engineer needs to build production-ready backend services.
 Content spans multiple domains but forms one connected learning path.
 
 ```mermaid
 flowchart TB
-  subgraph "Phase 3: Backend Engineering"
+  subgraph "Backend Engineering"
     A[1. Backend Architecture]
     F[2. FastAPI Complete]
     API[3. API Design]
@@ -57,7 +57,7 @@ flowchart TB
 | 4 | Authentication & Authorization | [authentication-authorization-for-ai.md](../security/authentication-authorization-for-ai.md) | security |
 | 5a | SQLAlchemy | [sqlalchemy-for-ai-applications.md](../databases/postgresql/sqlalchemy-for-ai-applications.md) | databases/postgresql |
 | 5b | Alembic Migrations | [alembic-migrations-for-ai.md](../databases/postgresql/alembic-migrations-for-ai.md) | databases/postgresql |
-| 5c | PostgreSQL (Phase 2) | [postgresql-for-ai.md](../databases/postgresql/postgresql-for-ai.md) | databases/postgresql |
+| 5c | PostgreSQL | [postgresql-for-ai.md](../databases/postgresql/postgresql-for-ai.md) | databases/postgresql |
 | 6 | Redis Backend Patterns | [redis-backend-patterns-for-ai.md](../databases/redis/redis-backend-patterns-for-ai.md) | databases/redis |
 | 7 | Background Processing | [background-processing-for-ai.md](background-processing-for-ai.md) | backend-engineering |
 | 8 | File Handling | [file-handling-for-ai.md](file-handling-for-ai.md) | backend-engineering |
@@ -74,7 +74,7 @@ flowchart TB
 | 19 | Project Structure | [production-project-structure-for-ai.md](production-project-structure-for-ai.md) | backend-engineering |
 | 20 | Reference Architecture | [ai-backend-reference-architecture.md](ai-backend-reference-architecture.md) | backend-engineering |
 
-**Foundation (Phase 2):** [Backend Fundamentals](backend-fundamentals-for-ai.md) · [FastAPI Foundation](../fastapi/fastapi-foundation.md)
+**Foundation:** [Backend Fundamentals](backend-fundamentals-for-ai.md) · [FastAPI Foundation](../fastapi/fastapi-foundation.md)
 
 **Troubleshooting:** [Backend Engineering Mistakes](backend-engineering-mistakes.md)
 
@@ -84,7 +84,7 @@ flowchart TB
 
 | Document | Status | Description |
 |----------|--------|-------------|
-| [Backend Fundamentals for AI](backend-fundamentals-for-ai.md) | Published | Phase 2 foundation — start here if new |
+| [Backend Fundamentals for AI](backend-fundamentals-for-ai.md) | Published | Foundation — start here if new |
 | [Backend Architecture for AI](backend-architecture-for-ai.md) | Published | Clean, hexagonal, layered architecture |
 | [Production Project Structure](production-project-structure-for-ai.md) | Published | Canonical folder layout |
 | [AI Backend Reference Architecture](ai-backend-reference-architecture.md) | Published | Chat, RAG, agent, SaaS patterns |
@@ -135,7 +135,7 @@ Reusable scaffolds in [`meta/templates/backend/`](../../meta/templates/backend/)
 
 ---
 
-## Phase 3 Completion Checklist
+## Completion Checklist
 
 - [ ] Read all 20 topics in learning path order
 - [ ] Scaffold a project using [production project structure](production-project-structure-for-ai.md)
@@ -146,13 +146,13 @@ Reusable scaffolds in [`meta/templates/backend/`](../../meta/templates/backend/)
 - [ ] Add `/health` and `/ready` endpoints
 - [ ] Review [backend engineering mistakes](backend-engineering-mistakes.md) against your code
 
-**Unlocked after Phase 3:** [LLM Engineering](../llm-engineering/README.md) (Phase 4)
+**What this unlocks:** [LLM Engineering](../llm-engineering/README.md)
 
 ---
 
 ## See Also
 
-- [Phase 2 Foundations](../foundations/README.md)
+- [Foundations](../foundations/README.md)
 - [Backend Templates](../../meta/templates/backend/)
 - [Master Index](../../meta/indexes/MASTER-INDEX.md)
 - [Cheat Sheets](../../cheat-sheets/)

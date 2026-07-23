@@ -2,7 +2,7 @@
 title: "Evaluation Frameworks"
 description: "RAGAS, DeepEval, LangSmith, Phoenix, OpenAI Evals — comparison and selection guide."
 domain: ai-evaluation
-tags: [ai-evaluation, frameworks, ragas, deepeval, phase-10]
+tags: [ai-evaluation, frameworks, ragas, deepeval]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **10** of Phase 10. Framework guides for implementation.
+Section **10**. Framework guides for implementation.
 
 ## Framework Comparison
 
@@ -66,4 +66,4 @@ flowchart LR
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 10 Section 10 |
+| 1.0 | 2026-07-13 | Initial publication |

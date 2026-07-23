@@ -2,7 +2,7 @@
 title: "Design: Deep Research System"
 description: "Multi-agent research — planning, crawling, citations, long-running tasks, reports."
 domain: ai-system-design
-tags: [system-design, research, multi-agent, citations, phase-11]
+tags: [system-design, research, multi-agent, citations]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -61,4 +61,4 @@ flowchart TB
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 11 Section 7 |
+| 1.0 | 2026-07-13 | Initial publication |

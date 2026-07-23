@@ -2,7 +2,7 @@
 title: "Design: AI Search Engine"
 description: "Enterprise/knowledge search — query understanding, hybrid retrieval, ranking, feedback."
 domain: ai-system-design
-tags: [system-design, search, hybrid-retrieval, ranking, phase-11]
+tags: [system-design, search, hybrid-retrieval, ranking]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -60,4 +60,4 @@ flowchart LR
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 11 Section 8 |
+| 1.0 | 2026-07-13 | Initial publication |

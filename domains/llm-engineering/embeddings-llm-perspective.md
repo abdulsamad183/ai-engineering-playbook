@@ -20,7 +20,7 @@ author: hp
 
 # Embeddings — An LLM Engineer's Perspective
 
-> **Section 5 of Phase 4: LLM Fundamentals.** Embeddings are the bridge between human language and machine-readable math. This document explains what embeddings are, how similarity works, and how to use embedding APIs in production — without yet building retrieval pipelines (RAG comes in a later phase).
+> **Section 5 of this handbook: LLM Fundamentals.** Embeddings are the bridge between human language and machine-readable math. This document explains what embeddings are, how similarity works, and how to use embedding APIs in production — without yet building retrieval pipelines (RAG comes in a later phase).
 
 ## Table of Contents
 
@@ -545,7 +545,7 @@ For interactive features (e.g., typeahead semantic search), cache query embeddin
 
 - [How LLMs Work (Practical)](how-llms-work.md) — Sections 1–4: tokens, context windows, sampling, model families
 
-### Phase 4: LLM Fundamentals (This Series)
+### LLM Fundamentals (This Series)
 
 | Section | Document | Topic |
 |---------|----------|-------|

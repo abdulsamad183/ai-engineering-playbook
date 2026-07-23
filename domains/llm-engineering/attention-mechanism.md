@@ -18,7 +18,7 @@ author: hp
 
 # Attention Mechanism — Engineering Deep Dive
 
-> **Section 7 of Phase 4: LLM Fundamentals.** Attention is the mechanism that lets LLMs weigh context. This document explains Query/Key/Value, how scores become weights, and why attention dominates both quality and latency — especially at long context lengths.
+> **Section 7 of this handbook: LLM Fundamentals.** Attention is the mechanism that lets LLMs weigh context. This document explains Query/Key/Value, how scores become weights, and why attention dominates both quality and latency — especially at long context lengths.
 
 ## Table of Contents
 
@@ -506,7 +506,7 @@ These explain why two models with the same parameter count can have different th
 - [Transformer Intuition](transformer-intuition.md) — Section 6: block architecture overview
 - [How LLMs Work](how-llms-work.md) — context windows and tokenization
 
-### Phase 4: LLM Fundamentals (This Series)
+### LLM Fundamentals (This Series)
 
 | Section | Document | Topic |
 |---------|----------|-------|

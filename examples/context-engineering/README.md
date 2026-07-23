@@ -18,5 +18,5 @@
 
 ## See Also
 
-- [Phase 6 Context Engineering](../../domains/context-engineering/README.md)
+- [Context Engineering](../../domains/context-engineering/README.md)
 - [Prompt Engineering Examples](../prompt-engineering/)

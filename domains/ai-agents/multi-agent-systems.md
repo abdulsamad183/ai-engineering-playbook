@@ -2,7 +2,7 @@
 title: "Multi-Agent Systems"
 description: "Supervisor, swarm, debate, critic, planner-executor, router, manager, blackboard, marketplace architectures."
 domain: ai-agents
-tags: [ai-agents, multi-agent, supervisor, swarm, phase-8]
+tags: [ai-agents, multi-agent, supervisor, swarm]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -19,7 +19,7 @@ author: hp
 
 ## Overview
 
-Section **11** of Phase 8.
+Section **11**.
 
 | Architecture | Pattern | Strengths | Weaknesses | Scale |
 |--------------|---------|-----------|------------|-------|
@@ -61,4 +61,4 @@ flowchart TD
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 8 Section 11 |
+| 1.0 | 2026-07-13 | Initial publication |

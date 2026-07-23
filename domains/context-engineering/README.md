@@ -1,7 +1,7 @@
-# Phase 6: Context Engineering
+# Context Engineering
 
 > Comprehensive handbook for designing systems that determine what the model sees, when, how much, and how context evolves.
-> **Prerequisites:** [Phase 5 Prompt Engineering](../prompt-engineering/README.md) · [Phase 4 LLM Engineering](../llm-engineering/README.md)
+> **Prerequisites:** [Prompt Engineering](../prompt-engineering/README.md) · [LLM Engineering](../llm-engineering/README.md)
 
 ---
 
@@ -109,7 +109,7 @@ Memory · Sessions · Assembly · Ranking · Summarization · Compression · Dyn
 
 ---
 
-## Phase 6 Completion Checklist
+## Completion Checklist
 
 - [ ] Read all 20 sections
 - [ ] Implement `ContextEngine` with parallel source fetch
@@ -123,6 +123,6 @@ Memory · Sessions · Assembly · Ranking · Summarization · Compression · Dyn
 
 ## See Also
 
-- [Prompt Engineering](../prompt-engineering/README.md) — Phase 5 prerequisite
+- [Prompt Engineering](../prompt-engineering/README.md) prerequisite
 - [LLM Context Windows](../llm-engineering/context-windows.md) — model-level limits
 - [Master Index](../../meta/indexes/MASTER-INDEX.md)

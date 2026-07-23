@@ -2,7 +2,7 @@
 title: "Embeddings for RAG"
 description: "RAG embeddings — dense, sparse, hybrid, similarity metrics, dimensions, multilingual, code, drift, versioning, model comparison."
 domain: rag
-tags: [rag, embeddings, vectors, similarity, phase-7]
+tags: [rag, embeddings, vectors, similarity]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -39,7 +39,7 @@ author: hp
 
 ## Overview
 
-Section **6** of Phase 7 — one of the largest RAG topics.
+Section **6** — one of the largest RAG topics.
 
 ```mermaid
 flowchart LR
@@ -189,4 +189,4 @@ async def embed_batch(client, texts: list[str], model: str) -> list[list[float]]
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication — Phase 7 Section 6 |
+| 1.0 | 2026-07-13 | Initial publication |

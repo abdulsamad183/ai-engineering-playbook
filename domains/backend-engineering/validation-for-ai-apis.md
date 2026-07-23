@@ -1,6 +1,6 @@
 ---
 title: "Validation for AI APIs"
-description: "Phase 3 deep dive into request and response validation for AI APIs — Pydantic v2, custom validators, nested models, reusable schemas, response validation, and strict typing with FastAPI production patterns."
+description: "deep dive into request and response validation for AI APIs — Pydantic v2, custom validators, nested models, reusable schemas, response validation, and strict typing with FastAPI production patterns."
 domain: backend-engineering
 tags: [backend, pydantic, validation, fastapi, schemas, typing, production, intermediate]
 status: published
@@ -19,7 +19,7 @@ author: hp
 
 # Validation for AI APIs
 
-> Phase 3 reference for production validation in AI APIs — Pydantic v2 schemas as contracts, nested message models, reusable components, response enforcement, and strict typing for chat, RAG, and agent endpoints.
+> reference for production validation in AI APIs — Pydantic v2 schemas as contracts, nested message models, reusable components, response enforcement, and strict typing for chat, RAG, and agent endpoints.
 
 ## Table of Contents
 
@@ -46,7 +46,7 @@ author: hp
 
 AI APIs accept complex, high-risk input — long message histories, tool definitions, file metadata, retrieval parameters — and return structured output that downstream clients, eval harnesses, and agents depend on. **Pydantic v2** is the validation engine behind FastAPI; it runs before your handler executes, rejecting malformed requests with precise 422 responses and enforcing output contracts via `response_model`.
 
-This document is a **Phase 3 deep dive**. It assumes you have read:
+This document is a **deep dive**. It assumes you have read:
 
 - [Backend Fundamentals for AI](backend-fundamentals-for-ai.md) — FastAPI request lifecycle
 - [FastAPI Complete Guide](../fastapi/fastapi-complete-guide.md) — Pydantic v2 overview and routing
@@ -813,4 +813,4 @@ class ChatRequest(BaseModel):
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 3 release |
+| 1.0 | 2026-07-13 | Initial release |

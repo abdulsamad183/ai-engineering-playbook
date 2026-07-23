@@ -2,7 +2,7 @@
 title: "Reliability for AI Systems"
 description: "Retries, circuit breakers, failover, degradation, timeouts, idempotency."
 domain: ai-deployment
-tags: [reliability, circuit-breaker, retry, phase-12]
+tags: [reliability, circuit-breaker, retry]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -17,7 +17,7 @@ author: hp
 
 ## Overview
 
-Section **10** of Phase 12.
+Section **10**.
 
 ## Patterns
 
@@ -55,4 +55,4 @@ Liveness vs readiness — don't route to pod failing LLM connectivity.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 12 Section 10 |
+| 1.0 | 2026-07-13 | Initial publication |

@@ -1,6 +1,6 @@
 # MCP Engineering Examples
 
-> Phase 9 patterns. See [MCP Handbook](../../domains/mcp/README.md).
+> patterns. See [MCP Handbook](../../domains/mcp/README.md).
 
 Uses a minimal `mcp_protocol.py` to demonstrate JSON-RPC patterns without requiring the full MCP SDK.
 

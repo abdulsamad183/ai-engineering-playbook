@@ -2,7 +2,7 @@
 title: "LangGraph for Agents"
 description: "LangGraph — graph execution, checkpointing, state, production patterns."
 domain: ai-agents
-tags: [ai-agents, LangGraph, framework, phase-8]
+tags: [ai-agents, LangGraph, framework]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

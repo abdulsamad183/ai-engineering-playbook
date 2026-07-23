@@ -2,7 +2,7 @@
 title: "RAG Interviews for AI Engineers"
 description: "RAG interview guide — chunking, embeddings, hybrid search, reranking, GraphRAG, evaluation."
 domain: interview-preparation
-tags: [interview, rag, vector-db, hybrid-search, phase-13]
+tags: [interview, rag, vector-db, hybrid-search]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

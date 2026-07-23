@@ -1,5 +1,15 @@
 ## [Unreleased]
 
+## [1.5.0] - 2026-07-23
+
+### Changed
+
+- Removed curriculum **Phase N** numbering across the playbook
+- Reorganized navigation around five **capability groups**: Foundations, Core (LLM Interaction), Retrieval & Agents, Production, Craft & Growth
+- Rewrote [Learning Roadmap](meta/roadmap.md) without phase stages
+- Restructured [Master Index](meta/indexes/MASTER-INDEX.md) and home [README](README.md) to match capability groups
+- Stripped `phase-N` / `phase-papers` frontmatter tags and phase suffixes from handbook prose
+
 ## [1.4.1] - 2026-07-23
 
 ### Changed
@@ -56,11 +66,11 @@
 
 ### Added
 
-- **Phase 14: Engineering Templates & Reusable Assets** — 14 template sections
+- **Engineering Templates & Reusable Assets** — 14 template sections
   - FastAPI, RAG, agent, and MCP starters with tests and CI
   - Docker, GitHub Actions, logging, monitoring, deployment configs
   - Prompt library, evaluation harnesses, boilerplates, utilities, architecture diagrams
-- **Phase 15: AI Research Papers & Literature Review** — 10 handbook sections
+- **AI Research Papers & Literature Review** — 10 handbook sections
   - Transformer foundations through future research directions
   - Agent reasoning, retrieval, prompting, DSPy, and SWE-Agent summaries
   - Comparison guides, engineering takeaways, and evolution timeline
@@ -70,7 +80,7 @@
 
 ### Added
 
-- **Phase 13: AI Engineering Interview Handbook** — 22 documents
+- **AI Engineering Interview Handbook** — 22 documents
   - Sections 1–20: strategy through behavioral interviews
   - Mock interview packs (Junior, Mid, Senior, Staff)
   - Company interview patterns for AI product organizations
@@ -80,11 +90,11 @@
 
 ### Added
 
-- **Phase 11: AI System Design** — 18 documents
+- **AI System Design** — 18 documents
   - Sections 1–17: fundamentals through interview prep
   - 12 product/system design case studies (ChatGPT, Cursor, Copilot, Perplexity, etc.)
   - Comparison guides and scaling patterns
-- **Phase 12: Production AI & AI Platform Engineering** — 16 documents
+- **Production AI & AI Platform Engineering** — 16 documents
   - Sections 1–15: Docker through production readiness
   - Comparison guides for deployment and observability
 - 12 production Python examples + Dockerfile + CI workflow reference
@@ -94,7 +104,7 @@
 
 ### Added
 
-- **Phase 10: AI Evaluation & LLMOps Evaluation** — 26 documents
+- **AI Evaluation & LLMOps Evaluation** — 26 documents
   - Sections 1–20: introduction through case studies
   - 5 framework guides (RAGAS, DeepEval, LangSmith, Phoenix, OpenAI Evals)
   - Comparison guides and production evaluation coverage
@@ -105,7 +115,7 @@
 
 ### Added
 
-- **Phase 9: Model Context Protocol (MCP) & AI Protocol Engineering** — 21 documents
+- **Model Context Protocol (MCP) & AI Protocol Engineering** — 21 documents
   - Sections 1–20: introduction through real-world architectures
   - Comparison guides for transports, primitives, and integration strategies
 - 13 Python MCP examples (server, client, transports, multi-server, auth, FastAPI)
@@ -115,7 +125,7 @@
 
 ### Added
 
-- **Phase 8: AI Agents & Agent Engineering** — 27 documents
+- **AI Agents & Agent Engineering** — 27 documents
   - Sections 1–20: introduction through case studies
   - 6 framework guides (LangGraph, CrewAI, AutoGen, Semantic Kernel, PydanticAI, OpenAI Agents SDK)
   - Build-your-own-agent-framework reference
@@ -125,7 +135,7 @@
 
 ### Added
 
-- **Phase 7: Retrieval-Augmented Generation (RAG)** — 29 documents forming the largest handbook module
+- **Retrieval-Augmented Generation (RAG)** — 29 documents forming the largest handbook module
   - Sections 1–21: introduction through production system design
   - 7 vector database provider guides (FAISS, Chroma, PGVector, Pinecone, Milvus, Weaviate, Qdrant)
   - Comparison guides and advanced architecture coverage (GraphRAG, Self-RAG, agentic RAG)
@@ -136,7 +146,7 @@
 
 ### Added
 
-- **Phase 6: Context Engineering** — 21 documents forming a complete context engineering handbook
+- **Context Engineering** — 21 documents forming a complete context engineering handbook
   - Sections 1–20: introduction through production (architecture, memory, ranking, compression, security)
   - Comparison guides for context engineering strategies
 - 11 Python examples (memory, assembly, ranking, budgeting, caching, pruning)
@@ -146,7 +156,7 @@
 
 ### Added
 
-- **Phase 5: Prompt Engineering** — 19 documents forming a complete prompt engineering handbook
+- **Prompt Engineering** — 19 documents forming a complete prompt engineering handbook
   - Sections 1–18: introduction through production (anatomy, patterns, structured prompting, reasoning, chaining, lifecycle, testing, evaluation, security)
   - Comparison guides for prompting strategies
 - 16 reusable prompt templates in `prompts/templates/`
@@ -157,19 +167,19 @@
 
 ### Added
 
-- Phase 4: LLM Engineering
+- LLM Engineering
 
 ## [0.2.0] - 2026-07-13
 
 ### Added
 
-- Phase 3: Backend Engineering
+- Backend Engineering
 
 ## [0.1.0] - 2026-07-13
 
 ### Added
 
-- Repository foundation and Phase 2: AI Engineering Foundations
+- Repository foundation and AI Engineering Foundations
 
 [Unreleased]: https://github.com/hp/ai-engineering-playbook/compare/v1.1.0...HEAD
 [1.1.0]: https://github.com/hp/ai-engineering-playbook/releases/tag/v1.1.0

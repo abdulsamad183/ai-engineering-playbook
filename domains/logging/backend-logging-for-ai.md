@@ -1,6 +1,6 @@
 ---
 title: "Backend Logging for AI"
-description: "Phase 3 deep dive into production logging for AI backends — structured JSON logs, request and correlation IDs, log levels, audit logging, log pipelines, and backend integration patterns."
+description: "deep dive into production logging for AI backends — structured JSON logs, request and correlation IDs, log levels, audit logging, log pipelines, and backend integration patterns."
 domain: logging
 tags: [logging, observability, structured-logging, audit, production, backend, advanced]
 status: published
@@ -19,7 +19,7 @@ author: hp
 
 # Backend Logging for AI
 
-> Phase 3 reference for production-grade logging in AI backends — structured events, correlation across async pipelines, audit trails, and log pipelines that scale with LLM traffic.
+> reference for production-grade logging in AI backends — structured events, correlation across async pipelines, audit trails, and log pipelines that scale with LLM traffic.
 
 ## Table of Contents
 
@@ -52,12 +52,12 @@ author: hp
 Backend logging is the **primary diagnostic signal** for AI services in production.
 Unlike traditional CRUD APIs, an AI backend emits logs across retrieval, embedding, reranking, tool calls, and streaming token delivery — often in a single user request.
 
-This document is a **Phase 3 deep dive**. It assumes you have read:
+This document is a **deep dive**. It assumes you have read:
 
 - [Logging and Error Handling](logging-and-error-handling.md) — logging strategy, exception boundaries, retries
 - [Configuration and Secrets](../foundations/configuration-and-secrets.md) — `LOG_LEVEL`, `APP_ENV`, safe settings loading
 
-Here we focus on **backend logging infrastructure**: how logs are formatted, correlated, shipped, and audited — not on exception handling (covered in Phase 2).
+Here we focus on **backend logging infrastructure**: how logs are formatted, correlated, shipped, and audited — not on exception handling (covered in this handbook).
 
 ```mermaid
 graph TB
@@ -913,4 +913,4 @@ def safe_repr(value: SecretStr) -> str:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 3 release |
+| 1.0 | 2026-07-13 | Initial release |

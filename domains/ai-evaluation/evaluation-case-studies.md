@@ -2,7 +2,7 @@
 title: "Real-World Evaluation Case Studies"
 description: "Evaluation patterns for chat, coding assistants, search, RAG, agents, support, research."
 domain: ai-evaluation
-tags: [ai-evaluation, case-study, production, phase-10]
+tags: [ai-evaluation, case-study, production]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **20** of Phase 10 — engineering patterns (not proprietary implementations).
+Section **20** — engineering patterns (not proprietary implementations).
 
 ---
 
@@ -90,7 +90,7 @@ flowchart LR
 
 ## Navigation
 
-- [Comparison Guides](ai-evaluation-comparison-guides.md) · [Phase 10 Hub](README.md)
+- [Comparison Guides](ai-evaluation-comparison-guides.md) · [Hub](README.md)
 
 ---
 
@@ -98,4 +98,4 @@ flowchart LR
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 10 Section 20 |
+| 1.0 | 2026-07-13 | Initial publication |

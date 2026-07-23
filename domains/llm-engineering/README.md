@@ -1,13 +1,13 @@
-# Phase 4: LLM Engineering
+# LLM Engineering
 
 > Production-oriented handbook for understanding, integrating, optimizing, and deploying Large Language Models.
-> **Prerequisites:** [Phase 2 Foundations](../foundations/README.md) · [Phase 3 Backend Engineering](../backend-engineering/README.md)
+> **Prerequisites:** [Foundations](../foundations/README.md) · [Backend Engineering](../backend-engineering/README.md)
 
 ---
 
 ## Module Overview
 
-Phase 4 is the core LLM reference for the entire playbook. Future phases (Prompt Engineering, RAG, Agents, Evaluation) build directly on this module.
+This handbook is the core LLM reference for the entire playbook. Later modules (Prompt Engineering, RAG, Agents, Evaluation) build directly on this module.
 
 ```mermaid
 flowchart TB
@@ -63,7 +63,7 @@ flowchart TB
 | 2 | [How LLMs Work](how-llms-work.md) | Text → tokens → transformer → output pipeline |
 | 3 | [Tokens and Tokenization](tokens-and-tokenization.md) | BPE, counting, cost calculation |
 | 4 | [Context Windows](context-windows.md) | Budgeting, truncation, lost-in-the-middle |
-| 5 | [Embeddings — LLM Perspective](embeddings-llm-perspective.md) | Vectors and similarity (RAG deep dive in Phase 5+) |
+| 5 | [Embeddings — LLM Perspective](embeddings-llm-perspective.md) | Vectors and similarity (RAG deep dive in this handbook+) |
 | 6 | [Transformer Intuition](transformer-intuition.md) | Decoder architecture for engineers |
 | 7 | [Attention Mechanism](attention-mechanism.md) | Q/K/V, quality and latency impact |
 | 8 | [KV Cache](kv-cache.md) | Prefill, decode, memory, streaming |
@@ -126,7 +126,7 @@ flowchart TB
 
 ---
 
-## Phase 4 Completion Checklist
+## Completion Checklist
 
 - [ ] Read Sections 1–14 in order
 - [ ] Run at least 3 provider examples (OpenAI + one alternative)
@@ -136,7 +136,7 @@ flowchart TB
 - [ ] Configure model fallback (primary + cheap fallback)
 - [ ] Review [LLM Engineering Mistakes](llm-engineering-mistakes.md) against your code
 
-**Unlocked after Phase 4:**
+**What this unlocks:**
 - [Prompt Engineering](../prompt-engineering/README.md)
 - [Context Engineering](../context-engineering/README.md)
 - [RAG](../rag/README.md)

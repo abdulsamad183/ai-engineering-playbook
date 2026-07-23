@@ -569,7 +569,7 @@ Medical, legal, and financial document pipelines may require:
 
 ### Next Topics
 
-- [Embeddings](../../domains/embeddings/README.md) — multimodal embeddings (Phase 7)
+- [Embeddings](../../domains/embeddings/README.md) — multimodal embeddings
 - [RAG Systems](../../domains/rag/README.md) — document retrieval pipelines
 
 ---

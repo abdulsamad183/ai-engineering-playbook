@@ -2,7 +2,7 @@
 title: "Query Engineering for RAG"
 description: "Query preprocessing, rewriting, expansion, decomposition, routing, HyDE, and intent detection for retrieval."
 domain: rag
-tags: [rag, query-engineering, HyDE, rewriting, phase-7]
+tags: [rag, query-engineering, HyDE, rewriting]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **11** of Phase 7. Raw user questions are poor retrieval queries — engineer them.
+Section **11**. Raw user questions are poor retrieval queries — engineer them.
 
 ## Techniques
 
@@ -61,4 +61,4 @@ async def rewrite_query(history: list[dict], question: str, llm) -> str:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 7 Section 11 |
+| 1.0 | 2026-07-13 | Initial publication |

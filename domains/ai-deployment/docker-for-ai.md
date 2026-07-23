@@ -2,7 +2,7 @@
 title: "Docker for AI Applications"
 description: "Docker images, multi-stage builds, Compose, networking, security for AI services."
 domain: ai-deployment
-tags: [docker, containers, production-ai, phase-12]
+tags: [docker, containers, production-ai]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **2** of Phase 12.
+Section **2**.
 
 ## Core Concepts
 
@@ -82,4 +82,4 @@ services:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 12 Section 2 |
+| 1.0 | 2026-07-13 | Initial publication |

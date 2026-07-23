@@ -17,7 +17,7 @@ author: hp
 
 # Prompt Comparison Guides
 
-> Supplementary guide for Phase 5 — every prompt engineering decision is a tradeoff. These comparison tables help you choose the right pattern for your task, model, and production constraints instead of defaulting to the most popular approach.
+> supplementary guide — every prompt engineering decision is a tradeoff. These comparison tables help you choose the right pattern for your task, model, and production constraints instead of defaulting to the most popular approach.
 
 ## Table of Contents
 
@@ -624,9 +624,9 @@ START: What kind of task?
 
 ### Prerequisites
 
-- Sections 1–12 of Phase 5 (prompt design fundamentals)
+- Sections 1–12 of this handbook (prompt design fundamentals)
 
-### Phase 5 — Prompt Engineering
+### — Prompt Engineering
 
 | # | Topic | Document |
 |---|-------|----------|
@@ -668,4 +668,4 @@ START: What kind of task?
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 5 release — supplementary comparison guide |
+| 1.0 | 2026-07-13 | Initial release — supplementary comparison guide |

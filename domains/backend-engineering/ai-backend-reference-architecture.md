@@ -1,6 +1,6 @@
 ---
 title: "AI Backend Reference Architecture"
-description: "Phase 3 reference architectures for AI backends — chat, RAG, agent, and SaaS patterns with component diagrams, data flows, and production guidance for FastAPI, PostgreSQL, Redis, LLM APIs, object storage, and monitoring."
+description: "reference architectures for AI backends — chat, RAG, agent, and SaaS patterns with component diagrams, data flows, and production guidance for FastAPI, PostgreSQL, Redis, LLM APIs, object storage, and monitoring."
 domain: backend-engineering
 tags: [backend, architecture, rag, agents, saas, production, advanced]
 status: published
@@ -20,7 +20,7 @@ author: hp
 
 # AI Backend Reference Architecture
 
-> Phase 3 reference architectures for production AI backends — chat, RAG, agents, and multi-tenant SaaS — with component diagrams, data flows, and operational guidance.
+> reference architectures for production AI backends — chat, RAG, agents, and multi-tenant SaaS — with component diagrams, data flows, and operational guidance.
 
 ## Table of Contents
 
@@ -886,4 +886,4 @@ flowchart TD
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 3 release |
+| 1.0 | 2026-07-13 | Initial release |

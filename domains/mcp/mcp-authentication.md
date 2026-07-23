@@ -2,7 +2,7 @@
 title: "MCP Authentication & Authorization"
 description: "API keys, OAuth, session auth, enterprise patterns, tool/resource permissions, RBAC, secrets."
 domain: mcp
-tags: [mcp, auth, oauth, rbac, security, phase-9]
+tags: [mcp, auth, oauth, rbac, security]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **12** of Phase 9.
+Section **12**.
 
 ```mermaid
 sequenceDiagram
@@ -99,4 +99,4 @@ async def authorize_tool_call(principal: str, tool_name: str, roles: dict[str, s
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 9 Section 12 |
+| 1.0 | 2026-07-13 | Initial publication |

@@ -2,7 +2,7 @@
 title: "AI Benchmarking"
 description: "Public, internal, custom, regression, and performance benchmarks — strengths and limitations."
 domain: ai-evaluation
-tags: [ai-evaluation, benchmarking, regression, phase-10]
+tags: [ai-evaluation, benchmarking, regression]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **14** of Phase 10.
+Section **14**.
 
 ## Benchmark Types
 
@@ -64,4 +64,4 @@ flowchart LR
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 10 Section 14 |
+| 1.0 | 2026-07-13 | Initial publication |

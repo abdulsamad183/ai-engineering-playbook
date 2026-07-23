@@ -2,7 +2,7 @@
 title: "PGVector for RAG"
 description: "PostgreSQL pgvector — HNSW indexes, metadata joins, hybrid SQL+RAG, production deployment."
 domain: rag
-tags: [rag, pgvector, postgresql, vector-database, phase-7]
+tags: [rag, pgvector, postgresql, vector-database]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

@@ -2,7 +2,7 @@
 title: "Agent Memory Systems"
 description: "Agent memory — working, episodic, semantic, vector, structured, external, shared memory for autonomous systems."
 domain: ai-agents
-tags: [ai-agents, memory, episodic, semantic, phase-8]
+tags: [ai-agents, memory, episodic, semantic]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **6** of Phase 8. Agents need layered memory beyond conversation history.
+Section **6**. Agents need layered memory beyond conversation history.
 
 | Type | Scope | Agent use |
 |------|-------|-----------|
@@ -57,4 +57,4 @@ See [Context Engineering Memory](../context-engineering/memory-systems.md) for s
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 8 Section 6 |
+| 1.0 | 2026-07-13 | Initial publication |

@@ -2,7 +2,7 @@
 title: "Resume & Project Interviews"
 description: "Discuss projects — architecture, tradeoffs, failures, scaling, evaluator follow-ups."
 domain: interview-preparation
-tags: [interview, resume, portfolio, behavioral, phase-13]
+tags: [interview, resume, portfolio, behavioral]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

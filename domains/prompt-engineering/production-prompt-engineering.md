@@ -18,7 +18,7 @@ author: hp
 
 # Production Prompt Engineering
 
-> Section 18 of Phase 5 — a prompt in a Jupyter notebook is a prototype. A prompt in production is versioned software: stored in repositories, configured per environment, cached for performance, flagged for safe rollout, observed for drift, and analyzed for continuous improvement.
+> Section 18 of this handbook — a prompt in a Jupyter notebook is a prototype. A prompt in production is versioned software: stored in repositories, configured per environment, cached for performance, flagged for safe rollout, observed for drift, and analyzed for continuous improvement.
 
 ## Table of Contents
 
@@ -793,10 +793,10 @@ async def rollback_prompt(prompt_id: str, target_version: str) -> None:
 
 ### Prerequisites
 
-- Sections 13–17 of Phase 5
+- Sections 13–17 of this handbook
 - [Configuration and Secrets](../foundations/configuration-and-secrets.md)
 
-### Phase 5 — Prompt Engineering
+### — Prompt Engineering
 
 | # | Topic | Document |
 |---|-------|----------|
@@ -826,7 +826,7 @@ async def rollback_prompt(prompt_id: str, target_version: str) -> None:
 - [Monitoring Foundation](../monitoring/monitoring-foundation-for-ai-backends.md)
 - [Development Workflow](../foundations/development-workflow.md)
 
-### Next Topics (Phase 6+)
+### Next Topics 
 
 - [Context Engineering](../context-engineering/README.md)
 - [RAG](../rag/README.md)
@@ -845,4 +845,4 @@ async def rollback_prompt(prompt_id: str, target_version: str) -> None:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 5 release — Section 18 |
+| 1.0 | 2026-07-13 | Initial release — Section 18 |

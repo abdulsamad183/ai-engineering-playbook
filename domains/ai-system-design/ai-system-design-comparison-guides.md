@@ -2,7 +2,7 @@
 title: "AI System Design Comparison Guides"
 description: "Decision matrices for architecture patterns, RAG vs fine-tuning, deployment topology."
 domain: ai-system-design
-tags: [system-design, comparison, decision-matrix, phase-11]
+tags: [system-design, comparison, decision-matrix]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -53,4 +53,4 @@ author: hp
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 11 comparisons |
+| 1.0 | 2026-07-13 | Initial publication |

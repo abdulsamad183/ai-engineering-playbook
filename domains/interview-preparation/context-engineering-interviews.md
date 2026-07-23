@@ -2,7 +2,7 @@
 title: "Context Engineering Interviews"
 description: "Context interview questions — memory, ranking, compression, assembly, personalization."
 domain: interview-preparation
-tags: [interview, context-engineering, memory, phase-13]
+tags: [interview, context-engineering, memory]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

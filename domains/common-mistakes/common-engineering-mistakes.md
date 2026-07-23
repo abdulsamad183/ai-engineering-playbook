@@ -1,6 +1,6 @@
 ---
 title: "Common Engineering Mistakes in AI Applications"
-description: "Production reference guide to the engineering mistakes that sink AI demos — overengineering, coupling, API design, testing gaps, secrets, and AI-specific pitfalls — with bad vs good code examples and cross-links to Phase 2 foundations."
+description: "Production reference guide to the engineering mistakes that sink AI demos — overengineering, coupling, API design, testing gaps, secrets, and AI-specific pitfalls — with bad vs good code examples and cross-links to foundations."
 domain: common-mistakes
 tags: [foundations, debugging, production, intermediate]
 status: published
@@ -64,7 +64,7 @@ This document is a **production reference**, not a style opinion piece. Each mis
 | **How to avoid** | Concrete engineering practices with links to foundation docs |
 | **Bad vs good** | Minimal code examples showing the fix |
 
-Cross-references point to Phase 2 foundation material:
+Cross-references point to foundation material:
 
 | Foundation Doc | What It Covers |
 |----------------|----------------|
@@ -376,7 +376,7 @@ LLM outputs are non-deterministic, so teams conclude "you cannot test AI." They 
 
 - Test **orchestration**, not exact LLM strings — see [Testing Philosophy](../foundations/software-engineering-for-ai.md#testing-philosophy)
 - Mock LLM ports in unit tests; use [FastAPI TestClient](../fastapi/fastapi-foundation.md#testing-fastapi-ai-services) for API contracts
-- Add evaluation harnesses for quality (separate from unit tests) — Phase 4+
+- Add evaluation harnesses for quality (separate from unit tests)
 - Run tests in CI on every PR
 
 ### Bad vs good
@@ -976,7 +976,7 @@ Teams ship when outputs "look good" on five manual examples. Retrieval quality a
 - Measure retrieval recall and answer relevance separately
 - Run evals in CI when prompts, models, or chunking change
 - See [AI Engineering Overview — Production AI Principles](../foundations/ai-engineering-overview.md#production-ai-principles)
-- Deeper coverage in [ai-evaluation](../ai-evaluation/README.md) (Phase 8+)
+- Deeper coverage in [ai-evaluation](../ai-evaluation/README.md) 
 
 ### Bad vs good
 
@@ -1151,7 +1151,7 @@ Run this checklist before any AI feature reaches production. It consolidates the
 | PostgreSQL | [PostgreSQL for AI](../databases/postgresql/postgresql-for-ai.md) |
 | Redis caching | [Redis for AI](../databases/redis/redis-for-ai.md) |
 
-### Phase 2 Foundation Path
+### Foundation Path
 
 Follow this sequence after reading this guide:
 
@@ -1181,7 +1181,7 @@ Follow this sequence after reading this guide:
 
 - [Common Mistakes Domain Index](README.md)
 - [Knowledge: Mistakes](../../knowledge/mistakes/README.md)
-- [Learning Roadmap — Phase 2](../../meta/roadmap.md#phase-2-backend-engineering)
+- [Learning Roadmap](../../meta/roadmap.md#)
 - [Style Guide](../../meta/style-guide.md)
 - [Glossary](../../meta/glossary.md)
 
@@ -1189,4 +1189,4 @@ Follow this sequence after reading this guide:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial version — 20 mistakes with bad/good examples, severity matrix, checklist, interview prep, Phase 2 cross-references |
+| 1.0 | 2026-07-13 | Initial version — 20 mistakes with bad/good examples, severity matrix, checklist, interview prep

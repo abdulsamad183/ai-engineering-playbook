@@ -2,7 +2,7 @@
 title: "MCP Prompts"
 description: "MCP prompt registry — templates, parameters, metadata, versioning, discovery, validation."
 domain: mcp
-tags: [mcp, prompts, templates, registry, phase-9]
+tags: [mcp, prompts, templates, registry]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **8** of Phase 9. Prompts become **protocol assets** — discoverable, versioned templates servers expose via `prompts/list` and `prompts/get`.
+Section **8**. Prompts become **protocol assets** — discoverable, versioned templates servers expose via `prompts/list` and `prompts/get`.
 
 ## Prompt as Protocol Asset
 
@@ -54,4 +54,4 @@ Server exposes `code-review` prompt with `language` and `diff` parameters — ho
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 9 Section 8 |
+| 1.0 | 2026-07-13 | Initial publication |

@@ -2,7 +2,7 @@
 title: "Context Architecture"
 description: "Architecture of context in production AI systems — pipeline from user input through memory, retrieval, ranking, compression, and prompt assembly to the LLM."
 domain: context-engineering
-tags: [context-engineering, architecture, pipeline, production, phase-6]
+tags: [context-engineering, architecture, pipeline, production]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -47,7 +47,7 @@ author: hp
 
 Context architecture defines **where each type of information lives**, **how it flows**, and **who owns each transformation**. Without explicit architecture, context logic spreads across API handlers, agent loops, and prompt strings — becoming impossible to test, observe, or secure.
 
-This document is **Section 2** of Phase 6.
+This document is **Section 2** of this handbook.
 
 ```mermaid
 flowchart TD
@@ -321,4 +321,4 @@ class ContextEngine:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication — Phase 6 Section 2 |
+| 1.0 | 2026-07-13 | Initial publication |

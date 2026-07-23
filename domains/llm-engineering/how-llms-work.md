@@ -2,7 +2,7 @@
 title: "How LLMs Work"
 description: "Engineering-focused walkthrough of the LLM inference pipeline — from text input through tokenization, embeddings, transformer attention, autoregressive generation, and sampling to final output."
 domain: llm-engineering
-tags: [llm, transformers, attention, inference, tokenization, production, phase-4]
+tags: [llm, transformers, attention, inference, tokenization, production]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -61,7 +61,7 @@ This document traces the path:
 
 We focus on **decoder-only models** (GPT, Claude, Llama) used in production chat and completion APIs. No heavy math — just the mental models you need to engineer reliable systems.
 
-> **Prerequisites:** [Introduction to LLM Engineering](introduction-to-llm-engineering.md) · [Phase 3 Backend Engineering](../backend-engineering/README.md)
+> **Prerequisites:** [Introduction to LLM Engineering](introduction-to-llm-engineering.md) · [Backend Engineering](../backend-engineering/README.md)
 
 ---
 
@@ -809,9 +809,9 @@ def parse_completion(choice) -> GenerationResult:
 ### Prerequisites
 
 - [Introduction to LLM Engineering](introduction-to-llm-engineering.md) — LLM concepts and ecosystem
-- [Phase 3 Backend Engineering](../backend-engineering/README.md) — API integration patterns
+- [Backend Engineering](../backend-engineering/README.md) — API integration patterns
 
-### Phase 4 — LLM Engineering
+### — LLM Engineering
 
 | # | Topic | Document |
 |---|-------|----------|
@@ -843,4 +843,4 @@ def parse_completion(choice) -> GenerationResult:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 4 Section 2 release |
+| 1.0 | 2026-07-13 | Initial publication |

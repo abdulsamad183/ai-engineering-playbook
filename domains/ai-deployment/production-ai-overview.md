@@ -2,7 +2,7 @@
 title: "Production AI Overview"
 description: "AI production lifecycle, platform architecture, reliability, deployment strategies."
 domain: ai-deployment
-tags: [production-ai, llmops, platform, phase-12]
+tags: [production-ai, llmops, platform]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **1** of Phase 12 — **AI Platform Engineering**, not generic DevOps.
+Section **1** — **AI Platform Engineering**, not generic DevOps.
 
 ```mermaid
 flowchart LR
@@ -68,4 +68,4 @@ Blue/green, canary, rolling — see [Deployment](ai-deployment-strategies.md).
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 12 Section 1 |
+| 1.0 | 2026-07-13 | Initial publication |

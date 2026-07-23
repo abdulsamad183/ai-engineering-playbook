@@ -2,7 +2,7 @@
 title: "RAG Engineering Mistakes"
 description: "Troubleshooting poor chunking, embeddings, retrieval, hallucinations, latency, citations, evaluation gaps."
 domain: rag
-tags: [rag, mistakes, troubleshooting, phase-7]
+tags: [rag, mistakes, troubleshooting]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **21** of Phase 7.
+Section **21**.
 
 | Issue | Symptoms | Root cause | Fix |
 |-------|----------|------------|-----|
@@ -50,4 +50,4 @@ Each: **Diagnose** via retrieval trace; **Prevent** with eval gates.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 7 Section 21 |
+| 1.0 | 2026-07-13 | Initial publication |

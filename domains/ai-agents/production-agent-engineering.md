@@ -2,7 +2,7 @@
 title: "Production Agent Engineering"
 description: "Production agents — observability, tracing, cost optimization, scaling, queues, multi-tenant, checkpointing."
 domain: ai-agents
-tags: [ai-agents, production, observability, scaling, phase-8]
+tags: [ai-agents, production, observability, scaling]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **17** of Phase 8.
+Section **17**.
 
 ```mermaid
 flowchart LR
@@ -57,4 +57,4 @@ flowchart LR
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 8 Section 17 |
+| 1.0 | 2026-07-13 | Initial publication |

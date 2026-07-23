@@ -2,7 +2,7 @@
 title: "Production Readiness Checklist"
 description: "Comprehensive checklist — deploy, monitor, security, eval, DR, compliance."
 domain: ai-deployment
-tags: [production, checklist, readiness, phase-12]
+tags: [production, checklist, readiness]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **15** of Phase 12.
+Section **15**.
 
 ## Deployment
 
@@ -61,7 +61,7 @@ Section **15** of Phase 12.
 
 ## Navigation
 
-- [Phase 12 Hub](README.md) · [Cheat Sheet](../../cheat-sheets/production-readiness-checklist.md)
+- [Hub](README.md) · [Cheat Sheet](../../cheat-sheets/production-readiness-checklist.md)
 
 ---
 
@@ -69,4 +69,4 @@ Section **15** of Phase 12.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 12 Section 15 |
+| 1.0 | 2026-07-13 | Initial publication |

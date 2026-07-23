@@ -2,7 +2,7 @@
 title: "Observability for AI"
 description: "OpenTelemetry, LangFuse, Phoenix — prompt, agent, RAG tracing."
 domain: ai-deployment
-tags: [observability, opentelemetry, langfuse, phoenix, phase-12]
+tags: [observability, opentelemetry, langfuse, phoenix]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **8** of Phase 12.
+Section **8**.
 
 ```mermaid
 flowchart LR
@@ -66,4 +66,4 @@ async def call_llm(prompt: str) -> str:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 12 Section 8 |
+| 1.0 | 2026-07-13 | Initial publication |

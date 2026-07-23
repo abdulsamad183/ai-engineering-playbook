@@ -2,7 +2,7 @@
 title: "Dynamic Context"
 description: "Runtime context generation — dynamic prompt assembly, adaptive context, conditional blocks, user and session awareness, event-driven updates."
 domain: context-engineering
-tags: [context-engineering, dynamic-context, runtime, adaptive, phase-6]
+tags: [context-engineering, dynamic-context, runtime, adaptive]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -43,7 +43,7 @@ author: hp
 
 **Static context** sends the same system prompt every request. **Dynamic context** composes blocks from policies, state, retrieval, and user profile at runtime — the production default for serious applications.
 
-Section **9** of Phase 6.
+Section **9**.
 
 ```mermaid
 flowchart TD
@@ -72,7 +72,7 @@ Every inference call executes a **context resolver** that:
 
 ## Dynamic Prompt Assembly
 
-Prompt templates ([Phase 5](../prompt-engineering/prompt-templates-guide.md)) provide **slots**; dynamic context fills them:
+Prompt templates ([handbook](../prompt-engineering/prompt-templates-guide.md)) provide **slots**; dynamic context fills them:
 
 ```
 System: {{base_role}}
@@ -231,4 +231,4 @@ def support_policy(req: ContextRequest) -> list[ContextBlock]:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication — Phase 6 Section 9 |
+| 1.0 | 2026-07-13 | Initial publication |

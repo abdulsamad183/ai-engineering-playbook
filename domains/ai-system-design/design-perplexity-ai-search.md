@@ -2,7 +2,7 @@
 title: "Design: Perplexity-style AI Search"
 description: "AI search — web retrieval, citations, multi-query, answer synthesis, freshness."
 domain: ai-system-design
-tags: [system-design, perplexity, search, citations, phase-11]
+tags: [system-design, perplexity, search, citations]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -75,4 +75,4 @@ Decompose "Compare X vs Y 2026" → sub-queries → merge results.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 11 Section 6 |
+| 1.0 | 2026-07-13 | Initial publication |

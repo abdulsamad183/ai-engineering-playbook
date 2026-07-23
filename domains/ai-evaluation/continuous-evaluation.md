@@ -2,7 +2,7 @@
 title: "Continuous Evaluation"
 description: "Scheduled eval, production monitoring, drift, regression detection, CI/CD integration."
 domain: ai-evaluation
-tags: [ai-evaluation, continuous, monitoring, cicd, phase-10]
+tags: [ai-evaluation, continuous, monitoring, cicd]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **16** of Phase 10.
+Section **16**.
 
 ```mermaid
 flowchart TB
@@ -68,4 +68,4 @@ def regression_gate(current: float, baseline: float, tolerance: float = 0.05) ->
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 10 Section 16 |
+| 1.0 | 2026-07-13 | Initial publication |

@@ -24,7 +24,7 @@ author: hp
 
 ## Table of Contents
 
-- [Phase 2 Foundation](#phase-2-foundation)
+- [Foundation](#)
 - [Backend Testing Strategy](#backend-testing-strategy)
 - [pytest for AI Backends](#pytest-for-ai-backends)
 - [Unit Testing Services](#unit-testing-services)
@@ -44,11 +44,11 @@ author: hp
 
 ---
 
-## Phase 2 Foundation
+## Foundation
 
-This document is **Phase 3** backend depth. Before reading it, internalize the cross-cutting testing concepts in [Testing Fundamentals (Phase 2)](../foundations/testing-fundamentals.md):
+This document is a **deep dive** backend depth. Before reading it, internalize the cross-cutting testing concepts in [Testing Fundamentals](../foundations/testing-fundamentals.md):
 
-| Phase 2 Topic | Where It Lives | Phase 3 Extension Here |
+| Topic | Where It Lives | Extension Here |
 |---------------|----------------|------------------------|
 | Testing pyramid for AI apps | [Testing Pyramid](../foundations/testing-fundamentals.md#testing-pyramid-for-ai-apps) | Backend-specific layer split |
 | pytest basics, markers, layout | [pytest Fundamentals](../foundations/testing-fundamentals.md#pytest-fundamentals) | `tests/api/`, `tests/integration/` layout |
@@ -57,18 +57,18 @@ This document is **Phase 3** backend depth. Before reading it, internalize the c
 | API testing intro | [API Testing with FastAPI](../foundations/testing-fundamentals.md#api-testing-with-fastapi) | Auth, streaming, dependency overrides |
 | CI organization | [CI and Test Organization](../foundations/testing-fundamentals.md#ci-and-test-organization) | Backend pipeline stages |
 
-> **Production Standard:** Phase 2 teaches *what* to test and *why*. Phase 3 teaches *how* to wire FastAPI backends, test databases, and integration suites that survive refactors.
+> **Production Standard:** Foundations teach *what* to test and *why*. This handbook teaches *how* to wire FastAPI backends, test databases, and integration suites that survive refactors.
 
 ```mermaid
 graph TB
-    subgraph "Phase 2 — Foundations"
+    subgraph "Foundations"
         P2[Testing Fundamentals]
         P2 --> PYRAMID[Testing Pyramid]
         P2 --> MOCK[Mocking Philosophy]
         P2 --> EVAL[Eval vs Unit Boundary]
     end
 
-    subgraph "Phase 3 — Backend Depth"
+    subgraph "Backend Depth"
         P3[Testing Backend for AI]
         P3 --> API[API Contract Tests]
         P3 --> DB[Test Database]
@@ -821,9 +821,9 @@ test_conversation_repo_tenant_isolation_filters_correctly()
 
 > **Strong answer:** Session-scoped engine with Alembic migrations run once. Function-scoped session with transaction rollback for isolation. docker-compose or testcontainers in CI. Never use production DB. Mention asyncpg + SQLAlchemy async session patterns.
 
-**Q4: How does Phase 2 testing fundamentals relate to backend testing?**
+**Q4: How do testing fundamentals relate to backend testing?**
 
-> **Strong answer:** Phase 2 ([Testing Fundamentals](../foundations/testing-fundamentals.md)) covers the pyramid, mocking philosophy, and eval boundary. Phase 3 (this doc) implements those principles for FastAPI — dependency overrides, test DB, integration markers, and coverage gates on the service layer.
+> **Strong answer:** Foundations ([Testing Fundamentals](../foundations/testing-fundamentals.md)) covers the pyramid, mocking philosophy, and eval boundary. This handbook implements those principles for FastAPI — dependency overrides, test DB, integration markers, and coverage gates on the service layer.
 
 ### Real-World Scenario
 
@@ -837,7 +837,7 @@ test_conversation_repo_tenant_isolation_filters_correctly()
 
 ### Prerequisites
 
-- [Testing Fundamentals (Phase 2)](../foundations/testing-fundamentals.md) — pyramid, mocking, eval boundary
+- [Testing Fundamentals](../foundations/testing-fundamentals.md) — pyramid, mocking, eval boundary
 - [Backend Fundamentals for AI](backend-fundamentals-for-ai.md) — DI, TestClient, request lifecycle
 - [Software Engineering for AI](../foundations/software-engineering-for-ai.md) — ports and adapters
 
@@ -871,4 +871,4 @@ test_conversation_repo_tenant_isolation_filters_correctly()
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 3 release |
+| 1.0 | 2026-07-13 | Initial release |

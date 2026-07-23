@@ -2,7 +2,7 @@
 title: "Build Your Own Agent Framework"
 description: "Build a lightweight agent framework — planner, executor, memory, tools, state, events, checkpointing, observability."
 domain: ai-agents
-tags: [ai-agents, framework, from-scratch, phase-8]
+tags: [ai-agents, framework, from-scratch]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -19,7 +19,7 @@ author: hp
 
 ## Overview
 
-Section **15** of Phase 8 — minimal extensible framework (~200 lines core) before adopting LangGraph/CrewAI.
+Section **15** — minimal extensible framework (~200 lines core) before adopting LangGraph/CrewAI.
 
 ## Architecture
 
@@ -110,4 +110,4 @@ Adopt LangGraph when you need: complex branching, built-in HITL interrupts, matu
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 8 Section 15 |
+| 1.0 | 2026-07-13 | Initial publication |

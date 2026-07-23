@@ -2,7 +2,7 @@
 title: "Design: AI Coding Assistant"
 description: "Code assistant architecture — AST, code graph, refactoring, PR generation, code review."
 domain: ai-system-design
-tags: [system-design, coding-assistant, ast, refactoring, phase-11]
+tags: [system-design, coding-assistant, ast, refactoring]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -60,4 +60,4 @@ flowchart TB
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 11 Section 10 |
+| 1.0 | 2026-07-13 | Initial publication |

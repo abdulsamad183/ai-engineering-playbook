@@ -1,6 +1,6 @@
 ---
 title: "Prompting Strategies"
-description: "Section 8 of Phase 5 — zero-shot, one-shot, few-shot, multi-shot, demonstration, retrieval prompting, and instruction tuning concepts with cost, latency, and quality tradeoffs."
+description: "Section 8 of this handbook — zero-shot, one-shot, few-shot, multi-shot, demonstration, retrieval prompting, and instruction tuning concepts with cost, latency, and quality tradeoffs."
 domain: prompt-engineering
 tags: [prompt, few-shot, production, intermediate, rag, llm]
 status: published
@@ -19,7 +19,7 @@ author: hp
 
 # Prompting Strategies
 
-> Section 8 of Phase 5 — how much context you give the model changes everything. This guide compares prompting strategies from zero-shot simplicity to retrieval-augmented demonstrations, with honest tradeoffs on cost, latency, and quality.
+> Section 8 of this handbook — how much context you give the model changes everything. This guide compares prompting strategies from zero-shot simplicity to retrieval-augmented demonstrations, with honest tradeoffs on cost, latency, and quality.
 
 ## Table of Contents
 
@@ -706,7 +706,7 @@ When switching models, re-evaluate all strategies:
 
 ### Next Topics
 
-- [Context Engineering](../context-engineering/README.md) — Phase 6
+- [Context Engineering](../context-engineering/README.md)
 - [AI Evaluation](../ai-evaluation/README.md)
 
 ### Future Reading

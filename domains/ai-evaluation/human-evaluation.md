@@ -2,7 +2,7 @@
 title: "Human Evaluation"
 description: "Rating rubrics, pairwise comparison, blind eval, annotation workflows, agreement, bias reduction."
 domain: ai-evaluation
-tags: [ai-evaluation, human-eval, rubrics, annotation, phase-10]
+tags: [ai-evaluation, human-eval, rubrics, annotation]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **11** of Phase 10.
+Section **11**.
 
 ```mermaid
 flowchart LR
@@ -71,4 +71,4 @@ flowchart LR
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 10 Section 11 |
+| 1.0 | 2026-07-13 | Initial publication |

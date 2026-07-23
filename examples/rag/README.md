@@ -1,6 +1,6 @@
 # RAG Examples
 
-> Production-oriented RAG patterns. See [Phase 7 RAG](../../domains/rag/README.md).
+> Production-oriented RAG patterns. See [RAG](../../domains/rag/README.md).
 
 | Example | Topic |
 |---------|-------|

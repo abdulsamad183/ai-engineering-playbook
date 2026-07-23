@@ -2,7 +2,7 @@
 title: "Docker Interviews for AI Engineers"
 description: "Docker interview questions — images, layers, Compose, multi-stage builds, security, debugging."
 domain: interview-preparation
-tags: [interview, docker, containers, phase-13]
+tags: [interview, docker, containers]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

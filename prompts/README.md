@@ -8,7 +8,7 @@
 
 ```
 prompts/
-├── templates/         # 16 production templates (Phase 5)
+├── templates/         # 16 production templates
 │   ├── question-answering.md
 │   ├── classification.md
 │   ├── agent-planning.md

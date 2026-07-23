@@ -2,7 +2,7 @@
 title: "Introduction to LLM Engineering"
 description: "Foundation-level introduction to Large Language Models — evolution, architecture, ecosystem, and end-to-end LLM engineering for production AI applications."
 domain: llm-engineering
-tags: [llm, foundation, gpt, transformers, production, phase-4]
+tags: [llm, foundation, gpt, transformers, production]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -52,11 +52,11 @@ author: hp
 
 Large Language Models (LLMs) are neural networks trained on vast text corpora to predict the next token in a sequence. At inference time, they generate human-like text, code, and structured outputs by repeatedly sampling from a probability distribution over their vocabulary.
 
-LLM engineering is the discipline of building reliable production systems around these models — API integration, prompt design, context management, streaming, evaluation, cost control, and failure handling. This document is **Section 1** of Phase 4 in the AI Engineering Playbook.
+LLM engineering is the discipline of building reliable production systems around these models — API integration, prompt design, context management, streaming, evaluation, cost control, and failure handling. This document is **Section 1** of this handbook.
 
 ```mermaid
 flowchart LR
-    subgraph "Phase 4: LLM Engineering"
+    subgraph "LLM Engineering"
         S1[1. Introduction]
         S2[2. How LLMs Work]
         S3[3. Tokens & Tokenization]
@@ -68,7 +68,7 @@ flowchart LR
     S4 --> PROMPT[Prompt Engineering]
 ```
 
-> **Prerequisites:** Complete [Phase 2 Foundations](../foundations/README.md) and [Phase 3 Backend Engineering](../backend-engineering/README.md) before starting Phase 4.
+> **Prerequisites:** Complete [Foundations](../foundations/README.md) and [Backend Engineering](../backend-engineering/README.md) before starting this handbook.
 
 ---
 
@@ -258,7 +258,7 @@ These terms overlap but are not identical.
 | **Includes** | Data pipelines, ML training, deployment, evals | Prompts, tokens, context, streaming, provider APIs |
 | **Typical stack** | Python, PyTorch, feature stores, model serving | OpenAI/Anthropic SDKs, LangChain/LlamaIndex, vector DBs |
 | **Primary risk** | Data drift, model accuracy | Hallucination, cost blowout, prompt injection |
-| **This playbook** | Phases 1–7+ across all domains | Phase 4 focus |
+| **This playbook** | All domains | This handbook |
 
 ```mermaid
 graph TB
@@ -459,7 +459,7 @@ sequenceDiagram
 
 ## Why It Matters
 
-LLM engineering is the bridge between Phase 3 backend skills and advanced AI capabilities (RAG, agents, evaluation). Without this foundation:
+LLM engineering is the bridge between backend skills and advanced AI capabilities (RAG, agents, evaluation). Without this foundation:
 
 - You will misestimate **cost** (token math errors compound at scale).
 - You will hit **context limits** silently (truncated history → confused model).
@@ -772,10 +772,10 @@ async def chat_stream(body: dict):
 
 ### Prerequisites
 
-- [Phase 2 Foundations](../foundations/README.md) — software engineering, Python, databases
-- [Phase 3 Backend Engineering](../backend-engineering/README.md) — FastAPI, HTTP clients, architecture, error handling
+- [Foundations](../foundations/README.md) — software engineering, Python, databases
+- [Backend Engineering](../backend-engineering/README.md) — FastAPI, HTTP clients, architecture, error handling
 
-### Phase 4 — LLM Engineering (This Module)
+### — LLM Engineering (This Module)
 
 | # | Topic | Document |
 |---|-------|----------|
@@ -788,7 +788,7 @@ async def chat_stream(body: dict):
 
 - [HTTP Clients for AI Backends](../backend-engineering/http-clients-for-ai-backends.md) — retries, pooling, LLM API calls
 - [AI Backend Reference Architecture](../backend-engineering/ai-backend-reference-architecture.md) — chat, RAG, agent patterns
-- [Embeddings](../embeddings/README.md) — future RAG and semantic search (Phase 5+)
+- [Embeddings](../embeddings/README.md) — future RAG and semantic search 
 
 ### Next Topics
 
@@ -816,4 +816,4 @@ async def chat_stream(body: dict):
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 4 Section 1 release |
+| 1.0 | 2026-07-13 | Initial publication |

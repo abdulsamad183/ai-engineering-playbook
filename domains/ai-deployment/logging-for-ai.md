@@ -2,7 +2,7 @@
 title: "Logging for AI Applications"
 description: "Structured JSON logs, correlation IDs, agent and tool logging."
 domain: ai-deployment
-tags: [logging, structured-logs, tracing, phase-12]
+tags: [logging, structured-logs, tracing]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **7** of Phase 12.
+Section **7**.
 
 ## Structured Logging
 
@@ -63,4 +63,4 @@ Log each tool call: name, args hash, duration, success.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 12 Section 7 |
+| 1.0 | 2026-07-13 | Initial publication |

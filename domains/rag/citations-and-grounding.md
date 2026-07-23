@@ -2,7 +2,7 @@
 title: "Citations and Grounding"
 description: "Source attribution, evidence, confidence, traceability, and explainability in RAG answers."
 domain: rag
-tags: [rag, citations, grounding, traceability, phase-7]
+tags: [rag, citations, grounding, traceability]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **15** of Phase 7. Enterprise RAG requires **traceable** answers.
+Section **15**. Enterprise RAG requires **traceable** answers.
 
 ## Citation Models
 
@@ -58,4 +58,4 @@ def build_citation_footer(chunks: list) -> str:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 7 Section 15 |
+| 1.0 | 2026-07-13 | Initial publication |

@@ -2,7 +2,7 @@
 title: "OpenAI Agents SDK"
 description: "OpenAI Agents SDK — agents, handoffs, guardrails, tracing."
 domain: ai-agents
-tags: [ai-agents, OpenAI, Agents SDK, framework, phase-8]
+tags: [ai-agents, OpenAI, Agents SDK, framework]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

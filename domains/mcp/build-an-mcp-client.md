@@ -2,7 +2,7 @@
 title: "Build an MCP Client"
 description: "Production MCP client tutorial — discovery, connection, invocation, retries, streaming, testing."
 domain: mcp
-tags: [mcp, tutorial, client, python, phase-9]
+tags: [mcp, tutorial, client, python]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **16** of Phase 9.
+Section **16**.
 
 ## Client Architecture
 
@@ -100,4 +100,4 @@ Maintain `dict[server_id, ClientSession]`; route by tool prefix or registry.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 9 Section 16 |
+| 1.0 | 2026-07-13 | Initial publication |

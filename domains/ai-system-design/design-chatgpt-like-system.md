@@ -2,7 +2,7 @@
 title: "Design: ChatGPT-like System"
 description: "System design for conversational AI — streaming, memory, tools, multi-model routing, scaling."
 domain: ai-system-design
-tags: [system-design, chat, chatgpt, interview, phase-11]
+tags: [system-design, chat, chatgpt, interview]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -108,4 +108,4 @@ flowchart LR
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 11 Section 3 |
+| 1.0 | 2026-07-13 | Initial publication |

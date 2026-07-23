@@ -2,7 +2,7 @@
 title: "Prompt Versioning"
 description: "Version control, prompt repositories, naming conventions, changelogs, A/B testing, rollback strategies, and prompt libraries for production prompt management."
 domain: prompt-engineering
-tags: [prompt-engineering, versioning, git, repository, ab-testing, rollback, phase-5, production]
+tags: [prompt-engineering, versioning, git, repository, ab-testing, rollback, production]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -47,12 +47,12 @@ author: hp
 Prompts change frequently — sometimes more often than application code.
 Without versioning, you cannot reproduce results, compare quality, roll back failures, or audit what was deployed when.
 
-This document is **Section 12** of Phase 5 in the AI Engineering Playbook.
+This document is **Section 12** of this handbook.
 It covers the infrastructure and practices for managing prompts as versioned, testable, deployable assets.
 
 ```mermaid
 flowchart LR
-    subgraph "Phase 5: Prompt Engineering"
+    subgraph "Prompt Engineering"
         S9[9. Advanced Reasoning]
         S10[10. Prompt Chaining]
         S11[11. Prompt Lifecycle]
@@ -60,7 +60,7 @@ flowchart LR
     end
 
     S9 --> S10 --> S11 --> S12
-    S12 --> CE[Phase 6: Context Engineering]
+    S12 --> CE[Context Engineering]
 ```
 
 > **Prerequisites:** [Prompt Lifecycle](prompt-lifecycle.md) (Section 11) and [Git/GitHub Workflow](../foundations/git-github-workflow.md).
@@ -1010,9 +1010,9 @@ Branch protection prevents direct commits to production prompts.
 
 ### Next Topics
 
-- [Context Engineering](../context-engineering/README.md) — Phase 6
-- [Embeddings](../embeddings/README.md) — Phase 7
-- [AI Agents](../agent-architectures/README.md) — Phase 8+
+- [Context Engineering](../context-engineering/README.md)
+- [Embeddings](../embeddings/README.md)
+- [AI Agents](../agent-architectures/README.md)
 
 ---
 
@@ -1026,4 +1026,4 @@ Branch protection prevents direct commits to production prompts.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial version — Section 12, Phase 5 |
+| 1.0 | 2026-07-13 | Initial publication — Section 12 |

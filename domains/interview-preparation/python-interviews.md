@@ -2,7 +2,7 @@
 title: "Python Interviews for AI Engineers"
 description: "Python interview guide — data structures, async, GIL, decorators, performance, coding exercises."
 domain: interview-preparation
-tags: [interview, python, coding, phase-13]
+tags: [interview, python, coding]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

@@ -1,6 +1,6 @@
 ---
 title: "Prompt Patterns"
-description: "Section 5 of Phase 5 — reusable prompt building blocks: role, persona, goal, instruction, delimiter, constraint, style, output formatting, step-by-step, expert, and multi-role prompting."
+description: "Section 5 of this handbook — reusable prompt building blocks: role, persona, goal, instruction, delimiter, constraint, style, output formatting, step-by-step, expert, and multi-role prompting."
 domain: prompt-engineering
 tags: [prompt, prompt-pattern, production, intermediate, llm]
 status: published
@@ -19,7 +19,7 @@ author: hp
 
 # Prompt Patterns
 
-> Section 5 of Phase 5 — prompts are not magic strings. They are composable building blocks. Master these patterns to write prompts that are clear, testable, and production-ready.
+> Section 5 of this handbook — prompts are not magic strings. They are composable building blocks. Master these patterns to write prompts that are clear, testable, and production-ready.
 
 ## Table of Contents
 

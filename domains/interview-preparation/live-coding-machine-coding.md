@@ -2,7 +2,7 @@
 title: "Live Coding & Machine Coding Interviews"
 description: "Practical exercises — FastAPI, SQL, RAG, agents, streaming, auth, workers."
 domain: interview-preparation
-tags: [interview, live-coding, machine-coding, phase-13]
+tags: [interview, live-coding, machine-coding]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

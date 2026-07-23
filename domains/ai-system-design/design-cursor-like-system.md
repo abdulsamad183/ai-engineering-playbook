@@ -2,7 +2,7 @@
 title: "Design: Cursor-like AI Coding Assistant"
 description: "IDE coding assistant — indexing, semantic search, agents, diffs, multi-file reasoning."
 domain: ai-system-design
-tags: [system-design, cursor, coding-assistant, ide, phase-11]
+tags: [system-design, cursor, coding-assistant, ide]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -96,4 +96,4 @@ flowchart TB
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 11 Section 4 |
+| 1.0 | 2026-07-13 | Initial publication |

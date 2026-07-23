@@ -2,7 +2,7 @@
 title: "MCP Comparison Guides"
 description: "MCP vs REST, function calling, transports, primitives, multi-server, authentication strategies."
 domain: mcp
-tags: [mcp, comparison, decision-matrix, phase-9]
+tags: [mcp, comparison, decision-matrix]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -98,4 +98,4 @@ Decision matrices for MCP engineering choices.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 9 comparisons |
+| 1.0 | 2026-07-13 | Initial publication |

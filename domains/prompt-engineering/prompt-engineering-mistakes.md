@@ -18,7 +18,7 @@ author: hp
 
 # Prompt Engineering Mistakes
 
-> Section 17 of Phase 5 — the gap between a clever prompt demo and a production prompt system is a graveyard of predictable mistakes. This document catalogs the prompt failures that recur across teams, with symptoms, root causes, diagnostics, fixes, and prevention for each.
+> Section 17 of this handbook — the gap between a clever prompt demo and a production prompt system is a graveyard of predictable mistakes. This document catalogs the prompt failures that recur across teams, with symptoms, root causes, diagnostics, fixes, and prevention for each.
 
 ## Table of Contents
 
@@ -54,7 +54,7 @@ Each mistake follows a consistent diagnostic framework:
 | **Fix** | Concrete remediation steps |
 | **Prevention** | Practices that stop recurrence |
 
-Cross-references point to detailed guides in Phase 5.
+Cross-references point to detailed guides in this handbook.
 
 > **Production Standard:** When a prompt fails in production, check this list before blaming the model. Most prompt incidents are design failures, not capability limits.
 
@@ -1011,10 +1011,10 @@ See [Model Comparison Guide](../llm-engineering/model-comparison-guide.md).
 
 ### Prerequisites
 
-- Sections 1–12 of Phase 5 — see [Introduction](introduction-to-prompt-engineering.md)
+- Sections 1–12 of this handbook — see [Introduction](introduction-to-prompt-engineering.md)
 - [LLM Engineering Mistakes](../llm-engineering/llm-engineering-mistakes.md)
 
-### Phase 5 — Prompt Engineering
+### — Prompt Engineering
 
 | # | Topic | Document |
 |---|-------|----------|
@@ -1061,4 +1061,4 @@ See [Model Comparison Guide](../llm-engineering/model-comparison-guide.md).
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 5 release — Section 17 |
+| 1.0 | 2026-07-13 | Initial release — Section 17 |

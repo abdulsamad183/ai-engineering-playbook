@@ -39,7 +39,7 @@
 | **Prompt Pattern** | Reusable prompt templates | [prompt-pattern.md](prompt-pattern.md) |
 | **Agent Workflow** | Agent workflow designs | [agent-workflow.md](agent-workflow.md) |
 
-### Backend Code Templates (Phase 3)
+### Backend Code Templates
 
 | Template | Use For | File |
 |----------|---------|------|

@@ -1,6 +1,6 @@
 # Evaluation Framework Guides
 
-> Phase 10 Section 10 implementation guides.
+> Implementation guides.
 
 | Framework | Guide | Focus |
 |-----------|-------|-------|

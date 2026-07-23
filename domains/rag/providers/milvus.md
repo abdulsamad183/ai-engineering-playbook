@@ -2,7 +2,7 @@
 title: "Milvus for RAG"
 description: "Milvus distributed vector database — architecture, scaling, deployment, Python SDK."
 domain: rag
-tags: [rag, milvus, vector-database, distributed, phase-7]
+tags: [rag, milvus, vector-database, distributed]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

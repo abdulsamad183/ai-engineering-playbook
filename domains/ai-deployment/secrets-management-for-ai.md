@@ -2,7 +2,7 @@
 title: "Secrets Management for AI"
 description: "Env vars, rotation, Vault, API keys, secure configuration."
 domain: ai-deployment
-tags: [secrets, security, api-keys, phase-12]
+tags: [secrets, security, api-keys]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -17,7 +17,7 @@ author: hp
 
 ## Overview
 
-Section **5** of Phase 12.
+Section **5**.
 
 ## Practices
 
@@ -50,4 +50,4 @@ OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]  # fail fast if missing
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 12 Section 5 |
+| 1.0 | 2026-07-13 | Initial publication |

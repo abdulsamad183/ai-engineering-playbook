@@ -1,6 +1,6 @@
 # AI Evaluation Examples
 
-> Phase 10 patterns. See [AI Evaluation Handbook](../../domains/ai-evaluation/README.md).
+> patterns. See [AI Evaluation Handbook](../../domains/ai-evaluation/README.md).
 
 Uses `eval_utils.py` for shared patterns. Simplified implementations — install `ragas` / `deepeval` for production frameworks.
 

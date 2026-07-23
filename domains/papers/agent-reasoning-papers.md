@@ -2,7 +2,7 @@
 title: "Agent Reasoning Papers"
 description: "Engineering guide to ReAct, Tree of Thoughts, Reflexion, Voyager, and CAMEL — architectures, limitations, and production applications."
 domain: papers
-tags: [paper, agents, ReAct, ToT, Reflexion, Voyager, CAMEL, phase-papers]
+tags: [paper, agents, ReAct, ToT, Reflexion, Voyager, CAMEL]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

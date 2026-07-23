@@ -2,7 +2,7 @@
 title: "Chroma for RAG"
 description: "Chroma vector database — architecture, deployment, Python API, production considerations."
 domain: rag
-tags: [rag, chroma, vector-database, phase-7]
+tags: [rag, chroma, vector-database]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

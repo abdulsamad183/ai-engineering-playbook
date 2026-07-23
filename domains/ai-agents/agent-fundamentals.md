@@ -2,7 +2,7 @@
 title: "Agent Fundamentals"
 description: "Agent fundamentals — goals, tasks, capabilities, environment, perception, action, reasoning, feedback loops."
 domain: ai-agents
-tags: [ai-agents, fundamentals, perception, action, phase-8]
+tags: [ai-agents, fundamentals, perception, action]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **3** of Phase 8 — vocabulary for engineering discussions.
+Section **3** — vocabulary for engineering discussions.
 
 ## Core Concepts
 
@@ -69,4 +69,4 @@ Reflection loops use observations to correct course — see [Reasoning Patterns]
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 8 Section 3 |
+| 1.0 | 2026-07-13 | Initial publication |

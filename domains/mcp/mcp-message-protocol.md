@@ -2,7 +2,7 @@
 title: "MCP Message Protocol"
 description: "JSON-RPC messages — requests, responses, notifications, errors, IDs, correlation, serialization."
 domain: mcp
-tags: [mcp, protocol, json-rpc, messages, phase-9]
+tags: [mcp, protocol, json-rpc, messages]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **11** of Phase 9. MCP uses **JSON-RPC 2.0** messages over transports.
+Section **11**. MCP uses **JSON-RPC 2.0** messages over transports.
 
 ## Message Types
 
@@ -114,4 +114,4 @@ class JsonRpcRequest:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 9 Section 11 |
+| 1.0 | 2026-07-13 | Initial publication |

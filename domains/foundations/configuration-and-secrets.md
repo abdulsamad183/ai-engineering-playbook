@@ -753,7 +753,7 @@ def test_chunk_size_bounds(monkeypatch):
 ### Related Topics
 
 - [Backend Fundamentals for AI](../backend-engineering/backend-fundamentals-for-ai.md) — DI, lifespan, health checks
-- [Configuration Management for Backends](../backend-engineering/configuration-management-for-backends.md) — Phase 3 backend settings deep dive
+- [Configuration Management for Backends](../backend-engineering/configuration-management-for-backends.md) backend settings deep dive
 - [Testing Fundamentals](testing-fundamentals.md) — overriding settings in pytest
 - [Logging and Error Handling](../logging/logging-and-error-handling.md) — safe logging without leaking secrets
 

@@ -2,7 +2,7 @@
 title: "MCP Architecture"
 description: "Complete MCP architecture — client, transport, protocol messages, server, tools, resources, prompts, external systems."
 domain: mcp
-tags: [mcp, architecture, client, server, phase-9]
+tags: [mcp, architecture, client, server]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -19,7 +19,7 @@ author: hp
 
 ## Overview
 
-Section **2** of Phase 9.
+Section **2**.
 
 ```mermaid
 flowchart TD
@@ -70,4 +70,4 @@ sequenceDiagram
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 9 Section 2 |
+| 1.0 | 2026-07-13 | Initial publication |

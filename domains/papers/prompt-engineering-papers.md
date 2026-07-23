@@ -2,7 +2,7 @@
 title: "Prompt Engineering Papers"
 description: "Engineering guide to Chain-of-Thought, few-shot learning, and instruction tuning — the research behind modern prompting practices."
 domain: papers
-tags: [paper, prompting, chain-of-thought, few-shot, instruction-tuning, phase-papers]
+tags: [paper, prompting, chain-of-thought, few-shot, instruction-tuning]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

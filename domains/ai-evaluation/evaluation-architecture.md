@@ -2,7 +2,7 @@
 title: "Evaluation Architecture"
 description: "End-to-end evaluation pipeline — dataset through monitoring and iteration."
 domain: ai-evaluation
-tags: [ai-evaluation, architecture, pipeline, phase-10]
+tags: [ai-evaluation, architecture, pipeline]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **2** of Phase 10. The evaluation pipeline spans data, execution, scoring, and feedback loops.
+Section **2**. The evaluation pipeline spans data, execution, scoring, and feedback loops.
 
 ```mermaid
 flowchart TB
@@ -128,4 +128,4 @@ async def run_eval_harness(cases: list, system_fn) -> EvalRun:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 10 Section 2 |
+| 1.0 | 2026-07-13 | Initial publication |

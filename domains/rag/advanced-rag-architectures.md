@@ -2,7 +2,7 @@
 title: "Advanced RAG Architectures"
 description: "GraphRAG, RAPTOR, Self-RAG, CRAG, Agentic RAG, Corrective RAG, Modular RAG, multi-hop, knowledge graph RAG."
 domain: rag
-tags: [rag, GraphRAG, Self-RAG, agentic, advanced, phase-7]
+tags: [rag, GraphRAG, Self-RAG, agentic, advanced]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -20,7 +20,7 @@ author: hp
 
 ## Overview
 
-Section **18** of Phase 7.
+Section **18**.
 
 | Architecture | Idea | Production fit |
 |--------------|------|----------------|
@@ -68,4 +68,4 @@ Agent decides: search KB, search web, or answer from memory — prepares [AI Age
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 7 Section 18 |
+| 1.0 | 2026-07-13 | Initial publication |

@@ -2,7 +2,7 @@
 title: "Tool Use for AI Agents"
 description: "Tool calling, registry, selection, discovery, execution, chaining, validation, permissions, retries, parallel tools."
 domain: ai-agents
-tags: [ai-agents, tools, function-calling, MCP, phase-8]
+tags: [ai-agents, tools, function-calling, MCP]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -19,7 +19,7 @@ author: hp
 
 ## Overview
 
-Section **7** of Phase 8 — one of the largest agent topics.
+Section **7** — one of the largest agent topics.
 
 ```mermaid
 flowchart LR
@@ -75,4 +75,4 @@ LangGraph: tool nodes. OpenAI Agents SDK: `function_tool`. PydanticAI: typed too
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 8 Section 7 |
+| 1.0 | 2026-07-13 | Initial publication |

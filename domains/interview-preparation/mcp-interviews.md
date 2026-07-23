@@ -2,7 +2,7 @@
 title: "MCP Interviews for AI Engineers"
 description: "MCP interview questions — architecture, tools, resources, transport, security, production."
 domain: interview-preparation
-tags: [interview, mcp, protocol, phase-13]
+tags: [interview, mcp, protocol]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

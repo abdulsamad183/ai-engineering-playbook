@@ -28,5 +28,5 @@ export GOOGLE_API_KEY=...
 
 ## See Also
 
-- [Phase 4 LLM Engineering](../../domains/llm-engineering/README.md)
+- [LLM Engineering](../../domains/llm-engineering/README.md)
 - [Provider Guides](../../domains/llm-engineering/providers/)

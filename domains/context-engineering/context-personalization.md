@@ -2,7 +2,7 @@
 title: "Context Personalization"
 description: "Personalized context — user profiles, preferences, behavioral signals, long-term adaptation, profile evolution, and privacy."
 domain: context-engineering
-tags: [context-engineering, personalization, user-profile, privacy, phase-6]
+tags: [context-engineering, personalization, user-profile, privacy]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -41,7 +41,7 @@ author: hp
 
 **Personalization** tailors assembled context to the individual — expertise level, language, product usage, stated preferences — without conflating it with unconstrained memory.
 
-Section **15** of Phase 6.
+Section **15**.
 
 ```mermaid
 flowchart LR
@@ -191,4 +191,4 @@ def personalization_blocks(profile: UserProfile) -> list[str]:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication — Phase 6 Section 15 |
+| 1.0 | 2026-07-13 | Initial publication |

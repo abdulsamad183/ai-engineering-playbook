@@ -2,7 +2,7 @@
 title: "Evaluation Datasets"
 description: "Golden, test, benchmark, synthetic, adversarial datasets — versioning, quality, ground truth."
 domain: ai-evaluation
-tags: [ai-evaluation, datasets, golden-set, versioning, phase-10]
+tags: [ai-evaluation, datasets, golden-set, versioning]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **3** of Phase 10. Datasets are the foundation of reproducible evaluation.
+Section **3**. Datasets are the foundation of reproducible evaluation.
 
 ## Dataset Types
 
@@ -98,4 +98,4 @@ def write_jsonl(cases: list[dict], path: str) -> None:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 10 Section 3 |
+| 1.0 | 2026-07-13 | Initial publication |

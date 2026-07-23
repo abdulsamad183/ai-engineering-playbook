@@ -2,7 +2,7 @@
 title: "MCP Resources"
 description: "MCP resources — static/dynamic, URI design, metadata, discovery, pagination, access control, caching."
 domain: mcp
-tags: [mcp, resources, URI, discovery, phase-9]
+tags: [mcp, resources, URI, discovery]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **7** of Phase 9. Resources provide **addressable context** to hosts without executing tools.
+Section **7**. Resources provide **addressable context** to hosts without executing tools.
 
 ## Types
 
@@ -58,4 +58,4 @@ Client caches by `(uri, etag)` with TTL; invalidate on `resources/list_changed` 
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 9 Section 7 |
+| 1.0 | 2026-07-13 | Initial publication |

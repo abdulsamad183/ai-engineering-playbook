@@ -1,6 +1,6 @@
 ---
 title: "Prompt Templates Guide"
-description: "Section 6 of Phase 5 — reusable prompt templates for QA, summarization, classification, extraction, translation, code generation, code review, documentation, and more."
+description: "Section 6 of this handbook — reusable prompt templates for QA, summarization, classification, extraction, translation, code generation, code review, documentation, and more."
 domain: prompt-engineering
 tags: [prompt, prompt-pattern, production, intermediate, templates]
 status: published
@@ -18,7 +18,7 @@ author: hp
 
 # Prompt Templates Guide
 
-> Section 6 of Phase 5 — stop rewriting prompts from scratch. This guide defines a generic template structure and catalogs reusable templates for the most common AI engineering tasks. Production prompts belong in versioned files, not scattered across your codebase.
+> Section 6 of this handbook — stop rewriting prompts from scratch. This guide defines a generic template structure and catalogs reusable templates for the most common AI engineering tasks. Production prompts belong in versioned files, not scattered across your codebase.
 
 ## Table of Contents
 

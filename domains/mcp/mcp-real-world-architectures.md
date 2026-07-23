@@ -2,7 +2,7 @@
 title: "Real-World MCP Architectures"
 description: "Production architectures — coding assistant, enterprise KB, research agent, multi-agent, internal tools, ops."
 domain: mcp
-tags: [mcp, architecture, case-study, production, phase-9]
+tags: [mcp, architecture, case-study, production]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **20** of Phase 9 — six production architecture patterns.
+Section **20** — six production architecture patterns.
 
 ---
 
@@ -108,7 +108,7 @@ flowchart TB
 
 ## Navigation
 
-- [Comparison Guides](mcp-comparison-guides.md) · [Phase 9 Hub](README.md)
+- [Comparison Guides](mcp-comparison-guides.md) · [Hub](README.md)
 
 ---
 
@@ -116,4 +116,4 @@ flowchart TB
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 9 Section 20 |
+| 1.0 | 2026-07-13 | Initial publication |

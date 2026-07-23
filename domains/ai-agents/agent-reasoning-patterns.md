@@ -2,7 +2,7 @@
 title: "Agent Reasoning Patterns"
 description: "ReAct, reflection, planning, ToT, debate, self-consistency — architecture, workflows, production tradeoffs."
 domain: ai-agents
-tags: [ai-agents, ReAct, reflection, planning, reasoning, phase-8]
+tags: [ai-agents, ReAct, reflection, planning, reasoning]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **4** of Phase 8.
+Section **4**.
 
 | Pattern | Flow | Production use |
 |---------|------|----------------|
@@ -80,4 +80,4 @@ Stop with: Final Answer: ... when done."""
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 8 Section 4 |
+| 1.0 | 2026-07-13 | Initial publication |

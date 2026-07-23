@@ -1,7 +1,7 @@
-# Phase 7: Retrieval-Augmented Generation (RAG)
+# Retrieval-Augmented Generation (RAG)
 
 > The definitive engineering handbook for designing, implementing, evaluating, and scaling production RAG systems.
-> **Prerequisites:** [Phase 6 Context Engineering](../context-engineering/README.md) · [Phase 5 Prompt Engineering](../prompt-engineering/README.md) · [Phase 4 LLM Engineering](../llm-engineering/README.md)
+> **Prerequisites:** [Context Engineering](../context-engineering/README.md) · [Prompt Engineering](../prompt-engineering/README.md) · [LLM Engineering](../llm-engineering/README.md)
 
 ---
 
@@ -116,7 +116,7 @@ flowchart TB
 
 ---
 
-## Phase 7 Completion Checklist
+## Completion Checklist
 
 - [ ] Read all 21 sections + 7 provider guides
 - [ ] Implement ingest → chunk → embed → index pipeline
@@ -130,6 +130,6 @@ flowchart TB
 
 ## See Also
 
-- [Context Engineering](../context-engineering/README.md) — Phase 6
+- [Context Engineering](../context-engineering/README.md)
 - [RAG Query Template](../../prompts/templates/rag-query.md)
 - [Master Index](../../meta/indexes/MASTER-INDEX.md)

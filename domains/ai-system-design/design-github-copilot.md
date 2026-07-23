@@ -2,7 +2,7 @@
 title: "Design: GitHub Copilot"
 description: "IDE completion pipeline — repository context, prompt assembly, latency, privacy, caching."
 domain: ai-system-design
-tags: [system-design, copilot, completions, ide, phase-11]
+tags: [system-design, copilot, completions, ide]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -93,4 +93,4 @@ sequenceDiagram
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 11 Section 5 |
+| 1.0 | 2026-07-13 | Initial publication |

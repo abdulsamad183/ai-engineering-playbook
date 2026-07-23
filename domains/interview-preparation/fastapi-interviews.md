@@ -2,7 +2,7 @@
 title: "FastAPI Interviews for AI Engineers"
 description: "FastAPI interview questions — lifecycle, DI, async, streaming, WebSockets, security, testing."
 domain: interview-preparation
-tags: [interview, fastapi, api, phase-13]
+tags: [interview, fastapi, api]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

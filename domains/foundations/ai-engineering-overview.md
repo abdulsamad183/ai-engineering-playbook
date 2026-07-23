@@ -271,16 +271,16 @@ This maps directly to [Clean Architecture](software-engineering-for-ai.md#clean-
 
 ## AI Engineering Roadmap
 
-This repository's learning path is organized in phases. Phase 2 (this module) is the prerequisite for everything that follows.
+This repository's learning path starts with foundations. This module is the prerequisite for everything that follows.
 
 | Phase | Focus | Unlocks |
 |-------|-------|---------|
-| **Phase 2** | Foundations (this module) | All subsequent phases |
-| Phase 3 | LLM integration | Prompt engineering, streaming |
-| Phase 4 | Embeddings and retrieval | RAG systems |
-| Phase 5 | Agents and workflows | MCP, multi-agent systems |
-| Phase 6 | Evaluation | Quality assurance at scale |
-| Phase 7 | Production deployment | Docker, CI/CD, monitoring |
+| **Foundations** | Foundations (this module) | All later modules |
+| LLM integration | Prompt engineering, streaming |
+| Embeddings and retrieval | RAG systems |
+| Agents and workflows | MCP, multi-agent systems |
+| Evaluation | Quality assurance at scale |
+| Production deployment | Docker, CI/CD, monitoring |
 
 See the full [Learning Roadmap](../../meta/roadmap.md) for detailed milestones.
 
@@ -462,9 +462,9 @@ None — this is the entry point for the foundations module.
 
 ### Future Reading
 
-- [LLM Engineering](../llm-engineering/README.md) — Phase 3
-- [RAG Systems](../rag/README.md) — Phase 4
-- [AI Agents](../ai-agents/README.md) — Phase 5
+- [LLM Engineering](../llm-engineering/README.md)
+- [RAG Systems](../rag/README.md)
+- [AI Agents](../ai-agents/README.md)
 - [AI System Design](../ai-system-design/README.md) — Advanced architecture
 
 ---

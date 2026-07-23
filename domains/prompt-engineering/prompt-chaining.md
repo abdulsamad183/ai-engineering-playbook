@@ -2,7 +2,7 @@
 title: "Prompt Chaining"
 description: "Sequential prompting, multi-step workflows, pipeline orchestration, modular prompts, and reusable chains for production LLM applications."
 domain: prompt-engineering
-tags: [prompt-engineering, prompt-chaining, orchestration, workflows, pipelines, phase-5, production]
+tags: [prompt-engineering, prompt-chaining, orchestration, workflows, pipelines, production]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -50,12 +50,12 @@ author: hp
 A single monolithic prompt asking an LLM to research, analyze, draft, edit, and format a report will fail unpredictably as complexity grows.
 **Prompt chaining** breaks work into discrete steps where each LLM call has a narrow, testable responsibility and passes structured output to the next step.
 
-This document is **Section 10** of Phase 5 in the AI Engineering Playbook.
+This document is **Section 10** of this handbook.
 Chaining is the bridge between prompt design and workflow orchestration — the pattern underlying RAG pipelines, agent systems, and production AI backends.
 
 ```mermaid
 flowchart LR
-    subgraph "Phase 5: Prompt Engineering"
+    subgraph "Prompt Engineering"
         S9[9. Advanced Reasoning]
         S10[10. Prompt Chaining]
         S11[11. Prompt Lifecycle]
@@ -67,7 +67,7 @@ flowchart LR
     S10 --> AG[AI Agents]
 ```
 
-> **Prerequisites:** Sections 1–9 of Phase 5, especially [Advanced Reasoning Strategies](advanced-reasoning-strategies.md).
+> **Prerequisites:** Sections 1–9 of this handbook, especially [Advanced Reasoning Strategies](advanced-reasoning-strategies.md).
 
 ---
 
@@ -998,4 +998,4 @@ Add intermediate output validation and per-chunk error handling.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial version — Section 10, Phase 5 |
+| 1.0 | 2026-07-13 | Initial publication — Section 10 |

@@ -2,7 +2,7 @@
 title: "Context Selection"
 description: "How production systems decide what enters the prompt — relevance scoring, filtering, prioritization, deduplication, freshness, and business rules."
 domain: context-engineering
-tags: [context-engineering, selection, filtering, relevance, phase-6]
+tags: [context-engineering, selection, filtering, relevance]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -44,7 +44,7 @@ author: hp
 
 Context sources produce **candidates** — memory chunks, retrieved docs, tool outputs, policy snippets. **Selection** filters and prioritizes before ranking and compression.
 
-Section **7** of Phase 6.
+Section **7**.
 
 ```mermaid
 flowchart TD
@@ -239,4 +239,4 @@ def select(candidates: list[Candidate], user: UserContext, min_score: float) -> 
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication — Phase 6 Section 7 |
+| 1.0 | 2026-07-13 | Initial publication |

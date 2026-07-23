@@ -2,7 +2,7 @@
 title: "Debugging Interviews for AI Engineers"
 description: "Debug scenarios — slow APIs, hallucinations, retrieval, agents, Docker, streaming."
 domain: interview-preparation
-tags: [interview, debugging, troubleshooting, phase-13]
+tags: [interview, debugging, troubleshooting]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

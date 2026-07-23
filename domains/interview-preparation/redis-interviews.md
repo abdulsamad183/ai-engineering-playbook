@@ -2,7 +2,7 @@
 title: "Redis Interviews for AI Engineers"
 description: "Redis interviews — caching, pub/sub, streams, locks, rate limiting, sessions."
 domain: interview-preparation
-tags: [interview, redis, caching, phase-13]
+tags: [interview, redis, caching]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

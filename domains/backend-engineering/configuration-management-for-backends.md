@@ -1,6 +1,6 @@
 ---
 title: "Configuration Management for Backends"
-description: "Phase 3 deep dive into backend configuration — .env patterns, Pydantic settings classes, environment separation, secrets wiring, feature flags, and runtime configuration for AI services."
+description: "deep dive into backend configuration — .env patterns, Pydantic settings classes, environment separation, secrets wiring, feature flags, and runtime configuration for AI services."
 domain: backend-engineering
 tags: [configuration, settings, secrets, feature-flags, pydantic, production, backend, advanced]
 status: published
@@ -19,7 +19,7 @@ author: hp
 
 # Configuration Management for Backends
 
-> Phase 3 reference for wiring configuration into production AI backends — typed settings, environment separation, secrets, feature flags, and safe runtime overrides.
+> reference for wiring configuration into production AI backends — typed settings, environment separation, secrets, feature flags, and safe runtime overrides.
 
 ## Table of Contents
 
@@ -49,8 +49,8 @@ author: hp
 
 Configuration management is how your AI backend **learns where it runs, which models to call, and which features are enabled** — without code changes or redeploys for every toggle.
 
-Phase 2 covered the foundations in [Configuration and Secrets](../foundations/configuration-and-secrets.md).
-This document is the **Phase 3 backend deep dive**: how settings classes integrate with FastAPI, how environments stay isolated, and how feature flags control AI behavior in production.
+Earlier modules covered the foundations in [Configuration and Secrets](../foundations/configuration-and-secrets.md).
+This document is a **deep dive**: how settings classes integrate with FastAPI, how environments stay isolated, and how feature flags control AI behavior in production.
 
 ```mermaid
 graph TB
@@ -740,7 +740,7 @@ Never depend on a developer's local `.env` in CI.
 
 ### Prerequisites
 
-- [Configuration and Secrets](../foundations/configuration-and-secrets.md) — Phase 2 foundations (required)
+- [Configuration and Secrets](../foundations/configuration-and-secrets.md) foundations (required)
 - [Software Engineering for AI](../foundations/software-engineering-for-ai.md) — configuration management overview
 - [Backend Fundamentals for AI](backend-fundamentals-for-ai.md) — DI and lifespan
 
@@ -774,4 +774,4 @@ Never depend on a developer's local `.env` in CI.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 3 release |
+| 1.0 | 2026-07-13 | Initial release |

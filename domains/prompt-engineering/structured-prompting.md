@@ -1,6 +1,6 @@
 ---
 title: "Structured Prompting"
-description: "Section 7 of Phase 5 — XML, JSON, Markdown, and tagged prompting styles compared, with hierarchy, parsing, validation, and production workflows."
+description: "Section 7 of this handbook — XML, JSON, Markdown, and tagged prompting styles compared, with hierarchy, parsing, validation, and production workflows."
 domain: prompt-engineering
 tags: [prompt, structured-output, production, intermediate, xml, json]
 status: published
@@ -18,7 +18,7 @@ author: hp
 
 # Structured Prompting
 
-> Section 7 of Phase 5 — structure is a contract. Whether you wrap inputs in XML tags, request JSON outputs, or format prompts in Markdown, structured prompting makes prompts parseable, testable, and safe to deploy at scale.
+> Section 7 of this handbook — structure is a contract. Whether you wrap inputs in XML tags, request JSON outputs, or format prompts in Markdown, structured prompting makes prompts parseable, testable, and safe to deploy at scale.
 
 ## Table of Contents
 

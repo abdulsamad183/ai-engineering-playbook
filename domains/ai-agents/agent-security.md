@@ -2,7 +2,7 @@
 title: "Agent Security"
 description: "Agent security — tool permissions, injection, sandboxing, secrets, approval gates, resource limits."
 domain: ai-agents
-tags: [ai-agents, security, sandbox, injection, phase-8]
+tags: [ai-agents, security, sandbox, injection]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **18** of Phase 8.
+Section **18**.
 
 | Threat | Mitigation |
 |--------|------------|
@@ -48,4 +48,4 @@ Destructive tools require HITL — see [Human-in-the-Loop](human-in-the-loop.md)
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 8 Section 18 |
+| 1.0 | 2026-07-13 | Initial publication |

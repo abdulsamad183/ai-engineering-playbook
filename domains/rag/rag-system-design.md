@@ -2,7 +2,7 @@
 title: "RAG System Design"
 description: "Architecture patterns for enterprise search, knowledge base, document chat, code search, legal, medical, support AI."
 domain: rag
-tags: [rag, system-design, architecture, phase-7]
+tags: [rag, system-design, architecture]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -19,7 +19,7 @@ author: hp
 
 ## Overview
 
-Section **20** of Phase 7 — reference architectures by product type.
+Section **20** — reference architectures by product type.
 
 ## Enterprise Search
 
@@ -71,4 +71,4 @@ flowchart TB
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 7 Section 20 |
+| 1.0 | 2026-07-13 | Initial publication |

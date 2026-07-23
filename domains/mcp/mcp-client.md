@@ -2,7 +2,7 @@
 title: "MCP Client"
 description: "MCP client architecture — connection, discovery, capability negotiation, tool invocation, streaming, retries."
 domain: mcp
-tags: [mcp, client, connection, retry, phase-9]
+tags: [mcp, client, connection, retry]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **5** of Phase 9.
+Section **5**.
 
 ```mermaid
 flowchart TD
@@ -74,4 +74,4 @@ async def run_client():
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 9 Section 5 |
+| 1.0 | 2026-07-13 | Initial publication |

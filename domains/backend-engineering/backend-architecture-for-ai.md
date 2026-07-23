@@ -1,6 +1,6 @@
 ---
 title: "Backend Architecture for AI"
-description: "Phase 3 deep dive into backend architecture for AI applications — responsibilities, request lifecycle, stateless/stateful design, layered and clean architecture, hexagonal patterns, repository and service layers, dependency injection, and configuration management."
+description: "deep dive into backend architecture for AI applications — responsibilities, request lifecycle, stateless/stateful design, layered and clean architecture, hexagonal patterns, repository and service layers, dependency injection, and configuration management."
 domain: backend-engineering
 tags: [backend, architecture, clean-architecture, hexagonal, production, advanced]
 status: published
@@ -22,7 +22,7 @@ author: hp
 
 # Backend Architecture for AI
 
-> Phase 3 reference for structuring production AI backends — from request lifecycle through clean architecture, ports and adapters, and configuration discipline.
+> reference for structuring production AI backends — from request lifecycle through clean architecture, ports and adapters, and configuration discipline.
 
 ## Table of Contents
 
@@ -54,7 +54,7 @@ author: hp
 
 Backend architecture defines **how responsibilities are divided** across your AI service — what the HTTP layer owns, where RAG logic lives, how external systems are abstracted, and how the system scales under load.
 
-This document is a **Phase 3 deep dive**. It assumes you have read:
+This document is a **deep dive**. It assumes you have read:
 
 - [Backend Fundamentals for AI](backend-fundamentals-for-ai.md) — HTTP lifecycle, middleware, async, streaming
 - [Software Engineering for AI](../foundations/software-engineering-for-ai.md) — SOLID, layered structure, DI concepts
@@ -1141,4 +1141,4 @@ async def reply(self, user_id: str, session_id: str, message: str) -> str:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 3 release |
+| 1.0 | 2026-07-13 | Initial release |

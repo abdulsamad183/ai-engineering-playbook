@@ -2,7 +2,7 @@
 title: "LLM Engineering Interviews"
 description: "LLM interview guide — tokens, context, sampling, structured outputs, function calling, streaming, cost."
 domain: interview-preparation
-tags: [interview, llm, tokens, function-calling, phase-13]
+tags: [interview, llm, tokens, function-calling]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

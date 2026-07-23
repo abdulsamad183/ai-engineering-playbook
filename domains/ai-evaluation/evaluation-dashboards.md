@@ -2,7 +2,7 @@
 title: "Evaluation Dashboards"
 description: "Quality, latency, cost, reliability dashboards — engineering and executive views."
 domain: ai-evaluation
-tags: [ai-evaluation, dashboards, monitoring, metrics, phase-10]
+tags: [ai-evaluation, dashboards, monitoring, metrics]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **17** of Phase 10.
+Section **17**.
 
 ```mermaid
 flowchart TB
@@ -68,4 +68,4 @@ flowchart TB
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 10 Section 17 |
+| 1.0 | 2026-07-13 | Initial publication |

@@ -2,7 +2,7 @@
 title: "Weaviate for RAG"
 description: "Weaviate vector database — GraphQL API, hybrid search, modules, deployment."
 domain: rag
-tags: [rag, weaviate, vector-database, hybrid-search, phase-7]
+tags: [rag, weaviate, vector-database, hybrid-search]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

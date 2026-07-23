@@ -2,7 +2,7 @@
 title: "Behavioral & Leadership Interviews"
 description: "STAR method, ownership, conflict, failure, mentoring, AI-specific behavioral scenarios."
 domain: interview-preparation
-tags: [interview, behavioral, leadership, star, phase-13]
+tags: [interview, behavioral, leadership, star]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

@@ -2,7 +2,7 @@
 title: "Introduction to Agent Engineering"
 description: "Foundation for agent engineering — what agents are, agent vs workflow/chatbot/RAG, lifecycle, maturity levels, and modern ecosystem."
 domain: ai-agents
-tags: [ai-agents, foundation, autonomous-systems, production, phase-8]
+tags: [ai-agents, foundation, autonomous-systems, production]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -49,11 +49,11 @@ author: hp
 
 An **AI agent** is not an LLM with tools bolted on. It is a **software system** with goals, state, memory, planning, tool execution, observation handling, and termination conditions — orchestrated around one or more language models for reasoning.
 
-Section **1** of Phase 8.
+Section **1**.
 
 ```mermaid
 flowchart LR
-    subgraph "Phase 8: Agent Engineering"
+    subgraph "Agent Engineering"
         S1[1. Introduction]
         S2[2. Architecture]
         S3[3. Fundamentals]
@@ -62,7 +62,7 @@ flowchart LR
     S1 --> S2 --> S3 --> S4
 ```
 
-> **Prerequisites:** [Phase 7 RAG](../rag/README.md) · [Phase 6 Context Engineering](../context-engineering/README.md) · [Phase 5 Prompt Engineering](../prompt-engineering/README.md) · [Phase 4 LLM Engineering](../llm-engineering/README.md)
+> **Prerequisites:** [RAG](../rag/README.md) · [Context Engineering](../context-engineering/README.md) · [Prompt Engineering](../prompt-engineering/README.md) · [LLM Engineering](../llm-engineering/README.md)
 
 ---
 
@@ -291,4 +291,4 @@ class MinimalAgent:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 8 Section 1 |
+| 1.0 | 2026-07-13 | Initial publication |

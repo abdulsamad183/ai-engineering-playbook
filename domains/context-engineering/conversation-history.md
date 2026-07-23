@@ -2,7 +2,7 @@
 title: "Conversation History"
 description: "History management for AI applications — pruning, summarization, compression, importance scoring, replay, threads, and branching."
 domain: context-engineering
-tags: [context-engineering, history, pruning, summarization, phase-6]
+tags: [context-engineering, history, pruning, summarization]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -43,7 +43,7 @@ author: hp
 
 **Conversation history** is the transcript of user and assistant turns. In production it is a **budgeted, curated** input — pruned, scored, and compressed like any other context source.
 
-Section **6** of Phase 6.
+Section **6**.
 
 ```mermaid
 flowchart LR
@@ -224,4 +224,4 @@ def build_history_context(messages: list[Message], budget: int) -> list[dict]:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication — Phase 6 Section 6 |
+| 1.0 | 2026-07-13 | Initial publication |

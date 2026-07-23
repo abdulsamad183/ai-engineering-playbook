@@ -578,7 +578,7 @@ async def consume_stream(redis_client: redis.Redis, stream: str, group: str, con
 
 ## Python Client Patterns
 
-> **Phase 3 deep dive:** Backend service architecture, connection lifecycle, caching services, job queues, and distributed locks — see [Redis Backend Patterns for AI](redis-backend-patterns-for-ai.md).
+> **Deep dive:** Backend service architecture, connection lifecycle, caching services, job queues, and distributed locks — see [Redis Backend Patterns for AI](redis-backend-patterns-for-ai.md).
 
 ### Connection Setup
 

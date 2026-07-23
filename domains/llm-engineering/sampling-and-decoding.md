@@ -18,7 +18,7 @@ author: hp
 
 # Sampling and Decoding
 
-> Section 10 of Phase 4 — every token your LLM emits is the result of a decoding decision. Master these parameters and you control the tradeoff between creativity, consistency, and cost.
+> Section 10 of this handbook — every token your LLM emits is the result of a decoding decision. Master these parameters and you control the tradeoff between creativity, consistency, and cost.
 
 ## Table of Contents
 
@@ -794,7 +794,7 @@ log.info(
 ### Prerequisites
 
 - [LLM Inference](llm-inference.md) — Section 9: prefill, decode, generation loop
-- Sections 1–8 of Phase 4 — tokens, API basics
+- Sections 1–8 of this handbook — tokens, API basics
 
 ### Related Topics
 
@@ -824,4 +824,4 @@ log.info(
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 4 release — Section 10 |
+| 1.0 | 2026-07-13 | Initial release — Section 10 |

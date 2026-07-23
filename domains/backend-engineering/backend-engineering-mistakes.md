@@ -1,6 +1,6 @@
 ---
 title: "Backend Engineering Mistakes"
-description: "Phase 3 troubleshooting guide for AI backend failures — blocking async, session leaks, missing indexes, poor API design, large payloads, memory leaks, circular imports, bad folder structure, hardcoded config, missing validation, weak auth, and improper error handling — with symptoms, root cause, diagnosis, fix, and prevention."
+description: "troubleshooting guide for AI backend failures — blocking async, session leaks, missing indexes, poor API design, large payloads, memory leaks, circular imports, bad folder structure, hardcoded config, missing validation, weak auth, and improper error handling — with symptoms, root cause, diagnosis, fix, and prevention."
 domain: backend-engineering
 tags: [backend, debugging, production, troubleshooting, mistakes, advanced]
 status: published
@@ -20,7 +20,7 @@ author: hp
 
 # Backend Engineering Mistakes
 
-> Phase 3 troubleshooting guide for the backend failures that take down AI services in production — structured as symptoms, root cause, diagnosis, fix, and prevention for each mistake.
+> troubleshooting guide for the backend failures that take down AI services in production — structured as symptoms, root cause, diagnosis, fix, and prevention for each mistake.
 
 ## Table of Contents
 
@@ -57,7 +57,7 @@ Each mistake follows the same troubleshooting structure:
 | **Fix** | Code and configuration changes that resolve the issue |
 | **Prevention** | Practices and review checks that stop recurrence |
 
-This document is a **Phase 3 backend-specific** companion to [Common Engineering Mistakes](../common-mistakes/common-engineering-mistakes.md). It assumes you have read:
+This document is a **deep dive** companion to [Common Engineering Mistakes](../common-mistakes/common-engineering-mistakes.md). It assumes you have read:
 
 | Prerequisite | Covers |
 |--------------|--------|
@@ -1265,4 +1265,4 @@ Before launching an AI backend to production:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 3 release — 12 mistake categories with full troubleshooting structure |
+| 1.0 | 2026-07-13 | Initial release — 12 mistake categories with full troubleshooting structure |

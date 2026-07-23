@@ -20,5 +20,5 @@
 
 ## See Also
 
-- [Phase 5 Prompt Engineering](../../domains/prompt-engineering/README.md)
+- [Prompt Engineering](../../domains/prompt-engineering/README.md)
 - [LLM Examples](../llm-applications/)

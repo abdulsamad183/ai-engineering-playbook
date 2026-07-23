@@ -1,6 +1,6 @@
 # Agent Architectures
 
-> Multi-agent and system architecture patterns are documented in Phase 8.
+> Multi-agent and system architecture patterns are documented in this handbook.
 
 ## Primary Documentation
 
@@ -10,5 +10,5 @@
 
 ## See Also
 
-- [Phase 8 AI Agents](../ai-agents/README.md)
+- [AI Agents](../ai-agents/README.md)
 - [Multi-Agent Systems Domain](../multi-agent-systems/README.md)

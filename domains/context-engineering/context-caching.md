@@ -2,7 +2,7 @@
 title: "Context Caching"
 description: "Caching strategies for context assembly — prompt caching, retrieval, embeddings, conversation, memory, and invalidation."
 domain: context-engineering
-tags: [context-engineering, caching, latency, cost, phase-6]
+tags: [context-engineering, caching, latency, cost]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -41,7 +41,7 @@ author: hp
 
 Context assembly repeats work across turns — same policies, same embeddings, similar queries. **Caching** at multiple layers cuts latency and provider costs.
 
-Section **14** of Phase 6.
+Section **14**.
 
 ```mermaid
 flowchart TB
@@ -183,4 +183,4 @@ async def cached_retrieve(redis, key: str, fetch_fn, ttl: int = 300):
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication — Phase 6 Section 14 |
+| 1.0 | 2026-07-13 | Initial publication |

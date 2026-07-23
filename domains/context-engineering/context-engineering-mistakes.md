@@ -2,7 +2,7 @@
 title: "Context Engineering Mistakes"
 description: "Troubleshooting guide for context failures — overflow, irrelevant context, stale memory, duplication, ranking, compression, and personalization drift."
 domain: context-engineering
-tags: [context-engineering, mistakes, troubleshooting, anti-patterns, phase-6]
+tags: [context-engineering, mistakes, troubleshooting, anti-patterns]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -40,7 +40,7 @@ author: hp
 
 ## Overview
 
-Section **20** of Phase 6 — practical diagnostics when context systems fail in production.
+Section **20** — practical diagnostics when context systems fail in production.
 
 ---
 
@@ -176,7 +176,7 @@ Section **20** of Phase 6 — practical diagnostics when context systems fail in
 
 ### Prerequisites
 
-- All Phase 6 sections; start with [Introduction](introduction-to-context-engineering.md)
+- All sections in this handbook; start with [Introduction](introduction-to-context-engineering.md)
 
 ### Related Topics
 
@@ -193,4 +193,4 @@ Section **20** of Phase 6 — practical diagnostics when context systems fail in
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication — Phase 6 Section 20 |
+| 1.0 | 2026-07-13 | Initial publication |

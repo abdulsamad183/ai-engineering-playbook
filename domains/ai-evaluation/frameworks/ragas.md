@@ -2,7 +2,7 @@
 title: "RAGAS Evaluation Framework"
 description: "RAGAS architecture, metrics, pipelines, configuration, Python examples, production usage."
 domain: ai-evaluation
-tags: [ai-evaluation, ragas, rag, framework, phase-10]
+tags: [ai-evaluation, ragas, rag, framework]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

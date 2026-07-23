@@ -1,7 +1,7 @@
-# Phase 9: Model Context Protocol (MCP) & AI Protocol Engineering
+# Model Context Protocol (MCP) & AI Protocol Engineering
 
 > Production-grade handbook for designing, implementing, securing, and scaling MCP systems.
-> **Prerequisites:** [Phase 8 AI Agents](../ai-agents/README.md) · [Tool Use](../ai-agents/tool-use.md) · [LLM Tool Calling](../llm-engineering/function-calling-and-tools.md)
+> **Prerequisites:** [AI Agents](../ai-agents/README.md) · [Tool Use](../ai-agents/tool-use.md) · [LLM Tool Calling](../llm-engineering/function-calling-and-tools.md)
 
 ---
 

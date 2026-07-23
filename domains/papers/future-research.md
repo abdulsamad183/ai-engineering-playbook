@@ -2,7 +2,7 @@
 title: "Future Research"
 description: "Open problems and research directions in AI engineering — agent reliability, memory, evaluation, and compound systems."
 domain: papers
-tags: [papers, future, research, open-problems, phase-papers]
+tags: [papers, future, research, open-problems]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

@@ -2,7 +2,7 @@
 title: "Paper Comparison Matrix Cheat Sheet"
 description: "Quick side-by-side decisions — ReAct vs Reflexion, GraphRAG vs RAPTOR, DSPy vs PE, and more."
 domain: papers
-tags: [cheat-sheet, comparison, papers, phase-papers]
+tags: [cheat-sheet, comparison, papers]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

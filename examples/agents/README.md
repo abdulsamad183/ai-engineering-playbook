@@ -1,6 +1,6 @@
 # Agent Engineering Examples
 
-> Phase 8 patterns. See [AI Agents](../../domains/ai-agents/README.md).
+> patterns. See [AI Agents](../../domains/ai-agents/README.md).
 
 | Example | Pattern |
 |---------|---------|

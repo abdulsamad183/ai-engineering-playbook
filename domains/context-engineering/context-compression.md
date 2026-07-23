@@ -2,7 +2,7 @@
 title: "Context Compression"
 description: "Reducing context tokens — summarization, extraction, semantic compression, hierarchical summaries, merging, redundancy removal, and preservation tradeoffs."
 domain: context-engineering
-tags: [context-engineering, compression, summarization, tokens, phase-6]
+tags: [context-engineering, compression, summarization, tokens]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -43,7 +43,7 @@ author: hp
 
 **Compression** runs when selected context exceeds budget. Goal: minimize tokens while preserving answer-critical information.
 
-Section **10** of Phase 6.
+Section **10**.
 
 ```mermaid
 flowchart LR
@@ -161,12 +161,12 @@ def compress_to_budget(chunks: list[ContextBlock], budget: int, tokenizer) -> li
     if total <= budget:
         return chunks
 
-    # Phase 1: drop lowest rank
+    # Step 1: drop lowest rank
     remaining = list(chunks)
     while sum(c.tokens for c in remaining) > budget and len(remaining) > 1:
         remaining.pop()
 
-    # Phase 2: summarize largest remaining if still over
+    # Step 2: summarize largest remaining if still over
     if sum(c.tokens for c in remaining) > budget:
         merged = summarize_chunks(remaining, max_tokens=budget)
         return [merged]
@@ -205,4 +205,4 @@ def compress_to_budget(chunks: list[ContextBlock], budget: int, tokenizer) -> li
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication — Phase 6 Section 10 |
+| 1.0 | 2026-07-13 | Initial publication |

@@ -2,7 +2,7 @@
 title: "MCP Security"
 description: "Tool security, prompt injection, validation, permissions, transport security, sandboxing, audit."
 domain: mcp
-tags: [mcp, security, sandbox, prompt-injection, phase-9]
+tags: [mcp, security, sandbox, prompt-injection]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **18** of Phase 9. MCP expands the **attack surface** — every tool is arbitrary code execution against external systems.
+Section **18**. MCP expands the **attack surface** — every tool is arbitrary code execution against external systems.
 
 ## Threat Model
 
@@ -95,4 +95,4 @@ async def require_approval(tool_name: str, args: dict) -> bool:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 9 Section 18 |
+| 1.0 | 2026-07-13 | Initial publication |

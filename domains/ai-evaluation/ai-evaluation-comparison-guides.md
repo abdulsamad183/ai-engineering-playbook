@@ -2,7 +2,7 @@
 title: "AI Evaluation Comparison Guides"
 description: "Offline vs online, human vs automated, RAGAS vs DeepEval, metrics, hallucination, A/B strategies."
 domain: ai-evaluation
-tags: [ai-evaluation, comparison, decision-matrix, phase-10]
+tags: [ai-evaluation, comparison, decision-matrix]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -79,4 +79,4 @@ author: hp
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 10 comparisons |
+| 1.0 | 2026-07-13 | Initial publication |

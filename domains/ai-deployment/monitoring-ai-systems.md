@@ -2,7 +2,7 @@
 title: "Monitoring AI Systems"
 description: "Metrics, health checks, dashboards, alerting, SLA, SLO, error budgets."
 domain: ai-deployment
-tags: [monitoring, slo, alerting, phase-12]
+tags: [monitoring, slo, alerting]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **6** of Phase 12.
+Section **6**.
 
 ```mermaid
 flowchart TB
@@ -56,4 +56,4 @@ flowchart TB
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 12 Section 6 |
+| 1.0 | 2026-07-13 | Initial publication |

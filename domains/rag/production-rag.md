@@ -2,7 +2,7 @@
 title: "Production RAG"
 description: "Production RAG operations — caching, incremental indexing, reindexing, monitoring, multi-tenant, permissions, security."
 domain: rag
-tags: [rag, production, monitoring, scaling, phase-7]
+tags: [rag, production, monitoring, scaling]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -19,7 +19,7 @@ author: hp
 
 ## Overview
 
-Section **19** of Phase 7.
+Section **19**.
 
 ## Operations Checklist
 
@@ -56,4 +56,4 @@ flowchart TB
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 7 Section 19 |
+| 1.0 | 2026-07-13 | Initial publication |

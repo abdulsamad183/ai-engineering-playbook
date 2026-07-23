@@ -2,7 +2,7 @@
 title: "Retrieval Papers Cheat Sheet"
 description: "Quick reference for advanced RAG papers — Self-RAG, GraphRAG, RAPTOR, CRAG selection guide."
 domain: papers
-tags: [cheat-sheet, rag, Self-RAG, GraphRAG, RAPTOR, CRAG, phase-papers]
+tags: [cheat-sheet, rag, Self-RAG, GraphRAG, RAPTOR, CRAG]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

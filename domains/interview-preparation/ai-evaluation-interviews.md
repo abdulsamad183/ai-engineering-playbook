@@ -2,7 +2,7 @@
 title: "AI Evaluation Interviews"
 description: "Evaluation interviews — metrics, RAGAS, hallucination, A/B testing, latency, cost."
 domain: interview-preparation
-tags: [interview, evaluation, ragas, metrics, phase-13]
+tags: [interview, evaluation, ragas, metrics]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

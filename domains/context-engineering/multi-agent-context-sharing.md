@@ -2,7 +2,7 @@
 title: "Multi-Agent Context Sharing"
 description: "High-level overview of shared context across agents — blackboard architecture, synchronization, coordination, and shared knowledge."
 domain: context-engineering
-tags: [context-engineering, multi-agent, blackboard, coordination, phase-6]
+tags: [context-engineering, multi-agent, blackboard, coordination]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 # Multi-Agent Context Sharing
 
-> How multiple agents share, read, and write context — introductory patterns for the AI Agents phase.
+> How multiple agents share, read, and write context — introductory patterns for the [AI Agents](../ai-agents/README.md) handbook..
 
 ## Table of Contents
 
@@ -40,7 +40,7 @@ author: hp
 
 Multi-agent systems require **shared context stores** beyond individual session memory — coordinated facts, task state, and observations visible to authorized agents.
 
-Section **16** of Phase 6 — expanded in [AI Agents](../ai-agents/README.md).
+Section **16** — expanded in [AI Agents](../ai-agents/README.md).
 
 ```mermaid
 flowchart TB
@@ -172,4 +172,4 @@ sequenceDiagram
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication — Phase 6 Section 16 |
+| 1.0 | 2026-07-13 | Initial publication |

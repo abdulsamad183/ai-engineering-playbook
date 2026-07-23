@@ -2,7 +2,7 @@
 title: "Tokens and Tokenization"
 description: "Production guide to LLM tokens and tokenization — BPE, SentencePiece, WordPiece, counting, cost calculation, special tokens, stop sequences, and provider-specific behavior."
 domain: llm-engineering
-tags: [tokens, tokenization, BPE, cost, latency, production, phase-4]
+tags: [tokens, tokenization, BPE, cost, latency, production]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -57,7 +57,7 @@ Every LLM API call is measured in **tokens**, not characters or words. Tokenizat
 
 This document covers the algorithms (BPE, SentencePiece, WordPiece), practical counting and cost math, special tokens, stop sequences, and provider-specific behavior.
 
-> **Prerequisites:** [Introduction to LLM Engineering](introduction-to-llm-engineering.md) · [How LLMs Work](how-llms-work.md) · [Phase 3 Backend Engineering](../backend-engineering/README.md)
+> **Prerequisites:** [Introduction to LLM Engineering](introduction-to-llm-engineering.md) · [How LLMs Work](how-llms-work.md) · [Backend Engineering](../backend-engineering/README.md)
 
 ---
 
@@ -820,9 +820,9 @@ def log_usage(record: UsageRecord) -> None:
 
 - [Introduction to LLM Engineering](introduction-to-llm-engineering.md)
 - [How LLMs Work](how-llms-work.md)
-- [Phase 3 Backend Engineering](../backend-engineering/README.md)
+- [Backend Engineering](../backend-engineering/README.md)
 
-### Phase 4 — LLM Engineering
+### — LLM Engineering
 
 | # | Topic | Document |
 |---|-------|----------|
@@ -853,4 +853,4 @@ def log_usage(record: UsageRecord) -> None:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 4 Section 3 release |
+| 1.0 | 2026-07-13 | Initial publication |

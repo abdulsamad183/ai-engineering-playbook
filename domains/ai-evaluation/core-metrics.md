@@ -2,7 +2,7 @@
 title: "Core Evaluation Metrics"
 description: "Accuracy, precision, recall, F1, exact match, BLEU, ROUGE, BERTScore — when to use and when they mislead."
 domain: ai-evaluation
-tags: [ai-evaluation, metrics, accuracy, f1, phase-10]
+tags: [ai-evaluation, metrics, accuracy, f1]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **4** of Phase 10. Classical metrics still apply to classification and extraction tasks.
+Section **4**. Classical metrics still apply to classification and extraction tasks.
 
 ## Metric Guide
 
@@ -78,4 +78,4 @@ def exact_match(pred: str, gold: str) -> bool:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 10 Section 4 |
+| 1.0 | 2026-07-13 | Initial publication |

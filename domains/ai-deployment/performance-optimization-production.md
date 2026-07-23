@@ -2,7 +2,7 @@
 title: "Production Performance Optimization"
 description: "Streaming, parallel execution, batching, model routing, async, compression."
 domain: ai-deployment
-tags: [performance, optimization, streaming, phase-12]
+tags: [performance, optimization, streaming]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **13** of Phase 12.
+Section **13**.
 
 ## Techniques
 
@@ -46,4 +46,4 @@ Self-hosted inference: batch requests, right-size GPU, quantization.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 12 Section 13 |
+| 1.0 | 2026-07-13 | Initial publication |

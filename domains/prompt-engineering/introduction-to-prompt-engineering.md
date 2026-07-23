@@ -2,7 +2,7 @@
 title: "Introduction to Prompt Engineering"
 description: "Foundation-level introduction to prompt engineering — what it is, why it exists, how it differs from programming and context engineering, lifecycle, evolution, modern principles, misconceptions, prompt architecture, and reliability."
 domain: prompt-engineering
-tags: [prompt-engineering, foundation, prompting, production, phase-5]
+tags: [prompt-engineering, foundation, prompting, production]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -57,11 +57,11 @@ author: hp
 
 Unlike traditional programming, you do not write deterministic logic. You write **natural language specifications** that a probabilistic model interprets. The gap between "it works in the playground" and "it works at 99.5% reliability in production" is almost entirely prompt engineering, evaluation, and the surrounding system design.
 
-This document is **Section 1** of Phase 5 in the AI Engineering Playbook.
+This document is **Section 1** of this handbook.
 
 ```mermaid
 flowchart LR
-    subgraph "Phase 5: Prompt Engineering"
+    subgraph "Prompt Engineering"
         S1[1. Introduction]
         S2[2. Prompt Anatomy]
         S3[3. Message Types]
@@ -73,7 +73,7 @@ flowchart LR
     S4 --> PATTERNS[Prompt Patterns]
 ```
 
-> **Prerequisites:** Complete [Phase 4: LLM Engineering](../llm-engineering/README.md) — especially [Context Windows](../llm-engineering/context-windows.md), [Structured Outputs](../llm-engineering/structured-outputs.md), and [Sampling and Decoding](../llm-engineering/sampling-and-decoding.md).
+> **Prerequisites:** Complete [LLM Engineering](../llm-engineering/README.md) — especially [Context Windows](../llm-engineering/context-windows.md), [Structured Outputs](../llm-engineering/structured-outputs.md), and [Sampling and Decoding](../llm-engineering/sampling-and-decoding.md).
 
 ---
 
@@ -202,7 +202,7 @@ These terms overlap but address different layers of the same problem.
 | **Scope** | Wording, structure, role, constraints | Token budget, truncation, RAG, summarization |
 | **Primary artifact** | System prompt, templates, few-shot sets | Context builder, memory store, retrieval pipeline |
 | **Failure mode** | Model misunderstands instructions | Model lacks necessary information |
-| **Phase in playbook** | Phase 5 (this module) | Phase 6 ([Context Engineering](../context-engineering/README.md)) |
+| **Handbook** | This module | Context Engineering ([Context Engineering](../context-engineering/README.md)) |
 
 ```mermaid
 graph TB
@@ -317,7 +317,7 @@ timeline
 
 ## Modern Prompt Engineering Principles
 
-These principles underpin every document in Phase 5.
+These principles underpin every document in this handbook.
 
 ### 1. Explicit Over Implicit
 
@@ -727,12 +727,12 @@ def load_prompt(prompt_id: str, version: str | None = None) -> dict:
 
 ### Prerequisites
 
-- [Phase 4: LLM Engineering](../llm-engineering/README.md) — tokens, context, sampling, structured outputs
+- [LLM Engineering](../llm-engineering/README.md) — tokens, context, sampling, structured outputs
 - [Context Windows](../llm-engineering/context-windows.md) — token budgeting for prompts
 - [Structured Outputs](../llm-engineering/structured-outputs.md) — schema-constrained generation
 - [Sampling and Decoding](../llm-engineering/sampling-and-decoding.md) — temperature and determinism
 
-### Phase 5 — Prompt Engineering (This Module)
+### — Prompt Engineering (This Module)
 
 | # | Topic | Document |
 |---|-------|----------|
@@ -745,7 +745,7 @@ def load_prompt(prompt_id: str, version: str | None = None) -> dict:
 
 - [Function Calling and Tools](../llm-engineering/function-calling-and-tools.md) — tool definitions in prompts
 - [LLM Security Fundamentals](../llm-engineering/llm-security-fundamentals.md) — injection and guardrails
-- [Context Engineering](../context-engineering/README.md) — Phase 6: memory and retrieval
+- [Context Engineering](../context-engineering/README.md): memory and retrieval
 
 ### Next Topics
 
@@ -759,10 +759,10 @@ def load_prompt(prompt_id: str, version: str | None = None) -> dict:
 
 - [OpenAI Prompt Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering)
 - [Anthropic Prompt Engineering](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview)
-- [Phase 4 LLM Engineering](../llm-engineering/README.md)
+- [LLM Engineering](../llm-engineering/README.md)
 
 ## Changelog
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 5 Section 1 release |
+| 1.0 | 2026-07-13 | Initial publication |

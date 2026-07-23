@@ -2,7 +2,7 @@
 title: "Context Windows"
 description: "Application-level context window engineering — budgeting, truncation, sliding windows, overflow, lost-in-the-middle, and optimization strategies for production systems."
 domain: context-engineering
-tags: [context-engineering, context-window, budgeting, truncation, phase-6]
+tags: [context-engineering, context-window, budgeting, truncation]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -44,9 +44,9 @@ author: hp
 
 ## Overview
 
-Phase 4 covered **what** a context window is at the model level. This document covers **how applications engineer around** that limit — allocation, truncation, and placement strategies that maximize answer quality per token.
+Earlier modules covered **what** a context window is at the model level. This document covers **how applications engineer around** that limit — allocation, truncation, and placement strategies that maximize answer quality per token.
 
-This is **Section 3** of Phase 6.
+This document is **Section 3** of this handbook.
 
 > **See also:** [Context Windows (LLM Engineering)](../llm-engineering/context-windows.md) for model mechanics, token counting, and provider limits.
 
@@ -250,4 +250,4 @@ def allocate(budget: TokenBudget, layers: dict[str, int]) -> dict[str, int]:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication — Phase 6 Section 3 |
+| 1.0 | 2026-07-13 | Initial publication |

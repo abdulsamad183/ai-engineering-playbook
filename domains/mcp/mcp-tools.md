@@ -2,7 +2,7 @@
 title: "MCP Tools"
 description: "MCP tools — schemas, registry, discovery, permissions, composition, streaming, errors, retries."
 domain: mcp
-tags: [mcp, tools, schema, validation, phase-9]
+tags: [mcp, tools, schema, validation]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **9** of Phase 9 — largest MCP topic.
+Section **9** — largest MCP topic.
 
 ```mermaid
 sequenceDiagram
@@ -82,4 +82,4 @@ async def call_tool(name: str, arguments: dict) -> list[types.TextContent]:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 9 Section 9 |
+| 1.0 | 2026-07-13 | Initial publication |

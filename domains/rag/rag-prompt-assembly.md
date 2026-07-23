@@ -2,7 +2,7 @@
 title: "RAG Prompt Assembly"
 description: "Formatting retrieved chunks, citations, grounding instructions, and LLM messages for RAG."
 domain: rag
-tags: [rag, prompt-assembly, context-formatting, phase-7]
+tags: [rag, prompt-assembly, context-formatting]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -19,7 +19,7 @@ author: hp
 
 ## Overview
 
-Section **14** of Phase 7.
+Section **14**.
 
 ```mermaid
 flowchart TD
@@ -54,4 +54,4 @@ Use [RAG query template](../../prompts/templates/rag-query.md).
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 7 Section 14 |
+| 1.0 | 2026-07-13 | Initial publication |

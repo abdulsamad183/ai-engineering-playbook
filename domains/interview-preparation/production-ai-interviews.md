@@ -2,7 +2,7 @@
 title: "Production AI Interviews"
 description: "Production interview questions — Docker, CI/CD, observability, reliability, security."
 domain: interview-preparation
-tags: [interview, production, docker, observability, phase-13]
+tags: [interview, production, docker, observability]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

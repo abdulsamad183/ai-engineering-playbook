@@ -19,7 +19,7 @@ author: hp
 
 # LLM Inference
 
-> Section 9 of Phase 4 — the mechanics behind every token your application generates. Understanding the inference pipeline is what separates engineers who tune API parameters from engineers who design systems that meet latency SLOs under load.
+> Section 9 of this handbook — the mechanics behind every token your application generates. Understanding the inference pipeline is what separates engineers who tune API parameters from engineers who design systems that meet latency SLOs under load.
 
 ## Table of Contents
 
@@ -86,11 +86,11 @@ graph LR
 ```python
 # Conceptual inference loop (simplified pseudocode)
 def generate(model, input_ids: list[int], max_tokens: int = 256) -> list[int]:
-  # Phase 1: Prefill — process entire prompt at once
+  # Step 1: Prefill — process entire prompt at once
   kv_cache = model.prefill(input_ids)
   generated = list(input_ids)
 
-  # Phase 2: Decode — one token per iteration
+  # Step 2: Decode — one token per iteration
   for _ in range(max_tokens):
     logits = model.decode_step(generated[-1], kv_cache)
     next_token = sample(logits, temperature=0.7, top_p=0.9)
@@ -718,7 +718,7 @@ async def instrumented_completion(client, **kwargs):
 
 ### Prerequisites
 
-- Sections 1–8 of Phase 4 (tokens, context windows, model families, API integration)
+- Sections 1–8 of this handbook (tokens, context windows, model families, API integration)
 - [HTTP Fundamentals for AI](../apis/http-fundamentals-for-ai.md) — streaming transports
 - [Backend Fundamentals for AI](../backend-engineering/backend-fundamentals-for-ai.md) — streaming endpoints
 
@@ -753,4 +753,4 @@ async def instrumented_completion(client, **kwargs):
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 4 release — Section 9 |
+| 1.0 | 2026-07-13 | Initial release — Section 9 |

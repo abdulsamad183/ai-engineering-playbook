@@ -2,7 +2,7 @@
 title: "AI Engineering Interview Strategy"
 description: "Interview process, preparation roadmap, resume screening, technical rounds, common mistakes."
 domain: interview-preparation
-tags: [interview, strategy, preparation, career, phase-13]
+tags: [interview, strategy, preparation, career]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

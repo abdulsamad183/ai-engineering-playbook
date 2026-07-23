@@ -1,6 +1,6 @@
 # Production AI Examples
 
-> Phase 12 patterns. See [Production AI Handbook](../../domains/ai-deployment/README.md).
+> patterns. See [Production AI Handbook](../../domains/ai-deployment/README.md).
 
 | Example | Pattern |
 |---------|---------|

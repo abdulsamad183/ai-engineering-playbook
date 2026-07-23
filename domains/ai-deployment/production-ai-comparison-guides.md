@@ -2,7 +2,7 @@
 title: "Production AI Comparison Guides"
 description: "Deployment, monitoring, observability, caching, retry, logging comparisons."
 domain: ai-deployment
-tags: [production-ai, comparison, phase-12]
+tags: [production-ai, comparison]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -61,4 +61,4 @@ author: hp
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 12 comparisons |
+| 1.0 | 2026-07-13 | Initial publication |

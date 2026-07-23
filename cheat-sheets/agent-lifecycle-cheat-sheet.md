@@ -2,7 +2,7 @@
 
 > Init → Plan → Execute → Observe → Reflect → Complete
 
-| Phase | Check |
+| Stage | Check |
 |-------|-------|
 | Init | Goal, budgets, permissions loaded |
 | Plan | Steps valid against tool registry |

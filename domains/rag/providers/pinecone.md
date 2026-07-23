@@ -2,7 +2,7 @@
 title: "Pinecone for RAG"
 description: "Pinecone managed vector database — serverless, pods, metadata filtering, pricing, production patterns."
 domain: rag
-tags: [rag, pinecone, vector-database, managed, phase-7]
+tags: [rag, pinecone, vector-database, managed]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

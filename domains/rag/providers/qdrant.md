@@ -2,7 +2,7 @@
 title: "Qdrant for RAG"
 description: "Qdrant vector database — filtering, payloads, gRPC performance, deployment, Python client."
 domain: rag
-tags: [rag, qdrant, vector-database, phase-7]
+tags: [rag, qdrant, vector-database]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

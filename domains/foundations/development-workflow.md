@@ -28,14 +28,14 @@ author: hp
 
 - [Overview](#overview)
 - [Workflow at a Glance](#workflow-at-a-glance)
-- [Phase 1: Requirements](#phase-1-requirements)
-- [Phase 2: Design](#phase-2-design)
-- [Phase 3: Implementation](#phase-3-implementation)
-- [Phase 4: Testing](#phase-4-testing)
-- [Phase 5: Review](#phase-5-review)
-- [Phase 6: Deployment](#phase-6-deployment)
-- [Phase 7: Monitoring](#phase-7-monitoring)
-- [Phase 8: Improvement](#phase-8-improvement)
+- [Requirements](#)
+- [Design](#)
+- [Implementation](#)
+- [Testing](#)
+- [Review](#)
+- [Deployment](#)
+- [Monitoring](#)
+- [Improvement](#)
 - [Tooling Reference](#tooling-reference)
 - [Workflow for AI-Specific Work](#workflow-for-ai-specific-work)
 - [Production Considerations](#production-considerations)
@@ -110,7 +110,7 @@ The lifecycle is product-oriented and spans months. The workflow is team-oriente
 
 ---
 
-## Phase 1: Requirements
+## Stage 1: Requirements
 
 **Goal:** Translate user needs into clear, testable work items before design or code begins.
 
@@ -173,7 +173,7 @@ The lifecycle is product-oriented and spans months. The workflow is team-oriente
 
 ---
 
-## Phase 2: Design
+## Stage 2: Design
 
 **Goal:** Plan the technical approach, document decisions, and align the team before writing production code.
 
@@ -252,7 +252,7 @@ Apply patterns from [Software Engineering for AI](software-engineering-for-ai.md
 
 ---
 
-## Phase 3: Implementation
+## Stage 3: Implementation
 
 **Goal:** Write clean, tested code that matches the approved design.
 
@@ -312,7 +312,7 @@ gitGraph
 
 ---
 
-## Phase 4: Testing
+## Stage 4: Testing
 
 **Goal:** Verify correctness, prevent regressions, and measure AI output quality before review and deployment.
 
@@ -369,7 +369,7 @@ See [Testing Fundamentals](testing-fundamentals.md) for detailed patterns.
 
 ---
 
-## Phase 5: Review
+## Stage 5: Review
 
 **Goal:** Ensure code quality, security, maintainability, and alignment with design through peer review.
 
@@ -444,7 +444,7 @@ flowchart TD
 
 ---
 
-## Phase 6: Deployment
+## Stage 6: Deployment
 
 **Goal:** Release merged code to production safely with rollback capability.
 
@@ -496,7 +496,7 @@ See [AI Deployment](../ai-deployment/README.md) for infrastructure patterns, sca
 
 ---
 
-## Phase 7: Monitoring
+## Stage 7: Monitoring
 
 **Goal:** Confirm the deployment is healthy and establish ongoing visibility into system behavior.
 
@@ -545,7 +545,7 @@ gantt
 
 ---
 
-## Phase 8: Improvement
+## Stage 8: Improvement
 
 **Goal:** Learn from production data, retrospectives, and incidents to improve the product and the workflow itself.
 
@@ -629,9 +629,9 @@ flowchart LR
 
 | Need | Phase | Domain |
 |------|-------|--------|
-| LLM APIs, streaming | Phase 3 | [LLM Engineering](../llm-engineering/README.md) |
-| RAG pipelines | Phase 4 | [RAG Systems](../rag/README.md) |
-| Production deploy | Phase 6+ | [AI Deployment](../ai-deployment/README.md) |
+| LLM APIs, streaming | [LLM Engineering](../llm-engineering/README.md) | 
+| RAG pipelines | [RAG Systems](../rag/README.md) | 
+| Production deploy | Later | [AI Deployment](../ai-deployment/README.md) |
 | Advanced evals | Ongoing | [AI Evaluation](../ai-evaluation/README.md) |
 
 ---
@@ -786,8 +786,8 @@ Adjust cadence to team size and release frequency. The workflow phases remain th
 
 ### Future Reading
 
-- [LLM Engineering](../llm-engineering/README.md) — Phase 3: integrating model APIs in implementation
-- [RAG Systems](../rag/README.md) — Phase 4: retrieval workflow patterns
+- [LLM Engineering](../llm-engineering/README.md): integrating model APIs in implementation
+- [RAG Systems](../rag/README.md): retrieval workflow patterns
 - [AI Deployment](../ai-deployment/README.md) — production deployment phase deep dive
 - [Observability](../observability/README.md) — monitoring tooling and practices
 

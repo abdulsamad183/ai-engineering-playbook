@@ -2,7 +2,7 @@
 title: "Research Evolution"
 description: "Timeline of AI research from Transformers through prompting, reasoning, RAG, agents, and MCP — how each era built on the last."
 domain: papers
-tags: [papers, timeline, evolution, transformers, agents, mcp, phase-papers]
+tags: [papers, timeline, evolution, transformers, agents, mcp]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

@@ -2,7 +2,7 @@
 title: "Context Quality"
 description: "Measuring context quality — relevance, completeness, freshness, consistency, redundancy, grounding, and noise metrics."
 domain: context-engineering
-tags: [context-engineering, quality, metrics, evaluation, phase-6]
+tags: [context-engineering, quality, metrics, evaluation]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -42,7 +42,7 @@ author: hp
 
 Output eval asks "was the answer good?" **Context quality** asks "did the model see the right information?" — upstream debugging for RAG and memory failures.
 
-Section **17** of Phase 6.
+Section **17**.
 
 ```mermaid
 flowchart LR
@@ -124,7 +124,7 @@ Low-score retrieval, OCR garbage, boilerplate headers — filter with min score 
 | Empty retrieval rate | &lt;5% for KB bots |
 | Contradiction flags | Near zero |
 
-Integrate with [AI Evaluation](../ai-evaluation/README.md) phase.
+Integrate with [AI Evaluation](../ai-evaluation/README.md).
 
 ---
 
@@ -165,4 +165,4 @@ Integrate with [AI Evaluation](../ai-evaluation/README.md) phase.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication — Phase 6 Section 17 |
+| 1.0 | 2026-07-13 | Initial publication |

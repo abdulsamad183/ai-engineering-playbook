@@ -20,7 +20,7 @@ author: hp
 
 # Model Comparison Guide
 
-> Section 16 of Phase 4 — model selection is an engineering decision, not a leaderboard contest. This guide compares the major model families across the dimensions that matter in production: capability, cost, latency, integration surface, and deployment options.
+> Section 16 of this handbook — model selection is an engineering decision, not a leaderboard contest. This guide compares the major model families across the dimensions that matter in production: capability, cost, latency, integration surface, and deployment options.
 
 ## Table of Contents
 
@@ -440,7 +440,7 @@ models:
 - [Tokens and Tokenization](tokens-and-tokenization.md) — Section 3
 - [Context Windows](context-windows.md) — Section 4
 
-### Phase 4 — LLM Engineering
+### — LLM Engineering
 
 | # | Topic | Document |
 |---|-------|----------|
@@ -499,4 +499,4 @@ models:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 4 release — Section 16 |
+| 1.0 | 2026-07-13 | Initial release — Section 16 |

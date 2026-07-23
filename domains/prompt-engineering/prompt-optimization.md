@@ -18,7 +18,7 @@ author: hp
 
 # Prompt Optimization
 
-> Section 15 of Phase 5 — prompt optimization is not about writing shorter prompts for aesthetics. It is about systematically improving the quality-cost-latency triangle: better outputs, fewer tokens, faster responses, and lower spend — without sacrificing reliability.
+> Section 15 of this handbook — prompt optimization is not about writing shorter prompts for aesthetics. It is about systematically improving the quality-cost-latency triangle: better outputs, fewer tokens, faster responses, and lower spend — without sacrificing reliability.
 
 ## Table of Contents
 
@@ -620,7 +620,7 @@ compositions:
 - [Prompt Evaluation](prompt-evaluation.md) — Section 14
 - [Prompt Testing](prompt-testing.md) — Section 13
 
-### Phase 5 — Prompt Engineering
+### — Prompt Engineering
 
 | # | Topic | Document |
 |---|-------|----------|
@@ -666,4 +666,4 @@ compositions:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 5 release — Section 15 |
+| 1.0 | 2026-07-13 | Initial release — Section 15 |

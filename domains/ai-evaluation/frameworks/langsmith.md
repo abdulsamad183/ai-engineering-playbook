@@ -2,7 +2,7 @@
 title: "LangSmith Evaluation"
 description: "LangSmith evaluation overview — datasets, tracing, online eval, ideal use cases."
 domain: ai-evaluation
-tags: [ai-evaluation, langsmith, langchain, framework, phase-10]
+tags: [ai-evaluation, langsmith, langchain, framework]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

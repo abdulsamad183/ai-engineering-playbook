@@ -18,7 +18,7 @@ author: hp
 
 # LLM Performance Optimization
 
-> Section 18 of Phase 4 — users perceive latency, not throughput. Production LLM performance requires decomposing the request lifecycle, optimizing each segment, and routing workloads to the right model and infrastructure tier.
+> Section 18 of this handbook — users perceive latency, not throughput. Production LLM performance requires decomposing the request lifecycle, optimizing each segment, and routing workloads to the right model and infrastructure tier.
 
 ## Table of Contents
 
@@ -534,7 +534,7 @@ SLO_ALERTS = {
 - [LLM Streaming](llm-streaming.md) — supplementary
 - [Context Windows](context-windows.md) — Section 4
 
-### Phase 4 — LLM Engineering
+### — LLM Engineering
 
 | # | Topic | Document |
 |---|-------|----------|
@@ -593,4 +593,4 @@ SLO_ALERTS = {
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 4 release — Section 18 |
+| 1.0 | 2026-07-13 | Initial release — Section 18 |

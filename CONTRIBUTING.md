@@ -136,7 +136,7 @@ Create a new domain only when an entirely new area of AI engineering knowledge e
 2. Add the domain to [domains/README.md](domains/README.md).
 3. Add the domain to [MASTER-INDEX.md](meta/indexes/MASTER-INDEX.md).
 4. Add relevant tags to the [tag registry](meta/indexes/tags/tag-registry.md).
-5. Update the [roadmap](meta/roadmap.md) if the domain represents a new learning phase.
+5. Update the [roadmap](meta/roadmap.md) if the domain represents a new learning capability.
 
 Do **not** create domains for specific technologies — use technology tags and indexes instead.
 

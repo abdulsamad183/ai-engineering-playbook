@@ -1,7 +1,7 @@
-# Phase 5: Prompt Engineering
+# Prompt Engineering
 
 > Production-quality handbook treating prompts as maintainable software artifacts.
-> **Prerequisites:** [Phase 4 LLM Engineering](../llm-engineering/README.md)
+> **Prerequisites:** [LLM Engineering](../llm-engineering/README.md)
 
 ---
 
@@ -101,7 +101,7 @@ QA · Summarization · Classification · Extraction · Translation · Code gener
 - [JSON Prompting](../../cheat-sheets/json-prompting-cheat-sheet.md)
 - [Testing Checklist](../../cheat-sheets/prompt-testing-checklist.md)
 - [Debugging Checklist](../../cheat-sheets/prompt-debugging-checklist.md)
-- [LLM Sampling Parameters](../../cheat-sheets/llm-sampling-parameters.md) (Phase 4)
+- [LLM Sampling Parameters](../../cheat-sheets/llm-sampling-parameters.md)
 
 ---
 
@@ -117,7 +117,7 @@ QA · Summarization · Classification · Extraction · Translation · Code gener
 
 ---
 
-## Phase 5 Completion Checklist
+## Completion Checklist
 
 - [ ] Read all 18 sections
 - [ ] Use at least 3 templates from `prompts/templates/`
@@ -131,6 +131,6 @@ QA · Summarization · Classification · Extraction · Translation · Code gener
 
 ## See Also
 
-- [LLM Engineering](../llm-engineering/README.md) — Phase 4 prerequisite
+- [LLM Engineering](../llm-engineering/README.md) prerequisite
 - [Prompt Library](../../prompts/README.md)
 - [Master Index](../../meta/indexes/MASTER-INDEX.md)

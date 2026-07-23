@@ -17,7 +17,7 @@ author: hp
 
 # LLM Security Fundamentals
 
-> Section 19 of Phase 4 — LLMs are untrusted input processors and untrusted output generators. Security in LLM applications is not about making the model "safe" — it is about building systems that remain secure even when the model is manipulated or wrong.
+> Section 19 of this handbook — LLMs are untrusted input processors and untrusted output generators. Security in LLM applications is not about making the model "safe" — it is about building systems that remain secure even when the model is manipulated or wrong.
 
 ## Table of Contents
 
@@ -543,7 +543,7 @@ Pre-production security review:
 - [Structured Outputs](structured-outputs.md) — Section 11
 - [Introduction to LLM Engineering](introduction-to-llm-engineering.md) — Section 1
 
-### Phase 4 — LLM Engineering
+### — LLM Engineering
 
 | # | Topic | Document |
 |---|-------|----------|
@@ -602,4 +602,4 @@ Pre-production security review:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 4 release — Section 19 |
+| 1.0 | 2026-07-13 | Initial release — Section 19 |

@@ -2,7 +2,7 @@
 title: "Agent Case Studies"
 description: "Architecture patterns from coding agents, research agents, support agents — engineering focus."
 domain: ai-agents
-tags: [ai-agents, case-studies, architecture, phase-8]
+tags: [ai-agents, case-studies, architecture]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -17,7 +17,7 @@ author: hp
 
 ## Overview
 
-Section **20** of Phase 8 — **engineering patterns**, not proprietary internals.
+Section **20** — **engineering patterns**, not proprietary internals.
 
 ## Coding Agents (Cursor, Copilot-class)
 
@@ -70,4 +70,4 @@ flowchart LR
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 8 Section 20 |
+| 1.0 | 2026-07-13 | Initial publication |

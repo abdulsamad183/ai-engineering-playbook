@@ -2,7 +2,7 @@
 title: "Build an MCP Server"
 description: "Production MCP server tutorial — project structure, tools, resources, prompts, validation, testing, deployment."
 domain: mcp
-tags: [mcp, tutorial, server, python, phase-9]
+tags: [mcp, tutorial, server, python]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **15** of Phase 9 — hands-on server implementation.
+Section **15** — hands-on server implementation.
 
 ## Project Structure
 
@@ -117,4 +117,4 @@ Run MCP over streamable HTTP alongside REST health endpoints — see [examples/m
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 9 Section 15 |
+| 1.0 | 2026-07-13 | Initial publication |

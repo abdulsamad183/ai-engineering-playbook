@@ -2,7 +2,7 @@
 title: "Message Types"
 description: "Production guide to LLM message types — system prompts (purpose, hierarchy, precedence, role, safety, formatting), user prompts, assistant messages, and tool messages. How each message role shapes multi-turn behavior."
 domain: prompt-engineering
-tags: [prompt-engineering, message-types, system-prompt, tool-messages, production, phase-5]
+tags: [prompt-engineering, message-types, system-prompt, tool-messages, production]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -56,7 +56,7 @@ author: hp
 
 Chat-based LLM APIs accept an ordered array of **messages**, each with a `role` and `content` (and optionally `tool_calls` or `tool_call_id`). The model attends to all messages within the [context window](../llm-engineering/context-windows.md) and generates the next assistant message.
 
-This document is **Section 3** of Phase 5. It connects [Prompt Anatomy](prompt-anatomy.md) components to the API structures that carry them.
+This document is **Section 3** of this handbook. It connects [Prompt Anatomy](prompt-anatomy.md) components to the API structures that carry them.
 
 ```mermaid
 sequenceDiagram
@@ -77,7 +77,7 @@ sequenceDiagram
     end
 ```
 
-> **Prerequisites:** [Phase 4: LLM Engineering](../llm-engineering/README.md) · [Context Windows](../llm-engineering/context-windows.md) · [Function Calling and Tools](../llm-engineering/function-calling-and-tools.md)
+> **Prerequisites:** [LLM Engineering](../llm-engineering/README.md) · [Context Windows](../llm-engineering/context-windows.md) · [Function Calling and Tools](../llm-engineering/function-calling-and-tools.md)
 
 ---
 
@@ -792,11 +792,11 @@ async def run_tool_loop(client, messages: list[dict], tools: list[dict]) -> str:
 ### Prerequisites
 
 - [Prompt Anatomy](prompt-anatomy.md) — prompt components
-- [Phase 4: LLM Engineering](../llm-engineering/README.md)
+- [LLM Engineering](../llm-engineering/README.md)
 - [Context Windows](../llm-engineering/context-windows.md)
 - [Function Calling and Tools](../llm-engineering/function-calling-and-tools.md)
 
-### Phase 5 — Prompt Engineering (This Module)
+### — Prompt Engineering (This Module)
 
 | # | Topic | Document |
 |---|-------|----------|
@@ -820,4 +820,4 @@ async def run_tool_loop(client, messages: list[dict], tools: list[dict]) -> str:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 5 Section 3 release |
+| 1.0 | 2026-07-13 | Initial publication |

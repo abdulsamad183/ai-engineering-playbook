@@ -2,7 +2,7 @@
 title: "Chunking for RAG"
 description: "Complete chunking guide — fixed, recursive, semantic, sliding window, parent-child, code, hierarchical, adaptive strategies with tradeoffs."
 domain: rag
-tags: [rag, chunking, splitting, production, phase-7]
+tags: [rag, chunking, splitting, production]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -35,7 +35,7 @@ author: hp
 
 ## Overview
 
-Section **4** of Phase 7.
+Section **4**.
 
 ```mermaid
 flowchart TD
@@ -192,4 +192,4 @@ def recursive_split(text: str, chunk_size: int, separators: list[str]) -> list[s
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication — Phase 7 Section 4 |
+| 1.0 | 2026-07-13 | Initial publication |

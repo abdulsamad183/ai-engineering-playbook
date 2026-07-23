@@ -2,7 +2,7 @@
 title: "RAG System Evaluation"
 description: "RAG metrics — retrieval, context, faithfulness, RAGAS, ARES, DeepEval, evaluation workflows."
 domain: ai-evaluation
-tags: [ai-evaluation, rag, ragas, faithfulness, phase-10]
+tags: [ai-evaluation, rag, ragas, faithfulness]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -19,7 +19,7 @@ author: hp
 
 ## Overview
 
-Section **7** of Phase 10 — largest evaluation topic for retrieval-augmented systems.
+Section **7** — largest evaluation topic for retrieval-augmented systems.
 
 ```mermaid
 flowchart TB
@@ -97,4 +97,4 @@ def retrieval_recall_at_k(retrieved_ids: list[str], gold_ids: set[str], k: int) 
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 10 Section 7 |
+| 1.0 | 2026-07-13 | Initial publication |

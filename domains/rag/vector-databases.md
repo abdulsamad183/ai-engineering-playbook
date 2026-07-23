@@ -2,7 +2,7 @@
 title: "Vector Databases for RAG"
 description: "Vector database fundamentals — ANN, HNSW, IVF, PQ, similarity search, metadata filtering, sharding, replication."
 domain: rag
-tags: [rag, vector-database, ANN, HNSW, phase-7]
+tags: [rag, vector-database, ANN, HNSW]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -39,7 +39,7 @@ author: hp
 
 ## Overview
 
-Section **7** of Phase 7.
+Section **7**.
 
 A **vector database** stores embeddings and answers k-NN queries under latency SLOs, with metadata filters and operational features.
 
@@ -148,4 +148,4 @@ Shard by tenant or hash; replicas for read scaling and HA.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication — Phase 7 Section 7 |
+| 1.0 | 2026-07-13 | Initial publication |

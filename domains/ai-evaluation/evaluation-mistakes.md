@@ -2,7 +2,7 @@
 title: "AI Evaluation Mistakes"
 description: "Troubleshooting — weak datasets, metric misuse, stale evals, missing regression, business metrics."
 domain: ai-evaluation
-tags: [ai-evaluation, mistakes, troubleshooting, phase-10]
+tags: [ai-evaluation, mistakes, troubleshooting]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **19** of Phase 10.
+Section **19**.
 
 ## Issue Catalog
 
@@ -88,4 +88,4 @@ Section **19** of Phase 10.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 10 Section 19 |
+| 1.0 | 2026-07-13 | Initial publication |

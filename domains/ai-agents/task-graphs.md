@@ -2,7 +2,7 @@
 title: "Task Graphs for Agents"
 description: "DAG execution, dependency graphs, scheduling, parallel execution, conditional branches, loops."
 domain: ai-agents
-tags: [ai-agents, DAG, task-graph, scheduling, phase-8]
+tags: [ai-agents, DAG, task-graph, scheduling]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **9** of Phase 8.
+Section **9**.
 
 ```mermaid
 flowchart TD
@@ -59,4 +59,4 @@ Topological sort → execute ready nodes in parallel pools. LangGraph models thi
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 8 Section 9 |
+| 1.0 | 2026-07-13 | Initial publication |

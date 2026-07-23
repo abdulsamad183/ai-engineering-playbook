@@ -1,7 +1,7 @@
-# Phase 11: AI System Design
+# AI System Design
 
 > The largest interview preparation module — end-to-end architecture for ChatGPT-class, Copilot-class, and enterprise AI systems.
-> **Prerequisites:** [Phase 10 Evaluation](../ai-evaluation/README.md) · [Phase 7 RAG](../rag/README.md) · [Phase 8 Agents](../ai-agents/README.md)
+> **Prerequisites:** [Evaluation](../ai-evaluation/README.md) · [RAG](../rag/README.md) · [Agents](../ai-agents/README.md)
 
 ---
 
@@ -36,7 +36,7 @@ flowchart TB
   S3 --> S15 --> S16 --> S17
 ```
 
-**Unlocks:** [Phase 12 Production AI](../ai-deployment/README.md)
+**Unlocks:** [Production AI](../ai-deployment/README.md)
 
 ---
 
@@ -87,4 +87,4 @@ flowchart TB
 ## See Also
 
 - [Master Index](../../meta/indexes/MASTER-INDEX.md)
-- [Production AI (Phase 12)](../ai-deployment/README.md)
+- [Production AI](../ai-deployment/README.md)

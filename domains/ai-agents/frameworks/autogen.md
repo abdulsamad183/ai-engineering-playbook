@@ -2,7 +2,7 @@
 title: "AutoGen for Agents"
 description: "Microsoft AutoGen — conversational multi-agent, group chat, code execution."
 domain: ai-agents
-tags: [ai-agents, AutoGen, framework, phase-8]
+tags: [ai-agents, AutoGen, framework]
 status: published
 created: 2026-07-13
 updated: 2026-07-13

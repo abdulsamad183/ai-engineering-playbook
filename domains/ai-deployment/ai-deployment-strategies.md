@@ -2,7 +2,7 @@
 title: "AI Deployment Strategies"
 description: "Local, VM, cloud, container deployment — blue/green, canary, rolling."
 domain: ai-deployment
-tags: [deployment, canary, blue-green, phase-12]
+tags: [deployment, canary, blue-green]
 status: published
 created: 2026-07-13
 updated: 2026-07-13
@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **3** of Phase 12.
+Section **3**.
 
 ```mermaid
 flowchart LR
@@ -58,4 +58,4 @@ flowchart LR
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Phase 12 Section 3 |
+| 1.0 | 2026-07-13 | Initial publication |

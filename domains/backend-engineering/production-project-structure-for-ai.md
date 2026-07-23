@@ -1,6 +1,6 @@
 ---
 title: "Production Project Structure for AI"
-description: "Phase 3 production reference for AI backend folder structure — api, core, config, models, schemas, services, repositories, database, middleware, auth, utils, workers, tests, and scripts — with responsibilities, import rules, and scaling guidance."
+description: "production reference for AI backend folder structure — api, core, config, models, schemas, services, repositories, database, middleware, auth, utils, workers, tests, and scripts — with responsibilities, import rules, and scaling guidance."
 domain: backend-engineering
 tags: [backend, project-structure, production, fastapi, architecture, advanced]
 status: published
@@ -20,7 +20,7 @@ author: hp
 
 # Production Project Structure for AI
 
-> Phase 3 reference for organizing production AI backends — every folder's responsibility, import direction, and how the layout scales from chat MVP to multi-tenant SaaS.
+> reference for organizing production AI backends — every folder's responsibility, import direction, and how the layout scales from chat MVP to multi-tenant SaaS.
 
 ## Table of Contents
 
@@ -747,4 +747,4 @@ Full troubleshooting: [Backend Engineering Mistakes](backend-engineering-mistake
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-07-13 | Initial Phase 3 release |
+| 1.0 | 2026-07-13 | Initial release |
