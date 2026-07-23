@@ -1,5 +1,14 @@
 ## [Unreleased]
 
+## [1.4.0] - 2026-07-23
+
+### Added
+
+- **MkDocs Material documentation site** with sidebar/tabs navigation, search, and Mermaid support
+- `docs/` symlink tree (content stays in `domains/`, `meta/`, etc.)
+- GitHub Actions workflow [`.github/workflows/docs.yml`](.github/workflows/docs.yml) → GitHub Pages
+- [docs-site.md](docs-site.md) — local preview and Pages setup guide
+
 ## [1.3.0] - 2026-07-23
 
 ### Added

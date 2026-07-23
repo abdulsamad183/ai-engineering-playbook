@@ -1,0 +1,195 @@
+# MkDocs Material configuration for AI Engineering Playbook
+# Site: https://abdulsamad183.github.io/ai-engineering-playbook/
+
+site_name: AI Engineering Playbook
+site_description: Production-oriented handbook for building, deploying, and operating modern AI applications
+site_author: abdulsamad183
+site_url: https://abdulsamad183.github.io/ai-engineering-playbook/
+
+repo_name: abdulsamad183/ai-engineering-playbook
+repo_url: https://github.com/abdulsamad183/ai-engineering-playbook
+edit_uri: ""
+
+docs_dir: docs
+site_dir: site
+
+# Symlinked tree mirrors the repo; skip code and non-doc artifacts
+exclude_docs: |
+  **/__pycache__/**
+  **/.venv/**
+  **/*.py
+  **/*.pyc
+  **/*.toml
+  **/*.yml
+  **/*.yaml
+  **/*.json
+  **/*.conf
+  **/*.mmd
+  **/Dockerfile*
+  **/.env*
+  **/.gitignore
+  templates/engineering/**/src/**
+  templates/engineering/**/tests/**
+  templates/engineering/**/.github/**
+  examples/**/*.py
+  assets/slides/**
+  assets/screenshots/**
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - navigation.indexes
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Source Sans 3
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+
+plugins:
+  - search:
+      lang: en
+  - minify:
+      minify_html: true
+
+hooks:
+  - hooks/strip_frontmatter.py
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/abdulsamad183/ai-engineering-playbook
+  generator: false
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - javascripts/mermaid-init.js
+
+# Curated navigation — hubs first; linked pages still build & are searchable
+nav:
+  - Home: index.md
+  - Start:
+    - Capstone Walkthrough: meta/capstone-walkthrough.md
+    - Learning Roadmap: meta/roadmap.md
+    - Master Index: meta/indexes/MASTER-INDEX.md
+    - Glossary: meta/glossary.md
+    - Architecture Overview: meta/architecture-overview.md
+  - Foundations:
+    - Overview: domains/foundations/README.md
+    - Python Engineering: domains/python-engineering/README.md
+    - Backend Engineering: domains/backend-engineering/README.md
+    - APIs: domains/apis/README.md
+    - FastAPI: domains/fastapi/README.md
+    - Databases: domains/databases/README.md
+  - LLM Systems:
+    - LLM Engineering: domains/llm-engineering/README.md
+    - Prompt Engineering: domains/prompt-engineering/README.md
+    - Context Engineering: domains/context-engineering/README.md
+    - Embeddings: domains/embeddings/README.md
+    - Vector Databases: domains/vector-databases/README.md
+  - Retrieval & Agents:
+    - RAG: domains/rag/README.md
+    - AI Agents: domains/ai-agents/README.md
+    - MCP: domains/mcp/README.md
+  - Production:
+    - AI Evaluation: domains/ai-evaluation/README.md
+    - AI System Design: domains/ai-system-design/README.md
+    - Production AI: domains/ai-deployment/README.md
+    - AI Safety: domains/ai-safety/README.md
+    - Debugging: domains/debugging/README.md
+    - Common Mistakes: domains/common-mistakes/README.md
+  - Research & Career:
+    - Research Papers: domains/papers/README.md
+    - Interview Prep: domains/interview-preparation/README.md
+  - Toolkit:
+    - Engineering Templates: templates/README.md
+    - Templates Index: templates/engineering/README.md
+    - Prompt Library: prompts/README.md
+    - Code Examples: examples/README.md
+    - Cheat Sheets: cheat-sheets/README.md
+    - Knowledge Base: knowledge/README.md
+    - Bookmarks: resources/README.md
+  - Meta:
+    - Docs site guide: docs-site.md
+    - Style Guide: meta/style-guide.md
+    - Domains Overview: domains/README.md
+    - Capstone: meta/capstone-walkthrough.md
+not_in_nav: |
+  meta/templates/**
+  meta/indexes/topics/**
+  meta/indexes/technologies/**
+  meta/indexes/patterns/**
+  meta/indexes/comparisons/**

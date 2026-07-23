@@ -10,8 +10,9 @@
 
 Choose what you need right now:
 
-| Your goal | Go here | What you'll find |
+| Your goal | Go to... | What you'll find |
 |-----------|---------|------------------|
+| **Browse as a website** | [GitHub Pages site](https://abdulsamad183.github.io/ai-engineering-playbook/) | Sidebar nav, search, Mermaid rendering |
 | **Build your first end-to-end app** | [Capstone Walkthrough](meta/capstone-walkthrough.md) | RAG chat API from templates → Docker → CI |
 | **Learn AI engineering** (structured path) | [Learning Roadmap](meta/roadmap.md) | Phases 1–15 in order, with milestones |
 | **Learn a specific topic** | [Handbooks below ↓](#complete-handbooks) | 15 complete modules — jump to any topic |

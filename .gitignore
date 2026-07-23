@@ -33,6 +33,7 @@ wheels/
 .installed.cfg
 *.egg
 .venv/
+.venv-docs/
 venv/
 ENV/
 env/
@@ -60,11 +61,9 @@ credentials.json
 secrets/
 
 # Build artifacts
-_site/
-.docusaurus/
-.next/
-out/
-*.log
+site/**
+.venv-docs/
+
 
 # Temporary files
 tmp/
