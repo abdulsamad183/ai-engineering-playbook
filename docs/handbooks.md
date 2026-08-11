@@ -2,8 +2,8 @@
 
 > The 25 primary topics of the AI Engineering Playbook.
 
-Click a topic in the **left sidebar**, or open one below.  
-**Python** includes a full 40-lesson curriculum inside its hub.
+Click a topic in the **left sidebar** (topics **1–25** stay at the top), or open one below.  
+Deep curricula (**Python**, **Frameworks**, **Math & Stats**, **ML**) are listed under the numbered topics in the sidebar — or open each hub’s topic tables.
 
 | # | Topic |
 |---|-------|

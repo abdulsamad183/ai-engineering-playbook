@@ -145,6 +145,72 @@ nav:
     - handbooks.md
     - "1. Python": domains/python-engineering/README.md
     - "2. Python Frameworks & Libraries": domains/python-frameworks-libraries/README.md
+    - "3. Mathematics & Statistics": domains/mathematics-statistics/README.md
+    - "4. Machine Learning": domains/machine-learning/README.md
+    - "5. Deep Learning": domains/deep-learning/README.md
+    - "6. Natural Language Processing": domains/natural-language-processing/README.md
+    - "7. Transformers": domains/transformers/README.md
+    - "8. Large Language Models": domains/llm-engineering/README.md
+    - "9. Generative AI": domains/generative-ai/README.md
+    - "10. Prompt Engineering": domains/prompt-engineering/README.md
+    - "11. LLM Application Development": domains/llm-application-development/README.md
+    - "12. Chatbots": domains/chatbots/README.md
+    - "13. Embeddings & Vector Databases": domains/embeddings-vector-databases/README.md
+    - "14. RAG": domains/rag/README.md
+    - "15. LLM Fine-Tuning": domains/llm-fine-tuning/README.md
+    - "16. LLM Evaluation": domains/ai-evaluation/README.md
+    - "17. AI Agents": domains/ai-agents/README.md
+    - "18. Agentic AI": domains/agentic-ai/README.md
+    - "19. MCP": domains/mcp/README.md
+    - "20. Multi-Agent Systems": domains/multi-agent-systems/README.md
+    - "21. AI System Design": domains/ai-system-design/README.md
+    - "22. MLOps & LLMOps": domains/mlops-llmops/README.md
+    - "23. AI Deployment & Infrastructure": domains/ai-deployment/README.md
+    - "24. AI Security & Guardrails": domains/ai-security-guardrails/README.md
+    - "25. Advanced AI Research": domains/advanced-ai-research/README.md
+    # Curricula live below 1–25 so the numbered Handbooks list stays visible
+    - "Python curriculum":
+      - "01 Basics": domains/python-engineering/topics/01-python-basics.md
+      - "02 Variables & Data Types": domains/python-engineering/topics/02-variables-data-types.md
+      - "03 Operators": domains/python-engineering/topics/03-operators.md
+      - "04 Conditionals": domains/python-engineering/topics/04-conditional-statements.md
+      - "05 Loops": domains/python-engineering/topics/05-loops.md
+      - "06 Functions": domains/python-engineering/topics/06-functions.md
+      - "07 Scope": domains/python-engineering/topics/07-scope-namespaces.md
+      - "08 Strings": domains/python-engineering/topics/08-strings.md
+      - "09 Lists": domains/python-engineering/topics/09-lists.md
+      - "10 Tuples": domains/python-engineering/topics/10-tuples.md
+      - "11 Sets": domains/python-engineering/topics/11-sets.md
+      - "12 Dictionaries": domains/python-engineering/topics/12-dictionaries.md
+      - "13 Comprehensions": domains/python-engineering/topics/13-comprehensions.md
+      - "14 Iterators": domains/python-engineering/topics/14-iterators-iterables.md
+      - "15 Generators": domains/python-engineering/topics/15-generators.md
+      - "16 Lambdas": domains/python-engineering/topics/16-lambda-functions.md
+      - "17 map/filter/reduce": domains/python-engineering/topics/17-map-filter-reduce.md
+      - "18 Exceptions": domains/python-engineering/topics/18-exception-handling.md
+      - "19 Files": domains/python-engineering/topics/19-file-handling.md
+      - "20 Modules": domains/python-engineering/topics/20-modules-packages.md
+      - "21 Virtual Envs": domains/python-engineering/topics/21-virtual-environments.md
+      - "22 Packages": domains/python-engineering/topics/22-package-management.md
+      - "23 OOP": domains/python-engineering/topics/23-oop.md
+      - "24 Dataclasses": domains/python-engineering/topics/24-dataclasses.md
+      - "25 Decorators": domains/python-engineering/topics/25-decorators.md
+      - "26 Context Managers": domains/python-engineering/topics/26-context-managers.md
+      - "27 Type Hints": domains/python-engineering/topics/27-type-hints.md
+      - "28 Regex": domains/python-engineering/topics/28-regular-expressions.md
+      - "29 Functional": domains/python-engineering/topics/29-functional-programming.md
+      - "30 Logging": domains/python-engineering/topics/30-logging.md
+      - "31 Unit Testing": domains/python-engineering/topics/31-unit-testing.md
+      - "32 Debugging": domains/python-engineering/topics/32-debugging.md
+      - "33 Concurrency": domains/python-engineering/topics/33-concurrency.md
+      - "34 Threads": domains/python-engineering/topics/34-multithreading.md
+      - "35 Multiprocessing": domains/python-engineering/topics/35-multiprocessing.md
+      - "36 Async": domains/python-engineering/topics/36-asynchronous-programming.md
+      - "37 Memory": domains/python-engineering/topics/37-memory-management.md
+      - "38 Internals": domains/python-engineering/topics/38-python-internals.md
+      - "39 Performance": domains/python-engineering/topics/39-performance-optimization.md
+      - "40 Clean Code": domains/python-engineering/topics/40-clean-code-best-practices.md
+      - "AI Engineering guide": domains/python-engineering/python-for-ai-engineering.md
     - "Frameworks curriculum":
       - NumPy:
         - Overview: domains/python-frameworks-libraries/numpy/README.md
@@ -197,7 +263,6 @@ nav:
         - "05 Serialization": domains/python-frameworks-libraries/pydantic/05-serialization.md
         - "06 Settings": domains/python-frameworks-libraries/pydantic/06-settings.md
         - "07 APIs cheat sheet": domains/python-frameworks-libraries/pydantic/07-important-apis.md
-    - "3. Mathematics & Statistics": domains/mathematics-statistics/README.md
     - "Math & Stats curriculum":
       - Mathematics:
         - Overview: domains/mathematics-statistics/mathematics/README.md
@@ -229,7 +294,6 @@ nav:
         - "22 Optimization for ML": domains/mathematics-statistics/ml-oriented/22-optimization-for-ml.md
         - "23 Information Theory": domains/mathematics-statistics/ml-oriented/23-information-theory.md
         - "24 Statistical Learning Theory": domains/mathematics-statistics/ml-oriented/24-statistical-learning-theory.md
-    - "4. Machine Learning": domains/machine-learning/README.md
     - "ML curriculum":
       - ML Basics:
         - Overview: domains/machine-learning/ml-basics/README.md
@@ -318,112 +382,4 @@ nav:
         - "07 Model Interpretability": domains/machine-learning/miscellaneous/07-model-interpretability.md
         - "08 ML Pipelines": domains/machine-learning/miscellaneous/08-ml-pipelines.md
         - "09 Scikit-Learn": domains/machine-learning/miscellaneous/09-scikit-learn.md
-    - "5. Deep Learning": domains/deep-learning/README.md
-    - "6. Natural Language Processing": domains/natural-language-processing/README.md
-    - "7. Transformers": domains/transformers/README.md
-    - "8. Large Language Models": domains/llm-engineering/README.md
-    - "9. Generative AI": domains/generative-ai/README.md
-    - "10. Prompt Engineering": domains/prompt-engineering/README.md
-    - "11. LLM Application Development": domains/llm-application-development/README.md
-    - "12. Chatbots": domains/chatbots/README.md
-    - "13. Embeddings & Vector Databases": domains/embeddings-vector-databases/README.md
-    - "14. RAG": domains/rag/README.md
-    - "15. LLM Fine-Tuning": domains/llm-fine-tuning/README.md
-    - "16. LLM Evaluation": domains/ai-evaluation/README.md
-    - "17. AI Agents": domains/ai-agents/README.md
-    - "18. Agentic AI": domains/agentic-ai/README.md
-    - "19. MCP": domains/mcp/README.md
-    - "20. Multi-Agent Systems": domains/multi-agent-systems/README.md
-    - "21. AI System Design": domains/ai-system-design/README.md
-    - "22. MLOps & LLMOps": domains/mlops-llmops/README.md
-    - "23. AI Deployment & Infrastructure": domains/ai-deployment/README.md
-    - "24. AI Security & Guardrails": domains/ai-security-guardrails/README.md
-    - "25. Advanced AI Research": domains/advanced-ai-research/README.md
-    # Python curriculum (linked from the Python hub Topics table)
-    - "Python curriculum":
-      - "01 Basics": domains/python-engineering/topics/01-python-basics.md
-      - "02 Variables & Data Types": domains/python-engineering/topics/02-variables-data-types.md
-      - "03 Operators": domains/python-engineering/topics/03-operators.md
-      - "04 Conditionals": domains/python-engineering/topics/04-conditional-statements.md
-      - "05 Loops": domains/python-engineering/topics/05-loops.md
-      - "06 Functions": domains/python-engineering/topics/06-functions.md
-      - "07 Scope": domains/python-engineering/topics/07-scope-namespaces.md
-      - "08 Strings": domains/python-engineering/topics/08-strings.md
-      - "09 Lists": domains/python-engineering/topics/09-lists.md
-      - "10 Tuples": domains/python-engineering/topics/10-tuples.md
-      - "11 Sets": domains/python-engineering/topics/11-sets.md
-      - "12 Dictionaries": domains/python-engineering/topics/12-dictionaries.md
-      - "13 Comprehensions": domains/python-engineering/topics/13-comprehensions.md
-      - "14 Iterators": domains/python-engineering/topics/14-iterators-iterables.md
-      - "15 Generators": domains/python-engineering/topics/15-generators.md
-      - "16 Lambdas": domains/python-engineering/topics/16-lambda-functions.md
-      - "17 map/filter/reduce": domains/python-engineering/topics/17-map-filter-reduce.md
-      - "18 Exceptions": domains/python-engineering/topics/18-exception-handling.md
-      - "19 Files": domains/python-engineering/topics/19-file-handling.md
-      - "20 Modules": domains/python-engineering/topics/20-modules-packages.md
-      - "21 Virtual Envs": domains/python-engineering/topics/21-virtual-environments.md
-      - "22 Packages": domains/python-engineering/topics/22-package-management.md
-      - "23 OOP": domains/python-engineering/topics/23-oop.md
-      - "24 Dataclasses": domains/python-engineering/topics/24-dataclasses.md
-      - "25 Decorators": domains/python-engineering/topics/25-decorators.md
-      - "26 Context Managers": domains/python-engineering/topics/26-context-managers.md
-      - "27 Type Hints": domains/python-engineering/topics/27-type-hints.md
-      - "28 Regex": domains/python-engineering/topics/28-regular-expressions.md
-      - "29 Functional": domains/python-engineering/topics/29-functional-programming.md
-      - "30 Logging": domains/python-engineering/topics/30-logging.md
-      - "31 Unit Testing": domains/python-engineering/topics/31-unit-testing.md
-      - "32 Debugging": domains/python-engineering/topics/32-debugging.md
-      - "33 Concurrency": domains/python-engineering/topics/33-concurrency.md
-      - "34 Threads": domains/python-engineering/topics/34-multithreading.md
-      - "35 Multiprocessing": domains/python-engineering/topics/35-multiprocessing.md
-      - "36 Async": domains/python-engineering/topics/36-asynchronous-programming.md
-      - "37 Memory": domains/python-engineering/topics/37-memory-management.md
-      - "38 Internals": domains/python-engineering/topics/38-python-internals.md
-      - "39 Performance": domains/python-engineering/topics/39-performance-optimization.md
-      - "40 Clean Code": domains/python-engineering/topics/40-clean-code-best-practices.md
-      - "AI Engineering guide": domains/python-engineering/python-for-ai-engineering.md
-  - Build:
-    - Templates: templates/README.md
-    - Starters: templates/engineering/README.md
-    - Examples: examples/README.md
-    - Prompts: prompts/README.md
-  - Reference:
-    - Cheat Sheets: cheat-sheets/README.md
-    - Glossary: meta/glossary.md
-    - Master Index: meta/indexes/MASTER-INDEX.md
-    - Knowledge: knowledge/README.md
-    - Domains Overview: domains/README.md
-    - More handbooks:
-      - Foundations: domains/foundations/README.md
-      - Backend: domains/backend-engineering/README.md
-      - APIs: domains/apis/README.md
-      - FastAPI: domains/fastapi/README.md
-      - Databases: domains/databases/README.md
-      - Context Engineering: domains/context-engineering/README.md
-      - AI Safety (deep dive): domains/ai-safety/README.md
-      - Debugging: domains/debugging/README.md
-      - Common Mistakes: domains/common-mistakes/README.md
-      - Research Papers: domains/papers/README.md
-      - Interview Prep: domains/interview-preparation/README.md
-    - Docs Site Guide: docs-site.md
-
-not_in_nav: |
-  meta/templates/**
-  meta/indexes/topics/**
-  meta/indexes/technologies/**
-  meta/indexes/patterns/**
-  meta/indexes/comparisons/**
-  meta/architecture-overview.md
-  meta/style-guide.md
-  meta/naming-conventions.md
-  meta/indexing-strategy.md
-  meta/mermaid-conventions.md
-  domains/embeddings/**
-  domains/vector-databases/**
-  domains/a2a/**
-  domains/ai-workflows/**
-  domains/cloud-deployment/**
-  domains/model-serving/**
-  domains/career-notes/**
-  domains/research-notes/**
-  resources/**
+ 
