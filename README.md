@@ -54,7 +54,7 @@ flowchart TB
 | 2 | [Python Frameworks & Libraries](domains/python-frameworks-libraries/README.md) | FastAPI, data/ML stack, LLM SDKs |
 | 3 | [Mathematics & Statistics](domains/mathematics-statistics/README.md) | Linear algebra, probability, eval stats |
 | 4 | [Machine Learning](domains/machine-learning/README.md) | 9 sections · 69 topics — basics → ensembles → eval · features · sklearn |
-| 5 | [Deep Learning](domains/deep-learning/README.md) | Neural nets, training, path to LMs |
+| 5 | [Deep Learning](domains/deep-learning/README.md) | 10 sections · 63 topics — nets → CNN/RNN → train · serve |
 | 6 | [Natural Language Processing](domains/natural-language-processing/README.md) | Tokenization, core tasks, NLP landscape |
 | 7 | [Transformers](domains/transformers/README.md) | Attention, architecture, encoder vs decoder |
 | 8 | [Large Language Models (LLMs)](domains/llm-engineering/README.md) | Tokens, APIs, tools, cost, streaming |

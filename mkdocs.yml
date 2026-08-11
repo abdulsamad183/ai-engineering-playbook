@@ -360,7 +360,91 @@ nav:
         - "07 Model Interpretability": domains/machine-learning/miscellaneous/07-model-interpretability.md
         - "08 ML Pipelines": domains/machine-learning/miscellaneous/08-ml-pipelines.md
         - "09 Scikit-Learn": domains/machine-learning/miscellaneous/09-scikit-learn.md
-    - "5. Deep Learning": domains/deep-learning/README.md
+    - "5. Deep Learning":
+      - Overview: domains/deep-learning/README.md
+      - Deep Learning Basics:
+        - Overview: domains/deep-learning/dl-basics/README.md
+        - "01 Neural Networks": domains/deep-learning/dl-basics/01-neural-networks.md
+        - "02 Perceptron": domains/deep-learning/dl-basics/02-perceptron.md
+        - "03 Forward Propagation": domains/deep-learning/dl-basics/03-forward-propagation.md
+        - "04 Backpropagation": domains/deep-learning/dl-basics/04-backpropagation.md
+        - "05 Activation Functions": domains/deep-learning/dl-basics/05-activation-functions.md
+        - "06 Loss Functions": domains/deep-learning/dl-basics/06-loss-functions.md
+        - "07 Gradient Descent": domains/deep-learning/dl-basics/07-gradient-descent.md
+        - "08 Learning Rate": domains/deep-learning/dl-basics/08-learning-rate.md
+        - "09 Epochs & Batches": domains/deep-learning/dl-basics/09-epochs-and-batches.md
+        - "10 Optimizers": domains/deep-learning/dl-basics/10-optimizers.md
+        - "11 Weight Initialization": domains/deep-learning/dl-basics/11-weight-initialization.md
+        - "12 Regularization": domains/deep-learning/dl-basics/12-regularization.md
+      - Neural Network Architectures:
+        - Overview: domains/deep-learning/neural-network-architectures/README.md
+        - "01 Feedforward Neural Networks": domains/deep-learning/neural-network-architectures/01-feedforward-neural-networks.md
+        - "02 Multilayer Perceptrons": domains/deep-learning/neural-network-architectures/02-multilayer-perceptrons.md
+        - "03 Deep Neural Networks": domains/deep-learning/neural-network-architectures/03-deep-neural-networks.md
+        - "04 Residual Networks": domains/deep-learning/neural-network-architectures/04-residual-networks.md
+        - "05 Dense Networks": domains/deep-learning/neural-network-architectures/05-dense-networks.md
+      - Convolutional Neural Networks:
+        - Overview: domains/deep-learning/convolutional-neural-networks/README.md
+        - "01 CNN Basics": domains/deep-learning/convolutional-neural-networks/01-cnn-basics.md
+        - "02 Convolution": domains/deep-learning/convolutional-neural-networks/02-convolution.md
+        - "03 Pooling": domains/deep-learning/convolutional-neural-networks/03-pooling.md
+        - "04 Padding & Stride": domains/deep-learning/convolutional-neural-networks/04-padding-and-stride.md
+        - "05 CNN Architectures": domains/deep-learning/convolutional-neural-networks/05-cnn-architectures.md
+        - "06 Transfer Learning": domains/deep-learning/convolutional-neural-networks/06-transfer-learning.md
+      - Sequence Models:
+        - Overview: domains/deep-learning/sequence-models/README.md
+        - "01 Recurrent Neural Networks": domains/deep-learning/sequence-models/01-recurrent-neural-networks.md
+        - "02 LSTM": domains/deep-learning/sequence-models/02-lstm.md
+        - "03 GRU": domains/deep-learning/sequence-models/03-gru.md
+        - "04 Bidirectional RNNs": domains/deep-learning/sequence-models/04-bidirectional-rnns.md
+        - "05 Sequence-to-Sequence Models": domains/deep-learning/sequence-models/05-sequence-to-sequence-models.md
+      - Deep Learning Training:
+        - Overview: domains/deep-learning/deep-learning-training/README.md
+        - "01 Batch Normalization": domains/deep-learning/deep-learning-training/01-batch-normalization.md
+        - "02 Dropout": domains/deep-learning/deep-learning-training/02-dropout.md
+        - "03 Weight Decay": domains/deep-learning/deep-learning-training/03-weight-decay.md
+        - "04 Learning Rate Scheduling": domains/deep-learning/deep-learning-training/04-learning-rate-scheduling.md
+        - "05 Gradient Clipping": domains/deep-learning/deep-learning-training/05-gradient-clipping.md
+        - "06 Data Augmentation": domains/deep-learning/deep-learning-training/06-data-augmentation.md
+        - "07 Transfer Learning": domains/deep-learning/deep-learning-training/07-transfer-learning.md
+        - "08 Fine-Tuning": domains/deep-learning/deep-learning-training/08-fine-tuning.md
+      - Deep Learning Frameworks:
+        - Overview: domains/deep-learning/deep-learning-frameworks/README.md
+        - "01 PyTorch": domains/deep-learning/deep-learning-frameworks/01-pytorch.md
+        - "02 TensorFlow": domains/deep-learning/deep-learning-frameworks/02-tensorflow.md
+        - "03 Keras": domains/deep-learning/deep-learning-frameworks/03-keras.md
+      - Model Evaluation & Debugging:
+        - Overview: domains/deep-learning/model-evaluation-debugging/README.md
+        - "01 Training & Validation": domains/deep-learning/model-evaluation-debugging/01-training-and-validation.md
+        - "02 Overfitting & Underfitting": domains/deep-learning/model-evaluation-debugging/02-overfitting-and-underfitting.md
+        - "03 Model Checkpointing": domains/deep-learning/model-evaluation-debugging/03-model-checkpointing.md
+        - "04 Experiment Tracking": domains/deep-learning/model-evaluation-debugging/04-experiment-tracking.md
+        - "05 Error Analysis": domains/deep-learning/model-evaluation-debugging/05-error-analysis.md
+        - "06 Hyperparameter Tuning": domains/deep-learning/model-evaluation-debugging/06-hyperparameter-tuning.md
+      - Advanced Deep Learning:
+        - Overview: domains/deep-learning/advanced-deep-learning/README.md
+        - "01 Autoencoders": domains/deep-learning/advanced-deep-learning/01-autoencoders.md
+        - "02 Variational Autoencoders": domains/deep-learning/advanced-deep-learning/02-variational-autoencoders.md
+        - "03 Generative Adversarial Networks": domains/deep-learning/advanced-deep-learning/03-generative-adversarial-networks.md
+        - "04 Attention Mechanism": domains/deep-learning/advanced-deep-learning/04-attention-mechanism.md
+        - "05 Representation Learning": domains/deep-learning/advanced-deep-learning/05-representation-learning.md
+        - "06 Self-Supervised Learning": domains/deep-learning/advanced-deep-learning/06-self-supervised-learning.md
+        - "07 Multitask Learning": domains/deep-learning/advanced-deep-learning/07-multitask-learning.md
+      - Deep Learning Optimization:
+        - Overview: domains/deep-learning/deep-learning-optimization/README.md
+        - "01 GPU Computing": domains/deep-learning/deep-learning-optimization/01-gpu-computing.md
+        - "02 Mixed Precision Training": domains/deep-learning/deep-learning-optimization/02-mixed-precision-training.md
+        - "03 Distributed Training": domains/deep-learning/deep-learning-optimization/03-distributed-training.md
+        - "04 Model Compression": domains/deep-learning/deep-learning-optimization/04-model-compression.md
+        - "05 Quantization": domains/deep-learning/deep-learning-optimization/05-quantization.md
+        - "06 Pruning": domains/deep-learning/deep-learning-optimization/06-pruning.md
+      - Deep Learning Deployment:
+        - Overview: domains/deep-learning/deep-learning-deployment/README.md
+        - "01 Model Serving": domains/deep-learning/deep-learning-deployment/01-model-serving.md
+        - "02 Inference Optimization": domains/deep-learning/deep-learning-deployment/02-inference-optimization.md
+        - "03 ONNX": domains/deep-learning/deep-learning-deployment/03-onnx.md
+        - "04 TensorRT": domains/deep-learning/deep-learning-deployment/04-tensorrt.md
+        - "05 Edge Deployment": domains/deep-learning/deep-learning-deployment/05-edge-deployment.md
     - "6. Natural Language Processing": domains/natural-language-processing/README.md
     - "7. Transformers": domains/transformers/README.md
     - "8. Large Language Models": domains/llm-engineering/README.md
