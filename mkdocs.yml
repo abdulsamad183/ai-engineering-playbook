@@ -198,6 +198,37 @@ nav:
         - "06 Settings": domains/python-frameworks-libraries/pydantic/06-settings.md
         - "07 APIs cheat sheet": domains/python-frameworks-libraries/pydantic/07-important-apis.md
     - "3. Mathematics & Statistics": domains/mathematics-statistics/README.md
+    - "Math & Stats curriculum":
+      - Mathematics:
+        - Overview: domains/mathematics-statistics/mathematics/README.md
+        - "01 Linear Algebra": domains/mathematics-statistics/mathematics/01-linear-algebra.md
+        - "02 Calculus": domains/mathematics-statistics/mathematics/02-calculus.md
+        - "03 Differential Equations": domains/mathematics-statistics/mathematics/03-differential-equations.md
+        - "04 Probability Theory": domains/mathematics-statistics/mathematics/04-probability-theory.md
+        - "05 Discrete Mathematics": domains/mathematics-statistics/mathematics/05-discrete-mathematics.md
+        - "06 Optimization": domains/mathematics-statistics/mathematics/06-optimization.md
+        - "07 Numerical Methods": domains/mathematics-statistics/mathematics/07-numerical-methods.md
+      - Statistics:
+        - Overview: domains/mathematics-statistics/statistics/README.md
+        - "08 Descriptive Statistics": domains/mathematics-statistics/statistics/08-descriptive-statistics.md
+        - "09 Inferential Statistics": domains/mathematics-statistics/statistics/09-inferential-statistics.md
+        - "10 Probability Distributions": domains/mathematics-statistics/statistics/10-probability-distributions.md
+        - "11 Sampling": domains/mathematics-statistics/statistics/11-sampling.md
+        - "12 Hypothesis Testing": domains/mathematics-statistics/statistics/12-hypothesis-testing.md
+        - "13 Confidence Intervals": domains/mathematics-statistics/statistics/13-confidence-intervals.md
+        - "14 Correlation & Covariance": domains/mathematics-statistics/statistics/14-correlation-covariance.md
+        - "15 Regression Analysis": domains/mathematics-statistics/statistics/15-regression-analysis.md
+        - "16 Bayesian Statistics": domains/mathematics-statistics/statistics/16-bayesian-statistics.md
+        - "17 Multivariate Statistics": domains/mathematics-statistics/statistics/17-multivariate-statistics.md
+        - "18 Statistical Modeling": domains/mathematics-statistics/statistics/18-statistical-modeling.md
+      - ML-Oriented Mathematics:
+        - Overview: domains/mathematics-statistics/ml-oriented/README.md
+        - "19 Linear Algebra for ML": domains/mathematics-statistics/ml-oriented/19-linear-algebra-for-ml.md
+        - "20 Calculus for ML": domains/mathematics-statistics/ml-oriented/20-calculus-for-ml.md
+        - "21 Probability for ML": domains/mathematics-statistics/ml-oriented/21-probability-for-ml.md
+        - "22 Optimization for ML": domains/mathematics-statistics/ml-oriented/22-optimization-for-ml.md
+        - "23 Information Theory": domains/mathematics-statistics/ml-oriented/23-information-theory.md
+        - "24 Statistical Learning Theory": domains/mathematics-statistics/ml-oriented/24-statistical-learning-theory.md
     - "4. Machine Learning": domains/machine-learning/README.md
     - "5. Deep Learning": domains/deep-learning/README.md
     - "6. Natural Language Processing": domains/natural-language-processing/README.md
