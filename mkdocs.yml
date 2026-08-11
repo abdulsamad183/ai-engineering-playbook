@@ -134,38 +134,38 @@ extra_javascript:
   - https://unpkg.com/mermaid@10/dist/mermaid.min.js
   - javascripts/mermaid-init.js
 
-# Curated navigation — few tabs, capability-grouped handbooks
+# Curated navigation — 25 primary topics on the home page + handbook tabs
 nav:
   - Home: index.md
   - Learn:
     - Learning Roadmap: meta/roadmap.md
     - Capstone Walkthrough: meta/capstone-walkthrough.md
   - Handbooks:
-    - Foundations:
-      - Overview: domains/foundations/README.md
-      - Python: domains/python-engineering/README.md
-      - Backend: domains/backend-engineering/README.md
-      - APIs: domains/apis/README.md
-      - FastAPI: domains/fastapi/README.md
-      - Databases: domains/databases/README.md
-    - Core:
-      - LLM Engineering: domains/llm-engineering/README.md
-      - Prompt Engineering: domains/prompt-engineering/README.md
-      - Context Engineering: domains/context-engineering/README.md
-    - Retrieval & Agents:
-      - RAG: domains/rag/README.md
-      - AI Agents: domains/ai-agents/README.md
-      - MCP: domains/mcp/README.md
-    - Production:
-      - AI Evaluation: domains/ai-evaluation/README.md
-      - System Design: domains/ai-system-design/README.md
-      - Production AI: domains/ai-deployment/README.md
-    - Craft & Growth:
-      - AI Safety: domains/ai-safety/README.md
-      - Debugging: domains/debugging/README.md
-      - Common Mistakes: domains/common-mistakes/README.md
-      - Research Papers: domains/papers/README.md
-      - Interview Prep: domains/interview-preparation/README.md
+    - "1. Python": domains/python-engineering/README.md
+    - "2. Python Frameworks & Libraries": domains/python-frameworks-libraries/README.md
+    - "3. Mathematics & Statistics": domains/mathematics-statistics/README.md
+    - "4. Machine Learning": domains/machine-learning/README.md
+    - "5. Deep Learning": domains/deep-learning/README.md
+    - "6. Natural Language Processing": domains/natural-language-processing/README.md
+    - "7. Transformers": domains/transformers/README.md
+    - "8. Large Language Models": domains/llm-engineering/README.md
+    - "9. Generative AI": domains/generative-ai/README.md
+    - "10. Prompt Engineering": domains/prompt-engineering/README.md
+    - "11. LLM Application Development": domains/llm-application-development/README.md
+    - "12. Chatbots": domains/chatbots/README.md
+    - "13. Embeddings & Vector Databases": domains/embeddings-vector-databases/README.md
+    - "14. RAG": domains/rag/README.md
+    - "15. LLM Fine-Tuning": domains/llm-fine-tuning/README.md
+    - "16. LLM Evaluation": domains/ai-evaluation/README.md
+    - "17. AI Agents": domains/ai-agents/README.md
+    - "18. Agentic AI": domains/agentic-ai/README.md
+    - "19. MCP": domains/mcp/README.md
+    - "20. Multi-Agent Systems": domains/multi-agent-systems/README.md
+    - "21. AI System Design": domains/ai-system-design/README.md
+    - "22. MLOps & LLMOps": domains/mlops-llmops/README.md
+    - "23. AI Deployment & Infrastructure": domains/ai-deployment/README.md
+    - "24. AI Security & Guardrails": domains/ai-security-guardrails/README.md
+    - "25. Advanced AI Research": domains/advanced-ai-research/README.md
   - Build:
     - Templates: templates/README.md
     - Starters: templates/engineering/README.md
@@ -177,6 +177,18 @@ nav:
     - Master Index: meta/indexes/MASTER-INDEX.md
     - Knowledge: knowledge/README.md
     - Domains Overview: domains/README.md
+    - More handbooks:
+      - Foundations: domains/foundations/README.md
+      - Backend: domains/backend-engineering/README.md
+      - APIs: domains/apis/README.md
+      - FastAPI: domains/fastapi/README.md
+      - Databases: domains/databases/README.md
+      - Context Engineering: domains/context-engineering/README.md
+      - AI Safety (deep dive): domains/ai-safety/README.md
+      - Debugging: domains/debugging/README.md
+      - Common Mistakes: domains/common-mistakes/README.md
+      - Research Papers: domains/papers/README.md
+      - Interview Prep: domains/interview-preparation/README.md
     - Docs Site Guide: docs-site.md
 
 not_in_nav: |
@@ -194,7 +206,6 @@ not_in_nav: |
   domains/vector-databases/**
   domains/a2a/**
   domains/ai-workflows/**
-  domains/multi-agent-systems/**
   domains/cloud-deployment/**
   domains/model-serving/**
   domains/career-notes/**

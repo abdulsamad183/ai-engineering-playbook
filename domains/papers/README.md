@@ -17,9 +17,9 @@ keywords: [research papers, transformers, ReAct, RAG, DSPy, SWE-Agent]
 author: hp
 ---
 
-# AI Research Papers
+# Research Papers
 
-> Engineering handbook for the research that shaped modern AI systems — not paper reproductions, but actionable architecture and tradeoff guidance.
+> Paper notes with engineering takeaways — see also [Advanced AI Research](../advanced-ai-research/README.md).
 > **Prerequisites:** [LLM Engineering](../llm-engineering/README.md) · [Prompt Engineering](../prompt-engineering/README.md)
 
 ---

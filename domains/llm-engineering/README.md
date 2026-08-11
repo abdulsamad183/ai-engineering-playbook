@@ -1,6 +1,6 @@
-# LLM Engineering
+# Large Language Models (LLMs)
 
-> Production-oriented handbook for understanding, integrating, optimizing, and deploying Large Language Models.
+> Engineering handbook for working with LLMs — tokens, APIs, tools, cost, and production integration.
 > **Prerequisites:** [Foundations](../foundations/README.md) · [Backend Engineering](../backend-engineering/README.md)
 
 ---

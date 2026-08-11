@@ -1,6 +1,6 @@
-# AI Evaluation & LLMOps Evaluation
+# LLM Evaluation
 
-> Definitive engineering reference for measuring, validating, monitoring, and continuously improving production AI systems.
+> How to measure and gate LLM system quality — metrics, golden sets, and CI.
 > **Prerequisites:** [MCP](../mcp/README.md) · [Agents](../ai-agents/README.md) · [RAG](../rag/README.md)
 
 ---

@@ -1,32 +1,48 @@
-# Python Engineering
+# Python
 
 > Python language patterns, tooling, and best practices for AI applications.
+
+**Prerequisites:** None  
+**Unlocks:** [Python Frameworks & Libraries](../python-frameworks-libraries/README.md) · [LLM Application Development](../llm-application-development/README.md)
+
+---
+
+## Definition
+
+**Python** is the dominant language for AI engineering: model SDKs, data tooling, APIs, and orchestration. This handbook focuses on production-grade Python — typing, async, packaging, and project structure — not beginner syntax.
+
+---
+
+## Learning path
+
+```mermaid
+flowchart LR
+  Core[Language core] --> Tooling[Tooling & typing]
+  Tooling --> Async[Async & concurrency]
+  Async --> Struct[Project structure]
+  Struct --> Apps[AI app patterns]
+```
 
 ---
 
 ## Documents
 
-| Document | Status | Description |
-|----------|--------|-------------|
-| [Python for AI Engineering](python-for-ai-engineering.md) | published | Production Python patterns — tooling, typing, async, concurrency, and project structure for AI applications |
+| # | Topic | Document |
+|---|-------|----------|
+| 1 | Python for AI Engineering | [python-for-ai-engineering.md](python-for-ai-engineering.md) |
 
 ---
 
-## Related Domains
+## Related topics
 
-- See [domains overview](../README.md) for related domains.
+- [Python Frameworks & Libraries](../python-frameworks-libraries/README.md)
+- [FastAPI](../fastapi/README.md)
+- [Backend Engineering](../backend-engineering/README.md)
 
-## Templates
+---
 
-When adding content to this domain, use the appropriate [template](../../meta/templates/):
+## See also
 
-- Concept → `concept.md`
-- Technology → `technology.md`
-- Tutorial → `tutorial.md`
-- Production Guide → `production-guide.md`
-
-## See Also
-
-- [Master Index](../../meta/indexes/MASTER-INDEX.md)
+- [Domains overview](../README.md)
 - [Learning Roadmap](../../meta/roadmap.md)
-- [Contributing Guide](../../CONTRIBUTING.md)
+- [Master Index](../../meta/indexes/MASTER-INDEX.md)

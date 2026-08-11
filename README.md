@@ -1,177 +1,118 @@
 # AI Engineering Playbook
 
-> A production handbook for **building, shipping, and operating** AI applications — not a research course, not a dump of notes.
+> A production handbook for **building, shipping, and operating** AI systems — from Python foundations through LLMs, RAG, agents, and production ops.
 
-This playbook is the internal-style documentation of an AI engineering team: handbooks you can learn from, templates you can copy, and references you can search.
-
----
-
-## What this playbook is
-
-| It is | It is not |
-|-------|-----------|
-| Practical guidance for LLM apps, RAG, agents, MCP, eval, and production | A deep-learning theory curriculum |
-| Opinionated, production-minded defaults | A catalog of every AI tool ever made |
-| Structured by **engineering domains** | Structured by hype frameworks |
-
-**Audience:** AI engineers, backend engineers moving into AI, tech leads designing systems, and candidates preparing for AI engineering interviews.
+Click any topic to open its handbook. Each hub includes definitions, a learning path, diagrams, and linked deep dives.
 
 ---
 
-## How the playbook is organized
-
-Everything sits in a few clear layers. Learn the map once — then you always know where to look.
+## Topics
 
 ```mermaid
 flowchart TB
-  subgraph learn [Learn]
-    H[Handbooks in domains/]
-    R[Roadmap + Capstone]
+  subgraph foundations [Foundations]
+    P[Python]
+    PF[Python Frameworks]
+    MS[Math & Stats]
+    ML[Machine Learning]
+    DL[Deep Learning]
+    NLP[NLP]
   end
-  subgraph build [Build]
-    T[templates/ starters]
-    E[examples/ snippets]
-    P[prompts/ libraries]
+  subgraph models [Models]
+    TR[Transformers]
+    LLM[LLMs]
+    GEN[Generative AI]
   end
-  subgraph ref [Reference]
-    C[cheat-sheets/]
-    G[glossary + master index]
-    K[knowledge/ lessons]
+  subgraph apps [Applications]
+    PE[Prompt Engineering]
+    APP[LLM App Dev]
+    CB[Chatbots]
+    EMB[Embeddings & VDB]
+    RAG[RAG]
+    FT[Fine-Tuning]
+    EV[Evaluation]
   end
-  R --> H
-  H --> T
-  T --> E
-  H --> C
+  subgraph agents [Agents]
+    AG[AI Agents]
+    AA[Agentic AI]
+    MCP[MCP]
+    MAS[Multi-Agent]
+  end
+  subgraph prod [Production]
+    SD[System Design]
+    OPS[MLOps & LLMOps]
+    DEP[Deployment]
+    SEC[Security]
+    RES[Research]
+  end
+  foundations --> models --> apps --> agents --> prod
 ```
 
-| Layer | Folder | What lives here |
-|-------|--------|-----------------|
-| **Handbooks** | `domains/` | Deep guides (RAG, agents, LLM, production…). Start at each folder’s `README.md`. |
-| **Path** | `meta/roadmap.md` | Ordered learning path and milestones by capability. |
-| **Capstone** | `meta/capstone-walkthrough.md` | One end-to-end build that stitches several handbooks together. |
-| **Starters** | `templates/` | Copy-paste production scaffolds (FastAPI, RAG, agent, MCP, Docker, CI). |
-| **Examples** | `examples/` | Small runnable scripts by topic. |
-| **Prompts** | `prompts/` | Parameterized prompt templates. |
-| **Quick ref** | `cheat-sheets/` | One-page cards for interviews and day-to-day work. |
-| **Meta** | `meta/` | Glossary, indexes, style guide, architecture notes. |
-| **Experience** | `knowledge/` | Lessons learned, ADRs, experiments (grows over time). |
-
-**Rule of thumb**
-
-1. **New topic?** Open the handbook under `domains/`.
-2. **Need code today?** Open `templates/` or `examples/`.
-3. **Need a reminder?** Open `cheat-sheets/` or the [glossary](meta/glossary.md).
-
----
-
-## Three ways to use it
-
-Pick **one** entry path — ignore the rest until you need them.
-
-| Path | When | Start here |
-|------|------|------------|
-| **1. Learn in order** | You want a curriculum from foundations → production | [Learning Roadmap](meta/roadmap.md) |
-| **2. Build something** | You want a working app this weekend | [Capstone: RAG Chat API](meta/capstone-walkthrough.md) |
-| **3. Jump to a topic** | You already know what you need | [Handbooks below](#handbooks) or site search |
+| # | Topic | What you will learn |
+|---|-------|---------------------|
+| 1 | [Python](domains/python-engineering/README.md) | Production Python for AI — typing, async, structure |
+| 2 | [Python Frameworks & Libraries](domains/python-frameworks-libraries/README.md) | FastAPI, data/ML stack, LLM SDKs |
+| 3 | [Mathematics & Statistics](domains/mathematics-statistics/README.md) | Linear algebra, probability, eval stats |
+| 4 | [Machine Learning](domains/machine-learning/README.md) | Classical ML loop, supervised learning, discipline |
+| 5 | [Deep Learning](domains/deep-learning/README.md) | Neural nets, training, path to LMs |
+| 6 | [Natural Language Processing](domains/natural-language-processing/README.md) | Tokenization, core tasks, NLP landscape |
+| 7 | [Transformers](domains/transformers/README.md) | Attention, architecture, encoder vs decoder |
+| 8 | [Large Language Models (LLMs)](domains/llm-engineering/README.md) | Tokens, APIs, tools, cost, streaming |
+| 9 | [Generative AI](domains/generative-ai/README.md) | Modalities, productization, quality control |
+| 10 | [Prompt Engineering](domains/prompt-engineering/README.md) | Patterns, versioning, eval, security |
+| 11 | [LLM Application Development](domains/llm-application-development/README.md) | App architecture, orchestration, checklists |
+| 12 | [Chatbots](domains/chatbots/README.md) | Dialogue, memory, grounded support bots |
+| 13 | [Embeddings & Vector Databases](domains/embeddings-vector-databases/README.md) | Vectors, ANN search, choosing a stack |
+| 14 | [RAG](domains/rag/README.md) | Chunking, retrieval, rerank, citations, eval |
+| 15 | [LLM Fine-Tuning](domains/llm-fine-tuning/README.md) | When to FT, LoRA/QLoRA, data & gates |
+| 16 | [LLM Evaluation](domains/ai-evaluation/README.md) | Metrics, golden sets, CI quality gates |
+| 17 | [AI Agents](domains/ai-agents/README.md) | Planning, tools, memory, frameworks |
+| 18 | [Agentic AI](domains/agentic-ai/README.md) | Autonomy levels, goal-directed systems |
+| 19 | [MCP](domains/mcp/README.md) | Model Context Protocol — servers, clients, security |
+| 20 | [Multi-Agent Systems](domains/multi-agent-systems/README.md) | Roles, coordination, when *not* to multi-agent |
+| 21 | [AI System Design](domains/ai-system-design/README.md) | Architecture, scaling, case studies |
+| 22 | [MLOps & LLMOps](domains/mlops-llmops/README.md) | Pipelines, versioning, feedback loops |
+| 23 | [AI Deployment & Infrastructure](domains/ai-deployment/README.md) | Docker, CI/CD, serving, observability |
+| 24 | [AI Security & Guardrails](domains/ai-security-guardrails/README.md) | Threat models, layered guards, secure tools |
+| 25 | [Advanced AI Research](domains/advanced-ai-research/README.md) | Reading papers, research → production |
 
 ---
 
-## Learning path (clear sequence)
+## Suggested learning order
 
-Follow this order by **capability**. Each step has a handbook; finish the milestone before skipping ahead.
+Follow this path if you are building the skill stack from scratch. Jump anywhere if you already know what you need.
 
 ```mermaid
 flowchart LR
-  A[Foundations] --> B[Core]
-  B --> C[Retrieval and Agents]
-  C --> D[Production]
-  D --> E[Craft and Growth]
+  A[1–6 Foundations] --> B[7–9 Models]
+  B --> C[10–16 Apps]
+  C --> D[17–20 Agents]
+  D --> E[21–25 Production & research]
 ```
 
-| # | Capability | Open this |
-|---|------------|-----------|
-| 0 | Hands-on first win (optional but recommended) | [Capstone walkthrough](meta/capstone-walkthrough.md) |
-| 1 | Foundations — engineering, APIs, data | [Foundations](domains/foundations/README.md) · [Backend](domains/backend-engineering/README.md) · [FastAPI](domains/fastapi/README.md) · [Databases](domains/databases/README.md) |
-| 2 | Core — LLM interaction | [LLM Engineering](domains/llm-engineering/README.md) · [Prompt Engineering](domains/prompt-engineering/README.md) · [Context Engineering](domains/context-engineering/README.md) |
-| 3 | Retrieval & Agents | [RAG](domains/rag/README.md) · [AI Agents](domains/ai-agents/README.md) · [MCP](domains/mcp/README.md) |
-| 4 | Production — quality & ops | [AI Evaluation](domains/ai-evaluation/README.md) · [AI System Design](domains/ai-system-design/README.md) · [Production AI](domains/ai-deployment/README.md) |
-| 5 | Craft & Growth (as needed) | [AI Safety](domains/ai-safety/README.md) · [Debugging](domains/debugging/README.md) · [Interview Prep](domains/interview-preparation/README.md) · [Research Papers](domains/papers/README.md) |
+| Stage | Topics |
+|-------|--------|
+| Foundations | 1 → 6 |
+| Models | 7 → 9 |
+| Applications | 10 → 16 |
+| Agents | 17 → 20 |
+| Production & research | 21 → 25 |
 
-Full detail (durations, milestones): **[Learning Roadmap](meta/roadmap.md)**
-
----
-
-## Handbooks
-
-Each link is a **module hub** (table of contents + learning path). Published modules only. Grouped by capability.
-
-### Foundations
-
-| Handbook | You will learn |
-|----------|----------------|
-| [Foundations](domains/foundations/README.md) | Lifecycle, Git, config, testing, practices |
-| [Python Engineering](domains/python-engineering/README.md) | Async, typing, Pydantic, layout |
-| [Backend Engineering](domains/backend-engineering/README.md) | Architecture, HTTP, validation, errors |
-| [APIs](domains/apis/README.md) | REST, auth, streaming, rate limits |
-| [FastAPI](domains/fastapi/README.md) | Routes, DI, AI endpoints |
-| [Databases](domains/databases/README.md) | Postgres, Redis, pgvector, SQLAlchemy |
-
-### Core (LLM Interaction)
-
-| Handbook | You will learn |
-|----------|----------------|
-| [LLM Engineering](domains/llm-engineering/README.md) | Tokens, tools, providers, cost, streaming |
-| [Prompt Engineering](domains/prompt-engineering/README.md) | Patterns, versioning, eval, security |
-| [Context Engineering](domains/context-engineering/README.md) | Memory, ranking, compression, budgets |
-
-### Retrieval & Agents
-
-| Handbook | You will learn |
-|----------|----------------|
-| [RAG](domains/rag/README.md) | Chunking, retrieval, rerank, citations, eval |
-| [AI Agents](domains/ai-agents/README.md) | Planning, tools, memory, frameworks |
-| [MCP](domains/mcp/README.md) | Servers, clients, transports, security |
-
-### Production
-
-| Handbook | You will learn |
-|----------|----------------|
-| [AI Evaluation](domains/ai-evaluation/README.md) | Metrics, golden sets, CI gates |
-| [AI System Design](domains/ai-system-design/README.md) | Architecture, scaling, case studies |
-| [Production AI](domains/ai-deployment/README.md) | Docker, CI/CD, observability, incidents |
-
-### Craft & Growth
-
-| Handbook | You will learn |
-|----------|----------------|
-| [AI Safety](domains/ai-safety/README.md) | Injection, guardrails, safe tools |
-| [Debugging](domains/debugging/README.md) | Triage for RAG, agents, and APIs |
-| [Common Mistakes](domains/common-mistakes/common-engineering-mistakes.md) | 20 pitfalls with fixes |
-| [Research Papers](domains/papers/README.md) | Engineering takeaways from key papers |
-| [Interview Prep](domains/interview-preparation/README.md) | Coding, design, mocks, behavioral |
-
-Planned / thin domains (workflows, cloud depth, …) are marked in [Domains Overview](domains/README.md) — prefer the published list above.
+Hands-on path: **[Capstone: RAG Chat API](meta/capstone-walkthrough.md)** · Full curriculum notes: **[Learning Roadmap](meta/roadmap.md)**
 
 ---
 
-## Build toolkit
+## Also in this repo
 
 | Need | Go to |
 |------|-------|
-| Full starters | [Engineering Templates](templates/README.md) |
-| FastAPI / RAG / Agent / MCP scaffolds | [templates/engineering/](templates/engineering/README.md) |
+| Starters (FastAPI, RAG, agent, MCP) | [templates/engineering/](templates/engineering/README.md) |
 | Runnable snippets | [Examples](examples/README.md) |
 | Prompt files | [Prompts](prompts/README.md) |
-
----
-
-## Quick lookup
-
-| Need | Go to |
-|------|-------|
 | One-page cards | [Cheat Sheets](cheat-sheets/README.md) |
 | Term definitions | [Glossary](meta/glossary.md) |
-| Every document listed | [Master Index](meta/indexes/MASTER-INDEX.md) |
+| Every document | [Master Index](meta/indexes/MASTER-INDEX.md) |
+| Extra domains (backend, FastAPI, debugging, interviews, …) | [Domains overview](domains/README.md) |
 | Site how-to | [Docs site guide](docs-site.md) |
 
 ---

@@ -53,6 +53,8 @@ Pushing to `main` redeploys automatically.
 
 ## Navigation
 
-Top tabs: Home · Start · Foundations · LLM Systems · Retrieval & Agents · Production · Research & Career · Toolkit · Meta
+Top tabs: **Home · Learn · Handbooks · Build · Reference**
+
+The home page lists **25 primary topics**. The Handbooks tab mirrors that list; supporting domains (backend, FastAPI, interviews, …) live under Reference → More handbooks.
 
 Use the search box (header) to find any page — all Markdown under the symlinked trees is indexed even if not listed in the sidebar.

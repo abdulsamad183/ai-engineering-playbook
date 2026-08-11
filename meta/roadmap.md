@@ -1,50 +1,36 @@
 # Learning Roadmap
 
-> One clear path: foundations → LLMs → retrieval & agents → production.  
-> Content is grouped by **capability**, not by numbered curriculum stages.
+> One clear path across the **[25 home-page topics](../README.md#topics)**: foundations → models → apps → agents → production.
 
 ---
 
 ## At a glance
 
 ```mermaid
-flowchart TB
-  subgraph core [Core path — follow in order]
-    F[Foundations]
-    C[Core LLM Interaction]
-    RA[Retrieval and Agents]
-    P[Production]
-    F --> C --> RA --> P
-  end
-
-  subgraph side [Add when needed]
-    CAP[Capstone build]
-    SAFE[AI Safety]
-    DBG[Debugging]
-    INT[Interview Prep]
-    PAP[Research Papers]
-  end
-
-  RA -.-> CAP
-  P -.-> SAFE
-  P -.-> DBG
+flowchart LR
+  A[1–6 Foundations] --> B[7–9 Models]
+  B --> C[10–16 Apps]
+  C --> D[17–20 Agents]
+  D --> E[21–25 Production]
 ```
 
-| Capability | Goal | Primary handbooks |
-|------------|------|-------------------|
-| **Capstone** (optional first win) | Ship one RAG API end-to-end | [Capstone walkthrough](capstone-walkthrough.md) |
-| **Foundations** | Software & data foundations | [Foundations](../domains/foundations/README.md) · [Backend](../domains/backend-engineering/README.md) · [Databases](../domains/databases/README.md) |
-| **Core** | Talk to models well | [LLM](../domains/llm-engineering/README.md) · [Prompts](../domains/prompt-engineering/README.md) · [Context](../domains/context-engineering/README.md) |
-| **Retrieval & Agents** | Grounded & agentic systems | [RAG](../domains/rag/README.md) · [Agents](../domains/ai-agents/README.md) · [MCP](../domains/mcp/README.md) |
-| **Production** | Quality & operations | [Evaluation](../domains/ai-evaluation/README.md) · [System Design](../domains/ai-system-design/README.md) · [Production AI](../domains/ai-deployment/README.md) |
-| **Craft & Growth** | Safety, debugging, career, research | [AI Safety](../domains/ai-safety/README.md) · [Debugging](../domains/debugging/README.md) · [Interviews](../domains/interview-preparation/README.md) · [Papers](../domains/papers/README.md) |
+| Stage | Topics | Goal |
+|-------|--------|------|
+| **Capstone** (optional first win) | — | Ship one RAG API: [Capstone](capstone-walkthrough.md) |
+| **Foundations** | 1–6 | Python, math, ML, DL, NLP |
+| **Models** | 7–9 | Transformers, LLMs, Generative AI |
+| **Applications** | 10–16 | Prompts, apps, chatbots, embeddings, RAG, FT, eval |
+| **Agents** | 17–20 | Agents, agentic AI, MCP, multi-agent |
+| **Production & research** | 21–25 | System design, LLMOps, deploy, security, research |
+
+Full clickable list: **[Home → Topics](../README.md#topics)**
 
 **How to use this roadmap**
 
-1. Pick your current capability from the table.  
-2. Open the handbook hub — complete its learning path / checklist.  
-3. Hit the milestone, then move to the next capability.  
-4. Use side tracks (safety, debugging, interviews) only when relevant.
+1. Pick your current stage from the table.  
+2. Open each topic hub — complete its learning path.  
+3. Hit the milestone, then move to the next stage.  
+4. Use supporting domains (backend, FastAPI, interviews, debugging) from [Domains overview](../domains/README.md) when needed.
 
 Estimated effort assumes ~10–15 hours/week. Skip modules you already know; don’t skip **evaluation** and **production** if you plan to ship.
 
@@ -52,7 +38,7 @@ Estimated effort assumes ~10–15 hours/week. Skip modules you already know; don
 
 ## Philosophy
 
-This path prioritizes **shipping production AI applications** over ML theory. You write code, design systems, integrate models, and operate them. Research papers appear later as engineering context, not as the starting point.
+This path builds **foundations first**, then ships production AI applications. Classical ML/DL literacy supports better LLM engineering; research papers appear as engineering context once you can evaluate and deploy.
 
 ---
 

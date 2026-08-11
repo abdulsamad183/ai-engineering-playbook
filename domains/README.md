@@ -2,171 +2,124 @@
 
 > Knowledge organized by engineering domain — the core content of the AI Engineering Playbook.
 
-**Status legend:** **Published** = substantive docs beyond the README · **Planned** = folder reserved, content still to come. Empty domains are kept on purpose; do not delete them.
+The **home page lists 25 primary topics**. This page is the full inventory (primary + supporting domains).
 
-Domains are grouped by **capability** (Foundations → Core → Retrieval & Agents → Production → Craft & Growth), matching the [Learning Roadmap](../meta/roadmap.md) and home page.
-
----
-
-## How Domains Work
-
-Each domain represents an area of AI engineering knowledge. Domains are named for **concepts**, not technologies — so `vector-databases/` contains content about any vector database, and `ai-agents/` covers agent development regardless of framework.
-
-Documents within a domain follow the [style guide](../meta/style-guide.md) and use [templates](../meta/templates/) appropriate to the content type.
+**Status legend:** **Published** = substantive docs beyond the README · **Planned** = folder reserved, content still to come.
 
 ---
 
-## Domain Map
+## Primary topics (25)
+
+| # | Domain | Description | Status |
+|---|--------|-------------|--------|
+| 1 | [python-engineering](python-engineering/) | Python for AI applications | Published |
+| 2 | [python-frameworks-libraries](python-frameworks-libraries/) | Web, data/ML, and LLM library stack | Published |
+| 3 | [mathematics-statistics](mathematics-statistics/) | Linear algebra, probability, eval stats | Published |
+| 4 | [machine-learning](machine-learning/) | Classical ML foundations | Published |
+| 5 | [deep-learning](deep-learning/) | Neural nets and training | Published |
+| 6 | [natural-language-processing](natural-language-processing/) | Tokenization and core NLP tasks | Published |
+| 7 | [transformers](transformers/) | Attention and transformer architecture | Published |
+| 8 | [llm-engineering](llm-engineering/) | Large language models | Published |
+| 9 | [generative-ai](generative-ai/) | Generative systems and productization | Published |
+| 10 | [prompt-engineering](prompt-engineering/) | Prompt design and optimization | Published |
+| 11 | [llm-application-development](llm-application-development/) | Building LLM-backed applications | Published |
+| 12 | [chatbots](chatbots/) | Conversational products | Published |
+| 13 | [embeddings-vector-databases](embeddings-vector-databases/) | Embeddings and vector search | Published |
+| 14 | [rag](rag/) | Retrieval-augmented generation | Published |
+| 15 | [llm-fine-tuning](llm-fine-tuning/) | Adapting LLM weights | Published |
+| 16 | [ai-evaluation](ai-evaluation/) | LLM / system evaluation | Published |
+| 17 | [ai-agents](ai-agents/) | Agent development | Published |
+| 18 | [agentic-ai](agentic-ai/) | Autonomy and goal-directed systems | Published |
+| 19 | [mcp](mcp/) | Model Context Protocol | Published |
+| 20 | [multi-agent-systems](multi-agent-systems/) | Multi-agent coordination | Published |
+| 21 | [ai-system-design](ai-system-design/) | AI system architecture | Published |
+| 22 | [mlops-llmops](mlops-llmops/) | MLOps and LLMOps | Published |
+| 23 | [ai-deployment](ai-deployment/) | Deployment and infrastructure | Published |
+| 24 | [ai-security-guardrails](ai-security-guardrails/) | Security and guardrails | Published |
+| 25 | [advanced-ai-research](advanced-ai-research/) | Research → engineering practice | Published |
 
 ```mermaid
 flowchart TB
-    subgraph Foundations
-        F[foundations]
-        PY[python-engineering]
-        BE[backend-engineering]
-        API[apis]
-        FA[fastapi]
-        DB[databases]
-        SEC[security]
-        PERF[performance-optimization]
-    end
-
-    subgraph Core [Core LLM Interaction]
-        LLM[llm-engineering]
-        PE[prompt-engineering]
-        CE[context-engineering]
-    end
-
-    subgraph RA [Retrieval and Agents]
-        EM[embeddings]
-        VD[vector-databases]
-        RAG[rag]
-        AGT[ai-agents]
-        AA[agent-architectures]
-        MCP[mcp]
-        A2A[a2a]
-        WF[ai-workflows]
-        MA[multi-agent-systems]
-    end
-
-    subgraph Production
-        EVAL[ai-evaluation]
-        SD[ai-system-design]
-        DEP[ai-deployment]
-        MI[model-integration]
-        MS[model-serving]
-        IO[inference-optimization]
-        CLOUD[cloud-deployment]
-        DOCK[docker]
-        CI[cicd]
-        MON[monitoring]
-        LOG[logging]
-        OBS[observability]
-    end
-
-    subgraph Craft [Craft and Growth]
-        SAFE[ai-safety]
-        DBG[debugging]
-        CM[common-mistakes]
-        INT[interview-preparation]
-        PAP[papers]
-    end
-
-    F --> BE --> LLM --> PE --> CE --> RAG
-    RAG --> AGT --> MCP
-    RAG --> EVAL --> DEP
-    DEP --> SAFE
-    DEP --> DBG
+  subgraph F [Foundations 1-6]
+    PY[Python] --> PF[Frameworks]
+    MS[Math] --> ML[ML] --> DL[DL] --> NLP[NLP]
+  end
+  subgraph M [Models 7-9]
+    TR[Transformers] --> LLM[LLMs] --> GEN[GenAI]
+  end
+  subgraph A [Apps 10-16]
+    PE[Prompts] --> APP[App Dev] --> CB[Chatbots]
+    EMB[Embeddings] --> RAG[RAG]
+    FT[Fine-Tune] --> EV[Eval]
+  end
+  subgraph G [Agents 17-20]
+    AG[Agents] --> AA[Agentic] --> MCP[MCP] --> MAS[Multi-agent]
+  end
+  subgraph P [Production 21-25]
+    SD[System Design] --> OPS[LLMOps] --> DEP[Deploy] --> SEC[Security]
+    RES[Research]
+  end
+  F --> M --> A --> G --> P
 ```
 
 ---
 
-## All Domains
+## Supporting domains
 
-### Foundations
+These remain available for deeper engineering topics not on the primary 25 list.
+
+### Application & platform
 
 | Domain | Description | Status |
 |--------|-------------|--------|
-| [foundations](foundations/) | Core concepts and prerequisites | Published |
-| [python-engineering](python-engineering/) | Python for AI applications | Published |
+| [foundations](foundations/) | Engineering lifecycle prerequisites | Published |
 | [backend-engineering](backend-engineering/) | Backend patterns and service design | Published |
 | [apis](apis/) | API design for AI services | Published |
 | [fastapi](fastapi/) | FastAPI framework | Published |
 | [databases](databases/) | Database concepts and patterns | Published |
-| [databases/sql](databases/sql/) | SQL for AI applications | Planned |
-| [databases/postgresql](databases/postgresql/) | PostgreSQL | Published |
-| [databases/redis](databases/redis/) | Redis caching and data store | Published |
-| [security](security/) | Security practices | Published |
-| [performance-optimization](performance-optimization/) | Performance tuning | Published |
-| [software-architecture](software-architecture/) | Software architecture principles | Published |
-
-### Core (LLM Interaction)
-
-| Domain | Description | Status |
-|--------|-------------|--------|
-| [llm-engineering](llm-engineering/) | LLM integration and API usage | Published |
-| [prompt-engineering](prompt-engineering/) | Prompt design and optimization | Published |
 | [context-engineering](context-engineering/) | Context window and memory management | Published |
+| [security](security/) | General security practices | Published |
+| [ai-safety](ai-safety/) | Safety deep dive (pairs with topic 24) | Published |
 
-### Retrieval & Agents
+### Ops & infrastructure (stubs / partial)
 
 | Domain | Description | Status |
 |--------|-------------|--------|
-| [rag](rag/) | Retrieval augmented generation | Published |
-| [embeddings](embeddings/) | Vector embeddings and chunking | Planned |
-| [vector-databases](vector-databases/) | Vector storage and similarity search | Planned |
-| [ai-agents](ai-agents/) | AI agent development | Published |
-| [agent-architectures](agent-architectures/) | Agent system design patterns | Planned |
-| [mcp](mcp/) | Model Context Protocol | Published |
-| [a2a](a2a/) | Agent-to-agent communication | Planned |
+| [docker](docker/) | Containers | Planned |
+| [cicd](cicd/) | CI/CD | Planned |
+| [cloud-deployment](cloud-deployment/) | Cloud deploy | Planned |
+| [model-serving](model-serving/) | Model serving | Planned |
+| [inference-optimization](inference-optimization/) | Inference optimization | Planned |
+| [monitoring](monitoring/) | Monitoring | Planned |
+| [logging](logging/) | Logging | Planned |
+| [observability](observability/) | Observability | Planned |
+
+### Agents / architecture (pointers)
+
+| Domain | Description | Status |
+|--------|-------------|--------|
+| [embeddings](embeddings/) | Pointer → topic 13 | Published |
+| [vector-databases](vector-databases/) | Pointer → topic 13 | Published |
+| [agent-architectures](agent-architectures/) | Agent architecture patterns | Planned |
+| [a2a](a2a/) | Agent-to-agent protocols | Planned |
 | [ai-workflows](ai-workflows/) | Workflow orchestration | Planned |
-| [multi-agent-systems](multi-agent-systems/) | Multi-agent collaboration | Planned |
 
-### Production
-
-| Domain | Description | Status |
-|--------|-------------|--------|
-| [ai-evaluation](ai-evaluation/) | Evaluation and quality assurance | Published |
-| [ai-system-design](ai-system-design/) | End-to-end system design | Published |
-| [ai-deployment](ai-deployment/) | Production deployment | Published |
-| [model-integration](model-integration/) | Model selection and integration | Planned |
-| [model-serving](model-serving/) | Model deployment and serving | Planned |
-| [inference-optimization](inference-optimization/) | Inference performance | Planned |
-| [cloud-deployment](cloud-deployment/) | Cloud deployment strategies | Planned |
-| [docker](docker/) | Containerization | Planned |
-| [cicd](cicd/) | CI/CD pipelines | Planned |
-| [monitoring](monitoring/) | Monitoring and alerting | Published |
-| [logging](logging/) | Structured logging | Published |
-| [observability](observability/) | Tracing and telemetry | Planned |
-| [ai-application-architecture](ai-application-architecture/) | Application architecture | Planned |
-| [design-patterns](design-patterns/) | Reusable design patterns | Planned |
-| [distributed-systems](distributed-systems/) | Distributed system concepts | Planned |
-| [data-engineering](data-engineering/) | Data pipelines for AI | Planned |
-| [production-incidents](production-incidents/) | Incident postmortems | Planned |
-
-### Craft & Growth
+### Craft & growth
 
 | Domain | Description | Status |
 |--------|-------------|--------|
-| [ai-safety](ai-safety/) | Safety and guardrails | Published |
-| [debugging](debugging/) | Debugging AI applications | Published |
-| [common-mistakes](common-mistakes/) | Mistakes and prevention | Published |
-| [interview-preparation](interview-preparation/) | Interview preparation | Published |
-| [papers](papers/) | Research paper summaries | Published |
-| [research-notes](research-notes/) | Research notes | Planned |
-| [career-notes](career-notes/) | Career development | Planned |
+| [debugging](debugging/) | Debugging AI systems | Published |
+| [common-mistakes](common-mistakes/) | Common pitfalls | Published |
+| [papers](papers/) | Paper notes (pairs with topic 25) | Published |
+| [interview-preparation](interview-preparation/) | Interview prep | Published |
+| [research-notes](research-notes/) | Research scratchpad | Planned |
+| [career-notes](career-notes/) | Career notes | Planned |
 | [resources](resources/) | External resources | Planned |
 
 ---
 
-## Adding a New Domain
+## How domains work
 
-See [CONTRIBUTING.md](../CONTRIBUTING.md#adding-a-new-domain). New domains are created only for genuinely new areas of AI engineering knowledge.
+Each domain is named for a **concept**, not a single vendor. Documents follow the [style guide](../meta/style-guide.md) and [templates](../meta/templates/).
 
----
-
-## See Also
-
-- [Master Index](../meta/indexes/MASTER-INDEX.md)
-- [Learning Roadmap](../meta/roadmap.md)
-- [Architecture Overview](../meta/architecture-overview.md)
+Start from the [home page topics](../README.md#topics) unless you need a supporting domain above.

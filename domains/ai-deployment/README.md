@@ -1,6 +1,6 @@
-# Production AI & AI Platform Engineering
+# AI Deployment & Infrastructure
 
-> Deploy, operate, monitor, secure, and scale AI applications — AI platform engineering, not generic DevOps.
+> Shipping and running AI systems — containers, CI/CD, serving, observability, and incidents.
 > **Prerequisites:** [System Design](../ai-system-design/README.md) · [Evaluation](../ai-evaluation/README.md)
 
 ---

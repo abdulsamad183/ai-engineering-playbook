@@ -1,6 +1,6 @@
-# AI Safety
+# AI Safety (deep dive)
 
-> Engineering handbook for shipping AI systems that resist prompt injection, data leakage, harmful outputs, and unsafe tool use.
+> Safety engineering for AI systems — see also the topic hub [AI Security & Guardrails](../ai-security-guardrails/README.md).
 > **Related:** [Prompt Security](../prompt-engineering/prompt-security.md) · [Security](../security/README.md) · [AI Agents](../ai-agents/README.md) · [MCP](../mcp/README.md)
 
 ---
