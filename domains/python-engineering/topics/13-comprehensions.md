@@ -1,0 +1,109 @@
+---
+title: "List/Set/Dictionary Comprehensions"
+description: "Compact, readable ways to build collections from iterables with optional filters — and when not to use them."
+domain: python-engineering
+tags: [python, comprehensions, fundamentals, tutorial]
+status: published
+created: 2026-08-11
+updated: 2026-08-11
+version: "1.0"
+---
+
+# List/Set/Dictionary Comprehensions
+
+> Compact, readable ways to build collections from iterables with optional filters — and when not to use them.
+
+## Definition
+
+A **comprehension** is syntactic sugar for building a `list`, `set`, or `dict` from an iterable, optionally filtering elements. There are also **generator expressions** (lazy) with `()`.
+
+## Uses
+
+- Map/filter transforms in one readable line
+- Build vocabularies, indexes, filtered batches
+- Keep functional-style transforms local and clear
+
+## Types
+
+| Form | Example |
+|------|---------|
+| List | `[x*2 for x in xs if x > 0]` |
+| Set | `{x.lower() for x in names}` |
+| Dict | `{k: v for k, v in pairs}` |
+| Generator expr | `(x*2 for x in xs)` |
+
+```mermaid
+flowchart LR
+  I[Iterable] --> F[Optional filter]
+  F --> M[Map expression]
+  M --> C[Collection / generator]
+```
+
+## Code examples
+
+```python
+nums = [1, 2, 3, 4, 5]
+squares = [n * n for n in nums]
+evens = [n for n in nums if n % 2 == 0]
+print(squares, evens)
+
+# Equivalent loop for mental model
+squares2 = []
+for n in nums:
+    squares2.append(n * n)
+```
+
+```python
+names = ["Ada", "alan", "Ada"]
+unique_lower = {n.lower() for n in names}
+print(unique_lower)
+
+pairs = [("a", 1), ("b", 2)]
+d = {k: v for k, v in pairs}
+print(d)
+
+# Dict invert (last wins on collisions)
+inv = {v: k for k, v in d.items()}
+```
+
+```python
+# Nested — flatten matrix
+matrix = [[1, 2], [3, 4]]
+flat = [c for row in matrix for c in row]
+print(flat)
+
+# Keep nested comprehensions shallow; extract helper if complex
+```
+
+```python
+# Generator expression — lazy, memory friendly
+total = sum(n * n for n in range(1000))
+print(total)
+
+# Walrus in comprehension (3.8+)
+raw = ["1", "x", "3"]
+vals = [y for x in raw if (y := x.isdigit() and int(x))]
+# cleaner approach:
+vals = [int(x) for x in raw if x.isdigit()]
+print(vals)
+```
+
+## When NOT to use comprehensions
+
+- Multi-step logic with side effects (logging, I/O) → use a normal loop
+- Deep nesting that hurts readability
+- Building something that isn’t a collection
+
+## Common mistakes
+
+- Using a list comprehension only for side effects: `[print(x) for x in xs]` → just loop
+- Accidental nested complexity
+
+---
+
+## Continue
+
+- **Previous:** [Dictionaries](12-dictionaries.md)
+- **Hub:** [Python topics](../README.md)
+- **Next:** [Iterators & Iterables](14-iterators-iterables.md)
+- **AI production guide:** [Python for AI Engineering](../python-for-ai-engineering.md)

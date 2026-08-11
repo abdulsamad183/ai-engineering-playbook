@@ -141,7 +141,49 @@ nav:
     - Learning Roadmap: meta/roadmap.md
     - Capstone Walkthrough: meta/capstone-walkthrough.md
   - Handbooks:
-    - "1. Python": domains/python-engineering/README.md
+    - "1. Python":
+      - Overview: domains/python-engineering/README.md
+      - "01 Basics": domains/python-engineering/topics/01-python-basics.md
+      - "02 Variables & Data Types": domains/python-engineering/topics/02-variables-data-types.md
+      - "03 Operators": domains/python-engineering/topics/03-operators.md
+      - "04 Conditionals": domains/python-engineering/topics/04-conditional-statements.md
+      - "05 Loops": domains/python-engineering/topics/05-loops.md
+      - "06 Functions": domains/python-engineering/topics/06-functions.md
+      - "07 Scope": domains/python-engineering/topics/07-scope-namespaces.md
+      - "08 Strings": domains/python-engineering/topics/08-strings.md
+      - "09 Lists": domains/python-engineering/topics/09-lists.md
+      - "10 Tuples": domains/python-engineering/topics/10-tuples.md
+      - "11 Sets": domains/python-engineering/topics/11-sets.md
+      - "12 Dictionaries": domains/python-engineering/topics/12-dictionaries.md
+      - "13 Comprehensions": domains/python-engineering/topics/13-comprehensions.md
+      - "14 Iterators": domains/python-engineering/topics/14-iterators-iterables.md
+      - "15 Generators": domains/python-engineering/topics/15-generators.md
+      - "16 Lambdas": domains/python-engineering/topics/16-lambda-functions.md
+      - "17 map/filter/reduce": domains/python-engineering/topics/17-map-filter-reduce.md
+      - "18 Exceptions": domains/python-engineering/topics/18-exception-handling.md
+      - "19 Files": domains/python-engineering/topics/19-file-handling.md
+      - "20 Modules": domains/python-engineering/topics/20-modules-packages.md
+      - "21 Virtual Envs": domains/python-engineering/topics/21-virtual-environments.md
+      - "22 Packages": domains/python-engineering/topics/22-package-management.md
+      - "23 OOP": domains/python-engineering/topics/23-oop.md
+      - "24 Dataclasses": domains/python-engineering/topics/24-dataclasses.md
+      - "25 Decorators": domains/python-engineering/topics/25-decorators.md
+      - "26 Context Managers": domains/python-engineering/topics/26-context-managers.md
+      - "27 Type Hints": domains/python-engineering/topics/27-type-hints.md
+      - "28 Regex": domains/python-engineering/topics/28-regular-expressions.md
+      - "29 Functional": domains/python-engineering/topics/29-functional-programming.md
+      - "30 Logging": domains/python-engineering/topics/30-logging.md
+      - "31 Unit Testing": domains/python-engineering/topics/31-unit-testing.md
+      - "32 Debugging": domains/python-engineering/topics/32-debugging.md
+      - "33 Concurrency": domains/python-engineering/topics/33-concurrency.md
+      - "34 Threads": domains/python-engineering/topics/34-multithreading.md
+      - "35 Multiprocessing": domains/python-engineering/topics/35-multiprocessing.md
+      - "36 Async": domains/python-engineering/topics/36-asynchronous-programming.md
+      - "37 Memory": domains/python-engineering/topics/37-memory-management.md
+      - "38 Internals": domains/python-engineering/topics/38-python-internals.md
+      - "39 Performance": domains/python-engineering/topics/39-performance-optimization.md
+      - "40 Clean Code": domains/python-engineering/topics/40-clean-code-best-practices.md
+      - "AI Engineering guide": domains/python-engineering/python-for-ai-engineering.md
     - "2. Python Frameworks & Libraries": domains/python-frameworks-libraries/README.md
     - "3. Mathematics & Statistics": domains/mathematics-statistics/README.md
     - "4. Machine Learning": domains/machine-learning/README.md
