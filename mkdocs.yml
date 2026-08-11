@@ -45,7 +45,8 @@ theme:
     - navigation.sections
     - navigation.path
     - navigation.top
-    - navigation.indexes
+    # navigation.indexes disabled: it hid flat siblings after nested
+    # sections (e.g. "2. Python Frameworks") from the Handbooks sidebar.
     - navigation.footer
     - search.suggest
     - search.highlight
@@ -141,11 +142,34 @@ nav:
     - Learning Roadmap: meta/roadmap.md
     - Capstone Walkthrough: meta/capstone-walkthrough.md
   - Handbooks:
-    # First child of a section MUST be a bare path (navigation.indexes).
-    # A titled child like "Overview: ..." makes the next flat page become the
-    # Handbooks tab index and disappear from the sidebar (was hiding topic 2).
-    - "1. Python":
-      - domains/python-engineering/README.md
+    - handbooks.md
+    - "1. Python": domains/python-engineering/README.md
+    - "2. Python Frameworks & Libraries": domains/python-frameworks-libraries/README.md
+    - "3. Mathematics & Statistics": domains/mathematics-statistics/README.md
+    - "4. Machine Learning": domains/machine-learning/README.md
+    - "5. Deep Learning": domains/deep-learning/README.md
+    - "6. Natural Language Processing": domains/natural-language-processing/README.md
+    - "7. Transformers": domains/transformers/README.md
+    - "8. Large Language Models": domains/llm-engineering/README.md
+    - "9. Generative AI": domains/generative-ai/README.md
+    - "10. Prompt Engineering": domains/prompt-engineering/README.md
+    - "11. LLM Application Development": domains/llm-application-development/README.md
+    - "12. Chatbots": domains/chatbots/README.md
+    - "13. Embeddings & Vector Databases": domains/embeddings-vector-databases/README.md
+    - "14. RAG": domains/rag/README.md
+    - "15. LLM Fine-Tuning": domains/llm-fine-tuning/README.md
+    - "16. LLM Evaluation": domains/ai-evaluation/README.md
+    - "17. AI Agents": domains/ai-agents/README.md
+    - "18. Agentic AI": domains/agentic-ai/README.md
+    - "19. MCP": domains/mcp/README.md
+    - "20. Multi-Agent Systems": domains/multi-agent-systems/README.md
+    - "21. AI System Design": domains/ai-system-design/README.md
+    - "22. MLOps & LLMOps": domains/mlops-llmops/README.md
+    - "23. AI Deployment & Infrastructure": domains/ai-deployment/README.md
+    - "24. AI Security & Guardrails": domains/ai-security-guardrails/README.md
+    - "25. Advanced AI Research": domains/advanced-ai-research/README.md
+    # Python curriculum (linked from the Python hub Topics table)
+    - "Python curriculum":
       - "01 Basics": domains/python-engineering/topics/01-python-basics.md
       - "02 Variables & Data Types": domains/python-engineering/topics/02-variables-data-types.md
       - "03 Operators": domains/python-engineering/topics/03-operators.md
@@ -187,30 +211,6 @@ nav:
       - "39 Performance": domains/python-engineering/topics/39-performance-optimization.md
       - "40 Clean Code": domains/python-engineering/topics/40-clean-code-best-practices.md
       - "AI Engineering guide": domains/python-engineering/python-for-ai-engineering.md
-    - "2. Python Frameworks & Libraries": domains/python-frameworks-libraries/README.md
-    - "3. Mathematics & Statistics": domains/mathematics-statistics/README.md
-    - "4. Machine Learning": domains/machine-learning/README.md
-    - "5. Deep Learning": domains/deep-learning/README.md
-    - "6. Natural Language Processing": domains/natural-language-processing/README.md
-    - "7. Transformers": domains/transformers/README.md
-    - "8. Large Language Models": domains/llm-engineering/README.md
-    - "9. Generative AI": domains/generative-ai/README.md
-    - "10. Prompt Engineering": domains/prompt-engineering/README.md
-    - "11. LLM Application Development": domains/llm-application-development/README.md
-    - "12. Chatbots": domains/chatbots/README.md
-    - "13. Embeddings & Vector Databases": domains/embeddings-vector-databases/README.md
-    - "14. RAG": domains/rag/README.md
-    - "15. LLM Fine-Tuning": domains/llm-fine-tuning/README.md
-    - "16. LLM Evaluation": domains/ai-evaluation/README.md
-    - "17. AI Agents": domains/ai-agents/README.md
-    - "18. Agentic AI": domains/agentic-ai/README.md
-    - "19. MCP": domains/mcp/README.md
-    - "20. Multi-Agent Systems": domains/multi-agent-systems/README.md
-    - "21. AI System Design": domains/ai-system-design/README.md
-    - "22. MLOps & LLMOps": domains/mlops-llmops/README.md
-    - "23. AI Deployment & Infrastructure": domains/ai-deployment/README.md
-    - "24. AI Security & Guardrails": domains/ai-security-guardrails/README.md
-    - "25. Advanced AI Research": domains/advanced-ai-research/README.md
   - Build:
     - Templates: templates/README.md
     - Starters: templates/engineering/README.md

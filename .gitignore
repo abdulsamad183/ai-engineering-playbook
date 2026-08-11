@@ -79,3 +79,4 @@ temp/
 # Local overrides
 local/
 *.local.md
+.venv-docs/
