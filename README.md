@@ -55,8 +55,8 @@ flowchart TB
 | 3 | [Mathematics & Statistics](domains/mathematics-statistics/README.md) | Linear algebra, probability, eval stats |
 | 4 | [Machine Learning](domains/machine-learning/README.md) | 9 sections · 69 topics — basics → ensembles → eval · features · sklearn |
 | 5 | [Deep Learning](domains/deep-learning/README.md) | 10 sections · 63 topics — nets → CNN/RNN → train · serve |
-| 6 | [Natural Language Processing](domains/natural-language-processing/README.md) | Tokenization, core tasks, NLP landscape |
-| 7 | [Transformers](domains/transformers/README.md) | Attention, architecture, encoder vs decoder |
+| 6 | [Natural Language Processing](domains/natural-language-processing/README.md) | 10 sections · 64 topics — text → tasks → attention |
+| 7 | [Transformers](domains/transformers/README.md) | 7 sections · 33 topics — attention · families · inference |
 | 8 | [Large Language Models (LLMs)](domains/llm-engineering/README.md) | Tokens, APIs, tools, cost, streaming |
 | 9 | [Generative AI](domains/generative-ai/README.md) | Modalities, productization, quality control |
 | 10 | [Prompt Engineering](domains/prompt-engineering/README.md) | Patterns, versioning, eval, security |

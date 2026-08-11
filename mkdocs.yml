@@ -445,8 +445,141 @@ nav:
         - "03 ONNX": domains/deep-learning/deep-learning-deployment/03-onnx.md
         - "04 TensorRT": domains/deep-learning/deep-learning-deployment/04-tensorrt.md
         - "05 Edge Deployment": domains/deep-learning/deep-learning-deployment/05-edge-deployment.md
-    - "6. Natural Language Processing": domains/natural-language-processing/README.md
-    - "7. Transformers": domains/transformers/README.md
+    - "6. Natural Language Processing":
+      - Overview: domains/natural-language-processing/README.md
+      - NLP Basics:
+        - Overview: domains/natural-language-processing/nlp-basics/README.md
+        - "01 Introduction to NLP": domains/natural-language-processing/nlp-basics/01-introduction-to-nlp.md
+        - "02 Text Representation": domains/natural-language-processing/nlp-basics/02-text-representation.md
+        - "03 Text Preprocessing": domains/natural-language-processing/nlp-basics/03-text-preprocessing.md
+        - "04 Text Normalization": domains/natural-language-processing/nlp-basics/04-text-normalization.md
+        - "05 Corpus & Datasets": domains/natural-language-processing/nlp-basics/05-corpus-and-datasets.md
+      - Text Processing:
+        - Overview: domains/natural-language-processing/text-processing/README.md
+        - "01 Tokenization": domains/natural-language-processing/text-processing/01-tokenization.md
+        - "02 Stemming": domains/natural-language-processing/text-processing/02-stemming.md
+        - "03 Lemmatization": domains/natural-language-processing/text-processing/03-lemmatization.md
+        - "04 Stop Words": domains/natural-language-processing/text-processing/04-stop-words.md
+        - "05 Regular Expressions": domains/natural-language-processing/text-processing/05-regular-expressions.md
+        - "06 Sentence Segmentation": domains/natural-language-processing/text-processing/06-sentence-segmentation.md
+        - "07 Part-of-Speech Tagging": domains/natural-language-processing/text-processing/07-part-of-speech-tagging.md
+        - "08 Named Entity Recognition": domains/natural-language-processing/text-processing/08-named-entity-recognition.md
+      - Text Representation:
+        - Overview: domains/natural-language-processing/text-representation/README.md
+        - "01 Bag of Words": domains/natural-language-processing/text-representation/01-bag-of-words.md
+        - "02 N-Grams": domains/natural-language-processing/text-representation/02-n-grams.md
+        - "03 TF-IDF": domains/natural-language-processing/text-representation/03-tf-idf.md
+        - "04 Word Embeddings": domains/natural-language-processing/text-representation/04-word-embeddings.md
+        - "05 Word2Vec": domains/natural-language-processing/text-representation/05-word2vec.md
+        - "06 GloVe": domains/natural-language-processing/text-representation/06-glove.md
+        - "07 FastText": domains/natural-language-processing/text-representation/07-fasttext.md
+        - "08 Contextual Embeddings": domains/natural-language-processing/text-representation/08-contextual-embeddings.md
+      - NLP Tasks:
+        - Overview: domains/natural-language-processing/nlp-tasks/README.md
+        - "01 Text Classification": domains/natural-language-processing/nlp-tasks/01-text-classification.md
+        - "02 Sentiment Analysis": domains/natural-language-processing/nlp-tasks/02-sentiment-analysis.md
+        - "03 Text Similarity": domains/natural-language-processing/nlp-tasks/03-text-similarity.md
+        - "04 Text Summarization": domains/natural-language-processing/nlp-tasks/04-text-summarization.md
+        - "05 Machine Translation": domains/natural-language-processing/nlp-tasks/05-machine-translation.md
+        - "06 Question Answering": domains/natural-language-processing/nlp-tasks/06-question-answering.md
+        - "07 Information Extraction": domains/natural-language-processing/nlp-tasks/07-information-extraction.md
+        - "08 Text Generation": domains/natural-language-processing/nlp-tasks/08-text-generation.md
+      - Classical NLP:
+        - Overview: domains/natural-language-processing/classical-nlp/README.md
+        - "01 Naive Bayes for NLP": domains/natural-language-processing/classical-nlp/01-naive-bayes-for-nlp.md
+        - "02 Logistic Regression for NLP": domains/natural-language-processing/classical-nlp/02-logistic-regression-for-nlp.md
+        - "03 HMM": domains/natural-language-processing/classical-nlp/03-hmm.md
+        - "04 Conditional Random Fields": domains/natural-language-processing/classical-nlp/04-conditional-random-fields.md
+        - "05 Topic Modeling": domains/natural-language-processing/classical-nlp/05-topic-modeling.md
+        - "06 Latent Dirichlet Allocation": domains/natural-language-processing/classical-nlp/06-latent-dirichlet-allocation.md
+      - Sequence-Based NLP:
+        - Overview: domains/natural-language-processing/sequence-based-nlp/README.md
+        - "01 Language Modeling": domains/natural-language-processing/sequence-based-nlp/01-language-modeling.md
+        - "02 RNN for NLP": domains/natural-language-processing/sequence-based-nlp/02-rnn-for-nlp.md
+        - "03 LSTM for NLP": domains/natural-language-processing/sequence-based-nlp/03-lstm-for-nlp.md
+        - "04 GRU for NLP": domains/natural-language-processing/sequence-based-nlp/04-gru-for-nlp.md
+        - "05 Sequence-to-Sequence Models": domains/natural-language-processing/sequence-based-nlp/05-sequence-to-sequence-models.md
+        - "06 Encoder-Decoder Architecture": domains/natural-language-processing/sequence-based-nlp/06-encoder-decoder-architecture.md
+      - Attention & Modern NLP:
+        - Overview: domains/natural-language-processing/attention-modern-nlp/README.md
+        - "01 Attention Mechanism": domains/natural-language-processing/attention-modern-nlp/01-attention-mechanism.md
+        - "02 Self-Attention": domains/natural-language-processing/attention-modern-nlp/02-self-attention.md
+        - "03 Cross-Attention": domains/natural-language-processing/attention-modern-nlp/03-cross-attention.md
+        - "04 Transformer Architecture": domains/natural-language-processing/attention-modern-nlp/04-transformer-architecture.md
+        - "05 Positional Encoding": domains/natural-language-processing/attention-modern-nlp/05-positional-encoding.md
+      - NLP Libraries & Frameworks:
+        - Overview: domains/natural-language-processing/nlp-libraries/README.md
+        - "01 NLTK": domains/natural-language-processing/nlp-libraries/01-nltk.md
+        - "02 spaCy": domains/natural-language-processing/nlp-libraries/02-spacy.md
+        - "03 Hugging Face": domains/natural-language-processing/nlp-libraries/03-hugging-face.md
+        - "04 Gensim": domains/natural-language-processing/nlp-libraries/04-gensim.md
+        - "05 TextBlob": domains/natural-language-processing/nlp-libraries/05-textblob.md
+      - NLP Evaluation:
+        - Overview: domains/natural-language-processing/nlp-evaluation/README.md
+        - "01 BLEU": domains/natural-language-processing/nlp-evaluation/01-bleu.md
+        - "02 ROUGE": domains/natural-language-processing/nlp-evaluation/02-rouge.md
+        - "03 METEOR": domains/natural-language-processing/nlp-evaluation/03-meteor.md
+        - "04 Perplexity": domains/natural-language-processing/nlp-evaluation/04-perplexity.md
+        - "05 Semantic Similarity": domains/natural-language-processing/nlp-evaluation/05-semantic-similarity.md
+        - "06 Human Evaluation": domains/natural-language-processing/nlp-evaluation/06-human-evaluation.md
+      - Advanced NLP:
+        - Overview: domains/natural-language-processing/advanced-nlp/README.md
+        - "01 Multilingual NLP": domains/natural-language-processing/advanced-nlp/01-multilingual-nlp.md
+        - "02 Low-Resource NLP": domains/natural-language-processing/advanced-nlp/02-low-resource-nlp.md
+        - "03 Information Retrieval": domains/natural-language-processing/advanced-nlp/03-information-retrieval.md
+        - "04 Semantic Search": domains/natural-language-processing/advanced-nlp/04-semantic-search.md
+        - "05 Knowledge Graphs": domains/natural-language-processing/advanced-nlp/05-knowledge-graphs.md
+        - "06 Question Answering Systems": domains/natural-language-processing/advanced-nlp/06-question-answering-systems.md
+        - "07 NLP Pipelines": domains/natural-language-processing/advanced-nlp/07-nlp-pipelines.md
+    - "7. Transformers":
+      - Overview: domains/transformers/README.md
+      - Transformer Basics:
+        - Overview: domains/transformers/transformer-basics/README.md
+        - "01 Why Transformers": domains/transformers/transformer-basics/01-why-transformers.md
+        - "02 Transformer Overview": domains/transformers/transformer-basics/02-transformer-overview.md
+        - "03 Encoder vs Decoder vs Encoder-Decoder": domains/transformers/transformer-basics/03-encoder-vs-decoder-vs-encoder-decoder.md
+        - "04 Tokens & Input Embeddings": domains/transformers/transformer-basics/04-tokens-and-input-embeddings.md
+        - "05 The Transformer Stack": domains/transformers/transformer-basics/05-the-transformer-stack.md
+      - Attention Internals:
+        - Overview: domains/transformers/attention-internals/README.md
+        - "01 Scaled Dot-Product Attention": domains/transformers/attention-internals/01-scaled-dot-product-attention.md
+        - "02 Multi-Head Attention": domains/transformers/attention-internals/02-multi-head-attention.md
+        - "03 Self-Attention vs Cross-Attention": domains/transformers/attention-internals/03-self-attention-vs-cross-attention.md
+        - "04 Causal & Masked Attention": domains/transformers/attention-internals/04-causal-and-masked-attention.md
+        - "05 Attention Patterns & Interpretability": domains/transformers/attention-internals/05-attention-patterns-and-interpretability.md
+      - Architecture Components:
+        - Overview: domains/transformers/architecture-components/README.md
+        - "01 Positional Encodings": domains/transformers/architecture-components/01-positional-encodings.md
+        - "02 Feed-Forward Networks": domains/transformers/architecture-components/02-feed-forward-networks.md
+        - "03 LayerNorm & Residuals": domains/transformers/architecture-components/03-layernorm-and-residuals.md
+        - "04 Pre-Norm vs Post-Norm": domains/transformers/architecture-components/04-prenorm-vs-postnorm.md
+        - "05 Outputs, Logits & Heads": domains/transformers/architecture-components/05-outputs-logits-and-heads.md
+      - Model Families:
+        - Overview: domains/transformers/model-families/README.md
+        - "01 Encoder Models (BERT-style)": domains/transformers/model-families/01-encoder-models-bert.md
+        - "02 Decoder Models (GPT-style)": domains/transformers/model-families/02-decoder-models-gpt.md
+        - "03 Encoder–Decoder (T5/BART)": domains/transformers/model-families/03-encoder-decoder-t5-bart.md
+        - "04 Vision Transformers": domains/transformers/model-families/04-vision-transformers.md
+        - "05 Multimodal Transformers": domains/transformers/model-families/05-multimodal-transformers.md
+      - Training Transformers:
+        - Overview: domains/transformers/training-transformers/README.md
+        - "01 Pretraining Objectives": domains/transformers/training-transformers/01-pretraining-objectives.md
+        - "02 Fine-Tuning Transformers": domains/transformers/training-transformers/02-fine-tuning-transformers.md
+        - "03 Parameter-Efficient Fine-Tuning": domains/transformers/training-transformers/03-parameter-efficient-fine-tuning.md
+        - "04 Training Stability": domains/transformers/training-transformers/04-training-stability.md
+      - Inference & Efficiency:
+        - Overview: domains/transformers/inference-and-efficiency/README.md
+        - "01 Autoregressive Decoding": domains/transformers/inference-and-efficiency/01-autoregressive-decoding.md
+        - "02 KV Cache": domains/transformers/inference-and-efficiency/02-kv-cache.md
+        - "03 Sampling Strategies": domains/transformers/inference-and-efficiency/03-sampling-strategies.md
+        - "04 Long Context & Efficient Attention": domains/transformers/inference-and-efficiency/04-long-context-and-efficient-attention.md
+        - "05 Quantization for Transformers": domains/transformers/inference-and-efficiency/05-quantization-for-transformers.md
+      - Transformers in Practice:
+        - Overview: domains/transformers/transformers-in-practice/README.md
+        - "01 Hugging Face Transformers": domains/transformers/transformers-in-practice/01-hugging-face-transformers.md
+        - "02 Tokenizers": domains/transformers/transformers-in-practice/02-tokenizers.md
+        - "03 Pipelines & Model Cards": domains/transformers/transformers-in-practice/03-pipelines-and-model-cards.md
+        - "04 Common Failure Modes": domains/transformers/transformers-in-practice/04-common-failure-modes.md
     - "8. Large Language Models": domains/llm-engineering/README.md
     - "9. Generative AI": domains/generative-ai/README.md
     - "10. Prompt Engineering": domains/prompt-engineering/README.md
