@@ -580,7 +580,153 @@ nav:
         - "02 Tokenizers": domains/transformers/transformers-in-practice/02-tokenizers.md
         - "03 Pipelines & Model Cards": domains/transformers/transformers-in-practice/03-pipelines-and-model-cards.md
         - "04 Common Failure Modes": domains/transformers/transformers-in-practice/04-common-failure-modes.md
-    - "8. Large Language Models": domains/llm-engineering/README.md
+    - "8. Large Language Models":
+      - Overview: domains/llm-engineering/README.md
+      - LLM Fundamentals:
+        - Overview: domains/llm-engineering/llm-fundamentals/README.md
+        - "01 What are LLMs": domains/llm-engineering/llm-fundamentals/01-what-are-llms.md
+        - "02 Evolution of Language Models": domains/llm-engineering/llm-fundamentals/02-evolution-of-language-models.md
+        - "03 LLM vs NLP vs Generative AI": domains/llm-engineering/llm-fundamentals/03-llm-vs-nlp-vs-generative-ai.md
+        - "04 Foundation Models": domains/llm-engineering/llm-fundamentals/04-foundation-models.md
+        - "05 Parameters & Model Size": domains/llm-engineering/llm-fundamentals/05-parameters-and-model-size.md
+        - "06 Context Window": domains/llm-engineering/llm-fundamentals/06-context-window.md
+      - LLM Architecture:
+        - Overview: domains/llm-engineering/llm-architecture/README.md
+        - "01 Decoder-Only Architecture": domains/llm-engineering/llm-architecture/01-decoder-only-architecture.md
+        - "02 Transformer Blocks": domains/llm-engineering/llm-architecture/02-transformer-blocks.md
+        - "03 Self-Attention": domains/llm-engineering/llm-architecture/03-self-attention.md
+        - "04 Multi-Head Attention": domains/llm-engineering/llm-architecture/04-multi-head-attention.md
+        - "05 Feed-Forward Networks": domains/llm-engineering/llm-architecture/05-feed-forward-networks.md
+        - "06 Layer Normalization": domains/llm-engineering/llm-architecture/06-layer-normalization.md
+        - "07 Residual Connections": domains/llm-engineering/llm-architecture/07-residual-connections.md
+        - "08 Positional Encoding": domains/llm-engineering/llm-architecture/08-positional-encoding.md
+        - "09 KV Cache": domains/llm-engineering/llm-architecture/09-kv-cache.md
+      - Tokenization:
+        - Overview: domains/llm-engineering/tokenization/README.md
+        - "01 Tokenization": domains/llm-engineering/tokenization/01-tokenization.md
+        - "02 Subword Tokenization": domains/llm-engineering/tokenization/02-subword-tokenization.md
+        - "03 BPE": domains/llm-engineering/tokenization/03-bpe.md
+        - "04 WordPiece": domains/llm-engineering/tokenization/04-wordpiece.md
+        - "05 SentencePiece": domains/llm-engineering/tokenization/05-sentencepiece.md
+        - "06 Token Vocabulary": domains/llm-engineering/tokenization/06-token-vocabulary.md
+        - "07 Special Tokens": domains/llm-engineering/tokenization/07-special-tokens.md
+        - "08 Token Embeddings": domains/llm-engineering/tokenization/08-token-embeddings.md
+      - LLM Pretraining:
+        - Overview: domains/llm-engineering/llm-pretraining/README.md
+        - "01 Pretraining Data": domains/llm-engineering/llm-pretraining/01-pretraining-data.md
+        - "02 Data Collection": domains/llm-engineering/llm-pretraining/02-data-collection.md
+        - "03 Data Cleaning": domains/llm-engineering/llm-pretraining/03-data-cleaning.md
+        - "04 Data Deduplication": domains/llm-engineering/llm-pretraining/04-data-deduplication.md
+        - "05 Data Filtering": domains/llm-engineering/llm-pretraining/05-data-filtering.md
+        - "06 Causal Language Modeling": domains/llm-engineering/llm-pretraining/06-causal-language-modeling.md
+        - "07 Next-Token Prediction": domains/llm-engineering/llm-pretraining/07-next-token-prediction.md
+        - "08 Training Objectives": domains/llm-engineering/llm-pretraining/08-training-objectives.md
+        - "09 Distributed Training": domains/llm-engineering/llm-pretraining/09-distributed-training.md
+        - "10 Scaling Laws": domains/llm-engineering/llm-pretraining/10-scaling-laws.md
+      - LLM Inference:
+        - Overview: domains/llm-engineering/llm-inference/README.md
+        - "01 Autoregressive Generation": domains/llm-engineering/llm-inference/01-autoregressive-generation.md
+        - "02 Decoding": domains/llm-engineering/llm-inference/02-decoding.md
+        - "03 Greedy Decoding": domains/llm-engineering/llm-inference/03-greedy-decoding.md
+        - "04 Beam Search": domains/llm-engineering/llm-inference/04-beam-search.md
+        - "05 Temperature": domains/llm-engineering/llm-inference/05-temperature.md
+        - "06 Top-K": domains/llm-engineering/llm-inference/06-top-k.md
+        - "07 Top-P": domains/llm-engineering/llm-inference/07-top-p.md
+        - "08 Repetition Penalty": domains/llm-engineering/llm-inference/08-repetition-penalty.md
+        - "09 KV Caching": domains/llm-engineering/llm-inference/09-kv-caching.md
+        - "10 Batch Inference": domains/llm-engineering/llm-inference/10-batch-inference.md
+      - Prompting:
+        - Overview: domains/llm-engineering/prompting/README.md
+        - "01 Prompt Engineering": domains/llm-engineering/prompting/01-prompt-engineering.md
+        - "02 Zero-Shot Prompting": domains/llm-engineering/prompting/02-zero-shot-prompting.md
+        - "03 Few-Shot Prompting": domains/llm-engineering/prompting/03-few-shot-prompting.md
+        - "04 Chain-of-Thought": domains/llm-engineering/prompting/04-chain-of-thought.md
+        - "05 Role Prompting": domains/llm-engineering/prompting/05-role-prompting.md
+        - "06 Structured Prompting": domains/llm-engineering/prompting/06-structured-prompting.md
+        - "07 System/User/Assistant Messages": domains/llm-engineering/prompting/07-system-user-assistant-messages.md
+        - "08 Prompt Templates": domains/llm-engineering/prompting/08-prompt-templates.md
+      - LLM Fine-Tuning:
+        - Overview: domains/llm-engineering/llm-fine-tuning/README.md
+        - "01 Pretraining vs Fine-Tuning": domains/llm-engineering/llm-fine-tuning/01-pretraining-vs-fine-tuning.md
+        - "02 Supervised Fine-Tuning": domains/llm-engineering/llm-fine-tuning/02-supervised-fine-tuning.md
+        - "03 Instruction Tuning": domains/llm-engineering/llm-fine-tuning/03-instruction-tuning.md
+        - "04 Parameter-Efficient Fine-Tuning": domains/llm-engineering/llm-fine-tuning/04-parameter-efficient-fine-tuning.md
+        - "05 LoRA": domains/llm-engineering/llm-fine-tuning/05-lora.md
+        - "06 QLoRA": domains/llm-engineering/llm-fine-tuning/06-qlora.md
+        - "07 Adapters": domains/llm-engineering/llm-fine-tuning/07-adapters.md
+        - "08 Full Fine-Tuning": domains/llm-engineering/llm-fine-tuning/08-full-fine-tuning.md
+        - "09 Fine-Tuning Dataset Preparation": domains/llm-engineering/llm-fine-tuning/09-fine-tuning-dataset-preparation.md
+      - LLM Alignment:
+        - Overview: domains/llm-engineering/llm-alignment/README.md
+        - "01 RLHF": domains/llm-engineering/llm-alignment/01-rlhf.md
+        - "02 Reward Models": domains/llm-engineering/llm-alignment/02-reward-models.md
+        - "03 PPO": domains/llm-engineering/llm-alignment/03-ppo.md
+        - "04 DPO": domains/llm-engineering/llm-alignment/04-dpo.md
+        - "05 Preference Optimization": domains/llm-engineering/llm-alignment/05-preference-optimization.md
+        - "06 Constitutional AI": domains/llm-engineering/llm-alignment/06-constitutional-ai.md
+        - "07 AI Alignment": domains/llm-engineering/llm-alignment/07-ai-alignment.md
+      - LLM Evaluation:
+        - Overview: domains/llm-engineering/llm-evaluation/README.md
+        - "01 Intrinsic Evaluation": domains/llm-engineering/llm-evaluation/01-intrinsic-evaluation.md
+        - "02 Extrinsic Evaluation": domains/llm-engineering/llm-evaluation/02-extrinsic-evaluation.md
+        - "03 Perplexity": domains/llm-engineering/llm-evaluation/03-perplexity.md
+        - "04 Accuracy": domains/llm-engineering/llm-evaluation/04-accuracy.md
+        - "05 BLEU": domains/llm-engineering/llm-evaluation/05-bleu.md
+        - "06 ROUGE": domains/llm-engineering/llm-evaluation/06-rouge.md
+        - "07 Human Evaluation": domains/llm-engineering/llm-evaluation/07-human-evaluation.md
+        - "08 LLM-as-a-Judge": domains/llm-engineering/llm-evaluation/08-llm-as-a-judge.md
+        - "09 Benchmarking": domains/llm-engineering/llm-evaluation/09-benchmarking.md
+        - "10 Hallucination Evaluation": domains/llm-engineering/llm-evaluation/10-hallucination-evaluation.md
+      - LLM Optimization:
+        - Overview: domains/llm-engineering/llm-optimization/README.md
+        - "01 Quantization": domains/llm-engineering/llm-optimization/01-quantization.md
+        - "02 Pruning": domains/llm-engineering/llm-optimization/02-pruning.md
+        - "03 Distillation": domains/llm-engineering/llm-optimization/03-distillation.md
+        - "04 Model Compression": domains/llm-engineering/llm-optimization/04-model-compression.md
+        - "05 Mixed Precision": domains/llm-engineering/llm-optimization/05-mixed-precision.md
+        - "06 Flash Attention": domains/llm-engineering/llm-optimization/06-flash-attention.md
+        - "07 Speculative Decoding": domains/llm-engineering/llm-optimization/07-speculative-decoding.md
+        - "08 Inference Optimization": domains/llm-engineering/llm-optimization/08-inference-optimization.md
+      - LLM Architectures:
+        - Overview: domains/llm-engineering/llm-model-families/README.md
+        - "01 GPT": domains/llm-engineering/llm-model-families/01-gpt.md
+        - "02 LLaMA": domains/llm-engineering/llm-model-families/02-llama.md
+        - "03 Mistral": domains/llm-engineering/llm-model-families/03-mistral.md
+        - "04 Gemma": domains/llm-engineering/llm-model-families/04-gemma.md
+        - "05 Qwen": domains/llm-engineering/llm-model-families/05-qwen.md
+        - "06 DeepSeek": domains/llm-engineering/llm-model-families/06-deepseek.md
+        - "07 Mixture-of-Experts Models": domains/llm-engineering/llm-model-families/07-mixture-of-experts-models.md
+        - "08 Small Language Models": domains/llm-engineering/llm-model-families/08-small-language-models.md
+      - Advanced LLM Concepts:
+        - Overview: domains/llm-engineering/advanced-llm-concepts/README.md
+        - "01 Long-Context LLMs": domains/llm-engineering/advanced-llm-concepts/01-long-context-llms.md
+        - "02 Reasoning Models": domains/llm-engineering/advanced-llm-concepts/02-reasoning-models.md
+        - "03 Multilingual LLMs": domains/llm-engineering/advanced-llm-concepts/03-multilingual-llms.md
+        - "04 Multimodal LLMs": domains/llm-engineering/advanced-llm-concepts/04-multimodal-llms.md
+        - "05 Retrieval-Augmented LLMs": domains/llm-engineering/advanced-llm-concepts/05-retrieval-augmented-llms.md
+        - "06 Tool-Using LLMs": domains/llm-engineering/advanced-llm-concepts/06-tool-using-llms.md
+        - "07 Agentic LLMs": domains/llm-engineering/advanced-llm-concepts/07-agentic-llms.md
+      - LLM Safety:
+        - Overview: domains/llm-engineering/llm-safety/README.md
+        - "01 Hallucination": domains/llm-engineering/llm-safety/01-hallucination.md
+        - "02 Bias": domains/llm-engineering/llm-safety/02-bias.md
+        - "03 Toxicity": domains/llm-engineering/llm-safety/03-toxicity.md
+        - "04 Prompt Injection": domains/llm-engineering/llm-safety/04-prompt-injection.md
+        - "05 Jailbreaking": domains/llm-engineering/llm-safety/05-jailbreaking.md
+        - "06 Content Safety": domains/llm-engineering/llm-safety/06-content-safety.md
+        - "07 Guardrails": domains/llm-engineering/llm-safety/07-guardrails.md
+        - "08 Alignment & Safety": domains/llm-engineering/llm-safety/08-alignment-and-safety.md
+      - LLM Infrastructure:
+        - Overview: domains/llm-engineering/llm-infrastructure/README.md
+        - "01 GPU Computing": domains/llm-engineering/llm-infrastructure/01-gpu-computing.md
+        - "02 Distributed Training": domains/llm-engineering/llm-infrastructure/02-distributed-training.md
+        - "03 Model Parallelism": domains/llm-engineering/llm-infrastructure/03-model-parallelism.md
+        - "04 Data Parallelism": domains/llm-engineering/llm-infrastructure/04-data-parallelism.md
+        - "05 Tensor Parallelism": domains/llm-engineering/llm-infrastructure/05-tensor-parallelism.md
+        - "06 Pipeline Parallelism": domains/llm-engineering/llm-infrastructure/06-pipeline-parallelism.md
+        - "07 LLM Serving": domains/llm-engineering/llm-infrastructure/07-llm-serving.md
+        - "08 Inference Servers": domains/llm-engineering/llm-infrastructure/08-inference-servers.md
+        - "09 Model Deployment": domains/llm-engineering/llm-infrastructure/09-model-deployment.md
     - "9. Generative AI": domains/generative-ai/README.md
     - "10. Prompt Engineering": domains/prompt-engineering/README.md
     - "11. LLM Application Development": domains/llm-application-development/README.md
