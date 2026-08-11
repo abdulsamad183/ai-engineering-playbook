@@ -230,6 +230,94 @@ nav:
         - "23 Information Theory": domains/mathematics-statistics/ml-oriented/23-information-theory.md
         - "24 Statistical Learning Theory": domains/mathematics-statistics/ml-oriented/24-statistical-learning-theory.md
     - "4. Machine Learning": domains/machine-learning/README.md
+    - "ML curriculum":
+      - ML Basics:
+        - Overview: domains/machine-learning/ml-basics/README.md
+        - "01 Introduction to Machine Learning": domains/machine-learning/ml-basics/01-introduction-to-machine-learning.md
+        - "02 ML Workflow": domains/machine-learning/ml-basics/02-ml-workflow.md
+        - "03 Training, Validation & Testing": domains/machine-learning/ml-basics/03-training-validation-testing.md
+        - "04 Features & Labels": domains/machine-learning/ml-basics/04-features-and-labels.md
+        - "05 Model Parameters & Hyperparameters": domains/machine-learning/ml-basics/05-parameters-and-hyperparameters.md
+        - "06 Loss Functions": domains/machine-learning/ml-basics/06-loss-functions.md
+        - "07 Optimization": domains/machine-learning/ml-basics/07-optimization.md
+        - "08 Overfitting & Underfitting": domains/machine-learning/ml-basics/08-overfitting-and-underfitting.md
+        - "09 Bias-Variance Tradeoff": domains/machine-learning/ml-basics/09-bias-variance-tradeoff.md
+      - Regression:
+        - Overview: domains/machine-learning/regression/README.md
+        - "01 Linear Regression": domains/machine-learning/regression/01-linear-regression.md
+        - "02 Multiple Linear Regression": domains/machine-learning/regression/02-multiple-linear-regression.md
+        - "03 Polynomial Regression": domains/machine-learning/regression/03-polynomial-regression.md
+        - "04 Ridge Regression": domains/machine-learning/regression/04-ridge-regression.md
+        - "05 Lasso Regression": domains/machine-learning/regression/05-lasso-regression.md
+        - "06 Elastic Net Regression": domains/machine-learning/regression/06-elastic-net-regression.md
+      - Classification:
+        - Overview: domains/machine-learning/classification/README.md
+        - "01 Logistic Regression": domains/machine-learning/classification/01-logistic-regression.md
+        - "02 K-Nearest Neighbors": domains/machine-learning/classification/02-k-nearest-neighbors.md
+        - "03 Naive Bayes": domains/machine-learning/classification/03-naive-bayes.md
+        - "04 Support Vector Machines": domains/machine-learning/classification/04-support-vector-machines.md
+        - "05 Decision Trees": domains/machine-learning/classification/05-decision-trees.md
+      - Ensemble Learning:
+        - Overview: domains/machine-learning/ensemble-learning/README.md
+        - "01 Bagging": domains/machine-learning/ensemble-learning/01-bagging.md
+        - "02 Random Forest": domains/machine-learning/ensemble-learning/02-random-forest.md
+        - "03 Boosting": domains/machine-learning/ensemble-learning/03-boosting.md
+        - "04 AdaBoost": domains/machine-learning/ensemble-learning/04-adaboost.md
+        - "05 Gradient Boosting": domains/machine-learning/ensemble-learning/05-gradient-boosting.md
+        - "06 XGBoost": domains/machine-learning/ensemble-learning/06-xgboost.md
+        - "07 LightGBM": domains/machine-learning/ensemble-learning/07-lightgbm.md
+        - "08 CatBoost": domains/machine-learning/ensemble-learning/08-catboost.md
+        - "09 Stacking & Voting": domains/machine-learning/ensemble-learning/09-stacking-and-voting.md
+      - Unsupervised Learning:
+        - Overview: domains/machine-learning/unsupervised-learning/README.md
+        - "01 Clustering": domains/machine-learning/unsupervised-learning/01-clustering.md
+        - "02 K-Means": domains/machine-learning/unsupervised-learning/02-k-means.md
+        - "03 Hierarchical Clustering": domains/machine-learning/unsupervised-learning/03-hierarchical-clustering.md
+        - "04 DBSCAN": domains/machine-learning/unsupervised-learning/04-dbscan.md
+        - "05 Gaussian Mixture Models": domains/machine-learning/unsupervised-learning/05-gaussian-mixture-models.md
+        - "06 Dimensionality Reduction": domains/machine-learning/unsupervised-learning/06-dimensionality-reduction.md
+        - "07 PCA": domains/machine-learning/unsupervised-learning/07-pca.md
+        - "08 t-SNE": domains/machine-learning/unsupervised-learning/08-t-sne.md
+        - "09 UMAP": domains/machine-learning/unsupervised-learning/09-umap.md
+      - Model Evaluation:
+        - Overview: domains/machine-learning/model-evaluation/README.md
+        - "01 Regression Metrics": domains/machine-learning/model-evaluation/01-regression-metrics.md
+        - "02 Classification Metrics": domains/machine-learning/model-evaluation/02-classification-metrics.md
+        - "03 Confusion Matrix": domains/machine-learning/model-evaluation/03-confusion-matrix.md
+        - "04 Precision & Recall": domains/machine-learning/model-evaluation/04-precision-and-recall.md
+        - "05 F1 Score": domains/machine-learning/model-evaluation/05-f1-score.md
+        - "06 ROC-AUC": domains/machine-learning/model-evaluation/06-roc-auc.md
+        - "07 Cross-Validation": domains/machine-learning/model-evaluation/07-cross-validation.md
+        - "08 Learning Curves": domains/machine-learning/model-evaluation/08-learning-curves.md
+      - Feature Engineering:
+        - Overview: domains/machine-learning/feature-engineering/README.md
+        - "01 Feature Scaling": domains/machine-learning/feature-engineering/01-feature-scaling.md
+        - "02 Feature Transformation": domains/machine-learning/feature-engineering/02-feature-transformation.md
+        - "03 Feature Selection": domains/machine-learning/feature-engineering/03-feature-selection.md
+        - "04 Feature Extraction": domains/machine-learning/feature-engineering/04-feature-extraction.md
+        - "05 Encoding Categorical Variables": domains/machine-learning/feature-engineering/05-encoding-categorical-variables.md
+        - "06 Handling Missing Values": domains/machine-learning/feature-engineering/06-handling-missing-values.md
+        - "07 Handling Outliers": domains/machine-learning/feature-engineering/07-handling-outliers.md
+        - "08 Imbalanced Data": domains/machine-learning/feature-engineering/08-imbalanced-data.md
+      - Model Optimization:
+        - Overview: domains/machine-learning/model-optimization/README.md
+        - "01 Hyperparameter Tuning": domains/machine-learning/model-optimization/01-hyperparameter-tuning.md
+        - "02 Grid Search": domains/machine-learning/model-optimization/02-grid-search.md
+        - "03 Random Search": domains/machine-learning/model-optimization/03-random-search.md
+        - "04 Bayesian Optimization": domains/machine-learning/model-optimization/04-bayesian-optimization.md
+        - "05 Regularization": domains/machine-learning/model-optimization/05-regularization.md
+        - "06 Early Stopping": domains/machine-learning/model-optimization/06-early-stopping.md
+      - Miscellaneous ML:
+        - Overview: domains/machine-learning/miscellaneous/README.md
+        - "01 Anomaly Detection": domains/machine-learning/miscellaneous/01-anomaly-detection.md
+        - "02 Recommendation Systems": domains/machine-learning/miscellaneous/02-recommendation-systems.md
+        - "03 Time Series": domains/machine-learning/miscellaneous/03-time-series.md
+        - "04 Semi-Supervised Learning": domains/machine-learning/miscellaneous/04-semi-supervised-learning.md
+        - "05 Reinforcement Learning Basics": domains/machine-learning/miscellaneous/05-reinforcement-learning-basics.md
+        - "06 Explainable AI": domains/machine-learning/miscellaneous/06-explainable-ai.md
+        - "07 Model Interpretability": domains/machine-learning/miscellaneous/07-model-interpretability.md
+        - "08 ML Pipelines": domains/machine-learning/miscellaneous/08-ml-pipelines.md
+        - "09 Scikit-Learn": domains/machine-learning/miscellaneous/09-scikit-learn.md
     - "5. Deep Learning": domains/deep-learning/README.md
     - "6. Natural Language Processing": domains/natural-language-processing/README.md
     - "7. Transformers": domains/transformers/README.md
