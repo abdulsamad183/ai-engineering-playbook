@@ -8,7 +8,7 @@ Click a topic in the **left sidebar**, or open one below.
 | # | Topic |
 |---|-------|
 | 1 | [Python](domains/python-engineering/README.md) |
-| 2 | [Python Frameworks & Libraries](domains/python-frameworks-libraries/README.md) |
+| 2 | [Python Frameworks & Libraries](domains/python-frameworks-libraries/README.md) (NumPy · Pandas · Matplotlib · FastAPI · Pydantic) |
 | 3 | [Mathematics & Statistics](domains/mathematics-statistics/README.md) |
 | 4 | [Machine Learning](domains/machine-learning/README.md) |
 | 5 | [Deep Learning](domains/deep-learning/README.md) |

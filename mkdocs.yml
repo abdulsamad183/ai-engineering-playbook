@@ -145,6 +145,58 @@ nav:
     - handbooks.md
     - "1. Python": domains/python-engineering/README.md
     - "2. Python Frameworks & Libraries": domains/python-frameworks-libraries/README.md
+    - "Frameworks curriculum":
+      - NumPy:
+        - Overview: domains/python-frameworks-libraries/numpy/README.md
+        - "01 ndarray basics": domains/python-frameworks-libraries/numpy/01-ndarray-basics.md
+        - "02 Creating arrays": domains/python-frameworks-libraries/numpy/02-creating-arrays.md
+        - "03 Indexing & slicing": domains/python-frameworks-libraries/numpy/03-indexing-slicing.md
+        - "04 Shape & axes": domains/python-frameworks-libraries/numpy/04-shape-reshape-axes.md
+        - "05 ufuncs": domains/python-frameworks-libraries/numpy/05-ufuncs-math.md
+        - "06 Aggregations": domains/python-frameworks-libraries/numpy/06-aggregations.md
+        - "07 Broadcasting": domains/python-frameworks-libraries/numpy/07-broadcasting.md
+        - "08 Linear algebra": domains/python-frameworks-libraries/numpy/08-linear-algebra.md
+        - "09 Random": domains/python-frameworks-libraries/numpy/09-random.md
+        - "10 APIs cheat sheet": domains/python-frameworks-libraries/numpy/10-important-apis.md
+      - Pandas:
+        - Overview: domains/python-frameworks-libraries/pandas/README.md
+        - "01 Series & DataFrame": domains/python-frameworks-libraries/pandas/01-series-dataframe.md
+        - "02 IO read/write": domains/python-frameworks-libraries/pandas/02-io-read-write.md
+        - "03 Selecting & filtering": domains/python-frameworks-libraries/pandas/03-selecting-filtering.md
+        - "04 Missing data": domains/python-frameworks-libraries/pandas/04-missing-data.md
+        - "05 GroupBy": domains/python-frameworks-libraries/pandas/05-groupby-aggregation.md
+        - "06 Merge & concat": domains/python-frameworks-libraries/pandas/06-merge-join-concat.md
+        - "07 Apply & transforms": domains/python-frameworks-libraries/pandas/07-apply-transforms.md
+        - "08 APIs cheat sheet": domains/python-frameworks-libraries/pandas/08-important-apis.md
+      - Matplotlib:
+        - Overview: domains/python-frameworks-libraries/matplotlib/README.md
+        - "01 Figures & Axes": domains/python-frameworks-libraries/matplotlib/01-figures-axes.md
+        - "02 Line scatter bar": domains/python-frameworks-libraries/matplotlib/02-line-scatter-bar.md
+        - "03 Subplots": domains/python-frameworks-libraries/matplotlib/03-subplots-layout.md
+        - "04 Labels & style": domains/python-frameworks-libraries/matplotlib/04-labels-legends-style.md
+        - "05 Histograms & heatmaps": domains/python-frameworks-libraries/matplotlib/05-histograms-heatmaps.md
+        - "06 Saving figures": domains/python-frameworks-libraries/matplotlib/06-saving-figures.md
+        - "07 APIs cheat sheet": domains/python-frameworks-libraries/matplotlib/07-important-apis.md
+      - FastAPI:
+        - Overview: domains/python-frameworks-libraries/fastapi/README.md
+        - "01 App & routes": domains/python-frameworks-libraries/fastapi/01-app-routes.md
+        - "02 Path query body": domains/python-frameworks-libraries/fastapi/02-path-query-body.md
+        - "03 Request response models": domains/python-frameworks-libraries/fastapi/03-request-response-models.md
+        - "04 Dependency injection": domains/python-frameworks-libraries/fastapi/04-dependency-injection.md
+        - "05 Status & errors": domains/python-frameworks-libraries/fastapi/05-status-errors.md
+        - "06 Async endpoints": domains/python-frameworks-libraries/fastapi/06-async-endpoints.md
+        - "07 Streaming": domains/python-frameworks-libraries/fastapi/07-streaming.md
+        - "08 Middleware & CORS": domains/python-frameworks-libraries/fastapi/08-middleware-cors.md
+        - "09 APIs cheat sheet": domains/python-frameworks-libraries/fastapi/09-important-apis.md
+      - Pydantic:
+        - Overview: domains/python-frameworks-libraries/pydantic/README.md
+        - "01 BaseModel": domains/python-frameworks-libraries/pydantic/01-basemodel-basics.md
+        - "02 Fields & constraints": domains/python-frameworks-libraries/pydantic/02-fields-constraints.md
+        - "03 Nested & collections": domains/python-frameworks-libraries/pydantic/03-nested-collections.md
+        - "04 Validators": domains/python-frameworks-libraries/pydantic/04-validators.md
+        - "05 Serialization": domains/python-frameworks-libraries/pydantic/05-serialization.md
+        - "06 Settings": domains/python-frameworks-libraries/pydantic/06-settings.md
+        - "07 APIs cheat sheet": domains/python-frameworks-libraries/pydantic/07-important-apis.md
     - "3. Mathematics & Statistics": domains/mathematics-statistics/README.md
     - "4. Machine Learning": domains/machine-learning/README.md
     - "5. Deep Learning": domains/deep-learning/README.md
