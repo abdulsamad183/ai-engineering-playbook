@@ -5,7 +5,7 @@
 **Prerequisites:** [Python](../python-engineering/README.md)  
 **Unlocks:** [LLM Application Development](../llm-application-development/README.md) · [Machine Learning](../machine-learning/README.md)
 
-Start with a framework hub below (or expand **Frameworks curriculum** in the left sidebar). Each framework contains topic pages for important classes, functions, and patterns.
+Start with a framework hub below (or expand **2. Python Frameworks & Libraries** in the left sidebar). Each framework contains topic pages for important classes, functions, and patterns.
 
 ---
 

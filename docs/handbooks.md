@@ -2,8 +2,7 @@
 
 > The 25 primary topics of the AI Engineering Playbook.
 
-Click a topic in the **left sidebar** (topics **1–25** stay at the top), or open one below.  
-Deep curricula (**Python**, **Frameworks**, **Math & Stats**, **ML**) are listed under the numbered topics in the sidebar — or open each hub’s topic tables.
+The left sidebar shows **only these 25 topics**. Expand a topic to open its sections, then expand again for lessons.
 
 | # | Topic |
 |---|-------|

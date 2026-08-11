@@ -42,7 +42,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.sections
+    # navigation.sections off: Handbooks 1–25 stay collapsible (not always-open sections)
     - navigation.path
     - navigation.top
     # navigation.indexes disabled: it hid flat siblings after nested
@@ -142,128 +142,105 @@ nav:
     - Learning Roadmap: meta/roadmap.md
     - Capstone Walkthrough: meta/capstone-walkthrough.md
   - Handbooks:
-    - handbooks.md
-    - "1. Python": domains/python-engineering/README.md
-    - "2. Python Frameworks & Libraries": domains/python-frameworks-libraries/README.md
-    - "3. Mathematics & Statistics": domains/mathematics-statistics/README.md
-    - "4. Machine Learning": domains/machine-learning/README.md
-    - "5. Deep Learning": domains/deep-learning/README.md
-    - "6. Natural Language Processing": domains/natural-language-processing/README.md
-    - "7. Transformers": domains/transformers/README.md
-    - "8. Large Language Models": domains/llm-engineering/README.md
-    - "9. Generative AI": domains/generative-ai/README.md
-    - "10. Prompt Engineering": domains/prompt-engineering/README.md
-    - "11. LLM Application Development": domains/llm-application-development/README.md
-    - "12. Chatbots": domains/chatbots/README.md
-    - "13. Embeddings & Vector Databases": domains/embeddings-vector-databases/README.md
-    - "14. RAG": domains/rag/README.md
-    - "15. LLM Fine-Tuning": domains/llm-fine-tuning/README.md
-    - "16. LLM Evaluation": domains/ai-evaluation/README.md
-    - "17. AI Agents": domains/ai-agents/README.md
-    - "18. Agentic AI": domains/agentic-ai/README.md
-    - "19. MCP": domains/mcp/README.md
-    - "20. Multi-Agent Systems": domains/multi-agent-systems/README.md
-    - "21. AI System Design": domains/ai-system-design/README.md
-    - "22. MLOps & LLMOps": domains/mlops-llmops/README.md
-    - "23. AI Deployment & Infrastructure": domains/ai-deployment/README.md
-    - "24. AI Security & Guardrails": domains/ai-security-guardrails/README.md
-    - "25. Advanced AI Research": domains/advanced-ai-research/README.md
-    # Curricula live below 1–25 so the numbered Handbooks list stays visible
-    - "Python curriculum":
-      - "01 Basics": domains/python-engineering/topics/01-python-basics.md
+    - Overview: handbooks.md
+    - "1. Python":
+      - Overview: domains/python-engineering/README.md
+      - "01 Python Basics": domains/python-engineering/topics/01-python-basics.md
       - "02 Variables & Data Types": domains/python-engineering/topics/02-variables-data-types.md
       - "03 Operators": domains/python-engineering/topics/03-operators.md
-      - "04 Conditionals": domains/python-engineering/topics/04-conditional-statements.md
+      - "04 Conditional Statements": domains/python-engineering/topics/04-conditional-statements.md
       - "05 Loops": domains/python-engineering/topics/05-loops.md
       - "06 Functions": domains/python-engineering/topics/06-functions.md
-      - "07 Scope": domains/python-engineering/topics/07-scope-namespaces.md
+      - "07 Scope & Namespaces": domains/python-engineering/topics/07-scope-namespaces.md
       - "08 Strings": domains/python-engineering/topics/08-strings.md
       - "09 Lists": domains/python-engineering/topics/09-lists.md
       - "10 Tuples": domains/python-engineering/topics/10-tuples.md
       - "11 Sets": domains/python-engineering/topics/11-sets.md
       - "12 Dictionaries": domains/python-engineering/topics/12-dictionaries.md
-      - "13 Comprehensions": domains/python-engineering/topics/13-comprehensions.md
-      - "14 Iterators": domains/python-engineering/topics/14-iterators-iterables.md
+      - "13 List/Set/Dictionary Comprehensions": domains/python-engineering/topics/13-comprehensions.md
+      - "14 Iterators & Iterables": domains/python-engineering/topics/14-iterators-iterables.md
       - "15 Generators": domains/python-engineering/topics/15-generators.md
-      - "16 Lambdas": domains/python-engineering/topics/16-lambda-functions.md
-      - "17 map/filter/reduce": domains/python-engineering/topics/17-map-filter-reduce.md
-      - "18 Exceptions": domains/python-engineering/topics/18-exception-handling.md
-      - "19 Files": domains/python-engineering/topics/19-file-handling.md
-      - "20 Modules": domains/python-engineering/topics/20-modules-packages.md
-      - "21 Virtual Envs": domains/python-engineering/topics/21-virtual-environments.md
-      - "22 Packages": domains/python-engineering/topics/22-package-management.md
-      - "23 OOP": domains/python-engineering/topics/23-oop.md
+      - "16 Lambda Functions": domains/python-engineering/topics/16-lambda-functions.md
+      - "17 `map()`, `filter()`, `reduce()`": domains/python-engineering/topics/17-map-filter-reduce.md
+      - "18 Exception Handling": domains/python-engineering/topics/18-exception-handling.md
+      - "19 File Handling": domains/python-engineering/topics/19-file-handling.md
+      - "20 Modules & Packages": domains/python-engineering/topics/20-modules-packages.md
+      - "21 Virtual Environments": domains/python-engineering/topics/21-virtual-environments.md
+      - "22 Package Management": domains/python-engineering/topics/22-package-management.md
+      - "23 Object-Oriented Programming": domains/python-engineering/topics/23-oop.md
       - "24 Dataclasses": domains/python-engineering/topics/24-dataclasses.md
       - "25 Decorators": domains/python-engineering/topics/25-decorators.md
       - "26 Context Managers": domains/python-engineering/topics/26-context-managers.md
       - "27 Type Hints": domains/python-engineering/topics/27-type-hints.md
-      - "28 Regex": domains/python-engineering/topics/28-regular-expressions.md
-      - "29 Functional": domains/python-engineering/topics/29-functional-programming.md
+      - "28 Regular Expressions": domains/python-engineering/topics/28-regular-expressions.md
+      - "29 Functional Programming": domains/python-engineering/topics/29-functional-programming.md
       - "30 Logging": domains/python-engineering/topics/30-logging.md
       - "31 Unit Testing": domains/python-engineering/topics/31-unit-testing.md
       - "32 Debugging": domains/python-engineering/topics/32-debugging.md
       - "33 Concurrency": domains/python-engineering/topics/33-concurrency.md
-      - "34 Threads": domains/python-engineering/topics/34-multithreading.md
+      - "34 Multithreading": domains/python-engineering/topics/34-multithreading.md
       - "35 Multiprocessing": domains/python-engineering/topics/35-multiprocessing.md
-      - "36 Async": domains/python-engineering/topics/36-asynchronous-programming.md
-      - "37 Memory": domains/python-engineering/topics/37-memory-management.md
-      - "38 Internals": domains/python-engineering/topics/38-python-internals.md
-      - "39 Performance": domains/python-engineering/topics/39-performance-optimization.md
-      - "40 Clean Code": domains/python-engineering/topics/40-clean-code-best-practices.md
+      - "36 Asynchronous Programming": domains/python-engineering/topics/36-asynchronous-programming.md
+      - "37 Memory Management": domains/python-engineering/topics/37-memory-management.md
+      - "38 Python Internals": domains/python-engineering/topics/38-python-internals.md
+      - "39 Performance Optimization": domains/python-engineering/topics/39-performance-optimization.md
+      - "40 Clean Code & Python Best Practices": domains/python-engineering/topics/40-clean-code-best-practices.md
       - "AI Engineering guide": domains/python-engineering/python-for-ai-engineering.md
-    - "Frameworks curriculum":
+    - "2. Python Frameworks & Libraries":
+      - Overview: domains/python-frameworks-libraries/README.md
       - NumPy:
         - Overview: domains/python-frameworks-libraries/numpy/README.md
-        - "01 ndarray basics": domains/python-frameworks-libraries/numpy/01-ndarray-basics.md
-        - "02 Creating arrays": domains/python-frameworks-libraries/numpy/02-creating-arrays.md
-        - "03 Indexing & slicing": domains/python-frameworks-libraries/numpy/03-indexing-slicing.md
-        - "04 Shape & axes": domains/python-frameworks-libraries/numpy/04-shape-reshape-axes.md
-        - "05 ufuncs": domains/python-frameworks-libraries/numpy/05-ufuncs-math.md
-        - "06 Aggregations": domains/python-frameworks-libraries/numpy/06-aggregations.md
-        - "07 Broadcasting": domains/python-frameworks-libraries/numpy/07-broadcasting.md
-        - "08 Linear algebra": domains/python-frameworks-libraries/numpy/08-linear-algebra.md
-        - "09 Random": domains/python-frameworks-libraries/numpy/09-random.md
-        - "10 APIs cheat sheet": domains/python-frameworks-libraries/numpy/10-important-apis.md
+        - "01 NumPy: ndarray Basics": domains/python-frameworks-libraries/numpy/01-ndarray-basics.md
+        - "02 NumPy: Creating Arrays": domains/python-frameworks-libraries/numpy/02-creating-arrays.md
+        - "03 NumPy: Indexing & Slicing": domains/python-frameworks-libraries/numpy/03-indexing-slicing.md
+        - "04 NumPy: Shape, Reshape & Axes": domains/python-frameworks-libraries/numpy/04-shape-reshape-axes.md
+        - "05 NumPy: Universal Functions (ufuncs)": domains/python-frameworks-libraries/numpy/05-ufuncs-math.md
+        - "06 NumPy: Aggregations": domains/python-frameworks-libraries/numpy/06-aggregations.md
+        - "07 NumPy: Broadcasting": domains/python-frameworks-libraries/numpy/07-broadcasting.md
+        - "08 NumPy: Linear Algebra Essentials": domains/python-frameworks-libraries/numpy/08-linear-algebra.md
+        - "09 NumPy: Random Module": domains/python-frameworks-libraries/numpy/09-random.md
+        - "10 NumPy: Important APIs Cheat Sheet": domains/python-frameworks-libraries/numpy/10-important-apis.md
       - Pandas:
         - Overview: domains/python-frameworks-libraries/pandas/README.md
-        - "01 Series & DataFrame": domains/python-frameworks-libraries/pandas/01-series-dataframe.md
-        - "02 IO read/write": domains/python-frameworks-libraries/pandas/02-io-read-write.md
-        - "03 Selecting & filtering": domains/python-frameworks-libraries/pandas/03-selecting-filtering.md
-        - "04 Missing data": domains/python-frameworks-libraries/pandas/04-missing-data.md
-        - "05 GroupBy": domains/python-frameworks-libraries/pandas/05-groupby-aggregation.md
-        - "06 Merge & concat": domains/python-frameworks-libraries/pandas/06-merge-join-concat.md
-        - "07 Apply & transforms": domains/python-frameworks-libraries/pandas/07-apply-transforms.md
-        - "08 APIs cheat sheet": domains/python-frameworks-libraries/pandas/08-important-apis.md
+        - "01 Pandas: Series & DataFrame": domains/python-frameworks-libraries/pandas/01-series-dataframe.md
+        - "02 Pandas: Reading & Writing Data": domains/python-frameworks-libraries/pandas/02-io-read-write.md
+        - "03 Pandas: Selecting & Filtering": domains/python-frameworks-libraries/pandas/03-selecting-filtering.md
+        - "04 Pandas: Missing Data": domains/python-frameworks-libraries/pandas/04-missing-data.md
+        - "05 Pandas: GroupBy & Aggregation": domains/python-frameworks-libraries/pandas/05-groupby-aggregation.md
+        - "06 Pandas: Merge, Join & Concat": domains/python-frameworks-libraries/pandas/06-merge-join-concat.md
+        - "07 Pandas: Apply & Transforms": domains/python-frameworks-libraries/pandas/07-apply-transforms.md
+        - "08 Pandas: Important APIs Cheat Sheet": domains/python-frameworks-libraries/pandas/08-important-apis.md
       - Matplotlib:
         - Overview: domains/python-frameworks-libraries/matplotlib/README.md
-        - "01 Figures & Axes": domains/python-frameworks-libraries/matplotlib/01-figures-axes.md
-        - "02 Line scatter bar": domains/python-frameworks-libraries/matplotlib/02-line-scatter-bar.md
-        - "03 Subplots": domains/python-frameworks-libraries/matplotlib/03-subplots-layout.md
-        - "04 Labels & style": domains/python-frameworks-libraries/matplotlib/04-labels-legends-style.md
-        - "05 Histograms & heatmaps": domains/python-frameworks-libraries/matplotlib/05-histograms-heatmaps.md
-        - "06 Saving figures": domains/python-frameworks-libraries/matplotlib/06-saving-figures.md
-        - "07 APIs cheat sheet": domains/python-frameworks-libraries/matplotlib/07-important-apis.md
+        - "01 Matplotlib: Figures & Axes": domains/python-frameworks-libraries/matplotlib/01-figures-axes.md
+        - "02 Matplotlib: Line, Scatter & Bar": domains/python-frameworks-libraries/matplotlib/02-line-scatter-bar.md
+        - "03 Matplotlib: Subplots & Layout": domains/python-frameworks-libraries/matplotlib/03-subplots-layout.md
+        - "04 Matplotlib: Labels, Legends & Style": domains/python-frameworks-libraries/matplotlib/04-labels-legends-style.md
+        - "05 Matplotlib: Histograms & Heatmaps": domains/python-frameworks-libraries/matplotlib/05-histograms-heatmaps.md
+        - "06 Matplotlib: Saving Figures": domains/python-frameworks-libraries/matplotlib/06-saving-figures.md
+        - "07 Matplotlib: Important APIs Cheat Sheet": domains/python-frameworks-libraries/matplotlib/07-important-apis.md
       - FastAPI:
         - Overview: domains/python-frameworks-libraries/fastapi/README.md
-        - "01 App & routes": domains/python-frameworks-libraries/fastapi/01-app-routes.md
-        - "02 Path query body": domains/python-frameworks-libraries/fastapi/02-path-query-body.md
-        - "03 Request response models": domains/python-frameworks-libraries/fastapi/03-request-response-models.md
-        - "04 Dependency injection": domains/python-frameworks-libraries/fastapi/04-dependency-injection.md
-        - "05 Status & errors": domains/python-frameworks-libraries/fastapi/05-status-errors.md
-        - "06 Async endpoints": domains/python-frameworks-libraries/fastapi/06-async-endpoints.md
-        - "07 Streaming": domains/python-frameworks-libraries/fastapi/07-streaming.md
-        - "08 Middleware & CORS": domains/python-frameworks-libraries/fastapi/08-middleware-cors.md
-        - "09 APIs cheat sheet": domains/python-frameworks-libraries/fastapi/09-important-apis.md
+        - "01 FastAPI: App, Router & Routes": domains/python-frameworks-libraries/fastapi/01-app-routes.md
+        - "02 FastAPI: Path, Query & Body Parameters": domains/python-frameworks-libraries/fastapi/02-path-query-body.md
+        - "03 FastAPI: Request & Response Models": domains/python-frameworks-libraries/fastapi/03-request-response-models.md
+        - "04 FastAPI: Dependency Injection": domains/python-frameworks-libraries/fastapi/04-dependency-injection.md
+        - "05 FastAPI: Status Codes & Errors": domains/python-frameworks-libraries/fastapi/05-status-errors.md
+        - "06 FastAPI: Async Endpoints": domains/python-frameworks-libraries/fastapi/06-async-endpoints.md
+        - "07 FastAPI: Streaming Responses": domains/python-frameworks-libraries/fastapi/07-streaming.md
+        - "08 FastAPI: Middleware & CORS": domains/python-frameworks-libraries/fastapi/08-middleware-cors.md
+        - "09 FastAPI: Important APIs Cheat Sheet": domains/python-frameworks-libraries/fastapi/09-important-apis.md
       - Pydantic:
         - Overview: domains/python-frameworks-libraries/pydantic/README.md
-        - "01 BaseModel": domains/python-frameworks-libraries/pydantic/01-basemodel-basics.md
-        - "02 Fields & constraints": domains/python-frameworks-libraries/pydantic/02-fields-constraints.md
-        - "03 Nested & collections": domains/python-frameworks-libraries/pydantic/03-nested-collections.md
-        - "04 Validators": domains/python-frameworks-libraries/pydantic/04-validators.md
-        - "05 Serialization": domains/python-frameworks-libraries/pydantic/05-serialization.md
-        - "06 Settings": domains/python-frameworks-libraries/pydantic/06-settings.md
-        - "07 APIs cheat sheet": domains/python-frameworks-libraries/pydantic/07-important-apis.md
-    - "Math & Stats curriculum":
+        - "01 Pydantic: BaseModel Basics": domains/python-frameworks-libraries/pydantic/01-basemodel-basics.md
+        - "02 Pydantic: Fields & Constraints": domains/python-frameworks-libraries/pydantic/02-fields-constraints.md
+        - "03 Pydantic: Nested Models & Collections": domains/python-frameworks-libraries/pydantic/03-nested-collections.md
+        - "04 Pydantic: Validators": domains/python-frameworks-libraries/pydantic/04-validators.md
+        - "05 Pydantic: Serialization": domains/python-frameworks-libraries/pydantic/05-serialization.md
+        - "06 Pydantic: Settings Management": domains/python-frameworks-libraries/pydantic/06-settings.md
+        - "07 Pydantic: Important APIs Cheat Sheet": domains/python-frameworks-libraries/pydantic/07-important-apis.md
+    - "3. Mathematics & Statistics":
+      - Overview: domains/mathematics-statistics/README.md
       - Mathematics:
         - Overview: domains/mathematics-statistics/mathematics/README.md
         - "01 Linear Algebra": domains/mathematics-statistics/mathematics/01-linear-algebra.md
@@ -294,7 +271,8 @@ nav:
         - "22 Optimization for ML": domains/mathematics-statistics/ml-oriented/22-optimization-for-ml.md
         - "23 Information Theory": domains/mathematics-statistics/ml-oriented/23-information-theory.md
         - "24 Statistical Learning Theory": domains/mathematics-statistics/ml-oriented/24-statistical-learning-theory.md
-    - "ML curriculum":
+    - "4. Machine Learning":
+      - Overview: domains/machine-learning/README.md
       - ML Basics:
         - Overview: domains/machine-learning/ml-basics/README.md
         - "01 Introduction to Machine Learning": domains/machine-learning/ml-basics/01-introduction-to-machine-learning.md
@@ -382,4 +360,69 @@ nav:
         - "07 Model Interpretability": domains/machine-learning/miscellaneous/07-model-interpretability.md
         - "08 ML Pipelines": domains/machine-learning/miscellaneous/08-ml-pipelines.md
         - "09 Scikit-Learn": domains/machine-learning/miscellaneous/09-scikit-learn.md
- 
+    - "5. Deep Learning": domains/deep-learning/README.md
+    - "6. Natural Language Processing": domains/natural-language-processing/README.md
+    - "7. Transformers": domains/transformers/README.md
+    - "8. Large Language Models": domains/llm-engineering/README.md
+    - "9. Generative AI": domains/generative-ai/README.md
+    - "10. Prompt Engineering": domains/prompt-engineering/README.md
+    - "11. LLM Application Development": domains/llm-application-development/README.md
+    - "12. Chatbots": domains/chatbots/README.md
+    - "13. Embeddings & Vector Databases": domains/embeddings-vector-databases/README.md
+    - "14. RAG": domains/rag/README.md
+    - "15. LLM Fine-Tuning": domains/llm-fine-tuning/README.md
+    - "16. LLM Evaluation": domains/ai-evaluation/README.md
+    - "17. AI Agents": domains/ai-agents/README.md
+    - "18. Agentic AI": domains/agentic-ai/README.md
+    - "19. MCP": domains/mcp/README.md
+    - "20. Multi-Agent Systems": domains/multi-agent-systems/README.md
+    - "21. AI System Design": domains/ai-system-design/README.md
+    - "22. MLOps & LLMOps": domains/mlops-llmops/README.md
+    - "23. AI Deployment & Infrastructure": domains/ai-deployment/README.md
+    - "24. AI Security & Guardrails": domains/ai-security-guardrails/README.md
+    - "25. Advanced AI Research": domains/advanced-ai-research/README.md
+  - Build:
+    - Templates: templates/README.md
+    - Starters: templates/engineering/README.md
+    - Examples: examples/README.md
+    - Prompts: prompts/README.md
+  - Reference:
+    - Cheat Sheets: cheat-sheets/README.md
+    - Glossary: meta/glossary.md
+    - Master Index: meta/indexes/MASTER-INDEX.md
+    - Knowledge: knowledge/README.md
+    - Domains Overview: domains/README.md
+    - More handbooks:
+      - Foundations: domains/foundations/README.md
+      - Backend: domains/backend-engineering/README.md
+      - APIs: domains/apis/README.md
+      - FastAPI: domains/fastapi/README.md
+      - Databases: domains/databases/README.md
+      - Context Engineering: domains/context-engineering/README.md
+      - AI Safety (deep dive): domains/ai-safety/README.md
+      - Debugging: domains/debugging/README.md
+      - Common Mistakes: domains/common-mistakes/README.md
+      - Research Papers: domains/papers/README.md
+      - Interview Prep: domains/interview-preparation/README.md
+    - Docs Site Guide: docs-site.md
+
+not_in_nav: |
+  meta/templates/**
+  meta/indexes/topics/**
+  meta/indexes/technologies/**
+  meta/indexes/patterns/**
+  meta/indexes/comparisons/**
+  meta/architecture-overview.md
+  meta/style-guide.md
+  meta/naming-conventions.md
+  meta/indexing-strategy.md
+  meta/mermaid-conventions.md
+  domains/embeddings/**
+  domains/vector-databases/**
+  domains/a2a/**
+  domains/ai-workflows/**
+  domains/cloud-deployment/**
+  domains/model-serving/**
+  domains/career-notes/**
+  domains/research-notes/**
+  resources/**
