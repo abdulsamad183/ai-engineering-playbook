@@ -141,8 +141,11 @@ nav:
     - Learning Roadmap: meta/roadmap.md
     - Capstone Walkthrough: meta/capstone-walkthrough.md
   - Handbooks:
+    # First child of a section MUST be a bare path (navigation.indexes).
+    # A titled child like "Overview: ..." makes the next flat page become the
+    # Handbooks tab index and disappear from the sidebar (was hiding topic 2).
     - "1. Python":
-      - Overview: domains/python-engineering/README.md
+      - domains/python-engineering/README.md
       - "01 Basics": domains/python-engineering/topics/01-python-basics.md
       - "02 Variables & Data Types": domains/python-engineering/topics/02-variables-data-types.md
       - "03 Operators": domains/python-engineering/topics/03-operators.md

@@ -5,47 +5,7 @@
 **Prerequisites:** None  
 **Unlocks:** [Python Frameworks & Libraries](../python-frameworks-libraries/README.md) · [LLM Application Development](../llm-application-development/README.md)
 
----
-
-## Definition
-
-**Python** is a high-level, dynamically typed language and the default stack for AI engineering: model SDKs, data tooling, APIs, agents, and eval harnesses. This handbook is a **click-through curriculum** — each topic has definitions, uses, types/variants, diagrams, and commented code examples.
-
----
-
-## Learning path
-
-```mermaid
-flowchart TB
-  subgraph A [Core language]
-    B1[Basics → Operators]
-    B2[Control flow]
-    B3[Functions & scope]
-    B4[Data structures]
-  end
-  subgraph B [Pythonic power]
-    C1[Comprehensions → Generators]
-    C2[FP tools]
-    C3[Exceptions & files]
-    C4[Modules & packaging]
-  end
-  subgraph C [Professional Python]
-    D1[OOP → Typing]
-    D2[Logging & tests]
-    D3[Concurrency]
-    D4[Internals & performance]
-  end
-  A --> B --> C
-```
-
-| Stage | Topics | Focus |
-|-------|--------|-------|
-| Foundations | 1–7 | Syntax, control flow, functions, scope |
-| Data & text | 8–13 | Strings and collections + comprehensions |
-| Iteration & FP | 14–17 | Iterators, generators, lambda, map/filter/reduce |
-| I/O & project layout | 18–22 | Errors, files, modules, venv, packages |
-| Modern OOP & quality | 23–32 | Classes, dataclasses, decorators, typing, tests, debug |
-| Scale & craft | 33–40 | Concurrency, memory, internals, performance, clean code |
+Start with the **Topics** table below (or expand **1. Python** in the left sidebar). Each page has definitions, uses, types, diagrams, and commented examples.
 
 ---
 
@@ -95,6 +55,48 @@ Click any topic to go deep.
 | 38 | Python Internals | [topics/38-python-internals.md](topics/38-python-internals.md) |
 | 39 | Performance Optimization | [topics/39-performance-optimization.md](topics/39-performance-optimization.md) |
 | 40 | Clean Code & Python Best Practices | [topics/40-clean-code-best-practices.md](topics/40-clean-code-best-practices.md) |
+
+---
+
+## Definition
+
+**Python** is a high-level, dynamically typed language and the default stack for AI engineering: model SDKs, data tooling, APIs, agents, and eval harnesses. This handbook is a **click-through curriculum** — each topic has definitions, uses, types/variants, diagrams, and commented code examples.
+
+---
+
+## Learning path
+
+```mermaid
+flowchart TB
+  subgraph A [Core language]
+    B1[Basics → Operators]
+    B2[Control flow]
+    B3[Functions & scope]
+    B4[Data structures]
+  end
+  subgraph B [Pythonic power]
+    C1[Comprehensions → Generators]
+    C2[FP tools]
+    C3[Exceptions & files]
+    C4[Modules & packaging]
+  end
+  subgraph C [Professional Python]
+    D1[OOP → Typing]
+    D2[Logging & tests]
+    D3[Concurrency]
+    D4[Internals & performance]
+  end
+  A --> B --> C
+```
+
+| Stage | Topics | Focus |
+|-------|--------|-------|
+| Foundations | 1–7 | Syntax, control flow, functions, scope |
+| Data & text | 8–13 | Strings and collections + comprehensions |
+| Iteration & FP | 14–17 | Iterators, generators, lambda, map/filter/reduce |
+| I/O & project layout | 18–22 | Errors, files, modules, venv, packages |
+| Modern OOP & quality | 23–32 | Classes, dataclasses, decorators, typing, tests, debug |
+| Scale & craft | 33–40 | Concurrency, memory, internals, performance, clean code |
 
 ---
 
