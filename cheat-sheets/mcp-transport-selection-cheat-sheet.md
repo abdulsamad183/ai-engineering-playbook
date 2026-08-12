@@ -7,4 +7,4 @@
 | Bidirectional streaming | **WebSockets** (when host supports) |
 | Air-gapped | **STDIO** subprocess only |
 
-See [Transport Layer](../domains/mcp/mcp-transport-layer.md) · [Comparisons](../domains/mcp/mcp-comparison-guides.md).
+See [Transport Layer](../domains/mcp/transport-and-auth/01-mcp-transport-layer.md) · [Comparisons](../domains/mcp/production/05-mcp-comparison-guides.md).

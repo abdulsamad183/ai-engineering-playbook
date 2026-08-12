@@ -7,4 +7,4 @@
 5. [ ] Stale checkpoint? → version mismatch
 6. [ ] Retry storm? → circuit breaker metrics
 
-See [Agent Mistakes](../domains/ai-agents/agent-engineering-mistakes.md).
+See [Agent Mistakes](../domains/ai-agents/eval-security-production/03-agent-engineering-mistakes.md).

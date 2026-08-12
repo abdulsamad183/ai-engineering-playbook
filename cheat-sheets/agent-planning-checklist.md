@@ -7,4 +7,4 @@
 - [ ] Parallel steps identified
 - [ ] Plan version in state for audit
 
-See [Agent Planning](../domains/ai-agents/agent-planning.md).
+See [Agent Planning](../domains/ai-agents/cognition/02-agent-planning.md).

@@ -7,4 +7,4 @@
 - [ ] Latency budget includes rerank (100–500ms)
 - [ ] Cache rerank for identical query+index version (optional)
 
-See [Reranking](../domains/rag/reranking.md).
+See [Reranking](../domains/rag/retrieval/06-reranking.md).

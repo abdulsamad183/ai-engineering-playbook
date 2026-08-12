@@ -8,4 +8,4 @@
 - [ ] Right-size ANN ef_search (recall vs latency)
 - [ ] Async ingest; don't block query path
 
-See [Production RAG](../domains/rag/production-rag.md).
+See [Production RAG](../domains/rag/evaluation-and-production/02-production-rag.md).

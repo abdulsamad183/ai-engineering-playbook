@@ -9,4 +9,4 @@
 - [ ] Errors return structured `isError` content
 - [ ] No secrets in schema or responses
 
-See [MCP Tools](../domains/mcp/mcp-tools.md).
+See [MCP Tools](../domains/mcp/primitives/03-mcp-tools.md).

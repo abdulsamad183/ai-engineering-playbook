@@ -60,21 +60,21 @@ flowchart TB
 | 8 | [Large Language Models (LLMs)](domains/llm-engineering/README.md) | 14 sections · 117 topics — pretrain → align → serve |
 | 9 | [Generative AI](domains/generative-ai/README.md) | 14 sections · 76 topics — GANs → diffusion → multimodal |
 | 10 | [Prompt Engineering](domains/prompt-engineering/README.md) | 5 sections · 19 topics — craft → ops → production |
-| 11 | [LLM Application Development](domains/llm-application-development/README.md) | App architecture, orchestration, checklists |
-| 12 | [Chatbots](domains/chatbots/README.md) | Dialogue, memory, grounded support bots |
-| 13 | [Embeddings & Vector Databases](domains/embeddings-vector-databases/README.md) | Vectors, ANN search, choosing a stack |
-| 14 | [RAG](domains/rag/README.md) | Chunking, retrieval, rerank, citations, eval |
-| 15 | [LLM Fine-Tuning](domains/llm-fine-tuning/README.md) | When to FT, LoRA/QLoRA, data & gates |
-| 16 | [LLM Evaluation](domains/ai-evaluation/README.md) | Metrics, golden sets, CI quality gates |
-| 17 | [AI Agents](domains/ai-agents/README.md) | Planning, tools, memory, frameworks |
-| 18 | [Agentic AI](domains/agentic-ai/README.md) | Autonomy levels, goal-directed systems |
-| 19 | [MCP](domains/mcp/README.md) | Model Context Protocol — servers, clients, security |
-| 20 | [Multi-Agent Systems](domains/multi-agent-systems/README.md) | Roles, coordination, when *not* to multi-agent |
-| 21 | [AI System Design](domains/ai-system-design/README.md) | Architecture, scaling, case studies |
-| 22 | [MLOps & LLMOps](domains/mlops-llmops/README.md) | Pipelines, versioning, feedback loops |
-| 23 | [AI Deployment & Infrastructure](domains/ai-deployment/README.md) | Docker, CI/CD, serving, observability |
-| 24 | [AI Security & Guardrails](domains/ai-security-guardrails/README.md) | Threat models, layered guards, secure tools |
-| 25 | [Advanced AI Research](domains/advanced-ai-research/README.md) | Reading papers, research → production |
+| 11 | [LLM Application Development](domains/llm-application-development/README.md) | App architecture, orchestration, APIs, reliability — nested curriculum |
+| 12 | [Chatbots](domains/chatbots/README.md) | Dialogue, memory, grounding, channels, ops — nested curriculum |
+| 13 | [Embeddings & Vector Databases](domains/embeddings-vector-databases/README.md) | Embeddings, ANN, VDBs, providers, ops — nested curriculum |
+| 14 | [RAG](domains/rag/README.md) | Ingestion, retrieval, grounding, eval — nested handbook |
+| 15 | [LLM Fine-Tuning](domains/llm-fine-tuning/README.md) | Decision, data, LoRA/DPO, serving — nested curriculum |
+| 16 | [LLM Evaluation](domains/ai-evaluation/README.md) | Metrics, surfaces, online eval, frameworks — nested handbook |
+| 17 | [AI Agents](domains/ai-agents/README.md) | Cognition, tools, frameworks, production — nested handbook |
+| 18 | [Agentic AI](domains/agentic-ai/README.md) | Autonomy, product patterns, governance — nested curriculum |
+| 19 | [MCP](domains/mcp/README.md) | MCP primitives, clients/servers, production — nested handbook |
+| 20 | [Multi-Agent Systems](domains/multi-agent-systems/README.md) | Coordination, communication, reliability — nested curriculum |
+| 21 | [AI System Design](domains/ai-system-design/README.md) | Product designs and interview craft — nested handbook |
+| 22 | [MLOps & LLMOps](domains/mlops-llmops/README.md) | Artifacts, pipelines, LLMOps governance — nested curriculum |
+| 23 | [AI Deployment & Infrastructure](domains/ai-deployment/README.md) | Deploy, observe, reliability — nested handbook |
+| 24 | [AI Security & Guardrails](domains/ai-security-guardrails/README.md) | Threats, guardrails, secure tools — nested handbook |
+| 25 | [Advanced AI Research](domains/advanced-ai-research/README.md) | Papers and research-to-prod — nested handbook |
 
 ---
 

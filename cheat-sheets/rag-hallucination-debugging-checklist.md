@@ -7,4 +7,4 @@
 5. [ ] System prompt requires abstention?
 6. [ ] Post-check: claim ⊆ source text?
 
-See [Hallucination Prevention](../domains/rag/hallucination-prevention.md) · [RAG Mistakes](../domains/rag/rag-mistakes.md).
+See [Hallucination Prevention](../domains/rag/generation-and-grounding/03-hallucination-prevention.md) · [RAG Mistakes](../domains/rag/evaluation-and-production/04-rag-mistakes.md).

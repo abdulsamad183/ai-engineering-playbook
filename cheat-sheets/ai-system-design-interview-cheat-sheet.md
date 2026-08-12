@@ -6,4 +6,4 @@
 4. Deep dive: context, streaming, failure modes
 5. Monitoring, cost, tradeoffs
 
-See [AI System Design Interviews](../domains/ai-system-design/ai-system-design-interviews.md).
+See [AI System Design Interviews](../domains/ai-system-design/scale-and-interviews/02-ai-system-design-interviews.md).

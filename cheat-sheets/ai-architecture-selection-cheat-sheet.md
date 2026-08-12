@@ -7,4 +7,4 @@
 | Multi-step tasks | Agentic loop |
 | Enterprise scale | Microservices retrieval + API |
 
-See [Architecture Patterns](../domains/ai-system-design/ai-architecture-patterns.md).
+See [Architecture Patterns](../domains/ai-system-design/foundations/03-ai-architecture-patterns.md).

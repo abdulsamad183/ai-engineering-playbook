@@ -87,13 +87,13 @@ Production-ready starter code in `templates/engineering/` for bootstrapping AI A
 Systematic measurement of AI system quality — LLMs, prompts, RAG, agents, latency, cost, and business impact — using metrics, benchmarks, golden datasets, and continuous monitoring. See [AI Evaluation Handbook](../domains/ai-evaluation/README.md).
 
 ### LLMOps
-Operational practices for deploying and maintaining LLM applications: versioning, evaluation, monitoring, and continuous improvement. See [Introduction to AI Evaluation](../domains/ai-evaluation/introduction-to-ai-evaluation.md).
+Operational practices for deploying and maintaining LLM applications: versioning, evaluation, monitoring, and continuous improvement. See [Introduction to AI Evaluation](../domains/ai-evaluation/foundations/01-introduction-to-ai-evaluation.md).
 
 ### Golden Dataset
-Curated, versioned evaluation set with ground truth used for regression testing and quality gates. See [Evaluation Datasets](../domains/ai-evaluation/evaluation-datasets.md).
+Curated, versioned evaluation set with ground truth used for regression testing and quality gates. See [Evaluation Datasets](../domains/ai-evaluation/foundations/03-evaluation-datasets.md).
 
 ### Faithfulness (RAG)
-Metric measuring whether generated answers are supported by retrieved context. See [LLM Evaluation Metrics](../domains/ai-evaluation/llm-evaluation-metrics.md).
+Metric measuring whether generated answers are supported by retrieved context. See [LLM Evaluation Metrics](../domains/ai-evaluation/metrics/02-llm-evaluation-metrics.md).
 
 ### RAGAS
 Retrieval Augmented Generation Assessment framework for RAG pipeline metrics. See [RAGAS Guide](../domains/ai-evaluation/frameworks/ragas.md).
@@ -102,7 +102,7 @@ Retrieval Augmented Generation Assessment framework for RAG pipeline metrics. Se
 Operational discipline for deploying, monitoring, securing, and scaling LLM applications in production. See [Production AI Handbook](../domains/ai-deployment/README.md).
 
 ### Latency Budget
-Allocated time per layer (API, retrieval, LLM, tools) in an AI request path. See [AI System Design Fundamentals](../domains/ai-system-design/ai-system-design-fundamentals.md).
+Allocated time per layer (API, retrieval, LLM, tools) in an AI request path. See [AI System Design Fundamentals](../domains/ai-system-design/foundations/01-ai-system-design-fundamentals.md).
 
 ### AI Engineering Interview
 Structured preparation for technical, coding, system design, and behavioral rounds in AI roles. See [Interview Handbook](../domains/interview-preparation/README.md).
@@ -182,13 +182,13 @@ Open protocol specification for standardized communication between AI hosts and 
 Application embedding an MCP client (IDE, agent runtime, chat app). Discovers capabilities and invokes servers on behalf of the user or agent.
 
 ### MCP Server
-Process exposing tools, resources, and prompts via the MCP message protocol. See [Build an MCP Server](../domains/mcp/build-an-mcp-server.md).
+Process exposing tools, resources, and prompts via the MCP message protocol. See [Build an MCP Server](../domains/mcp/client-and-server/03-build-an-mcp-server.md).
 
 ### MCP Tool
-Named, schema-defined capability invoked via `tools/call` — the protocol primitive for agent actions. See [MCP Tools](../domains/mcp/mcp-tools.md).
+Named, schema-defined capability invoked via `tools/call` — the protocol primitive for agent actions. See [MCP Tools](../domains/mcp/primitives/03-mcp-tools.md).
 
 ### MCP Resource
-URI-addressable read-only context fetched via `resources/read`. See [MCP Resources](../domains/mcp/mcp-resources.md).
+URI-addressable read-only context fetched via `resources/read`. See [MCP Resources](../domains/mcp/primitives/01-mcp-resources.md).
 
 ### Multi-Agent System
 Architecture where multiple specialized agents collaborate to solve complex tasks. See [Multi-Agent Systems](../domains/multi-agent-systems/).
@@ -235,10 +235,10 @@ Architectural style for designing networked APIs using HTTP methods, stateless r
 Architecture pattern that retrieves relevant knowledge from an index before generating LLM responses. Full handbook: [RAG](../domains/rag/README.md).
 
 ### Retrieval
-The process of finding candidate documents or passages from an index for a given query. See [Retrieval Strategies](../domains/rag/retrieval-strategies.md).
+The process of finding candidate documents or passages from an index for a given query. See [Retrieval Strategies](../domains/rag/retrieval/04-retrieval-strategies.md).
 
 ### Reranking
-Re-scoring retrieved documents with a more accurate (but slower) model to improve relevance. See [Reranking](../domains/rag/reranking.md).
+Re-scoring retrieved documents with a more accurate (but slower) model to improve relevance. See [Reranking](../domains/rag/retrieval/06-reranking.md).
 
 ### ReAct
 Agent pattern combining Reasoning and Acting — the agent alternates between thinking and using tools.

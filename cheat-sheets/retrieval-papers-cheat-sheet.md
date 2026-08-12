@@ -9,7 +9,7 @@ updated: 2026-07-13
 version: "1.0"
 related:
   - ../domains/papers/retrieval-papers.md
-  - ../domains/rag/advanced-rag-architectures.md
+  - ../domains/rag/foundations/03-advanced-rag-architectures.md
 keywords: [Self-RAG, GraphRAG, RAPTOR, CRAG, retrieval]
 author: hp
 ---
@@ -66,7 +66,7 @@ author: hp
 ## Useful Links
 
 - [Retrieval Papers](../domains/papers/retrieval-papers.md)
-- [Advanced RAG Architectures](../domains/rag/advanced-rag-architectures.md)
+- [Advanced RAG Architectures](../domains/rag/foundations/03-advanced-rag-architectures.md)
 - [RAG Domain](../domains/rag/README.md)
 
 ## Changelog

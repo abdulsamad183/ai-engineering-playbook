@@ -1,6 +1,6 @@
 # Chunking Selection Cheat Sheet
 
-> See [Chunking](../domains/rag/chunking.md).
+> See [Chunking](../domains/rag/ingestion/02-chunking.md).
 
 | Use case | Strategy | Size hint |
 |----------|----------|-----------|

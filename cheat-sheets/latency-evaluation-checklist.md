@@ -7,4 +7,4 @@
 - [ ] Performance budget documented
 - [ ] Latency in CI smoke tests
 
-See [Latency Evaluation](../domains/ai-evaluation/latency-evaluation.md).
+See [Latency Evaluation](../domains/ai-evaluation/metrics/04-latency-evaluation.md).

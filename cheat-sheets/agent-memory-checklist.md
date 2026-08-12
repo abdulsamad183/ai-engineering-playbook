@@ -6,4 +6,4 @@
 - [ ] Shared memory versioned (multi-agent)
 - [ ] User can delete stored memories
 
-See [Agent Memory](../domains/ai-agents/agent-memory-systems.md).
+See [Agent Memory](../domains/ai-agents/cognition/04-agent-memory-systems.md).

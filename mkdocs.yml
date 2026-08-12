@@ -864,21 +864,498 @@ nav:
         - "02 Prompt Engineering Mistakes": domains/prompt-engineering/production-and-safety/02-prompt-engineering-mistakes.md
         - "03 Production Prompt Engineering": domains/prompt-engineering/production-and-safety/03-production-prompt-engineering.md
         - "04 Prompt Comparison Guides": domains/prompt-engineering/production-and-safety/04-prompt-comparison-guides.md
-    - "11. LLM Application Development": domains/llm-application-development/README.md
-    - "12. Chatbots": domains/chatbots/README.md
-    - "13. Embeddings & Vector Databases": domains/embeddings-vector-databases/README.md
-    - "14. RAG": domains/rag/README.md
-    - "15. LLM Fine-Tuning": domains/llm-fine-tuning/README.md
-    - "16. LLM Evaluation": domains/ai-evaluation/README.md
-    - "17. AI Agents": domains/ai-agents/README.md
-    - "18. Agentic AI": domains/agentic-ai/README.md
-    - "19. MCP": domains/mcp/README.md
-    - "20. Multi-Agent Systems": domains/multi-agent-systems/README.md
-    - "21. AI System Design": domains/ai-system-design/README.md
-    - "22. MLOps & LLMOps": domains/mlops-llmops/README.md
-    - "23. AI Deployment & Infrastructure": domains/ai-deployment/README.md
-    - "24. AI Security & Guardrails": domains/ai-security-guardrails/README.md
-    - "25. Advanced AI Research": domains/advanced-ai-research/README.md
+    - "11. LLM Application Development":
+      - Overview: domains/llm-application-development/README.md
+      - Foundations:
+        - Overview: domains/llm-application-development/foundations/README.md
+        - "01 App Vs Chat Vs Agent": domains/llm-application-development/foundations/01-app-vs-chat-vs-agent.md
+        - "02 Request Lifecycle": domains/llm-application-development/foundations/02-request-lifecycle.md
+        - "03 Sync Async Streaming": domains/llm-application-development/foundations/03-sync-async-streaming.md
+      - Architecture:
+        - Overview: domains/llm-application-development/architecture/README.md
+        - "01 Llm App Architecture": domains/llm-application-development/architecture/01-llm-app-architecture.md
+        - "02 Layers And Boundaries": domains/llm-application-development/architecture/02-layers-and-boundaries.md
+        - "03 Provider Adapters And Gateways": domains/llm-application-development/architecture/03-provider-adapters-and-gateways.md
+        - "04 Multi Tenant Llm Apps": domains/llm-application-development/architecture/04-multi-tenant-llm-apps.md
+      - Orchestration:
+        - Overview: domains/llm-application-development/orchestration/README.md
+        - "01 Orchestration Patterns": domains/llm-application-development/orchestration/01-orchestration-patterns.md
+        - "02 Chains And Pipelines": domains/llm-application-development/orchestration/02-chains-and-pipelines.md
+        - "03 Routers And Classifiers": domains/llm-application-development/orchestration/03-routers-and-classifiers.md
+        - "04 Graph Based Workflows": domains/llm-application-development/orchestration/04-graph-based-workflows.md
+      - Apis And Ux:
+        - Overview: domains/llm-application-development/apis-and-ux/README.md
+        - "01 Chat Apis": domains/llm-application-development/apis-and-ux/01-chat-apis.md
+        - "02 Streaming And Sse": domains/llm-application-development/apis-and-ux/02-streaming-and-sse.md
+        - "03 Tool Calling Ux": domains/llm-application-development/apis-and-ux/03-tool-calling-ux.md
+        - "04 Cancellation And Timeouts": domains/llm-application-development/apis-and-ux/04-cancellation-and-timeouts.md
+      - Reliability:
+        - Overview: domains/llm-application-development/reliability/README.md
+        - "01 Retries And Timeouts": domains/llm-application-development/reliability/01-retries-and-timeouts.md
+        - "02 Idempotency And Dedup": domains/llm-application-development/reliability/02-idempotency-and-dedup.md
+        - "03 Fallbacks And Circuit Breakers": domains/llm-application-development/reliability/03-fallbacks-and-circuit-breakers.md
+        - "04 Graceful Degradation": domains/llm-application-development/reliability/04-graceful-degradation.md
+      - Production:
+        - Overview: domains/llm-application-development/production/README.md
+        - "01 Llm App Building Checklist": domains/llm-application-development/production/01-llm-app-building-checklist.md
+        - "02 Config And Feature Flags": domains/llm-application-development/production/02-config-and-feature-flags.md
+        - "03 Release And Rollout": domains/llm-application-development/production/03-release-and-rollout.md
+        - "04 Observability Hooks": domains/llm-application-development/production/04-observability-hooks.md
+    - "12. Chatbots":
+      - Overview: domains/chatbots/README.md
+      - Fundamentals:
+        - Overview: domains/chatbots/fundamentals/README.md
+        - "01 Chatbot Fundamentals": domains/chatbots/fundamentals/01-chatbot-fundamentals.md
+        - "02 Bot Types And Use Cases": domains/chatbots/fundamentals/02-bot-types-and-use-cases.md
+        - "03 Success Metrics": domains/chatbots/fundamentals/03-success-metrics.md
+      - Dialogue And Memory:
+        - Overview: domains/chatbots/dialogue-and-memory/README.md
+        - "01 Dialogue And Memory": domains/chatbots/dialogue-and-memory/01-dialogue-and-memory.md
+        - "02 Turn Management": domains/chatbots/dialogue-and-memory/02-turn-management.md
+        - "03 Conversation Summarization": domains/chatbots/dialogue-and-memory/03-conversation-summarization.md
+        - "04 Long Term Memory": domains/chatbots/dialogue-and-memory/04-long-term-memory.md
+      - Grounding:
+        - Overview: domains/chatbots/grounding/README.md
+        - "01 Grounded Support Bots": domains/chatbots/grounding/01-grounded-support-bots.md
+        - "02 Rag In Chat": domains/chatbots/grounding/02-rag-in-chat.md
+        - "03 Citations Ux": domains/chatbots/grounding/03-citations-ux.md
+      - Personality And Safety:
+        - Overview: domains/chatbots/personality-and-safety/README.md
+        - "01 Tone And Persona": domains/chatbots/personality-and-safety/01-tone-and-persona.md
+        - "02 Refusal And Escalation": domains/chatbots/personality-and-safety/02-refusal-and-escalation.md
+        - "03 Pii And Privacy": domains/chatbots/personality-and-safety/03-pii-and-privacy.md
+      - Channels:
+        - Overview: domains/chatbots/channels/README.md
+        - "01 Web Chat": domains/chatbots/channels/01-web-chat.md
+        - "02 Slack And Teams": domains/chatbots/channels/02-slack-and-teams.md
+        - "03 Whatsapp And Messaging": domains/chatbots/channels/03-whatsapp-and-messaging.md
+        - "04 Voice Handoff": domains/chatbots/channels/04-voice-handoff.md
+      - Ops:
+        - Overview: domains/chatbots/ops/README.md
+        - "01 Chatbot Evaluation": domains/chatbots/ops/01-chatbot-evaluation.md
+        - "02 Ab Testing Prompts": domains/chatbots/ops/02-ab-testing-prompts.md
+        - "03 Human Handoff": domains/chatbots/ops/03-human-handoff.md
+    - "13. Embeddings & Vector Databases":
+      - Overview: domains/embeddings-vector-databases/README.md
+      - Embedding Foundations:
+        - Overview: domains/embeddings-vector-databases/embedding-foundations/README.md
+        - "01 Embeddings Explained": domains/embeddings-vector-databases/embedding-foundations/01-embeddings-explained.md
+        - "02 Similarity And Metrics": domains/embeddings-vector-databases/embedding-foundations/02-similarity-and-metrics.md
+        - "03 Dimensions And Models": domains/embeddings-vector-databases/embedding-foundations/03-dimensions-and-models.md
+      - Indexing And Search:
+        - Overview: domains/embeddings-vector-databases/indexing-and-search/README.md
+        - "01 Ann And Approximate Search": domains/embeddings-vector-databases/indexing-and-search/01-ann-and-approximate-search.md
+        - "02 Hnsw And Ivf": domains/embeddings-vector-databases/indexing-and-search/02-hnsw-and-ivf.md
+        - "03 Hybrid Bm25 Vector": domains/embeddings-vector-databases/indexing-and-search/03-hybrid-bm25-vector.md
+      - Vector Database Systems:
+        - Overview: domains/embeddings-vector-databases/vector-database-systems/README.md
+        - "01 Vector Databases Explained": domains/embeddings-vector-databases/vector-database-systems/01-vector-databases-explained.md
+        - "02 Schema And Filters": domains/embeddings-vector-databases/vector-database-systems/02-schema-and-filters.md
+        - "03 Multi Tenancy": domains/embeddings-vector-databases/vector-database-systems/03-multi-tenancy.md
+      - Providers:
+        - Overview: domains/embeddings-vector-databases/providers/README.md
+        - "01 Chroma": domains/embeddings-vector-databases/providers/01-chroma.md
+        - "02 Faiss": domains/embeddings-vector-databases/providers/02-faiss.md
+        - "03 Pgvector": domains/embeddings-vector-databases/providers/03-pgvector.md
+        - "04 Pinecone": domains/embeddings-vector-databases/providers/04-pinecone.md
+        - "05 Qdrant": domains/embeddings-vector-databases/providers/05-qdrant.md
+        - "06 Weaviate": domains/embeddings-vector-databases/providers/06-weaviate.md
+        - "07 Milvus": domains/embeddings-vector-databases/providers/07-milvus.md
+      - Operations:
+        - Overview: domains/embeddings-vector-databases/operations/README.md
+        - "01 Choosing Embedding And Vdb": domains/embeddings-vector-databases/operations/01-choosing-embedding-and-vdb.md
+        - "02 Reindex And Drift": domains/embeddings-vector-databases/operations/02-reindex-and-drift.md
+        - "03 Cost And Retrieval Eval": domains/embeddings-vector-databases/operations/03-cost-and-retrieval-eval.md
+      - Providers:
+        - Overview: domains/embeddings-vector-databases/providers/README.md
+        - "01 Chroma": domains/embeddings-vector-databases/providers/01-chroma.md
+        - "02 Faiss": domains/embeddings-vector-databases/providers/02-faiss.md
+        - "03 Pgvector": domains/embeddings-vector-databases/providers/03-pgvector.md
+        - "04 Pinecone": domains/embeddings-vector-databases/providers/04-pinecone.md
+        - "05 Qdrant": domains/embeddings-vector-databases/providers/05-qdrant.md
+        - "06 Weaviate": domains/embeddings-vector-databases/providers/06-weaviate.md
+        - "07 Milvus": domains/embeddings-vector-databases/providers/07-milvus.md
+    - "14. RAG":
+      - Overview: domains/rag/README.md
+      - Foundations:
+        - Overview: domains/rag/foundations/README.md
+        - "01 Introduction To Rag": domains/rag/foundations/01-introduction-to-rag.md
+        - "02 End To End Rag Architecture": domains/rag/foundations/02-end-to-end-rag-architecture.md
+        - "03 Advanced Rag Architectures": domains/rag/foundations/03-advanced-rag-architectures.md
+      - Ingestion:
+        - Overview: domains/rag/ingestion/README.md
+        - "01 Document Ingestion Pipeline": domains/rag/ingestion/01-document-ingestion-pipeline.md
+        - "02 Chunking": domains/rag/ingestion/02-chunking.md
+        - "03 Metadata Engineering": domains/rag/ingestion/03-metadata-engineering.md
+      - Retrieval:
+        - Overview: domains/rag/retrieval/README.md
+        - "01 Embeddings For Rag": domains/rag/retrieval/01-embeddings-for-rag.md
+        - "02 Vector Databases": domains/rag/retrieval/02-vector-databases.md
+        - "03 Bm25": domains/rag/retrieval/03-bm25.md
+        - "04 Retrieval Strategies": domains/rag/retrieval/04-retrieval-strategies.md
+        - "05 Query Engineering": domains/rag/retrieval/05-query-engineering.md
+        - "06 Reranking": domains/rag/retrieval/06-reranking.md
+      - Generation And Grounding:
+        - Overview: domains/rag/generation-and-grounding/README.md
+        - "01 Rag Prompt Assembly": domains/rag/generation-and-grounding/01-rag-prompt-assembly.md
+        - "02 Citations And Grounding": domains/rag/generation-and-grounding/02-citations-and-grounding.md
+        - "03 Hallucination Prevention": domains/rag/generation-and-grounding/03-hallucination-prevention.md
+        - "04 Rag Context Compression": domains/rag/generation-and-grounding/04-rag-context-compression.md
+      - Evaluation And Production:
+        - Overview: domains/rag/evaluation-and-production/README.md
+        - "01 Rag Evaluation": domains/rag/evaluation-and-production/01-rag-evaluation.md
+        - "02 Production Rag": domains/rag/evaluation-and-production/02-production-rag.md
+        - "03 Rag System Design": domains/rag/evaluation-and-production/03-rag-system-design.md
+        - "04 Rag Mistakes": domains/rag/evaluation-and-production/04-rag-mistakes.md
+        - "05 Rag Comparison Guides": domains/rag/evaluation-and-production/05-rag-comparison-guides.md
+      - Providers:
+        - Overview: domains/rag/providers/README.md
+        - "01 Chroma": domains/rag/providers/01-chroma.md
+        - "02 Faiss": domains/rag/providers/02-faiss.md
+        - "03 Milvus": domains/rag/providers/03-milvus.md
+        - "04 Pgvector": domains/rag/providers/04-pgvector.md
+        - "05 Pinecone": domains/rag/providers/05-pinecone.md
+        - "06 Qdrant": domains/rag/providers/06-qdrant.md
+        - "07 Weaviate": domains/rag/providers/07-weaviate.md
+    - "15. LLM Fine-Tuning":
+      - Overview: domains/llm-fine-tuning/README.md
+      - Decision:
+        - Overview: domains/llm-fine-tuning/decision/README.md
+        - "01 When To Fine Tune": domains/llm-fine-tuning/decision/01-when-to-fine-tune.md
+        - "02 Pe Vs Rag Vs Ft": domains/llm-fine-tuning/decision/02-pe-vs-rag-vs-ft.md
+        - "03 Roi And Readiness": domains/llm-fine-tuning/decision/03-roi-and-readiness.md
+      - Data:
+        - Overview: domains/llm-fine-tuning/data/README.md
+        - "01 Sft Datasets": domains/llm-fine-tuning/data/01-sft-datasets.md
+        - "02 Preference Data": domains/llm-fine-tuning/data/02-preference-data.md
+        - "03 Cleaning And Leakage": domains/llm-fine-tuning/data/03-cleaning-and-leakage.md
+      - Methods:
+        - Overview: domains/llm-fine-tuning/methods/README.md
+        - "01 Fine Tuning Methods": domains/llm-fine-tuning/methods/01-fine-tuning-methods.md
+        - "02 Lora And Qlora": domains/llm-fine-tuning/methods/02-lora-and-qlora.md
+        - "03 Adapters And Full Ft": domains/llm-fine-tuning/methods/03-adapters-and-full-ft.md
+        - "04 Dpo Orpo Rlhf": domains/llm-fine-tuning/methods/04-dpo-orpo-rlhf.md
+      - Training Ops:
+        - Overview: domains/llm-fine-tuning/training-ops/README.md
+        - "01 Training Configs": domains/llm-fine-tuning/training-ops/01-training-configs.md
+        - "02 Checkpoints And Artifacts": domains/llm-fine-tuning/training-ops/02-checkpoints-and-artifacts.md
+        - "03 Gpus And Cost": domains/llm-fine-tuning/training-ops/03-gpus-and-cost.md
+      - Eval And Deploy:
+        - Overview: domains/llm-fine-tuning/eval-and-deploy/README.md
+        - "01 Fine Tuning Data And Eval": domains/llm-fine-tuning/eval-and-deploy/01-fine-tuning-data-and-eval.md
+        - "02 Regression Vs Base": domains/llm-fine-tuning/eval-and-deploy/02-regression-vs-base.md
+        - "03 Serving Adapters": domains/llm-fine-tuning/eval-and-deploy/03-serving-adapters.md
+      - Pitfalls:
+        - Overview: domains/llm-fine-tuning/pitfalls/README.md
+        - "01 Catastrophic Forgetting": domains/llm-fine-tuning/pitfalls/01-catastrophic-forgetting.md
+        - "02 Overfit Style": domains/llm-fine-tuning/pitfalls/02-overfit-style.md
+        - "03 License And Data Risk": domains/llm-fine-tuning/pitfalls/03-license-and-data-risk.md
+    - "16. LLM Evaluation":
+      - Overview: domains/ai-evaluation/README.md
+      - Foundations:
+        - Overview: domains/ai-evaluation/foundations/README.md
+        - "01 Introduction To Ai Evaluation": domains/ai-evaluation/foundations/01-introduction-to-ai-evaluation.md
+        - "02 Evaluation Architecture": domains/ai-evaluation/foundations/02-evaluation-architecture.md
+        - "03 Evaluation Datasets": domains/ai-evaluation/foundations/03-evaluation-datasets.md
+        - "04 Benchmarking": domains/ai-evaluation/foundations/04-benchmarking.md
+      - Metrics:
+        - Overview: domains/ai-evaluation/metrics/README.md
+        - "01 Core Metrics": domains/ai-evaluation/metrics/01-core-metrics.md
+        - "02 Llm Evaluation Metrics": domains/ai-evaluation/metrics/02-llm-evaluation-metrics.md
+        - "03 Hallucination Detection": domains/ai-evaluation/metrics/03-hallucination-detection.md
+        - "04 Latency Evaluation": domains/ai-evaluation/metrics/04-latency-evaluation.md
+        - "05 Cost Evaluation": domains/ai-evaluation/metrics/05-cost-evaluation.md
+      - Surface Areas:
+        - Overview: domains/ai-evaluation/surface-areas/README.md
+        - "01 Prompt Evaluation": domains/ai-evaluation/surface-areas/01-prompt-evaluation.md
+        - "02 Rag Evaluation": domains/ai-evaluation/surface-areas/02-rag-evaluation.md
+        - "03 Agent Evaluation": domains/ai-evaluation/surface-areas/03-agent-evaluation.md
+        - "04 Human Evaluation": domains/ai-evaluation/surface-areas/04-human-evaluation.md
+      - Online Systems:
+        - Overview: domains/ai-evaluation/online-systems/README.md
+        - "01 Ab Testing": domains/ai-evaluation/online-systems/01-ab-testing.md
+        - "02 Continuous Evaluation": domains/ai-evaluation/online-systems/02-continuous-evaluation.md
+        - "03 Production Evaluation": domains/ai-evaluation/online-systems/03-production-evaluation.md
+        - "04 Evaluation Dashboards": domains/ai-evaluation/online-systems/04-evaluation-dashboards.md
+      - Frameworks:
+        - Overview: domains/ai-evaluation/frameworks/README.md
+        - "02 Deepeval": domains/ai-evaluation/frameworks/02-deepeval.md
+        - "03 Langsmith": domains/ai-evaluation/frameworks/03-langsmith.md
+        - "04 Openai Evals": domains/ai-evaluation/frameworks/04-openai-evals.md
+        - "05 Phoenix": domains/ai-evaluation/frameworks/05-phoenix.md
+        - "06 Ragas": domains/ai-evaluation/frameworks/06-ragas.md
+      - Case Studies:
+        - Overview: domains/ai-evaluation/case-studies/README.md
+        - "01 Evaluation Case Studies": domains/ai-evaluation/case-studies/01-evaluation-case-studies.md
+        - "02 Evaluation Mistakes": domains/ai-evaluation/case-studies/02-evaluation-mistakes.md
+        - "03 Ai Evaluation Comparison Guides": domains/ai-evaluation/case-studies/03-ai-evaluation-comparison-guides.md
+        - "04 Evaluation Frameworks": domains/ai-evaluation/case-studies/04-evaluation-frameworks.md
+    - "17. AI Agents":
+      - Overview: domains/ai-agents/README.md
+      - Foundations:
+        - Overview: domains/ai-agents/foundations/README.md
+        - "01 Introduction To Agent Engineering": domains/ai-agents/foundations/01-introduction-to-agent-engineering.md
+        - "02 Agent Fundamentals": domains/ai-agents/foundations/02-agent-fundamentals.md
+        - "03 Agent Architecture": domains/ai-agents/foundations/03-agent-architecture.md
+      - Cognition:
+        - Overview: domains/ai-agents/cognition/README.md
+        - "01 Agent Reasoning Patterns": domains/ai-agents/cognition/01-agent-reasoning-patterns.md
+        - "02 Agent Planning": domains/ai-agents/cognition/02-agent-planning.md
+        - "03 Agent State Management": domains/ai-agents/cognition/03-agent-state-management.md
+        - "04 Agent Memory Systems": domains/ai-agents/cognition/04-agent-memory-systems.md
+        - "05 Task Graphs": domains/ai-agents/cognition/05-task-graphs.md
+      - Tools And Action:
+        - Overview: domains/ai-agents/tools-and-action/README.md
+        - "01 Tool Use": domains/ai-agents/tools-and-action/01-tool-use.md
+        - "02 Human In The Loop": domains/ai-agents/tools-and-action/02-human-in-the-loop.md
+        - "03 Event Driven Agents": domains/ai-agents/tools-and-action/03-event-driven-agents.md
+        - "04 Agent Communication": domains/ai-agents/tools-and-action/04-agent-communication.md
+      - Multi Agent Preview:
+        - Overview: domains/ai-agents/multi-agent-preview/README.md
+        - "01 Multi Agent Systems": domains/ai-agents/multi-agent-preview/01-multi-agent-systems.md
+      - Frameworks:
+        - Overview: domains/ai-agents/frameworks/README.md
+        - "02 Autogen": domains/ai-agents/frameworks/02-autogen.md
+        - "03 Crewai": domains/ai-agents/frameworks/03-crewai.md
+        - "04 Langgraph": domains/ai-agents/frameworks/04-langgraph.md
+        - "05 Openai Agents Sdk": domains/ai-agents/frameworks/05-openai-agents-sdk.md
+        - "06 Pydantic Ai": domains/ai-agents/frameworks/06-pydantic-ai.md
+        - "07 Semantic Kernel": domains/ai-agents/frameworks/07-semantic-kernel.md
+      - Eval Security Production:
+        - Overview: domains/ai-agents/eval-security-production/README.md
+        - "01 Agent Evaluation": domains/ai-agents/eval-security-production/01-agent-evaluation.md
+        - "02 Agent Security": domains/ai-agents/eval-security-production/02-agent-security.md
+        - "03 Agent Engineering Mistakes": domains/ai-agents/eval-security-production/03-agent-engineering-mistakes.md
+        - "04 Production Agent Engineering": domains/ai-agents/eval-security-production/04-production-agent-engineering.md
+        - "05 Agent Case Studies": domains/ai-agents/eval-security-production/05-agent-case-studies.md
+        - "06 Agent Comparison Guides": domains/ai-agents/eval-security-production/06-agent-comparison-guides.md
+        - "07 Build Your Own Agent Framework": domains/ai-agents/eval-security-production/07-build-your-own-agent-framework.md
+    - "18. Agentic AI":
+      - Overview: domains/agentic-ai/README.md
+      - Concepts:
+        - Overview: domains/agentic-ai/concepts/README.md
+        - "01 Agentic Vs Chatbot": domains/agentic-ai/concepts/01-agentic-vs-chatbot.md
+        - "02 Autonomy Levels": domains/agentic-ai/concepts/02-autonomy-levels.md
+        - "03 Agentic Loop": domains/agentic-ai/concepts/03-agentic-loop.md
+      - System Design:
+        - Overview: domains/agentic-ai/system-design/README.md
+        - "01 Designing Agentic Systems": domains/agentic-ai/system-design/01-designing-agentic-systems.md
+        - "02 Goals And Planners": domains/agentic-ai/system-design/02-goals-and-planners.md
+        - "03 World State And Memory": domains/agentic-ai/system-design/03-world-state-and-memory.md
+      - Product Patterns:
+        - Overview: domains/agentic-ai/product-patterns/README.md
+        - "01 Research Agents": domains/agentic-ai/product-patterns/01-research-agents.md
+        - "02 Coding Agents": domains/agentic-ai/product-patterns/02-coding-agents.md
+        - "03 Ops Agents": domains/agentic-ai/product-patterns/03-ops-agents.md
+      - Governance:
+        - Overview: domains/agentic-ai/governance/README.md
+        - "01 Budgets And Kill Switches": domains/agentic-ai/governance/01-budgets-and-kill-switches.md
+        - "02 Audit And Policy": domains/agentic-ai/governance/02-audit-and-policy.md
+        - "03 Human Oversight": domains/agentic-ai/governance/03-human-oversight.md
+      - Measurement:
+        - Overview: domains/agentic-ai/measurement/README.md
+        - "01 Task Success": domains/agentic-ai/measurement/01-task-success.md
+        - "02 Trajectory Eval": domains/agentic-ai/measurement/02-trajectory-eval.md
+        - "03 Online Monitoring": domains/agentic-ai/measurement/03-online-monitoring.md
+    - "19. MCP":
+      - Overview: domains/mcp/README.md
+      - Foundations:
+        - Overview: domains/mcp/foundations/README.md
+        - "01 Introduction To Mcp": domains/mcp/foundations/01-introduction-to-mcp.md
+        - "02 Mcp Architecture": domains/mcp/foundations/02-mcp-architecture.md
+        - "03 Mcp Lifecycle": domains/mcp/foundations/03-mcp-lifecycle.md
+        - "04 Mcp Core Concepts": domains/mcp/foundations/04-mcp-core-concepts.md
+      - Primitives:
+        - Overview: domains/mcp/primitives/README.md
+        - "01 Mcp Resources": domains/mcp/primitives/01-mcp-resources.md
+        - "02 Mcp Prompts": domains/mcp/primitives/02-mcp-prompts.md
+        - "03 Mcp Tools": domains/mcp/primitives/03-mcp-tools.md
+        - "04 Mcp Message Protocol": domains/mcp/primitives/04-mcp-message-protocol.md
+      - Client And Server:
+        - Overview: domains/mcp/client-and-server/README.md
+        - "01 Mcp Client": domains/mcp/client-and-server/01-mcp-client.md
+        - "02 Mcp Server": domains/mcp/client-and-server/02-mcp-server.md
+        - "03 Build An Mcp Server": domains/mcp/client-and-server/03-build-an-mcp-server.md
+        - "04 Build An Mcp Client": domains/mcp/client-and-server/04-build-an-mcp-client.md
+      - Transport And Auth:
+        - Overview: domains/mcp/transport-and-auth/README.md
+        - "01 Mcp Transport Layer": domains/mcp/transport-and-auth/01-mcp-transport-layer.md
+        - "02 Mcp Streaming": domains/mcp/transport-and-auth/02-mcp-streaming.md
+        - "03 Mcp Authentication": domains/mcp/transport-and-auth/03-mcp-authentication.md
+        - "04 Multi Server Mcp": domains/mcp/transport-and-auth/04-multi-server-mcp.md
+      - Production:
+        - Overview: domains/mcp/production/README.md
+        - "01 Production Mcp": domains/mcp/production/01-production-mcp.md
+        - "02 Mcp Security": domains/mcp/production/02-mcp-security.md
+        - "03 Mcp Engineering Mistakes": domains/mcp/production/03-mcp-engineering-mistakes.md
+        - "04 Mcp Real World Architectures": domains/mcp/production/04-mcp-real-world-architectures.md
+        - "05 Mcp Comparison Guides": domains/mcp/production/05-mcp-comparison-guides.md
+    - "20. Multi-Agent Systems":
+      - Overview: domains/multi-agent-systems/README.md
+      - Foundations:
+        - Overview: domains/multi-agent-systems/foundations/README.md
+        - "01 Multi Agent Fundamentals": domains/multi-agent-systems/foundations/01-multi-agent-fundamentals.md
+        - "02 When Multi Agent Helps": domains/multi-agent-systems/foundations/02-when-multi-agent-helps.md
+        - "03 Single Vs Multi": domains/multi-agent-systems/foundations/03-single-vs-multi.md
+      - Coordination:
+        - Overview: domains/multi-agent-systems/coordination/README.md
+        - "01 Coordination Patterns": domains/multi-agent-systems/coordination/01-coordination-patterns.md
+        - "02 Debate And Critique": domains/multi-agent-systems/coordination/02-debate-and-critique.md
+        - "03 Manager Worker": domains/multi-agent-systems/coordination/03-manager-worker.md
+        - "04 Blackboard And A2A": domains/multi-agent-systems/coordination/04-blackboard-and-a2a.md
+      - Communication:
+        - Overview: domains/multi-agent-systems/communication/README.md
+        - "01 Protocols": domains/multi-agent-systems/communication/01-protocols.md
+        - "02 Shared Memory": domains/multi-agent-systems/communication/02-shared-memory.md
+        - "03 Handoffs": domains/multi-agent-systems/communication/03-handoffs.md
+      - Reliability:
+        - Overview: domains/multi-agent-systems/reliability/README.md
+        - "01 When Not To Multi Agent": domains/multi-agent-systems/reliability/01-when-not-to-multi-agent.md
+        - "02 Deadlocks And Loops": domains/multi-agent-systems/reliability/02-deadlocks-and-loops.md
+        - "03 Cost Blowups": domains/multi-agent-systems/reliability/03-cost-blowups.md
+      - Production:
+        - Overview: domains/multi-agent-systems/production/README.md
+        - "01 Observability": domains/multi-agent-systems/production/01-observability.md
+        - "02 Team Eval": domains/multi-agent-systems/production/02-team-eval.md
+        - "03 Case Studies": domains/multi-agent-systems/production/03-case-studies.md
+    - "21. AI System Design":
+      - Overview: domains/ai-system-design/README.md
+      - Foundations:
+        - Overview: domains/ai-system-design/foundations/README.md
+        - "01 Ai System Design Fundamentals": domains/ai-system-design/foundations/01-ai-system-design-fundamentals.md
+        - "02 Common Ai Components": domains/ai-system-design/foundations/02-common-ai-components.md
+        - "03 Ai Architecture Patterns": domains/ai-system-design/foundations/03-ai-architecture-patterns.md
+      - Consumer Products:
+        - Overview: domains/ai-system-design/consumer-products/README.md
+        - "01 Design Chatgpt Like System": domains/ai-system-design/consumer-products/01-design-chatgpt-like-system.md
+        - "02 Design Perplexity Ai Search": domains/ai-system-design/consumer-products/02-design-perplexity-ai-search.md
+        - "03 Design Ai Search Engine": domains/ai-system-design/consumer-products/03-design-ai-search-engine.md
+        - "04 Design Deep Research System": domains/ai-system-design/consumer-products/04-design-deep-research-system.md
+      - Developer Tools:
+        - Overview: domains/ai-system-design/developer-tools/README.md
+        - "01 Design Cursor Like System": domains/ai-system-design/developer-tools/01-design-cursor-like-system.md
+        - "02 Design Github Copilot": domains/ai-system-design/developer-tools/02-design-github-copilot.md
+        - "03 Design Ai Coding Assistant": domains/ai-system-design/developer-tools/03-design-ai-coding-assistant.md
+        - "04 Design Ai Pdf Chat": domains/ai-system-design/developer-tools/04-design-ai-pdf-chat.md
+      - Enterprise Assistants:
+        - Overview: domains/ai-system-design/enterprise-assistants/README.md
+        - "01 Design Ai Customer Support": domains/ai-system-design/enterprise-assistants/01-design-ai-customer-support.md
+        - "02 Design Ai Email Assistant": domains/ai-system-design/enterprise-assistants/02-design-ai-email-assistant.md
+        - "03 Design Ai Crm Assistant": domains/ai-system-design/enterprise-assistants/03-design-ai-crm-assistant.md
+        - "04 Design Ai Voice Agent": domains/ai-system-design/enterprise-assistants/04-design-ai-voice-agent.md
+      - Scale And Interviews:
+        - Overview: domains/ai-system-design/scale-and-interviews/README.md
+        - "01 Scaling Ai Systems": domains/ai-system-design/scale-and-interviews/01-scaling-ai-systems.md
+        - "02 Ai System Design Interviews": domains/ai-system-design/scale-and-interviews/02-ai-system-design-interviews.md
+        - "03 Ai System Design Comparison Guides": domains/ai-system-design/scale-and-interviews/03-ai-system-design-comparison-guides.md
+    - "22. MLOps & LLMOps":
+      - Overview: domains/mlops-llmops/README.md
+      - Foundations:
+        - Overview: domains/mlops-llmops/foundations/README.md
+        - "01 Mlops Vs Llmops": domains/mlops-llmops/foundations/01-mlops-vs-llmops.md
+        - "02 Lifecycle Overview": domains/mlops-llmops/foundations/02-lifecycle-overview.md
+        - "03 Roles And Ownership": domains/mlops-llmops/foundations/03-roles-and-ownership.md
+      - Artifacts:
+        - Overview: domains/mlops-llmops/artifacts/README.md
+        - "01 Artifact Versioning": domains/mlops-llmops/artifacts/01-artifact-versioning.md
+        - "02 Models And Prompts": domains/mlops-llmops/artifacts/02-models-and-prompts.md
+        - "03 Datasets And Indexes": domains/mlops-llmops/artifacts/03-datasets-and-indexes.md
+      - Pipelines:
+        - Overview: domains/mlops-llmops/pipelines/README.md
+        - "01 Training And Ft Ci": domains/mlops-llmops/pipelines/01-training-and-ft-ci.md
+        - "02 Eval Pipelines": domains/mlops-llmops/pipelines/02-eval-pipelines.md
+        - "03 Deploy Pipelines": domains/mlops-llmops/pipelines/03-deploy-pipelines.md
+      - Runtime Ops:
+        - Overview: domains/mlops-llmops/runtime-ops/README.md
+        - "01 Feedback Loops": domains/mlops-llmops/runtime-ops/01-feedback-loops.md
+        - "02 Drift Detection": domains/mlops-llmops/runtime-ops/02-drift-detection.md
+        - "03 Prompt Model Registry": domains/mlops-llmops/runtime-ops/03-prompt-model-registry.md
+      - Platform:
+        - Overview: domains/mlops-llmops/platform/README.md
+        - "01 Experiment Tracking": domains/mlops-llmops/platform/01-experiment-tracking.md
+        - "02 Feature Stores Light": domains/mlops-llmops/platform/02-feature-stores-light.md
+        - "03 Environments": domains/mlops-llmops/platform/03-environments.md
+      - Governance:
+        - Overview: domains/mlops-llmops/governance/README.md
+        - "01 Approvals": domains/mlops-llmops/governance/01-approvals.md
+        - "02 Audit": domains/mlops-llmops/governance/02-audit.md
+        - "03 Rollback": domains/mlops-llmops/governance/03-rollback.md
+    - "23. AI Deployment & Infrastructure":
+      - Overview: domains/ai-deployment/README.md
+      - Foundations:
+        - Overview: domains/ai-deployment/foundations/README.md
+        - "01 Production Ai Overview": domains/ai-deployment/foundations/01-production-ai-overview.md
+        - "02 Production Readiness Checklist": domains/ai-deployment/foundations/02-production-readiness-checklist.md
+      - Packaging And Release:
+        - Overview: domains/ai-deployment/packaging-and-release/README.md
+        - "01 Docker For Ai": domains/ai-deployment/packaging-and-release/01-docker-for-ai.md
+        - "02 Ai Deployment Strategies": domains/ai-deployment/packaging-and-release/02-ai-deployment-strategies.md
+        - "03 Cicd For Ai": domains/ai-deployment/packaging-and-release/03-cicd-for-ai.md
+        - "04 Secrets Management For Ai": domains/ai-deployment/packaging-and-release/04-secrets-management-for-ai.md
+      - Observability:
+        - Overview: domains/ai-deployment/observability/README.md
+        - "01 Monitoring Ai Systems": domains/ai-deployment/observability/01-monitoring-ai-systems.md
+        - "02 Logging For Ai": domains/ai-deployment/observability/02-logging-for-ai.md
+        - "03 Observability For Ai": domains/ai-deployment/observability/03-observability-for-ai.md
+        - "04 Cost Tracking Production": domains/ai-deployment/observability/04-cost-tracking-production.md
+      - Reliability And Perf:
+        - Overview: domains/ai-deployment/reliability-and-perf/README.md
+        - "01 Reliability For Ai": domains/ai-deployment/reliability-and-perf/01-reliability-for-ai.md
+        - "02 Caching For Ai": domains/ai-deployment/reliability-and-perf/02-caching-for-ai.md
+        - "03 Performance Optimization Production": domains/ai-deployment/reliability-and-perf/03-performance-optimization-production.md
+      - Security And Ops:
+        - Overview: domains/ai-deployment/security-and-ops/README.md
+        - "01 Security Production Ai": domains/ai-deployment/security-and-ops/01-security-production-ai.md
+        - "02 Ai Operations": domains/ai-deployment/security-and-ops/02-ai-operations.md
+        - "03 Production Ai Comparison Guides": domains/ai-deployment/security-and-ops/03-production-ai-comparison-guides.md
+    - "24. AI Security & Guardrails":
+      - Overview: domains/ai-security-guardrails/README.md
+      - Threats:
+        - Overview: domains/ai-security-guardrails/threats/README.md
+        - "01 Llm Threat Model": domains/ai-security-guardrails/threats/01-llm-threat-model.md
+        - "02 Prompt Injection And Jailbreaks": domains/ai-security-guardrails/threats/02-prompt-injection-and-jailbreaks.md
+        - "03 Introduction To Ai Safety": domains/ai-security-guardrails/threats/03-introduction-to-ai-safety.md
+      - Guardrails:
+        - Overview: domains/ai-security-guardrails/guardrails/README.md
+        - "01 Guardrail Layers": domains/ai-security-guardrails/guardrails/01-guardrail-layers.md
+        - "02 Guardrails And Content Filtering": domains/ai-security-guardrails/guardrails/02-guardrails-and-content-filtering.md
+      - Secure Tools:
+        - Overview: domains/ai-security-guardrails/secure-tools/README.md
+        - "01 Secure Tool Use": domains/ai-security-guardrails/secure-tools/01-secure-tool-use.md
+        - "02 Safe Tool Use": domains/ai-security-guardrails/secure-tools/02-safe-tool-use.md
+      - App Security:
+        - Overview: domains/ai-security-guardrails/app-security/README.md
+        - "01 Authentication Authorization For Ai": domains/ai-security-guardrails/app-security/01-authentication-authorization-for-ai.md
+        - "02 Security For Ai Backends": domains/ai-security-guardrails/app-security/02-security-for-ai-backends.md
+      - Production:
+        - Overview: domains/ai-security-guardrails/production/README.md
+        - "01 Production Ai Safety Checklist": domains/ai-security-guardrails/production/01-production-ai-safety-checklist.md
+        - "02 Red Teaming": domains/ai-security-guardrails/production/02-red-teaming.md
+        - "03 Monitoring Abuse": domains/ai-security-guardrails/production/03-monitoring-abuse.md
+    - "25. Advanced AI Research":
+      - Overview: domains/advanced-ai-research/README.md
+      - Research Craft:
+        - Overview: domains/advanced-ai-research/research-craft/README.md
+        - "01 How To Read Ai Papers": domains/advanced-ai-research/research-craft/01-how-to-read-ai-papers.md
+        - "02 Research To Production": domains/advanced-ai-research/research-craft/02-research-to-production.md
+        - "03 Research Watchlist": domains/advanced-ai-research/research-craft/03-research-watchlist.md
+      - Landmark Papers:
+        - Overview: domains/advanced-ai-research/landmark-papers/README.md
+        - "01 Attention Is All You Need": domains/advanced-ai-research/landmark-papers/01-attention-is-all-you-need.md
+        - "02 Prompt Engineering Papers": domains/advanced-ai-research/landmark-papers/02-prompt-engineering-papers.md
+        - "03 Retrieval Papers": domains/advanced-ai-research/landmark-papers/03-retrieval-papers.md
+        - "04 Agent Reasoning Papers": domains/advanced-ai-research/landmark-papers/04-agent-reasoning-papers.md
+      - Systems Papers:
+        - Overview: domains/advanced-ai-research/systems-papers/README.md
+        - "01 Dspy": domains/advanced-ai-research/systems-papers/01-dspy.md
+        - "02 Swe Agent": domains/advanced-ai-research/systems-papers/02-swe-agent.md
+        - "03 Research Evolution": domains/advanced-ai-research/systems-papers/03-research-evolution.md
+      - Engineering Takeaways:
+        - Overview: domains/advanced-ai-research/engineering-takeaways/README.md
+        - "01 Engineering Takeaways": domains/advanced-ai-research/engineering-takeaways/01-engineering-takeaways.md
+        - "02 Research Comparison Guides": domains/advanced-ai-research/engineering-takeaways/02-research-comparison-guides.md
+        - "03 Future Research": domains/advanced-ai-research/engineering-takeaways/03-future-research.md
+
   - Build:
     - Templates: templates/README.md
     - Starters: templates/engineering/README.md

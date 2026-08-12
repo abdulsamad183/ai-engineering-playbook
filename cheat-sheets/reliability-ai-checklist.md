@@ -6,4 +6,4 @@
 - [ ] LLM provider failover
 - [ ] Graceful degradation path
 
-See [Reliability for AI](../domains/ai-deployment/reliability-for-ai.md).
+See [Reliability for AI](../domains/ai-deployment/reliability-and-perf/01-reliability-for-ai.md).

@@ -6,4 +6,4 @@
 - [ ] SLO + error budget
 - [ ] Runbooks linked to alerts
 
-See [Monitoring AI Systems](../domains/ai-deployment/monitoring-ai-systems.md).
+See [Monitoring AI Systems](../domains/ai-deployment/observability/01-monitoring-ai-systems.md).

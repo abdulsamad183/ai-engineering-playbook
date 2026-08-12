@@ -13,4 +13,4 @@
 
 **Guards:** `max_steps`, `max_cost`, `max_duration`
 
-See [Introduction](../domains/ai-agents/introduction-to-agent-engineering.md).
+See [Introduction](../domains/ai-agents/foundations/01-introduction-to-agent-engineering.md).

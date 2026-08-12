@@ -7,4 +7,4 @@
 - [ ] Consistency across N runs
 - [ ] A/B compare before full rollout
 
-See [Prompt Evaluation](../domains/ai-evaluation/prompt-evaluation.md).
+See [Prompt Evaluation](../domains/ai-evaluation/surface-areas/01-prompt-evaluation.md).

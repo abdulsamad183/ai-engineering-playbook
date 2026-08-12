@@ -1,6 +1,6 @@
 # Embedding Model Selection Cheat Sheet
 
-> See [Embeddings for RAG](../domains/rag/embeddings-for-rag.md).
+> See [Embeddings for RAG](../domains/rag/retrieval/01-embeddings-for-rag.md).
 
 | Need | Model direction |
 |------|-----------------|

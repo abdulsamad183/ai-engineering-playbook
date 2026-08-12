@@ -104,10 +104,10 @@ Before starting:
 
 | Topic | Handbook section |
 |-------|------------------|
-| Chunking | [RAG chunking](../domains/rag/chunking.md) |
-| Retrieval | [RAG retrieval](../domains/rag/retrieval-strategies.md) |
+| Chunking | [RAG chunking](../domains/rag/ingestion/02-chunking.md) |
+| Retrieval | [RAG retrieval](../domains/rag/retrieval/04-retrieval-strategies.md) |
 | Prompt design | [RAG prompts](../domains/prompt-engineering/craft/02-prompt-templates-guide.md) |
-| Evaluation | [AI Evaluation intro](../domains/ai-evaluation/introduction-to-ai-evaluation.md) |
+| Evaluation | [AI Evaluation intro](../domains/ai-evaluation/foundations/01-introduction-to-ai-evaluation.md) |
 
 ---
 
@@ -208,7 +208,7 @@ Run:
 python scripts/index_corpus.py
 ```
 
-**Engineering note:** In-memory storage is fine for the capstone. For production, swap `VectorStore` with Qdrant — see [RAG vector DB guide](../domains/rag/vector-databases.md) and [docker-compose](../templates/engineering/docker/docker-compose.yml).
+**Engineering note:** In-memory storage is fine for the capstone. For production, swap `VectorStore` with Qdrant — see [RAG vector DB guide](../domains/rag/retrieval/02-vector-databases.md) and [docker-compose](../templates/engineering/docker/docker-compose.yml).
 
 ---
 
@@ -375,7 +375,7 @@ if __name__ == "__main__":
     asyncio.run(main())
 ```
 
-Expand `GOLDEN` to 20–50 cases for real products — see [continuous evaluation](../domains/ai-evaluation/continuous-evaluation.md).
+Expand `GOLDEN` to 20–50 cases for real products — see [continuous evaluation](../domains/ai-evaluation/online-systems/02-continuous-evaluation.md).
 
 ---
 
@@ -399,7 +399,7 @@ docker run -p 8000:8000 --env-file .env rag-chat-api
 curl http://localhost:8000/api/v1/health
 ```
 
-**Handbook:** [Production AI — Docker](../domains/ai-deployment/docker-for-ai.md)
+**Handbook:** [Production AI — Docker](../domains/ai-deployment/packaging-and-release/01-docker-for-ai.md)
 
 ---
 
@@ -418,7 +418,7 @@ Copy [fastapi-starter CI](../templates/engineering/fastapi-starter/.github/workf
 
 Skip the LLM eval step in CI if you mock the client in tests — but keep at least one integration eval in a nightly workflow.
 
-**Handbook:** [Git workflow](../domains/foundations/git-github-workflow.md) · [Continuous evaluation](../domains/ai-evaluation/continuous-evaluation.md)
+**Handbook:** [Git workflow](../domains/foundations/git-github-workflow.md) · [Continuous evaluation](../domains/ai-evaluation/online-systems/02-continuous-evaluation.md)
 
 ---
 
@@ -443,7 +443,7 @@ You completed the capstone. Deepen by module:
 | Goal | Go to |
 |------|-------|
 | Better retrieval | [RAG handbook](../domains/rag/README.md) — hybrid search, reranking |
-| Swap vector DB | [Vector databases](../domains/rag/vector-databases.md) + [docker-compose Qdrant](../templates/engineering/docker/docker-compose.yml) |
+| Swap vector DB | [Vector databases](../domains/rag/retrieval/02-vector-databases.md) + [docker-compose Qdrant](../templates/engineering/docker/docker-compose.yml) |
 | Add auth | [FastAPI dependencies](../templates/engineering/fastapi-starter/src/app/api/dependencies.py) |
 | Streaming responses | [LLM streaming](../domains/llm-engineering/llm-streaming.md) |
 | Observability | [Monitoring template](../templates/engineering/monitoring/README.md) |
@@ -466,7 +466,7 @@ You completed the capstone. Deepen by module:
 ## See Also
 
 - [Learning Roadmap](roadmap.md) — full phased path
-- [RAG mistakes](../domains/rag/rag-mistakes.md)
+- [RAG mistakes](../domains/rag/evaluation-and-production/04-rag-mistakes.md)
 - [Common engineering mistakes](../domains/common-mistakes/common-engineering-mistakes.md)
 
 ## Changelog

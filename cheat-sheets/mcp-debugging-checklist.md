@@ -9,4 +9,4 @@
 | Auth failures | Token scope; initialize context |
 | Retry storm | Circuit breaker; idempotency |
 
-See [MCP Engineering Mistakes](../domains/mcp/mcp-engineering-mistakes.md).
+See [MCP Engineering Mistakes](../domains/mcp/production/03-mcp-engineering-mistakes.md).

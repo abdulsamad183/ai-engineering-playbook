@@ -6,4 +6,4 @@ Tokens/day ≈ requests × (input + output tokens)
 Storage ≈ users × avg_conversation_bytes × retention_days
 ```
 
-See [Fundamentals](../domains/ai-system-design/ai-system-design-fundamentals.md).
+See [Fundamentals](../domains/ai-system-design/foundations/01-ai-system-design-fundamentals.md).

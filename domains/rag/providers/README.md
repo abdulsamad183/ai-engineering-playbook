@@ -1,15 +1,22 @@
-# Vector Database Provider Guides
+# Providers
 
-> Implementation guides for this handbook Section 8.
+> Section of the **rag** handbook.
 
-| Provider | Guide | Best for |
-|----------|-------|----------|
-| FAISS | [faiss.md](faiss.md) | Custom high-performance indexes |
-| Chroma | [chroma.md](chroma.md) | Prototyping, embedded DB |
-| PGVector | [pgvector.md](pgvector.md) | PostgreSQL + SQL hybrid |
-| Pinecone | [pinecone.md](pinecone.md) | Managed SaaS |
-| Milvus | [milvus.md](milvus.md) | Distributed scale |
-| Weaviate | [weaviate.md](weaviate.md) | Native hybrid search |
-| Qdrant | [qdrant.md](qdrant.md) | Production self-host |
+## Lessons
 
-See [Vector Databases](../vector-databases.md) for fundamentals.
+| # | Lesson |
+|---|--------|
+| 1 | [Chroma](01-chroma.md) |
+| 2 | [Faiss](02-faiss.md) |
+| 3 | [Milvus](03-milvus.md) |
+| 4 | [Pgvector](04-pgvector.md) |
+| 5 | [Pinecone](05-pinecone.md) |
+| 6 | [Qdrant](06-qdrant.md) |
+| 7 | [Weaviate](07-weaviate.md) |
+
+```mermaid
+flowchart LR
+  L1 --> L2 --> L3 --> L4 --> L5 --> L6 --> L7
+```
+
+**Topic hub:** [../README.md](../README.md)

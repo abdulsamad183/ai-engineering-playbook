@@ -8,4 +8,4 @@
 
 **Error codes:** `-32600` invalid · `-32601` not found · `-32602` invalid params
 
-See [Message Protocol](../domains/mcp/mcp-message-protocol.md).
+See [Message Protocol](../domains/mcp/primitives/04-mcp-message-protocol.md).

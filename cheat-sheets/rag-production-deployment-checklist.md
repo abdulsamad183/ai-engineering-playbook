@@ -8,4 +8,4 @@
 - [ ] Embedding model version in metadata
 - [ ] Disaster recovery snapshots
 
-See [Production RAG](../domains/rag/production-rag.md).
+See [Production RAG](../domains/rag/evaluation-and-production/02-production-rag.md).

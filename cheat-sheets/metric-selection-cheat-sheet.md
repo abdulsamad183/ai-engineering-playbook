@@ -11,4 +11,4 @@
 
 Avoid BLEU/ROUGE alone for open-ended LLM tasks.
 
-See [LLM Evaluation Metrics](../domains/ai-evaluation/llm-evaluation-metrics.md).
+See [LLM Evaluation Metrics](../domains/ai-evaluation/metrics/02-llm-evaluation-metrics.md).

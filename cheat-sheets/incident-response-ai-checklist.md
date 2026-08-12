@@ -6,4 +6,4 @@
 4. Trace sample failures
 5. Postmortem + add golden case
 
-See [AI Operations](../domains/ai-deployment/ai-operations.md).
+See [AI Operations](../domains/ai-deployment/security-and-ops/02-ai-operations.md).

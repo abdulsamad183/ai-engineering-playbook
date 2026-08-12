@@ -9,4 +9,4 @@
 - [ ] Online sample async scoring
 - [ ] Human review queue for low faithfulness
 
-See [RAG Evaluation](../domains/ai-evaluation/rag-evaluation.md).
+See [RAG Evaluation](../domains/ai-evaluation/surface-areas/02-rag-evaluation.md).

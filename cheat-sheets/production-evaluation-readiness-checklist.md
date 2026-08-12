@@ -9,4 +9,4 @@
 - [ ] Audit trail for eval runs
 - [ ] Incident → new golden case process
 
-See [Production Evaluation](../domains/ai-evaluation/production-evaluation.md).
+See [Production Evaluation](../domains/ai-evaluation/online-systems/03-production-evaluation.md).

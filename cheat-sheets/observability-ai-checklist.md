@@ -6,4 +6,4 @@
 - [ ] Agent span: per tool
 - [ ] LangFuse/Phoenix/OTEL configured
 
-See [Observability for AI](../domains/ai-deployment/observability-for-ai.md).
+See [Observability for AI](../domains/ai-deployment/observability/03-observability-for-ai.md).

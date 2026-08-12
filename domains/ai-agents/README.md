@@ -1,128 +1,99 @@
-# AI Agents & Agent Engineering
+# AI Agents
 
-> Comprehensive handbook for designing, orchestrating, evaluating, and scaling autonomous production agent systems.
-> **Prerequisites:** [RAG](../rag/README.md) · [Context Engineering](../context-engineering/README.md) · [Prompt Engineering](../prompt-engineering/README.md)
+> Agent engineering — reasoning, tools, memory, frameworks, security, and production.
+
+**Prerequisites:** [LLM Application Development](../llm-application-development/README.md) · [Prompt Engineering](../prompt-engineering/README.md)  
+**Unlocks:** [Agentic AI](../agentic-ai/README.md) · [MCP](../mcp/README.md) · [Multi-Agent Systems](../multi-agent-systems/README.md)
+
+Start with a section hub below (or expand the topic in the left sidebar).
 
 ---
 
-## Module Overview
+## Sections
 
-Agent engineering is an **independent software discipline** — not "LLMs with tools."
+| # | Section | What you will learn | Hub |
+|---|---------|---------------------|-----|
+| 1 | **Foundations** | Intro and architecture | [foundations/](foundations/README.md) |
+| 2 | **Cognition** | Reasoning, planning, memory | [cognition/](cognition/README.md) |
+| 3 | **Tools & Action** | Tools, HITL, events | [tools-and-action/](tools-and-action/README.md) |
+| 4 | **Multi-Agent Preview** | Pointer toward topic 20 | [multi-agent-preview/](multi-agent-preview/README.md) |
+| 5 | **Frameworks** | LangGraph, CrewAI, … | [frameworks/](frameworks/README.md) |
+| 6 | **Eval, Security & Production** | Ship and operate agents | [eval-security-production/](eval-security-production/README.md) |
 
 ```mermaid
-flowchart TB
-  subgraph "Core"
-    S1[1. Introduction]
-    S2[2. Architecture]
-    S3[3. Fundamentals]
-    S4[4. Reasoning]
-    S5[5. Planning]
-    S6[6. Memory]
-    S7[7. Tools]
-  end
-  subgraph "Orchestration"
-    S8[8. State]
-    S9[9. Task Graphs]
-    S10[10. Events]
-    S11[11. Multi-Agent]
-    S12[12. HITL]
-    S13[13. Communication]
-  end
-  subgraph "Ship"
-    S14[14. Frameworks]
-    S15[15. BYO Framework]
-    S16[16. Evaluation]
-    S17[17. Production]
-    S18[18. Security]
-    S19[19. Mistakes]
-    S20[20. Case Studies]
-  end
-  S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7
-  S7 --> S8 --> S9 --> S10 --> S11 --> S12 --> S13
-  S13 --> S14 --> S15 --> S16 --> S17 --> S18 --> S19 --> S20
+flowchart LR
+  S1[Foundations] --> S2[Cognition] --> S3[Tools] --> S4[Multi-Agent] --> S5[Frameworks] --> S6[Eval,]
 ```
 
-**Unlocks:** [MCP](../mcp/README.md) · [A2A](../a2a/README.md) · [Multi-Agent Systems](../multi-agent-systems/README.md)
+---
+
+## Hierarchy
+
+### Foundations
+
+| # | Topic |
+|---|-------|
+| 1 | [Introduction To Agent Engineering](foundations/01-introduction-to-agent-engineering.md) |
+| 2 | [Agent Fundamentals](foundations/02-agent-fundamentals.md) |
+| 3 | [Agent Architecture](foundations/03-agent-architecture.md) |
+
+### Cognition
+
+| # | Topic |
+|---|-------|
+| 1 | [Agent Reasoning Patterns](cognition/01-agent-reasoning-patterns.md) |
+| 2 | [Agent Planning](cognition/02-agent-planning.md) |
+| 3 | [Agent State Management](cognition/03-agent-state-management.md) |
+| 4 | [Agent Memory Systems](cognition/04-agent-memory-systems.md) |
+| 5 | [Task Graphs](cognition/05-task-graphs.md) |
+
+### Tools & Action
+
+| # | Topic |
+|---|-------|
+| 1 | [Tool Use](tools-and-action/01-tool-use.md) |
+| 2 | [Human In The Loop](tools-and-action/02-human-in-the-loop.md) |
+| 3 | [Event Driven Agents](tools-and-action/03-event-driven-agents.md) |
+| 4 | [Agent Communication](tools-and-action/04-agent-communication.md) |
+
+### Multi-Agent Preview
+
+| # | Topic |
+|---|-------|
+| 1 | [Multi Agent Systems](multi-agent-preview/01-multi-agent-systems.md) |
+
+### Frameworks
+
+| # | Topic |
+|---|-------|
+| 1 | [Autogen](frameworks/02-autogen.md) |
+| 2 | [Crewai](frameworks/03-crewai.md) |
+| 3 | [Langgraph](frameworks/04-langgraph.md) |
+| 4 | [Openai Agents Sdk](frameworks/05-openai-agents-sdk.md) |
+| 5 | [Pydantic Ai](frameworks/06-pydantic-ai.md) |
+| 6 | [Semantic Kernel](frameworks/07-semantic-kernel.md) |
+
+### Eval, Security & Production
+
+| # | Topic |
+|---|-------|
+| 1 | [Agent Evaluation](eval-security-production/01-agent-evaluation.md) |
+| 2 | [Agent Security](eval-security-production/02-agent-security.md) |
+| 3 | [Agent Engineering Mistakes](eval-security-production/03-agent-engineering-mistakes.md) |
+| 4 | [Production Agent Engineering](eval-security-production/04-production-agent-engineering.md) |
+| 5 | [Agent Case Studies](eval-security-production/05-agent-case-studies.md) |
+| 6 | [Agent Comparison Guides](eval-security-production/06-agent-comparison-guides.md) |
+| 7 | [Build Your Own Agent Framework](eval-security-production/07-build-your-own-agent-framework.md) |
 
 ---
 
-## Documents (20 Sections)
+## Definition
 
-| # | Topic | Document |
-|---|-------|----------|
-| 1 | Introduction | [introduction-to-agent-engineering.md](introduction-to-agent-engineering.md) |
-| 2 | Agent Architecture | [agent-architecture.md](agent-architecture.md) |
-| 3 | Fundamentals | [agent-fundamentals.md](agent-fundamentals.md) |
-| 4 | Reasoning Patterns | [agent-reasoning-patterns.md](agent-reasoning-patterns.md) |
-| 5 | Planning | [agent-planning.md](agent-planning.md) |
-| 6 | Memory Systems | [agent-memory-systems.md](agent-memory-systems.md) |
-| 7 | Tool Use | [tool-use.md](tool-use.md) |
-| 8 | State Management | [agent-state-management.md](agent-state-management.md) |
-| 9 | Task Graphs | [task-graphs.md](task-graphs.md) |
-| 10 | Event-Driven Agents | [event-driven-agents.md](event-driven-agents.md) |
-| 11 | Multi-Agent Systems | [multi-agent-systems.md](multi-agent-systems.md) |
-| 12 | Human-in-the-Loop | [human-in-the-loop.md](human-in-the-loop.md) |
-| 13 | Agent Communication | [agent-communication.md](agent-communication.md) |
-| 14 | Frameworks | [frameworks/README.md](frameworks/README.md) |
-| 15 | Build Your Own Framework | [build-your-own-agent-framework.md](build-your-own-agent-framework.md) |
-| 16 | Agent Evaluation | [agent-evaluation.md](agent-evaluation.md) |
-| 17 | Production | [production-agent-engineering.md](production-agent-engineering.md) |
-| 18 | Security | [agent-security.md](agent-security.md) |
-| 19 | Common Mistakes | [agent-engineering-mistakes.md](agent-engineering-mistakes.md) |
-| 20 | Case Studies | [agent-case-studies.md](agent-case-studies.md) |
-
-**Comparisons:** [agent-comparison-guides.md](agent-comparison-guides.md)
-
-### Framework Guides (Section 14)
-
-[LangGraph](frameworks/langgraph.md) · [CrewAI](frameworks/crewai.md) · [AutoGen](frameworks/autogen.md) · [Semantic Kernel](frameworks/semantic-kernel.md) · [PydanticAI](frameworks/pydantic-ai.md) · [OpenAI Agents SDK](frameworks/openai-agents-sdk.md)
+**AI agents** are LLM systems that plan, use tools, maintain state, and pursue goals beyond a single completion.
 
 ---
 
-## Code Examples
+## Related topics
 
-[`examples/agents/`](../../examples/agents/) — ReAct, tools, supervisor, debate, HITL, custom framework
-
----
-
-## Cheat Sheets
-
-- [Agent Lifecycle](../../cheat-sheets/agent-lifecycle-cheat-sheet.md)
-- [Planning Checklist](../../cheat-sheets/agent-planning-checklist.md)
-- [Memory Checklist](../../cheat-sheets/agent-memory-checklist.md)
-- [Tool Design Checklist](../../cheat-sheets/agent-tool-design-checklist.md)
-- [Multi-Agent Selection](../../cheat-sheets/multi-agent-architecture-selection-cheat-sheet.md)
-- [Framework Selection](../../cheat-sheets/agent-framework-selection-cheat-sheet.md)
-- [Production Deployment](../../cheat-sheets/agent-production-deployment-checklist.md)
-- [Debugging Checklist](../../cheat-sheets/agent-debugging-checklist.md)
-
----
-
-## Learning Path
-
-1. **Foundations** — Introduction → Architecture → Fundamentals → Reasoning
-2. **Capabilities** — Planning → Memory → Tools → State
-3. **Orchestration** — Task Graphs → Events → Multi-Agent → HITL → Communication
-4. **Implementation** — Frameworks → BYO Framework → Evaluation
-5. **Production** — Production → Security → Mistakes → Case Studies
-
-**Milestone:** ReAct agent with tool registry, checkpoints, HITL on writes, and scenario eval suite.
-
----
-
-## Completion Checklist
-
-- [ ] Read all 20 sections + 6 framework guides
-- [ ] Implement ReAct loop with max-step guard
-- [ ] Tool registry with schema validation
-- [ ] Checkpoint state after each tool call
-- [ ] HITL queue for destructive tools
-- [ ] Golden task eval (≥20 scenarios)
-- [ ] Review [agent mistakes](agent-engineering-mistakes.md)
-
----
-
-## See Also
-
-- [RAG](../rag/README.md) · [Agent Planning Template](../../prompts/templates/agent-planning.md)
+- [Domains overview](../README.md)
 - [Master Index](../../meta/indexes/MASTER-INDEX.md)

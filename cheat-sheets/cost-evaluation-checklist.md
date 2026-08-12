@@ -7,4 +7,4 @@
 - [ ] Eval/judge cost budget
 - [ ] Alerts on cost anomalies
 
-See [Cost Evaluation](../domains/ai-evaluation/cost-evaluation.md).
+See [Cost Evaluation](../domains/ai-evaluation/metrics/05-cost-evaluation.md).

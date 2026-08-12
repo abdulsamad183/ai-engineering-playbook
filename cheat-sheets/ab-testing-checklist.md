@@ -7,4 +7,4 @@
 - [ ] Rollback plan documented
 - [ ] Segment analysis post-hoc
 
-See [A/B Testing](../domains/ai-evaluation/ab-testing.md).
+See [A/B Testing](../domains/ai-evaluation/online-systems/01-ab-testing.md).

@@ -7,4 +7,4 @@
 - [ ] DR backup restore tested
 - [ ] Runbooks + on-call
 
-See [Production Readiness](../domains/ai-deployment/production-readiness-checklist.md).
+See [Production Readiness](../domains/ai-deployment/foundations/02-production-readiness-checklist.md).

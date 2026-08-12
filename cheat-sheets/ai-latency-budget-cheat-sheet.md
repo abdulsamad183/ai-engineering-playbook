@@ -7,4 +7,4 @@
 | LLM TTFT | 200–800 ms |
 | Tools | 200–2000 ms each |
 
-See [Scaling AI Systems](../domains/ai-system-design/scaling-ai-systems.md).
+See [Scaling AI Systems](../domains/ai-system-design/scale-and-interviews/01-scaling-ai-systems.md).

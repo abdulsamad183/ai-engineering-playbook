@@ -228,27 +228,27 @@
 | Document | Status | Description |
 |----------|--------|-------------|
 | [Module hub](../../domains/rag/README.md) | Published | Module hub — largest handbook section |
-| [Introduction to RAG](../../domains/rag/introduction-to-rag.md) | Published | RAG fundamentals and types |
-| [End-to-End RAG Architecture](../../domains/rag/end-to-end-rag-architecture.md) | Published | Complete pipeline |
-| [Document Ingestion Pipeline](../../domains/rag/document-ingestion-pipeline.md) | Published | PDF, code, web ingestion |
-| [Chunking](../../domains/rag/chunking.md) | Published | All chunking strategies |
-| [Metadata Engineering](../../domains/rag/metadata-engineering.md) | Published | ACL, filtering, lineage |
-| [Embeddings for RAG](../../domains/rag/embeddings-for-rag.md) | Published | Models, metrics, versioning |
-| [Vector Databases](../../domains/rag/vector-databases.md) | Published | ANN, HNSW, IVF fundamentals |
-| [Retrieval Strategies](../../domains/rag/retrieval-strategies.md) | Published | Dense, hybrid, multi-hop |
-| [BM25](../../domains/rag/bm25.md) | Published | Lexical retrieval |
-| [Query Engineering](../../domains/rag/query-engineering.md) | Published | HyDE, rewriting, routing |
-| [Reranking](../../domains/rag/reranking.md) | Published | Cross-encoders, API rerankers |
-| [RAG Context Compression](../../domains/rag/rag-context-compression.md) | Published | Passage budgeting |
-| [RAG Prompt Assembly](../../domains/rag/rag-prompt-assembly.md) | Published | Context formatting |
-| [Citations and Grounding](../../domains/rag/citations-and-grounding.md) | Published | Attribution, traceability |
-| [Hallucination Prevention](../../domains/rag/hallucination-prevention.md) | Published | Abstention, validation |
-| [RAG Evaluation](../../domains/rag/rag-evaluation.md) | Published | Metrics, RAGAS, golden sets |
-| [Advanced RAG Architectures](../../domains/rag/advanced-rag-architectures.md) | Published | GraphRAG, Self-RAG, agentic |
-| [Production RAG](../../domains/rag/production-rag.md) | Published | Ops, scaling, multi-tenant |
-| [RAG System Design](../../domains/rag/rag-system-design.md) | Published | Enterprise patterns |
-| [RAG Mistakes](../../domains/rag/rag-mistakes.md) | Published | Troubleshooting |
-| [RAG Comparison Guides](../../domains/rag/rag-comparison-guides.md) | Published | Decision matrices |
+| [Introduction to RAG](../../domains/rag/foundations/01-introduction-to-rag.md) | Published | RAG fundamentals and types |
+| [End-to-End RAG Architecture](../../domains/rag/foundations/02-end-to-end-rag-architecture.md) | Published | Complete pipeline |
+| [Document Ingestion Pipeline](../../domains/rag/ingestion/01-document-ingestion-pipeline.md) | Published | PDF, code, web ingestion |
+| [Chunking](../../domains/rag/ingestion/02-chunking.md) | Published | All chunking strategies |
+| [Metadata Engineering](../../domains/rag/ingestion/03-metadata-engineering.md) | Published | ACL, filtering, lineage |
+| [Embeddings for RAG](../../domains/rag/retrieval/01-embeddings-for-rag.md) | Published | Models, metrics, versioning |
+| [Vector Databases](../../domains/rag/retrieval/02-vector-databases.md) | Published | ANN, HNSW, IVF fundamentals |
+| [Retrieval Strategies](../../domains/rag/retrieval/04-retrieval-strategies.md) | Published | Dense, hybrid, multi-hop |
+| [BM25](../../domains/rag/retrieval/03-bm25.md) | Published | Lexical retrieval |
+| [Query Engineering](../../domains/rag/retrieval/05-query-engineering.md) | Published | HyDE, rewriting, routing |
+| [Reranking](../../domains/rag/retrieval/06-reranking.md) | Published | Cross-encoders, API rerankers |
+| [RAG Context Compression](../../domains/rag/generation-and-grounding/04-rag-context-compression.md) | Published | Passage budgeting |
+| [RAG Prompt Assembly](../../domains/rag/generation-and-grounding/01-rag-prompt-assembly.md) | Published | Context formatting |
+| [Citations and Grounding](../../domains/rag/generation-and-grounding/02-citations-and-grounding.md) | Published | Attribution, traceability |
+| [Hallucination Prevention](../../domains/rag/generation-and-grounding/03-hallucination-prevention.md) | Published | Abstention, validation |
+| [RAG Evaluation](../../domains/rag/evaluation-and-production/01-rag-evaluation.md) | Published | Metrics, RAGAS, golden sets |
+| [Advanced RAG Architectures](../../domains/rag/foundations/03-advanced-rag-architectures.md) | Published | GraphRAG, Self-RAG, agentic |
+| [Production RAG](../../domains/rag/evaluation-and-production/02-production-rag.md) | Published | Ops, scaling, multi-tenant |
+| [RAG System Design](../../domains/rag/evaluation-and-production/03-rag-system-design.md) | Published | Enterprise patterns |
+| [RAG Mistakes](../../domains/rag/evaluation-and-production/04-rag-mistakes.md) | Published | Troubleshooting |
+| [RAG Comparison Guides](../../domains/rag/evaluation-and-production/05-rag-comparison-guides.md) | Published | Decision matrices |
 | [Vector DB Providers](../../domains/rag/providers/README.md) | Published | FAISS, Chroma, PGVector, Pinecone, Milvus, Weaviate, Qdrant |
 
 [Domain index →](../../domains/rag/README.md)
@@ -276,27 +276,27 @@
 | Document | Status | Description |
 |----------|--------|-------------|
 | [Module hub](../../domains/ai-agents/README.md) | Published | Agent engineering handbook hub |
-| [Introduction to Agent Engineering](../../domains/ai-agents/introduction-to-agent-engineering.md) | Published | Agents as software discipline |
-| [Agent Architecture](../../domains/ai-agents/agent-architecture.md) | Published | Planner-executor-reflection stack |
-| [Agent Fundamentals](../../domains/ai-agents/agent-fundamentals.md) | Published | Goals, perception, action |
-| [Reasoning Patterns](../../domains/ai-agents/agent-reasoning-patterns.md) | Published | ReAct, reflection, ToT |
-| [Agent Planning](../../domains/ai-agents/agent-planning.md) | Published | Decomposition, replanning |
-| [Agent Memory Systems](../../domains/ai-agents/agent-memory-systems.md) | Published | Layered agent memory |
-| [Tool Use](../../domains/ai-agents/tool-use.md) | Published | Registry, execution, permissions |
-| [Agent State Management](../../domains/ai-agents/agent-state-management.md) | Published | Checkpointing, recovery |
-| [Task Graphs](../../domains/ai-agents/task-graphs.md) | Published | DAG execution |
-| [Event-Driven Agents](../../domains/ai-agents/event-driven-agents.md) | Published | Pub/sub, triggers |
-| [Multi-Agent Systems](../../domains/ai-agents/multi-agent-systems.md) | Published | Supervisor, swarm, debate |
-| [Human-in-the-Loop](../../domains/ai-agents/human-in-the-loop.md) | Published | Approval, escalation |
-| [Agent Communication](../../domains/ai-agents/agent-communication.md) | Published | Coordination patterns |
+| [Introduction to Agent Engineering](../../domains/ai-agents/foundations/01-introduction-to-agent-engineering.md) | Published | Agents as software discipline |
+| [Agent Architecture](../../domains/ai-agents/foundations/03-agent-architecture.md) | Published | Planner-executor-reflection stack |
+| [Agent Fundamentals](../../domains/ai-agents/foundations/02-agent-fundamentals.md) | Published | Goals, perception, action |
+| [Reasoning Patterns](../../domains/ai-agents/cognition/01-agent-reasoning-patterns.md) | Published | ReAct, reflection, ToT |
+| [Agent Planning](../../domains/ai-agents/cognition/02-agent-planning.md) | Published | Decomposition, replanning |
+| [Agent Memory Systems](../../domains/ai-agents/cognition/04-agent-memory-systems.md) | Published | Layered agent memory |
+| [Tool Use](../../domains/ai-agents/tools-and-action/01-tool-use.md) | Published | Registry, execution, permissions |
+| [Agent State Management](../../domains/ai-agents/cognition/03-agent-state-management.md) | Published | Checkpointing, recovery |
+| [Task Graphs](../../domains/ai-agents/cognition/05-task-graphs.md) | Published | DAG execution |
+| [Event-Driven Agents](../../domains/ai-agents/tools-and-action/03-event-driven-agents.md) | Published | Pub/sub, triggers |
+| [Multi-Agent Systems](../../domains/ai-agents/multi-agent-preview/01-multi-agent-systems.md) | Published | Supervisor, swarm, debate |
+| [Human-in-the-Loop](../../domains/ai-agents/tools-and-action/02-human-in-the-loop.md) | Published | Approval, escalation |
+| [Agent Communication](../../domains/ai-agents/tools-and-action/04-agent-communication.md) | Published | Coordination patterns |
 | [Agent Frameworks](../../domains/ai-agents/frameworks/README.md) | Published | 6 framework guides |
-| [Build Your Own Framework](../../domains/ai-agents/build-your-own-agent-framework.md) | Published | Minimal agent framework |
-| [Agent Evaluation](../../domains/ai-agents/agent-evaluation.md) | Published | Task success, tool accuracy |
-| [Production Agent Engineering](../../domains/ai-agents/production-agent-engineering.md) | Published | Observability, scaling |
-| [Agent Security](../../domains/ai-agents/agent-security.md) | Published | Sandboxing, injection |
-| [Agent Engineering Mistakes](../../domains/ai-agents/agent-engineering-mistakes.md) | Published | Troubleshooting |
-| [Agent Case Studies](../../domains/ai-agents/agent-case-studies.md) | Published | Coding, research, support |
-| [Agent Comparison Guides](../../domains/ai-agents/agent-comparison-guides.md) | Published | Framework & pattern matrices |
+| [Build Your Own Framework](../../domains/ai-agents/eval-security-production/07-build-your-own-agent-framework.md) | Published | Minimal agent framework |
+| [Agent Evaluation](../../domains/ai-agents/eval-security-production/01-agent-evaluation.md) | Published | Task success, tool accuracy |
+| [Production Agent Engineering](../../domains/ai-agents/eval-security-production/04-production-agent-engineering.md) | Published | Observability, scaling |
+| [Agent Security](../../domains/ai-agents/eval-security-production/02-agent-security.md) | Published | Sandboxing, injection |
+| [Agent Engineering Mistakes](../../domains/ai-agents/eval-security-production/03-agent-engineering-mistakes.md) | Published | Troubleshooting |
+| [Agent Case Studies](../../domains/ai-agents/eval-security-production/05-agent-case-studies.md) | Published | Coding, research, support |
+| [Agent Comparison Guides](../../domains/ai-agents/eval-security-production/06-agent-comparison-guides.md) | Published | Framework & pattern matrices |
 
 [Domain index →](../../domains/ai-agents/README.md)
 
@@ -304,8 +304,8 @@
 
 | Document | Status | Description |
 |----------|--------|-------------|
-| [Multi-Agent Systems](../../domains/ai-agents/multi-agent-systems.md) | Published | Architecture catalog |
-| [Agent Case Studies](../../domains/ai-agents/agent-case-studies.md) | Published | Real-world patterns |
+| [Multi-Agent Systems](../../domains/ai-agents/multi-agent-preview/01-multi-agent-systems.md) | Published | Architecture catalog |
+| [Agent Case Studies](../../domains/ai-agents/eval-security-production/05-agent-case-studies.md) | Published | Real-world patterns |
 
 [Domain index →](../../domains/agent-architectures/README.md)
 
@@ -314,27 +314,27 @@
 | Document | Status | Description |
 |----------|--------|-------------|
 | [Module hub](../../domains/mcp/README.md) | Published | MCP engineering handbook hub |
-| [Introduction to MCP](../../domains/mcp/introduction-to-mcp.md) | Published | Why MCP exists, ecosystem |
-| [MCP Architecture](../../domains/mcp/mcp-architecture.md) | Published | Client, transport, server layers |
-| [MCP Lifecycle](../../domains/mcp/mcp-lifecycle.md) | Published | Initialize through termination |
-| [MCP Core Concepts](../../domains/mcp/mcp-core-concepts.md) | Published | Clients, servers, primitives |
-| [MCP Client](../../domains/mcp/mcp-client.md) | Published | Connection, discovery, retries |
-| [MCP Server](../../domains/mcp/mcp-server.md) | Published | Registration, routing, shutdown |
-| [MCP Resources](../../domains/mcp/mcp-resources.md) | Published | URI design, discovery, caching |
-| [MCP Prompts](../../domains/mcp/mcp-prompts.md) | Published | Templates, registry, validation |
-| [MCP Tools](../../domains/mcp/mcp-tools.md) | Published | Schemas, permissions, streaming |
-| [Transport Layer](../../domains/mcp/mcp-transport-layer.md) | Published | STDIO, HTTP, SSE, WebSockets |
-| [Message Protocol](../../domains/mcp/mcp-message-protocol.md) | Published | JSON-RPC messages |
-| [Authentication](../../domains/mcp/mcp-authentication.md) | Published | OAuth, RBAC, secrets |
-| [Streaming](../../domains/mcp/mcp-streaming.md) | Published | Partial results, cancellation |
-| [Multi-Server MCP](../../domains/mcp/multi-server-mcp.md) | Published | Routing, federation, failover |
-| [Build an MCP Server](../../domains/mcp/build-an-mcp-server.md) | Published | Production server tutorial |
-| [Build an MCP Client](../../domains/mcp/build-an-mcp-client.md) | Published | Production client tutorial |
-| [Production MCP](../../domains/mcp/production-mcp.md) | Published | Observability, scaling, HA |
-| [MCP Security](../../domains/mcp/mcp-security.md) | Published | Sandboxing, audit, injection |
-| [MCP Mistakes](../../domains/mcp/mcp-engineering-mistakes.md) | Published | Troubleshooting playbook |
-| [Real-World Architectures](../../domains/mcp/mcp-real-world-architectures.md) | Published | Six production patterns |
-| [MCP Comparison Guides](../../domains/mcp/mcp-comparison-guides.md) | Published | Decision matrices |
+| [Introduction to MCP](../../domains/mcp/foundations/01-introduction-to-mcp.md) | Published | Why MCP exists, ecosystem |
+| [MCP Architecture](../../domains/mcp/foundations/02-mcp-architecture.md) | Published | Client, transport, server layers |
+| [MCP Lifecycle](../../domains/mcp/foundations/03-mcp-lifecycle.md) | Published | Initialize through termination |
+| [MCP Core Concepts](../../domains/mcp/foundations/04-mcp-core-concepts.md) | Published | Clients, servers, primitives |
+| [MCP Client](../../domains/mcp/client-and-server/01-mcp-client.md) | Published | Connection, discovery, retries |
+| [MCP Server](../../domains/mcp/client-and-server/02-mcp-server.md) | Published | Registration, routing, shutdown |
+| [MCP Resources](../../domains/mcp/primitives/01-mcp-resources.md) | Published | URI design, discovery, caching |
+| [MCP Prompts](../../domains/mcp/primitives/02-mcp-prompts.md) | Published | Templates, registry, validation |
+| [MCP Tools](../../domains/mcp/primitives/03-mcp-tools.md) | Published | Schemas, permissions, streaming |
+| [Transport Layer](../../domains/mcp/transport-and-auth/01-mcp-transport-layer.md) | Published | STDIO, HTTP, SSE, WebSockets |
+| [Message Protocol](../../domains/mcp/primitives/04-mcp-message-protocol.md) | Published | JSON-RPC messages |
+| [Authentication](../../domains/mcp/transport-and-auth/03-mcp-authentication.md) | Published | OAuth, RBAC, secrets |
+| [Streaming](../../domains/mcp/transport-and-auth/02-mcp-streaming.md) | Published | Partial results, cancellation |
+| [Multi-Server MCP](../../domains/mcp/transport-and-auth/04-multi-server-mcp.md) | Published | Routing, federation, failover |
+| [Build an MCP Server](../../domains/mcp/client-and-server/03-build-an-mcp-server.md) | Published | Production server tutorial |
+| [Build an MCP Client](../../domains/mcp/client-and-server/04-build-an-mcp-client.md) | Published | Production client tutorial |
+| [Production MCP](../../domains/mcp/production/01-production-mcp.md) | Published | Observability, scaling, HA |
+| [MCP Security](../../domains/mcp/production/02-mcp-security.md) | Published | Sandboxing, audit, injection |
+| [MCP Mistakes](../../domains/mcp/production/03-mcp-engineering-mistakes.md) | Published | Troubleshooting playbook |
+| [Real-World Architectures](../../domains/mcp/production/04-mcp-real-world-architectures.md) | Published | Six production patterns |
+| [MCP Comparison Guides](../../domains/mcp/production/05-mcp-comparison-guides.md) | Published | Decision matrices |
 
 [Domain index →](../../domains/mcp/README.md)
 
@@ -371,27 +371,27 @@
 | Document | Status | Description |
 |----------|--------|-------------|
 | [Module hub](../../domains/ai-evaluation/README.md) | Published | AI evaluation handbook hub |
-| [Introduction to AI Evaluation](../../domains/ai-evaluation/introduction-to-ai-evaluation.md) | Published | Offline vs online, LLMOps |
-| [Evaluation Architecture](../../domains/ai-evaluation/evaluation-architecture.md) | Published | End-to-end pipeline |
-| [Evaluation Datasets](../../domains/ai-evaluation/evaluation-datasets.md) | Published | Golden sets, versioning |
-| [Core Metrics](../../domains/ai-evaluation/core-metrics.md) | Published | Accuracy, F1, BLEU, ROUGE |
-| [LLM Evaluation Metrics](../../domains/ai-evaluation/llm-evaluation-metrics.md) | Published | Faithfulness, relevance |
-| [Hallucination Detection](../../domains/ai-evaluation/hallucination-detection.md) | Published | Types and strategies |
-| [RAG Evaluation](../../domains/ai-evaluation/rag-evaluation.md) | Published | RAGAS, retrieval metrics |
-| [Prompt Evaluation](../../domains/ai-evaluation/prompt-evaluation.md) | Published | Regression, robustness |
-| [Agent Evaluation](../../domains/ai-evaluation/agent-evaluation.md) | Published | Task completion, tools |
-| [Evaluation Frameworks](../../domains/ai-evaluation/evaluation-frameworks.md) | Published | Framework selection |
-| [Human Evaluation](../../domains/ai-evaluation/human-evaluation.md) | Published | Rubrics, agreement |
-| [Latency Evaluation](../../domains/ai-evaluation/latency-evaluation.md) | Published | P95, TTFT budgets |
-| [Cost Evaluation](../../domains/ai-evaluation/cost-evaluation.md) | Published | Token and infra cost |
-| [Benchmarking](../../domains/ai-evaluation/benchmarking.md) | Published | Public and internal benches |
-| [A/B Testing](../../domains/ai-evaluation/ab-testing.md) | Published | Experiments, canary |
-| [Continuous Evaluation](../../domains/ai-evaluation/continuous-evaluation.md) | Published | CI/CD, drift detection |
-| [Evaluation Dashboards](../../domains/ai-evaluation/evaluation-dashboards.md) | Published | Quality and exec views |
-| [Production Evaluation](../../domains/ai-evaluation/production-evaluation.md) | Published | Scale, governance |
-| [Evaluation Mistakes](../../domains/ai-evaluation/evaluation-mistakes.md) | Published | Troubleshooting |
-| [Evaluation Case Studies](../../domains/ai-evaluation/evaluation-case-studies.md) | Published | Real-world patterns |
-| [Comparison Guides](../../domains/ai-evaluation/ai-evaluation-comparison-guides.md) | Published | Decision matrices |
+| [Introduction to AI Evaluation](../../domains/ai-evaluation/foundations/01-introduction-to-ai-evaluation.md) | Published | Offline vs online, LLMOps |
+| [Evaluation Architecture](../../domains/ai-evaluation/foundations/02-evaluation-architecture.md) | Published | End-to-end pipeline |
+| [Evaluation Datasets](../../domains/ai-evaluation/foundations/03-evaluation-datasets.md) | Published | Golden sets, versioning |
+| [Core Metrics](../../domains/ai-evaluation/metrics/01-core-metrics.md) | Published | Accuracy, F1, BLEU, ROUGE |
+| [LLM Evaluation Metrics](../../domains/ai-evaluation/metrics/02-llm-evaluation-metrics.md) | Published | Faithfulness, relevance |
+| [Hallucination Detection](../../domains/ai-evaluation/metrics/03-hallucination-detection.md) | Published | Types and strategies |
+| [RAG Evaluation](../../domains/ai-evaluation/surface-areas/02-rag-evaluation.md) | Published | RAGAS, retrieval metrics |
+| [Prompt Evaluation](../../domains/ai-evaluation/surface-areas/01-prompt-evaluation.md) | Published | Regression, robustness |
+| [Agent Evaluation](../../domains/ai-evaluation/surface-areas/03-agent-evaluation.md) | Published | Task completion, tools |
+| [Evaluation Frameworks](../../domains/ai-evaluation/case-studies/04-evaluation-frameworks.md) | Published | Framework selection |
+| [Human Evaluation](../../domains/ai-evaluation/surface-areas/04-human-evaluation.md) | Published | Rubrics, agreement |
+| [Latency Evaluation](../../domains/ai-evaluation/metrics/04-latency-evaluation.md) | Published | P95, TTFT budgets |
+| [Cost Evaluation](../../domains/ai-evaluation/metrics/05-cost-evaluation.md) | Published | Token and infra cost |
+| [Benchmarking](../../domains/ai-evaluation/foundations/04-benchmarking.md) | Published | Public and internal benches |
+| [A/B Testing](../../domains/ai-evaluation/online-systems/01-ab-testing.md) | Published | Experiments, canary |
+| [Continuous Evaluation](../../domains/ai-evaluation/online-systems/02-continuous-evaluation.md) | Published | CI/CD, drift detection |
+| [Evaluation Dashboards](../../domains/ai-evaluation/online-systems/04-evaluation-dashboards.md) | Published | Quality and exec views |
+| [Production Evaluation](../../domains/ai-evaluation/online-systems/03-production-evaluation.md) | Published | Scale, governance |
+| [Evaluation Mistakes](../../domains/ai-evaluation/case-studies/02-evaluation-mistakes.md) | Published | Troubleshooting |
+| [Evaluation Case Studies](../../domains/ai-evaluation/case-studies/01-evaluation-case-studies.md) | Published | Real-world patterns |
+| [Comparison Guides](../../domains/ai-evaluation/case-studies/03-ai-evaluation-comparison-guides.md) | Published | Decision matrices |
 | [Framework Guides](../../domains/ai-evaluation/frameworks/README.md) | Published | RAGAS, DeepEval, etc. |
 
 [Domain index →](../../domains/ai-evaluation/README.md)
@@ -401,24 +401,24 @@
 | Document | Status | Description |
 |----------|--------|-------------|
 | [Module hub](../../domains/ai-system-design/README.md) | Published | AI system design handbook hub |
-| [Fundamentals](../../domains/ai-system-design/ai-system-design-fundamentals.md) | Published | Principles, capacity, budgeting |
-| [Common Components](../../domains/ai-system-design/common-ai-components.md) | Published | Reference production stack |
-| [ChatGPT-like Design](../../domains/ai-system-design/design-chatgpt-like-system.md) | Published | Conversational AI |
-| [Cursor-like Design](../../domains/ai-system-design/design-cursor-like-system.md) | Published | IDE coding assistant |
-| [GitHub Copilot Design](../../domains/ai-system-design/design-github-copilot.md) | Published | Inline completions |
-| [Perplexity Design](../../domains/ai-system-design/design-perplexity-ai-search.md) | Published | AI search + citations |
-| [Deep Research Design](../../domains/ai-system-design/design-deep-research-system.md) | Published | Multi-agent research |
-| [AI Search Engine](../../domains/ai-system-design/design-ai-search-engine.md) | Published | Hybrid enterprise search |
-| [Customer Support AI](../../domains/ai-system-design/design-ai-customer-support.md) | Published | Support + escalation |
-| [Coding Assistant](../../domains/ai-system-design/design-ai-coding-assistant.md) | Published | AST, PRs, review |
-| [PDF Chat](../../domains/ai-system-design/design-ai-pdf-chat.md) | Published | OCR, tables, cites |
-| [Email Assistant](../../domains/ai-system-design/design-ai-email-assistant.md) | Published | Triage + drafts |
-| [CRM Assistant](../../domains/ai-system-design/design-ai-crm-assistant.md) | Published | Sales intelligence |
-| [Voice Agent](../../domains/ai-system-design/design-ai-voice-agent.md) | Published | STT/TTS realtime |
-| [Scaling AI Systems](../../domains/ai-system-design/scaling-ai-systems.md) | Published | Horizontal scale, queues |
-| [Architecture Patterns](../../domains/ai-system-design/ai-architecture-patterns.md) | Published | Agentic, event-driven |
-| [Design Interviews](../../domains/ai-system-design/ai-system-design-interviews.md) | Published | Whiteboard prep |
-| [Comparison Guides](../../domains/ai-system-design/ai-system-design-comparison-guides.md) | Published | Decision matrices |
+| [Fundamentals](../../domains/ai-system-design/foundations/01-ai-system-design-fundamentals.md) | Published | Principles, capacity, budgeting |
+| [Common Components](../../domains/ai-system-design/foundations/02-common-ai-components.md) | Published | Reference production stack |
+| [ChatGPT-like Design](../../domains/ai-system-design/consumer-products/01-design-chatgpt-like-system.md) | Published | Conversational AI |
+| [Cursor-like Design](../../domains/ai-system-design/developer-tools/01-design-cursor-like-system.md) | Published | IDE coding assistant |
+| [GitHub Copilot Design](../../domains/ai-system-design/developer-tools/02-design-github-copilot.md) | Published | Inline completions |
+| [Perplexity Design](../../domains/ai-system-design/consumer-products/02-design-perplexity-ai-search.md) | Published | AI search + citations |
+| [Deep Research Design](../../domains/ai-system-design/consumer-products/04-design-deep-research-system.md) | Published | Multi-agent research |
+| [AI Search Engine](../../domains/ai-system-design/consumer-products/03-design-ai-search-engine.md) | Published | Hybrid enterprise search |
+| [Customer Support AI](../../domains/ai-system-design/enterprise-assistants/01-design-ai-customer-support.md) | Published | Support + escalation |
+| [Coding Assistant](../../domains/ai-system-design/developer-tools/03-design-ai-coding-assistant.md) | Published | AST, PRs, review |
+| [PDF Chat](../../domains/ai-system-design/developer-tools/04-design-ai-pdf-chat.md) | Published | OCR, tables, cites |
+| [Email Assistant](../../domains/ai-system-design/enterprise-assistants/02-design-ai-email-assistant.md) | Published | Triage + drafts |
+| [CRM Assistant](../../domains/ai-system-design/enterprise-assistants/03-design-ai-crm-assistant.md) | Published | Sales intelligence |
+| [Voice Agent](../../domains/ai-system-design/enterprise-assistants/04-design-ai-voice-agent.md) | Published | STT/TTS realtime |
+| [Scaling AI Systems](../../domains/ai-system-design/scale-and-interviews/01-scaling-ai-systems.md) | Published | Horizontal scale, queues |
+| [Architecture Patterns](../../domains/ai-system-design/foundations/03-ai-architecture-patterns.md) | Published | Agentic, event-driven |
+| [Design Interviews](../../domains/ai-system-design/scale-and-interviews/02-ai-system-design-interviews.md) | Published | Whiteboard prep |
+| [Comparison Guides](../../domains/ai-system-design/scale-and-interviews/03-ai-system-design-comparison-guides.md) | Published | Decision matrices |
 
 [Domain index →](../../domains/ai-system-design/README.md)
 
@@ -427,22 +427,22 @@
 | Document | Status | Description |
 |----------|--------|-------------|
 | [Module hub](../../domains/ai-deployment/README.md) | Published | Production AI handbook hub |
-| [Production Overview](../../domains/ai-deployment/production-ai-overview.md) | Published | Lifecycle, platform architecture |
-| [Docker for AI](../../domains/ai-deployment/docker-for-ai.md) | Published | Containers for AI services |
-| [Deployment Strategies](../../domains/ai-deployment/ai-deployment-strategies.md) | Published | Canary, blue/green |
-| [CI/CD for AI](../../domains/ai-deployment/cicd-for-ai.md) | Published | Eval gates, rollback |
-| [Secrets Management](../../domains/ai-deployment/secrets-management-for-ai.md) | Published | API keys, Vault |
-| [Monitoring](../../domains/ai-deployment/monitoring-ai-systems.md) | Published | SLO, alerts, health |
-| [Logging](../../domains/ai-deployment/logging-for-ai.md) | Published | Structured JSON logs |
-| [Observability](../../domains/ai-deployment/observability-for-ai.md) | Published | OTEL, LangFuse, Phoenix |
-| [Cost Tracking](../../domains/ai-deployment/cost-tracking-production.md) | Published | Production FinOps |
-| [Reliability](../../domains/ai-deployment/reliability-for-ai.md) | Published | Retry, circuit breaker |
-| [Caching](../../domains/ai-deployment/caching-for-ai.md) | Published | Redis, prompt cache |
-| [Security](../../domains/ai-deployment/security-production-ai.md) | Published | Auth, rate limits |
-| [Performance](../../domains/ai-deployment/performance-optimization-production.md) | Published | Streaming, routing |
-| [AI Operations](../../domains/ai-deployment/ai-operations.md) | Published | Incidents, runbooks |
-| [Production Readiness](../../domains/ai-deployment/production-readiness-checklist.md) | Published | Go-live checklist |
-| [Comparison Guides](../../domains/ai-deployment/production-ai-comparison-guides.md) | Published | Deploy, observability |
+| [Production Overview](../../domains/ai-deployment/foundations/01-production-ai-overview.md) | Published | Lifecycle, platform architecture |
+| [Docker for AI](../../domains/ai-deployment/packaging-and-release/01-docker-for-ai.md) | Published | Containers for AI services |
+| [Deployment Strategies](../../domains/ai-deployment/packaging-and-release/02-ai-deployment-strategies.md) | Published | Canary, blue/green |
+| [CI/CD for AI](../../domains/ai-deployment/packaging-and-release/03-cicd-for-ai.md) | Published | Eval gates, rollback |
+| [Secrets Management](../../domains/ai-deployment/packaging-and-release/04-secrets-management-for-ai.md) | Published | API keys, Vault |
+| [Monitoring](../../domains/ai-deployment/observability/01-monitoring-ai-systems.md) | Published | SLO, alerts, health |
+| [Logging](../../domains/ai-deployment/observability/02-logging-for-ai.md) | Published | Structured JSON logs |
+| [Observability](../../domains/ai-deployment/observability/03-observability-for-ai.md) | Published | OTEL, LangFuse, Phoenix |
+| [Cost Tracking](../../domains/ai-deployment/observability/04-cost-tracking-production.md) | Published | Production FinOps |
+| [Reliability](../../domains/ai-deployment/reliability-and-perf/01-reliability-for-ai.md) | Published | Retry, circuit breaker |
+| [Caching](../../domains/ai-deployment/reliability-and-perf/02-caching-for-ai.md) | Published | Redis, prompt cache |
+| [Security](../../domains/ai-deployment/security-and-ops/01-security-production-ai.md) | Published | Auth, rate limits |
+| [Performance](../../domains/ai-deployment/reliability-and-perf/03-performance-optimization-production.md) | Published | Streaming, routing |
+| [AI Operations](../../domains/ai-deployment/security-and-ops/02-ai-operations.md) | Published | Incidents, runbooks |
+| [Production Readiness](../../domains/ai-deployment/foundations/02-production-readiness-checklist.md) | Published | Go-live checklist |
+| [Comparison Guides](../../domains/ai-deployment/security-and-ops/03-production-ai-comparison-guides.md) | Published | Deploy, observability |
 
 [Domain index →](../../domains/ai-deployment/README.md)
 
@@ -482,7 +482,7 @@
 
 | Document | Status | Description |
 |----------|--------|-------------|
-| [Docker for AI](../../domains/ai-deployment/docker-for-ai.md) | Published | AI container handbook section |
+| [Docker for AI](../../domains/ai-deployment/packaging-and-release/01-docker-for-ai.md) | Published | AI container handbook section |
 
 [Domain index →](../../domains/docker/README.md)
 

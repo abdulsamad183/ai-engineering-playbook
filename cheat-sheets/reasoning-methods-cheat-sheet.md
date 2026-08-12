@@ -70,7 +70,7 @@ Final Answer: [response]
 
 - [Agent Reasoning Papers](../domains/papers/agent-reasoning-papers.md)
 - [Comparison Guides](../domains/papers/research-comparison-guides.md)
-- [Agent Reasoning Patterns](../domains/ai-agents/agent-reasoning-patterns.md)
+- [Agent Reasoning Patterns](../domains/ai-agents/cognition/01-agent-reasoning-patterns.md)
 
 ## Changelog
 

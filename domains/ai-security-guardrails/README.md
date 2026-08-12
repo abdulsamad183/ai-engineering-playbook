@@ -1,52 +1,79 @@
 # AI Security & Guardrails
 
-> Threat models, prompt injection, data leakage, and layered guardrails for LLM applications.
+> Threat modeling, guardrails, secure tools, app security, and production safety.
 
-**Prerequisites:** [LLM Application Development](../llm-application-development/README.md)  
-**Unlocks:** [AI Deployment & Infrastructure](../ai-deployment/README.md) · [AI Agents](../ai-agents/README.md)
+**Prerequisites:** [Prompt Engineering](../prompt-engineering/README.md) · [AI Agents](../ai-agents/README.md)  
+**Unlocks:** [AI Deployment](../ai-deployment/README.md)
+
+Start with a section hub below (or expand the topic in the left sidebar).
+
+---
+
+## Sections
+
+| # | Section | What you will learn | Hub |
+|---|---------|---------------------|-----|
+| 1 | **Threats** | Security section | [threats/](threats/README.md) |
+| 2 | **Guardrails** | Security section | [guardrails/](guardrails/README.md) |
+| 3 | **Secure Tools** | Security section | [secure-tools/](secure-tools/README.md) |
+| 4 | **App Security** | Security section | [app-security/](app-security/README.md) |
+| 5 | **Production** | Security section | [production/](production/README.md) |
+
+```mermaid
+flowchart LR
+  S1[Threats] --> S2[Guardrails] --> S3[Secure] --> S4[App] --> S5[Production]
+```
+
+---
+
+## Hierarchy
+
+### Threats
+
+| # | Topic |
+|---|-------|
+| 1 | [LLM Threat Model](threats/01-llm-threat-model.md) |
+| 2 | [Prompt Injection and Jailbreaks](threats/02-prompt-injection-and-jailbreaks.md) |
+| 3 | [Introduction to AI Safety](threats/03-introduction-to-ai-safety.md) |
+
+### Guardrails
+
+| # | Topic |
+|---|-------|
+| 1 | [Guardrail Layers](guardrails/01-guardrail-layers.md) |
+| 2 | [Guardrails and Content Filtering](guardrails/02-guardrails-and-content-filtering.md) |
+
+### Secure Tools
+
+| # | Topic |
+|---|-------|
+| 1 | [Secure Tool Use](secure-tools/01-secure-tool-use.md) |
+| 2 | [Safe Tool Use](secure-tools/02-safe-tool-use.md) |
+
+### App Security
+
+| # | Topic |
+|---|-------|
+| 1 | [Authentication and Authorization for AI](app-security/01-authentication-authorization-for-ai.md) |
+| 2 | [Security for AI Backends](app-security/02-security-for-ai-backends.md) |
+
+### Production
+
+| # | Topic |
+|---|-------|
+| 1 | [Production AI Safety Checklist](production/01-production-ai-safety-checklist.md) |
+| 2 | [Red Teaming](production/02-red-teaming.md) |
+| 3 | [Monitoring Abuse](production/03-monitoring-abuse.md) |
 
 ---
 
 ## Definition
 
-**AI security & guardrails** cover protecting AI systems and users: prompt injection, jailbreaks, sensitive-data exfiltration, unsafe tool use, supply-chain risks, and policy enforcement. Guardrails are layered controls (input/output filters, allowlisted tools, human approval) — not a single magic classifier.
-
----
-
-## Learning path
-
-```mermaid
-flowchart TB
-  In[User input] --> IG[Input guards]
-  IG --> Orch[Orchestration]
-  Orch --> Tools[Tool authz]
-  Orch --> LLM[Model]
-  LLM --> OG[Output guards]
-  OG --> User[User]
-```
-
----
-
-## Documents
-
-| # | Topic | Document |
-|---|-------|----------|
-| 1 | Threat model for LLM apps | [llm-threat-model.md](llm-threat-model.md) |
-| 2 | Guardrail layers | [guardrail-layers.md](guardrail-layers.md) |
-| 3 | Secure tool use | [secure-tool-use.md](secure-tool-use.md) |
+**AI security & guardrails** protect LLM systems against injection, misuse, data leakage, and unsafe tool actions.
 
 ---
 
 ## Related topics
 
-- [AI Safety handbook](../ai-safety/README.md)
-- [Security domain](../security/README.md)
-- [Prompt security](../prompt-engineering/README.md)
-
----
-
-## See also
-
 - [Domains overview](../README.md)
-- [Learning Roadmap](../../meta/roadmap.md)
 - [Master Index](../../meta/indexes/MASTER-INDEX.md)

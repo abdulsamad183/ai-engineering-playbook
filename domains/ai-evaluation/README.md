@@ -1,127 +1,99 @@
 # LLM Evaluation
 
-> How to measure and gate LLM system quality — metrics, golden sets, and CI.
-> **Prerequisites:** [MCP](../mcp/README.md) · [Agents](../ai-agents/README.md) · [RAG](../rag/README.md)
+> Offline and online evaluation for prompts, RAG, agents, and production LLM systems.
+
+**Prerequisites:** [Prompt Engineering](../prompt-engineering/README.md) · [RAG](../rag/README.md)  
+**Unlocks:** [MLOps & LLMOps](../mlops-llmops/README.md) · [AI Agents](../ai-agents/README.md)
+
+Start with a section hub below (or expand the topic in the left sidebar).
 
 ---
 
-## Module Overview
+## Sections
 
-AI evaluation is a complete engineering discipline — not simply model accuracy.
+| # | Section | What you will learn | Hub |
+|---|---------|---------------------|-----|
+| 1 | **Foundations** | Intro, architecture, datasets | [foundations/](foundations/README.md) |
+| 2 | **Metrics** | Quality, judge, latency, cost | [metrics/](metrics/README.md) |
+| 3 | **Surface Areas** | Prompt, RAG, agent, human | [surface-areas/](surface-areas/README.md) |
+| 4 | **Online Systems** | A/B, continuous, dashboards | [online-systems/](online-systems/README.md) |
+| 5 | **Frameworks** | RAGAS, DeepEval, LangSmith, … | [frameworks/](frameworks/README.md) |
+| 6 | **Case Studies** | Mistakes and comparisons | [case-studies/](case-studies/README.md) |
 
 ```mermaid
-flowchart TB
-  subgraph "Foundations"
-    S1[1. Introduction]
-    S2[2. Architecture]
-    S3[3. Datasets]
-    S4[4. Core Metrics]
-    S5[5. LLM Metrics]
-  end
-  subgraph "System Eval"
-    S6[6. Hallucination]
-    S7[7. RAG]
-    S8[8. Prompt]
-    S9[9. Agent]
-    S10[10. Frameworks]
-  end
-  subgraph "Operations"
-    S11[11. Human Eval]
-    S12[12. Latency]
-    S13[13. Cost]
-    S14[14. Benchmarks]
-    S15[15. A/B Testing]
-    S16[16. Continuous]
-    S17[17. Dashboards]
-  end
-  subgraph "Ship"
-    S18[18. Production]
-    S19[19. Mistakes]
-    S20[20. Case Studies]
-  end
-  S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7 --> S8 --> S9 --> S10
-  S10 --> S11 --> S12 --> S13 --> S14 --> S15 --> S16 --> S17 --> S18 --> S19 --> S20
+flowchart LR
+  S1[Foundations] --> S2[Metrics] --> S3[Surface] --> S4[Online] --> S5[Frameworks] --> S6[Case]
 ```
 
-**Unlocks:** Production AI · Observability · Continuous improvement · Governance
+---
+
+## Hierarchy
+
+### Foundations
+
+| # | Topic |
+|---|-------|
+| 1 | [Introduction To Ai Evaluation](foundations/01-introduction-to-ai-evaluation.md) |
+| 2 | [Evaluation Architecture](foundations/02-evaluation-architecture.md) |
+| 3 | [Evaluation Datasets](foundations/03-evaluation-datasets.md) |
+| 4 | [Benchmarking](foundations/04-benchmarking.md) |
+
+### Metrics
+
+| # | Topic |
+|---|-------|
+| 1 | [Core Metrics](metrics/01-core-metrics.md) |
+| 2 | [Llm Evaluation Metrics](metrics/02-llm-evaluation-metrics.md) |
+| 3 | [Hallucination Detection](metrics/03-hallucination-detection.md) |
+| 4 | [Latency Evaluation](metrics/04-latency-evaluation.md) |
+| 5 | [Cost Evaluation](metrics/05-cost-evaluation.md) |
+
+### Surface Areas
+
+| # | Topic |
+|---|-------|
+| 1 | [Prompt Evaluation](surface-areas/01-prompt-evaluation.md) |
+| 2 | [Rag Evaluation](surface-areas/02-rag-evaluation.md) |
+| 3 | [Agent Evaluation](surface-areas/03-agent-evaluation.md) |
+| 4 | [Human Evaluation](surface-areas/04-human-evaluation.md) |
+
+### Online Systems
+
+| # | Topic |
+|---|-------|
+| 1 | [Ab Testing](online-systems/01-ab-testing.md) |
+| 2 | [Continuous Evaluation](online-systems/02-continuous-evaluation.md) |
+| 3 | [Production Evaluation](online-systems/03-production-evaluation.md) |
+| 4 | [Evaluation Dashboards](online-systems/04-evaluation-dashboards.md) |
+
+### Frameworks
+
+| # | Topic |
+|---|-------|
+| 1 | [Deepeval](frameworks/02-deepeval.md) |
+| 2 | [Langsmith](frameworks/03-langsmith.md) |
+| 3 | [Openai Evals](frameworks/04-openai-evals.md) |
+| 4 | [Phoenix](frameworks/05-phoenix.md) |
+| 5 | [Ragas](frameworks/06-ragas.md) |
+
+### Case Studies
+
+| # | Topic |
+|---|-------|
+| 1 | [Evaluation Case Studies](case-studies/01-evaluation-case-studies.md) |
+| 2 | [Evaluation Mistakes](case-studies/02-evaluation-mistakes.md) |
+| 3 | [Ai Evaluation Comparison Guides](case-studies/03-ai-evaluation-comparison-guides.md) |
+| 4 | [Evaluation Frameworks](case-studies/04-evaluation-frameworks.md) |
 
 ---
 
-## Documents (20 Sections)
+## Definition
 
-| # | Topic | Document |
-|---|-------|----------|
-| 1 | Introduction | [introduction-to-ai-evaluation.md](introduction-to-ai-evaluation.md) |
-| 2 | Architecture | [evaluation-architecture.md](evaluation-architecture.md) |
-| 3 | Datasets | [evaluation-datasets.md](evaluation-datasets.md) |
-| 4 | Core Metrics | [core-metrics.md](core-metrics.md) |
-| 5 | LLM Metrics | [llm-evaluation-metrics.md](llm-evaluation-metrics.md) |
-| 6 | Hallucination | [hallucination-detection.md](hallucination-detection.md) |
-| 7 | RAG Evaluation | [rag-evaluation.md](rag-evaluation.md) |
-| 8 | Prompt Evaluation | [prompt-evaluation.md](prompt-evaluation.md) |
-| 9 | Agent Evaluation | [agent-evaluation.md](agent-evaluation.md) |
-| 10 | Frameworks | [evaluation-frameworks.md](evaluation-frameworks.md) |
-| 11 | Human Evaluation | [human-evaluation.md](human-evaluation.md) |
-| 12 | Latency | [latency-evaluation.md](latency-evaluation.md) |
-| 13 | Cost | [cost-evaluation.md](cost-evaluation.md) |
-| 14 | Benchmarking | [benchmarking.md](benchmarking.md) |
-| 15 | A/B Testing | [ab-testing.md](ab-testing.md) |
-| 16 | Continuous Eval | [continuous-evaluation.md](continuous-evaluation.md) |
-| 17 | Dashboards | [evaluation-dashboards.md](evaluation-dashboards.md) |
-| 18 | Production | [production-evaluation.md](production-evaluation.md) |
-| 19 | Mistakes | [evaluation-mistakes.md](evaluation-mistakes.md) |
-| 20 | Case Studies | [evaluation-case-studies.md](evaluation-case-studies.md) |
-
-**Comparisons:** [ai-evaluation-comparison-guides.md](ai-evaluation-comparison-guides.md)
-
-### Framework Guides (Section 10)
-
-[RAGAS](frameworks/ragas.md) · [DeepEval](frameworks/deepeval.md) · [LangSmith](frameworks/langsmith.md) · [Phoenix](frameworks/phoenix.md) · [OpenAI Evals](frameworks/openai-evals.md)
+**LLM evaluation** measures quality, safety, latency, and cost so you can ship model and prompt changes with evidence.
 
 ---
 
-## Code Examples
+## Related topics
 
-[`examples/ai-evaluation/`](../../examples/ai-evaluation/) — RAGAS-style, DeepEval, RAG, agent, latency, cost, A/B, regression
-
----
-
-## Cheat Sheets
-
-- [Evaluation Workflow](../../cheat-sheets/evaluation-workflow-cheat-sheet.md)
-- [Metric Selection](../../cheat-sheets/metric-selection-cheat-sheet.md)
-- [RAG Evaluation](../../cheat-sheets/rag-evaluation-checklist.md)
-- [Prompt Evaluation](../../cheat-sheets/prompt-evaluation-checklist.md)
-- [Agent Evaluation](../../cheat-sheets/agent-evaluation-checklist.md)
-- [Latency](../../cheat-sheets/latency-evaluation-checklist.md)
-- [Cost](../../cheat-sheets/cost-evaluation-checklist.md)
-- [A/B Testing](../../cheat-sheets/ab-testing-checklist.md)
-- [Production Readiness](../../cheat-sheets/production-evaluation-readiness-checklist.md)
-
----
-
-## Learning Path
-
-1. **Foundations** — Introduction, architecture, datasets, metrics (1–5)
-2. **System evaluation** — Hallucination, RAG, prompt, agent, frameworks (6–10)
-3. **Operations** — Human, latency, cost, benchmarks, A/B, continuous (11–16)
-4. **Production** — Dashboards, scale, mistakes, case studies (17–20)
-
----
-
-## Completion Checklist
-
-- [ ] Define golden dataset for your product
-- [ ] Run RAG or agent eval harness
-- [ ] Add CI regression gate
-- [ ] Track latency + cost with quality
-- [ ] Set up dashboard or export metrics
-- [ ] Document human review rubric
-
----
-
-## See Also
-
-- [RAG Evaluation](../rag/rag-evaluation.md)
-- [Agent Evaluation](../ai-agents/agent-evaluation.md)
-- [Prompt Evaluation](../prompt-engineering/prompt-operations/04-prompt-evaluation.md)
+- [Domains overview](../README.md)
+- [Master Index](../../meta/indexes/MASTER-INDEX.md)

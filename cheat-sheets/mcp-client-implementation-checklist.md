@@ -9,4 +9,4 @@
 - [ ] Correlation IDs in logs
 - [ ] Multi-server routing if applicable
 
-See [Build an MCP Client](../domains/mcp/build-an-mcp-client.md).
+See [Build an MCP Client](../domains/mcp/client-and-server/04-build-an-mcp-client.md).

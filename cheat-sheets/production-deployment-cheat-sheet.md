@@ -6,4 +6,4 @@
 - [ ] Secrets from vault
 - [ ] Rollback tested
 
-See [Deployment Strategies](../domains/ai-deployment/ai-deployment-strategies.md).
+See [Deployment Strategies](../domains/ai-deployment/packaging-and-release/02-ai-deployment-strategies.md).

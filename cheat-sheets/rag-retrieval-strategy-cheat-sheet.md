@@ -1,6 +1,6 @@
 # RAG Retrieval Strategy Cheat Sheet
 
-> See [Retrieval Strategies](../domains/rag/retrieval-strategies.md).
+> See [Retrieval Strategies](../domains/rag/retrieval/04-retrieval-strategies.md).
 
 | Corpus | Strategy |
 |--------|----------|

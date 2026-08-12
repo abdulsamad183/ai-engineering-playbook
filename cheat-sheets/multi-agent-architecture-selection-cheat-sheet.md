@@ -10,4 +10,4 @@
 
 **Rule:** Single agent until eval proves otherwise.
 
-See [Multi-Agent Systems](../domains/ai-agents/multi-agent-systems.md).
+See [Multi-Agent Systems](../domains/ai-agents/multi-agent-preview/01-multi-agent-systems.md).

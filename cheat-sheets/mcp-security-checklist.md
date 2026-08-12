@@ -10,4 +10,4 @@
 - [ ] Audit log for write tools
 - [ ] HITL for destructive operations
 
-See [MCP Security](../domains/mcp/mcp-security.md).
+See [MCP Security](../domains/mcp/production/02-mcp-security.md).

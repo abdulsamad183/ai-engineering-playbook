@@ -8,4 +8,4 @@
 6. Monitor online with sampling
 7. Iterate — add cases per incident
 
-See [Evaluation Architecture](../domains/ai-evaluation/evaluation-architecture.md).
+See [Evaluation Architecture](../domains/ai-evaluation/foundations/02-evaluation-architecture.md).

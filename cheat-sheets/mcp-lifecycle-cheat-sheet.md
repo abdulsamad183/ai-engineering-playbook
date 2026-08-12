@@ -10,4 +10,4 @@
 | Updates | Handle `*_list_changed` notifications |
 | Shutdown | Close transport; drain in-flight |
 
-See [MCP Lifecycle](../domains/mcp/mcp-lifecycle.md).
+See [MCP Lifecycle](../domains/mcp/foundations/03-mcp-lifecycle.md).

@@ -9,4 +9,4 @@
 - [ ] CI tests for tool contracts
 - [ ] Capability change notifications on deploy
 
-See [Build an MCP Server](../domains/mcp/build-an-mcp-server.md) · [Production MCP](../domains/mcp/production-mcp.md).
+See [Build an MCP Server](../domains/mcp/client-and-server/03-build-an-mcp-server.md) · [Production MCP](../domains/mcp/production/01-production-mcp.md).

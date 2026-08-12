@@ -9,4 +9,4 @@
 - [ ] Eval suite in CI
 - [ ] DLQ for failed runs
 
-See [Production Agent Engineering](../domains/ai-agents/production-agent-engineering.md).
+See [Production Agent Engineering](../domains/ai-agents/eval-security-production/04-production-agent-engineering.md).

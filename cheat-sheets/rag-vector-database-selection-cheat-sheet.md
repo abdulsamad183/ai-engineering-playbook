@@ -1,6 +1,6 @@
 # Vector Database Selection Cheat Sheet
 
-> See [Vector Databases](../domains/rag/vector-databases.md) and [providers](../domains/rag/providers/).
+> See [Vector Databases](../domains/rag/retrieval/02-vector-databases.md) and [providers](../domains/rag/providers/).
 
 | Scenario | Pick |
 |----------|------|

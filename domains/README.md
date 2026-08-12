@@ -24,7 +24,7 @@ The **home page lists 25 primary topics**. This page is the full inventory (prim
 | 10 | [prompt-engineering](prompt-engineering/) | Prompt design and optimization | Published |
 | 11 | [llm-application-development](llm-application-development/) | Building LLM-backed applications | Published |
 | 12 | [chatbots](chatbots/) | Conversational products | Published |
-| 13 | [embeddings-vector-databases](embeddings-vector-databases/) | Embeddings and vector search | Published |
+| 13 | [embeddings-vector-databases](embeddings-vector-databases/) | 5 sections · embeddings → ANN → providers → ops | Published |
 | 14 | [rag](rag/) | Retrieval-augmented generation | Published |
 | 15 | [llm-fine-tuning](llm-fine-tuning/) | Adapting LLM weights | Published |
 | 16 | [ai-evaluation](ai-evaluation/) | LLM / system evaluation | Published |

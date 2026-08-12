@@ -1,13 +1,20 @@
-# Evaluation Framework Guides
+# Frameworks
 
-> Implementation guides.
+> Section of the **ai-evaluation** handbook.
 
-| Framework | Guide | Focus |
-|-----------|-------|-------|
-| RAGAS | [ragas.md](ragas.md) | RAG metrics pipeline |
-| DeepEval | [deepeval.md](deepeval.md) | CI/CD evaluation |
-| LangSmith | [langsmith.md](langsmith.md) | Traces + datasets |
-| Phoenix | [phoenix.md](phoenix.md) | Observability + eval |
-| OpenAI Evals | [openai-evals.md](openai-evals.md) | OpenAI eval registry |
+## Lessons
 
-See [Evaluation Frameworks](../evaluation-frameworks.md).
+| # | Lesson |
+|---|--------|
+| 1 | [Deepeval](02-deepeval.md) |
+| 2 | [Langsmith](03-langsmith.md) |
+| 3 | [Openai Evals](04-openai-evals.md) |
+| 4 | [Phoenix](05-phoenix.md) |
+| 5 | [Ragas](06-ragas.md) |
+
+```mermaid
+flowchart LR
+  L1 --> L2 --> L3 --> L4 --> L5
+```
+
+**Topic hub:** [../README.md](../README.md)

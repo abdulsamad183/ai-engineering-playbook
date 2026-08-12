@@ -1,14 +1,21 @@
-# Agent Framework Guides
+# Frameworks
 
-> implementation guides for production agent frameworks.
+> Section of the **ai-agents** handbook.
 
-| Framework | Guide | Best for |
-|-----------|-------|----------|
-| LangGraph | [langgraph.md](langgraph.md) | Graph workflows, checkpointing |
-| CrewAI | [crewai.md](crewai.md) | Role-based multi-agent crews |
-| AutoGen | [autogen.md](autogen.md) | Conversational multi-agent |
-| Semantic Kernel | [semantic-kernel.md](semantic-kernel.md) | .NET/Python enterprise plugins |
-| PydanticAI | [pydantic-ai.md](pydantic-ai.md) | Type-safe Python agents |
-| OpenAI Agents SDK | [openai-agents-sdk.md](openai-agents-sdk.md) | OpenAI-native tool agents |
+## Lessons
 
-See [Agent Comparison Guides](../agent-comparison-guides.md).
+| # | Lesson |
+|---|--------|
+| 1 | [Autogen](02-autogen.md) |
+| 2 | [Crewai](03-crewai.md) |
+| 3 | [Langgraph](04-langgraph.md) |
+| 4 | [Openai Agents Sdk](05-openai-agents-sdk.md) |
+| 5 | [Pydantic Ai](06-pydantic-ai.md) |
+| 6 | [Semantic Kernel](07-semantic-kernel.md) |
+
+```mermaid
+flowchart LR
+  L1 --> L2 --> L3 --> L4 --> L5 --> L6
+```
+
+**Topic hub:** [../README.md](../README.md)

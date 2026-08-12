@@ -8,4 +8,4 @@
 - [ ] Permission class: read / write / destructive
 - [ ] Errors return structured messages
 
-See [Tool Use](../domains/ai-agents/tool-use.md).
+See [Tool Use](../domains/ai-agents/tools-and-action/01-tool-use.md).
