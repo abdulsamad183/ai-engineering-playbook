@@ -2,60 +2,212 @@
 title: "Web Frameworks for AI APIs"
 description: "How to choose and structure Python web frameworks for LLM and RAG services."
 domain: python-frameworks-libraries
-tags: [python-frameworks-libraries]
+tags: [overview, python-frameworks-libraries]
 status: published
 created: 2026-08-11
-updated: 2026-08-11
-version: "1.0"
+updated: 2026-08-12
+version: "2.0"
+related:
+  - README.md
+  - ../../python-engineering/README.md
+  - ../../machine-learning/README.md
+  - ../../llm-application-development/README.md
 ---
 
 # Web Frameworks for AI APIs
 
 > How to choose and structure Python web frameworks for LLM and RAG services.
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Definition](#definition)
+- [Why It Matters](#why-it-matters)
+- [Uses](#uses)
+- [Core Ideas](#core-ideas)
+- [How It Works](#how-it-works)
+- [Worked Example](#worked-example)
+- [Python Examples](#python-examples)
+- [Practice Exercises](#practice-exercises)
+- [Evaluation](#evaluation)
+- [Production Considerations](#production-considerations)
+- [Performance & Cost](#performance--cost)
+- [Common Failure Modes](#common-failure-modes)
+- [Best Practices](#best-practices)
+- [Common Mistakes](#common-mistakes)
+- [Interview Preparation](#interview-preparation)
+- [Navigation](#navigation)
+
+---
+
+## Overview
+
+This lesson belongs to **Overview** in the **Python Frameworks & Libraries** handbook. Goal: understand **Web Frameworks for AI APIs** well enough to implement, measure, and explain it in a design review.
+
+**Typical workflow:** install/import → core API → idioms → AI workflow usage.
+
+---
+
 ## Definition
 
-A **web framework** handles HTTP routing, validation, auth, and response streaming. For AI services, the critical features are async I/O, Pydantic models, OpenAPI docs, and first-class streaming (SSE/WebSocket).
+**Web Frameworks for AI APIs** — How to choose and structure Python web frameworks for LLM and RAG services.
 
-## Why it matters
+Be able to state inputs, outputs, assumptions, and the metric that proves success.
 
-LLM calls are slow and I/O-bound. An async-friendly framework (FastAPI/Starlette) lets you serve many concurrent requests without blocking workers on token generation.
+---
 
-## How it works
+## Why It Matters
+
+Skipping web frameworks for ai apis creates fragile systems: wrong preprocessing, silent metric lies, or APIs used without understanding failure modes. This topic is foundational for later LLM/RAG/agent work.
+
+---
+
+## Uses
+
+| Use case | How this applies |
+|----------|------------------|
+| Learning path | Build intuition before heavier models |
+| Baseline | Ship a correct simple version first |
+| Production | Meet quality/latency with known knobs |
+| Debugging | Separate data vs model vs eval bugs |
+
+---
+
+## Core Ideas
+
+1. Write the task contract before choosing tools.
+2. Prefer simple baselines; add complexity only for measured gains.
+3. Keep train/eval protocols leakage-free.
+4. Log seeds, versions, and metrics for reproducibility.
+5. Optimize the metric that matches real error cost.
+
+---
+
+## How It Works
 
 ```mermaid
-sequenceDiagram
-  participant C as Client
-  participant API as FastAPI
-  participant LLM as Model API
-  C->>API: POST /chat
-  API->>LLM: stream tokens
-  LLM-->>API: token chunks
-  API-->>C: SSE / stream
+flowchart LR
+  Data --> Library --> Transform --> Consume
 ```
 
-## Key principles
+Connect each node to code you own: data, transform/model, evaluation, and serving/config.
 
-1. **Async by default** — LLM and vector DB calls should not block the event loop.
-2. **Validate at the edge** — Pydantic request/response models catch bad inputs early.
-3. **Stream when UX needs it** — Chat UIs almost always want token streaming.
+---
 
-## Common applications
+## Worked Example
 
-| Application | Description |
-|-------------|-------------|
-| Chat completions API | POST endpoint + SSE stream |
-| RAG query API | retrieve → generate → cite |
-| Webhook/tool callbacks | agent tool results posted back to your API |
+**Scenario:** Apply **Web Frameworks for AI APIs** on a small real dataset or API workload.
 
-## Common mistakes
+1. Define success metric and constraints (latency, memory, interpretability).
+2. Implement the minimal version end-to-end.
+3. Measure on a held-out set / golden prompts.
+4. Error-analyze failures; fix data/config before model hopping.
+5. Document limits and rollback.
 
-- Buffering full LLM responses when the product needs streaming
-- Putting business logic only in route handlers with no service layer
-- Ignoring timeouts/cancellation on long generations
+**Exit criteria:** metric on holdout ≥ target, and behavior under failure is explicit.
 
-## Further reading
+---
 
-- [FastAPI](../fastapi/README.md)
-- [APIs](../apis/README.md)
-- [LLM Application Development](../llm-application-development/README.md)
+## Python Examples
+
+```python
+# Prefer small, typed helpers around the library you are learning
+from typing import Any
+
+def preview(obj: Any, n: int = 5) -> Any:
+    """Safe peek for arrays/frames/lists during exploration."""
+    if hasattr(obj, "head"):
+        return obj.head(n)
+    if hasattr(obj, "shape"):
+        return {"shape": tuple(obj.shape), "dtype": getattr(obj, "dtype", None)}
+    if isinstance(obj, (list, tuple)):
+        return obj[:n]
+    return obj
+
+```
+
+Adapt the snippet to the library or model discussed in this lesson; keep experiments scriptable.
+
+---
+
+## Practice Exercises
+
+1. Re-implement the core idea in <50 lines and test on 3 examples.
+2. Break it on purpose (bad split, wrong hyperparameter) and observe the symptom.
+3. Write a 5-bullet model/method card: intent, data, metric, limits, next experiment.
+
+---
+
+## Evaluation
+
+| Layer | What to check |
+|-------|----------------|
+| Correctness | Unit tests / toy examples |
+| Holdout quality | Primary metric + slices |
+| Robustness | Noisy inputs, distribution shift |
+| Ops | Latency, memory, cost envelopes |
+
+---
+
+## Production Considerations
+
+- Version code + artifacts + configs together.
+- Monitor drift and quality regressions.
+- Feature-flag risky changes; keep rollback pins.
+- Document expected failure behavior for callers.
+
+## Performance & Cost
+
+- Profile before micro-optimizing.
+- Cache stable intermediates when safe.
+- Prefer cheaper methods when utility is flat.
+
+---
+
+## Common Failure Modes
+
+- Leakage and optimistic offline scores.
+- Metric mismatch with product goals.
+- Train/serve skew in preprocessing.
+- Ignoring rare but costly error slices.
+
+---
+
+## Best Practices
+
+1. Baseline → diagnose → complicate.
+2. Keep tiny fixtures for transforms/tokenizers.
+3. Record assumptions in a short method card.
+4. Prefer diagnostics you can explain (confusion matrix, residual plots, traces).
+5. Re-eval when data or dependencies change.
+
+---
+
+## Common Mistakes
+
+- Memorizing APIs without the task contract.
+- Tuning on the test set.
+- One lucky seed as “proof”.
+- Shipping without monitoring hooks.
+
+---
+
+## Interview Preparation
+
+**Q: Explain web frameworks for ai apis to a senior engineer in two minutes.**
+
+A: Definition → when to use → core mechanism → metric → main failure mode → production knob.
+
+**Q: How do you validate an implementation?**
+
+A: Toy cases, holdout metric, slice checks, and a reproduction command with pinned versions.
+
+**Q: What breaks in production first?**
+
+A: Usually data/schema drift or train/serve preprocessing skew — not the math itself.
+
+---
+
+## Navigation
+
+- **Topic hub:** [README](README.md)

@@ -1,5 +1,7 @@
 # Python Frameworks & Libraries
 
+> Lessons deepened 2026-08-12.
+
 > The practical Python stack for AI engineering — **NumPy**, **Pandas**, **Matplotlib**, **FastAPI**, and **Pydantic** — with definitions, key classes/functions, uses, and code.
 
 **Prerequisites:** [Python](../python-engineering/README.md)  

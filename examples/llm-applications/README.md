@@ -2,8 +2,20 @@
 
 > Production-ready Python examples for LLM API integration.
 
+## Quick start (offline mock API)
+
+```bash
+# terminal 1
+python examples/llm-applications/mini_chat_api/server.py
+# terminal 2
+python examples/llm-applications/mini_chat_api/client.py
+```
+
+No API keys. Stdlib HTTP chat endpoint with a mock LLM echo.
+
 | Example | Provider | Topic |
 |---------|----------|-------|
+| [mini_chat_api/](mini_chat_api/) | mock | Offline chat API (start here) |
 | [example-openai-chat.py](example-openai-chat.py) | OpenAI | Chat completions |
 | [example-openai-streaming.py](example-openai-streaming.py) | OpenAI | Token streaming |
 | [example-structured-output.py](example-structured-output.py) | OpenAI | JSON / Pydantic |

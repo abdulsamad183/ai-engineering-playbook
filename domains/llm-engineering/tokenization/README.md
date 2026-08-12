@@ -1,20 +1,23 @@
 # Tokenization
 
-> Turning text into IDs — BPE/WordPiece/SentencePiece and special tokens.
+> Deep lessons for **Tokenization** in the Large Language Models handbook.
 
-**Parent:** [Large Language Models](../README.md)
+## Lessons
 
----
+| # | Lesson |
+|---|--------|
+| 1 | [Tokenization](01-tokenization.md) |
+| 2 | [Subword Tokenization](02-subword-tokenization.md) |
+| 3 | [BPE](03-bpe.md) |
+| 4 | [WordPiece](04-wordpiece.md) |
+| 5 | [SentencePiece](05-sentencepiece.md) |
+| 6 | [Token Vocabulary](06-token-vocabulary.md) |
+| 7 | [Special Tokens](07-special-tokens.md) |
+| 8 | [Token Embeddings](08-token-embeddings.md) |
 
-## Topics
+```mermaid
+flowchart LR
+  L1 --> L2 --> L3 --> L4 --> L5 --> L6 --> L7 --> L8
+```
 
-| # | Topic | Document |
-|---|-------|----------|
-| 1 | Tokenization | [01-tokenization.md](01-tokenization.md) |
-| 2 | Subword Tokenization | [02-subword-tokenization.md](02-subword-tokenization.md) |
-| 3 | BPE | [03-bpe.md](03-bpe.md) |
-| 4 | WordPiece | [04-wordpiece.md](04-wordpiece.md) |
-| 5 | SentencePiece | [05-sentencepiece.md](05-sentencepiece.md) |
-| 6 | Token Vocabulary | [06-token-vocabulary.md](06-token-vocabulary.md) |
-| 7 | Special Tokens | [07-special-tokens.md](07-special-tokens.md) |
-| 8 | Token Embeddings | [08-token-embeddings.md](08-token-embeddings.md) |
+**Topic hub:** [../README.md](../README.md)

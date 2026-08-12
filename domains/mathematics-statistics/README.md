@@ -5,7 +5,7 @@
 **Prerequisites:** None (start here if rusty)  
 **Unlocks:** [Machine Learning](../machine-learning/README.md) · [Deep Learning](../deep-learning/README.md) · [Embeddings & Vector Databases](../embeddings-vector-databases/README.md)
 
-Start with a section hub below (or expand **3. Mathematics & Statistics** in the left sidebar). Each topic page has definitions, key ideas, diagrams, and commented NumPy examples.
+Lessons deepened 2026-08-12. Start with a section hub below (or expand **3. Mathematics & Statistics** in the left sidebar). Each topic page has definitions, key ideas, diagrams, and commented NumPy examples.
 
 ---
 

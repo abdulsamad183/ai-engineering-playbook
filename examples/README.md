@@ -4,6 +4,17 @@
 
 ---
 
+## Start here (offline, no API keys)
+
+| Demo | Command |
+|------|---------|
+| Mini RAG | `python examples/rag/mini_rag/run.py` |
+| Mini ReAct agent | `python examples/agents/mini_react/run.py` |
+| Mini chat API | `python examples/llm-applications/mini_chat_api/server.py` then `client.py` |
+| Mini GenAI sampling | `python examples/generative-ai/mini_sample.py` |
+
+Then follow the [Capstone Walkthrough](../meta/capstone-walkthrough.md) for an end-to-end RAG Chat API.
+
 ## Organization
 
 Examples are organized by **technology or pattern**, not by domain. Each example directory is self-contained with its own README, dependencies, and instructions.
@@ -15,14 +26,14 @@ examples/
 ├── docker/              # Docker and containerization
 ├── sql/                 # SQL queries and patterns
 ├── redis/               # Redis caching patterns
-├── llm-applications/    # LLM integration examples
+├── llm-applications/    # LLM integration examples (+ mini_chat_api)
+├── generative-ai/       # Tiny generative demos
 ├── prompt-engineering/  # Prompt patterns and pipelines
 ├── context-engineering/ # Context assembly and memory
-├── rag/                 # RAG pipeline examples
-├── agents/              # AI agent patterns
+├── rag/                 # RAG pipeline examples (+ mini_rag)
+├── agents/              # AI agent patterns (+ mini_react)
 ├── langgraph/           # LangGraph workflow examples
 ├── mcp/                 # MCP server and client examples
-├── agents/              # AI agent examples
 ├── ai-evaluation/       # Evaluation framework examples
 ├── production-ai/       # Docker, CI/CD, observability
 └── deployment/          # Deployment configuration examples

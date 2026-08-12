@@ -5,7 +5,7 @@
 **Prerequisites:** [Deep Learning](../deep-learning/README.md) · [Transformers](../transformers/README.md) · [Natural Language Processing](../natural-language-processing/README.md)  
 **Unlocks:** [Prompt Engineering](../prompt-engineering/README.md) · [RAG](../rag/README.md) · [LLM Fine-Tuning](../llm-fine-tuning/README.md) · [AI Agents](../ai-agents/README.md)
 
-Start with a section hub below (or expand **8. Large Language Models** in the left sidebar).
+Lessons deepened 2026-08-12. Start with a section hub below (or expand **8. Large Language Models** in the left sidebar).
 
 ---
 

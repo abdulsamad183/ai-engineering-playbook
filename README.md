@@ -6,6 +6,21 @@ Click any topic to open its handbook. Each hub includes definitions, a learning 
 
 ---
 
+## Start here
+
+New to the playbook? Follow this path, then build:
+
+| Step | Do this |
+|------|---------|
+| 1 | Foundations: [Python](domains/python-engineering/README.md) → [Frameworks](domains/python-frameworks-libraries/README.md) → [Math & Stats](domains/mathematics-statistics/README.md) |
+| 2 | Models: [ML](domains/machine-learning/README.md) → [DL](domains/deep-learning/README.md) → [NLP](domains/natural-language-processing/README.md) → [Transformers](domains/transformers/README.md) → [LLMs](domains/llm-engineering/README.md) |
+| 3 | Build: [Prompt Engineering](domains/prompt-engineering/README.md) → [LLM App Dev](domains/llm-application-development/README.md) → [RAG](domains/rag/README.md) |
+| 4 | Run offline demos: [Examples quick start](examples/README.md) |
+| 5 | Capstone: [RAG Chat API walkthrough](meta/capstone-walkthrough.md) |
+| 6 | Harden: [Evaluation](domains/ai-evaluation/README.md) → [Deployment](domains/ai-deployment/README.md) → [Security](domains/ai-security-guardrails/README.md) |
+
+---
+
 ## Topics
 
 ```mermaid
@@ -51,13 +66,13 @@ flowchart TB
 | # | Topic | What you will learn |
 |---|-------|---------------------|
 | 1 | [Python](domains/python-engineering/README.md) | Production Python for AI — typing, async, structure |
-| 2 | [Python Frameworks & Libraries](domains/python-frameworks-libraries/README.md) | FastAPI, data/ML stack, LLM SDKs |
-| 3 | [Mathematics & Statistics](domains/mathematics-statistics/README.md) | Linear algebra, probability, eval stats |
+| 2 | [Python Frameworks & Libraries](domains/python-frameworks-libraries/README.md) | NumPy, Pandas, Matplotlib, FastAPI, Pydantic — deepened lessons |
+| 3 | [Mathematics & Statistics](domains/mathematics-statistics/README.md) | Linear algebra, probability, stats for ML — deepened lessons |
 | 4 | [Machine Learning](domains/machine-learning/README.md) | Classical ML — deepened lessons across basics, models, eval, ensembles |
 | 5 | [Deep Learning](domains/deep-learning/README.md) | Neural nets — deepened CNNs, sequences, training, deployment |
-| 6 | [Natural Language Processing](domains/natural-language-processing/README.md) | 10 sections · 64 topics — text → tasks → attention |
+| 6 | [Natural Language Processing](domains/natural-language-processing/README.md) | Text to tasks to attention — deepened NLP curriculum |
 | 7 | [Transformers](domains/transformers/README.md) | Attention to inference — deepened architecture, families, efficiency |
-| 8 | [Large Language Models (LLMs)](domains/llm-engineering/README.md) | 14 sections · 117 topics — pretrain → align → serve |
+| 8 | [Large Language Models (LLMs)](domains/llm-engineering/README.md) | Pretrain to serve — deepened thin LLM sections |
 | 9 | [Generative AI](domains/generative-ai/README.md) | Full deep lessons across 14 sections (GANs, VAEs, diffusion, multimodal, safety) |
 | 10 | [Prompt Engineering](domains/prompt-engineering/README.md) | 5 sections · 19 topics — craft → ops → production |
 | 11 | [LLM Application Development](domains/llm-application-development/README.md) | App architecture, orchestration, APIs, reliability — nested curriculum |

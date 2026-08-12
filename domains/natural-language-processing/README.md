@@ -5,7 +5,7 @@
 **Prerequisites:** [Deep Learning](../deep-learning/README.md) · [Machine Learning](../machine-learning/README.md)  
 **Unlocks:** [Transformers](../transformers/README.md) · [Embeddings & Vector Databases](../embeddings-vector-databases/README.md) · [Large Language Models](../llm-engineering/README.md)
 
-Start with a section hub below (or expand **6. Natural Language Processing** in the left sidebar).
+Lessons deepened 2026-08-12. Start with a section hub below (or expand **6. Natural Language Processing** in the left sidebar).
 
 ---
 

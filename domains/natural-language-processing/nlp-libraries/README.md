@@ -1,17 +1,20 @@
-# NLP Libraries & Frameworks
+# Nlp Libraries
 
-> Practical tooling — NLTK to Hugging Face.
+> Deep lessons for **Nlp Libraries** in the Natural Language Processing handbook.
 
-**Parent:** [Natural Language Processing](../README.md)
+## Lessons
 
----
+| # | Lesson |
+|---|--------|
+| 1 | [NLTK](01-nltk.md) |
+| 2 | [spaCy](02-spacy.md) |
+| 3 | [Hugging Face](03-hugging-face.md) |
+| 4 | [Gensim](04-gensim.md) |
+| 5 | [TextBlob](05-textblob.md) |
 
-## Topics
+```mermaid
+flowchart LR
+  L1 --> L2 --> L3 --> L4 --> L5
+```
 
-| # | Topic | Document |
-|---|-------|----------|
-| 1 | NLTK | [01-nltk.md](01-nltk.md) |
-| 2 | spaCy | [02-spacy.md](02-spacy.md) |
-| 3 | Hugging Face | [03-hugging-face.md](03-hugging-face.md) |
-| 4 | Gensim | [04-gensim.md](04-gensim.md) |
-| 5 | TextBlob | [05-textblob.md](05-textblob.md) |
+**Topic hub:** [../README.md](../README.md)

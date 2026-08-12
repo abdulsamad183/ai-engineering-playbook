@@ -5,8 +5,8 @@ domain: foundations
 tags: [capstone, tutorial, rag, fastapi, walkthrough, getting-started]
 status: published
 created: 2026-07-13
-updated: 2026-07-13
-version: "1.0"
+updated: 2026-08-12
+version: "1.1"
 related:
   - ../domains/rag/README.md
   - ../domains/fastapi/README.md
@@ -22,6 +22,16 @@ author: hp
 # Capstone Walkthrough: RAG Chat API
 
 > Build a production-shaped **document Q&A API** in one session — ingest docs, retrieve with citations, expose a FastAPI endpoint, evaluate quality, containerize, and gate CI.
+
+
+
+## Learning path (before you start)
+
+1. Skim [Start here](../README.md#start-here) on the home page.
+2. Run offline demos: [Examples quick start](../examples/README.md).
+3. Read [RAG hub](../domains/rag/README.md) Sections 1–2.
+4. Complete this walkthrough end-to-end.
+5. Harden with [Evaluation](../domains/ai-evaluation/README.md) and [Deployment](../domains/ai-deployment/README.md).
 
 This walkthrough stitches together handbooks you already have. It does **not** introduce new frameworks — it composes existing [templates](../templates/README.md) into one coherent system.
 
@@ -473,4 +483,5 @@ You completed the capstone. Deepen by module:
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 1.1 | 2026-08-12 | Learning path + link fixes + examples quick start |
 | 1.0 | 2026-07-13 | Initial capstone walkthrough |

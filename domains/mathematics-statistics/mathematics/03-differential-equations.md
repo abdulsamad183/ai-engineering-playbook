@@ -1,81 +1,212 @@
 ---
-title: "3. Differential Equations"
+title: "Differential Equations"
 description: "Equations involving derivatives — dynamics, continuous-time models, and intuition for change."
 domain: mathematics-statistics
-tags: [mathematics, differential-equations]
+tags: [mathematics, mathematics-statistics]
 status: published
 created: 2026-08-11
-updated: 2026-08-11
-version: "1.0"
+updated: 2026-08-12
+version: "2.0"
+related:
+  - ../README.md
+  - ../../python-engineering/README.md
+  - ../../machine-learning/README.md
+  - ../../deep-learning/README.md
 ---
 
-# 3. Differential Equations
+# Differential Equations
 
 > Equations involving derivatives — dynamics, continuous-time models, and intuition for change.
 
-## Definition
+## Table of Contents
 
-A **differential equation (DE)** relates a function to its derivatives. **ODEs** involve one independent variable (often time); **PDEs** involve several.
-
-## Types
-
-| Type | Meaning |
-|------|---------|
-| ODE | Ordinary — one independent variable |
-| PDE | Partial — multiple independents |
-| Linear vs nonlinear | Superposition holds or not |
-| Initial value problem | State at t0 given |
-
-## Why AI engineers care
-
-- Continuous-time views of optimization / residual nets  
-- Diffusion models connect to SDEs/PDEs conceptually  
-- Physics-informed ML and dynamical systems  
-
-## Simple ODE intuition
-
-```text
-dx/dt = -k x   →  exponential decay toward 0
-```
-
-## Code (Euler method sketch)
-
-```python
-import numpy as np
-
-def euler(f, x0, t0, t1, n):
-    t = np.linspace(t0, t1, n)
-    x = np.zeros(n)
-    x[0] = x0
-    dt = t[1] - t[0]
-    for i in range(n - 1):
-        x[i + 1] = x[i] + dt * f(t[i], x[i])
-    return t, x
-
-# dx/dt = -x
-t, x = euler(lambda t, x: -x, x0=1.0, t0=0.0, t1=5.0, n=50)
-print(t[:3], x[:3])
-```
-
-## Uses
-
-- Modeling growth/decay of quantities  
-- Background for score-based generative models  
-- Control / RL continuous dynamics  
-
-## Common mistakes
-
-- Numerical instability with too-large step sizes  
-- Overfitting DE jargon when discrete SGD view is enough  
-
-## See also
-
-- [6. Optimization](06-optimization.md) · [22. Optimization for ML](../ml-oriented/22-optimization-for-ml.md)
+- [Overview](#overview)
+- [Definition](#definition)
+- [Why It Matters](#why-it-matters)
+- [Uses](#uses)
+- [Core Ideas](#core-ideas)
+- [How It Works](#how-it-works)
+- [Worked Example](#worked-example)
+- [Python Examples](#python-examples)
+- [Practice Exercises](#practice-exercises)
+- [Evaluation](#evaluation)
+- [Production Considerations](#production-considerations)
+- [Performance & Cost](#performance--cost)
+- [Common Failure Modes](#common-failure-modes)
+- [Best Practices](#best-practices)
+- [Common Mistakes](#common-mistakes)
+- [Interview Preparation](#interview-preparation)
+- [Navigation](#navigation)
 
 ---
 
-## Continue
+## Overview
 
-- **Section hub:** [Mathematics](README.md)
-- **Math & Stats overview:** [Mathematics & Statistics](../README.md)
-- Next topic: use the numbered list on the hub
+This lesson belongs to **Mathematics** in the **Mathematics & Statistics** handbook. Goal: understand **Differential Equations** well enough to implement, measure, and explain it in a design review.
+
+**Typical workflow:** definition → intuition → formula → ML/DL connection.
+
+---
+
+## Definition
+
+**Differential Equations** — Equations involving derivatives — dynamics, continuous-time models, and intuition for change.
+
+Be able to state inputs, outputs, assumptions, and the metric that proves success.
+
+---
+
+## Why It Matters
+
+Skipping differential equations creates fragile systems: wrong preprocessing, silent metric lies, or APIs used without understanding failure modes. This topic is foundational for later LLM/RAG/agent work.
+
+---
+
+## Uses
+
+| Use case | How this applies |
+|----------|------------------|
+| Learning path | Build intuition before heavier models |
+| Baseline | Ship a correct simple version first |
+| Production | Meet quality/latency with known knobs |
+| Debugging | Separate data vs model vs eval bugs |
+
+---
+
+## Core Ideas
+
+1. Write the task contract before choosing tools.
+2. Prefer simple baselines; add complexity only for measured gains.
+3. Keep train/eval protocols leakage-free.
+4. Log seeds, versions, and metrics for reproducibility.
+5. Optimize the metric that matches real error cost.
+
+---
+
+## How It Works
+
+```mermaid
+flowchart LR
+  Concept --> Formula --> Intuition --> MLUse
+```
+
+Connect each node to code you own: data, transform/model, evaluation, and serving/config.
+
+---
+
+## Worked Example
+
+**Scenario:** Apply **Differential Equations** on a small real dataset or API workload.
+
+1. Define success metric and constraints (latency, memory, interpretability).
+2. Implement the minimal version end-to-end.
+3. Measure on a held-out set / golden prompts.
+4. Error-analyze failures; fix data/config before model hopping.
+5. Document limits and rollback.
+
+**Exit criteria:** metric on holdout ≥ target, and behavior under failure is explicit.
+
+---
+
+## Python Examples
+
+```python
+import math
+
+def softmax(xs: list[float]) -> list[float]:
+    m = max(xs)
+    exps = [math.exp(x - m) for x in xs]
+    s = sum(exps) or 1.0
+    return [e / s for e in exps]
+
+def mean(xs: list[float]) -> float:
+    return sum(xs) / max(1, len(xs))
+
+```
+
+Adapt the snippet to the library or model discussed in this lesson; keep experiments scriptable.
+
+---
+
+## Practice Exercises
+
+1. Re-implement the core idea in <50 lines and test on 3 examples.
+2. Break it on purpose (bad split, wrong hyperparameter) and observe the symptom.
+3. Write a 5-bullet model/method card: intent, data, metric, limits, next experiment.
+
+---
+
+## Evaluation
+
+| Layer | What to check |
+|-------|----------------|
+| Correctness | Unit tests / toy examples |
+| Holdout quality | Primary metric + slices |
+| Robustness | Noisy inputs, distribution shift |
+| Ops | Latency, memory, cost envelopes |
+
+---
+
+## Production Considerations
+
+- Version code + artifacts + configs together.
+- Monitor drift and quality regressions.
+- Feature-flag risky changes; keep rollback pins.
+- Document expected failure behavior for callers.
+
+## Performance & Cost
+
+- Profile before micro-optimizing.
+- Cache stable intermediates when safe.
+- Prefer cheaper methods when utility is flat.
+
+---
+
+## Common Failure Modes
+
+- Leakage and optimistic offline scores.
+- Metric mismatch with product goals.
+- Train/serve skew in preprocessing.
+- Ignoring rare but costly error slices.
+
+---
+
+## Best Practices
+
+1. Baseline → diagnose → complicate.
+2. Keep tiny fixtures for transforms/tokenizers.
+3. Record assumptions in a short method card.
+4. Prefer diagnostics you can explain (confusion matrix, residual plots, traces).
+5. Re-eval when data or dependencies change.
+
+---
+
+## Common Mistakes
+
+- Memorizing APIs without the task contract.
+- Tuning on the test set.
+- One lucky seed as “proof”.
+- Shipping without monitoring hooks.
+
+---
+
+## Interview Preparation
+
+**Q: Explain differential equations to a senior engineer in two minutes.**
+
+A: Definition → when to use → core mechanism → metric → main failure mode → production knob.
+
+**Q: How do you validate an implementation?**
+
+A: Toy cases, holdout metric, slice checks, and a reproduction command with pinned versions.
+
+**Q: What breaks in production first?**
+
+A: Usually data/schema drift or train/serve preprocessing skew — not the math itself.
+
+---
+
+## Navigation
+
+- **Section hub:** [README](README.md)
+- **Topic hub:** [../README.md](../README.md)

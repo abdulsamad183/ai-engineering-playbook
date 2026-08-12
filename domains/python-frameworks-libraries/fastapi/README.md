@@ -1,58 +1,24 @@
-# FastAPI
+# Fastapi
 
-> Modern async Python web framework for high-performance AI APIs — routes, validation, DI, and OpenAPI.
+> Deep lessons for **Fastapi** in the Python Frameworks & Libraries handbook.
 
-**Prerequisites:** [Python](../../python-engineering/README.md) · [Pydantic](../pydantic/README.md)  
-**Part of:** [Python Frameworks & Libraries](../README.md)  
-**Deeper domain:** [domains/fastapi](../../fastapi/README.md)
+## Lessons
 
----
-
-## Definition
-
-**FastAPI** is a web framework built on **Starlette** (ASGI) and **Pydantic** (validation). It gives you typed request/response models, automatic OpenAPI docs, dependency injection, and first-class `async` support — ideal for LLM/RAG/agent HTTP services.
-
----
-
-## When to use FastAPI
-
-| Use | Example |
-|-----|---------|
-| Chat/completions API | `POST /v1/chat` |
-| RAG query endpoint | retrieve → generate |
-| Streaming tokens | SSE responses |
-| Tool webhooks | agent callbacks |
-
----
-
-## Learning path
+| # | Lesson |
+|---|--------|
+| 1 | [FastAPI: App, Router & Routes](01-app-routes.md) |
+| 2 | [FastAPI: Path, Query & Body Parameters](02-path-query-body.md) |
+| 3 | [FastAPI: Request & Response Models](03-request-response-models.md) |
+| 4 | [FastAPI: Dependency Injection](04-dependency-injection.md) |
+| 5 | [FastAPI: Status Codes & Errors](05-status-errors.md) |
+| 6 | [FastAPI: Async Endpoints](06-async-endpoints.md) |
+| 7 | [FastAPI: Streaming Responses](07-streaming.md) |
+| 8 | [FastAPI: Middleware & CORS](08-middleware-cors.md) |
+| 9 | [FastAPI: Important APIs Cheat Sheet](09-important-apis.md) |
 
 ```mermaid
 flowchart LR
-  A[App & routes] --> B[Params & body]
-  B --> C[Models & responses]
-  C --> D[Dependencies]
-  D --> E[Async & streaming]
+  L1 --> L2 --> L3 --> L4 --> L5 --> L6 --> L7 --> L8
 ```
 
----
-
-## Topics
-
-| # | Topic | Document |
-|---|-------|----------|
-| 1 | App, router & routes | [01-app-routes.md](01-app-routes.md) |
-| 2 | Path, query & body parameters | [02-path-query-body.md](02-path-query-body.md) |
-| 3 | Request/response models | [03-request-response-models.md](03-request-response-models.md) |
-| 4 | Dependency injection | [04-dependency-injection.md](04-dependency-injection.md) |
-| 5 | Status codes & errors | [05-status-errors.md](05-status-errors.md) |
-| 6 | Async endpoints | [06-async-endpoints.md](06-async-endpoints.md) |
-| 7 | Streaming responses | [07-streaming.md](07-streaming.md) |
-| 8 | Middleware & CORS | [08-middleware-cors.md](08-middleware-cors.md) |
-| 9 | Important APIs cheat sheet | [09-important-apis.md](09-important-apis.md) |
-
----
-
-## Related
-
-- [Pydantic](../pydantic/README.md) · [FastAPI domain](../../fastapi/README.md) · [LLM Application Development](../../llm-application-development/README.md)
+**Topic hub:** [../README.md](../README.md)

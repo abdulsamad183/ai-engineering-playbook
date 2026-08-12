@@ -1,17 +1,20 @@
-# NLP Basics
+# Nlp Basics
 
-> Foundations — what NLP is, how text is represented, and clean data habits.
+> Deep lessons for **Nlp Basics** in the Natural Language Processing handbook.
 
-**Parent:** [Natural Language Processing](../README.md)
+## Lessons
 
----
+| # | Lesson |
+|---|--------|
+| 1 | [Introduction to NLP](01-introduction-to-nlp.md) |
+| 2 | [Text Representation](02-text-representation.md) |
+| 3 | [Text Preprocessing](03-text-preprocessing.md) |
+| 4 | [Text Normalization](04-text-normalization.md) |
+| 5 | [Corpus & Datasets](05-corpus-and-datasets.md) |
 
-## Topics
+```mermaid
+flowchart LR
+  L1 --> L2 --> L3 --> L4 --> L5
+```
 
-| # | Topic | Document |
-|---|-------|----------|
-| 1 | Introduction to NLP | [01-introduction-to-nlp.md](01-introduction-to-nlp.md) |
-| 2 | Text Representation | [02-text-representation.md](02-text-representation.md) |
-| 3 | Text Preprocessing | [03-text-preprocessing.md](03-text-preprocessing.md) |
-| 4 | Text Normalization | [04-text-normalization.md](04-text-normalization.md) |
-| 5 | Corpus & Datasets | [05-corpus-and-datasets.md](05-corpus-and-datasets.md) |
+**Topic hub:** [../README.md](../README.md)

@@ -1,43 +1,22 @@
 # Pydantic
 
-> Data validation and settings powered by type hints — the schema layer for FastAPI and AI app boundaries.
+> Deep lessons for **Pydantic** in the Python Frameworks & Libraries handbook.
 
-**Prerequisites:** [Python type hints](../../python-engineering/topics/27-type-hints.md)  
-**Part of:** [Python Frameworks & Libraries](../README.md)
+## Lessons
 
----
+| # | Lesson |
+|---|--------|
+| 1 | [Pydantic: BaseModel Basics](01-basemodel-basics.md) |
+| 2 | [Pydantic: Fields & Constraints](02-fields-constraints.md) |
+| 3 | [Pydantic: Nested Models & Collections](03-nested-collections.md) |
+| 4 | [Pydantic: Validators](04-validators.md) |
+| 5 | [Pydantic: Serialization](05-serialization.md) |
+| 6 | [Pydantic: Settings Management](06-settings.md) |
+| 7 | [Pydantic: Important APIs Cheat Sheet](07-important-apis.md) |
 
-## Definition
+```mermaid
+flowchart LR
+  L1 --> L2 --> L3 --> L4 --> L5 --> L6 --> L7
+```
 
-**Pydantic** validates and parses data into typed Python objects using annotations. `BaseModel` defines schemas; invalid input raises clear errors. FastAPI uses Pydantic for request/response models. v2 is the current major line (`pydantic` 2.x).
-
----
-
-## When to use Pydantic
-
-| Use | Example |
-|-----|---------|
-| API schemas | ChatRequest / ChatResponse |
-| Config | env-based Settings |
-| Tool args | agent tool payloads |
-| Structured LLM output | parse JSON → model |
-
----
-
-## Topics
-
-| # | Topic | Document |
-|---|-------|----------|
-| 1 | BaseModel basics | [01-basemodel-basics.md](01-basemodel-basics.md) |
-| 2 | Fields & constraints | [02-fields-constraints.md](02-fields-constraints.md) |
-| 3 | Nested models & collections | [03-nested-collections.md](03-nested-collections.md) |
-| 4 | Validators | [04-validators.md](04-validators.md) |
-| 5 | Serialization | [05-serialization.md](05-serialization.md) |
-| 6 | Settings management | [06-settings.md](06-settings.md) |
-| 7 | Important APIs cheat sheet | [07-important-apis.md](07-important-apis.md) |
-
----
-
-## Related
-
-- [FastAPI](../fastapi/README.md) · [Type Hints](../../python-engineering/topics/27-type-hints.md)
+**Topic hub:** [../README.md](../README.md)

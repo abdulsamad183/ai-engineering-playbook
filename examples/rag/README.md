@@ -2,8 +2,17 @@
 
 > Production-oriented RAG patterns. See [RAG](../../domains/rag/README.md).
 
+## Quick start (offline)
+
+```bash
+python examples/rag/mini_rag/run.py
+```
+
+No API keys. Retrieves over a tiny in-memory bag-of-words index and returns cited answers.
+
 | Example | Topic |
 |---------|-------|
+| [mini_rag/run.py](mini_rag/run.py) | Offline mini RAG (start here) |
 | [example-complete-rag-pipeline.py](example-complete-rag-pipeline.py) | End-to-end reference |
 | [example-pdf-ingestion.py](example-pdf-ingestion.py) | PDF parsing |
 | [example-codebase-indexing.py](example-codebase-indexing.py) | Repo indexing |

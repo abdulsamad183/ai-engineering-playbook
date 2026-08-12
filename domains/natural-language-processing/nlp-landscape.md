@@ -2,55 +2,211 @@
 title: "NLP Landscape"
 description: "From rules and features to pretrained transformers — where NLP sits in AI engineering."
 domain: natural-language-processing
-tags: [natural-language-processing]
+tags: [overview, natural-language-processing]
 status: published
 created: 2026-08-11
-updated: 2026-08-11
-version: "1.0"
+updated: 2026-08-12
+version: "2.0"
+related:
+  - README.md
+  - ../../mathematics-statistics/README.md
+  - ../../machine-learning/README.md
+  - ../../transformers/README.md
 ---
 
 # NLP Landscape
 
 > From rules and features to pretrained transformers — where NLP sits in AI engineering.
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Definition](#definition)
+- [Why It Matters](#why-it-matters)
+- [Uses](#uses)
+- [Core Ideas](#core-ideas)
+- [How It Works](#how-it-works)
+- [Worked Example](#worked-example)
+- [Python Examples](#python-examples)
+- [Practice Exercises](#practice-exercises)
+- [Evaluation](#evaluation)
+- [Production Considerations](#production-considerations)
+- [Performance & Cost](#performance--cost)
+- [Common Failure Modes](#common-failure-modes)
+- [Best Practices](#best-practices)
+- [Common Mistakes](#common-mistakes)
+- [Interview Preparation](#interview-preparation)
+- [Navigation](#navigation)
+
+---
+
+## Overview
+
+This lesson belongs to **Overview** in the **Natural Language Processing** handbook. Goal: understand **NLP Landscape** well enough to implement, measure, and explain it in a design review.
+
+**Typical workflow:** text → preprocess → features/embeddings → model → task metric.
+
+---
+
 ## Definition
 
-NLP evolved from rule-based systems → statistical feature ML → deep pretrained models. Today, many tasks are framed as generation or embedding similarity on top of foundation models.
+**NLP Landscape** — From rules and features to pretrained transformers — where NLP sits in AI engineering.
 
-## Why it matters
+Be able to state inputs, outputs, assumptions, and the metric that proves success.
 
-AI engineers still need NLP literacy: tokenization quirks, evaluation metrics (BLEU/ROUGE/F1), and when a small classifier beats an LLM.
+---
 
-## How it works
+## Why It Matters
+
+Skipping nlp landscape creates fragile systems: wrong preprocessing, silent metric lies, or APIs used without understanding failure modes. This topic is foundational for later LLM/RAG/agent work.
+
+---
+
+## Uses
+
+| Use case | How this applies |
+|----------|------------------|
+| Learning path | Build intuition before heavier models |
+| Baseline | Ship a correct simple version first |
+| Production | Meet quality/latency with known knobs |
+| Debugging | Separate data vs model vs eval bugs |
+
+---
+
+## Core Ideas
+
+1. Write the task contract before choosing tools.
+2. Prefer simple baselines; add complexity only for measured gains.
+3. Keep train/eval protocols leakage-free.
+4. Log seeds, versions, and metrics for reproducibility.
+5. Optimize the metric that matches real error cost.
+
+---
+
+## How It Works
 
 ```mermaid
 flowchart LR
-  Rules[Rules] --> Stats[Statistical NLP]
-  Stats --> Emb[Word embeddings]
-  Emb --> PT[Pretrained transformers]
-  PT --> LLMs[LLMs & apps]
+  Text --> Preprocess --> Represent --> Model --> Task
 ```
 
-## Key principles
+Connect each node to code you own: data, transform/model, evaluation, and serving/config.
 
-1. **Right-size the model** — Not every text task needs a giant LLM.
-2. **Mind evaluation** — Fluency ≠ correctness.
-3. **Language is ambiguous** — Design for clarification and abstention.
+---
 
-## Common applications
+## Worked Example
 
-| Application | Description |
-|-------------|-------------|
-| Search & retrieval | Query understanding |
-| Moderation | Toxicity / PII |
-| Assistants | QA and summarization |
+**Scenario:** Apply **NLP Landscape** on a small real dataset or API workload.
 
-## Common mistakes
+1. Define success metric and constraints (latency, memory, interpretability).
+2. Implement the minimal version end-to-end.
+3. Measure on a held-out set / golden prompts.
+4. Error-analyze failures; fix data/config before model hopping.
+5. Document limits and rollback.
 
-- Using LLMs for high-throughput cheap classification without cost analysis
-- Ignoring multilingual/tokenization edge cases
+**Exit criteria:** metric on holdout ≥ target, and behavior under failure is explicit.
 
-## Further reading
+---
 
-- [Core NLP tasks](core-nlp-tasks.md)
-- [LLMs](../llm-engineering/README.md)
+## Python Examples
+
+```python
+def tokenize_whitespace(text: str) -> list[str]:
+    return [t for t in text.lower().split() if t]
+
+def bow(texts: list[str]) -> list[dict[str, int]]:
+    rows = []
+    for text in texts:
+        counts: dict[str, int] = {}
+        for tok in tokenize_whitespace(text):
+            counts[tok] = counts.get(tok, 0) + 1
+        rows.append(counts)
+    return rows
+
+```
+
+Adapt the snippet to the library or model discussed in this lesson; keep experiments scriptable.
+
+---
+
+## Practice Exercises
+
+1. Re-implement the core idea in <50 lines and test on 3 examples.
+2. Break it on purpose (bad split, wrong hyperparameter) and observe the symptom.
+3. Write a 5-bullet model/method card: intent, data, metric, limits, next experiment.
+
+---
+
+## Evaluation
+
+| Layer | What to check |
+|-------|----------------|
+| Correctness | Unit tests / toy examples |
+| Holdout quality | Primary metric + slices |
+| Robustness | Noisy inputs, distribution shift |
+| Ops | Latency, memory, cost envelopes |
+
+---
+
+## Production Considerations
+
+- Version code + artifacts + configs together.
+- Monitor drift and quality regressions.
+- Feature-flag risky changes; keep rollback pins.
+- Document expected failure behavior for callers.
+
+## Performance & Cost
+
+- Profile before micro-optimizing.
+- Cache stable intermediates when safe.
+- Prefer cheaper methods when utility is flat.
+
+---
+
+## Common Failure Modes
+
+- Leakage and optimistic offline scores.
+- Metric mismatch with product goals.
+- Train/serve skew in preprocessing.
+- Ignoring rare but costly error slices.
+
+---
+
+## Best Practices
+
+1. Baseline → diagnose → complicate.
+2. Keep tiny fixtures for transforms/tokenizers.
+3. Record assumptions in a short method card.
+4. Prefer diagnostics you can explain (confusion matrix, residual plots, traces).
+5. Re-eval when data or dependencies change.
+
+---
+
+## Common Mistakes
+
+- Memorizing APIs without the task contract.
+- Tuning on the test set.
+- One lucky seed as “proof”.
+- Shipping without monitoring hooks.
+
+---
+
+## Interview Preparation
+
+**Q: Explain nlp landscape to a senior engineer in two minutes.**
+
+A: Definition → when to use → core mechanism → metric → main failure mode → production knob.
+
+**Q: How do you validate an implementation?**
+
+A: Toy cases, holdout metric, slice checks, and a reproduction command with pinned versions.
+
+**Q: What breaks in production first?**
+
+A: Usually data/schema drift or train/serve preprocessing skew — not the math itself.
+
+---
+
+## Navigation
+
+- **Topic hub:** [README](README.md)
