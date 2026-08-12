@@ -506,7 +506,7 @@ Pin digests in production — unexpected pulls change behavior.
 ## See Also
 
 - [Configuration and Secrets](../../foundations/configuration-and-secrets.md)
-- [Docker deployment patterns](../../domains/docker/README.md)
+- [Docker deployment patterns](../../docker/README.md)
 
 ## Changelog
 
