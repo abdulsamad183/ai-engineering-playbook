@@ -2,118 +2,191 @@
 title: "Real-World MCP Architectures"
 description: "Production architectures — coding assistant, enterprise KB, research agent, multi-agent, internal tools, ops."
 domain: mcp
-tags: [mcp, architecture, case-study, production]
+tags: [production, mcp]
 status: published
-created: 2026-07-13
-updated: 2026-07-13
-version: "1.0"
+created: 2026-08-11
+updated: 2026-08-12
+version: "2.0"
 related:
-  - multi-server-mcp.md
-  - ../../ai-agents/agent-case-studies.md
-keywords: [MCP architecture, case study, enterprise]
-author: hp
+  - ../README.md
+  - ../../ai-agents/README.md
+  - ../../llm-application-development/README.md
+  - ../../ai-security-guardrails/README.md
 ---
 
 # Real-World MCP Architectures
 
-## Overview
+> Production architectures — coding assistant, enterprise KB, research agent, multi-agent, internal tools, ops.
 
-Section **20** — six production architecture patterns.
+## Table of Contents
+
+- [Overview](#overview)
+- [Definition](#definition)
+- [Why It Matters](#why-it-matters)
+- [Uses](#uses)
+- [Core Ideas](#core-ideas)
+- [How It Works](#how-it-works)
+- [Worked Example](#worked-example)
+- [Python Examples](#python-examples)
+- [Evaluation](#evaluation)
+- [Production Considerations](#production-considerations)
+- [Performance & Cost](#performance--cost)
+- [Security Notes](#security-notes)
+- [Best Practices](#best-practices)
+- [Common Mistakes](#common-mistakes)
+- [Interview Preparation](#interview-preparation)
+- [Navigation](#navigation)
 
 ---
 
-## 1. AI Coding Assistant
+## Overview
+
+Part of **Production** in the **MCP** handbook. Treat **Real-World MCP Architectures** as an implementable engineering topic.
+
+**Typical workflow:** host → client → server → tools/resources/prompts.
+
+---
+
+## Definition
+
+**Real-World MCP Architectures** — Production architectures — coding assistant, enterprise KB, research agent, multi-agent, internal tools, ops.
+
+State inputs, outputs, success metrics, and failure behavior before changing production configs.
+
+---
+
+## Why It Matters
+
+Gaps here show up as hallucinations, silent quality drops, runaway cost, or unsafe tool use. Clear design and measurement keep AI features shippable.
+
+---
+
+## Uses
+
+| Use case | How this applies |
+|----------|------------------|
+| Product feature | User-facing capability with SLOs |
+| Internal platform | Shared retrieval/agent/eval primitives |
+| Incident response | Diagnose quality, latency, or safety regressions |
+| Design review | Make tradeoffs explicit |
+
+---
+
+## Core Ideas
+
+1. Separate orchestration from model calls.
+2. Measure offline before widening traffic.
+3. Bound loops, tokens, tools, and spend.
+4. Version prompts/indexes/models/policies together.
+5. Prefer cite/ground/approve over unconstrained generation when risk is high.
+
+---
+
+## How It Works
 
 ```mermaid
 flowchart LR
-    IDE[IDE Host] --> C[MCP Client]
-    C --> FS[Filesystem Server]
-    C --> GIT[Git Server]
-    C --> LINT[Linter Server]
-    FS & GIT & LINT --> REPO[Codebase]
+  Host --> Client --> Server --> Tools
 ```
 
-- **Transport:** STDIO subprocess per server
-- **Tools:** `read_file`, `search`, `run_tests`
-- **Resources:** `file://` URIs for open tabs
-- **Security:** Workspace root sandbox
+Assign owners to each stage (data, model, app, platform, safety). Most regressions are interface skew between stages.
 
 ---
 
-## 2. Enterprise Knowledge Platform
+## Worked Example
 
-```mermaid
-flowchart TB
-    AGENT[Support Agent] --> R[MCP Router]
-    R --> RAG[RAG Resource Server]
-    R --> CRM[CRM Tool Server]
-    R --> POL[Policy Prompt Server]
-    RAG --> VDB[(Vector DB)]
-    CRM --> SF[Salesforce API]
+**Scenario:** Apply **Real-World MCP Architectures** to a production-shaped slice of traffic.
+
+1. Write a one-page spec: inputs, outputs, SLO, safety policy, offline metrics.
+2. Implement the smallest correct path with logging and timeouts.
+3. Build a golden set (even 50–200 cases) and gate the change.
+4. Canary 1–5% traffic; watch quality, latency, cost, and abuse.
+5. Keep one-click rollback to the previous artifact bundle.
+
+---
+
+## Python Examples
+
+```python
+def tool_spec(name: str, description: str, schema: dict) -> dict:
+    return {"name": name, "description": description, "input_schema": schema}
+
 ```
 
-- **Resources:** chunked doc URIs with citations
-- **Prompts:** `escalation`, `refund_policy` templates
-- **Auth:** OAuth per user; CRM tools scoped
+Wrap provider SDKs behind interfaces so unit tests do not need live keys.
 
 ---
 
-## 3. AI Research Agent
+## Evaluation
 
-- **Servers:** web fetch (read-only), arXiv, notebook execution (sandboxed)
-- **Streaming:** long PDF summarization via progress notifications
-- **Pattern:** read resources → synthesize → cite URIs in output
+| Layer | Examples |
+|-------|----------|
+| Offline | Golden set, recall@k, task success, rubrics |
+| Online | Thumbs, redo rate, escalation, cost/request |
+| Safety | Injection, PII leak, tool-scope violations |
 
----
-
-## 4. Multi-Agent Platform
-
-- **Supervisor agent** holds MCP client pool
-- **Worker agents** receive delegated tool subsets
-- **Router** namespaces tools per agent role
-- See [Multi-Agent Systems](../../ai-agents/multi-agent-systems.md)
+Ship only when offline floors pass and canary metrics stay in budget.
 
 ---
 
-## 5. Internal Tool Platform
+## Production Considerations
 
-- Central registry of approved MCP servers
-- Golden schemas; CI validates tool contracts
-- Developers publish servers; platform team certifies
+- Structured logs with request ids (redact secrets/PII).
+- Feature flags for model/prompt/index swaps.
+- Explicit timeouts, retries with jitter, and circuit breakers.
+- Multi-tenant isolation for data and tools.
+
+## Performance & Cost
+
+- Track p50/p95 latency and $ per successful task.
+- Cache embeddings/retrieval when invalidation is clear.
+- Prefer smaller routers/classifiers in front of expensive generators.
+
+## Security Notes
+
+- Treat model output and tool args as untrusted until validated.
+- Scope tools tightly; require approval for high-impact actions.
+- Enforce authZ on retrieval filters and MCP/tool servers.
 
 ---
 
-## 6. AI Operations Dashboard
+## Best Practices
 
-- **Resources:** live metrics streams (`metrics://service/latency`)
-- **Tools:** `scale_replicas`, `rollback_deploy` (HITL gated)
-- **Observability:** every tool call → audit + trace
+1. Baseline → measure → complicate.
+2. Keep golden sets sacred (no training on them).
+3. Change one axis at a time (model **or** prompt **or** index).
+4. Document failure modes users will see.
+5. Practice rollback drills.
 
 ---
 
-## Comparison Table
+## Common Mistakes
 
-| Architecture | Servers | Transport | Critical concern |
-|--------------|---------|-----------|------------------|
-| Coding assistant | 3–5 local | STDIO | Filesystem sandbox |
-| Enterprise KB | 3+ remote | HTTP | Tenant ACL |
-| Research agent | 2–4 | Mixed | Untrusted content |
-| Multi-agent | N × M | HTTP | Tool namespace |
-| Internal platform | Catalog | HTTP | Schema CI |
-| Ops dashboard | 2 | HTTP | HITL on writes |
+- Demo prompts with no eval harness.
+- Unbounded agent/tool loops.
+- Missing citations for grounded answers.
+- Train/serve skew in chunking or auth filters.
+- Cost dashboards that ignore tool fan-out.
+
+---
 
 ## Interview Preparation
 
-**Whiteboard:** Design MCP for a bank — read-only market data resources, trade tools with dual approval, air-gapped STDIO for core banking, full audit.
+**Q: How do you explain real-world mcp architectures in a system design interview?**
 
-## Navigation
+A: Goal → components → data flow → metrics → failure modes → scale knobs → security.
 
-- [Comparison Guides](mcp-comparison-guides.md) · [Hub](README.md)
+**Q: What do you gate on before production?**
+
+A: Offline floors, canary online metrics, safety checks, and a tested rollback.
+
+**Q: What breaks first in production?**
+
+A: Usually retrieval/auth skew, prompt regressions, or cost blowups — not the happy-path demo.
 
 ---
 
-## Changelog
+## Navigation
 
-| Version | Date | Changes |
-|---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication |
+- **Section hub:** [README](README.md)
+- **Topic hub:** [../README.md](../README.md)

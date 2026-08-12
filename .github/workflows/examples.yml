@@ -29,20 +29,20 @@ jobs:
           python-version: "3.12"
 
       - name: Mini RAG
-        run: python examples/rag/mini_rag/run.py
+        run: python3 examples/rag/mini_rag/run.py
 
       - name: Mini ReAct agent
-        run: python examples/agents/mini_react/run.py
+        run: python3 examples/agents/mini_react/run.py
 
       - name: Mini GenAI sampler
-        run: python examples/generative-ai/mini_sample.py
+        run: python3 examples/generative-ai/mini_sample.py
 
       - name: Mini chat API
         run: |
-          python examples/llm-applications/mini_chat_api/server.py &
+          python3 examples/llm-applications/mini_chat_api/server.py &
           pid=$!
           for i in $(seq 1 30); do
-            if python examples/llm-applications/mini_chat_api/client.py; then
+            if python3 examples/llm-applications/mini_chat_api/client.py; then
               kill $pid || true
               exit 0
             fi
