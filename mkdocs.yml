@@ -727,7 +727,112 @@ nav:
         - "07 LLM Serving": domains/llm-engineering/llm-infrastructure/07-llm-serving.md
         - "08 Inference Servers": domains/llm-engineering/llm-infrastructure/08-inference-servers.md
         - "09 Model Deployment": domains/llm-engineering/llm-infrastructure/09-model-deployment.md
-    - "9. Generative AI": domains/generative-ai/README.md
+    - "9. Generative AI":
+      - Overview: domains/generative-ai/README.md
+      - Generative AI Fundamentals:
+        - Overview: domains/generative-ai/generative-ai-fundamentals/README.md
+        - "01 What is Generative AI": domains/generative-ai/generative-ai-fundamentals/01-what-is-generative-ai.md
+        - "02 Discriminative vs Generative": domains/generative-ai/generative-ai-fundamentals/02-discriminative-vs-generative.md
+        - "03 Modalities Overview": domains/generative-ai/generative-ai-fundamentals/03-modalities-overview.md
+        - "04 Conditioning & Control": domains/generative-ai/generative-ai-fundamentals/04-conditioning-and-control.md
+        - "05 Sampling & Latent Space": domains/generative-ai/generative-ai-fundamentals/05-sampling-and-latent-space.md
+        - "06 GenAI System Loop": domains/generative-ai/generative-ai-fundamentals/06-genai-system-loop.md
+      - Generative Models:
+        - Overview: domains/generative-ai/generative-models/README.md
+        - "01 Generative Modeling Basics": domains/generative-ai/generative-models/01-generative-modeling-basics.md
+        - "02 Likelihood-Based Models": domains/generative-ai/generative-models/02-likelihood-based-models.md
+        - "03 Implicit Generative Models": domains/generative-ai/generative-models/03-implicit-generative-models.md
+        - "04 Autoregressive Generators": domains/generative-ai/generative-models/04-autoregressive-generators.md
+        - "05 Energy & Score-Based Models": domains/generative-ai/generative-models/05-energy-and-score-based-models.md
+        - "06 Choosing a Generative Paradigm": domains/generative-ai/generative-models/06-choosing-a-generative-paradigm.md
+      - GANs:
+        - Overview: domains/generative-ai/gans/README.md
+        - "01 GAN Basics": domains/generative-ai/gans/01-gan-basics.md
+        - "02 Training Dynamics": domains/generative-ai/gans/02-training-dynamics.md
+        - "03 Mode Collapse": domains/generative-ai/gans/03-mode-collapse.md
+        - "04 DCGAN & StyleGAN": domains/generative-ai/gans/04-dcgan-and-stylegan.md
+        - "05 Conditional GANs": domains/generative-ai/gans/05-conditional-gans.md
+        - "06 GAN Evaluation": domains/generative-ai/gans/06-gan-evaluation.md
+      - VAEs:
+        - Overview: domains/generative-ai/vaes/README.md
+        - "01 VAE Basics": domains/generative-ai/vaes/01-vae-basics.md
+        - "02 Encoder, Decoder & Latents": domains/generative-ai/vaes/02-encoder-decoder-latents.md
+        - "03 ELBO & KL Regularization": domains/generative-ai/vaes/03-elbo-and-kl.md
+        - "04 β-VAE & Disentangling": domains/generative-ai/vaes/04-beta-vae-and-disentangling.md
+        - "05 VAE vs GAN vs Diffusion": domains/generative-ai/vaes/05-vae-vs-gan-vs-diffusion.md
+      - Diffusion Models:
+        - Overview: domains/generative-ai/diffusion-models/README.md
+        - "01 Diffusion Basics": domains/generative-ai/diffusion-models/01-diffusion-basics.md
+        - "02 Forward & Reverse Process": domains/generative-ai/diffusion-models/02-forward-and-reverse-process.md
+        - "03 Noise Schedules": domains/generative-ai/diffusion-models/03-noise-schedules.md
+        - "04 DDPM & DDIM": domains/generative-ai/diffusion-models/04-ddpm-and-ddim.md
+        - "05 Latent Diffusion": domains/generative-ai/diffusion-models/05-latent-diffusion.md
+        - "06 Conditioning & Guidance": domains/generative-ai/diffusion-models/06-conditioning-and-guidance.md
+        - "07 Sampling Speed Tricks": domains/generative-ai/diffusion-models/07-sampling-speed-tricks.md
+      - Text Generation:
+        - Overview: domains/generative-ai/text-generation/README.md
+        - "01 Text Generation Basics": domains/generative-ai/text-generation/01-text-generation-basics.md
+        - "02 LLM Generators": domains/generative-ai/text-generation/02-llm-generators.md
+        - "03 Decoding for Generation": domains/generative-ai/text-generation/03-decoding-for-generation.md
+        - "04 Controllable Text Generation": domains/generative-ai/text-generation/04-controllable-text-generation.md
+        - "05 Code & Structured Generation": domains/generative-ai/text-generation/05-code-and-structured-generation.md
+      - Image Generation:
+        - Overview: domains/generative-ai/image-generation/README.md
+        - "01 Image Generation Basics": domains/generative-ai/image-generation/01-image-generation-basics.md
+        - "02 Text-to-Image": domains/generative-ai/image-generation/02-text-to-image.md
+        - "03 Image Editing & Inpainting": domains/generative-ai/image-generation/03-image-editing-and-inpainting.md
+        - "04 Image Quality & Artifacts": domains/generative-ai/image-generation/04-image-quality-and-artifacts.md
+        - "05 Safety for Images": domains/generative-ai/image-generation/05-safety-for-images.md
+      - Video Generation:
+        - Overview: domains/generative-ai/video-generation/README.md
+        - "01 Video Generation Basics": domains/generative-ai/video-generation/01-video-generation-basics.md
+        - "02 Text-to-Video": domains/generative-ai/video-generation/02-text-to-video.md
+        - "03 Image-to-Video": domains/generative-ai/video-generation/03-image-to-video.md
+        - "04 Temporal Consistency": domains/generative-ai/video-generation/04-temporal-consistency.md
+        - "05 Video Eval & Cost": domains/generative-ai/video-generation/05-video-eval-and-cost.md
+      - Audio & Speech Generation:
+        - Overview: domains/generative-ai/audio-speech-generation/README.md
+        - "01 Audio Generation Basics": domains/generative-ai/audio-speech-generation/01-audio-generation-basics.md
+        - "02 Text-to-Speech": domains/generative-ai/audio-speech-generation/02-text-to-speech.md
+        - "03 Music & Sound Generation": domains/generative-ai/audio-speech-generation/03-music-and-sound-generation.md
+        - "04 Voice Cloning & Conversion": domains/generative-ai/audio-speech-generation/04-voice-cloning-and-conversion.md
+        - "05 Audio Evaluation": domains/generative-ai/audio-speech-generation/05-audio-evaluation.md
+      - Multimodal Generative AI:
+        - Overview: domains/generative-ai/multimodal-generative-ai/README.md
+        - "01 Multimodal Basics": domains/generative-ai/multimodal-generative-ai/01-multimodal-basics.md
+        - "02 Vision-Language Models": domains/generative-ai/multimodal-generative-ai/02-vision-language-models.md
+        - "03 Any-to-Any Generation": domains/generative-ai/multimodal-generative-ai/03-any-to-any-generation.md
+        - "04 Alignment Across Modalities": domains/generative-ai/multimodal-generative-ai/04-alignment-across-modalities.md
+        - "05 Multimodal Product Patterns": domains/generative-ai/multimodal-generative-ai/05-multimodal-product-patterns.md
+      - Generative AI Fine-Tuning:
+        - Overview: domains/generative-ai/generative-ai-fine-tuning/README.md
+        - "01 Why Fine-Tune Generators": domains/generative-ai/generative-ai-fine-tuning/01-why-finetune-generators.md
+        - "02 LoRA for Diffusion & LLMs": domains/generative-ai/generative-ai-fine-tuning/02-lora-for-diffusion-and-llms.md
+        - "03 DreamBooth & Personalization": domains/generative-ai/generative-ai-fine-tuning/03-dreambooth-and-personalization.md
+        - "04 Preference Tuning for GenAI": domains/generative-ai/generative-ai-fine-tuning/04-preference-tuning-for-genai.md
+        - "05 Dataset Curation for GenAI": domains/generative-ai/generative-ai-fine-tuning/05-dataset-curation-for-genai.md
+      - Generative AI Evaluation:
+        - Overview: domains/generative-ai/generative-ai-evaluation/README.md
+        - "01 Evaluation Challenges": domains/generative-ai/generative-ai-evaluation/01-evaluation-challenges.md
+        - "02 Automatic Metrics": domains/generative-ai/generative-ai-evaluation/02-automatic-metrics.md
+        - "03 Human Preference Eval": domains/generative-ai/generative-ai-evaluation/03-human-preference-eval.md
+        - "04 Faithfulness & Grounding": domains/generative-ai/generative-ai-evaluation/04-faithfulness-and-grounding.md
+        - "05 Online Evaluation": domains/generative-ai/generative-ai-evaluation/05-online-evaluation.md
+      - Generative AI Applications:
+        - Overview: domains/generative-ai/generative-ai-applications/README.md
+        - "01 Content & Media": domains/generative-ai/generative-ai-applications/01-content-and-media.md
+        - "02 Copilots & Assistants": domains/generative-ai/generative-ai-applications/02-copilots-and-assistants.md
+        - "03 Enterprise Knowledge Apps": domains/generative-ai/generative-ai-applications/03-enterprise-knowledge-apps.md
+        - "04 Synthetic Data": domains/generative-ai/generative-ai-applications/04-synthetic-data.md
+        - "05 Creative Tools": domains/generative-ai/generative-ai-applications/05-creative-tools.md
+      - Generative AI Safety:
+        - Overview: domains/generative-ai/generative-ai-safety/README.md
+        - "01 GenAI Risk Landscape": domains/generative-ai/generative-ai-safety/01-genai-risk-landscape.md
+        - "02 Deepfakes & Misinformation": domains/generative-ai/generative-ai-safety/02-deepfakes-and-misinformation.md
+        - "03 IP & Consent": domains/generative-ai/generative-ai-safety/03-ip-and-consent.md
+        - "04 Content Filters & Policies": domains/generative-ai/generative-ai-safety/04-content-filters-and-policies.md
+        - "05 Provenance & Watermarking": domains/generative-ai/generative-ai-safety/05-provenance-and-watermarking.md
+        - "06 Secure GenAI Apps": domains/generative-ai/generative-ai-safety/06-secure-genai-apps.md
     - "10. Prompt Engineering": domains/prompt-engineering/README.md
     - "11. LLM Application Development": domains/llm-application-development/README.md
     - "12. Chatbots": domains/chatbots/README.md
