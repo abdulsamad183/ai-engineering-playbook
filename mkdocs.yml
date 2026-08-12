@@ -39,6 +39,8 @@ theme:
   name: material
   custom_dir: overrides
   language: en
+  logo: assets/spider-doodle.svg
+  favicon: assets/spider-doodle.svg
   features:
     - navigation.tabs
     - navigation.tabs.sticky
@@ -55,20 +57,21 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: teal
-      accent: deep orange
+      primary: red
+      accent: blue
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: teal
-      accent: deep orange
+      primary: red
+      accent: blue
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
   font:
-    text: Source Sans 3
+    # Comic display + readable body — web-slinger vibe
+    text: Nunito
     code: JetBrains Mono
   icon:
     repo: fontawesome/brands/github

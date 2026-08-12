@@ -1,21 +1,176 @@
-/* Playbook site tweaks — teal primary, readable long-form docs */
+/* Web-slinger theme — original red/blue spider doodle aesthetic (not official Marvel IP) */
+
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@400;600;700&display=swap");
 
 :root {
-  --md-typeset-a-color: #0d9488;
+  --spidey-red: #e11d2e;
+  --spidey-red-deep: #9f1239;
+  --spidey-blue: #1e3a8a;
+  --spidey-blue-bright: #2563eb;
+  --spidey-ink: #0f172a;
+  --spidey-web: rgba(30, 58, 138, 0.12);
+  --md-typeset-a-color: #c41e3a;
+}
+
+/* Header / primary chrome */
+[data-md-color-primary="red"] {
+  --md-primary-fg-color: #c41e3a;
+  --md-primary-fg-color--light: #e11d2e;
+  --md-primary-fg-color--dark: #9f1239;
+  --md-primary-bg-color: #fff;
+  --md-primary-bg-color--light: #fff5f5;
+}
+
+[data-md-color-accent="blue"] {
+  --md-accent-fg-color: #1d4ed8;
+  --md-accent-fg-color--transparent: rgba(29, 78, 216, 0.1);
+  --md-accent-bg-color: #fff;
+}
+
+/* Web lattice background */
+body.md-body,
+.md-main {
+  background-color: #f8fafc;
+  background-image:
+    radial-gradient(circle at 12% 8%, rgba(225, 29, 46, 0.08), transparent 42%),
+    radial-gradient(circle at 88% 12%, rgba(37, 99, 235, 0.1), transparent 40%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%231e3a8a' stroke-width='0.6' opacity='0.18'%3E%3Cpath d='M60 0 L60 120 M0 60 L120 60 M0 0 L120 120 M120 0 L0 120'/%3E%3Ccircle cx='60' cy='60' r='24'/%3E%3Ccircle cx='60' cy='60' r='48'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+}
+
+[data-md-color-scheme="slate"] body.md-body,
+[data-md-color-scheme="slate"] .md-main {
+  background-color: #0b1220;
+  background-image:
+    radial-gradient(circle at 15% 10%, rgba(225, 29, 46, 0.18), transparent 45%),
+    radial-gradient(circle at 85% 0%, rgba(37, 99, 235, 0.2), transparent 42%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%2393c5fd' stroke-width='0.55' opacity='0.14'%3E%3Cpath d='M60 0 L60 120 M0 60 L120 60 M0 0 L120 120 M120 0 L0 120'/%3E%3Ccircle cx='60' cy='60' r='24'/%3E%3Ccircle cx='60' cy='60' r='48'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.md-content {
+  background: rgba(255, 255, 255, 0.88);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
+  padding: 0.5rem 1rem 1.5rem;
+}
+
+[data-md-color-scheme="slate"] .md-content {
+  background: rgba(15, 23, 42, 0.82);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Logo doodle in header */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 2rem;
+  width: 2rem;
+  filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.25));
+  animation: spidey-swing 3.2s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+@keyframes spidey-swing {
+  0%, 100% { transform: rotate(-6deg); }
+  50% { transform: rotate(6deg); }
+}
+
+.md-header {
+  background: linear-gradient(115deg, #9f1239 0%, #c41e3a 42%, #1e3a8a 100%) !important;
+  box-shadow: 0 4px 18px rgba(159, 18, 57, 0.35);
+}
+
+.md-tabs {
+  background: linear-gradient(90deg, #9f1239, #1e40af) !important;
+}
+
+.md-header__title {
+  font-family: "Bangers", "Comic Neue", cursive;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+}
+
+.md-typeset h1,
+.md-typeset h2 {
+  font-family: "Bangers", "Comic Neue", cursive;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  color: var(--spidey-blue);
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  color: #93c5fd;
 }
 
 .md-typeset h1 {
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-size: 2.1rem;
+}
+
+.md-typeset h2 {
+  border-bottom: 3px solid rgba(225, 29, 46, 0.35);
+  padding-bottom: 0.2em;
+}
+
+.md-typeset a {
+  color: var(--spidey-red-deep);
+  font-weight: 600;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a {
+  color: #fb7185;
 }
 
 .md-typeset table:not([class]) {
   font-size: 0.85rem;
+  border: 2px solid rgba(30, 58, 138, 0.15);
+}
+
+.md-typeset table:not([class]) th {
+  background: linear-gradient(90deg, rgba(225, 29, 46, 0.12), rgba(37, 99, 235, 0.12));
 }
 
 .md-typeset .admonition,
 .md-typeset details {
   font-size: 0.9rem;
+  border-left-width: 0.3rem;
+}
+
+/* Floating corner doodle watermark */
+.md-main::after {
+  content: "";
+  position: fixed;
+  right: 1.2rem;
+  bottom: 1.2rem;
+  width: 88px;
+  height: 88px;
+  pointer-events: none;
+  opacity: 0.22;
+  z-index: 2;
+  background: url("../assets/spider-doodle.svg") center / contain no-repeat;
+  filter: drop-shadow(0 4px 8px rgba(15, 23, 42, 0.25));
+}
+
+@media (max-width: 960px) {
+  .md-main::after {
+    width: 56px;
+    height: 56px;
+    opacity: 0.16;
+  }
+  .md-content {
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+  }
+}
+
+/* Sidebar active accent */
+.md-nav__link--active,
+.md-nav__item .md-nav__link--active {
+  color: var(--spidey-red) !important;
+}
+
+.md-nav__link:hover {
+  color: var(--spidey-blue-bright);
 }
 
 /* Mermaid diagrams */
@@ -24,7 +179,17 @@
   margin: 1.5rem 0;
 }
 
-/* Soften dense checklist pages */
 .md-typeset ul li {
   margin-bottom: 0.15em;
+}
+
+/* Search bar polish */
+.md-search__form {
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+}
+
+/* Footer strip */
+.md-footer {
+  background: linear-gradient(90deg, #1e3a8a, #9f1239) !important;
 }
