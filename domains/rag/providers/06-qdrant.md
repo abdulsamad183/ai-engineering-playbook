@@ -2,64 +2,196 @@
 title: "Qdrant for RAG"
 description: "Qdrant vector database — filtering, payloads, gRPC performance, deployment, Python client."
 domain: rag
-tags: [rag, qdrant, vector-database]
+tags: [providers, rag]
 status: published
-created: 2026-07-13
-updated: 2026-07-13
-version: "1.0"
+created: 2026-08-11
+updated: 2026-08-12
+version: "2.0"
 related:
-  - ../vector-databases.md
-keywords: [Qdrant, payload filter, HNSW, Rust]
-author: hp
+  - ../README.md
+  - ../../embeddings-vector-databases/README.md
+  - ../../prompt-engineering/README.md
+  - ../../ai-evaluation/README.md
 ---
 
 # Qdrant for RAG
 
+> Qdrant vector database — filtering, payloads, gRPC performance, deployment, Python client.
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Definition](#definition)
+- [Why It Matters](#why-it-matters)
+- [Uses](#uses)
+- [Core Ideas](#core-ideas)
+- [How It Works](#how-it-works)
+- [Worked Example](#worked-example)
+- [Python Examples](#python-examples)
+- [Evaluation](#evaluation)
+- [Production Considerations](#production-considerations)
+- [Performance & Cost](#performance--cost)
+- [Security Notes](#security-notes)
+- [Best Practices](#best-practices)
+- [Common Mistakes](#common-mistakes)
+- [Interview Preparation](#interview-preparation)
+- [Navigation](#navigation)
+
+---
+
 ## Overview
 
-**Qdrant** is a high-performance vector DB written in Rust with rich payload filtering — popular production choice.
+Part of **Providers** in the **RAG** handbook. Treat **Qdrant for RAG** as an implementable engineering topic.
 
-| Aspect | Detail |
-|--------|--------|
-| **Architecture** | Collections, shards, replicas |
-| **Strengths** | Fast filters, simple API, on-prem + cloud |
-| **Weaknesses** | Smaller ecosystem than Pinecone for beginners |
-| **Index** | HNSW |
-| **Deployment** | Docker, K8s, Qdrant Cloud |
-| **Pricing** | OSS + cloud tiers |
-| **Best for** | Production self-host with strong metadata filters |
+**Typical workflow:** ingest → chunk → embed → retrieve → generate → cite → eval.
 
-## Python Example
+---
 
-```python
-from qdrant_client import QdrantClient
-from qdrant_client.models import PointStruct, Filter, FieldCondition, MatchValue
+## Definition
 
-client = QdrantClient(url="http://localhost:6333")
+**Qdrant for RAG** — Qdrant vector database — filtering, payloads, gRPC performance, deployment, Python client.
 
-client.upsert(
-    collection_name="kb",
-    points=[PointStruct(
-        id="chunk-1",
-        vector=embedding,
-        payload={"tenant_id": "acme", "content": "Refund in 3 days.", "doc_id": "p-44"},
-    )],
-)
+State inputs, outputs, success metrics, and failure behavior before changing production configs.
 
-hits = client.search(
-    collection_name="kb",
-    query_vector=query_embedding,
-    query_filter=Filter(must=[FieldCondition(key="tenant_id", match=MatchValue(value="acme"))]),
-    limit=10,
-)
+---
+
+## Why It Matters
+
+Gaps here show up as hallucinations, silent quality drops, runaway cost, or unsafe tool use. Clear design and measurement keep AI features shippable.
+
+---
+
+## Uses
+
+| Use case | How this applies |
+|----------|------------------|
+| Product feature | User-facing capability with SLOs |
+| Internal platform | Shared retrieval/agent/eval primitives |
+| Incident response | Diagnose quality, latency, or safety regressions |
+| Design review | Make tradeoffs explicit |
+
+---
+
+## Core Ideas
+
+1. Separate orchestration from model calls.
+2. Measure offline before widening traffic.
+3. Bound loops, tokens, tools, and spend.
+4. Version prompts/indexes/models/policies together.
+5. Prefer cite/ground/approve over unconstrained generation when risk is high.
+
+---
+
+## How It Works
+
+```mermaid
+flowchart LR
+  Docs --> Chunk --> Embed --> Retrieve --> Generate --> Cite
 ```
 
-## Production Notes
+Assign owners to each stage (data, model, app, platform, safety). Most regressions are interface skew between stages.
 
-- Quantization for memory savings on large collections
-- Snapshot API for backups
-- gRPC client for lower latency
+---
+
+## Worked Example
+
+**Scenario:** Apply **Qdrant for RAG** to a production-shaped slice of traffic.
+
+1. Write a one-page spec: inputs, outputs, SLO, safety policy, offline metrics.
+2. Implement the smallest correct path with logging and timeouts.
+3. Build a golden set (even 50–200 cases) and gate the change.
+4. Canary 1–5% traffic; watch quality, latency, cost, and abuse.
+5. Keep one-click rollback to the previous artifact bundle.
+
+---
+
+## Python Examples
+
+```python
+def chunk_text(text: str, size: int = 200, overlap: int = 40) -> list[str]:
+    words = text.split()
+    chunks, i = [], 0
+    while i < len(words):
+        chunks.append(" ".join(words[i:i+size]))
+        i += max(1, size - overlap)
+    return chunks
+
+```
+
+Wrap provider SDKs behind interfaces so unit tests do not need live keys.
+
+---
+
+## Evaluation
+
+| Layer | Examples |
+|-------|----------|
+| Offline | Golden set, recall@k, task success, rubrics |
+| Online | Thumbs, redo rate, escalation, cost/request |
+| Safety | Injection, PII leak, tool-scope violations |
+
+Ship only when offline floors pass and canary metrics stay in budget.
+
+---
+
+## Production Considerations
+
+- Structured logs with request ids (redact secrets/PII).
+- Feature flags for model/prompt/index swaps.
+- Explicit timeouts, retries with jitter, and circuit breakers.
+- Multi-tenant isolation for data and tools.
+
+## Performance & Cost
+
+- Track p50/p95 latency and $ per successful task.
+- Cache embeddings/retrieval when invalidation is clear.
+- Prefer smaller routers/classifiers in front of expensive generators.
+
+## Security Notes
+
+- Treat model output and tool args as untrusted until validated.
+- Scope tools tightly; require approval for high-impact actions.
+- Enforce authZ on retrieval filters and MCP/tool servers.
+
+---
+
+## Best Practices
+
+1. Baseline → measure → complicate.
+2. Keep golden sets sacred (no training on them).
+3. Change one axis at a time (model **or** prompt **or** index).
+4. Document failure modes users will see.
+5. Practice rollback drills.
+
+---
+
+## Common Mistakes
+
+- Demo prompts with no eval harness.
+- Unbounded agent/tool loops.
+- Missing citations for grounded answers.
+- Train/serve skew in chunking or auth filters.
+- Cost dashboards that ignore tool fan-out.
+
+---
+
+## Interview Preparation
+
+**Q: How do you explain qdrant for rag in a system design interview?**
+
+A: Goal → components → data flow → metrics → failure modes → scale knobs → security.
+
+**Q: What do you gate on before production?**
+
+A: Offline floors, canary online metrics, safety checks, and a tested rollback.
+
+**Q: What breaks first in production?**
+
+A: Usually retrieval/auth skew, prompt regressions, or cost blowups — not the happy-path demo.
+
+---
 
 ## Navigation
 
-- [Vector Databases](../vector-databases.md) · [Production RAG](../production-rag.md)
+- **Section hub:** [README](README.md)
+- **Topic hub:** [../README.md](../README.md)

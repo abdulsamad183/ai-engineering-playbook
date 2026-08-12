@@ -2,78 +2,191 @@
 title: "Prompt Evaluation"
 description: "Prompt consistency, robustness, sensitivity, regression, comparisons, token efficiency."
 domain: ai-evaluation
-tags: [ai-evaluation, prompt, regression, robustness]
+tags: [surface-areas, ai-evaluation]
 status: published
-created: 2026-07-13
-updated: 2026-07-13
-version: "1.0"
+created: 2026-08-11
+updated: 2026-08-12
+version: "2.0"
 related:
-  - ../../prompt-engineering/prompt-evaluation.md
-  - ../../prompt-engineering/prompt-testing.md
-keywords: [prompt evaluation, prompt regression, robustness]
-author: hp
+  - ../README.md
+  - ../../prompt-engineering/README.md
+  - ../../rag/README.md
+  - ../../ai-agents/README.md
 ---
 
 # Prompt Evaluation
 
-## Overview
+> Prompt consistency, robustness, sensitivity, regression, comparisons, token efficiency.
 
-Section **8**. Complements [Prompt Engineering evaluation](../../prompt-engineering/prompt-operations/04-prompt-evaluation.md) with system-level LLMOps focus.
+## Table of Contents
 
-## Dimensions
-
-| Dimension | Test approach |
-|-----------|---------------|
-| **Consistency** | Same input, N runs — variance |
-| **Robustness** | Paraphrased inputs |
-| **Sensitivity** | Perturb instructions |
-| **Determinism** | temperature=0 stability |
-| **Token efficiency** | Tokens per successful task |
-| **Regression** | Golden set vs baseline prompt |
-| **Comparison** | A/B prompt variants |
-
-```mermaid
-flowchart LR
-    P1[Prompt v1] --> RUN[Eval harness]
-    P2[Prompt v2] --> RUN
-    RUN --> CMP[Compare metrics]
-```
-
-## Prompt Quality Metrics
-
-- Task success rate on golden set
-- Instruction-following pass rate
-- Average output length / tokens
-- Failure category distribution
-
-## Production Workflow
-
-- Pin prompt version in eval manifest
-- CI fails if success rate drops > X%
-- Canary new prompt on 5% traffic
-
-## Anti-Patterns
-
-- Tweaking prompt to pass benchmark only
-- No paraphrase tests
-
-## Python Example
-
-```python
-async def prompt_regression(baseline_fn, candidate_fn, cases: list) -> dict:
-    base = sum(1 for c in cases if await baseline_fn(c)) / len(cases)
-    cand = sum(1 for c in cases if await candidate_fn(c)) / len(cases)
-    return {"baseline": base, "candidate": cand, "delta": cand - base}
-```
-
-## Navigation
-
-- [Agent Evaluation](agent-evaluation.md)
+- [Overview](#overview)
+- [Definition](#definition)
+- [Why It Matters](#why-it-matters)
+- [Uses](#uses)
+- [Core Ideas](#core-ideas)
+- [How It Works](#how-it-works)
+- [Worked Example](#worked-example)
+- [Python Examples](#python-examples)
+- [Evaluation](#evaluation)
+- [Production Considerations](#production-considerations)
+- [Performance & Cost](#performance--cost)
+- [Security Notes](#security-notes)
+- [Best Practices](#best-practices)
+- [Common Mistakes](#common-mistakes)
+- [Interview Preparation](#interview-preparation)
+- [Navigation](#navigation)
 
 ---
 
-## Changelog
+## Overview
 
-| Version | Date | Changes |
-|---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication |
+Part of **Surface Areas** in the **LLM Evaluation** handbook. Treat **Prompt Evaluation** as an implementable engineering topic.
+
+**Typical workflow:** dataset → metrics → judges/human → gate → monitor.
+
+---
+
+## Definition
+
+**Prompt Evaluation** — Prompt consistency, robustness, sensitivity, regression, comparisons, token efficiency.
+
+State inputs, outputs, success metrics, and failure behavior before changing production configs.
+
+---
+
+## Why It Matters
+
+Gaps here show up as hallucinations, silent quality drops, runaway cost, or unsafe tool use. Clear design and measurement keep AI features shippable.
+
+---
+
+## Uses
+
+| Use case | How this applies |
+|----------|------------------|
+| Product feature | User-facing capability with SLOs |
+| Internal platform | Shared retrieval/agent/eval primitives |
+| Incident response | Diagnose quality, latency, or safety regressions |
+| Design review | Make tradeoffs explicit |
+
+---
+
+## Core Ideas
+
+1. Separate orchestration from model calls.
+2. Measure offline before widening traffic.
+3. Bound loops, tokens, tools, and spend.
+4. Version prompts/indexes/models/policies together.
+5. Prefer cite/ground/approve over unconstrained generation when risk is high.
+
+---
+
+## How It Works
+
+```mermaid
+flowchart LR
+  Suite --> Score --> Gate --> Ship
+```
+
+Assign owners to each stage (data, model, app, platform, safety). Most regressions are interface skew between stages.
+
+---
+
+## Worked Example
+
+**Scenario:** Apply **Prompt Evaluation** to a production-shaped slice of traffic.
+
+1. Write a one-page spec: inputs, outputs, SLO, safety policy, offline metrics.
+2. Implement the smallest correct path with logging and timeouts.
+3. Build a golden set (even 50–200 cases) and gate the change.
+4. Canary 1–5% traffic; watch quality, latency, cost, and abuse.
+5. Keep one-click rollback to the previous artifact bundle.
+
+---
+
+## Python Examples
+
+```python
+def pass_gate(scores: dict[str, float], floors: dict[str, float]) -> bool:
+    return all(scores.get(k, 0.0) >= v for k, v in floors.items())
+
+```
+
+Wrap provider SDKs behind interfaces so unit tests do not need live keys.
+
+---
+
+## Evaluation
+
+| Layer | Examples |
+|-------|----------|
+| Offline | Golden set, recall@k, task success, rubrics |
+| Online | Thumbs, redo rate, escalation, cost/request |
+| Safety | Injection, PII leak, tool-scope violations |
+
+Ship only when offline floors pass and canary metrics stay in budget.
+
+---
+
+## Production Considerations
+
+- Structured logs with request ids (redact secrets/PII).
+- Feature flags for model/prompt/index swaps.
+- Explicit timeouts, retries with jitter, and circuit breakers.
+- Multi-tenant isolation for data and tools.
+
+## Performance & Cost
+
+- Track p50/p95 latency and $ per successful task.
+- Cache embeddings/retrieval when invalidation is clear.
+- Prefer smaller routers/classifiers in front of expensive generators.
+
+## Security Notes
+
+- Treat model output and tool args as untrusted until validated.
+- Scope tools tightly; require approval for high-impact actions.
+- Enforce authZ on retrieval filters and MCP/tool servers.
+
+---
+
+## Best Practices
+
+1. Baseline → measure → complicate.
+2. Keep golden sets sacred (no training on them).
+3. Change one axis at a time (model **or** prompt **or** index).
+4. Document failure modes users will see.
+5. Practice rollback drills.
+
+---
+
+## Common Mistakes
+
+- Demo prompts with no eval harness.
+- Unbounded agent/tool loops.
+- Missing citations for grounded answers.
+- Train/serve skew in chunking or auth filters.
+- Cost dashboards that ignore tool fan-out.
+
+---
+
+## Interview Preparation
+
+**Q: How do you explain prompt evaluation in a system design interview?**
+
+A: Goal → components → data flow → metrics → failure modes → scale knobs → security.
+
+**Q: What do you gate on before production?**
+
+A: Offline floors, canary online metrics, safety checks, and a tested rollback.
+
+**Q: What breaks first in production?**
+
+A: Usually retrieval/auth skew, prompt regressions, or cost blowups — not the happy-path demo.
+
+---
+
+## Navigation
+
+- **Section hub:** [README](README.md)
+- **Topic hub:** [../README.md](../README.md)

@@ -2,83 +2,191 @@
 title: "LLM Evaluation Metrics"
 description: "Faithfulness, relevance, correctness, groundedness, safety, instruction following, tool accuracy."
 domain: ai-evaluation
-tags: [ai-evaluation, llm-metrics, faithfulness, groundedness]
+tags: [metrics, ai-evaluation]
 status: published
-created: 2026-07-13
-updated: 2026-07-13
-version: "1.0"
+created: 2026-08-11
+updated: 2026-08-12
+version: "2.0"
 related:
-  - core-metrics.md
-  - hallucination-detection.md
-  - ../../llm-engineering/structured-outputs.md
-keywords: [faithfulness, relevance, instruction following, tool accuracy]
-author: hp
+  - ../README.md
+  - ../../prompt-engineering/README.md
+  - ../../rag/README.md
+  - ../../ai-agents/README.md
 ---
 
 # LLM Evaluation Metrics
 
-## Overview
+> Faithfulness, relevance, correctness, groundedness, safety, instruction following, tool accuracy.
 
-Section **5**. LLM-specific metrics capture semantic quality beyond n-gram overlap.
+## Table of Contents
 
-## Metric Catalog
-
-| Metric | Definition | Measurement |
-|--------|------------|-------------|
-| **Faithfulness** | Claims supported by context | LLM-judge / NLI |
-| **Relevance** | Answers the question | LLM-judge |
-| **Correctness** | Factually true (world) | Human / tools |
-| **Helpfulness** | Useful to user | Human rating 1–5 |
-| **Completeness** | All parts addressed | Rubric checklist |
-| **Consistency** | Same answer across runs | Multi-sample variance |
-| **Coherence** | Logical flow | LLM-judge |
-| **Groundedness** | Tied to provided sources | Citation match |
-| **Toxicity** | Harmful content | Classifier |
-| **Safety** | Policy compliance | Rule + judge |
-| **Instruction following** | Adheres to format/rules | Schema + judge |
-| **Tool accuracy** | Right tool + args | Trace validation |
-
-```mermaid
-flowchart LR
-    OUT[Model Output] --> J[LLM Judge]
-    CTX[Context] --> J
-    Q[Question] --> J
-    J --> SCORES[Metric scores]
-```
-
-## Engineering Guidance
-
-- **Faithfulness** — critical for RAG; auto + human on failures
-- **Tool accuracy** — parse traces; compare to golden tool calls
-- **Instruction following** — validate JSON schema first (cheap), then judge
-- **Consistency** — run N samples; flag high variance prompts
-
-## Production Considerations
-
-- LLM-judge costs scale with dataset size
-- Cache judge prompts; use smaller judge model
-
-## Anti-Patterns
-
-- One generic "quality" score without decomposition
-- Judge same model as system under test without blind review
-
-## Python Example
-
-```python
-async def score_faithfulness(answer: str, context: str, judge_fn) -> float:
-    prompt = f"Context:\n{context}\n\nAnswer:\n{answer}\n\nRate faithfulness 0-1."
-    return float(await judge_fn(prompt))
-```
-
-## Navigation
-
-- [Hallucination Detection](hallucination-detection.md) · [RAG Evaluation](rag-evaluation.md)
+- [Overview](#overview)
+- [Definition](#definition)
+- [Why It Matters](#why-it-matters)
+- [Uses](#uses)
+- [Core Ideas](#core-ideas)
+- [How It Works](#how-it-works)
+- [Worked Example](#worked-example)
+- [Python Examples](#python-examples)
+- [Evaluation](#evaluation)
+- [Production Considerations](#production-considerations)
+- [Performance & Cost](#performance--cost)
+- [Security Notes](#security-notes)
+- [Best Practices](#best-practices)
+- [Common Mistakes](#common-mistakes)
+- [Interview Preparation](#interview-preparation)
+- [Navigation](#navigation)
 
 ---
 
-## Changelog
+## Overview
 
-| Version | Date | Changes |
-|---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication |
+Part of **Metrics** in the **LLM Evaluation** handbook. Treat **LLM Evaluation Metrics** as an implementable engineering topic.
+
+**Typical workflow:** dataset → metrics → judges/human → gate → monitor.
+
+---
+
+## Definition
+
+**LLM Evaluation Metrics** — Faithfulness, relevance, correctness, groundedness, safety, instruction following, tool accuracy.
+
+State inputs, outputs, success metrics, and failure behavior before changing production configs.
+
+---
+
+## Why It Matters
+
+Gaps here show up as hallucinations, silent quality drops, runaway cost, or unsafe tool use. Clear design and measurement keep AI features shippable.
+
+---
+
+## Uses
+
+| Use case | How this applies |
+|----------|------------------|
+| Product feature | User-facing capability with SLOs |
+| Internal platform | Shared retrieval/agent/eval primitives |
+| Incident response | Diagnose quality, latency, or safety regressions |
+| Design review | Make tradeoffs explicit |
+
+---
+
+## Core Ideas
+
+1. Separate orchestration from model calls.
+2. Measure offline before widening traffic.
+3. Bound loops, tokens, tools, and spend.
+4. Version prompts/indexes/models/policies together.
+5. Prefer cite/ground/approve over unconstrained generation when risk is high.
+
+---
+
+## How It Works
+
+```mermaid
+flowchart LR
+  Suite --> Score --> Gate --> Ship
+```
+
+Assign owners to each stage (data, model, app, platform, safety). Most regressions are interface skew between stages.
+
+---
+
+## Worked Example
+
+**Scenario:** Apply **LLM Evaluation Metrics** to a production-shaped slice of traffic.
+
+1. Write a one-page spec: inputs, outputs, SLO, safety policy, offline metrics.
+2. Implement the smallest correct path with logging and timeouts.
+3. Build a golden set (even 50–200 cases) and gate the change.
+4. Canary 1–5% traffic; watch quality, latency, cost, and abuse.
+5. Keep one-click rollback to the previous artifact bundle.
+
+---
+
+## Python Examples
+
+```python
+def pass_gate(scores: dict[str, float], floors: dict[str, float]) -> bool:
+    return all(scores.get(k, 0.0) >= v for k, v in floors.items())
+
+```
+
+Wrap provider SDKs behind interfaces so unit tests do not need live keys.
+
+---
+
+## Evaluation
+
+| Layer | Examples |
+|-------|----------|
+| Offline | Golden set, recall@k, task success, rubrics |
+| Online | Thumbs, redo rate, escalation, cost/request |
+| Safety | Injection, PII leak, tool-scope violations |
+
+Ship only when offline floors pass and canary metrics stay in budget.
+
+---
+
+## Production Considerations
+
+- Structured logs with request ids (redact secrets/PII).
+- Feature flags for model/prompt/index swaps.
+- Explicit timeouts, retries with jitter, and circuit breakers.
+- Multi-tenant isolation for data and tools.
+
+## Performance & Cost
+
+- Track p50/p95 latency and $ per successful task.
+- Cache embeddings/retrieval when invalidation is clear.
+- Prefer smaller routers/classifiers in front of expensive generators.
+
+## Security Notes
+
+- Treat model output and tool args as untrusted until validated.
+- Scope tools tightly; require approval for high-impact actions.
+- Enforce authZ on retrieval filters and MCP/tool servers.
+
+---
+
+## Best Practices
+
+1. Baseline → measure → complicate.
+2. Keep golden sets sacred (no training on them).
+3. Change one axis at a time (model **or** prompt **or** index).
+4. Document failure modes users will see.
+5. Practice rollback drills.
+
+---
+
+## Common Mistakes
+
+- Demo prompts with no eval harness.
+- Unbounded agent/tool loops.
+- Missing citations for grounded answers.
+- Train/serve skew in chunking or auth filters.
+- Cost dashboards that ignore tool fan-out.
+
+---
+
+## Interview Preparation
+
+**Q: How do you explain llm evaluation metrics in a system design interview?**
+
+A: Goal → components → data flow → metrics → failure modes → scale knobs → security.
+
+**Q: What do you gate on before production?**
+
+A: Offline floors, canary online metrics, safety checks, and a tested rollback.
+
+**Q: What breaks first in production?**
+
+A: Usually retrieval/auth skew, prompt regressions, or cost blowups — not the happy-path demo.
+
+---
+
+## Navigation
+
+- **Section hub:** [README](README.md)
+- **Topic hub:** [../README.md](../README.md)

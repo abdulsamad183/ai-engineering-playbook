@@ -2,116 +2,191 @@
 title: "MCP Message Protocol"
 description: "JSON-RPC messages — requests, responses, notifications, errors, IDs, correlation, serialization."
 domain: mcp
-tags: [mcp, protocol, json-rpc, messages]
+tags: [primitives, mcp]
 status: published
-created: 2026-07-13
-updated: 2026-07-13
-version: "1.0"
+created: 2026-08-11
+updated: 2026-08-12
+version: "2.0"
 related:
-  - mcp-lifecycle.md
-  - mcp-core-concepts.md
-keywords: [JSON-RPC, request, response, notification, correlation]
-author: hp
+  - ../README.md
+  - ../../ai-agents/README.md
+  - ../../llm-application-development/README.md
+  - ../../ai-security-guardrails/README.md
 ---
 
 # MCP Message Protocol
 
-## Overview
+> JSON-RPC messages — requests, responses, notifications, errors, IDs, correlation, serialization.
 
-Section **11**. MCP uses **JSON-RPC 2.0** messages over transports.
+## Table of Contents
 
-## Message Types
-
-| Type | Has `id` | Expects response |
-|------|----------|------------------|
-| **Request** | Yes | Yes |
-| **Notification** | No | No |
-| **Response** | Matches request | — |
-| **Error** | Matches request | — |
-
-```mermaid
-sequenceDiagram
-    participant C as Client
-    participant S as Server
-    C->>S: Request {id:1, method:"tools/list"}
-    S-->>C: Response {id:1, result:{tools:[]}}
-    S-->>C: Notification {method:"tools/list_changed"}
-```
-
-## Request Structure
-
-```json
-{"jsonrpc": "2.0", "id": 1, "method": "tools/call", "params": {"name": "echo", "arguments": {"text": "hi"}}}
-```
-
-## Error Structure
-
-```json
-{"jsonrpc": "2.0", "id": 1, "error": {"code": -32602, "message": "Invalid params", "data": {"field": "name"}}}
-```
-
-## Correlation
-
-- Client generates monotonic IDs per session
-- Logs must include `mcp.request_id` for tracing
-- Notifications have no ID — order matters for `list_changed`
-
-## Serialization
-
-- UTF-8 JSON
-- Validate params against method schemas before dispatch
-
-## Production Workflow
-
-1. Parse frame → validate JSON-RPC envelope
-2. Route by `method`
-3. Validate params
-4. Execute → result or structured error
-5. Emit metrics: `mcp_requests_total{method,status}`
-
-## Security Considerations
-
-- Reject oversized payloads
-- Sanitize error `data` — no stack traces to untrusted clients
-
-## Best Practices
-
-- Use structured error codes
-- Version breaking changes in `initialize` negotiation
-
-## Anti-Patterns
-
-- Reusing request IDs across concurrent calls
-- Returning binary in JSON without base64 encoding
-
-## Python Example
-
-```python
-import json
-from dataclasses import dataclass
-
-@dataclass
-class JsonRpcRequest:
-    id: int
-    method: str
-    params: dict
-
-    def to_json(self) -> str:
-        return json.dumps({"jsonrpc": "2.0", "id": self.id, "method": self.method, "params": self.params})
-```
-
-## Interview Preparation
-
-**Q: Request vs notification?** Notifications are fire-and-forget (e.g. `initialized`, `tools/list_changed`). Requests require correlated responses.
-
-## Navigation
-
-- [Authentication](mcp-authentication.md) · [Lifecycle](mcp-lifecycle.md)
+- [Overview](#overview)
+- [Definition](#definition)
+- [Why It Matters](#why-it-matters)
+- [Uses](#uses)
+- [Core Ideas](#core-ideas)
+- [How It Works](#how-it-works)
+- [Worked Example](#worked-example)
+- [Python Examples](#python-examples)
+- [Evaluation](#evaluation)
+- [Production Considerations](#production-considerations)
+- [Performance & Cost](#performance--cost)
+- [Security Notes](#security-notes)
+- [Best Practices](#best-practices)
+- [Common Mistakes](#common-mistakes)
+- [Interview Preparation](#interview-preparation)
+- [Navigation](#navigation)
 
 ---
 
-## Changelog
+## Overview
 
-| Version | Date | Changes |
-|---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication |
+Part of **Primitives** in the **MCP** handbook. Treat **MCP Message Protocol** as an implementable engineering topic.
+
+**Typical workflow:** host → client → server → tools/resources/prompts.
+
+---
+
+## Definition
+
+**MCP Message Protocol** — JSON-RPC messages — requests, responses, notifications, errors, IDs, correlation, serialization.
+
+State inputs, outputs, success metrics, and failure behavior before changing production configs.
+
+---
+
+## Why It Matters
+
+Gaps here show up as hallucinations, silent quality drops, runaway cost, or unsafe tool use. Clear design and measurement keep AI features shippable.
+
+---
+
+## Uses
+
+| Use case | How this applies |
+|----------|------------------|
+| Product feature | User-facing capability with SLOs |
+| Internal platform | Shared retrieval/agent/eval primitives |
+| Incident response | Diagnose quality, latency, or safety regressions |
+| Design review | Make tradeoffs explicit |
+
+---
+
+## Core Ideas
+
+1. Separate orchestration from model calls.
+2. Measure offline before widening traffic.
+3. Bound loops, tokens, tools, and spend.
+4. Version prompts/indexes/models/policies together.
+5. Prefer cite/ground/approve over unconstrained generation when risk is high.
+
+---
+
+## How It Works
+
+```mermaid
+flowchart LR
+  Host --> Client --> Server --> Tools
+```
+
+Assign owners to each stage (data, model, app, platform, safety). Most regressions are interface skew between stages.
+
+---
+
+## Worked Example
+
+**Scenario:** Apply **MCP Message Protocol** to a production-shaped slice of traffic.
+
+1. Write a one-page spec: inputs, outputs, SLO, safety policy, offline metrics.
+2. Implement the smallest correct path with logging and timeouts.
+3. Build a golden set (even 50–200 cases) and gate the change.
+4. Canary 1–5% traffic; watch quality, latency, cost, and abuse.
+5. Keep one-click rollback to the previous artifact bundle.
+
+---
+
+## Python Examples
+
+```python
+def tool_spec(name: str, description: str, schema: dict) -> dict:
+    return {"name": name, "description": description, "input_schema": schema}
+
+```
+
+Wrap provider SDKs behind interfaces so unit tests do not need live keys.
+
+---
+
+## Evaluation
+
+| Layer | Examples |
+|-------|----------|
+| Offline | Golden set, recall@k, task success, rubrics |
+| Online | Thumbs, redo rate, escalation, cost/request |
+| Safety | Injection, PII leak, tool-scope violations |
+
+Ship only when offline floors pass and canary metrics stay in budget.
+
+---
+
+## Production Considerations
+
+- Structured logs with request ids (redact secrets/PII).
+- Feature flags for model/prompt/index swaps.
+- Explicit timeouts, retries with jitter, and circuit breakers.
+- Multi-tenant isolation for data and tools.
+
+## Performance & Cost
+
+- Track p50/p95 latency and $ per successful task.
+- Cache embeddings/retrieval when invalidation is clear.
+- Prefer smaller routers/classifiers in front of expensive generators.
+
+## Security Notes
+
+- Treat model output and tool args as untrusted until validated.
+- Scope tools tightly; require approval for high-impact actions.
+- Enforce authZ on retrieval filters and MCP/tool servers.
+
+---
+
+## Best Practices
+
+1. Baseline → measure → complicate.
+2. Keep golden sets sacred (no training on them).
+3. Change one axis at a time (model **or** prompt **or** index).
+4. Document failure modes users will see.
+5. Practice rollback drills.
+
+---
+
+## Common Mistakes
+
+- Demo prompts with no eval harness.
+- Unbounded agent/tool loops.
+- Missing citations for grounded answers.
+- Train/serve skew in chunking or auth filters.
+- Cost dashboards that ignore tool fan-out.
+
+---
+
+## Interview Preparation
+
+**Q: How do you explain mcp message protocol in a system design interview?**
+
+A: Goal → components → data flow → metrics → failure modes → scale knobs → security.
+
+**Q: What do you gate on before production?**
+
+A: Offline floors, canary online metrics, safety checks, and a tested rollback.
+
+**Q: What breaks first in production?**
+
+A: Usually retrieval/auth skew, prompt regressions, or cost blowups — not the happy-path demo.
+
+---
+
+## Navigation
+
+- **Section hub:** [README](README.md)
+- **Topic hub:** [../README.md](../README.md)

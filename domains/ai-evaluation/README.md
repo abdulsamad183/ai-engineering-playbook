@@ -5,7 +5,7 @@
 **Prerequisites:** [Prompt Engineering](../prompt-engineering/README.md) · [RAG](../rag/README.md)  
 **Unlocks:** [MLOps & LLMOps](../mlops-llmops/README.md) · [AI Agents](../ai-agents/README.md)
 
-Start with a section hub below (or expand the topic in the left sidebar).
+Thin lessons deepened 2026-08-12. Start with a section hub below (or expand the topic in the left sidebar).
 
 ---
 

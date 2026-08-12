@@ -1,0 +1,53 @@
+name: Offline examples
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "examples/**"
+      - ".github/workflows/examples.yml"
+  pull_request:
+    paths:
+      - "examples/**"
+      - ".github/workflows/examples.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: examples-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  mini-demos:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Mini RAG
+        run: python examples/rag/mini_rag/run.py
+
+      - name: Mini ReAct agent
+        run: python examples/agents/mini_react/run.py
+
+      - name: Mini GenAI sampler
+        run: python examples/generative-ai/mini_sample.py
+
+      - name: Mini chat API
+        run: |
+          python examples/llm-applications/mini_chat_api/server.py &
+          pid=$!
+          for i in $(seq 1 30); do
+            if python examples/llm-applications/mini_chat_api/client.py; then
+              kill $pid || true
+              exit 0
+            fi
+            sleep 0.2
+          done
+          kill $pid || true
+          echo "mini chat API client failed"
+          exit 1

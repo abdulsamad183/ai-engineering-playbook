@@ -2,110 +2,191 @@
 title: "Design: ChatGPT-like System"
 description: "System design for conversational AI — streaming, memory, tools, multi-model routing, scaling."
 domain: ai-system-design
-tags: [system-design, chat, chatgpt, interview]
+tags: [consumer-products, ai-system-design]
 status: published
-created: 2026-07-13
-updated: 2026-07-13
-version: "1.0"
+created: 2026-08-11
+updated: 2026-08-12
+version: "2.0"
 related:
-  - design-cursor-like-system.md
-  - ../../context-engineering/conversation-memory.md
-keywords: [ChatGPT design, conversation, streaming]
-author: hp
+  - ../README.md
+  - ../../rag/README.md
+  - ../../ai-agents/README.md
+  - ../../ai-deployment/README.md
 ---
 
 # Design: ChatGPT-like System
 
-## Problem Statement
+> System design for conversational AI — streaming, memory, tools, multi-model routing, scaling.
 
-Build a multi-turn conversational AI serving millions of users with streaming, tools, memory, and cost controls.
+## Table of Contents
 
-## Functional Requirements
-
-- Multi-turn chat with history
-- Streaming token delivery
-- Tool/function calling
-- File upload (optional)
-- User accounts and conversation list
-
-## Non-Functional Requirements
-
-| NFR | Target |
-|-----|--------|
-| p95 TTFT | < 800 ms |
-| Availability | 99.9% |
-| Concurrent streams | 100K+ |
-
-## Assumptions & Constraints
-
-- LLM via external API; no self-hosted GPU initially
-- Conversations stored 90 days; GDPR delete
-
-## High-Level Architecture
-
-```mermaid
-flowchart LR
-    CLIENT[Web/Mobile] --> GW[Gateway]
-    GW --> API[Chat API]
-    API --> REDIS[(Session cache)]
-    API --> PG[(Conversations)]
-    API --> ROUTER[Model router]
-    ROUTER --> LLM[LLM providers]
-    API --> TOOLS[Tool executor]
-```
-
-## Component Responsibilities
-
-- **Conversation manager** — thread ID, turn ordering, token budget trim
-- **Context manager** — sliding window + summarization for long chats
-- **Model router** — cheap model for simple; frontier for complex
-- **Tool layer** — web browse, code, plugins with sandbox
-
-## Request Lifecycle
-
-1. POST `/chat` with `conversation_id`, `message`
-2. Load history (Redis → Postgres fallback)
-3. Trim/summarize to fit context window
-4. Stream SSE from LLM; persist assistant turn on complete
-5. If tool call: execute → append result → continue generation
-
-## Scaling Strategy
-
-- Stateless API pods; sticky optional for stream
-- Redis cluster for hot sessions
-- Postgres sharding by `user_id` at scale
-
-## Cost Optimization
-
-- Prompt caching (provider feature)
-- Summarize old turns vs full history
-- Rate limits by tier
-
-## Failure Handling
-
-- Provider 503 → failover model
-- Stream disconnect → client resume with `last_event_id`
-
-## Tradeoffs
-
-| Decision | Why |
-|----------|-----|
-| Server-side history | Multi-device sync; audit |
-| SSE vs WebSocket | SSE simpler for one-way stream |
-
-## Interview Questions
-
-- How handle 128K context with 500-turn chat? → Summarize + retrieve own history
-- How prevent abuse? → Rate limit + moderation classifier
-
-## Navigation
-
-- [Design: Cursor-like System](design-cursor-like-system.md)
+- [Overview](#overview)
+- [Definition](#definition)
+- [Why It Matters](#why-it-matters)
+- [Uses](#uses)
+- [Core Ideas](#core-ideas)
+- [How It Works](#how-it-works)
+- [Worked Example](#worked-example)
+- [Python Examples](#python-examples)
+- [Evaluation](#evaluation)
+- [Production Considerations](#production-considerations)
+- [Performance & Cost](#performance--cost)
+- [Security Notes](#security-notes)
+- [Best Practices](#best-practices)
+- [Common Mistakes](#common-mistakes)
+- [Interview Preparation](#interview-preparation)
+- [Navigation](#navigation)
 
 ---
 
-## Changelog
+## Overview
 
-| Version | Date | Changes |
-|---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication |
+Part of **Consumer Products** in the **AI System Design** handbook. Treat **Design: ChatGPT-like System** as an implementable engineering topic.
+
+**Typical workflow:** requirements → components → tradeoffs → scale → failure modes.
+
+---
+
+## Definition
+
+**Design: ChatGPT-like System** — System design for conversational AI — streaming, memory, tools, multi-model routing, scaling.
+
+State inputs, outputs, success metrics, and failure behavior before changing production configs.
+
+---
+
+## Why It Matters
+
+Gaps here show up as hallucinations, silent quality drops, runaway cost, or unsafe tool use. Clear design and measurement keep AI features shippable.
+
+---
+
+## Uses
+
+| Use case | How this applies |
+|----------|------------------|
+| Product feature | User-facing capability with SLOs |
+| Internal platform | Shared retrieval/agent/eval primitives |
+| Incident response | Diagnose quality, latency, or safety regressions |
+| Design review | Make tradeoffs explicit |
+
+---
+
+## Core Ideas
+
+1. Separate orchestration from model calls.
+2. Measure offline before widening traffic.
+3. Bound loops, tokens, tools, and spend.
+4. Version prompts/indexes/models/policies together.
+5. Prefer cite/ground/approve over unconstrained generation when risk is high.
+
+---
+
+## How It Works
+
+```mermaid
+flowchart TB
+  Req --> Components --> DataFlow --> Scale --> Risks
+```
+
+Assign owners to each stage (data, model, app, platform, safety). Most regressions are interface skew between stages.
+
+---
+
+## Worked Example
+
+**Scenario:** Apply **Design: ChatGPT-like System** to a production-shaped slice of traffic.
+
+1. Write a one-page spec: inputs, outputs, SLO, safety policy, offline metrics.
+2. Implement the smallest correct path with logging and timeouts.
+3. Build a golden set (even 50–200 cases) and gate the change.
+4. Canary 1–5% traffic; watch quality, latency, cost, and abuse.
+5. Keep one-click rollback to the previous artifact bundle.
+
+---
+
+## Python Examples
+
+```python
+def estimate_qps(users: int, msgs_per_user_day: float) -> float:
+    return users * msgs_per_user_day / 86400.0
+
+```
+
+Wrap provider SDKs behind interfaces so unit tests do not need live keys.
+
+---
+
+## Evaluation
+
+| Layer | Examples |
+|-------|----------|
+| Offline | Golden set, recall@k, task success, rubrics |
+| Online | Thumbs, redo rate, escalation, cost/request |
+| Safety | Injection, PII leak, tool-scope violations |
+
+Ship only when offline floors pass and canary metrics stay in budget.
+
+---
+
+## Production Considerations
+
+- Structured logs with request ids (redact secrets/PII).
+- Feature flags for model/prompt/index swaps.
+- Explicit timeouts, retries with jitter, and circuit breakers.
+- Multi-tenant isolation for data and tools.
+
+## Performance & Cost
+
+- Track p50/p95 latency and $ per successful task.
+- Cache embeddings/retrieval when invalidation is clear.
+- Prefer smaller routers/classifiers in front of expensive generators.
+
+## Security Notes
+
+- Treat model output and tool args as untrusted until validated.
+- Scope tools tightly; require approval for high-impact actions.
+- Enforce authZ on retrieval filters and MCP/tool servers.
+
+---
+
+## Best Practices
+
+1. Baseline → measure → complicate.
+2. Keep golden sets sacred (no training on them).
+3. Change one axis at a time (model **or** prompt **or** index).
+4. Document failure modes users will see.
+5. Practice rollback drills.
+
+---
+
+## Common Mistakes
+
+- Demo prompts with no eval harness.
+- Unbounded agent/tool loops.
+- Missing citations for grounded answers.
+- Train/serve skew in chunking or auth filters.
+- Cost dashboards that ignore tool fan-out.
+
+---
+
+## Interview Preparation
+
+**Q: How do you explain design: chatgpt-like system in a system design interview?**
+
+A: Goal → components → data flow → metrics → failure modes → scale knobs → security.
+
+**Q: What do you gate on before production?**
+
+A: Offline floors, canary online metrics, safety checks, and a tested rollback.
+
+**Q: What breaks first in production?**
+
+A: Usually retrieval/auth skew, prompt regressions, or cost blowups — not the happy-path demo.
+
+---
+
+## Navigation
+
+- **Section hub:** [README](README.md)
+- **Topic hub:** [../README.md](../README.md)

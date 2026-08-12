@@ -5,7 +5,7 @@
 **Prerequisites:** [AI Agents](../ai-agents/README.md) · [LLM Application Development](../llm-application-development/README.md)  
 **Unlocks:** [Multi-Agent Systems](../multi-agent-systems/README.md) · [AI Security & Guardrails](../ai-security-guardrails/README.md)
 
-Start with a section hub below (or expand the topic in the left sidebar).
+Thin lessons deepened 2026-08-12. Start with a section hub below (or expand the topic in the left sidebar).
 
 ---
 

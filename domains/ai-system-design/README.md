@@ -5,7 +5,7 @@
 **Prerequisites:** [LLM Application Development](../llm-application-development/README.md) · [RAG](../rag/README.md)  
 **Unlocks:** [AI Deployment](../ai-deployment/README.md) · [MLOps & LLMOps](../mlops-llmops/README.md)
 
-Start with a section hub below (or expand the topic in the left sidebar).
+Thin lessons deepened 2026-08-12. Start with a section hub below (or expand the topic in the left sidebar).
 
 ---
 

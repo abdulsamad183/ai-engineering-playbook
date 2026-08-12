@@ -2,104 +2,191 @@
 title: "MCP Engineering Mistakes"
 description: "Troubleshooting — invalid schemas, transport failures, stale capabilities, sessions, retry storms."
 domain: mcp
-tags: [mcp, mistakes, troubleshooting, debugging]
+tags: [production, mcp]
 status: published
-created: 2026-07-13
-updated: 2026-07-13
-version: "1.0"
+created: 2026-08-11
+updated: 2026-08-12
+version: "2.0"
 related:
-  - production-mcp.md
-  - mcp-security.md
-keywords: [MCP debugging, troubleshooting, anti-patterns]
-author: hp
+  - ../README.md
+  - ../../ai-agents/README.md
+  - ../../llm-application-development/README.md
+  - ../../ai-security-guardrails/README.md
 ---
 
 # MCP Engineering Mistakes
 
-## Overview
+> Troubleshooting — invalid schemas, transport failures, stale capabilities, sessions, retry storms.
 
-Section **19** — troubleshooting playbook.
+## Table of Contents
 
-## Issue Catalog
-
-### Invalid Schemas
-
-| | |
-|---|---|
-| **Symptoms** | `tools/call` fails; model generates bad args |
-| **Root cause** | Loose or missing JSON Schema |
-| **Diagnosis** | Validate schema with examples; log rejected args |
-| **Fix** | Tighten `required`, `enum`, `maxLength` |
-| **Prevention** | Schema review checklist |
-
-### Transport Failures
-
-| | |
-|---|---|
-| **Symptoms** | Connection reset, hung client |
-| **Root cause** | STDIO buffer deadlock, HTTP proxy timeout |
-| **Diagnosis** | Capture raw frames; check server stderr |
-| **Fix** | Flush logs to stderr not stdout; increase proxy timeout |
-| **Prevention** | Health checks; keep-alive |
-
-### Stale Capabilities
-
-| | |
-|---|---|
-| **Symptoms** | Tool not found after server deploy |
-| **Root cause** | Client cached `tools/list` |
-| **Diagnosis** | Compare cache age vs deploy time |
-| **Fix** | Handle `tools/list_changed`; re-list |
-| **Prevention** | TTL on capability cache |
-
-### Broken Sessions
-
-| | |
-|---|---|
-| **Symptoms** | Requests hang after server restart |
-| **Root cause** | Client did not re-`initialize` |
-| **Diagnosis** | Log initialize state |
-| **Fix** | Reconnect pipeline on transport error |
-| **Prevention** | Session watchdog |
-
-### Resource Leakage
-
-| | |
-|---|---|
-| **Symptoms** | User A sees User B data |
-| **Root cause** | Shared server without tenant filter |
-| **Diagnosis** | Audit `resources/read` by principal |
-| **Fix** | Per-tenant URIs + ACL |
-| **Prevention** | Integration tests per tenant |
-
-### Retry Storms
-
-| | |
-|---|---|
-| **Symptoms** | Downstream API overload |
-| **Root cause** | Aggressive retry on 5xx for write tools |
-| **Diagnosis** | Spike in `tools/call` metrics |
-| **Fix** | Exponential backoff; circuit breaker |
-| **Prevention** | Mark idempotent tools explicitly |
-
-### Version Mismatches
-
-| | |
-|---|---|
-| **Symptoms** | `initialize` fails |
-| **Root cause** | Client/server protocol version drift |
-| **Diagnosis** | Log negotiated versions |
-| **Fix** | Upgrade SDK; pin versions in deploy |
-| **Prevention** | CI compatibility tests |
-
-## Navigation
-
-- [Real-World Architectures](mcp-real-world-architectures.md) · [Debugging Cheat Sheet](../../../cheat-sheets/mcp-debugging-checklist.md)
+- [Overview](#overview)
+- [Definition](#definition)
+- [Why It Matters](#why-it-matters)
+- [Uses](#uses)
+- [Core Ideas](#core-ideas)
+- [How It Works](#how-it-works)
+- [Worked Example](#worked-example)
+- [Python Examples](#python-examples)
+- [Evaluation](#evaluation)
+- [Production Considerations](#production-considerations)
+- [Performance & Cost](#performance--cost)
+- [Security Notes](#security-notes)
+- [Best Practices](#best-practices)
+- [Common Mistakes](#common-mistakes)
+- [Interview Preparation](#interview-preparation)
+- [Navigation](#navigation)
 
 ---
 
-## Changelog
+## Overview
 
-| Version | Date | Changes |
-|---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication |
+Part of **Production** in the **MCP** handbook. Treat **MCP Engineering Mistakes** as an implementable engineering topic.
+
+**Typical workflow:** host → client → server → tools/resources/prompts.
+
+---
+
+## Definition
+
+**MCP Engineering Mistakes** — Troubleshooting — invalid schemas, transport failures, stale capabilities, sessions, retry storms.
+
+State inputs, outputs, success metrics, and failure behavior before changing production configs.
+
+---
+
+## Why It Matters
+
+Gaps here show up as hallucinations, silent quality drops, runaway cost, or unsafe tool use. Clear design and measurement keep AI features shippable.
+
+---
+
+## Uses
+
+| Use case | How this applies |
+|----------|------------------|
+| Product feature | User-facing capability with SLOs |
+| Internal platform | Shared retrieval/agent/eval primitives |
+| Incident response | Diagnose quality, latency, or safety regressions |
+| Design review | Make tradeoffs explicit |
+
+---
+
+## Core Ideas
+
+1. Separate orchestration from model calls.
+2. Measure offline before widening traffic.
+3. Bound loops, tokens, tools, and spend.
+4. Version prompts/indexes/models/policies together.
+5. Prefer cite/ground/approve over unconstrained generation when risk is high.
+
+---
+
+## How It Works
+
+```mermaid
+flowchart LR
+  Host --> Client --> Server --> Tools
+```
+
+Assign owners to each stage (data, model, app, platform, safety). Most regressions are interface skew between stages.
+
+---
+
+## Worked Example
+
+**Scenario:** Apply **MCP Engineering Mistakes** to a production-shaped slice of traffic.
+
+1. Write a one-page spec: inputs, outputs, SLO, safety policy, offline metrics.
+2. Implement the smallest correct path with logging and timeouts.
+3. Build a golden set (even 50–200 cases) and gate the change.
+4. Canary 1–5% traffic; watch quality, latency, cost, and abuse.
+5. Keep one-click rollback to the previous artifact bundle.
+
+---
+
+## Python Examples
+
+```python
+def tool_spec(name: str, description: str, schema: dict) -> dict:
+    return {"name": name, "description": description, "input_schema": schema}
+
+```
+
+Wrap provider SDKs behind interfaces so unit tests do not need live keys.
+
+---
+
+## Evaluation
+
+| Layer | Examples |
+|-------|----------|
+| Offline | Golden set, recall@k, task success, rubrics |
+| Online | Thumbs, redo rate, escalation, cost/request |
+| Safety | Injection, PII leak, tool-scope violations |
+
+Ship only when offline floors pass and canary metrics stay in budget.
+
+---
+
+## Production Considerations
+
+- Structured logs with request ids (redact secrets/PII).
+- Feature flags for model/prompt/index swaps.
+- Explicit timeouts, retries with jitter, and circuit breakers.
+- Multi-tenant isolation for data and tools.
+
+## Performance & Cost
+
+- Track p50/p95 latency and $ per successful task.
+- Cache embeddings/retrieval when invalidation is clear.
+- Prefer smaller routers/classifiers in front of expensive generators.
+
+## Security Notes
+
+- Treat model output and tool args as untrusted until validated.
+- Scope tools tightly; require approval for high-impact actions.
+- Enforce authZ on retrieval filters and MCP/tool servers.
+
+---
+
+## Best Practices
+
+1. Baseline → measure → complicate.
+2. Keep golden sets sacred (no training on them).
+3. Change one axis at a time (model **or** prompt **or** index).
+4. Document failure modes users will see.
+5. Practice rollback drills.
+
+---
+
+## Common Mistakes
+
+- Demo prompts with no eval harness.
+- Unbounded agent/tool loops.
+- Missing citations for grounded answers.
+- Train/serve skew in chunking or auth filters.
+- Cost dashboards that ignore tool fan-out.
+
+---
+
+## Interview Preparation
+
+**Q: How do you explain mcp engineering mistakes in a system design interview?**
+
+A: Goal → components → data flow → metrics → failure modes → scale knobs → security.
+
+**Q: What do you gate on before production?**
+
+A: Offline floors, canary online metrics, safety checks, and a tested rollback.
+
+**Q: What breaks first in production?**
+
+A: Usually retrieval/auth skew, prompt regressions, or cost blowups — not the happy-path demo.
+
+---
+
+## Navigation
+
+- **Section hub:** [README](README.md)
+- **Topic hub:** [../README.md](../README.md)

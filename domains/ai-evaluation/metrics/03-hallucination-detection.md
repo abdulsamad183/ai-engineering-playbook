@@ -2,82 +2,191 @@
 title: "Hallucination Detection"
 description: "Hallucination types, detection strategies, automated and human review, confidence estimation."
 domain: ai-evaluation
-tags: [ai-evaluation, hallucination, faithfulness, detection]
+tags: [metrics, ai-evaluation]
 status: published
-created: 2026-07-13
-updated: 2026-07-13
-version: "1.0"
+created: 2026-08-11
+updated: 2026-08-12
+version: "2.0"
 related:
-  - llm-evaluation-metrics.md
-  - rag-evaluation.md
-  - ../../rag/hallucination-prevention.md
-keywords: [hallucination, fabrication, groundedness, citation hallucination]
-author: hp
+  - ../README.md
+  - ../../prompt-engineering/README.md
+  - ../../rag/README.md
+  - ../../ai-agents/README.md
 ---
 
 # Hallucination Detection
 
-## Overview
+> Hallucination types, detection strategies, automated and human review, confidence estimation.
 
-Section **6**.
+## Table of Contents
 
-## Hallucination Types
-
-| Type | Description | Common in |
-|------|-------------|-----------|
-| **Retrieval** | Ignores or misuses retrieved context | RAG |
-| **Reasoning** | Invalid logical steps | Agents, CoT |
-| **Citation** | Fake or wrong sources | RAG with citations |
-| **Fabrication** | Invented entities/facts | Open QA |
-| **Unsupported claims** | Plausible but unverifiable | Summaries |
-
-## Detection Strategies
-
-```mermaid
-flowchart TB
-    OUT[Output] --> NLI[NLI / entailment check]
-    OUT --> CITE[Citation verification]
-    OUT --> JUDGE[LLM judge]
-    OUT --> HUM[Human review queue]
-    NLI & CITE & JUDGE --> SCORE[Hallucination score]
-```
-
-| Strategy | Pros | Cons |
-|----------|------|------|
-| **NLI entailment** | Fast | brittle on long context |
-| **LLM-as-judge** | Flexible | Cost, bias |
-| **Citation match** | Objective for RAG | Needs structured cites |
-| **Human review** | Gold standard | Slow |
-
-## Confidence Estimation
-
-- Token logprobs (when available)
-- Self-consistency across samples
-- Retrieval score thresholds → abstain
-
-## Production Workflow
-
-1. Auto-score all outputs in eval
-2. Route low faithfulness to human queue
-3. Cluster failure modes → fix retrieval or prompt
-
-## Python Example
-
-```python
-def citation_hallucination(answer: str, valid_ids: set[str]) -> list[str]:
-    import re
-    cited = set(re.findall(r"\[(\d+)\]", answer))
-    return list(cited - valid_ids)
-```
-
-## Navigation
-
-- [RAG Evaluation](rag-evaluation.md)
+- [Overview](#overview)
+- [Definition](#definition)
+- [Why It Matters](#why-it-matters)
+- [Uses](#uses)
+- [Core Ideas](#core-ideas)
+- [How It Works](#how-it-works)
+- [Worked Example](#worked-example)
+- [Python Examples](#python-examples)
+- [Evaluation](#evaluation)
+- [Production Considerations](#production-considerations)
+- [Performance & Cost](#performance--cost)
+- [Security Notes](#security-notes)
+- [Best Practices](#best-practices)
+- [Common Mistakes](#common-mistakes)
+- [Interview Preparation](#interview-preparation)
+- [Navigation](#navigation)
 
 ---
 
-## Changelog
+## Overview
 
-| Version | Date | Changes |
-|---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication |
+Part of **Metrics** in the **LLM Evaluation** handbook. Treat **Hallucination Detection** as an implementable engineering topic.
+
+**Typical workflow:** dataset → metrics → judges/human → gate → monitor.
+
+---
+
+## Definition
+
+**Hallucination Detection** — Hallucination types, detection strategies, automated and human review, confidence estimation.
+
+State inputs, outputs, success metrics, and failure behavior before changing production configs.
+
+---
+
+## Why It Matters
+
+Gaps here show up as hallucinations, silent quality drops, runaway cost, or unsafe tool use. Clear design and measurement keep AI features shippable.
+
+---
+
+## Uses
+
+| Use case | How this applies |
+|----------|------------------|
+| Product feature | User-facing capability with SLOs |
+| Internal platform | Shared retrieval/agent/eval primitives |
+| Incident response | Diagnose quality, latency, or safety regressions |
+| Design review | Make tradeoffs explicit |
+
+---
+
+## Core Ideas
+
+1. Separate orchestration from model calls.
+2. Measure offline before widening traffic.
+3. Bound loops, tokens, tools, and spend.
+4. Version prompts/indexes/models/policies together.
+5. Prefer cite/ground/approve over unconstrained generation when risk is high.
+
+---
+
+## How It Works
+
+```mermaid
+flowchart LR
+  Suite --> Score --> Gate --> Ship
+```
+
+Assign owners to each stage (data, model, app, platform, safety). Most regressions are interface skew between stages.
+
+---
+
+## Worked Example
+
+**Scenario:** Apply **Hallucination Detection** to a production-shaped slice of traffic.
+
+1. Write a one-page spec: inputs, outputs, SLO, safety policy, offline metrics.
+2. Implement the smallest correct path with logging and timeouts.
+3. Build a golden set (even 50–200 cases) and gate the change.
+4. Canary 1–5% traffic; watch quality, latency, cost, and abuse.
+5. Keep one-click rollback to the previous artifact bundle.
+
+---
+
+## Python Examples
+
+```python
+def pass_gate(scores: dict[str, float], floors: dict[str, float]) -> bool:
+    return all(scores.get(k, 0.0) >= v for k, v in floors.items())
+
+```
+
+Wrap provider SDKs behind interfaces so unit tests do not need live keys.
+
+---
+
+## Evaluation
+
+| Layer | Examples |
+|-------|----------|
+| Offline | Golden set, recall@k, task success, rubrics |
+| Online | Thumbs, redo rate, escalation, cost/request |
+| Safety | Injection, PII leak, tool-scope violations |
+
+Ship only when offline floors pass and canary metrics stay in budget.
+
+---
+
+## Production Considerations
+
+- Structured logs with request ids (redact secrets/PII).
+- Feature flags for model/prompt/index swaps.
+- Explicit timeouts, retries with jitter, and circuit breakers.
+- Multi-tenant isolation for data and tools.
+
+## Performance & Cost
+
+- Track p50/p95 latency and $ per successful task.
+- Cache embeddings/retrieval when invalidation is clear.
+- Prefer smaller routers/classifiers in front of expensive generators.
+
+## Security Notes
+
+- Treat model output and tool args as untrusted until validated.
+- Scope tools tightly; require approval for high-impact actions.
+- Enforce authZ on retrieval filters and MCP/tool servers.
+
+---
+
+## Best Practices
+
+1. Baseline → measure → complicate.
+2. Keep golden sets sacred (no training on them).
+3. Change one axis at a time (model **or** prompt **or** index).
+4. Document failure modes users will see.
+5. Practice rollback drills.
+
+---
+
+## Common Mistakes
+
+- Demo prompts with no eval harness.
+- Unbounded agent/tool loops.
+- Missing citations for grounded answers.
+- Train/serve skew in chunking or auth filters.
+- Cost dashboards that ignore tool fan-out.
+
+---
+
+## Interview Preparation
+
+**Q: How do you explain hallucination detection in a system design interview?**
+
+A: Goal → components → data flow → metrics → failure modes → scale knobs → security.
+
+**Q: What do you gate on before production?**
+
+A: Offline floors, canary online metrics, safety checks, and a tested rollback.
+
+**Q: What breaks first in production?**
+
+A: Usually retrieval/auth skew, prompt regressions, or cost blowups — not the happy-path demo.
+
+---
+
+## Navigation
+
+- **Section hub:** [README](README.md)
+- **Topic hub:** [../README.md](../README.md)

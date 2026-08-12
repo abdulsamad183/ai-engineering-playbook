@@ -5,7 +5,7 @@
 **Prerequisites:** [LLM Application Development](../llm-application-development/README.md) · [Prompt Engineering](../prompt-engineering/README.md)  
 **Unlocks:** [Agentic AI](../agentic-ai/README.md) · [MCP](../mcp/README.md) · [Multi-Agent Systems](../multi-agent-systems/README.md)
 
-Start with a section hub below (or expand the topic in the left sidebar).
+Thin lessons deepened 2026-08-12. Start with a section hub below (or expand the topic in the left sidebar).
 
 ---
 

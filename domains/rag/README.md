@@ -5,7 +5,7 @@
 **Prerequisites:** [Embeddings & Vector Databases](../embeddings-vector-databases/README.md) · [Prompt Engineering](../prompt-engineering/README.md)  
 **Unlocks:** [AI Agents](../ai-agents/README.md) · [LLM Evaluation](../ai-evaluation/README.md)
 
-Start with a section hub below (or expand the topic in the left sidebar).
+Thin lessons deepened 2026-08-12. Start with a section hub below (or expand the topic in the left sidebar).
 
 ---
 

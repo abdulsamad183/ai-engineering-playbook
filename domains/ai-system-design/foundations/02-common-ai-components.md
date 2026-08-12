@@ -2,91 +2,191 @@
 title: "Common AI System Components"
 description: "Reusable production stack — gateway, auth, FastAPI, agents, RAG, vector DB, Redis, queues, monitoring."
 domain: ai-system-design
-tags: [system-design, components, architecture]
+tags: [foundations, ai-system-design]
 status: published
-created: 2026-07-13
-updated: 2026-07-13
-version: "1.0"
+created: 2026-08-11
+updated: 2026-08-12
+version: "2.0"
 related:
-  - ai-system-design-fundamentals.md
-  - ../../backend-engineering/README.md
-keywords: [API gateway, vector DB, Redis, FastAPI AI]
-author: hp
+  - ../README.md
+  - ../../rag/README.md
+  - ../../ai-agents/README.md
+  - ../../ai-deployment/README.md
 ---
 
 # Common AI System Components
 
-## Overview
+> Reusable production stack — gateway, auth, FastAPI, agents, RAG, vector DB, Redis, queues, monitoring.
 
-Section **2** — the reference stack for production AI applications.
+## Table of Contents
 
-```mermaid
-flowchart TB
-    GW[API Gateway] --> AUTH[Authentication]
-    AUTH --> LB[Load Balancer]
-    LB --> API[FastAPI]
-    API --> AG[Agent Layer]
-    API --> RAG[RAG Layer]
-    RAG --> VDB[(Vector DB)]
-    API --> PG[(PostgreSQL)]
-    API --> REDIS[(Redis)]
-    API --> Q[Queues]
-    Q --> WORK[Workers]
-    RAG --> S3[Object Storage]
-    API --> MON[Monitoring]
-    AG & RAG --> LLM[LLM Providers]
-```
-
-## Component Responsibilities
-
-| Component | Responsibility | Why it exists |
-|-----------|----------------|---------------|
-| **API Gateway** | Routing, TLS termination, global rate limits | Single edge; DDoS protection |
-| **Authentication** | JWT/OAuth, tenant ID | Identity for ACL and billing |
-| **Load Balancer** | Distribute to API replicas | Horizontal scale |
-| **FastAPI** | HTTP/SSE, validation, orchestration | Async Python AI services |
-| **Agent Layer** | Tool loop, state, planning | Multi-step tasks |
-| **RAG Layer** | Embed, retrieve, rerank, assemble | Grounded answers |
-| **Vector DB** | ANN search, metadata filters | Semantic retrieval |
-| **PostgreSQL** | Users, conversations, metadata | ACID, relational data |
-| **Redis** | Session, cache, rate limit counters | Sub-ms reads |
-| **Queues** | Index jobs, async agents, eval | Decouple burst load |
-| **Object Storage** | PDFs, uploads, index snapshots | Cheap blob storage |
-| **Monitoring** | Metrics, traces, alerts | Operate in production |
-| **LLM Providers** | Inference API | Core intelligence |
-
-## Request Lifecycle
-
-1. Client → Gateway → Auth → LB → FastAPI
-2. Load session from Redis; ACL check
-3. Route: chat / RAG / agent path
-4. Optional retrieval → context assembly
-5. LLM call (stream or complete)
-6. Persist turn to Postgres; update cache
-7. Emit metrics/trace
-
-## Tradeoffs
-
-| Choice | Pro | Con |
-|--------|-----|-----|
-| Monolith FastAPI | Simple ops | Scale all layers together |
-| Separate retrieval service | Independent scale | Network hop |
-| Sync indexing | Consistency | Slow uploads |
-
-## Failure Handling
-
-- LLM timeout → retry once → fallback message
-- Vector DB slow → cache hit or keyword fallback
-- Queue backlog → scale workers
-
-## Navigation
-
-- [Design: ChatGPT-like System](design-chatgpt-like-system.md)
+- [Overview](#overview)
+- [Definition](#definition)
+- [Why It Matters](#why-it-matters)
+- [Uses](#uses)
+- [Core Ideas](#core-ideas)
+- [How It Works](#how-it-works)
+- [Worked Example](#worked-example)
+- [Python Examples](#python-examples)
+- [Evaluation](#evaluation)
+- [Production Considerations](#production-considerations)
+- [Performance & Cost](#performance--cost)
+- [Security Notes](#security-notes)
+- [Best Practices](#best-practices)
+- [Common Mistakes](#common-mistakes)
+- [Interview Preparation](#interview-preparation)
+- [Navigation](#navigation)
 
 ---
 
-## Changelog
+## Overview
 
-| Version | Date | Changes |
-|---------|------|---------|
-| 1.0 | 2026-07-13 | Initial publication |
+Part of **Foundations** in the **AI System Design** handbook. Treat **Common AI System Components** as an implementable engineering topic.
+
+**Typical workflow:** requirements → components → tradeoffs → scale → failure modes.
+
+---
+
+## Definition
+
+**Common AI System Components** — Reusable production stack — gateway, auth, FastAPI, agents, RAG, vector DB, Redis, queues, monitoring.
+
+State inputs, outputs, success metrics, and failure behavior before changing production configs.
+
+---
+
+## Why It Matters
+
+Gaps here show up as hallucinations, silent quality drops, runaway cost, or unsafe tool use. Clear design and measurement keep AI features shippable.
+
+---
+
+## Uses
+
+| Use case | How this applies |
+|----------|------------------|
+| Product feature | User-facing capability with SLOs |
+| Internal platform | Shared retrieval/agent/eval primitives |
+| Incident response | Diagnose quality, latency, or safety regressions |
+| Design review | Make tradeoffs explicit |
+
+---
+
+## Core Ideas
+
+1. Separate orchestration from model calls.
+2. Measure offline before widening traffic.
+3. Bound loops, tokens, tools, and spend.
+4. Version prompts/indexes/models/policies together.
+5. Prefer cite/ground/approve over unconstrained generation when risk is high.
+
+---
+
+## How It Works
+
+```mermaid
+flowchart TB
+  Req --> Components --> DataFlow --> Scale --> Risks
+```
+
+Assign owners to each stage (data, model, app, platform, safety). Most regressions are interface skew between stages.
+
+---
+
+## Worked Example
+
+**Scenario:** Apply **Common AI System Components** to a production-shaped slice of traffic.
+
+1. Write a one-page spec: inputs, outputs, SLO, safety policy, offline metrics.
+2. Implement the smallest correct path with logging and timeouts.
+3. Build a golden set (even 50–200 cases) and gate the change.
+4. Canary 1–5% traffic; watch quality, latency, cost, and abuse.
+5. Keep one-click rollback to the previous artifact bundle.
+
+---
+
+## Python Examples
+
+```python
+def estimate_qps(users: int, msgs_per_user_day: float) -> float:
+    return users * msgs_per_user_day / 86400.0
+
+```
+
+Wrap provider SDKs behind interfaces so unit tests do not need live keys.
+
+---
+
+## Evaluation
+
+| Layer | Examples |
+|-------|----------|
+| Offline | Golden set, recall@k, task success, rubrics |
+| Online | Thumbs, redo rate, escalation, cost/request |
+| Safety | Injection, PII leak, tool-scope violations |
+
+Ship only when offline floors pass and canary metrics stay in budget.
+
+---
+
+## Production Considerations
+
+- Structured logs with request ids (redact secrets/PII).
+- Feature flags for model/prompt/index swaps.
+- Explicit timeouts, retries with jitter, and circuit breakers.
+- Multi-tenant isolation for data and tools.
+
+## Performance & Cost
+
+- Track p50/p95 latency and $ per successful task.
+- Cache embeddings/retrieval when invalidation is clear.
+- Prefer smaller routers/classifiers in front of expensive generators.
+
+## Security Notes
+
+- Treat model output and tool args as untrusted until validated.
+- Scope tools tightly; require approval for high-impact actions.
+- Enforce authZ on retrieval filters and MCP/tool servers.
+
+---
+
+## Best Practices
+
+1. Baseline → measure → complicate.
+2. Keep golden sets sacred (no training on them).
+3. Change one axis at a time (model **or** prompt **or** index).
+4. Document failure modes users will see.
+5. Practice rollback drills.
+
+---
+
+## Common Mistakes
+
+- Demo prompts with no eval harness.
+- Unbounded agent/tool loops.
+- Missing citations for grounded answers.
+- Train/serve skew in chunking or auth filters.
+- Cost dashboards that ignore tool fan-out.
+
+---
+
+## Interview Preparation
+
+**Q: How do you explain common ai system components in a system design interview?**
+
+A: Goal → components → data flow → metrics → failure modes → scale knobs → security.
+
+**Q: What do you gate on before production?**
+
+A: Offline floors, canary online metrics, safety checks, and a tested rollback.
+
+**Q: What breaks first in production?**
+
+A: Usually retrieval/auth skew, prompt regressions, or cost blowups — not the happy-path demo.
+
+---
+
+## Navigation
+
+- **Section hub:** [README](README.md)
+- **Topic hub:** [../README.md](../README.md)

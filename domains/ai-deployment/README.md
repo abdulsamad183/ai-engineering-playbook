@@ -5,7 +5,7 @@
 **Prerequisites:** [LLM Application Development](../llm-application-development/README.md) · [MLOps & LLMOps](../mlops-llmops/README.md)  
 **Unlocks:** [AI Security & Guardrails](../ai-security-guardrails/README.md)
 
-Start with a section hub below (or expand the topic in the left sidebar).
+Thin lessons deepened 2026-08-12. Start with a section hub below (or expand the topic in the left sidebar).
 
 ---
 
