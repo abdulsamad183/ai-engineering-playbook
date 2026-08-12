@@ -5,7 +5,7 @@
 **Prerequisites:** [Large Language Models](../llm-engineering/README.md) · [Deep Learning](../deep-learning/README.md)  
 **Unlocks:** [Prompt Engineering](../prompt-engineering/README.md) · [LLM Application Development](../llm-application-development/README.md) · [AI Security & Guardrails](../ai-security-guardrails/README.md)
 
-Start with a section hub below (or expand **9. Generative AI** in the left sidebar).
+Start with a section hub below (or expand **9. Generative AI** in the left sidebar). Lessons are full handbook pages (definitions, Mermaid, Python, production/safety/eval) — updated 2026-08-12.
 
 ---
 

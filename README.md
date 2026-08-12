@@ -58,7 +58,7 @@ flowchart TB
 | 6 | [Natural Language Processing](domains/natural-language-processing/README.md) | 10 sections · 64 topics — text → tasks → attention |
 | 7 | [Transformers](domains/transformers/README.md) | 7 sections · 33 topics — attention · families · inference |
 | 8 | [Large Language Models (LLMs)](domains/llm-engineering/README.md) | 14 sections · 117 topics — pretrain → align → serve |
-| 9 | [Generative AI](domains/generative-ai/README.md) | 14 sections · 76 topics — GANs → diffusion → multimodal |
+| 9 | [Generative AI](domains/generative-ai/README.md) | Full deep lessons across 14 sections (GANs, VAEs, diffusion, multimodal, safety) |
 | 10 | [Prompt Engineering](domains/prompt-engineering/README.md) | 5 sections · 19 topics — craft → ops → production |
 | 11 | [LLM Application Development](domains/llm-application-development/README.md) | App architecture, orchestration, APIs, reliability — nested curriculum |
 | 12 | [Chatbots](domains/chatbots/README.md) | Dialogue, memory, grounding, channels, ops — nested curriculum |

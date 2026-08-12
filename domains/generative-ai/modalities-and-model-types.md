@@ -1,56 +1,70 @@
 ---
 title: "Modalities and Model Types"
-description: "Text, image, audio, and multimodal generators — a field guide."
+description: "How text, image, audio, video, and multimodal generators differ in representation and systems design."
 domain: generative-ai
-tags: [generative-ai]
+tags: [overview, generative-ai]
 status: published
 created: 2026-08-11
-updated: 2026-08-11
-version: "1.0"
+updated: 2026-08-12
+version: "2.0"
 ---
 
 # Modalities and Model Types
 
-> Text, image, audio, and multimodal generators — a field guide.
+> How text, image, audio, video, and multimodal generators differ in representation and systems design.
+
+## Table of Contents
+
+- [Definition](#definition)
+- [Why It Matters](#why-it-matters)
+- [Map of This Handbook](#map-of-this-handbook)
+- [System Loop](#system-loop)
+- [Python Skeleton](#python-skeleton)
+- [Production Checklist](#production-checklist)
+- [Navigation](#navigation)
 
 ## Definition
 
-Generative modalities include text (autoregressive LMs), images (diffusion / autoregressive vision), audio/speech, and multimodal models that accept/produce mixed inputs. Each has different latency, cost, and safety profiles.
+**Modalities and Model Types** — How text, image, audio, video, and multimodal generators differ in representation and systems design.
 
-## Why it matters
+## Why It Matters
 
-Product architecture changes with modality: image gens need asset storage/CDN; voice needs streaming audio; text needs citation/RAG patterns.
+Without a shared map, teams confuse demos with production systems and pick the wrong modality stack.
 
-## How it works
+## Map of This Handbook
+
+1. Fundamentals and generative model families
+2. GANs, VAEs, diffusion
+3. Text / image / video / audio / multimodal
+4. Fine-tuning, evaluation, applications, safety
+
+## System Loop
 
 ```mermaid
-flowchart TB
-  Text[Text LLMs] --> Apps1[Chat / agents]
-  Img[Image models] --> Apps2[Design / vision tools]
-  Aud[Audio models] --> Apps3[Voice agents]
-  MM[Multimodal] --> Apps4[Doc + screenshot understanding]
+flowchart LR
+  Spec --> Model --> Sample --> Guard --> Eval --> Improve
 ```
 
-## Key principles
+## Python Skeleton
 
-1. **Pick modality from UX** — Don't force chat if a form+model is better.
-2. **Budget generation cost** — Images/video can dwarf text costs.
-3. **Separate understanding vs generation** — VLM understand ≠ image generate.
+```python
+def genai_feature(request: dict) -> dict:
+    # 1 validate + auth
+    # 2 build conditioning
+    # 3 sample
+    # 4 filter
+    # 5 log metrics
+    return {"ok": True, "echo": request}
+```
 
-## Common applications
+## Production Checklist
 
-| Application | Description |
-|-------------|-------------|
-| Support bots | Text ± voice |
-| Creative tools | Image/video |
-| Document AI | Multimodal PDF/screenshot QA |
+- [ ] Modality and SLO documented
+- [ ] Offline golden set
+- [ ] Safety filters
+- [ ] Cost quotas
+- [ ] Canary + rollback
 
-## Common mistakes
+## Navigation
 
-- One mega-prompt for every modality without specialized eval
-- Ignoring content credentials / provenance needs
-
-## Further reading
-
-- [LLM Application Development](../llm-application-development/README.md)
-- [AI System Design](../ai-system-design/README.md)
+- [Generative AI hub](README.md)

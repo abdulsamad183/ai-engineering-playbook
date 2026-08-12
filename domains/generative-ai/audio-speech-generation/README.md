@@ -1,17 +1,20 @@
-# Audio & Speech Generation
+# Audio Speech Generation
 
-> Waveforms and speech — TTS, music, and voice conversion.
+> Deep lessons for the **Audio Speech Generation** section of the Generative AI handbook.
 
-**Parent:** [Generative AI](../README.md)
+## Lessons
 
----
+| # | Lesson |
+|---|--------|
+| 1 | [Audio Generation Basics](01-audio-generation-basics.md) |
+| 2 | [Text-to-Speech](02-text-to-speech.md) |
+| 3 | [Music & Sound Generation](03-music-and-sound-generation.md) |
+| 4 | [Voice Cloning & Conversion](04-voice-cloning-and-conversion.md) |
+| 5 | [Audio Evaluation](05-audio-evaluation.md) |
 
-## Topics
+```mermaid
+flowchart LR
+  L1 --> L2 --> L3 --> L4 --> L5
+```
 
-| # | Topic | Document |
-|---|-------|----------|
-| 1 | Audio Generation Basics | [01-audio-generation-basics.md](01-audio-generation-basics.md) |
-| 2 | Text-to-Speech | [02-text-to-speech.md](02-text-to-speech.md) |
-| 3 | Music & Sound Generation | [03-music-and-sound-generation.md](03-music-and-sound-generation.md) |
-| 4 | Voice Cloning & Conversion | [04-voice-cloning-and-conversion.md](04-voice-cloning-and-conversion.md) |
-| 5 | Audio Evaluation | [05-audio-evaluation.md](05-audio-evaluation.md) |
+**Topic hub:** [../README.md](../README.md)

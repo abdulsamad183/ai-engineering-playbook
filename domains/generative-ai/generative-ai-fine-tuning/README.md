@@ -1,17 +1,20 @@
-# Generative AI Fine-Tuning
+# Generative Ai Fine Tuning
 
-> Adapt generators — DreamBooth, LoRA, and preference tuning.
+> Deep lessons for the **Generative Ai Fine Tuning** section of the Generative AI handbook.
 
-**Parent:** [Generative AI](../README.md)
+## Lessons
 
----
+| # | Lesson |
+|---|--------|
+| 1 | [Why Fine-Tune Generators](01-why-finetune-generators.md) |
+| 2 | [LoRA for Diffusion & LLMs](02-lora-for-diffusion-and-llms.md) |
+| 3 | [DreamBooth & Personalization](03-dreambooth-and-personalization.md) |
+| 4 | [Preference Tuning for GenAI](04-preference-tuning-for-genai.md) |
+| 5 | [Dataset Curation for GenAI](05-dataset-curation-for-genai.md) |
 
-## Topics
+```mermaid
+flowchart LR
+  L1 --> L2 --> L3 --> L4 --> L5
+```
 
-| # | Topic | Document |
-|---|-------|----------|
-| 1 | Why Fine-Tune Generators | [01-why-finetune-generators.md](01-why-finetune-generators.md) |
-| 2 | LoRA for Diffusion & LLMs | [02-lora-for-diffusion-and-llms.md](02-lora-for-diffusion-and-llms.md) |
-| 3 | DreamBooth & Personalization | [03-dreambooth-and-personalization.md](03-dreambooth-and-personalization.md) |
-| 4 | Preference Tuning for GenAI | [04-preference-tuning-for-genai.md](04-preference-tuning-for-genai.md) |
-| 5 | Dataset Curation for GenAI | [05-dataset-curation-for-genai.md](05-dataset-curation-for-genai.md) |
+**Topic hub:** [../README.md](../README.md)

@@ -1,18 +1,21 @@
-# Generative AI Fundamentals
+# Generative Ai Fundamentals
 
-> What GenAI is — modalities, conditioning, and product constraints.
+> Deep lessons for the **Generative Ai Fundamentals** section of the Generative AI handbook.
 
-**Parent:** [Generative AI](../README.md)
+## Lessons
 
----
+| # | Lesson |
+|---|--------|
+| 1 | [What is Generative AI](01-what-is-generative-ai.md) |
+| 2 | [Discriminative vs Generative](02-discriminative-vs-generative.md) |
+| 3 | [Modalities Overview](03-modalities-overview.md) |
+| 4 | [Conditioning & Control](04-conditioning-and-control.md) |
+| 5 | [Sampling & Latent Space](05-sampling-and-latent-space.md) |
+| 6 | [GenAI System Loop](06-genai-system-loop.md) |
 
-## Topics
+```mermaid
+flowchart LR
+  L1 --> L2 --> L3 --> L4 --> L5 --> L6
+```
 
-| # | Topic | Document |
-|---|-------|----------|
-| 1 | What is Generative AI | [01-what-is-generative-ai.md](01-what-is-generative-ai.md) |
-| 2 | Discriminative vs Generative | [02-discriminative-vs-generative.md](02-discriminative-vs-generative.md) |
-| 3 | Modalities Overview | [03-modalities-overview.md](03-modalities-overview.md) |
-| 4 | Conditioning & Control | [04-conditioning-and-control.md](04-conditioning-and-control.md) |
-| 5 | Sampling & Latent Space | [05-sampling-and-latent-space.md](05-sampling-and-latent-space.md) |
-| 6 | GenAI System Loop | [06-genai-system-loop.md](06-genai-system-loop.md) |
+**Topic hub:** [../README.md](../README.md)

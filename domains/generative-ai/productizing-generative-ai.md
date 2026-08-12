@@ -1,57 +1,70 @@
 ---
 title: "Productizing Generative AI"
-description: "From demo to durable product — UX, eval, safety, and ops."
+description: "Turning generative models into reliable products with SLOs, guardrails, eval, and cost controls."
 domain: generative-ai
-tags: [generative-ai]
+tags: [overview, generative-ai]
 status: published
 created: 2026-08-11
-updated: 2026-08-11
-version: "1.0"
+updated: 2026-08-12
+version: "2.0"
 ---
 
 # Productizing Generative AI
 
-> From demo to durable product — UX, eval, safety, and ops.
+> Turning generative models into reliable products with SLOs, guardrails, eval, and cost controls.
+
+## Table of Contents
+
+- [Definition](#definition)
+- [Why It Matters](#why-it-matters)
+- [Map of This Handbook](#map-of-this-handbook)
+- [System Loop](#system-loop)
+- [Python Skeleton](#python-skeleton)
+- [Production Checklist](#production-checklist)
+- [Navigation](#navigation)
 
 ## Definition
 
-Productizing GenAI means wrapping a model with product constraints: latency SLOs, cost caps, groundedness, human review, versioning, and feedback loops.
+**Productizing Generative AI** — Turning generative models into reliable products with SLOs, guardrails, eval, and cost controls.
 
-## Why it matters
+## Why It Matters
 
-Demos optimize wow; products optimize reliability. The gap is engineering.
+Without a shared map, teams confuse demos with production systems and pick the wrong modality stack.
 
-## How it works
+## Map of This Handbook
+
+1. Fundamentals and generative model families
+2. GANs, VAEs, diffusion
+3. Text / image / video / audio / multimodal
+4. Fine-tuning, evaluation, applications, safety
+
+## System Loop
 
 ```mermaid
-flowchart TB
-  Demo[Demo] --> Contract[Define quality contract]
-  Contract --> Harness[Eval harness]
-  Harness --> Guard[Guardrails]
-  Guard --> Obs[Observability]
-  Obs --> Iterate[Iterate model/prompt/data]
+flowchart LR
+  Spec --> Model --> Sample --> Guard --> Eval --> Improve
 ```
 
-## Key principles
+## Python Skeleton
 
-1. **Write a quality contract** — What must never happen?
-2. **Version prompts & models** — Reproducible deploys.
-3. **Close the loop** — Capture failures into golden sets.
+```python
+def genai_feature(request: dict) -> dict:
+    # 1 validate + auth
+    # 2 build conditioning
+    # 3 sample
+    # 4 filter
+    # 5 log metrics
+    return {"ok": True, "echo": request}
+```
 
-## Common applications
+## Production Checklist
 
-| Application | Description |
-|-------------|-------------|
-| Customer support | Grounded answers + escalate |
-| Internal copilots | Permissions-aware tools |
-| Content generation | Brand/style checkers |
+- [ ] Modality and SLO documented
+- [ ] Offline golden set
+- [ ] Safety filters
+- [ ] Cost quotas
+- [ ] Canary + rollback
 
-## Common mistakes
+## Navigation
 
-- No rollback plan when a prompt change ships
-- Logging sensitive prompts without redaction policy
-
-## Further reading
-
-- [MLOps & LLMOps](../mlops-llmops/README.md)
-- [AI Security & Guardrails](../ai-security-guardrails/README.md)
+- [Generative AI hub](README.md)

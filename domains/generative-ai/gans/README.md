@@ -1,18 +1,21 @@
-# GANs
+# Gans
 
-> Adversarial generators — strengths, failure modes, and variants.
+> Deep lessons for the **Gans** section of the Generative AI handbook.
 
-**Parent:** [Generative AI](../README.md)
+## Lessons
 
----
+| # | Lesson |
+|---|--------|
+| 1 | [GAN Basics](01-gan-basics.md) |
+| 2 | [Training Dynamics](02-training-dynamics.md) |
+| 3 | [Mode Collapse](03-mode-collapse.md) |
+| 4 | [DCGAN & StyleGAN](04-dcgan-and-stylegan.md) |
+| 5 | [Conditional GANs](05-conditional-gans.md) |
+| 6 | [GAN Evaluation](06-gan-evaluation.md) |
 
-## Topics
+```mermaid
+flowchart LR
+  L1 --> L2 --> L3 --> L4 --> L5 --> L6
+```
 
-| # | Topic | Document |
-|---|-------|----------|
-| 1 | GAN Basics | [01-gan-basics.md](01-gan-basics.md) |
-| 2 | Training Dynamics | [02-training-dynamics.md](02-training-dynamics.md) |
-| 3 | Mode Collapse | [03-mode-collapse.md](03-mode-collapse.md) |
-| 4 | DCGAN & StyleGAN | [04-dcgan-and-stylegan.md](04-dcgan-and-stylegan.md) |
-| 5 | Conditional GANs | [05-conditional-gans.md](05-conditional-gans.md) |
-| 6 | GAN Evaluation | [06-gan-evaluation.md](06-gan-evaluation.md) |
+**Topic hub:** [../README.md](../README.md)

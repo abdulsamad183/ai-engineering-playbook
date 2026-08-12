@@ -1,17 +1,20 @@
-# Generative AI Applications
+# Generative Ai Applications
 
-> Where GenAI ships — copilots, media, and enterprise workflows.
+> Deep lessons for the **Generative Ai Applications** section of the Generative AI handbook.
 
-**Parent:** [Generative AI](../README.md)
+## Lessons
 
----
+| # | Lesson |
+|---|--------|
+| 1 | [Content & Media](01-content-and-media.md) |
+| 2 | [Copilots & Assistants](02-copilots-and-assistants.md) |
+| 3 | [Enterprise Knowledge Apps](03-enterprise-knowledge-apps.md) |
+| 4 | [Synthetic Data](04-synthetic-data.md) |
+| 5 | [Creative Tools](05-creative-tools.md) |
 
-## Topics
+```mermaid
+flowchart LR
+  L1 --> L2 --> L3 --> L4 --> L5
+```
 
-| # | Topic | Document |
-|---|-------|----------|
-| 1 | Content & Media | [01-content-and-media.md](01-content-and-media.md) |
-| 2 | Copilots & Assistants | [02-copilots-and-assistants.md](02-copilots-and-assistants.md) |
-| 3 | Enterprise Knowledge Apps | [03-enterprise-knowledge-apps.md](03-enterprise-knowledge-apps.md) |
-| 4 | Synthetic Data | [04-synthetic-data.md](04-synthetic-data.md) |
-| 5 | Creative Tools | [05-creative-tools.md](05-creative-tools.md) |
+**Topic hub:** [../README.md](../README.md)
