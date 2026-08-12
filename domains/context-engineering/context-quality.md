@@ -149,7 +149,7 @@ Integrate with [AI Evaluation](../ai-evaluation/README.md).
 ### Prerequisites
 
 - [Context Selection](context-selection.md)
-- [Prompt Evaluation](../prompt-engineering/prompt-evaluation.md)
+- [Prompt Evaluation](../prompt-engineering/prompt-operations/04-prompt-evaluation.md)
 
 ### Related Topics
 

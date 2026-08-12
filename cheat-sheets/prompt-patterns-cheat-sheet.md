@@ -1,6 +1,6 @@
 # Prompt Patterns Cheat Sheet
 
-> When to use each pattern. See [Prompt Patterns](../domains/prompt-engineering/prompt-patterns.md).
+> When to use each pattern. See [Prompt Patterns](../domains/prompt-engineering/craft/01-prompt-patterns.md).
 
 | Pattern | Use When | Avoid When |
 |---------|----------|------------|
@@ -28,4 +28,4 @@
 ## See Also
 
 - [Templates](../prompts/templates/)
-- [Structured Prompting](../domains/prompt-engineering/structured-prompting.md)
+- [Structured Prompting](../domains/prompt-engineering/craft/03-structured-prompting.md)

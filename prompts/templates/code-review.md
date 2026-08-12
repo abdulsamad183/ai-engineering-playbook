@@ -24,7 +24,7 @@ output:
 related:
   - code-generation.md
   - evaluation-judge.md
-  - ../../domains/prompt-engineering/prompt-templates-guide.md
+  - ../../domains/prompt-engineering/craft/02-prompt-templates-guide.md
 keywords: [code review, static analysis, security audit, PR review]
 ---
 

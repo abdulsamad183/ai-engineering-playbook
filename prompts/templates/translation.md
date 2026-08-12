@@ -22,7 +22,7 @@ output:
   format: text
   schema: null
 related:
-  - ../../domains/prompt-engineering/prompt-templates-guide.md
+  - ../../domains/prompt-engineering/craft/02-prompt-templates-guide.md
 keywords: [translation, localization, multilingual, glossary]
 ---
 

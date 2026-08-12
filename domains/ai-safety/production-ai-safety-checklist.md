@@ -94,7 +94,7 @@ See [Security for AI Backends](../security/security-for-ai-backends.md).
 - [ ] Injection and jailbreak cases in automated evals
 - [ ] Prompt changes go through review (same as code)
 
-See [Prompt Security](../prompt-engineering/prompt-security.md).
+See [Prompt Security](../prompt-engineering/production-and-safety/01-prompt-security.md).
 
 ---
 
@@ -181,7 +181,7 @@ See [Safe Tool Use](safe-tool-use.md) · [Agent Security](../ai-agents/agent-sec
 
 - Prev: [Safe Tool Use](safe-tool-use.md)
 - Hub: [AI Safety](README.md)
-- Related: [Prompt Security](../prompt-engineering/prompt-security.md) · [Security](../security/README.md) · [AI Agents](../ai-agents/README.md) · [MCP](../mcp/README.md) · [Production AI Security](../ai-deployment/security-production-ai.md)
+- Related: [Prompt Security](../prompt-engineering/production-and-safety/01-prompt-security.md) · [Security](../security/README.md) · [AI Agents](../ai-agents/README.md) · [MCP](../mcp/README.md) · [Production AI Security](../ai-deployment/security-production-ai.md)
 
 ---
 

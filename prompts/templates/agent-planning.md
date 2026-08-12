@@ -24,7 +24,7 @@ output:
 related:
   - rag-query.md
   - evaluation-judge.md
-  - ../../domains/prompt-engineering/prompt-templates-guide.md
+  - ../../domains/prompt-engineering/craft/02-prompt-templates-guide.md
 keywords: [agent planning, task decomposition, tool use, ReAct]
 ---
 

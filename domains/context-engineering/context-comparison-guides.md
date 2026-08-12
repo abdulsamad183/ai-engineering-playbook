@@ -153,7 +153,7 @@ flowchart TD
 
 ### Related Topics
 
-- [Prompt Comparison Guides](../prompt-engineering/prompt-comparison-guides.md)
+- [Prompt Comparison Guides](../prompt-engineering/production-and-safety/04-prompt-comparison-guides.md)
 - [Context Engineering Mistakes](context-engineering-mistakes.md)
 
 ---

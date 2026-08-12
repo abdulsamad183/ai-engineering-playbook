@@ -11,11 +11,11 @@ related:
   - introduction-to-prompt-engineering.md
   - prompt-anatomy.md
   - prompt-design-principles.md
-  - ../llm-engineering/README.md
-  - ../llm-engineering/context-windows.md
-  - ../llm-engineering/structured-outputs.md
-  - ../llm-engineering/function-calling-and-tools.md
-  - ../llm-engineering/llm-security-fundamentals.md
+  - ../../llm-engineering/README.md
+  - ../../llm-engineering/context-windows.md
+  - ../../llm-engineering/structured-outputs.md
+  - ../../llm-engineering/function-calling-and-tools.md
+  - ../../llm-engineering/llm-security-fundamentals.md
 keywords: [system prompt, user message, assistant message, tool message, message hierarchy, chat API]
 author: hp
 ---
@@ -54,9 +54,9 @@ author: hp
 
 ## Overview
 
-Chat-based LLM APIs accept an ordered array of **messages**, each with a `role` and `content` (and optionally `tool_calls` or `tool_call_id`). The model attends to all messages within the [context window](../llm-engineering/context-windows.md) and generates the next assistant message.
+Chat-based LLM APIs accept an ordered array of **messages**, each with a `role` and `content` (and optionally `tool_calls` or `tool_call_id`). The model attends to all messages within the [context window](../../llm-engineering/context-windows.md) and generates the next assistant message.
 
-This document is **Section 3** of this handbook. It connects [Prompt Anatomy](prompt-anatomy.md) components to the API structures that carry them.
+This document is **Section 3** of this handbook. It connects [Prompt Anatomy](02-prompt-anatomy.md) components to the API structures that carry them.
 
 ```mermaid
 sequenceDiagram
@@ -77,7 +77,7 @@ sequenceDiagram
     end
 ```
 
-> **Prerequisites:** [LLM Engineering](../llm-engineering/README.md) · [Context Windows](../llm-engineering/context-windows.md) · [Function Calling and Tools](../llm-engineering/function-calling-and-tools.md)
+> **Prerequisites:** [LLM Engineering](../../llm-engineering/README.md) · [Context Windows](../../llm-engineering/context-windows.md) · [Function Calling and Tools](../../llm-engineering/function-calling-and-tools.md)
 
 ---
 
@@ -323,7 +323,7 @@ flowchart LR
     OUTPUT --> TOOLS[Tool Permission Checks]
 ```
 
-Cross-reference [LLM Security Fundamentals](../llm-engineering/llm-security-fundamentals.md).
+Cross-reference [LLM Security Fundamentals](../../llm-engineering/llm-security-fundamentals.md).
 
 ### Anti-Pattern: Security by Obscurity
 
@@ -503,7 +503,7 @@ The application — not the model — owns tool execution:
 4. Application formats result as tool message
 5. Model continues with grounded information
 
-See [Function Calling and Tools](../llm-engineering/function-calling-and-tools.md) for full implementation patterns.
+See [Function Calling and Tools](../../llm-engineering/function-calling-and-tools.md) for full implementation patterns.
 
 ---
 
@@ -791,30 +791,30 @@ async def run_tool_loop(client, messages: list[dict], tools: list[dict]) -> str:
 
 ### Prerequisites
 
-- [Prompt Anatomy](prompt-anatomy.md) — prompt components
-- [LLM Engineering](../llm-engineering/README.md)
-- [Context Windows](../llm-engineering/context-windows.md)
-- [Function Calling and Tools](../llm-engineering/function-calling-and-tools.md)
+- [Prompt Anatomy](02-prompt-anatomy.md) — prompt components
+- [LLM Engineering](../../llm-engineering/README.md)
+- [Context Windows](../../llm-engineering/context-windows.md)
+- [Function Calling and Tools](../../llm-engineering/function-calling-and-tools.md)
 
 ### — Prompt Engineering (This Module)
 
 | # | Topic | Document |
 |---|-------|----------|
-| 1 | Introduction to Prompt Engineering | [introduction-to-prompt-engineering.md](introduction-to-prompt-engineering.md) |
-| 2 | Prompt Anatomy | [prompt-anatomy.md](prompt-anatomy.md) |
+| 1 | Introduction to Prompt Engineering | [introduction-to-prompt-engineering.md](01-introduction-to-prompt-engineering.md) |
+| 2 | Prompt Anatomy | [prompt-anatomy.md](02-prompt-anatomy.md) |
 | 3 | Message Types | **You are here** |
-| 4 | Prompt Design Principles | [prompt-design-principles.md](prompt-design-principles.md) |
+| 4 | Prompt Design Principles | [prompt-design-principles.md](04-prompt-design-principles.md) |
 
 ### Next Topics
 
-- [Prompt Design Principles](prompt-design-principles.md) — clarity, specificity, decomposition
+- [Prompt Design Principles](04-prompt-design-principles.md) — clarity, specificity, decomposition
 
 ---
 
 ## See Also
 
-- [Structured Outputs](../llm-engineering/structured-outputs.md)
-- [LLM Security Fundamentals](../llm-engineering/llm-security-fundamentals.md)
+- [Structured Outputs](../../llm-engineering/structured-outputs.md)
+- [LLM Security Fundamentals](../../llm-engineering/llm-security-fundamentals.md)
 
 ## Changelog
 

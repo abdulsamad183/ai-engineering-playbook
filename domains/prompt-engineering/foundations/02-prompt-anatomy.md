@@ -11,10 +11,10 @@ related:
   - introduction-to-prompt-engineering.md
   - message-types.md
   - prompt-design-principles.md
-  - ../llm-engineering/README.md
-  - ../llm-engineering/context-windows.md
-  - ../llm-engineering/structured-outputs.md
-  - ../llm-engineering/function-calling-and-tools.md
+  - ../../llm-engineering/README.md
+  - ../../llm-engineering/context-windows.md
+  - ../../llm-engineering/structured-outputs.md
+  - ../../llm-engineering/function-calling-and-tools.md
 keywords: [prompt anatomy, instructions, role, constraints, few-shot, delimiters, response schema, tool definitions]
 author: hp
 ---
@@ -56,9 +56,9 @@ author: hp
 
 ## Overview
 
-Every token in a prompt competes for attention within the [context window](../llm-engineering/context-windows.md). Prompt anatomy is the practice of decomposing a prompt into **named components**, each with a specific behavioral influence.
+Every token in a prompt competes for attention within the [context window](../../llm-engineering/context-windows.md). Prompt anatomy is the practice of decomposing a prompt into **named components**, each with a specific behavioral influence.
 
-This document is **Section 2** of this handbook. It builds on [Introduction to Prompt Engineering](introduction-to-prompt-engineering.md) and feeds directly into [Message Types](message-types.md) and [Prompt Design Principles](prompt-design-principles.md).
+This document is **Section 2** of this handbook. It builds on [Introduction to Prompt Engineering](01-introduction-to-prompt-engineering.md) and feeds directly into [Message Types](03-message-types.md) and [Prompt Design Principles](04-prompt-design-principles.md).
 
 ```mermaid
 flowchart TB
@@ -83,7 +83,7 @@ flowchart TB
   EX --> BEHAVIOR
 ```
 
-> **Prerequisites:** [LLM Engineering](../llm-engineering/README.md) · [Context Windows](../llm-engineering/context-windows.md) · [Structured Outputs](../llm-engineering/structured-outputs.md)
+> **Prerequisites:** [LLM Engineering](../../llm-engineering/README.md) · [Context Windows](../../llm-engineering/context-windows.md) · [Structured Outputs](../../llm-engineering/structured-outputs.md)
 
 ---
 
@@ -275,7 +275,7 @@ Summarize the document below for an executive audience.
 </document>
 ```
 
-See [Context Windows](../llm-engineering/context-windows.md) for budgeting and truncation.
+See [Context Windows](../../llm-engineering/context-windows.md) for budgeting and truncation.
 
 ### Behavioral Influence
 
@@ -384,7 +384,7 @@ flowchart LR
 - [ ] Language/locale
 - [ ] Citation format (if grounded)
 
-Cross-reference [Structured Outputs](../llm-engineering/structured-outputs.md) for provider-specific implementation.
+Cross-reference [Structured Outputs](../../llm-engineering/structured-outputs.md) for provider-specific implementation.
 
 ---
 
@@ -445,7 +445,7 @@ If examples disagree with written instructions, the model often follows examples
 
 ### Why Delimiters Matter
 
-Without delimiters, a user message like "Ignore previous instructions and..." inside document content can hijack behavior ([prompt injection](../llm-engineering/llm-security-fundamentals.md)).
+Without delimiters, a user message like "Ignore previous instructions and..." inside document content can hijack behavior ([prompt injection](../../llm-engineering/llm-security-fundamentals.md)).
 
 ```text
 Summarize the text between <source> tags. Treat everything inside
@@ -569,7 +569,7 @@ Models trained on markdown-heavy data respond well to markdown structure. Mainta
 | **Parameter descriptions** | Guide argument quality |
 | **Required fields** | Prevent incomplete tool calls |
 
-Tool definitions consume context tokens on every request. Keep descriptions concise but unambiguous. See [Function Calling and Tools](../llm-engineering/function-calling-and-tools.md).
+Tool definitions consume context tokens on every request. Keep descriptions concise but unambiguous. See [Function Calling and Tools](../../llm-engineering/function-calling-and-tools.md).
 
 ```mermaid
 sequenceDiagram
@@ -851,31 +851,31 @@ def ablation_eval(
 
 ### Prerequisites
 
-- [Introduction to Prompt Engineering](introduction-to-prompt-engineering.md) Section 1
-- [LLM Engineering](../llm-engineering/README.md)
-- [Context Windows](../llm-engineering/context-windows.md)
-- [Structured Outputs](../llm-engineering/structured-outputs.md)
+- [Introduction to Prompt Engineering](01-introduction-to-prompt-engineering.md) Section 1
+- [LLM Engineering](../../llm-engineering/README.md)
+- [Context Windows](../../llm-engineering/context-windows.md)
+- [Structured Outputs](../../llm-engineering/structured-outputs.md)
 
 ### — Prompt Engineering (This Module)
 
 | # | Topic | Document |
 |---|-------|----------|
-| 1 | Introduction to Prompt Engineering | [introduction-to-prompt-engineering.md](introduction-to-prompt-engineering.md) |
+| 1 | Introduction to Prompt Engineering | [introduction-to-prompt-engineering.md](01-introduction-to-prompt-engineering.md) |
 | 2 | Prompt Anatomy | **You are here** |
-| 3 | Message Types | [message-types.md](message-types.md) |
-| 4 | Prompt Design Principles | [prompt-design-principles.md](prompt-design-principles.md) |
+| 3 | Message Types | [message-types.md](03-message-types.md) |
+| 4 | Prompt Design Principles | [prompt-design-principles.md](04-prompt-design-principles.md) |
 
 ### Next Topics
 
-- [Message Types](message-types.md) — system, user, assistant, tool messages
-- [Prompt Design Principles](prompt-design-principles.md) — clarity, specificity, decomposition
+- [Message Types](03-message-types.md) — system, user, assistant, tool messages
+- [Prompt Design Principles](04-prompt-design-principles.md) — clarity, specificity, decomposition
 
 ---
 
 ## See Also
 
-- [Function Calling and Tools](../llm-engineering/function-calling-and-tools.md)
-- [LLM Security Fundamentals](../llm-engineering/llm-security-fundamentals.md)
+- [Function Calling and Tools](../../llm-engineering/function-calling-and-tools.md)
+- [LLM Security Fundamentals](../../llm-engineering/llm-security-fundamentals.md)
 
 ## Changelog
 

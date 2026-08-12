@@ -59,7 +59,7 @@ flowchart LR
     S1 --> S2 --> S3 --> S4
 ```
 
-> **Prerequisites:** [MCP](../mcp/README.md) · [Agents](../ai-agents/README.md) · [RAG](../rag/README.md) · [Prompt Evaluation](../prompt-engineering/prompt-evaluation.md)
+> **Prerequisites:** [MCP](../mcp/README.md) · [Agents](../ai-agents/README.md) · [RAG](../rag/README.md) · [Prompt Evaluation](../prompt-engineering/prompt-operations/04-prompt-evaluation.md)
 
 ---
 

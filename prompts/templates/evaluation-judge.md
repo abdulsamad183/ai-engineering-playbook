@@ -24,7 +24,7 @@ output:
 related:
   - question-answering.md
   - code-review.md
-  - ../../domains/prompt-engineering/prompt-templates-guide.md
+  - ../../domains/prompt-engineering/craft/02-prompt-templates-guide.md
 keywords: [LLM judge, evaluation, rubric scoring, quality metrics]
 ---
 

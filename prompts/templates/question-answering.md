@@ -23,7 +23,7 @@ output:
   schema: null
 related:
   - rag-query.md
-  - ../../domains/prompt-engineering/prompt-templates-guide.md
+  - ../../domains/prompt-engineering/craft/02-prompt-templates-guide.md
 keywords: [question answering, grounded QA, citations, refusal]
 ---
 

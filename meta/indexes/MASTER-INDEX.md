@@ -168,25 +168,25 @@
 | Document | Status | Description |
 |----------|--------|-------------|
 | [Module hub](../../domains/prompt-engineering/README.md) | Published | Module hub and learning path |
-| [Introduction to Prompt Engineering](../../domains/prompt-engineering/introduction-to-prompt-engineering.md) | Published | PE as software discipline |
-| [Prompt Anatomy](../../domains/prompt-engineering/prompt-anatomy.md) | Published | Components of production prompts |
-| [Message Types](../../domains/prompt-engineering/message-types.md) | Published | System, user, assistant, tool |
-| [Prompt Design Principles](../../domains/prompt-engineering/prompt-design-principles.md) | Published | Clarity, decomposition, constraints |
-| [Prompt Patterns](../../domains/prompt-engineering/prompt-patterns.md) | Published | 11 reusable patterns |
-| [Prompt Templates Guide](../../domains/prompt-engineering/prompt-templates-guide.md) | Published | Template library guide |
-| [Structured Prompting](../../domains/prompt-engineering/structured-prompting.md) | Published | XML, JSON, Markdown, tags |
-| [Prompting Strategies](../../domains/prompt-engineering/prompting-strategies.md) | Published | Zero-shot through few-shot |
-| [Advanced Reasoning Strategies](../../domains/prompt-engineering/advanced-reasoning-strategies.md) | Published | CoT, ReAct, ToT, reflection |
-| [Prompt Chaining](../../domains/prompt-engineering/prompt-chaining.md) | Published | Multi-step pipelines |
-| [Prompt Lifecycle](../../domains/prompt-engineering/prompt-lifecycle.md) | Published | Design through iteration |
-| [Prompt Versioning](../../domains/prompt-engineering/prompt-versioning.md) | Published | Version control, A/B testing |
-| [Prompt Testing](../../domains/prompt-engineering/prompt-testing.md) | Published | Golden datasets, regression |
-| [Prompt Evaluation](../../domains/prompt-engineering/prompt-evaluation.md) | Published | Quality metrics, automated eval |
-| [Prompt Optimization](../../domains/prompt-engineering/prompt-optimization.md) | Published | Tokens, latency, consistency |
-| [Prompt Security](../../domains/prompt-engineering/prompt-security.md) | Published | Injection, hardening |
-| [Prompt Engineering Mistakes](../../domains/prompt-engineering/prompt-engineering-mistakes.md) | Published | 12 failure patterns |
-| [Production Prompt Engineering](../../domains/prompt-engineering/production-prompt-engineering.md) | Published | Repos, caching, observability |
-| [Prompt Comparison Guides](../../domains/prompt-engineering/prompt-comparison-guides.md) | Published | Strategy comparison tables |
+| [Introduction to Prompt Engineering](../../domains/prompt-engineering/foundations/01-introduction-to-prompt-engineering.md) | Published | PE as software discipline |
+| [Prompt Anatomy](../../domains/prompt-engineering/foundations/02-prompt-anatomy.md) | Published | Components of production prompts |
+| [Message Types](../../domains/prompt-engineering/foundations/03-message-types.md) | Published | System, user, assistant, tool |
+| [Prompt Design Principles](../../domains/prompt-engineering/foundations/04-prompt-design-principles.md) | Published | Clarity, decomposition, constraints |
+| [Prompt Patterns](../../domains/prompt-engineering/craft/01-prompt-patterns.md) | Published | 11 reusable patterns |
+| [Prompt Templates Guide](../../domains/prompt-engineering/craft/02-prompt-templates-guide.md) | Published | Template library guide |
+| [Structured Prompting](../../domains/prompt-engineering/craft/03-structured-prompting.md) | Published | XML, JSON, Markdown, tags |
+| [Prompting Strategies](../../domains/prompt-engineering/craft/04-prompting-strategies.md) | Published | Zero-shot through few-shot |
+| [Advanced Reasoning Strategies](../../domains/prompt-engineering/reasoning-strategies/01-advanced-reasoning-strategies.md) | Published | CoT, ReAct, ToT, reflection |
+| [Prompt Chaining](../../domains/prompt-engineering/reasoning-strategies/02-prompt-chaining.md) | Published | Multi-step pipelines |
+| [Prompt Lifecycle](../../domains/prompt-engineering/prompt-operations/01-prompt-lifecycle.md) | Published | Design through iteration |
+| [Prompt Versioning](../../domains/prompt-engineering/prompt-operations/02-prompt-versioning.md) | Published | Version control, A/B testing |
+| [Prompt Testing](../../domains/prompt-engineering/prompt-operations/03-prompt-testing.md) | Published | Golden datasets, regression |
+| [Prompt Evaluation](../../domains/prompt-engineering/prompt-operations/04-prompt-evaluation.md) | Published | Quality metrics, automated eval |
+| [Prompt Optimization](../../domains/prompt-engineering/prompt-operations/05-prompt-optimization.md) | Published | Tokens, latency, consistency |
+| [Prompt Security](../../domains/prompt-engineering/production-and-safety/01-prompt-security.md) | Published | Injection, hardening |
+| [Prompt Engineering Mistakes](../../domains/prompt-engineering/production-and-safety/02-prompt-engineering-mistakes.md) | Published | 12 failure patterns |
+| [Production Prompt Engineering](../../domains/prompt-engineering/production-and-safety/03-production-prompt-engineering.md) | Published | Repos, caching, observability |
+| [Prompt Comparison Guides](../../domains/prompt-engineering/production-and-safety/04-prompt-comparison-guides.md) | Published | Strategy comparison tables |
 
 [Domain index →](../../domains/prompt-engineering/README.md)
 

@@ -9,8 +9,8 @@ updated: 2026-07-13
 version: "1.0"
 related:
   - prompt-testing.md
-  - ../llm-engineering/llm-security-fundamentals.md
-  - ../security/security-for-ai-backends.md
+  - ../../llm-engineering/llm-security-fundamentals.md
+  - ../../security/security-for-ai-backends.md
 keywords: [prompt injection, jailbreaking, delimiter attacks, prompt leakage, prompt hardening, instruction override]
 author: hp
 ---
@@ -655,42 +655,42 @@ security_gates:
 
 ### Prerequisites
 
-- [Prompt Testing](prompt-testing.md) — Section 13
-- [LLM Security Fundamentals](../llm-engineering/llm-security-fundamentals.md)
+- [Prompt Testing](../prompt-operations/03-prompt-testing.md) — Section 13
+- [LLM Security Fundamentals](../../llm-engineering/llm-security-fundamentals.md)
 
 ### — Prompt Engineering
 
 | # | Topic | Document |
 |---|-------|----------|
-| 1 | Introduction to Prompt Engineering | [introduction-to-prompt-engineering.md](introduction-to-prompt-engineering.md) |
-| 2 | Prompt Anatomy | [prompt-anatomy.md](prompt-anatomy.md) |
-| 3 | Message Types | [message-types.md](message-types.md) |
-| 4 | Prompt Design Principles | [prompt-design-principles.md](prompt-design-principles.md) |
-| 5 | Prompt Patterns | [prompt-patterns.md](prompt-patterns.md) |
-| 6 | Prompt Templates Guide | [prompt-templates-guide.md](prompt-templates-guide.md) |
-| 7 | Structured Prompting | [structured-prompting.md](structured-prompting.md) |
-| 8 | Prompting Strategies | [prompting-strategies.md](prompting-strategies.md) |
-| 9 | Advanced Reasoning Strategies | [advanced-reasoning-strategies.md](advanced-reasoning-strategies.md) |
-| 10 | Prompt Chaining | [prompt-chaining.md](prompt-chaining.md) |
-| 11 | Prompt Lifecycle | [prompt-lifecycle.md](prompt-lifecycle.md) |
-| 12 | Prompt Versioning | [prompt-versioning.md](prompt-versioning.md) |
-| 13 | Prompt Testing | [prompt-testing.md](prompt-testing.md) |
-| 14 | Prompt Evaluation | [prompt-evaluation.md](prompt-evaluation.md) |
-| 15 | Prompt Optimization | [prompt-optimization.md](prompt-optimization.md) |
+| 1 | Introduction to Prompt Engineering | [introduction-to-prompt-engineering.md](../../foundations/01-introduction-to-prompt-engineering.md) |
+| 2 | Prompt Anatomy | [prompt-anatomy.md](../../foundations/02-prompt-anatomy.md) |
+| 3 | Message Types | [message-types.md](../../foundations/03-message-types.md) |
+| 4 | Prompt Design Principles | [prompt-design-principles.md](../../foundations/04-prompt-design-principles.md) |
+| 5 | Prompt Patterns | [prompt-patterns.md](../craft/01-prompt-patterns.md) |
+| 6 | Prompt Templates Guide | [prompt-templates-guide.md](../craft/02-prompt-templates-guide.md) |
+| 7 | Structured Prompting | [structured-prompting.md](../craft/03-structured-prompting.md) |
+| 8 | Prompting Strategies | [prompting-strategies.md](../craft/04-prompting-strategies.md) |
+| 9 | Advanced Reasoning Strategies | [advanced-reasoning-strategies.md](../reasoning-strategies/01-advanced-reasoning-strategies.md) |
+| 10 | Prompt Chaining | [prompt-chaining.md](../reasoning-strategies/02-prompt-chaining.md) |
+| 11 | Prompt Lifecycle | [prompt-lifecycle.md](../prompt-operations/01-prompt-lifecycle.md) |
+| 12 | Prompt Versioning | [prompt-versioning.md](../prompt-operations/02-prompt-versioning.md) |
+| 13 | Prompt Testing | [prompt-testing.md](../prompt-operations/03-prompt-testing.md) |
+| 14 | Prompt Evaluation | [prompt-evaluation.md](../prompt-operations/04-prompt-evaluation.md) |
+| 15 | Prompt Optimization | [prompt-optimization.md](../prompt-operations/05-prompt-optimization.md) |
 | 16 | Prompt Security | **You are here** |
-| 17 | Prompt Engineering Mistakes | [prompt-engineering-mistakes.md](prompt-engineering-mistakes.md) |
-| 18 | Production Prompt Engineering | [production-prompt-engineering.md](production-prompt-engineering.md) |
-| — | Comparison Guides (supplementary) | [prompt-comparison-guides.md](prompt-comparison-guides.md) |
+| 17 | Prompt Engineering Mistakes | [prompt-engineering-mistakes.md](02-prompt-engineering-mistakes.md) |
+| 18 | Production Prompt Engineering | [production-prompt-engineering.md](03-production-prompt-engineering.md) |
+| — | Comparison Guides (supplementary) | [prompt-comparison-guides.md](04-prompt-comparison-guides.md) |
 
 ### Related Topics
 
-- [LLM Security Fundamentals](../llm-engineering/llm-security-fundamentals.md)
-- [Security for AI Backends](../security/security-for-ai-backends.md)
+- [LLM Security Fundamentals](../../llm-engineering/llm-security-fundamentals.md)
+- [Security for AI Backends](../../security/security-for-ai-backends.md)
 
 ### Next Topics
 
-- [Prompt Engineering Mistakes](prompt-engineering-mistakes.md) — security-related anti-patterns
-- [Production Prompt Engineering](production-prompt-engineering.md) — secure deployment
+- [Prompt Engineering Mistakes](02-prompt-engineering-mistakes.md) — security-related anti-patterns
+- [Production Prompt Engineering](03-production-prompt-engineering.md) — secure deployment
 
 ---
 
@@ -698,7 +698,7 @@ security_gates:
 
 - [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
 - [Prompt Testing — Adversarial Testing](prompt-testing.md#adversarial-testing)
-- [LLM Security Fundamentals](../llm-engineering/llm-security-fundamentals.md)
+- [LLM Security Fundamentals](../../llm-engineering/llm-security-fundamentals.md)
 
 ## Changelog
 

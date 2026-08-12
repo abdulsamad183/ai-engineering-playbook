@@ -1,6 +1,6 @@
 # Structured Prompting Cheat Sheet
 
-> XML vs JSON vs Markdown vs tags. See [Structured Prompting](../domains/prompt-engineering/structured-prompting.md).
+> XML vs JSON vs Markdown vs tags. See [Structured Prompting](../domains/prompt-engineering/craft/03-structured-prompting.md).
 
 ## When to Use
 

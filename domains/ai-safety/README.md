@@ -1,7 +1,7 @@
 # AI Safety (deep dive)
 
 > Safety engineering for AI systems — see also the topic hub [AI Security & Guardrails](../ai-security-guardrails/README.md).
-> **Related:** [Prompt Security](../prompt-engineering/prompt-security.md) · [Security](../security/README.md) · [AI Agents](../ai-agents/README.md) · [MCP](../mcp/README.md)
+> **Related:** [Prompt Security](../prompt-engineering/production-and-safety/01-prompt-security.md) · [Security](../security/README.md) · [AI Agents](../ai-agents/README.md) · [MCP](../mcp/README.md)
 
 ---
 
@@ -40,7 +40,7 @@ flowchart LR
 ## Learning Path
 
 1. Start with [Introduction to AI Safety](introduction-to-ai-safety.md) for the threat map.
-2. Harden prompts with [Prompt Injection and Jailbreaks](prompt-injection-and-jailbreaks.md) and [Prompt Security](../prompt-engineering/prompt-security.md).
+2. Harden prompts with [Prompt Injection and Jailbreaks](prompt-injection-and-jailbreaks.md) and [Prompt Security](../prompt-engineering/production-and-safety/01-prompt-security.md).
 3. Add runtime layers via [Guardrails and Content Filtering](guardrails-and-content-filtering.md).
 4. Constrain agents and MCP tools with [Safe Tool Use](safe-tool-use.md).
 5. Gate releases with the [Production AI Safety Checklist](production-ai-safety-checklist.md).

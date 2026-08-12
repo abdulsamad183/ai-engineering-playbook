@@ -11,8 +11,8 @@ related:
   - prompt-patterns.md
   - prompt-templates-guide.md
   - structured-prompting.md
-  - ../llm-engineering/structured-outputs.md
-  - ../rag/README.md
+  - ../../llm-engineering/structured-outputs.md
+  - ../../rag/README.md
 keywords: [zero-shot, few-shot, one-shot, demonstration prompting, retrieval prompting, instruction tuning, in-context learning]
 author: hp
 ---
@@ -473,7 +473,7 @@ Question: {query}
 - Filter retrieved examples (deduplicate, exclude outdated).
 - Monitor retrieval precision — are the right examples selected?
 - Budget: `k_examples × avg_example_tokens + k_docs × avg_chunk_tokens < context_limit`.
-- See [RAG](../rag/README.md) for full retrieval pipeline guidance.
+- See [RAG](../../rag/README.md) for full retrieval pipeline guidance.
 
 ---
 
@@ -694,32 +694,32 @@ When switching models, re-evaluate all strategies:
 
 ### Prerequisites
 
-- [Prompt Patterns](prompt-patterns.md) — Section 5
-- [Structured Prompting](structured-prompting.md) — Section 7
+- [Prompt Patterns](01-prompt-patterns.md) — Section 5
+- [Structured Prompting](03-structured-prompting.md) — Section 7
 
 ### Related Topics
 
-- [Prompt Templates Guide](prompt-templates-guide.md)
-- [Context Windows](../llm-engineering/context-windows.md)
-- [Embeddings](../embeddings/README.md)
-- [RAG](../rag/README.md)
+- [Prompt Templates Guide](02-prompt-templates-guide.md)
+- [Context Windows](../../llm-engineering/context-windows.md)
+- [Embeddings](../../embeddings/README.md)
+- [RAG](../../rag/README.md)
 
 ### Next Topics
 
-- [Context Engineering](../context-engineering/README.md)
-- [AI Evaluation](../ai-evaluation/README.md)
+- [Context Engineering](../../context-engineering/README.md)
+- [AI Evaluation](../../ai-evaluation/README.md)
 
 ### Future Reading
 
-- [Structured Outputs](../llm-engineering/structured-outputs.md)
-- [Prompt Library](../../prompts/README.md)
+- [Structured Outputs](../../llm-engineering/structured-outputs.md)
+- [Prompt Library](../../../prompts/README.md)
 
 ---
 
 ## See Also
 
 - [Prompt Patterns — Step-by-Step Prompting](prompt-patterns.md#step-by-step-prompting)
-- [Prompt Templates](../../prompts/templates/README.md)
+- [Prompt Templates](../../../prompts/templates/README.md)
 
 ## Changelog
 

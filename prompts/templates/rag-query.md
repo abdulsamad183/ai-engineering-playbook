@@ -23,7 +23,7 @@ output:
   schema: null
 related:
   - question-answering.md
-  - ../../domains/prompt-engineering/prompt-templates-guide.md
+  - ../../domains/prompt-engineering/craft/02-prompt-templates-guide.md
 keywords: [RAG, retrieval augmented generation, query answering, citations]
 ---
 

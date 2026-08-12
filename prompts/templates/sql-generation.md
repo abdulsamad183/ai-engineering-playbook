@@ -23,7 +23,7 @@ output:
   schema: null
 related:
   - code-generation.md
-  - ../../domains/prompt-engineering/prompt-templates-guide.md
+  - ../../domains/prompt-engineering/craft/02-prompt-templates-guide.md
 keywords: [SQL, text-to-SQL, analytics, query builder]
 ---
 

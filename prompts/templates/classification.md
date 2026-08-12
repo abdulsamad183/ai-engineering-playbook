@@ -23,7 +23,7 @@ output:
   schema: classification_result
 related:
   - json-generation.md
-  - ../../domains/prompt-engineering/prompt-templates-guide.md
+  - ../../domains/prompt-engineering/craft/02-prompt-templates-guide.md
 keywords: [classification, intent detection, sentiment, routing]
 ---
 

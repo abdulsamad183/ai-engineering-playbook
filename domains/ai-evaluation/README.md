@@ -124,4 +124,4 @@ flowchart TB
 
 - [RAG Evaluation](../rag/rag-evaluation.md)
 - [Agent Evaluation](../ai-agents/agent-evaluation.md)
-- [Prompt Evaluation](../prompt-engineering/prompt-evaluation.md)
+- [Prompt Evaluation](../prompt-engineering/prompt-operations/04-prompt-evaluation.md)

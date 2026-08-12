@@ -72,7 +72,7 @@ flowchart TB
   T -.->|tool abuse| S
 ```
 
-Treat every arrow as a trust boundary. See [Prompt Security](../prompt-engineering/prompt-security.md) for the prompt-layer threat model.
+Treat every arrow as a trust boundary. See [Prompt Security](../prompt-engineering/production-and-safety/01-prompt-security.md) for the prompt-layer threat model.
 
 ---
 
@@ -183,7 +183,7 @@ flowchart TB
 
 - Next: [Prompt Injection and Jailbreaks](prompt-injection-and-jailbreaks.md)
 - Hub: [AI Safety](README.md)
-- Related: [Prompt Security](../prompt-engineering/prompt-security.md) · [Security](../security/README.md) · [AI Agents](../ai-agents/README.md) · [MCP](../mcp/README.md)
+- Related: [Prompt Security](../prompt-engineering/production-and-safety/01-prompt-security.md) · [Security](../security/README.md) · [AI Agents](../ai-agents/README.md) · [MCP](../mcp/README.md)
 
 ---
 

@@ -10,8 +10,8 @@ version: "1.0"
 related:
   - prompt-testing.md
   - prompt-optimization.md
-  - ../ai-evaluation/README.md
-  - ../llm-engineering/llm-cost-optimization.md
+  - ../../ai-evaluation/README.md
+  - ../../llm-engineering/llm-cost-optimization.md
 keywords: [prompt evaluation, faithfulness, relevance, LLM-as-judge, automated evaluation, quality metrics]
 author: hp
 ---
@@ -388,7 +388,7 @@ class LatencyEval:
     return self.p95_ms <= slo_p95_ms
 ```
 
-See [LLM Performance Optimization](../llm-engineering/llm-performance-optimization.md) for optimization techniques.
+See [LLM Performance Optimization](../../llm-engineering/llm-performance-optimization.md) for optimization techniques.
 
 ---
 
@@ -462,7 +462,7 @@ def eval_run_cost(
 - Use cheaper models for format-only checks
 - Cache eval results for unchanged prompts
 
-See [LLM Cost Optimization](../llm-engineering/llm-cost-optimization.md).
+See [LLM Cost Optimization](../../llm-engineering/llm-cost-optimization.md).
 
 ---
 
@@ -723,50 +723,50 @@ Prompt: invoice-extraction v2.3.0 | Model: gpt-4.1-mini | Eval: 2026-07-13
 
 ### Prerequisites
 
-- [Prompt Testing](prompt-testing.md) — Section 13
-- [Prompt Lifecycle](prompt-lifecycle.md) — Section 11
+- [Prompt Testing](03-prompt-testing.md) — Section 13
+- [Prompt Lifecycle](01-prompt-lifecycle.md) — Section 11
 
 ### — Prompt Engineering
 
 | # | Topic | Document |
 |---|-------|----------|
-| 1 | Introduction to Prompt Engineering | [introduction-to-prompt-engineering.md](introduction-to-prompt-engineering.md) |
-| 2 | Prompt Anatomy | [prompt-anatomy.md](prompt-anatomy.md) |
-| 3 | Message Types | [message-types.md](message-types.md) |
-| 4 | Prompt Design Principles | [prompt-design-principles.md](prompt-design-principles.md) |
-| 5 | Prompt Patterns | [prompt-patterns.md](prompt-patterns.md) |
-| 6 | Prompt Templates Guide | [prompt-templates-guide.md](prompt-templates-guide.md) |
-| 7 | Structured Prompting | [structured-prompting.md](structured-prompting.md) |
-| 8 | Prompting Strategies | [prompting-strategies.md](prompting-strategies.md) |
-| 9 | Advanced Reasoning Strategies | [advanced-reasoning-strategies.md](advanced-reasoning-strategies.md) |
-| 10 | Prompt Chaining | [prompt-chaining.md](prompt-chaining.md) |
-| 11 | Prompt Lifecycle | [prompt-lifecycle.md](prompt-lifecycle.md) |
-| 12 | Prompt Versioning | [prompt-versioning.md](prompt-versioning.md) |
-| 13 | Prompt Testing | [prompt-testing.md](prompt-testing.md) |
+| 1 | Introduction to Prompt Engineering | [introduction-to-prompt-engineering.md](../../foundations/01-introduction-to-prompt-engineering.md) |
+| 2 | Prompt Anatomy | [prompt-anatomy.md](../../foundations/02-prompt-anatomy.md) |
+| 3 | Message Types | [message-types.md](../../foundations/03-message-types.md) |
+| 4 | Prompt Design Principles | [prompt-design-principles.md](../../foundations/04-prompt-design-principles.md) |
+| 5 | Prompt Patterns | [prompt-patterns.md](../craft/01-prompt-patterns.md) |
+| 6 | Prompt Templates Guide | [prompt-templates-guide.md](../craft/02-prompt-templates-guide.md) |
+| 7 | Structured Prompting | [structured-prompting.md](../craft/03-structured-prompting.md) |
+| 8 | Prompting Strategies | [prompting-strategies.md](../craft/04-prompting-strategies.md) |
+| 9 | Advanced Reasoning Strategies | [advanced-reasoning-strategies.md](../reasoning-strategies/01-advanced-reasoning-strategies.md) |
+| 10 | Prompt Chaining | [prompt-chaining.md](../reasoning-strategies/02-prompt-chaining.md) |
+| 11 | Prompt Lifecycle | [prompt-lifecycle.md](01-prompt-lifecycle.md) |
+| 12 | Prompt Versioning | [prompt-versioning.md](02-prompt-versioning.md) |
+| 13 | Prompt Testing | [prompt-testing.md](03-prompt-testing.md) |
 | 14 | Prompt Evaluation | **You are here** |
-| 15 | Prompt Optimization | [prompt-optimization.md](prompt-optimization.md) |
-| 16 | Prompt Security | [prompt-security.md](prompt-security.md) |
-| 17 | Prompt Engineering Mistakes | [prompt-engineering-mistakes.md](prompt-engineering-mistakes.md) |
-| 18 | Production Prompt Engineering | [production-prompt-engineering.md](production-prompt-engineering.md) |
-| — | Comparison Guides (supplementary) | [prompt-comparison-guides.md](prompt-comparison-guides.md) |
+| 15 | Prompt Optimization | [prompt-optimization.md](05-prompt-optimization.md) |
+| 16 | Prompt Security | [prompt-security.md](../production-and-safety/01-prompt-security.md) |
+| 17 | Prompt Engineering Mistakes | [prompt-engineering-mistakes.md](../production-and-safety/02-prompt-engineering-mistakes.md) |
+| 18 | Production Prompt Engineering | [production-prompt-engineering.md](../production-and-safety/03-production-prompt-engineering.md) |
+| — | Comparison Guides (supplementary) | [prompt-comparison-guides.md](../production-and-safety/04-prompt-comparison-guides.md) |
 
 ### Related Topics
 
-- [AI Evaluation](../ai-evaluation/README.md) — system-level evaluation
-- [LLM Cost Optimization](../llm-engineering/llm-cost-optimization.md) — cost metrics
+- [AI Evaluation](../../ai-evaluation/README.md) — system-level evaluation
+- [LLM Cost Optimization](../../llm-engineering/llm-cost-optimization.md) — cost metrics
 
 ### Next Topics
 
-- [Prompt Optimization](prompt-optimization.md) — improve scores systematically
-- [Prompt Testing](prompt-testing.md) — tests that protect eval baselines
+- [Prompt Optimization](05-prompt-optimization.md) — improve scores systematically
+- [Prompt Testing](03-prompt-testing.md) — tests that protect eval baselines
 
 ---
 
 ## See Also
 
-- [Prompt Testing](prompt-testing.md)
-- [LLM Cost Optimization](../llm-engineering/llm-cost-optimization.md)
-- [LLM Performance Optimization](../llm-engineering/llm-performance-optimization.md)
+- [Prompt Testing](03-prompt-testing.md)
+- [LLM Cost Optimization](../../llm-engineering/llm-cost-optimization.md)
+- [LLM Performance Optimization](../../llm-engineering/llm-performance-optimization.md)
 - [Ragas Documentation](https://docs.ragas.io/) — RAG evaluation framework
 
 ## Changelog

@@ -90,7 +90,7 @@ Sliding window over chunks for streaming analysis; checkpoint summaries at windo
 
 ## Recursive Summarization
 
-Summarize chunks → summarize summaries → final answer pass. See [Prompt Chaining](../prompt-engineering/prompt-chaining.md).
+Summarize chunks → summarize summaries → final answer pass. See [Prompt Chaining](../prompt-engineering/reasoning-strategies/02-prompt-chaining.md).
 
 ---
 

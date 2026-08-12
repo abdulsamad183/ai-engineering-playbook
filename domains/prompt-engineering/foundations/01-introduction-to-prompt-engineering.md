@@ -11,12 +11,12 @@ related:
   - prompt-anatomy.md
   - message-types.md
   - prompt-design-principles.md
-  - ../llm-engineering/README.md
-  - ../llm-engineering/context-windows.md
-  - ../llm-engineering/structured-outputs.md
-  - ../llm-engineering/sampling-and-decoding.md
-  - ../llm-engineering/function-calling-and-tools.md
-  - ../context-engineering/README.md
+  - ../../llm-engineering/README.md
+  - ../../llm-engineering/context-windows.md
+  - ../../llm-engineering/structured-outputs.md
+  - ../../llm-engineering/sampling-and-decoding.md
+  - ../../llm-engineering/function-calling-and-tools.md
+  - ../../context-engineering/README.md
 keywords: [prompt engineering, prompting, LLM, system prompt, reliability, production, context engineering]
 author: hp
 ---
@@ -73,7 +73,7 @@ flowchart LR
     S4 --> PATTERNS[Prompt Patterns]
 ```
 
-> **Prerequisites:** Complete [LLM Engineering](../llm-engineering/README.md) — especially [Context Windows](../llm-engineering/context-windows.md), [Structured Outputs](../llm-engineering/structured-outputs.md), and [Sampling and Decoding](../llm-engineering/sampling-and-decoding.md).
+> **Prerequisites:** Complete [LLM Engineering](../../llm-engineering/README.md) — especially [Context Windows](../../llm-engineering/context-windows.md), [Structured Outputs](../../llm-engineering/structured-outputs.md), and [Sampling and Decoding](../../llm-engineering/sampling-and-decoding.md).
 
 ---
 
@@ -202,7 +202,7 @@ These terms overlap but address different layers of the same problem.
 | **Scope** | Wording, structure, role, constraints | Token budget, truncation, RAG, summarization |
 | **Primary artifact** | System prompt, templates, few-shot sets | Context builder, memory store, retrieval pipeline |
 | **Failure mode** | Model misunderstands instructions | Model lacks necessary information |
-| **Handbook** | This module | Context Engineering ([Context Engineering](../context-engineering/README.md)) |
+| **Handbook** | This module | Context Engineering ([Context Engineering](../../context-engineering/README.md)) |
 
 ```mermaid
 graph TB
@@ -230,7 +230,7 @@ graph TB
     TRUNC --> REQUEST
 ```
 
-**Practical rule:** Prompt engineering defines behavior; context engineering supplies the right information within the [context window](../llm-engineering/context-windows.md). A perfect prompt with empty context fails. Perfect context with a vague prompt also fails.
+**Practical rule:** Prompt engineering defines behavior; context engineering supplies the right information within the [context window](../../llm-engineering/context-windows.md). A perfect prompt with empty context fails. Perfect context with a vague prompt also fails.
 
 ---
 
@@ -309,7 +309,7 @@ timeline
 ### Paradigm Shifts for Engineers
 
 1. **Completion → conversation** — Multi-turn message arrays replaced single-string prompts.
-2. **Free text → structured** — Production systems demand [structured outputs](../llm-engineering/structured-outputs.md), not prose parsing.
+2. **Free text → structured** — Production systems demand [structured outputs](../../llm-engineering/structured-outputs.md), not prose parsing.
 3. **Static → dynamic** — Prompts are assembled at runtime from templates, RAG chunks, and user state.
 4. **Manual → evaluated** — Prompt changes require regression evals, not just "looks good in playground."
 
@@ -331,7 +331,7 @@ State requirements directly. Do not assume the model infers format, scope, or ed
 
 ### 2. Separate Concerns
 
-Split role (system), task (user), context (retrieved data), and format (schema) into distinct sections. See [Prompt Anatomy](prompt-anatomy.md).
+Split role (system), task (user), context (retrieved data), and format (schema) into distinct sections. See [Prompt Anatomy](02-prompt-anatomy.md).
 
 ### 3. Constrain the Output Space
 
@@ -380,7 +380,7 @@ mindmap
 
 | Misconception | Reality |
 |---------------|---------|
-| "Longer prompts are always better" | Bloat increases cost, latency, and [lost-in-the-middle](../llm-engineering/context-windows.md) failures. Every token must earn its place. |
+| "Longer prompts are always better" | Bloat increases cost, latency, and [lost-in-the-middle](../../llm-engineering/context-windows.md) failures. Every token must earn its place. |
 | "Prompt engineering is just trial and error" | Systematic eval, failure taxonomy, and versioning separate hobby prompting from engineering. |
 | "The model will follow instructions perfectly" | Instruction following is probabilistic. Always validate and handle failures. |
 | "You need clever 'jailbreak-style' tricks" | Production prompts use clarity and structure, not manipulation. |
@@ -451,7 +451,7 @@ class PromptStack:
         ]
 ```
 
-For message role details, see [Message Types](message-types.md).
+For message role details, see [Message Types](03-message-types.md).
 
 ---
 
@@ -554,7 +554,7 @@ Prompt engineering is the **primary control surface** for LLM behavior in most p
 | **Reasoning prompts** | "Think step by step" increases output tokens and latency |
 | **Prompt caching** | Some providers cache prefix tokens — structure static content first |
 
-Optimize prompt token count after correctness is established. See [Context Windows](../llm-engineering/context-windows.md) for budgeting strategies.
+Optimize prompt token count after correctness is established. See [Context Windows](../../llm-engineering/context-windows.md) for budgeting strategies.
 
 ---
 
@@ -589,7 +589,7 @@ Prompts are a **security boundary**, not just a UX concern.
 | **PII leakage** | Instruct model to redact; validate outputs; minimize PII in context |
 | **Tool abuse** | Tool definitions in system layer; validate tool arguments in code, not prompts alone |
 
-Cross-reference [LLM Security Fundamentals](../llm-engineering/llm-security-fundamentals.md) for full threat models.
+Cross-reference [LLM Security Fundamentals](../../llm-engineering/llm-security-fundamentals.md) for full threat models.
 
 ---
 
@@ -727,31 +727,31 @@ def load_prompt(prompt_id: str, version: str | None = None) -> dict:
 
 ### Prerequisites
 
-- [LLM Engineering](../llm-engineering/README.md) — tokens, context, sampling, structured outputs
-- [Context Windows](../llm-engineering/context-windows.md) — token budgeting for prompts
-- [Structured Outputs](../llm-engineering/structured-outputs.md) — schema-constrained generation
-- [Sampling and Decoding](../llm-engineering/sampling-and-decoding.md) — temperature and determinism
+- [LLM Engineering](../../llm-engineering/README.md) — tokens, context, sampling, structured outputs
+- [Context Windows](../../llm-engineering/context-windows.md) — token budgeting for prompts
+- [Structured Outputs](../../llm-engineering/structured-outputs.md) — schema-constrained generation
+- [Sampling and Decoding](../../llm-engineering/sampling-and-decoding.md) — temperature and determinism
 
 ### — Prompt Engineering (This Module)
 
 | # | Topic | Document |
 |---|-------|----------|
 | 1 | Introduction to Prompt Engineering | **You are here** |
-| 2 | Prompt Anatomy | [prompt-anatomy.md](prompt-anatomy.md) |
-| 3 | Message Types | [message-types.md](message-types.md) |
-| 4 | Prompt Design Principles | [prompt-design-principles.md](prompt-design-principles.md) |
+| 2 | Prompt Anatomy | [prompt-anatomy.md](02-prompt-anatomy.md) |
+| 3 | Message Types | [message-types.md](03-message-types.md) |
+| 4 | Prompt Design Principles | [prompt-design-principles.md](04-prompt-design-principles.md) |
 
 ### Related Topics
 
-- [Function Calling and Tools](../llm-engineering/function-calling-and-tools.md) — tool definitions in prompts
-- [LLM Security Fundamentals](../llm-engineering/llm-security-fundamentals.md) — injection and guardrails
-- [Context Engineering](../context-engineering/README.md): memory and retrieval
+- [Function Calling and Tools](../../llm-engineering/function-calling-and-tools.md) — tool definitions in prompts
+- [LLM Security Fundamentals](../../llm-engineering/llm-security-fundamentals.md) — injection and guardrails
+- [Context Engineering](../../context-engineering/README.md): memory and retrieval
 
 ### Next Topics
 
-- [Prompt Anatomy](prompt-anatomy.md) — components of a production prompt
-- [Message Types](message-types.md) — system, user, assistant, tool messages
-- [Prompt Design Principles](prompt-design-principles.md) — clarity, specificity, decomposition
+- [Prompt Anatomy](02-prompt-anatomy.md) — components of a production prompt
+- [Message Types](03-message-types.md) — system, user, assistant, tool messages
+- [Prompt Design Principles](04-prompt-design-principles.md) — clarity, specificity, decomposition
 
 ---
 
@@ -759,7 +759,7 @@ def load_prompt(prompt_id: str, version: str | None = None) -> dict:
 
 - [OpenAI Prompt Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering)
 - [Anthropic Prompt Engineering](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview)
-- [LLM Engineering](../llm-engineering/README.md)
+- [LLM Engineering](../../llm-engineering/README.md)
 
 ## Changelog
 

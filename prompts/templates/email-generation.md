@@ -23,7 +23,7 @@ output:
   schema: null
 related:
   - summarization.md
-  - ../../domains/prompt-engineering/prompt-templates-guide.md
+  - ../../domains/prompt-engineering/craft/02-prompt-templates-guide.md
 keywords: [email, outreach, customer communication, professional writing]
 ---
 

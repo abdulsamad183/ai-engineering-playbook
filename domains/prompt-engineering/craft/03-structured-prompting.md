@@ -11,7 +11,7 @@ related:
   - prompt-patterns.md
   - prompt-templates-guide.md
   - prompting-strategies.md
-  - ../llm-engineering/structured-outputs.md
+  - ../../llm-engineering/structured-outputs.md
 keywords: [XML prompting, JSON prompting, markdown prompting, tagged prompting, prompt parsing, prompt validation]
 author: hp
 ---
@@ -202,7 +202,7 @@ Text:
 - Strip markdown fences in post-processing as a safety net.
 - Set `max_tokens` with headroom for JSON overhead.
 
-See [Structured Outputs](../llm-engineering/structured-outputs.md) for provider-specific implementation.
+See [Structured Outputs](../../llm-engineering/structured-outputs.md) for provider-specific implementation.
 
 ---
 
@@ -626,30 +626,30 @@ metrics.increment("llm.structured.validation_fail", tags={"field": "email"})
 
 ### Prerequisites
 
-- [Prompt Patterns](prompt-patterns.md) — Section 5
-- [Structured Outputs](../llm-engineering/structured-outputs.md)
+- [Prompt Patterns](01-prompt-patterns.md) — Section 5
+- [Structured Outputs](../../llm-engineering/structured-outputs.md)
 
 ### Related Topics
 
-- [Prompt Templates Guide](prompt-templates-guide.md)
-- [Prompting Strategies](prompting-strategies.md)
-- [Validation for AI APIs](../backend-engineering/validation-for-ai-apis.md)
+- [Prompt Templates Guide](02-prompt-templates-guide.md)
+- [Prompting Strategies](04-prompting-strategies.md)
+- [Validation for AI APIs](../../backend-engineering/validation-for-ai-apis.md)
 
 ### Next Topics
 
-- [Prompting Strategies](prompting-strategies.md) — Section 8
+- [Prompting Strategies](04-prompting-strategies.md) — Section 8
 
 ### Future Reading
 
-- [Context Engineering](../context-engineering/README.md)
-- [Function Calling and Tools](../llm-engineering/function-calling-and-tools.md)
+- [Context Engineering](../../context-engineering/README.md)
+- [Function Calling and Tools](../../llm-engineering/function-calling-and-tools.md)
 
 ---
 
 ## See Also
 
 - [Prompt Patterns — Delimiter Prompting](prompt-patterns.md#delimiter-prompting)
-- [JSON Output Templates](../../prompts/templates/README.md)
+- [JSON Output Templates](../../../prompts/templates/README.md)
 
 ## Changelog
 

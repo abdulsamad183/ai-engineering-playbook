@@ -1,6 +1,6 @@
 # Prompt Output Constraints Cheat Sheet
 
-> Quick reference for constraining LLM output shape. See [Prompt Anatomy](../domains/prompt-engineering/prompt-anatomy.md) and [Structured Prompting](../domains/prompt-engineering/structured-prompting.md).
+> Quick reference for constraining LLM output shape. See [Prompt Anatomy](../domains/prompt-engineering/foundations/02-prompt-anatomy.md) and [Structured Prompting](../domains/prompt-engineering/craft/03-structured-prompting.md).
 
 ## Constraint Layers
 

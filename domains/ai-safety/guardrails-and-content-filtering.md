@@ -94,7 +94,7 @@ Use the model as one layer, never the only layer:
 4. **Temperature / sampling** — lower creativity for high-stakes answers
 5. **Separate “planner” vs “speaker” models** — optional for agents
 
-Prompt hardening details: [Prompt Security](../prompt-engineering/prompt-security.md).
+Prompt hardening details: [Prompt Security](../prompt-engineering/production-and-safety/01-prompt-security.md).
 
 ---
 
@@ -219,7 +219,7 @@ Wire metrics: `guard.pre.block`, `guard.post.block`, `guard.pii.redactions`.
 - Prev: [Prompt Injection and Jailbreaks](prompt-injection-and-jailbreaks.md)
 - Next: [Safe Tool Use](safe-tool-use.md)
 - Hub: [AI Safety](README.md)
-- Related: [Prompt Security](../prompt-engineering/prompt-security.md) · [Production Checklist](production-ai-safety-checklist.md)
+- Related: [Prompt Security](../prompt-engineering/production-and-safety/01-prompt-security.md) · [Production Checklist](production-ai-safety-checklist.md)
 
 ---
 

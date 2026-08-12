@@ -72,7 +72,7 @@ Stop with: Final Answer: ... when done."""
 
 ## Navigation
 
-- [Agent Planning](agent-planning.md) · [Prompt Engineering Reasoning](../prompt-engineering/advanced-reasoning-strategies.md)
+- [Agent Planning](agent-planning.md) · [Prompt Engineering Reasoning](../prompt-engineering/reasoning-strategies/01-advanced-reasoning-strategies.md)
 
 ---
 

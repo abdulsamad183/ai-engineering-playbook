@@ -347,7 +347,7 @@ Add few-shot examples, enable CoT, try self-consistency, restructure instruction
 ## See Also
 
 - [Prompt Engineering Domain](../prompt-engineering/README.md)
-- [Advanced Reasoning Strategies](../prompt-engineering/advanced-reasoning-strategies.md)
+- [Advanced Reasoning Strategies](../prompt-engineering/reasoning-strategies/01-advanced-reasoning-strategies.md)
 - [DSPy](dspy.md)
 - [Agent Reasoning Papers](agent-reasoning-papers.md)
 

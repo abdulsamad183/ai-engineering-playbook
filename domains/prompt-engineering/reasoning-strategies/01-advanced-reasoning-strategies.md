@@ -11,10 +11,10 @@ related:
   - prompt-chaining.md
   - prompt-lifecycle.md
   - prompt-versioning.md
-  - ../llm-engineering/sampling-and-decoding.md
-  - ../llm-engineering/structured-outputs.md
-  - ../llm-engineering/function-calling-and-tools.md
-  - ../agent-architectures/README.md
+  - ../../llm-engineering/sampling-and-decoding.md
+  - ../../llm-engineering/structured-outputs.md
+  - ../../llm-engineering/function-calling-and-tools.md
+  - ../../agent-architectures/README.md
   - ../multi-agent-systems/README.md
   - ../ai-workflows/README.md
 keywords: [chain-of-thought, ReAct, tree of thoughts, graph of thoughts, self-consistency, reflection, debate prompting, multi-agent, reasoning]
@@ -71,7 +71,7 @@ flowchart LR
     S10 --> WORKFLOWS[AI Workflows]
 ```
 
-> **Prerequisites:** Complete [LLM Engineering](../llm-engineering/README.md) and Sections 1–8 of this handbook before applying advanced reasoning strategies in production.
+> **Prerequisites:** Complete [LLM Engineering](../../llm-engineering/README.md) and Sections 1–8 of this handbook before applying advanced reasoning strategies in production.
 
 ---
 
@@ -697,7 +697,7 @@ Output format: {schema}
 ```
 
 > **Production Standard:** Define explicit handoff contracts between agents — message schemas, not free-form prose.
-See [Prompt Chaining](prompt-chaining.md) for orchestration patterns.
+See [Prompt Chaining](02-prompt-chaining.md) for orchestration patterns.
 
 ### Preparing for AI Agents Phase
 
@@ -931,21 +931,21 @@ Add step limits, logging, and eval cases for tool-call correctness.
 
 ### Prerequisites
 
-- [LLM Engineering](../llm-engineering/README.md)
-- [Sampling and Decoding](../llm-engineering/sampling-and-decoding.md)
-- [Function Calling and Tools](../llm-engineering/function-calling-and-tools.md)
-- [Structured Outputs](../llm-engineering/structured-outputs.md)
+- [LLM Engineering](../../llm-engineering/README.md)
+- [Sampling and Decoding](../../llm-engineering/sampling-and-decoding.md)
+- [Function Calling and Tools](../../llm-engineering/function-calling-and-tools.md)
+- [Structured Outputs](../../llm-engineering/structured-outputs.md)
 
 ### Related Topics
 
-- [Prompt Chaining](prompt-chaining.md) — Section 10
-- [Prompt Lifecycle](prompt-lifecycle.md) — Section 11
-- [Prompt Versioning](prompt-versioning.md) — Section 12
+- [Prompt Chaining](02-prompt-chaining.md) — Section 10
+- [Prompt Lifecycle](../prompt-operations/01-prompt-lifecycle.md) — Section 11
+- [Prompt Versioning](../prompt-operations/02-prompt-versioning.md) — Section 12
 
 ### Next Topics
 
-- [Prompt Chaining](prompt-chaining.md) — orchestrate multi-step reasoning
-- [Agent Architectures](../agent-architectures/README.md)
+- [Prompt Chaining](02-prompt-chaining.md) — orchestrate multi-step reasoning
+- [Agent Architectures](../../agent-architectures/README.md)
 - [Multi-Agent Systems](../multi-agent-systems/README.md)
 - [AI Workflows](../ai-workflows/README.md)
 
@@ -953,9 +953,9 @@ Add step limits, logging, and eval cases for tool-call correctness.
 
 ## See Also
 
-- [Function Calling and Tools](../llm-engineering/function-calling-and-tools.md)
-- [Structured Outputs](../llm-engineering/structured-outputs.md)
-- [Software Engineering for AI](../foundations/software-engineering-for-ai.md)
+- [Function Calling and Tools](../../llm-engineering/function-calling-and-tools.md)
+- [Structured Outputs](../../llm-engineering/structured-outputs.md)
+- [Software Engineering for AI](../../foundations/software-engineering-for-ai.md)
 
 ## Changelog
 

@@ -106,7 +106,7 @@ Before starting:
 |-------|------------------|
 | Chunking | [RAG chunking](../domains/rag/chunking.md) |
 | Retrieval | [RAG retrieval](../domains/rag/retrieval-strategies.md) |
-| Prompt design | [RAG prompts](../domains/prompt-engineering/prompt-templates-guide.md) |
+| Prompt design | [RAG prompts](../domains/prompt-engineering/craft/02-prompt-templates-guide.md) |
 | Evaluation | [AI Evaluation intro](../domains/ai-evaluation/introduction-to-ai-evaluation.md) |
 
 ---
@@ -326,7 +326,7 @@ async def query(body: QueryRequest) -> QueryResponse:
 
 Use the parameterized prompt from [templates/engineering/prompts/rag.md](../templates/engineering/prompts/rag.md) inside `build_rag_prompt` for consistency.
 
-**Handbook:** [LLM API integration](../domains/llm-engineering/llm-streaming.md) · [Prompt security](../domains/prompt-engineering/prompt-security.md)
+**Handbook:** [LLM API integration](../domains/llm-engineering/llm-streaming.md) · [Prompt security](../domains/prompt-engineering/production-and-safety/01-prompt-security.md)
 
 ---
 

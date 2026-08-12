@@ -1,6 +1,6 @@
 # XML Prompting Cheat Sheet
 
-> Quick reference for XML-structured prompts. See [Structured Prompting](../domains/prompt-engineering/structured-prompting.md).
+> Quick reference for XML-structured prompts. See [Structured Prompting](../domains/prompt-engineering/craft/03-structured-prompting.md).
 
 ## When to Use XML
 

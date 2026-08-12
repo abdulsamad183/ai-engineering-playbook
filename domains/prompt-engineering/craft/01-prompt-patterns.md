@@ -11,8 +11,8 @@ related:
   - prompt-templates-guide.md
   - structured-prompting.md
   - prompting-strategies.md
-  - ../llm-engineering/structured-outputs.md
-  - ../context-engineering/README.md
+  - ../../llm-engineering/structured-outputs.md
+  - ../../context-engineering/README.md
 keywords: [role prompting, persona, constraints, delimiters, output formatting, step-by-step, expert prompting, multi-role]
 author: hp
 ---
@@ -298,7 +298,7 @@ Instructions:
 - Choose rare delimiters for user content: `<document>`, `"""`, or `---INPUT---`.
 - Sanitize or escape user content that might contain your delimiters.
 - Standardize delimiter conventions across your prompt library.
-- See [Structured Prompting](structured-prompting.md) for XML and tagged approaches.
+- See [Structured Prompting](03-structured-prompting.md) for XML and tagged approaches.
 
 ### Example
 
@@ -435,7 +435,7 @@ Style:
 
 ### Production Considerations
 
-- Combine output formatting prompts with [Structured Outputs](../llm-engineering/structured-outputs.md) at the API level.
+- Combine output formatting prompts with [Structured Outputs](../../llm-engineering/structured-outputs.md) at the API level.
 - Always validate parsed output with Pydantic or JSON Schema.
 - Include one complete example of valid output in the prompt (few-shot formatting).
 - Plan for truncation: ensure `max_tokens` accommodates the full structured response.
@@ -746,32 +746,32 @@ Budget patterns against your context window. Patterns are not free.
 
 ### Prerequisites
 
-- [Introduction to LLM Engineering](../llm-engineering/introduction-to-llm-engineering.md)
-- [Structured Outputs](../llm-engineering/structured-outputs.md)
+- [Introduction to LLM Engineering](../../llm-engineering/introduction-to-llm-engineering.md)
+- [Structured Outputs](../../llm-engineering/structured-outputs.md)
 
 ### Related Topics
 
-- [Prompt Templates Guide](prompt-templates-guide.md)
-- [Structured Prompting](structured-prompting.md)
-- [Prompting Strategies](prompting-strategies.md)
-- [Context Engineering](../context-engineering/README.md)
+- [Prompt Templates Guide](02-prompt-templates-guide.md)
+- [Structured Prompting](03-structured-prompting.md)
+- [Prompting Strategies](04-prompting-strategies.md)
+- [Context Engineering](../../context-engineering/README.md)
 
 ### Next Topics
 
-- [Prompt Templates Guide](prompt-templates-guide.md) — Section 6
-- [Structured Prompting](structured-prompting.md) — Section 7
+- [Prompt Templates Guide](02-prompt-templates-guide.md) — Section 6
+- [Structured Prompting](03-structured-prompting.md) — Section 7
 
 ### Future Reading
 
-- [Prompt Library](../../prompts/README.md)
-- [AI Evaluation](../ai-evaluation/README.md)
+- [Prompt Library](../../../prompts/README.md)
+- [AI Evaluation](../../ai-evaluation/README.md)
 
 ---
 
 ## See Also
 
-- [Prompt Pattern Template](../../meta/templates/prompt-pattern.md)
-- [Prompt Templates Folder](../../prompts/templates/README.md)
+- [Prompt Pattern Template](../../../meta/templates/prompt-pattern.md)
+- [Prompt Templates Folder](../../../prompts/templates/README.md)
 
 ## Changelog
 

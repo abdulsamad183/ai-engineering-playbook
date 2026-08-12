@@ -72,7 +72,7 @@ Every inference call executes a **context resolver** that:
 
 ## Dynamic Prompt Assembly
 
-Prompt templates ([handbook](../prompt-engineering/prompt-templates-guide.md)) provide **slots**; dynamic context fills them:
+Prompt templates ([handbook](../prompt-engineering/craft/02-prompt-templates-guide.md)) provide **slots**; dynamic context fills them:
 
 ```
 System: {{base_role}}
@@ -214,7 +214,7 @@ def support_policy(req: ContextRequest) -> list[ContextBlock]:
 ### Prerequisites
 
 - [Context Architecture](context-architecture.md)
-- [Production Prompt Engineering](../prompt-engineering/production-prompt-engineering.md)
+- [Production Prompt Engineering](../prompt-engineering/production-and-safety/03-production-prompt-engineering.md)
 
 ### Related Topics
 

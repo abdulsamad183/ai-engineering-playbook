@@ -11,8 +11,8 @@ related:
   - prompt-evaluation.md
   - prompt-optimization.md
   - prompt-security.md
-  - ../llm-engineering/structured-outputs.md
-  - ../foundations/testing-fundamentals.md
+  - ../../llm-engineering/structured-outputs.md
+  - ../../foundations/testing-fundamentals.md
 keywords: [prompt testing, golden dataset, regression testing, adversarial testing, hallucination testing, deterministic testing]
 author: hp
 ---
@@ -321,7 +321,7 @@ ADVERSARIAL_CASES = [
 3. **Production monitoring** — flag inputs matching injection patterns
 4. **Feedback loop** — every successful attack becomes a permanent test case
 
-See [Prompt Security](prompt-security.md) for hardening techniques.
+See [Prompt Security](../production-and-safety/01-prompt-security.md) for hardening techniques.
 
 ---
 
@@ -718,54 +718,54 @@ jobs:
 
 ### Prerequisites
 
-- [Prompt Lifecycle](prompt-lifecycle.md) — Section 11
-- [Prompt Versioning](prompt-versioning.md) — Section 12
-- [Testing Fundamentals](../foundations/testing-fundamentals.md)
-- [Structured Outputs](../llm-engineering/structured-outputs.md)
+- [Prompt Lifecycle](01-prompt-lifecycle.md) — Section 11
+- [Prompt Versioning](02-prompt-versioning.md) — Section 12
+- [Testing Fundamentals](../../foundations/testing-fundamentals.md)
+- [Structured Outputs](../../llm-engineering/structured-outputs.md)
 
 ### — Prompt Engineering
 
 | # | Topic | Document |
 |---|-------|----------|
-| 1 | Introduction to Prompt Engineering | [introduction-to-prompt-engineering.md](introduction-to-prompt-engineering.md) |
-| 2 | Prompt Anatomy | [prompt-anatomy.md](prompt-anatomy.md) |
-| 3 | Message Types | [message-types.md](message-types.md) |
-| 4 | Prompt Design Principles | [prompt-design-principles.md](prompt-design-principles.md) |
-| 5 | Prompt Patterns | [prompt-patterns.md](prompt-patterns.md) |
-| 6 | Prompt Templates Guide | [prompt-templates-guide.md](prompt-templates-guide.md) |
-| 7 | Structured Prompting | [structured-prompting.md](structured-prompting.md) |
-| 8 | Prompting Strategies | [prompting-strategies.md](prompting-strategies.md) |
-| 9 | Advanced Reasoning Strategies | [advanced-reasoning-strategies.md](advanced-reasoning-strategies.md) |
-| 10 | Prompt Chaining | [prompt-chaining.md](prompt-chaining.md) |
-| 11 | Prompt Lifecycle | [prompt-lifecycle.md](prompt-lifecycle.md) |
-| 12 | Prompt Versioning | [prompt-versioning.md](prompt-versioning.md) |
+| 1 | Introduction to Prompt Engineering | [introduction-to-prompt-engineering.md](../../foundations/01-introduction-to-prompt-engineering.md) |
+| 2 | Prompt Anatomy | [prompt-anatomy.md](../../foundations/02-prompt-anatomy.md) |
+| 3 | Message Types | [message-types.md](../../foundations/03-message-types.md) |
+| 4 | Prompt Design Principles | [prompt-design-principles.md](../../foundations/04-prompt-design-principles.md) |
+| 5 | Prompt Patterns | [prompt-patterns.md](../craft/01-prompt-patterns.md) |
+| 6 | Prompt Templates Guide | [prompt-templates-guide.md](../craft/02-prompt-templates-guide.md) |
+| 7 | Structured Prompting | [structured-prompting.md](../craft/03-structured-prompting.md) |
+| 8 | Prompting Strategies | [prompting-strategies.md](../craft/04-prompting-strategies.md) |
+| 9 | Advanced Reasoning Strategies | [advanced-reasoning-strategies.md](../reasoning-strategies/01-advanced-reasoning-strategies.md) |
+| 10 | Prompt Chaining | [prompt-chaining.md](../reasoning-strategies/02-prompt-chaining.md) |
+| 11 | Prompt Lifecycle | [prompt-lifecycle.md](01-prompt-lifecycle.md) |
+| 12 | Prompt Versioning | [prompt-versioning.md](02-prompt-versioning.md) |
 | 13 | Prompt Testing | **You are here** |
-| 14 | Prompt Evaluation | [prompt-evaluation.md](prompt-evaluation.md) |
-| 15 | Prompt Optimization | [prompt-optimization.md](prompt-optimization.md) |
-| 16 | Prompt Security | [prompt-security.md](prompt-security.md) |
-| 17 | Prompt Engineering Mistakes | [prompt-engineering-mistakes.md](prompt-engineering-mistakes.md) |
-| 18 | Production Prompt Engineering | [production-prompt-engineering.md](production-prompt-engineering.md) |
-| — | Comparison Guides (supplementary) | [prompt-comparison-guides.md](prompt-comparison-guides.md) |
+| 14 | Prompt Evaluation | [prompt-evaluation.md](04-prompt-evaluation.md) |
+| 15 | Prompt Optimization | [prompt-optimization.md](05-prompt-optimization.md) |
+| 16 | Prompt Security | [prompt-security.md](../production-and-safety/01-prompt-security.md) |
+| 17 | Prompt Engineering Mistakes | [prompt-engineering-mistakes.md](../production-and-safety/02-prompt-engineering-mistakes.md) |
+| 18 | Production Prompt Engineering | [production-prompt-engineering.md](../production-and-safety/03-production-prompt-engineering.md) |
+| — | Comparison Guides (supplementary) | [prompt-comparison-guides.md](../production-and-safety/04-prompt-comparison-guides.md) |
 
 ### Related Topics
 
-- [Prompt Evaluation](prompt-evaluation.md) — automated quality metrics
-- [Prompt Security](prompt-security.md) — adversarial hardening
-- [LLM Engineering Mistakes](../llm-engineering/llm-engineering-mistakes.md) — broader LLM pitfalls
+- [Prompt Evaluation](04-prompt-evaluation.md) — automated quality metrics
+- [Prompt Security](../production-and-safety/01-prompt-security.md) — adversarial hardening
+- [LLM Engineering Mistakes](../../llm-engineering/llm-engineering-mistakes.md) — broader LLM pitfalls
 
 ### Next Topics
 
-- [Prompt Evaluation](prompt-evaluation.md) — measure what your tests protect
-- [AI Evaluation](../ai-evaluation/README.md) — system-level evaluation
+- [Prompt Evaluation](04-prompt-evaluation.md) — measure what your tests protect
+- [AI Evaluation](../../ai-evaluation/README.md) — system-level evaluation
 
 ---
 
 ## See Also
 
-- [Prompt Evaluation](prompt-evaluation.md)
-- [Testing Fundamentals](../foundations/testing-fundamentals.md)
-- [Structured Outputs](../llm-engineering/structured-outputs.md)
-- [LLM Security Fundamentals](../llm-engineering/llm-security-fundamentals.md)
+- [Prompt Evaluation](04-prompt-evaluation.md)
+- [Testing Fundamentals](../../foundations/testing-fundamentals.md)
+- [Structured Outputs](../../llm-engineering/structured-outputs.md)
+- [LLM Security Fundamentals](../../llm-engineering/llm-security-fundamentals.md)
 
 ## Changelog
 

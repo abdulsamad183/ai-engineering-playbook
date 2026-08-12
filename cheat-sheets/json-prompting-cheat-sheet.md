@@ -1,6 +1,6 @@
 # JSON Prompting Cheat Sheet
 
-> Quick reference for schema-based JSON prompts. See [Structured Prompting](../domains/prompt-engineering/structured-prompting.md).
+> Quick reference for schema-based JSON prompts. See [Structured Prompting](../domains/prompt-engineering/craft/03-structured-prompting.md).
 
 ## JSON Prompt Stack
 

@@ -11,7 +11,7 @@ related:
   - prompt-patterns.md
   - structured-prompting.md
   - prompting-strategies.md
-  - ../../prompts/templates/README.md
+  - ../../../prompts/templates/README.md
 keywords: [prompt templates, QA, summarization, classification, extraction, code review, agent prompts, evaluation prompts]
 author: hp
 ---
@@ -58,7 +58,7 @@ author: hp
 | No eval baseline | Golden-set tests per template |
 | Model swap breaks everything | Templates parameterized by model config |
 
-> **Production Standard:** Every recurring LLM task gets a template in [`prompts/templates/`](../../prompts/templates/README.md). Application code loads templates by ID and injects variables — it never embeds prompt text.
+> **Production Standard:** Every recurring LLM task gets a template in [`prompts/templates/`](../../../prompts/templates/README.md). Application code loads templates by ID and injects variables — it never embeds prompt text.
 
 ---
 
@@ -189,7 +189,7 @@ def render_prompt(name: str, variables: dict[str, str]) -> list[dict]:
 
 ## Template Library
 
-All templates live in [`prompts/templates/`](../../prompts/templates/README.md). This guide documents their purpose and structure; the folder holds the copy-paste-ready files.
+All templates live in [`prompts/templates/`](../../../prompts/templates/README.md). This guide documents their purpose and structure; the folder holds the copy-paste-ready files.
 
 | Template | File | Primary Output |
 |----------|------|----------------|
@@ -549,7 +549,7 @@ Question: {question}
 
 ## JSON Output Templates
 
-**Purpose:** Force structured JSON responses for downstream parsing. Pairs with [Structured Outputs](../llm-engineering/structured-outputs.md).
+**Purpose:** Force structured JSON responses for downstream parsing. Pairs with [Structured Outputs](../../llm-engineering/structured-outputs.md).
 
 ### Template Skeleton
 
@@ -636,7 +636,7 @@ User:
 - List tools with descriptions matching your function-calling schema.
 - Cap max tool iterations to prevent runaway loops.
 - Log every thought/action/observation for debugging.
-- See [Function Calling and Tools](../llm-engineering/function-calling-and-tools.md).
+- See [Function Calling and Tools](../../llm-engineering/function-calling-and-tools.md).
 
 ---
 
@@ -699,7 +699,7 @@ User:
 - LLM judges have bias — calibrate against human labels.
 - Use separate judge model from generator when possible.
 - Position bias: swap A/B order in pairwise comparisons.
-- See [AI Evaluation](../ai-evaluation/README.md).
+- See [AI Evaluation](../../ai-evaluation/README.md).
 
 ---
 
@@ -786,30 +786,30 @@ graph LR
 
 ### Prerequisites
 
-- [Prompt Patterns](prompt-patterns.md) — Section 5
+- [Prompt Patterns](01-prompt-patterns.md) — Section 5
 
 ### Related Topics
 
-- [Structured Prompting](structured-prompting.md)
-- [Prompting Strategies](prompting-strategies.md)
-- [Structured Outputs](../llm-engineering/structured-outputs.md)
+- [Structured Prompting](03-structured-prompting.md)
+- [Prompting Strategies](04-prompting-strategies.md)
+- [Structured Outputs](../../llm-engineering/structured-outputs.md)
 
 ### Next Topics
 
-- [Structured Prompting](structured-prompting.md) — Section 7
-- [Prompt Library](../../prompts/README.md)
+- [Structured Prompting](03-structured-prompting.md) — Section 7
+- [Prompt Library](../../../prompts/README.md)
 
 ### Future Reading
 
-- [Prompt Templates Folder](../../prompts/templates/README.md)
-- [AI Evaluation](../ai-evaluation/README.md)
+- [Prompt Templates Folder](../../../prompts/templates/README.md)
+- [AI Evaluation](../../ai-evaluation/README.md)
 
 ---
 
 ## See Also
 
-- [Prompt Pattern Template](../../meta/templates/prompt-pattern.md)
-- [Prompt Patterns](prompt-patterns.md)
+- [Prompt Pattern Template](../../../meta/templates/prompt-pattern.md)
+- [Prompt Patterns](01-prompt-patterns.md)
 
 ## Changelog
 

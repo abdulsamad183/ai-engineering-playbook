@@ -833,7 +833,37 @@ nav:
         - "04 Content Filters & Policies": domains/generative-ai/generative-ai-safety/04-content-filters-and-policies.md
         - "05 Provenance & Watermarking": domains/generative-ai/generative-ai-safety/05-provenance-and-watermarking.md
         - "06 Secure GenAI Apps": domains/generative-ai/generative-ai-safety/06-secure-genai-apps.md
-    - "10. Prompt Engineering": domains/prompt-engineering/README.md
+    - "10. Prompt Engineering":
+      - Overview: domains/prompt-engineering/README.md
+      - Foundations:
+        - Overview: domains/prompt-engineering/foundations/README.md
+        - "01 Introduction to Prompt Engineering": domains/prompt-engineering/foundations/01-introduction-to-prompt-engineering.md
+        - "02 Prompt Anatomy": domains/prompt-engineering/foundations/02-prompt-anatomy.md
+        - "03 Message Types": domains/prompt-engineering/foundations/03-message-types.md
+        - "04 Prompt Design Principles": domains/prompt-engineering/foundations/04-prompt-design-principles.md
+      - Craft:
+        - Overview: domains/prompt-engineering/craft/README.md
+        - "01 Prompt Patterns": domains/prompt-engineering/craft/01-prompt-patterns.md
+        - "02 Prompt Templates Guide": domains/prompt-engineering/craft/02-prompt-templates-guide.md
+        - "03 Structured Prompting": domains/prompt-engineering/craft/03-structured-prompting.md
+        - "04 Prompting Strategies": domains/prompt-engineering/craft/04-prompting-strategies.md
+      - Reasoning Strategies:
+        - Overview: domains/prompt-engineering/reasoning-strategies/README.md
+        - "01 Advanced Reasoning Strategies": domains/prompt-engineering/reasoning-strategies/01-advanced-reasoning-strategies.md
+        - "02 Prompt Chaining": domains/prompt-engineering/reasoning-strategies/02-prompt-chaining.md
+      - Prompt Operations:
+        - Overview: domains/prompt-engineering/prompt-operations/README.md
+        - "01 Prompt Lifecycle": domains/prompt-engineering/prompt-operations/01-prompt-lifecycle.md
+        - "02 Prompt Versioning": domains/prompt-engineering/prompt-operations/02-prompt-versioning.md
+        - "03 Prompt Testing": domains/prompt-engineering/prompt-operations/03-prompt-testing.md
+        - "04 Prompt Evaluation": domains/prompt-engineering/prompt-operations/04-prompt-evaluation.md
+        - "05 Prompt Optimization": domains/prompt-engineering/prompt-operations/05-prompt-optimization.md
+      - Production & Safety:
+        - Overview: domains/prompt-engineering/production-and-safety/README.md
+        - "01 Prompt Security": domains/prompt-engineering/production-and-safety/01-prompt-security.md
+        - "02 Prompt Engineering Mistakes": domains/prompt-engineering/production-and-safety/02-prompt-engineering-mistakes.md
+        - "03 Production Prompt Engineering": domains/prompt-engineering/production-and-safety/03-production-prompt-engineering.md
+        - "04 Prompt Comparison Guides": domains/prompt-engineering/production-and-safety/04-prompt-comparison-guides.md
     - "11. LLM Application Development": domains/llm-application-development/README.md
     - "12. Chatbots": domains/chatbots/README.md
     - "13. Embeddings & Vector Databases": domains/embeddings-vector-databases/README.md

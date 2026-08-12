@@ -46,7 +46,7 @@ author: hp
 | **Jailbreak** | Coerce disallowed content despite policy | Roleplay / encoding tricks |
 | **Prompt leakage** | Extract system or developer prompts | “Repeat your instructions verbatim” |
 
-For prompt-assembly hardening patterns, prefer [Prompt Security](../prompt-engineering/prompt-security.md) as the companion deep dive.
+For prompt-assembly hardening patterns, prefer [Prompt Security](../prompt-engineering/production-and-safety/01-prompt-security.md) as the companion deep dive.
 
 ---
 
@@ -202,7 +202,7 @@ Alert on anomalous tool use; investigate with traces that store hashes/redaction
 
 - Prev: [Introduction to AI Safety](introduction-to-ai-safety.md)
 - Next: [Guardrails and Content Filtering](guardrails-and-content-filtering.md)
-- Related: [Prompt Security](../prompt-engineering/prompt-security.md) · [Safe Tool Use](safe-tool-use.md)
+- Related: [Prompt Security](../prompt-engineering/production-and-safety/01-prompt-security.md) · [Safe Tool Use](safe-tool-use.md)
 
 ---
 

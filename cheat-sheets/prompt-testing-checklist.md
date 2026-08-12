@@ -1,6 +1,6 @@
 # Prompt Testing Checklist
 
-> Pre-production prompt validation. See [Prompt Testing](../domains/prompt-engineering/prompt-testing.md).
+> Pre-production prompt validation. See [Prompt Testing](../domains/prompt-engineering/prompt-operations/03-prompt-testing.md).
 
 ## Before Shipping
 
@@ -29,5 +29,5 @@
 
 ## See Also
 
-- [Prompt Evaluation](../domains/prompt-engineering/prompt-evaluation.md)
+- [Prompt Evaluation](../domains/prompt-engineering/prompt-operations/04-prompt-evaluation.md)
 - [example-prompt-evaluation.py](../examples/prompt-engineering/example-prompt-evaluation.py)

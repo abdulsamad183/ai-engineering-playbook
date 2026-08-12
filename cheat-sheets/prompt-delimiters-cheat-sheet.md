@@ -1,6 +1,6 @@
 # Prompt Delimiters Cheat Sheet
 
-> Quick reference for separating prompt sections. See [Prompt Anatomy](../domains/prompt-engineering/prompt-anatomy.md) and [Structured Prompting](../domains/prompt-engineering/structured-prompting.md).
+> Quick reference for separating prompt sections. See [Prompt Anatomy](../domains/prompt-engineering/foundations/02-prompt-anatomy.md) and [Structured Prompting](../domains/prompt-engineering/craft/03-structured-prompting.md).
 
 ## Why Delimiters Matter
 
@@ -61,4 +61,4 @@ def extract_block(text: str, tag: str) -> str:
 ## See Also
 
 - [XML Prompting Cheat Sheet](xml-prompting-cheat-sheet.md)
-- [Prompt Security](../domains/prompt-engineering/prompt-security.md)
+- [Prompt Security](../domains/prompt-engineering/production-and-safety/01-prompt-security.md)

@@ -118,7 +118,7 @@ Encrypt at rest. Access audit log. User deletion wipes all memory keys. No memor
 2. Red-team with malicious retrieved documents
 3. Incident playbooks for context leak detection
 
-See also [Prompt Security](../prompt-engineering/prompt-security.md).
+See also [Prompt Security](../prompt-engineering/production-and-safety/01-prompt-security.md).
 
 ---
 
@@ -142,7 +142,7 @@ See also [Prompt Security](../prompt-engineering/prompt-security.md).
 
 ### Prerequisites
 
-- [Prompt Security](../prompt-engineering/prompt-security.md)
+- [Prompt Security](../prompt-engineering/production-and-safety/01-prompt-security.md)
 - [Retrieval Context](retrieval-context.md)
 
 ### Related Topics

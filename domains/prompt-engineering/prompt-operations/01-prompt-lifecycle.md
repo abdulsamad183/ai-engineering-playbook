@@ -11,9 +11,9 @@ related:
   - advanced-reasoning-strategies.md
   - prompt-chaining.md
   - prompt-versioning.md
-  - ../foundations/testing-fundamentals.md
-  - ../foundations/ai-application-lifecycle.md
-  - ../monitoring/README.md
+  - ../../foundations/testing-fundamentals.md
+  - ../../foundations/ai-application-lifecycle.md
+  - ../../monitoring/README.md
   - ../observability/README.md
 keywords: [prompt lifecycle, design, prototype, testing, evaluation, optimization, production, monitoring, iteration]
 author: hp
@@ -66,7 +66,7 @@ flowchart LR
     S11 --> PROD[Production AI Systems]
 ```
 
-> **Prerequisites:** Sections 1–10 of this handbook, [Testing Fundamentals](../foundations/testing-fundamentals.md), and [AI Application Lifecycle](../foundations/ai-application-lifecycle.md).
+> **Prerequisites:** Sections 1–10 of this handbook, [Testing Fundamentals](../../foundations/testing-fundamentals.md), and [AI Application Lifecycle](../../foundations/ai-application-lifecycle.md).
 
 ---
 
@@ -515,7 +515,7 @@ Changing the prompt and the model simultaneously makes it impossible to attribut
 
 **Versioning** freezes a tested, evaluated, and optimized prompt as a named, tracked artifact ready for deployment.
 
-This stage connects directly to [Prompt Versioning](prompt-versioning.md) (Section 12), which covers version control mechanics in depth.
+This stage connects directly to [Prompt Versioning](02-prompt-versioning.md) (Section 12), which covers version control mechanics in depth.
 
 ### Version Promotion Flow
 
@@ -994,29 +994,29 @@ Add production failure cases to eval set, iterate through Optimization, re-evalu
 
 ### Prerequisites
 
-- [Prompt Chaining](prompt-chaining.md) — Section 10
-- [Testing Fundamentals](../foundations/testing-fundamentals.md)
-- [AI Application Lifecycle](../foundations/ai-application-lifecycle.md)
+- [Prompt Chaining](../reasoning-strategies/02-prompt-chaining.md) — Section 10
+- [Testing Fundamentals](../../foundations/testing-fundamentals.md)
+- [AI Application Lifecycle](../../foundations/ai-application-lifecycle.md)
 
 ### Related Topics
 
-- [Prompt Versioning](prompt-versioning.md) — Section 12
-- [Advanced Reasoning Strategies](advanced-reasoning-strategies.md) — Section 9
-- [Monitoring](../monitoring/README.md)
+- [Prompt Versioning](02-prompt-versioning.md) — Section 12
+- [Advanced Reasoning Strategies](../reasoning-strategies/01-advanced-reasoning-strategies.md) — Section 9
+- [Monitoring](../../monitoring/README.md)
 
 ### Next Topics
 
-- [Prompt Versioning](prompt-versioning.md) — version control mechanics
+- [Prompt Versioning](02-prompt-versioning.md) — version control mechanics
 - [Observability](../observability/README.md)
-- [Context Engineering](../context-engineering/README.md)
+- [Context Engineering](../../context-engineering/README.md)
 
 ---
 
 ## See Also
 
-- [Prompt Versioning](prompt-versioning.md)
-- [AI Application Lifecycle](../foundations/ai-application-lifecycle.md)
-- [Testing Fundamentals](../foundations/testing-fundamentals.md)
+- [Prompt Versioning](02-prompt-versioning.md)
+- [AI Application Lifecycle](../../foundations/ai-application-lifecycle.md)
+- [Testing Fundamentals](../../foundations/testing-fundamentals.md)
 
 ## Changelog
 

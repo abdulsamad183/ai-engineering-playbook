@@ -24,7 +24,7 @@ output:
 related:
   - documentation.md
   - json-generation.md
-  - ../../domains/prompt-engineering/structured-prompting.md
+  - ../../domains/prompt-engineering/craft/03-structured-prompting.md
 keywords: [markdown, formatting, reports, structured documents]
 ---
 

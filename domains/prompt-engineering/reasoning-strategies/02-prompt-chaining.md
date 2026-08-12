@@ -11,11 +11,11 @@ related:
   - advanced-reasoning-strategies.md
   - prompt-lifecycle.md
   - prompt-versioning.md
-  - ../llm-engineering/structured-outputs.md
-  - ../llm-engineering/function-calling-and-tools.md
+  - ../../llm-engineering/structured-outputs.md
+  - ../../llm-engineering/function-calling-and-tools.md
   - ../ai-workflows/README.md
-  - ../agent-architectures/README.md
-  - ../backend-engineering/background-processing-for-ai.md
+  - ../../agent-architectures/README.md
+  - ../../backend-engineering/background-processing-for-ai.md
 keywords: [prompt chaining, sequential prompting, pipeline, orchestration, modular prompts, intermediate outputs, workflow]
 author: hp
 ---
@@ -67,7 +67,7 @@ flowchart LR
     S10 --> AG[AI Agents]
 ```
 
-> **Prerequisites:** Sections 1–9 of this handbook, especially [Advanced Reasoning Strategies](advanced-reasoning-strategies.md).
+> **Prerequisites:** Sections 1–9 of this handbook, especially [Advanced Reasoning Strategies](01-advanced-reasoning-strategies.md).
 
 ---
 
@@ -483,7 +483,7 @@ def execution_order(steps: list[ChainStep]) -> list[str]:
 | **Event-driven** | Step completion triggers next | Scalable; more infrastructure |
 
 > **Production Standard:** Chains exceeding 30 seconds total latency should run as background jobs with status endpoints.
-See [Background Processing for AI](../backend-engineering/background-processing-for-ai.md).
+See [Background Processing for AI](../../backend-engineering/background-processing-for-ai.md).
 
 ---
 
@@ -969,30 +969,30 @@ Add intermediate output validation and per-chunk error handling.
 
 ### Prerequisites
 
-- [Advanced Reasoning Strategies](advanced-reasoning-strategies.md) — Section 9
-- [Structured Outputs](../llm-engineering/structured-outputs.md)
-- [Software Engineering for AI](../foundations/software-engineering-for-ai.md)
+- [Advanced Reasoning Strategies](01-advanced-reasoning-strategies.md) — Section 9
+- [Structured Outputs](../../llm-engineering/structured-outputs.md)
+- [Software Engineering for AI](../../foundations/software-engineering-for-ai.md)
 
 ### Related Topics
 
-- [Prompt Lifecycle](prompt-lifecycle.md) — Section 11
-- [Prompt Versioning](prompt-versioning.md) — Section 12
+- [Prompt Lifecycle](../prompt-operations/01-prompt-lifecycle.md) — Section 11
+- [Prompt Versioning](../prompt-operations/02-prompt-versioning.md) — Section 12
 - [AI Workflows](../ai-workflows/README.md)
-- [Background Processing for AI](../backend-engineering/background-processing-for-ai.md)
+- [Background Processing for AI](../../backend-engineering/background-processing-for-ai.md)
 
 ### Next Topics
 
-- [Prompt Lifecycle](prompt-lifecycle.md) — operationalize chains
-- [Prompt Versioning](prompt-versioning.md) — version chain modules
-- [Agent Architectures](../agent-architectures/README.md)
+- [Prompt Lifecycle](../prompt-operations/01-prompt-lifecycle.md) — operationalize chains
+- [Prompt Versioning](../prompt-operations/02-prompt-versioning.md) — version chain modules
+- [Agent Architectures](../../agent-architectures/README.md)
 
 ---
 
 ## See Also
 
-- [Advanced Reasoning Strategies](advanced-reasoning-strategies.md)
-- [Structured Outputs](../llm-engineering/structured-outputs.md)
-- [Background Processing for AI](../backend-engineering/background-processing-for-ai.md)
+- [Advanced Reasoning Strategies](01-advanced-reasoning-strategies.md)
+- [Structured Outputs](../../llm-engineering/structured-outputs.md)
+- [Background Processing for AI](../../backend-engineering/background-processing-for-ai.md)
 
 ## Changelog
 

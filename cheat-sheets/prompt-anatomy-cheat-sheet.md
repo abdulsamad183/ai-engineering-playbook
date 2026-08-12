@@ -1,6 +1,6 @@
 # Prompt Anatomy Cheat Sheet
 
-> Quick reference for prompt components. See [Prompt Anatomy](../domains/prompt-engineering/prompt-anatomy.md).
+> Quick reference for prompt components. See [Prompt Anatomy](../domains/prompt-engineering/foundations/02-prompt-anatomy.md).
 
 ## Components (in typical order)
 
@@ -32,5 +32,5 @@ Tool message    → Execution results (agents)
 
 ## See Also
 
-- [Message Types](../domains/prompt-engineering/message-types.md)
-- [Prompt Design Principles](../domains/prompt-engineering/prompt-design-principles.md)
+- [Message Types](../domains/prompt-engineering/foundations/03-message-types.md)
+- [Prompt Design Principles](../domains/prompt-engineering/foundations/04-prompt-design-principles.md)

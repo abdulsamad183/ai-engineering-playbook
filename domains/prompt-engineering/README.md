@@ -1,78 +1,85 @@
 # Prompt Engineering
 
-> Production-quality handbook treating prompts as maintainable software artifacts.
-> **Prerequisites:** [LLM Engineering](../llm-engineering/README.md)
+> Production-quality handbook treating prompts as maintainable software artifacts — restructured into the same nested Handbooks hierarchy.
+
+**Prerequisites:** [Large Language Models](../llm-engineering/README.md)  
+**Unlocks:** [Context Engineering](../context-engineering/README.md) · [RAG](../rag/README.md) · [AI Agents](../ai-agents/README.md)
+
+Start with a section hub below (or expand **10. Prompt Engineering** in the left sidebar). Existing deep-dive pages are preserved — only the folder/nav structure changed.
 
 ---
 
-## Module Overview
+## Sections
 
-Prompt Engineering is a software engineering discipline — not a collection of hacks.
-This module teaches how to design, test, version, optimize, and deploy prompts in production AI systems.
+| # | Section | What you will learn | Hub |
+|---|---------|---------------------|-----|
+| 1 | **Foundations** | Intro, anatomy, message types, design principles | [foundations/](foundations/README.md) |
+| 2 | **Craft** | Patterns, templates, structured prompting, strategies | [craft/](craft/README.md) |
+| 3 | **Reasoning Strategies** | Advanced reasoning and chaining | [reasoning-strategies/](reasoning-strategies/README.md) |
+| 4 | **Prompt Operations** | Lifecycle, versioning, testing, evaluation, optimization | [prompt-operations/](prompt-operations/README.md) |
+| 5 | **Production & Safety** | Security, mistakes, production, comparisons | [production-and-safety/](production-and-safety/README.md) |
 
 ```mermaid
 flowchart TB
-  subgraph "Design"
-    S1[1. Introduction]
-    S2[2. Anatomy]
-    S3[3. Message Types]
-    S4[4. Design Principles]
-    S5[5. Patterns]
-    S6[6. Templates]
-    S7[7. Structured]
-    S8[8. Strategies]
-  end
-
-  subgraph "Reasoning"
-    S9[9. Advanced Reasoning]
-    S10[10. Chaining]
-  end
-
-  subgraph "Operations"
-    S11[11. Lifecycle]
-    S12[12. Versioning]
-    S13[13. Testing]
-    S14[14. Evaluation]
-    S15[15. Optimization]
-    S16[16. Security]
-    S17[17. Mistakes]
-    S18[18. Production]
-  end
-
-  S1 --> S2 --> S3 --> S4 --> S5 --> S6
-  S6 --> S7 --> S8 --> S9 --> S10
-  S10 --> S11 --> S12 --> S13 --> S14
-  S14 --> S15 --> S16 --> S17 --> S18
+  F[Foundations] --> C[Craft]
+  C --> R[Reasoning]
+  R --> O[Operations]
+  O --> P[Production & Safety]
 ```
-
-**Unlocks:** [Context Engineering](../context-engineering/README.md) · [RAG](../rag/README.md) · [AI Agents](../ai-agents/README.md)
 
 ---
 
-## Documents (18 Sections)
+## Hierarchy
 
-| # | Topic | Document |
-|---|-------|----------|
-| 1 | Introduction | [introduction-to-prompt-engineering.md](introduction-to-prompt-engineering.md) |
-| 2 | Prompt Anatomy | [prompt-anatomy.md](prompt-anatomy.md) |
-| 3 | Message Types | [message-types.md](message-types.md) |
-| 4 | Design Principles | [prompt-design-principles.md](prompt-design-principles.md) |
-| 5 | Prompt Patterns | [prompt-patterns.md](prompt-patterns.md) |
-| 6 | Templates Guide | [prompt-templates-guide.md](prompt-templates-guide.md) |
-| 7 | Structured Prompting | [structured-prompting.md](structured-prompting.md) |
-| 8 | Prompting Strategies | [prompting-strategies.md](prompting-strategies.md) |
-| 9 | Advanced Reasoning | [advanced-reasoning-strategies.md](advanced-reasoning-strategies.md) |
-| 10 | Prompt Chaining | [prompt-chaining.md](prompt-chaining.md) |
-| 11 | Prompt Lifecycle | [prompt-lifecycle.md](prompt-lifecycle.md) |
-| 12 | Prompt Versioning | [prompt-versioning.md](prompt-versioning.md) |
-| 13 | Prompt Testing | [prompt-testing.md](prompt-testing.md) |
-| 14 | Prompt Evaluation | [prompt-evaluation.md](prompt-evaluation.md) |
-| 15 | Prompt Optimization | [prompt-optimization.md](prompt-optimization.md) |
-| 16 | Prompt Security | [prompt-security.md](prompt-security.md) |
-| 17 | Common Mistakes | [prompt-engineering-mistakes.md](prompt-engineering-mistakes.md) |
-| 18 | Production | [production-prompt-engineering.md](production-prompt-engineering.md) |
+### 1. Foundations
 
-**Comparisons:** [prompt-comparison-guides.md](prompt-comparison-guides.md)
+| # | Topic |
+|---|-------|
+| 1 | [Introduction to Prompt Engineering](foundations/01-introduction-to-prompt-engineering.md) |
+| 2 | [Prompt Anatomy](foundations/02-prompt-anatomy.md) |
+| 3 | [Message Types](foundations/03-message-types.md) |
+| 4 | [Prompt Design Principles](foundations/04-prompt-design-principles.md) |
+
+### 2. Craft
+
+| # | Topic |
+|---|-------|
+| 1 | [Prompt Patterns](craft/01-prompt-patterns.md) |
+| 2 | [Prompt Templates Guide](craft/02-prompt-templates-guide.md) |
+| 3 | [Structured Prompting](craft/03-structured-prompting.md) |
+| 4 | [Prompting Strategies](craft/04-prompting-strategies.md) |
+
+### 3. Reasoning Strategies
+
+| # | Topic |
+|---|-------|
+| 1 | [Advanced Reasoning Strategies](reasoning-strategies/01-advanced-reasoning-strategies.md) |
+| 2 | [Prompt Chaining](reasoning-strategies/02-prompt-chaining.md) |
+
+### 4. Prompt Operations
+
+| # | Topic |
+|---|-------|
+| 1 | [Prompt Lifecycle](prompt-operations/01-prompt-lifecycle.md) |
+| 2 | [Prompt Versioning](prompt-operations/02-prompt-versioning.md) |
+| 3 | [Prompt Testing](prompt-operations/03-prompt-testing.md) |
+| 4 | [Prompt Evaluation](prompt-operations/04-prompt-evaluation.md) |
+| 5 | [Prompt Optimization](prompt-operations/05-prompt-optimization.md) |
+
+### 5. Production & Safety
+
+| # | Topic |
+|---|-------|
+| 1 | [Prompt Security](production-and-safety/01-prompt-security.md) |
+| 2 | [Prompt Engineering Mistakes](production-and-safety/02-prompt-engineering-mistakes.md) |
+| 3 | [Production Prompt Engineering](production-and-safety/03-production-prompt-engineering.md) |
+| 4 | [Prompt Comparison Guides](production-and-safety/04-prompt-comparison-guides.md) |
+
+---
+
+## Definition
+
+Prompt Engineering is a software engineering discipline — not a collection of hacks. Design, test, version, optimize, and deploy prompts as production artifacts.
 
 ---
 
@@ -105,32 +112,22 @@ QA · Summarization · Classification · Extraction · Translation · Code gener
 
 ---
 
-## Learning Path
+## Learning path
 
-1. **Foundations** — Introduction → Anatomy → Message Types → Design Principles
-2. **Craft** — Patterns → Templates → Structured → Strategies
-3. **Reasoning** — Advanced Reasoning → Chaining
-4. **Operations** — Lifecycle → Versioning → Testing → Evaluation
-5. **Production** — Optimization → Security → Mistakes → Production
+| Stage | Sections | Focus |
+|-------|----------|-------|
+| Foundations | 1 | Anatomy, roles, principles |
+| Craft | 2 | Patterns, templates, structure |
+| Reasoning | 3 | CoT-style strategies and chains |
+| Operations | 4 | Version, test, evaluate, optimize |
+| Production | 5 | Security, mistakes, ship |
 
 **Milestone:** Versioned prompt with golden dataset, CI regression tests, and structured output validation.
 
 ---
 
-## Completion Checklist
+## See also
 
-- [ ] Read all 18 sections
-- [ ] Use at least 3 templates from `prompts/templates/`
-- [ ] Implement versioned prompt loading (not inline strings)
-- [ ] Create golden dataset with ≥20 cases for one prompt
-- [ ] Run evaluation suite before/after prompt change
-- [ ] Document prompt in repository with changelog
-- [ ] Review [prompt engineering mistakes](prompt-engineering-mistakes.md) against your prompts
-
----
-
-## See Also
-
-- [LLM Engineering](../llm-engineering/README.md) prerequisite
+- [Large Language Models](../llm-engineering/README.md)
 - [Prompt Library](../../prompts/README.md)
 - [Master Index](../../meta/indexes/MASTER-INDEX.md)

@@ -11,9 +11,9 @@ related:
   - prompt-lifecycle.md
   - prompt-chaining.md
   - advanced-reasoning-strategies.md
-  - ../foundations/git-github-workflow.md
-  - ../foundations/software-engineering-for-ai.md
-  - ../foundations/configuration-and-secrets.md
+  - ../../foundations/git-github-workflow.md
+  - ../../foundations/software-engineering-for-ai.md
+  - ../../foundations/configuration-and-secrets.md
 keywords: [prompt versioning, version control, prompt repository, changelog, A/B testing, rollback, prompt library, semantic versioning]
 author: hp
 ---
@@ -63,7 +63,7 @@ flowchart LR
     S12 --> CE[Context Engineering]
 ```
 
-> **Prerequisites:** [Prompt Lifecycle](prompt-lifecycle.md) (Section 11) and [Git/GitHub Workflow](../foundations/git-github-workflow.md).
+> **Prerequisites:** [Prompt Lifecycle](01-prompt-lifecycle.md) (Section 11) and [Git/GitHub Workflow](../../foundations/git-github-workflow.md).
 
 ---
 
@@ -998,29 +998,29 @@ Branch protection prevents direct commits to production prompts.
 
 ### Prerequisites
 
-- [Prompt Lifecycle](prompt-lifecycle.md) — Section 11
-- [Git/GitHub Workflow](../foundations/git-github-workflow.md)
-- [Software Engineering for AI](../foundations/software-engineering-for-ai.md)
+- [Prompt Lifecycle](01-prompt-lifecycle.md) — Section 11
+- [Git/GitHub Workflow](../../foundations/git-github-workflow.md)
+- [Software Engineering for AI](../../foundations/software-engineering-for-ai.md)
 
 ### Related Topics
 
-- [Prompt Chaining](prompt-chaining.md) — Section 10
-- [Configuration and Secrets](../foundations/configuration-and-secrets.md)
-- [Prompt Library](../../prompts/README.md)
+- [Prompt Chaining](../reasoning-strategies/02-prompt-chaining.md) — Section 10
+- [Configuration and Secrets](../../foundations/configuration-and-secrets.md)
+- [Prompt Library](../../../prompts/README.md)
 
 ### Next Topics
 
-- [Context Engineering](../context-engineering/README.md)
-- [Embeddings](../embeddings/README.md)
-- [AI Agents](../agent-architectures/README.md)
+- [Context Engineering](../../context-engineering/README.md)
+- [Embeddings](../../embeddings/README.md)
+- [AI Agents](../../agent-architectures/README.md)
 
 ---
 
 ## See Also
 
-- [Prompt Lifecycle](prompt-lifecycle.md)
-- [Software Engineering for AI](../foundations/software-engineering-for-ai.md)
-- [Prompt Library](../../prompts/README.md)
+- [Prompt Lifecycle](01-prompt-lifecycle.md)
+- [Software Engineering for AI](../../foundations/software-engineering-for-ai.md)
+- [Prompt Library](../../../prompts/README.md)
 
 ## Changelog
 

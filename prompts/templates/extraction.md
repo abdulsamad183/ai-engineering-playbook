@@ -23,7 +23,7 @@ output:
   schema: user_defined
 related:
   - json-generation.md
-  - ../../domains/prompt-engineering/prompt-templates-guide.md
+  - ../../domains/prompt-engineering/craft/02-prompt-templates-guide.md
 keywords: [information extraction, entity extraction, parsing, OCR post-processing]
 ---
 

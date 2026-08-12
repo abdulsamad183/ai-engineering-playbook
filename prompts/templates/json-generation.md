@@ -24,7 +24,7 @@ output:
 related:
   - classification.md
   - extraction.md
-  - ../../domains/prompt-engineering/prompt-templates-guide.md
+  - ../../domains/prompt-engineering/craft/02-prompt-templates-guide.md
 keywords: [JSON, structured output, schema validation, API response]
 ---
 

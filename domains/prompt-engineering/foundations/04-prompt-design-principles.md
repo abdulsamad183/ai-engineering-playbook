@@ -11,10 +11,10 @@ related:
   - introduction-to-prompt-engineering.md
   - prompt-anatomy.md
   - message-types.md
-  - ../llm-engineering/README.md
-  - ../llm-engineering/context-windows.md
-  - ../llm-engineering/structured-outputs.md
-  - ../llm-engineering/sampling-and-decoding.md
+  - ../../llm-engineering/README.md
+  - ../../llm-engineering/context-windows.md
+  - ../../llm-engineering/structured-outputs.md
+  - ../../llm-engineering/sampling-and-decoding.md
 keywords: [prompt design, clarity, specificity, deterministic prompting, task decomposition, chain of thought, reusable prompts]
 author: hp
 ---
@@ -82,7 +82,7 @@ mindmap
       Eval regression
 ```
 
-> **Prerequisites:** [LLM Engineering](../llm-engineering/README.md) · [Sampling and Decoding](../llm-engineering/sampling-and-decoding.md) · [Structured Outputs](../llm-engineering/structured-outputs.md) · Sections 1–3 of this module
+> **Prerequisites:** [LLM Engineering](../../llm-engineering/README.md) · [Sampling and Decoding](../../llm-engineering/sampling-and-decoding.md) · [Structured Outputs](../../llm-engineering/structured-outputs.md) · Sections 1–3 of this module
 
 ---
 
@@ -238,7 +238,7 @@ flowchart LR
 | Response schema | Pydantic / JSON Schema | Structural determinism |
 | Prompt wording | Unambiguous | Semantic determinism |
 
-See [Sampling and Decoding](../llm-engineering/sampling-and-decoding.md).
+See [Sampling and Decoding](../../llm-engineering/sampling-and-decoding.md).
 
 ### When Determinism Matters
 
@@ -832,34 +832,34 @@ def prompt_quality_gate(eval_score: float, threshold: float, prompt_version: str
 
 ### Prerequisites
 
-- [Introduction to Prompt Engineering](introduction-to-prompt-engineering.md)
-- [Prompt Anatomy](prompt-anatomy.md)
-- [Message Types](message-types.md)
-- [LLM Engineering](../llm-engineering/README.md)
-- [Sampling and Decoding](../llm-engineering/sampling-and-decoding.md)
-- [Structured Outputs](../llm-engineering/structured-outputs.md)
+- [Introduction to Prompt Engineering](01-introduction-to-prompt-engineering.md)
+- [Prompt Anatomy](02-prompt-anatomy.md)
+- [Message Types](03-message-types.md)
+- [LLM Engineering](../../llm-engineering/README.md)
+- [Sampling and Decoding](../../llm-engineering/sampling-and-decoding.md)
+- [Structured Outputs](../../llm-engineering/structured-outputs.md)
 
 ### — Prompt Engineering (This Module)
 
 | # | Topic | Document |
 |---|-------|----------|
-| 1 | Introduction to Prompt Engineering | [introduction-to-prompt-engineering.md](introduction-to-prompt-engineering.md) |
-| 2 | Prompt Anatomy | [prompt-anatomy.md](prompt-anatomy.md) |
-| 3 | Message Types | [message-types.md](message-types.md) |
+| 1 | Introduction to Prompt Engineering | [introduction-to-prompt-engineering.md](01-introduction-to-prompt-engineering.md) |
+| 2 | Prompt Anatomy | [prompt-anatomy.md](02-prompt-anatomy.md) |
+| 3 | Message Types | [message-types.md](03-message-types.md) |
 | 4 | Prompt Design Principles | **You are here** |
 
 ### Next Topics (Future Sections)
 
 - Few-shot and chain-of-thought patterns
 - Prompt patterns library
-- [Context Engineering](../context-engineering/README.md)
+- [Context Engineering](../../context-engineering/README.md)
 
 ---
 
 ## See Also
 
-- [Context Windows](../llm-engineering/context-windows.md)
-- [LLM Cost Optimization](../llm-engineering/llm-cost-optimization.md)
+- [Context Windows](../../llm-engineering/context-windows.md)
+- [LLM Cost Optimization](../../llm-engineering/llm-cost-optimization.md)
 
 ## Changelog
 

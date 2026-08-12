@@ -1,6 +1,6 @@
 # Prompt Debugging Checklist
 
-> When prompts behave unexpectedly. See [Prompt Engineering Mistakes](../domains/prompt-engineering/prompt-engineering-mistakes.md).
+> When prompts behave unexpectedly. See [Prompt Engineering Mistakes](../domains/prompt-engineering/production-and-safety/02-prompt-engineering-mistakes.md).
 
 ## Symptom → Check
 
@@ -28,5 +28,5 @@ Remove one at a time: examples → context → constraints → role → instruct
 
 ## See Also
 
-- [Prompt Optimization](../domains/prompt-engineering/prompt-optimization.md)
-- [Prompt Versioning](../domains/prompt-engineering/prompt-versioning.md)
+- [Prompt Optimization](../domains/prompt-engineering/prompt-operations/05-prompt-optimization.md)
+- [Prompt Versioning](../domains/prompt-engineering/prompt-operations/02-prompt-versioning.md)

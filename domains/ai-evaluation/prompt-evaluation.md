@@ -18,7 +18,7 @@ author: hp
 
 ## Overview
 
-Section **8**. Complements [Prompt Engineering evaluation](../prompt-engineering/prompt-evaluation.md) with system-level LLMOps focus.
+Section **8**. Complements [Prompt Engineering evaluation](../prompt-engineering/prompt-operations/04-prompt-evaluation.md) with system-level LLMOps focus.
 
 ## Dimensions
 

@@ -26,5 +26,5 @@ Load with [utilities/playbook_utils/prompts.py](../utilities/playbook_utils/prom
 
 ## Related
 
-- [Prompt Templates Guide](../../../domains/prompt-engineering/prompt-templates-guide.md)
+- [Prompt Templates Guide](../../../domains/prompt-engineering/craft/02-prompt-templates-guide.md)
 - [Full prompt library](../../../prompts/templates/README.md)

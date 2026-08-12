@@ -22,8 +22,8 @@ output:
   format: markdown
   schema: null
 related:
-  - ../../domains/prompt-engineering/advanced-reasoning-strategies.md
-  - ../../domains/prompt-engineering/prompt-templates-guide.md
+  - ../../domains/prompt-engineering/reasoning-strategies/01-advanced-reasoning-strategies.md
+  - ../../domains/prompt-engineering/craft/02-prompt-templates-guide.md
 keywords: [brainstorming, ideation, product discovery, design thinking]
 ---
 

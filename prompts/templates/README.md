@@ -104,12 +104,12 @@ Validate required variables before rendering. Use provider JSON mode for templat
 2. Name with kebab-case: `{use-case}.md`.
 3. Keep templates between 80–150 lines.
 4. Test with at least two models before marking `status: published`.
-5. Add an entry to this README and link from the [Prompt Templates Guide](../../domains/prompt-engineering/prompt-templates-guide.md).
+5. Add an entry to this README and link from the [Prompt Templates Guide](../../domains/prompt-engineering/craft/02-prompt-templates-guide.md).
 
 ---
 
 ## See Also
 
-- [Prompt Templates Guide](../../domains/prompt-engineering/prompt-templates-guide.md)
-- [Prompt Patterns](../../domains/prompt-engineering/prompt-patterns.md)
+- [Prompt Templates Guide](../../domains/prompt-engineering/craft/02-prompt-templates-guide.md)
+- [Prompt Patterns](../../domains/prompt-engineering/craft/01-prompt-patterns.md)
 - [Prompt Pattern Template](../../meta/templates/prompt-pattern.md)
