@@ -1,17 +1,20 @@
 # Architecture Components
 
-> The parts inside each block and at the output.
+> Deep lessons for **Architecture Components** in the Transformers handbook.
 
-**Parent:** [Transformers](../README.md)
+## Lessons
 
----
+| # | Lesson |
+|---|--------|
+| 1 | [Positional Encodings](01-positional-encodings.md) |
+| 2 | [Feed-Forward Networks](02-feed-forward-networks.md) |
+| 3 | [LayerNorm & Residuals](03-layernorm-and-residuals.md) |
+| 4 | [Pre-Norm vs Post-Norm](04-prenorm-vs-postnorm.md) |
+| 5 | [Outputs, Logits & Heads](05-outputs-logits-and-heads.md) |
 
-## Topics
+```mermaid
+flowchart LR
+  L1 --> L2 --> L3 --> L4 --> L5
+```
 
-| # | Topic | Document |
-|---|-------|----------|
-| 1 | Positional Encodings | [01-positional-encodings.md](01-positional-encodings.md) |
-| 2 | Feed-Forward Networks | [02-feed-forward-networks.md](02-feed-forward-networks.md) |
-| 3 | LayerNorm & Residuals | [03-layernorm-and-residuals.md](03-layernorm-and-residuals.md) |
-| 4 | Pre-Norm vs Post-Norm | [04-prenorm-vs-postnorm.md](04-prenorm-vs-postnorm.md) |
-| 5 | Outputs, Logits & Heads | [05-outputs-logits-and-heads.md](05-outputs-logits-and-heads.md) |
+**Topic hub:** [../README.md](../README.md)

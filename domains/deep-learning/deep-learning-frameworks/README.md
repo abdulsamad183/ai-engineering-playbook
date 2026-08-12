@@ -1,15 +1,18 @@
 # Deep Learning Frameworks
 
-> Tooling to build and train nets — PyTorch, TensorFlow, Keras.
+> Deep lessons for **Deep Learning Frameworks** in the Deep Learning handbook.
 
-**Parent:** [Deep Learning](../README.md)
+## Lessons
 
----
+| # | Lesson |
+|---|--------|
+| 1 | [PyTorch](01-pytorch.md) |
+| 2 | [TensorFlow](02-tensorflow.md) |
+| 3 | [Keras](03-keras.md) |
 
-## Topics
+```mermaid
+flowchart LR
+  L1 --> L2 --> L3
+```
 
-| # | Topic | Document |
-|---|-------|----------|
-| 1 | PyTorch | [01-pytorch.md](01-pytorch.md) |
-| 2 | TensorFlow | [02-tensorflow.md](02-tensorflow.md) |
-| 3 | Keras | [03-keras.md](03-keras.md) |
+**Topic hub:** [../README.md](../README.md)

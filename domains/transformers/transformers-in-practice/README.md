@@ -1,16 +1,19 @@
-# Transformers in Practice
+# Transformers In Practice
 
-> Tooling and pitfalls when shipping transformer systems.
+> Deep lessons for **Transformers In Practice** in the Transformers handbook.
 
-**Parent:** [Transformers](../README.md)
+## Lessons
 
----
+| # | Lesson |
+|---|--------|
+| 1 | [Hugging Face Transformers](01-hugging-face-transformers.md) |
+| 2 | [Tokenizers](02-tokenizers.md) |
+| 3 | [Pipelines & Model Cards](03-pipelines-and-model-cards.md) |
+| 4 | [Common Failure Modes](04-common-failure-modes.md) |
 
-## Topics
+```mermaid
+flowchart LR
+  L1 --> L2 --> L3 --> L4
+```
 
-| # | Topic | Document |
-|---|-------|----------|
-| 1 | Hugging Face Transformers | [01-hugging-face-transformers.md](01-hugging-face-transformers.md) |
-| 2 | Tokenizers | [02-tokenizers.md](02-tokenizers.md) |
-| 3 | Pipelines & Model Cards | [03-pipelines-and-model-cards.md](03-pipelines-and-model-cards.md) |
-| 4 | Common Failure Modes | [04-common-failure-modes.md](04-common-failure-modes.md) |
+**Topic hub:** [../README.md](../README.md)

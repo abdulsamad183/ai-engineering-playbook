@@ -5,7 +5,7 @@
 **Prerequisites:** [Mathematics & Statistics](../mathematics-statistics/README.md) · [Python Frameworks & Libraries](../python-frameworks-libraries/README.md)  
 **Unlocks:** [Deep Learning](../deep-learning/README.md) · [Natural Language Processing](../natural-language-processing/README.md)
 
-Start with a section hub below (or expand **4. Machine Learning** in the left sidebar). Each topic has definitions, key ideas, diagrams, and scikit-learn-style examples.
+Lessons deepened 2026-08-12 (definitions, Mermaid, Python, eval, production). Start with a section hub below (or expand **4. Machine Learning** in the left sidebar). Each topic has definitions, key ideas, diagrams, and scikit-learn-style examples.
 
 ---
 

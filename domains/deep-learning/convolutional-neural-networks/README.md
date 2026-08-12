@@ -1,18 +1,21 @@
 # Convolutional Neural Networks
 
-> Vision-ready inductive bias — conv, pool, classic architectures, transfer.
+> Deep lessons for **Convolutional Neural Networks** in the Deep Learning handbook.
 
-**Parent:** [Deep Learning](../README.md)
+## Lessons
 
----
+| # | Lesson |
+|---|--------|
+| 1 | [CNN Basics](01-cnn-basics.md) |
+| 2 | [Convolution](02-convolution.md) |
+| 3 | [Pooling](03-pooling.md) |
+| 4 | [Padding & Stride](04-padding-and-stride.md) |
+| 5 | [CNN Architectures](05-cnn-architectures.md) |
+| 6 | [Transfer Learning](06-transfer-learning.md) |
 
-## Topics
+```mermaid
+flowchart LR
+  L1 --> L2 --> L3 --> L4 --> L5 --> L6
+```
 
-| # | Topic | Document |
-|---|-------|----------|
-| 1 | CNN Basics | [01-cnn-basics.md](01-cnn-basics.md) |
-| 2 | Convolution | [02-convolution.md](02-convolution.md) |
-| 3 | Pooling | [03-pooling.md](03-pooling.md) |
-| 4 | Padding & Stride | [04-padding-and-stride.md](04-padding-and-stride.md) |
-| 5 | CNN Architectures | [05-cnn-architectures.md](05-cnn-architectures.md) |
-| 6 | Transfer Learning | [06-transfer-learning.md](06-transfer-learning.md) |
+**Topic hub:** [../README.md](../README.md)

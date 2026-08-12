@@ -5,7 +5,7 @@
 **Prerequisites:** [Machine Learning](../machine-learning/README.md) · [Mathematics & Statistics](../mathematics-statistics/README.md)  
 **Unlocks:** [Natural Language Processing](../natural-language-processing/README.md) · [Transformers](../transformers/README.md) · [Large Language Models](../llm-engineering/README.md)
 
-Start with a section hub below (or expand **5. Deep Learning** in the left sidebar). Each topic has definitions, key ideas, diagrams, and PyTorch-style examples.
+Lessons deepened 2026-08-12 (definitions, Mermaid, Python, eval, production). Start with a section hub below (or expand **5. Deep Learning** in the left sidebar). Each topic has definitions, key ideas, diagrams, and PyTorch-style examples.
 
 ---
 

@@ -53,10 +53,10 @@ flowchart TB
 | 1 | [Python](domains/python-engineering/README.md) | Production Python for AI — typing, async, structure |
 | 2 | [Python Frameworks & Libraries](domains/python-frameworks-libraries/README.md) | FastAPI, data/ML stack, LLM SDKs |
 | 3 | [Mathematics & Statistics](domains/mathematics-statistics/README.md) | Linear algebra, probability, eval stats |
-| 4 | [Machine Learning](domains/machine-learning/README.md) | 9 sections · 69 topics — basics → ensembles → eval · features · sklearn |
-| 5 | [Deep Learning](domains/deep-learning/README.md) | 10 sections · 63 topics — nets → CNN/RNN → train · serve |
+| 4 | [Machine Learning](domains/machine-learning/README.md) | Classical ML — deepened lessons across basics, models, eval, ensembles |
+| 5 | [Deep Learning](domains/deep-learning/README.md) | Neural nets — deepened CNNs, sequences, training, deployment |
 | 6 | [Natural Language Processing](domains/natural-language-processing/README.md) | 10 sections · 64 topics — text → tasks → attention |
-| 7 | [Transformers](domains/transformers/README.md) | 7 sections · 33 topics — attention · families · inference |
+| 7 | [Transformers](domains/transformers/README.md) | Attention to inference — deepened architecture, families, efficiency |
 | 8 | [Large Language Models (LLMs)](domains/llm-engineering/README.md) | 14 sections · 117 topics — pretrain → align → serve |
 | 9 | [Generative AI](domains/generative-ai/README.md) | Full deep lessons across 14 sections (GANs, VAEs, diffusion, multimodal, safety) |
 | 10 | [Prompt Engineering](domains/prompt-engineering/README.md) | 5 sections · 19 topics — craft → ops → production |

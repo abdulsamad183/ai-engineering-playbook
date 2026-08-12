@@ -1,17 +1,20 @@
 # Transformer Basics
 
-> Big picture — why transformers and how the stack fits together.
+> Deep lessons for **Transformer Basics** in the Transformers handbook.
 
-**Parent:** [Transformers](../README.md)
+## Lessons
 
----
+| # | Lesson |
+|---|--------|
+| 1 | [Why Transformers](01-why-transformers.md) |
+| 2 | [Transformer Overview](02-transformer-overview.md) |
+| 3 | [Encoder vs Decoder vs Encoder-Decoder](03-encoder-vs-decoder-vs-encoder-decoder.md) |
+| 4 | [Tokens & Input Embeddings](04-tokens-and-input-embeddings.md) |
+| 5 | [The Transformer Stack](05-the-transformer-stack.md) |
 
-## Topics
+```mermaid
+flowchart LR
+  L1 --> L2 --> L3 --> L4 --> L5
+```
 
-| # | Topic | Document |
-|---|-------|----------|
-| 1 | Why Transformers | [01-why-transformers.md](01-why-transformers.md) |
-| 2 | Transformer Overview | [02-transformer-overview.md](02-transformer-overview.md) |
-| 3 | Encoder vs Decoder vs Encoder-Decoder | [03-encoder-vs-decoder-vs-encoder-decoder.md](03-encoder-vs-decoder-vs-encoder-decoder.md) |
-| 4 | Tokens & Input Embeddings | [04-tokens-and-input-embeddings.md](04-tokens-and-input-embeddings.md) |
-| 5 | The Transformer Stack | [05-the-transformer-stack.md](05-the-transformer-stack.md) |
+**Topic hub:** [../README.md](../README.md)

@@ -5,7 +5,7 @@
 **Prerequisites:** [Deep Learning](../deep-learning/README.md) · [Natural Language Processing](../natural-language-processing/README.md)  
 **Unlocks:** [Large Language Models](../llm-engineering/README.md) · [Embeddings & Vector Databases](../embeddings-vector-databases/README.md)
 
-Start with a section hub below (or expand **7. Transformers** in the left sidebar).
+Lessons deepened 2026-08-12 (definitions, Mermaid, Python, eval, production). Start with a section hub below (or expand **7. Transformers** in the left sidebar).
 
 ---
 

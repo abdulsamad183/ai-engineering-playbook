@@ -1,17 +1,20 @@
 # Deep Learning Deployment
 
-> Ship models — serving, ONNX/TensorRT, and edge constraints.
+> Deep lessons for **Deep Learning Deployment** in the Deep Learning handbook.
 
-**Parent:** [Deep Learning](../README.md)
+## Lessons
 
----
+| # | Lesson |
+|---|--------|
+| 1 | [Model Serving](01-model-serving.md) |
+| 2 | [Inference Optimization](02-inference-optimization.md) |
+| 3 | [ONNX](03-onnx.md) |
+| 4 | [TensorRT](04-tensorrt.md) |
+| 5 | [Edge Deployment](05-edge-deployment.md) |
 
-## Topics
+```mermaid
+flowchart LR
+  L1 --> L2 --> L3 --> L4 --> L5
+```
 
-| # | Topic | Document |
-|---|-------|----------|
-| 1 | Model Serving | [01-model-serving.md](01-model-serving.md) |
-| 2 | Inference Optimization | [02-inference-optimization.md](02-inference-optimization.md) |
-| 3 | ONNX | [03-onnx.md](03-onnx.md) |
-| 4 | TensorRT | [04-tensorrt.md](04-tensorrt.md) |
-| 5 | Edge Deployment | [05-edge-deployment.md](05-edge-deployment.md) |
+**Topic hub:** [../README.md](../README.md)
