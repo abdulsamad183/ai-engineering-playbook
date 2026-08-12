@@ -1,5 +1,38 @@
 {% extends "base.html" %}
 
+{% block extrahead %}
+  {{ super() }}
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const path = window.location.pathname;
+      const normalized = path.replace(/\/index\.html$/, "/");
+      const body = document.body;
+
+      if (normalized === "/" || normalized.endsWith("/ai-engineering-playbook/")) {
+        body.dataset.playbookPage = "home";
+      }
+      if (normalized.endsWith("/handbooks/")) {
+        body.dataset.playbookPage = "handbooks";
+      }
+
+      const themeMap = [
+        { theme: "foundations", match: /python-engineering|python-frameworks-libraries|mathematics-statistics|machine-learning|deep-learning|natural-language-processing/ },
+        { theme: "models", match: /transformers|llm-engineering|generative-ai/ },
+        { theme: "applications", match: /prompt-engineering|llm-application-development|chatbots|embeddings-vector-databases|rag|llm-fine-tuning|ai-evaluation/ },
+        { theme: "agents", match: /ai-agents|agentic-ai|mcp|multi-agent-systems/ },
+        { theme: "production", match: /ai-system-design|mlops-llmops|ai-deployment|ai-security-guardrails|advanced-ai-research/ }
+      ];
+
+      for (const entry of themeMap) {
+        if (entry.match.test(normalized)) {
+          body.dataset.sectionTheme = entry.theme;
+          break;
+        }
+      }
+    });
+  </script>
+{% endblock %}
+
 {# Side rails fill wide-screen gutters with spider doodles #}
 {% block footer %}
   {{ super() }}

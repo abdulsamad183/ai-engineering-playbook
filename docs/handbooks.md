@@ -6,6 +6,24 @@ The left sidebar shows **only these 25 topics**. Expand a topic to open its sect
 
 **New here?** Use the home [Start here](../README.md#start-here) checklist, then the [Interview prep path](../meta/interview-path.md) if you are studying for interviews.
 
+<div class="hero-panel hero-panel--handbooks">
+  <div class="hero-panel__badge">25 primary handbooks</div>
+  <div class="hero-panel__grid hero-panel__grid--compact">
+    <div class="hero-panel__card">
+      <h3>Foundations</h3>
+      <p>Topics 1-6 cover Python, frameworks, math, ML, deep learning, and NLP.</p>
+    </div>
+    <div class="hero-panel__card">
+      <h3>Models and apps</h3>
+      <p>Topics 7-16 move from transformers and LLMs into prompts, app development, RAG, fine-tuning, and evaluation.</p>
+    </div>
+    <div class="hero-panel__card">
+      <h3>Agents to production</h3>
+      <p>Topics 17-25 cover agents, MCP, system design, operations, deployment, security, and advanced research.</p>
+    </div>
+  </div>
+</div>
+
 | # | Topic |
 |---|-------|
 | 1 | [Python](domains/python-engineering/README.md) |

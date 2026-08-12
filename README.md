@@ -4,6 +4,24 @@
 
 Click any topic to open its handbook. Each hub includes definitions, a learning path, diagrams, and linked deep dives.
 
+<div class="hero-panel hero-panel--home">
+  <div class="hero-panel__badge">Start with structure. Build with depth.</div>
+  <div class="hero-panel__grid">
+    <div class="hero-panel__card">
+      <h3>Foundations to production</h3>
+      <p>Move from Python and math through models, applications, agents, and production systems in one connected curriculum.</p>
+    </div>
+    <div class="hero-panel__card">
+      <h3>Learn, then build</h3>
+      <p>Each topic links theory, diagrams, examples, and starter paths so you can turn concepts into working systems quickly.</p>
+    </div>
+    <div class="hero-panel__card">
+      <h3>Use the shortest path</h3>
+      <p>Follow the checklist, jump into the handbooks, or head straight into capstones and runnable examples.</p>
+    </div>
+  </div>
+</div>
+
 ---
 
 ## Start here
