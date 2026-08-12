@@ -83,3 +83,10 @@ flowchart LR
 - [Multi-Agent Systems](../multi-agent-systems/README.md)
 - [Domains overview](../README.md)
 - [Master Index](../../meta/indexes/MASTER-INDEX.md)
+
+---
+
+## Continue learning
+
+Next: [MCP](../mcp/README.md) · [Multi-Agent Systems](../multi-agent-systems/README.md)
+

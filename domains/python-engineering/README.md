@@ -123,3 +123,12 @@ After the curriculum (or in parallel from topic 21+), read the AI-service orient
 - [Domains overview](../README.md)
 - [Learning Roadmap](../../meta/roadmap.md)
 - [Master Index](../../meta/indexes/MASTER-INDEX.md)
+
+---
+
+## Continue learning
+
+Next: [Python Frameworks](../python-frameworks-libraries/README.md)
+
+Unlocks frameworks and LLM apps.
+

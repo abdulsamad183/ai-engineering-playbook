@@ -141,6 +141,7 @@ nav:
   - Learn:
     - Learning Roadmap: meta/roadmap.md
     - Capstone Walkthrough: meta/capstone-walkthrough.md
+    - Interview Prep Path: meta/interview-path.md
   - Handbooks:
     - Overview: handbooks.md
     - "1. Python":

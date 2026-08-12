@@ -92,3 +92,10 @@ flowchart LR
 - [AI Deployment](../ai-deployment/README.md)
 - [Domains overview](../README.md)
 - [Master Index](../../meta/indexes/MASTER-INDEX.md)
+
+---
+
+## Continue learning
+
+Next: [AI Deployment](../ai-deployment/README.md)
+

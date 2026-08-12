@@ -1,197 +1,99 @@
 ---
 title: "Agent Architecture"
-description: "Complete agent architecture — goal, planner, memory, reasoning, tool selection, execution, observation, reflection, state update."
+description: "Reference architecture for single agents: planner, executor, tool runtime, memory, and control plane."
 domain: ai-agents
-tags: [foundations, ai-agents]
+tags: [foundations, architecture]
 status: published
 created: 2026-08-11
 updated: 2026-08-12
-version: "2.0"
+version: "2.1"
 related:
-  - ../README.md
-  - ../../llm-application-development/README.md
+  - 02-agent-fundamentals.md
+  - ../tools-and-action/01-tool-use.md
   - ../../mcp/README.md
-  - ../../ai-evaluation/README.md
 ---
 
 # Agent Architecture
 
-> Complete agent architecture — goal, planner, memory, reasoning, tool selection, execution, observation, reflection, state update.
+> A practical layout separating **planning**, **execution**, **tools**, **memory**, and the **control plane** (auth, budgets, approvals).
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Definition](#definition)
-- [Why It Matters](#why-it-matters)
-- [Uses](#uses)
-- [Core Ideas](#core-ideas)
-- [How It Works](#how-it-works)
-- [Worked Example](#worked-example)
-- [Python Examples](#python-examples)
-- [Evaluation](#evaluation)
-- [Production Considerations](#production-considerations)
-- [Performance & Cost](#performance--cost)
-- [Security Notes](#security-notes)
-- [Best Practices](#best-practices)
-- [Common Mistakes](#common-mistakes)
-- [Interview Preparation](#interview-preparation)
-- [Navigation](#navigation)
-
----
-
-## Overview
-
-Part of **Foundations** in the **AI Agents** handbook. Treat **Agent Architecture** as an implementable engineering topic.
-
-**Typical workflow:** goal → plan → tool call → observe → stop.
-
----
-
-## Definition
-
-**Agent Architecture** — Complete agent architecture — goal, planner, memory, reasoning, tool selection, execution, observation, reflection, state update.
-
-State inputs, outputs, success metrics, and failure behavior before changing production configs.
-
----
-
-## Why It Matters
-
-Gaps here show up as hallucinations, silent quality drops, runaway cost, or unsafe tool use. Clear design and measurement keep AI features shippable.
-
----
-
-## Uses
-
-| Use case | How this applies |
-|----------|------------------|
-| Product feature | User-facing capability with SLOs |
-| Internal platform | Shared retrieval/agent/eval primitives |
-| Incident response | Diagnose quality, latency, or safety regressions |
-| Design review | Make tradeoffs explicit |
-
----
-
-## Core Ideas
-
-1. Separate orchestration from model calls.
-2. Measure offline before widening traffic.
-3. Bound loops, tokens, tools, and spend.
-4. Version prompts/indexes/models/policies together.
-5. Prefer cite/ground/approve over unconstrained generation when risk is high.
-
----
-
-## How It Works
+## Layers
 
 ```mermaid
-flowchart LR
-  Goal --> Plan --> Tool --> Observe --> Plan
+flowchart TB
+  UI[Client / API] --> Ctrl[Control plane]
+  Ctrl --> Orch[Orchestrator]
+  Orch --> Planner
+  Orch --> Exec[Executor]
+  Exec --> Tools
+  Orch --> Mem[(State / memory)]
+  Tools --> MCP[MCP / APIs]
 ```
 
-Assign owners to each stage (data, model, app, platform, safety). Most regressions are interface skew between stages.
+| Layer | Responsibility |
+|-------|----------------|
+| Control plane | Auth, tenant, budgets, kill switch, audit |
+| Orchestrator | Loop, retries, checkpoints |
+| Planner | Decompose goal / pick next action |
+| Executor | Invoke tools, validate I/O |
+| Memory | Short-term transcript + durable artifacts |
+| Tools | Side effects with schemas |
 
----
+## Why split layers
 
-## Worked Example
+Keeps model swaps from rewriting auth; lets you test tools without an LLM; enables HITL interrupts without spaghetti.
 
-**Scenario:** Apply **Agent Architecture** to a production-shaped slice of traffic.
-
-1. Write a one-page spec: inputs, outputs, SLO, safety policy, offline metrics.
-2. Implement the smallest correct path with logging and timeouts.
-3. Build a golden set (even 50–200 cases) and gate the change.
-4. Canary 1–5% traffic; watch quality, latency, cost, and abuse.
-5. Keep one-click rollback to the previous artifact bundle.
-
----
-
-## Python Examples
+## Checkpointing sketch
 
 ```python
-from dataclasses import dataclass
-
-@dataclass
-class AgentStep:
-    thought: str
-    action: str | None
-    observation: str | None = None
-
+def step(run_id: str, state: dict, store) -> dict:
+    store.save(run_id, state)  # durable
+    action = plan(state)
+    if action.get("needs_approval"):
+        return {"status": "paused", "action": action}
+    state = execute(state, action)
+    store.save(run_id, state)
+    return state
 ```
 
-Wrap provider SDKs behind interfaces so unit tests do not need live keys.
+## Failure modes
 
----
+- God-object "Agent" class owning HTTP + SQL + prompts.
+- Memory only in the context window (lost on crash).
+- Tools without JSON schemas → injection and parse errors.
 
-## Evaluation
+## Production checklist
 
-| Layer | Examples |
-|-------|----------|
-| Offline | Golden set, recall@k, task success, rubrics |
-| Online | Thumbs, redo rate, escalation, cost/request |
-| Safety | Injection, PII leak, tool-scope violations |
+- [ ] Idempotent tool calls where possible
+- [ ] Per-tool timeouts
+- [ ] Structured traces (run_id, step, tool)
+- [ ] Resume from last checkpoint
 
-Ship only when offline floors pass and canary metrics stay in budget.
+## Interview
 
----
+**Q: Where do you put policy?** Deterministic policy (authZ, spend) in the control plane; soft style policy in prompts — never the reverse for security.
 
-## Production Considerations
 
-- Structured logs with request ids (redact secrets/PII).
-- Feature flags for model/prompt/index swaps.
-- Explicit timeouts, retries with jitter, and circuit breakers.
-- Multi-tenant isolation for data and tools.
+## Deployment shapes
 
-## Performance & Cost
+| Shape | When |
+|-------|------|
+| Sync API | Short tools, user waiting |
+| Async worker | Long research / coding |
+| Edge + cloud | Light plan locally, heavy tools remote |
 
-- Track p50/p95 latency and $ per successful task.
-- Cache embeddings/retrieval when invalidation is clear.
-- Prefer smaller routers/classifiers in front of expensive generators.
+## Observability minimum
 
-## Security Notes
+- Trace id per run
+- Span per tool
+- Token and $ counters
+- Pause/resume events for HITL
 
-- Treat model output and tool args as untrusted until validated.
-- Scope tools tightly; require approval for high-impact actions.
-- Enforce authZ on retrieval filters and MCP/tool servers.
+## Multi-agent boundary
 
----
-
-## Best Practices
-
-1. Baseline → measure → complicate.
-2. Keep golden sets sacred (no training on them).
-3. Change one axis at a time (model **or** prompt **or** index).
-4. Document failure modes users will see.
-5. Practice rollback drills.
-
----
-
-## Common Mistakes
-
-- Demo prompts with no eval harness.
-- Unbounded agent/tool loops.
-- Missing citations for grounded answers.
-- Train/serve skew in chunking or auth filters.
-- Cost dashboards that ignore tool fan-out.
-
----
-
-## Interview Preparation
-
-**Q: How do you explain agent architecture in a system design interview?**
-
-A: Goal → components → data flow → metrics → failure modes → scale knobs → security.
-
-**Q: What do you gate on before production?**
-
-A: Offline floors, canary online metrics, safety checks, and a tested rollback.
-
-**Q: What breaks first in production?**
-
-A: Usually retrieval/auth skew, prompt regressions, or cost blowups — not the happy-path demo.
-
----
+When roles truly diverge (researcher vs writer vs reviewer), extract workers — otherwise keep a single agent with tools. See [Multi-Agent Systems](../../multi-agent-systems/README.md).
 
 ## Navigation
 
-- **Section hub:** [README](README.md)
-- **Topic hub:** [../README.md](../README.md)
+- [Fundamentals](02-agent-fundamentals.md) · [Tool use](../tools-and-action/01-tool-use.md)
+- [Section hub](README.md) · [Agents hub](../README.md)

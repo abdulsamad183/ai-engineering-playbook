@@ -6,14 +6,14 @@
 
 ## Start here (offline, no API keys)
 
-| Demo | Command |
-|------|---------|
-| Mini RAG | `python examples/rag/mini_rag/run.py` |
-| Mini ReAct agent | `python examples/agents/mini_react/run.py` |
-| Mini chat API | `python examples/llm-applications/mini_chat_api/server.py` then `client.py` |
-| Mini GenAI sampling | `python examples/generative-ai/mini_sample.py` |
+| Demo | Command | Graduate to starter |
+|------|---------|---------------------|
+| Mini RAG | `python3 examples/rag/mini_rag/run.py` | [RAG path](rag/FROM_MINI_TO_STARTER.md) |
+| Mini ReAct agent | `python3 examples/agents/mini_react/run.py` | [Agent path](agents/FROM_MINI_TO_STARTER.md) |
+| Mini chat API | `python3 examples/llm-applications/mini_chat_api/server.py` then `client.py` | [API path](llm-applications/FROM_MINI_TO_STARTER.md) |
+| Mini GenAI sampling | `python3 examples/generative-ai/mini_sample.py` | [Generative AI handbook](../domains/generative-ai/README.md) |
 
-Then follow the [Capstone Walkthrough](../meta/capstone-walkthrough.md) for an end-to-end RAG Chat API.
+Then follow the [Capstone Walkthrough](../meta/capstone-walkthrough.md) for an end-to-end RAG Chat API. For interviews, see [Interview prep path](../meta/interview-path.md).
 
 ## Organization
 

@@ -131,3 +131,10 @@ QA · Summarization · Classification · Extraction · Translation · Code gener
 - [Large Language Models](../llm-engineering/README.md)
 - [Prompt Library](../../prompts/README.md)
 - [Master Index](../../meta/indexes/MASTER-INDEX.md)
+
+---
+
+## Continue learning
+
+Next: [LLM Application Development](../llm-application-development/README.md)
+

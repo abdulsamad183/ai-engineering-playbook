@@ -199,3 +199,10 @@ flowchart TB
 - [Domains overview](../README.md)
 - [Learning Roadmap](../../meta/roadmap.md)
 - [Master Index](../../meta/indexes/MASTER-INDEX.md)
+
+---
+
+## Continue learning
+
+Next: [Deep Learning](../deep-learning/README.md)
+

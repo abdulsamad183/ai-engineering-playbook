@@ -135,3 +135,10 @@ The **Transformer** models sequences with self-attention instead of recurrence. 
 
 - [Domains overview](../README.md)
 - [Learning Roadmap](../../meta/roadmap.md)
+
+---
+
+## Continue learning
+
+Next: [Large Language Models](../llm-engineering/README.md)
+

@@ -90,3 +90,10 @@ flowchart LR
 
 - [Domains overview](../README.md)
 - [Master Index](../../meta/indexes/MASTER-INDEX.md)
+
+---
+
+## Continue learning
+
+Next: [LLM Evaluation](../ai-evaluation/README.md)
+

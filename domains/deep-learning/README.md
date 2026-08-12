@@ -198,3 +198,10 @@ flowchart TB
 - [Domains overview](../README.md)
 - [Learning Roadmap](../../meta/roadmap.md)
 - [Master Index](../../meta/indexes/MASTER-INDEX.md)
+
+---
+
+## Continue learning
+
+Next: [NLP](../natural-language-processing/README.md) · [Transformers](../transformers/README.md)
+

@@ -99,3 +99,12 @@ flowchart LR
 
 - [Domains overview](../README.md)
 - [Master Index](../../meta/indexes/MASTER-INDEX.md)
+
+---
+
+## Continue learning
+
+Next: [LLM Fine-Tuning](../llm-fine-tuning/README.md) · [LLM Evaluation](../ai-evaluation/README.md)
+
+Or build the [Capstone](../../meta/capstone-walkthrough.md).
+

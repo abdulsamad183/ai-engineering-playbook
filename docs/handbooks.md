@@ -4,6 +4,8 @@
 
 The left sidebar shows **only these 25 topics**. Expand a topic to open its sections, then expand again for lessons.
 
+**New here?** Use the home [Start here](../README.md#start-here) checklist, then the [Interview prep path](../meta/interview-path.md) if you are studying for interviews.
+
 | # | Topic |
 |---|-------|
 | 1 | [Python](domains/python-engineering/README.md) |

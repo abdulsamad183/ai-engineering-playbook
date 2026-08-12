@@ -5,10 +5,12 @@
 ## Quick start (offline)
 
 ```bash
-python examples/rag/mini_rag/run.py
+python3 examples/rag/mini_rag/run.py
 ```
 
 No API keys. Retrieves over a tiny in-memory bag-of-words index and returns cited answers.
+
+**Next:** [From mini → starter](FROM_MINI_TO_STARTER.md)
 
 | Example | Topic |
 |---------|-------|

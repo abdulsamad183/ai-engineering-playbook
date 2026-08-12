@@ -86,3 +86,10 @@ flowchart LR
 
 - [Domains overview](../README.md)
 - [Master Index](../../meta/indexes/MASTER-INDEX.md)
+
+---
+
+## Continue learning
+
+Next: [Multi-Agent Systems](../multi-agent-systems/README.md)
+

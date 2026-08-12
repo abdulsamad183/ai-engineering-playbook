@@ -97,3 +97,10 @@ flowchart LR
 
 - [Domains overview](../README.md)
 - [Master Index](../../meta/indexes/MASTER-INDEX.md)
+
+---
+
+## Continue learning
+
+Next: [Agentic AI](../agentic-ai/README.md) · [MCP](../mcp/README.md)
+

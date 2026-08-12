@@ -6,12 +6,14 @@
 
 ```bash
 # terminal 1
-python examples/llm-applications/mini_chat_api/server.py
+python3 examples/llm-applications/mini_chat_api/server.py
 # terminal 2
-python examples/llm-applications/mini_chat_api/client.py
+python3 examples/llm-applications/mini_chat_api/client.py
 ```
 
 No API keys. Stdlib HTTP chat endpoint with a mock LLM echo.
+
+**Next:** [From mini → FastAPI starter](FROM_MINI_TO_STARTER.md)
 
 | Example | Provider | Topic |
 |---------|----------|-------|

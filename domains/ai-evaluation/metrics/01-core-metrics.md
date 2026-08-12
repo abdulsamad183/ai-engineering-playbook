@@ -1,192 +1,87 @@
 ---
-title: "Core Evaluation Metrics"
-description: "Accuracy, precision, recall, F1, exact match, BLEU, ROUGE, BERTScore — when to use and when they mislead."
+title: "Core Metrics"
+description: "Foundational quality, calibration, and operational metrics for LLM and classical ML evaluation."
 domain: ai-evaluation
-tags: [metrics, ai-evaluation]
+tags: [metrics, evaluation]
 status: published
 created: 2026-08-11
 updated: 2026-08-12
-version: "2.0"
+version: "2.1"
 related:
-  - ../README.md
-  - ../../prompt-engineering/README.md
-  - ../../rag/README.md
-  - ../../ai-agents/README.md
+  - 02-llm-evaluation-metrics.md
+  - ../foundations/01-introduction-to-ai-evaluation.md
+  - ../surface-areas/01-prompt-evaluation.md
 ---
 
-# Core Evaluation Metrics
+# Core Metrics
 
-> Accuracy, precision, recall, F1, exact match, BLEU, ROUGE, BERTScore — when to use and when they mislead.
+> Metrics turn model behavior into decisions: ship, block, or rollback. Pick metrics that match the **cost of errors**, not vanity scores.
 
-## Table of Contents
+## Families
 
-- [Overview](#overview)
-- [Definition](#definition)
-- [Why It Matters](#why-it-matters)
-- [Uses](#uses)
-- [Core Ideas](#core-ideas)
-- [How It Works](#how-it-works)
-- [Worked Example](#worked-example)
-- [Python Examples](#python-examples)
-- [Evaluation](#evaluation)
-- [Production Considerations](#production-considerations)
-- [Performance & Cost](#performance--cost)
-- [Security Notes](#security-notes)
-- [Best Practices](#best-practices)
-- [Common Mistakes](#common-mistakes)
-- [Interview Preparation](#interview-preparation)
-- [Navigation](#navigation)
+| Family | Examples | Use when |
+|--------|----------|----------|
+| Task success | accuracy, exact match, pass@k | Clear labels |
+| Ranking | nDCG, recall@k, MRR | Retrieval |
+| Generative quality | rubrics, preference win-rate | Open-ended text |
+| Faithfulness | citation support, entailment | RAG / grounded |
+| Ops | latency p95, $/success, error rate | Production |
+| Safety | toxicity, jailbreak rate, PII leak | Guardrails |
 
----
+## Selection rules
 
-## Overview
+1. One **primary** offline metric for gating.
+2. Secondary metrics for slices (locales, intents, tenants).
+3. Online twin of the primary (thumbs, task completion).
+4. Never optimize a metric you cannot compute in CI.
 
-Part of **Metrics** in the **LLM Evaluation** handbook. Treat **Core Evaluation Metrics** as an implementable engineering topic.
-
-**Typical workflow:** dataset → metrics → judges/human → gate → monitor.
-
----
-
-## Definition
-
-**Core Evaluation Metrics** — Accuracy, precision, recall, F1, exact match, BLEU, ROUGE, BERTScore — when to use and when they mislead.
-
-State inputs, outputs, success metrics, and failure behavior before changing production configs.
-
----
-
-## Why It Matters
-
-Gaps here show up as hallucinations, silent quality drops, runaway cost, or unsafe tool use. Clear design and measurement keep AI features shippable.
-
----
-
-## Uses
-
-| Use case | How this applies |
-|----------|------------------|
-| Product feature | User-facing capability with SLOs |
-| Internal platform | Shared retrieval/agent/eval primitives |
-| Incident response | Diagnose quality, latency, or safety regressions |
-| Design review | Make tradeoffs explicit |
-
----
-
-## Core Ideas
-
-1. Separate orchestration from model calls.
-2. Measure offline before widening traffic.
-3. Bound loops, tokens, tools, and spend.
-4. Version prompts/indexes/models/policies together.
-5. Prefer cite/ground/approve over unconstrained generation when risk is high.
-
----
-
-## How It Works
-
-```mermaid
-flowchart LR
-  Suite --> Score --> Gate --> Ship
-```
-
-Assign owners to each stage (data, model, app, platform, safety). Most regressions are interface skew between stages.
-
----
-
-## Worked Example
-
-**Scenario:** Apply **Core Evaluation Metrics** to a production-shaped slice of traffic.
-
-1. Write a one-page spec: inputs, outputs, SLO, safety policy, offline metrics.
-2. Implement the smallest correct path with logging and timeouts.
-3. Build a golden set (even 50–200 cases) and gate the change.
-4. Canary 1–5% traffic; watch quality, latency, cost, and abuse.
-5. Keep one-click rollback to the previous artifact bundle.
-
----
-
-## Python Examples
+## Example gate
 
 ```python
-def pass_gate(scores: dict[str, float], floors: dict[str, float]) -> bool:
-    return all(scores.get(k, 0.0) >= v for k, v in floors.items())
-
+def ship(scores: dict[str, float]) -> bool:
+    return (
+        scores["task_success"] >= 0.85
+        and scores["faithfulness"] >= 0.90
+        and scores["p95_latency_ms"] <= 2500
+        and scores["jailbreak_rate"] <= 0.01
+    )
 ```
 
-Wrap provider SDKs behind interfaces so unit tests do not need live keys.
+## Calibration & slices
 
----
+Overall accuracy can hide failures on refunds or a language. Always report slice tables for critical intents.
 
-## Evaluation
+## Mistakes
 
-| Layer | Examples |
-|-------|----------|
-| Offline | Golden set, recall@k, task success, rubrics |
-| Online | Thumbs, redo rate, escalation, cost/request |
-| Safety | Injection, PII leak, tool-scope violations |
+- Reporting train accuracy.
+- LLM-as-judge without agreement checks.
+- Changing labels and metrics in the same release.
 
-Ship only when offline floors pass and canary metrics stay in budget.
+## Interview
 
----
+**Q: Accuracy vs recall?** For support deflection, false closes (precision) may hurt CSAT more — choose metrics from product cost, not defaults.
 
-## Production Considerations
 
-- Structured logs with request ids (redact secrets/PII).
-- Feature flags for model/prompt/index swaps.
-- Explicit timeouts, retries with jitter, and circuit breakers.
-- Multi-tenant isolation for data and tools.
+## Worked example: support bot
 
-## Performance & Cost
+Primary offline: task_success on 200 dialogues.
+Secondary: faithfulness on grounded answers; refusal quality on unsafe asks.
+Online: CSAT + containment; page on jailbreak_rate spike.
 
-- Track p50/p95 latency and $ per successful task.
-- Cache embeddings/retrieval when invalidation is clear.
-- Prefer smaller routers/classifiers in front of expensive generators.
+## Statistical caution
 
-## Security Notes
+Small golden sets need paired comparisons and confidence intervals — a 2% bump on 30 cases may be noise.
 
-- Treat model output and tool args as untrusted until validated.
-- Scope tools tightly; require approval for high-impact actions.
-- Enforce authZ on retrieval filters and MCP/tool servers.
+## Dashboard sketch
 
----
-
-## Best Practices
-
-1. Baseline → measure → complicate.
-2. Keep golden sets sacred (no training on them).
-3. Change one axis at a time (model **or** prompt **or** index).
-4. Document failure modes users will see.
-5. Practice rollback drills.
-
----
-
-## Common Mistakes
-
-- Demo prompts with no eval harness.
-- Unbounded agent/tool loops.
-- Missing citations for grounded answers.
-- Train/serve skew in chunking or auth filters.
-- Cost dashboards that ignore tool fan-out.
-
----
-
-## Interview Preparation
-
-**Q: How do you explain core evaluation metrics in a system design interview?**
-
-A: Goal → components → data flow → metrics → failure modes → scale knobs → security.
-
-**Q: What do you gate on before production?**
-
-A: Offline floors, canary online metrics, safety checks, and a tested rollback.
-
-**Q: What breaks first in production?**
-
-A: Usually retrieval/auth skew, prompt regressions, or cost blowups — not the happy-path demo.
-
----
+| Panel | Signal |
+|-------|--------|
+| Quality | primary metric trend |
+| Safety | policy hits |
+| Cost | $ / successful task |
+| Latency | p95 by route |
 
 ## Navigation
 
-- **Section hub:** [README](README.md)
-- **Topic hub:** [../README.md](../README.md)
+- [LLM metrics](02-llm-evaluation-metrics.md) · [Prompt evaluation](../surface-areas/01-prompt-evaluation.md)
+- [Section hub](README.md) · [Eval hub](../README.md)

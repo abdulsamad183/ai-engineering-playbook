@@ -112,3 +112,10 @@ flowchart LR
 - [Domains overview](../README.md)
 - [Learning Roadmap](../../meta/roadmap.md)
 - [Master Index](../../meta/indexes/MASTER-INDEX.md)
+
+---
+
+## Continue learning
+
+Next: [RAG](../rag/README.md)
+

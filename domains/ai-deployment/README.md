@@ -81,3 +81,10 @@ flowchart LR
 
 - [Domains overview](../README.md)
 - [Master Index](../../meta/indexes/MASTER-INDEX.md)
+
+---
+
+## Continue learning
+
+Next: [AI Security & Guardrails](../ai-security-guardrails/README.md)
+

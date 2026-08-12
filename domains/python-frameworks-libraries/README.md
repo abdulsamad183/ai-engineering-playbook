@@ -152,3 +152,10 @@ Production FastAPI deep dive: [domains/fastapi](../fastapi/README.md)
 - [Domains overview](../README.md)
 - [Learning Roadmap](../../meta/roadmap.md)
 - [Master Index](../../meta/indexes/MASTER-INDEX.md)
+
+---
+
+## Continue learning
+
+Next: [Mathematics & Statistics](../mathematics-statistics/README.md) or [LLM App Dev](../llm-application-development/README.md)
+

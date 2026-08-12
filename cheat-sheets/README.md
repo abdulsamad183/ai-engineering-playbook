@@ -2,6 +2,8 @@
 
 > Quick reference cards for technologies, patterns, and workflows.
 
+**Interview week?** Pair these with the [Interview prep path](../meta/interview-path.md).
+
 ---
 
 ## Purpose

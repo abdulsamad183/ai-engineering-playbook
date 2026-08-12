@@ -84,3 +84,10 @@ flowchart LR
 - [AI Evaluation](../ai-evaluation/README.md)
 - [Domains overview](../README.md)
 - [Master Index](../../meta/indexes/MASTER-INDEX.md)
+
+---
+
+## Continue learning
+
+Next: [AI System Design](../ai-system-design/README.md)
+

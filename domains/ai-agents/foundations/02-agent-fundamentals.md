@@ -1,197 +1,115 @@
 ---
 title: "Agent Fundamentals"
-description: "Agent fundamentals — goals, tasks, capabilities, environment, perception, action, reasoning, feedback loops."
+description: "What an AI agent is — goals, tools, state, and stopping conditions — versus chatbots and fixed workflows."
 domain: ai-agents
-tags: [foundations, ai-agents]
+tags: [foundations, agents]
 status: published
 created: 2026-08-11
 updated: 2026-08-12
-version: "2.0"
+version: "2.1"
 related:
-  - ../README.md
-  - ../../llm-application-development/README.md
-  - ../../mcp/README.md
-  - ../../ai-evaluation/README.md
+  - 01-introduction-to-agent-engineering.md
+  - 03-agent-architecture.md
+  - ../../llm-application-development/foundations/01-app-vs-chat-vs-agent.md
 ---
 
 # Agent Fundamentals
 
-> Agent fundamentals — goals, tasks, capabilities, environment, perception, action, reasoning, feedback loops.
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Definition](#definition)
-- [Why It Matters](#why-it-matters)
-- [Uses](#uses)
-- [Core Ideas](#core-ideas)
-- [How It Works](#how-it-works)
-- [Worked Example](#worked-example)
-- [Python Examples](#python-examples)
-- [Evaluation](#evaluation)
-- [Production Considerations](#production-considerations)
-- [Performance & Cost](#performance--cost)
-- [Security Notes](#security-notes)
-- [Best Practices](#best-practices)
-- [Common Mistakes](#common-mistakes)
-- [Interview Preparation](#interview-preparation)
-- [Navigation](#navigation)
-
----
-
-## Overview
-
-Part of **Foundations** in the **AI Agents** handbook. Treat **Agent Fundamentals** as an implementable engineering topic.
-
-**Typical workflow:** goal → plan → tool call → observe → stop.
-
----
+> An **AI agent** is software that uses an LLM to pursue a goal by iteratively choosing actions (usually tools), observing results, and updating state until a stop condition.
 
 ## Definition
 
-**Agent Fundamentals** — Agent fundamentals — goals, tasks, capabilities, environment, perception, action, reasoning, feedback loops.
+Agents combine:
 
-State inputs, outputs, success metrics, and failure behavior before changing production configs.
+| Piece | Role |
+|-------|------|
+| Goal | User intent + success criteria |
+| Policy | LLM (plus rules) choosing next action |
+| Tools | APIs, browsers, code runners, MCP servers |
+| State | Memory of plan, artifacts, constraints |
+| Stop | Budget, success predicate, human cancel |
 
----
+They differ from **chatbots** (mostly reply-in-turn) and **pipelines** (fixed DAGs) by allowing open-ended control flow.
 
-## Why It Matters
+## Why it matters
 
-Gaps here show up as hallucinations, silent quality drops, runaway cost, or unsafe tool use. Clear design and measurement keep AI features shippable.
+Products like coding assistants and research agents need tool use and multi-step reasoning. Without fundamentals you ship unbounded loops, unsafe tools, or "agents" that are only prompts.
 
----
-
-## Uses
-
-| Use case | How this applies |
-|----------|------------------|
-| Product feature | User-facing capability with SLOs |
-| Internal platform | Shared retrieval/agent/eval primitives |
-| Incident response | Diagnose quality, latency, or safety regressions |
-| Design review | Make tradeoffs explicit |
-
----
-
-## Core Ideas
-
-1. Separate orchestration from model calls.
-2. Measure offline before widening traffic.
-3. Bound loops, tokens, tools, and spend.
-4. Version prompts/indexes/models/policies together.
-5. Prefer cite/ground/approve over unconstrained generation when risk is high.
-
----
-
-## How It Works
+## Mental model
 
 ```mermaid
-flowchart LR
-  Goal --> Plan --> Tool --> Observe --> Plan
+stateDiagram-v2
+  [*] --> Plan
+  Plan --> Act
+  Act --> Observe
+  Observe --> Plan: continue
+  Observe --> [*]: stop
 ```
 
-Assign owners to each stage (data, model, app, platform, safety). Most regressions are interface skew between stages.
-
----
-
-## Worked Example
-
-**Scenario:** Apply **Agent Fundamentals** to a production-shaped slice of traffic.
-
-1. Write a one-page spec: inputs, outputs, SLO, safety policy, offline metrics.
-2. Implement the smallest correct path with logging and timeouts.
-3. Build a golden set (even 50–200 cases) and gate the change.
-4. Canary 1–5% traffic; watch quality, latency, cost, and abuse.
-5. Keep one-click rollback to the previous artifact bundle.
-
----
-
-## Python Examples
+## Minimal loop (Python)
 
 ```python
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 @dataclass
-class AgentStep:
-    thought: str
-    action: str | None
-    observation: str | None = None
+class State:
+    goal: str
+    steps: list[str] = field(default_factory=list)
+    done: bool = False
 
+def run(state: State, policy, tools, max_steps=8) -> State:
+    for _ in range(max_steps):
+        action = policy(state)
+        if action is None:
+            state.done = True
+            break
+        name, args = action
+        obs = tools[name](**args)
+        state.steps.append(f"{name}:{obs}")
+    return state
 ```
 
-Wrap provider SDKs behind interfaces so unit tests do not need live keys.
+## Design rules
 
----
+1. Encode **success** and **budgets** in code, not only in the prompt.
+2. Prefer few sharp tools over many vague ones.
+3. Persist state so crashes can resume.
+4. Default high-impact tools to human approval.
 
-## Evaluation
+## Production / safety
 
-| Layer | Examples |
-|-------|----------|
-| Offline | Golden set, recall@k, task success, rubrics |
-| Online | Thumbs, redo rate, escalation, cost/request |
-| Safety | Injection, PII leak, tool-scope violations |
+- Kill switches and per-run token/$ caps.
+- Audit logs for tool args/results (redacted).
+- Sandbox code execution; never pass raw secrets into prompts.
 
-Ship only when offline floors pass and canary metrics stay in budget.
+## Interview
 
----
+**Q: Agent vs workflow?** Use a workflow when the path is known; use an agent when the path must be discovered under constraints — still wrap agents in workflows for auth, billing, and SLAs.
 
-## Production Considerations
 
-- Structured logs with request ids (redact secrets/PII).
-- Feature flags for model/prompt/index swaps.
-- Explicit timeouts, retries with jitter, and circuit breakers.
-- Multi-tenant isolation for data and tools.
+## Autonomy levels (practical)
 
-## Performance & Cost
+| Level | Behavior | Example |
+|-------|----------|---------|
+| L0 | Suggest only | Draft reply |
+| L1 | Tools with approval | Send email after confirm |
+| L2 | Bounded auto | Label tickets under rules |
+| L3 | Broad auto | Risky — needs strong eval |
 
-- Track p50/p95 latency and $ per successful task.
-- Cache embeddings/retrieval when invalidation is clear.
-- Prefer smaller routers/classifiers in front of expensive generators.
+## Anti-patterns
 
-## Security Notes
+- Calling every chatbot an agent
+- No success predicate ("just keep going")
+- Tools that return entire databases into context
 
-- Treat model output and tool args as untrusted until validated.
-- Scope tools tightly; require approval for high-impact actions.
-- Enforce authZ on retrieval filters and MCP/tool servers.
+## Starter path
 
----
-
-## Best Practices
-
-1. Baseline → measure → complicate.
-2. Keep golden sets sacred (no training on them).
-3. Change one axis at a time (model **or** prompt **or** index).
-4. Document failure modes users will see.
-5. Practice rollback drills.
-
----
-
-## Common Mistakes
-
-- Demo prompts with no eval harness.
-- Unbounded agent/tool loops.
-- Missing citations for grounded answers.
-- Train/serve skew in chunking or auth filters.
-- Cost dashboards that ignore tool fan-out.
-
----
-
-## Interview Preparation
-
-**Q: How do you explain agent fundamentals in a system design interview?**
-
-A: Goal → components → data flow → metrics → failure modes → scale knobs → security.
-
-**Q: What do you gate on before production?**
-
-A: Offline floors, canary online metrics, safety checks, and a tested rollback.
-
-**Q: What breaks first in production?**
-
-A: Usually retrieval/auth skew, prompt regressions, or cost blowups — not the happy-path demo.
-
----
+1. [mini ReAct](../../../examples/agents/FROM_MINI_TO_STARTER.md)
+2. [agent-starter template](../../../templates/engineering/agent-starter/README.md)
+3. Add eval from [agent evaluation](../../ai-evaluation/surface-areas/03-agent-evaluation.md)
 
 ## Navigation
 
-- **Section hub:** [README](README.md)
-- **Topic hub:** [../README.md](../README.md)
+- [Introduction](01-introduction-to-agent-engineering.md) · [Architecture](03-agent-architecture.md)
+- [Section hub](README.md) · [Agents hub](../README.md)
+- Offline demo: [mini ReAct](../../../examples/agents/FROM_MINI_TO_STARTER.md)

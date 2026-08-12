@@ -114,3 +114,10 @@ A **chatbot** is a conversational interface that maintains a dialogue with a use
 - [AI System Design](../ai-system-design/README.md)
 - [Domains overview](../README.md)
 - [Master Index](../../meta/indexes/MASTER-INDEX.md)
+
+---
+
+## Continue learning
+
+Next: [Embeddings & Vector DBs](../embeddings-vector-databases/README.md) · [RAG](../rag/README.md)
+

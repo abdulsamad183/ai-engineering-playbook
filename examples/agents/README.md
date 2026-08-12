@@ -5,10 +5,12 @@
 ## Quick start (offline)
 
 ```bash
-python examples/agents/mini_react/run.py
+python3 examples/agents/mini_react/run.py
 ```
 
 No API keys. Toy ReAct loop with a sandboxed calculator tool.
+
+**Next:** [From mini → starter](FROM_MINI_TO_STARTER.md)
 
 | Example | Pattern |
 |---------|---------|

@@ -8,16 +8,27 @@ Click any topic to open its handbook. Each hub includes definitions, a learning 
 
 ## Start here
 
-New to the playbook? Follow this path, then build:
+New to the playbook? Follow this path, then build. Check items off as you go.
+
+### Progress checklist
+
+- [ ] **Foundations:** [Python](domains/python-engineering/README.md) → [Frameworks](domains/python-frameworks-libraries/README.md) → [Math & Stats](domains/mathematics-statistics/README.md)
+- [ ] **Models:** [ML](domains/machine-learning/README.md) → [DL](domains/deep-learning/README.md) → [NLP](domains/natural-language-processing/README.md) → [Transformers](domains/transformers/README.md) → [LLMs](domains/llm-engineering/README.md)
+- [ ] **Build theory:** [Prompt Engineering](domains/prompt-engineering/README.md) → [LLM App Dev](domains/llm-application-development/README.md) → [RAG](domains/rag/README.md)
+- [ ] **Offline demos:** [Examples quick start](examples/README.md) (RAG / agent / chat / GenAI)
+- [ ] **Graduate to starters:** [RAG path](examples/rag/FROM_MINI_TO_STARTER.md) · [Agent path](examples/agents/FROM_MINI_TO_STARTER.md) · [API path](examples/llm-applications/FROM_MINI_TO_STARTER.md)
+- [ ] **Capstone:** [RAG Chat API walkthrough](meta/capstone-walkthrough.md)
+- [ ] **Harden:** [Evaluation](domains/ai-evaluation/README.md) → [Deployment](domains/ai-deployment/README.md) → [Security](domains/ai-security-guardrails/README.md)
+- [ ] **Interview track:** [Interview prep path](meta/interview-path.md)
 
 | Step | Do this |
 |------|---------|
-| 1 | Foundations: [Python](domains/python-engineering/README.md) → [Frameworks](domains/python-frameworks-libraries/README.md) → [Math & Stats](domains/mathematics-statistics/README.md) |
-| 2 | Models: [ML](domains/machine-learning/README.md) → [DL](domains/deep-learning/README.md) → [NLP](domains/natural-language-processing/README.md) → [Transformers](domains/transformers/README.md) → [LLMs](domains/llm-engineering/README.md) |
-| 3 | Build: [Prompt Engineering](domains/prompt-engineering/README.md) → [LLM App Dev](domains/llm-application-development/README.md) → [RAG](domains/rag/README.md) |
-| 4 | Run offline demos: [Examples quick start](examples/README.md) |
-| 5 | Capstone: [RAG Chat API walkthrough](meta/capstone-walkthrough.md) |
-| 6 | Harden: [Evaluation](domains/ai-evaluation/README.md) → [Deployment](domains/ai-deployment/README.md) → [Security](domains/ai-security-guardrails/README.md) |
+| 1 | Foundations: Python → Frameworks → Math |
+| 2 | Models: ML → DL → NLP → Transformers → LLMs |
+| 3 | Build: Prompts → App Dev → RAG |
+| 4 | Run offline demos, then starters |
+| 5 | Capstone RAG Chat API |
+| 6 | Eval → Deploy → Security |
 
 ---
 
@@ -65,7 +76,7 @@ flowchart TB
 
 | # | Topic | What you will learn |
 |---|-------|---------------------|
-| 1 | [Python](domains/python-engineering/README.md) | Production Python for AI — typing, async, structure |
+| 1 | [Python](domains/python-engineering/README.md) | Production Python for AI — expanded topics with AI angles |
 | 2 | [Python Frameworks & Libraries](domains/python-frameworks-libraries/README.md) | NumPy, Pandas, Matplotlib, FastAPI, Pydantic — deepened lessons |
 | 3 | [Mathematics & Statistics](domains/mathematics-statistics/README.md) | Linear algebra, probability, stats for ML — deepened lessons |
 | 4 | [Machine Learning](domains/machine-learning/README.md) | Classical ML — deepened lessons across basics, models, eval, ensembles |

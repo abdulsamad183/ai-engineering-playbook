@@ -2,6 +2,8 @@
 
 > Modular retrieval-augmented generation pipeline with swappable embeddings and vector stores.
 
+**Coming from the offline demo?** Start at [examples/rag/FROM_MINI_TO_STARTER.md](../../examples/rag/FROM_MINI_TO_STARTER.md), then copy this template.
+
 ---
 
 ## Purpose

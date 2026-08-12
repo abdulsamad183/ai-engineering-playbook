@@ -2,6 +2,8 @@
 
 > Clean-architecture agent with planner, executor, memory, tools, and checkpointing.
 
+**Coming from the offline demo?** Start at [examples/agents/FROM_MINI_TO_STARTER.md](../../examples/agents/FROM_MINI_TO_STARTER.md), then copy this template.
+
 ---
 
 ## Purpose

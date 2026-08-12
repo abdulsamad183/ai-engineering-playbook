@@ -292,3 +292,10 @@ flowchart TB
 
 - [Domains overview](../README.md)
 - [Learning Roadmap](../../meta/roadmap.md)
+
+---
+
+## Continue learning
+
+Next: [Generative AI](../generative-ai/README.md) · [Prompt Engineering](../prompt-engineering/README.md)
+
