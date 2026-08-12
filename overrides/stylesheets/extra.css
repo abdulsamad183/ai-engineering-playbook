@@ -137,6 +137,58 @@ body.md-body,
   background: linear-gradient(90deg, rgba(225, 29, 46, 0.12), rgba(37, 99, 235, 0.12));
 }
 
+/* Modern table base */
+.md-typeset table:not([class]) {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+}
+
+.md-typeset table:not([class]) thead th {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--spidey-blue);
+  border-bottom: 1px solid rgba(30, 58, 138, 0.15);
+}
+
+.md-typeset table:not([class]) tbody tr {
+  background: rgba(255, 255, 255, 0.78);
+  transition: transform 140ms ease, box-shadow 140ms ease, background-color 140ms ease;
+}
+
+.md-typeset table:not([class]) tbody tr:nth-child(even) {
+  background: rgba(239, 246, 255, 0.68);
+}
+
+.md-typeset table:not([class]) tbody tr:hover {
+  background: rgba(219, 234, 254, 0.74);
+}
+
+.md-typeset table:not([class]) td,
+.md-typeset table:not([class]) th {
+  border-color: rgba(30, 58, 138, 0.1);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) {
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tbody tr {
+  background: rgba(15, 23, 42, 0.72);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tbody tr:nth-child(even) {
+  background: rgba(30, 41, 59, 0.74);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tbody tr:hover {
+  background: rgba(30, 58, 138, 0.32);
+}
+
 .md-typeset .admonition,
 .md-typeset details {
   font-size: 0.9rem;
@@ -251,6 +303,40 @@ body[data-playbook-page="home"] .md-typeset h1,
 body[data-playbook-page="handbooks"] .md-typeset h1 {
   display: inline-block;
   margin-bottom: 0.55rem;
+}
+
+/* Card-style overview tables (home + handbook hubs) */
+@media (min-width: 1000px) {
+  body[data-playbook-page="home"] .md-typeset h2 + table:not([class]) tbody,
+  body[data-playbook-page="handbooks"] .md-typeset table:not([class]) tbody,
+  body[data-section-theme] .md-typeset h2 + table:not([class]) tbody {
+    display: grid;
+    gap: 0.7rem;
+  }
+
+  body[data-playbook-page="home"] .md-typeset h2 + table:not([class]) tbody tr,
+  body[data-playbook-page="handbooks"] .md-typeset table:not([class]) tbody tr,
+  body[data-section-theme] .md-typeset h2 + table:not([class]) tbody tr {
+    display: grid;
+    grid-template-columns: minmax(2.2rem, 0.35fr) minmax(9rem, 1fr) minmax(16rem, 2.2fr) minmax(7rem, 0.8fr);
+    align-items: center;
+    border: 1px solid rgba(30, 58, 138, 0.14);
+    border-radius: 12px;
+    padding: 0.1rem 0.2rem;
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
+  }
+
+  body[data-playbook-page="handbooks"] .md-typeset table:not([class]) tbody tr {
+    grid-template-columns: minmax(2.2rem, 0.35fr) minmax(12rem, 2fr);
+  }
+
+  body[data-playbook-page="home"] .md-typeset h2 + table:not([class]) tbody td:first-child,
+  body[data-playbook-page="handbooks"] .md-typeset table:not([class]) tbody td:first-child,
+  body[data-section-theme] .md-typeset h2 + table:not([class]) tbody td:first-child {
+    font-weight: 800;
+    color: var(--spidey-red-deep);
+    text-align: center;
+  }
 }
 
 /* Side rails — fill empty gutters with doodles (desktop only) */
@@ -492,6 +578,12 @@ body[data-section-theme="production"] {
 
   .hero-panel__grid {
     grid-template-columns: 1fr;
+  }
+
+  body[data-playbook-page="home"] .md-typeset h2 + table:not([class]) tbody tr,
+  body[data-playbook-page="handbooks"] .md-typeset table:not([class]) tbody tr,
+  body[data-section-theme] .md-typeset h2 + table:not([class]) tbody tr {
+    border: 1px solid rgba(30, 58, 138, 0.12);
   }
 
   .md-main::after {
