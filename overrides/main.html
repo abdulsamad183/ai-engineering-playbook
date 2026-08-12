@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{# Side rails fill wide-screen gutters with spider doodles #}
+{% block footer %}
+  {{ super() }}
+  <aside class="spidey-rails" aria-hidden="true">
+    <div class="spidey-rail spidey-rail--left">
+      <img class="spidey-deco spidey-deco--corner" src="{{ 'assets/web-corner.svg' | url }}" alt="" />
+      <img class="spidey-deco spidey-deco--hang" src="{{ 'assets/spider-doodle-hang.svg' | url }}" alt="" />
+      <img class="spidey-deco spidey-deco--main" src="{{ 'assets/spider-doodle.svg' | url }}" alt="" />
+      <img class="spidey-deco spidey-deco--blue" src="{{ 'assets/spider-doodle-blue.svg' | url }}" alt="" />
+      <div class="spidey-strand spidey-strand--a"></div>
+      <div class="spidey-strand spidey-strand--b"></div>
+    </div>
+    <div class="spidey-rail spidey-rail--right">
+      <img class="spidey-deco spidey-deco--corner spidey-deco--flip" src="{{ 'assets/web-corner.svg' | url }}" alt="" />
+      <img class="spidey-deco spidey-deco--blue" src="{{ 'assets/spider-doodle-blue.svg' | url }}" alt="" />
+      <img class="spidey-deco spidey-deco--hang" src="{{ 'assets/spider-doodle-hang.svg' | url }}" alt="" />
+      <img class="spidey-deco spidey-deco--main" src="{{ 'assets/spider-doodle.svg' | url }}" alt="" />
+      <div class="spidey-strand spidey-strand--c"></div>
+      <div class="spidey-strand spidey-strand--d"></div>
+    </div>
+  </aside>
+{% endblock %}
