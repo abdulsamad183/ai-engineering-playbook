@@ -1,0 +1,2 @@
+# Broader RAG examples may need extra deps; mini_rag is stdlib-only.
+numpy>=1.26
