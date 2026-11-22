@@ -134,13 +134,13 @@ Hallucinations in RAG often trace to:
 3. Weak grounding instructions
 4. Model ignoring context
 
-See [Hallucination Prevention](hallucination-prevention.md).
+See [Hallucination Prevention](../generation-and-grounding/03-hallucination-prevention.md).
 
 ---
 
 ## External Knowledge
 
-Knowledge sources: PDFs, wikis, tickets, code, databases, APIs. Each requires an [ingestion pipeline](document-ingestion-pipeline.md) with parsing, cleaning, and metadata.
+Knowledge sources: PDFs, wikis, tickets, code, databases, APIs. Each requires an [ingestion pipeline](../ingestion/01-document-ingestion-pipeline.md) with parsing, cleaning, and metadata.
 
 ---
 
@@ -173,7 +173,7 @@ Grounding = answers supported by retrieved passages. Enforced via prompts, citat
 | Research assistant | Multi-hop + reranking |
 | Internal company search | Permission-filtered metadata |
 
-See [RAG System Design](rag-system-design.md).
+See [RAG System Design](../evaluation-and-production/03-rag-system-design.md).
 
 ---
 
@@ -246,7 +246,7 @@ Continuous loop: ingest → index → retrieve → generate → measure → impr
 | **GraphRAG** | Knowledge graph + community summaries |
 | **Self-RAG** | Model reflects on retrieval need and quality |
 
-See [Advanced RAG Architectures](advanced-rag-architectures.md).
+See [Advanced RAG Architectures](03-advanced-rag-architectures.md).
 
 ---
 
@@ -283,7 +283,7 @@ Budget: query rewrite (50ms) + retrieval (50–200ms) + rerank (100–500ms) + L
 - PII handling in ingestion
 - Audit retrieval for compliance
 
-See [Production RAG](production-rag.md).
+See [Production RAG](../evaluation-and-production/02-production-rag.md).
 
 ---
 
@@ -343,7 +343,7 @@ async def rag_query(query: str, index, llm, top_k: int = 5) -> dict:
 
 ### Next
 
-- [End-to-End RAG Architecture](end-to-end-rag-architecture.md)
+- [End-to-End RAG Architecture](02-end-to-end-rag-architecture.md)
 
 ### Unlocks
 

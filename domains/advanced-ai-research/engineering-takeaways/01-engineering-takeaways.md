@@ -62,7 +62,7 @@ flowchart TD
 | Right model type for task (encoder vs decoder) | Assuming all LLMs behave identically |
 | Monitor token usage per request | Ignoring quadratic attention cost growth |
 
-**Source:** [Attention Is All You Need](attention-is-all-you-need.md)
+**Source:** [Attention Is All You Need](../landmark-papers/01-attention-is-all-you-need.md)
 
 ---
 
@@ -76,7 +76,7 @@ flowchart TD
 | DSPy when you have labeled data + multi-step pipeline | Manual prompt iteration at scale |
 | Self-consistency for discrete-answer tasks | Self-consistency for open-ended generation |
 
-**Source:** [Prompt Engineering Papers](prompt-engineering-papers.md) · [DSPy](dspy.md)
+**Source:** [Prompt Engineering Papers](../landmark-papers/02-prompt-engineering-papers.md) · [DSPy](../systems-papers/01-dspy.md)
 
 ---
 
@@ -91,7 +91,7 @@ flowchart TD
 | RAPTOR for long narrative documents | RAPTOR for short FAQ-style content |
 | GraphRAG for 1K+ doc enterprise KBs | GraphRAG for <100 document corpora |
 
-**Source:** [Retrieval Papers](retrieval-papers.md) · [RAG Domain](../../rag/README.md)
+**Source:** [Retrieval Papers](../landmark-papers/03-retrieval-papers.md) · [RAG Domain](../../rag/README.md)
 
 ---
 
@@ -106,7 +106,7 @@ flowchart TD
 | Log thoughts separately from user output | Exposing raw reasoning to users |
 | Skill libraries for repetitive tasks (Voyager pattern) | Re-prompting from scratch every time |
 
-**Source:** [Agent Reasoning Papers](agent-reasoning-papers.md)
+**Source:** [Agent Reasoning Papers](../landmark-papers/04-agent-reasoning-papers.md)
 
 ---
 
@@ -120,7 +120,7 @@ flowchart TD
 | SWE-bench for evaluation | Claiming coding agent works without benchmarks |
 | Progressive file disclosure | Dumping entire files into context |
 
-**Source:** [SWE-Agent](swe-agent.md)
+**Source:** [SWE-Agent](../systems-papers/02-swe-agent.md)
 
 ---
 
@@ -133,7 +133,7 @@ flowchart TD
 | Explicit termination conditions | Open-ended agent conversations |
 | Production frameworks (CrewAI, LangGraph) | Raw CAMEL without guardrails |
 
-**Source:** [Agent Reasoning Papers](agent-reasoning-papers.md) · [AI Agents](../../ai-agents/README.md)
+**Source:** [Agent Reasoning Papers](../landmark-papers/04-agent-reasoning-papers.md) · [AI Agents](../../ai-agents/README.md)
 
 ---
 
@@ -246,8 +246,8 @@ Hybrid RAG with CRAG evaluator + ReAct agent with MCP tools + automated evaluati
 
 ## See Also
 
-- [Research Comparison Guides](research-comparison-guides.md)
-- [Future Research](future-research.md)
+- [Research Comparison Guides](02-research-comparison-guides.md)
+- [Future Research](03-future-research.md)
 - [RAG Domain](../../rag/README.md)
 - [AI Agents Domain](../../ai-agents/README.md)
 - [AI Evaluation](../../ai-evaluation/README.md)

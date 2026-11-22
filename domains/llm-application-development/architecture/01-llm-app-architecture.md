@@ -246,7 +246,7 @@ class ChatService:
 
 ### Path
 
-- Previous: [Sync, Async, and Streaming](../../foundations/03-sync-async-streaming.md)
+- Previous: [Sync, Async, and Streaming](../foundations/03-sync-async-streaming.md)
 - Next: [Layers and Boundaries](02-layers-and-boundaries.md)
 - Section hub: [Architecture](README.md)
 - Domain hub: [LLM Application Development](../README.md)

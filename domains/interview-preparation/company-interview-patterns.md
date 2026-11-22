@@ -41,19 +41,19 @@ Not proprietary leaked questions — **patterns** of technical depth common at o
 
 **Expect:** Low-latency design, codebase context, tool sandbox security, streaming.
 
-**Prep:** [Copilot/Cursor designs](../ai-system-design/design-github-copilot.md)
+**Prep:** [Copilot/Cursor designs](../ai-system-design/developer-tools/02-design-github-copilot.md)
 
 ## Pattern: Enterprise SaaS
 
 **Expect:** Tenant isolation, SSO, audit logs, human-in-the-loop, SOC2-aware answers.
 
-**Prep:** [Production security](../ai-deployment/security-production-ai.md)
+**Prep:** [Production security](../ai-deployment/security-and-ops/01-security-production-ai.md)
 
 ## Pattern: AI Infrastructure
 
 **Expect:** Distributed systems + GPU high-level, API design, SLOs, incident response.
 
-**Prep:** [Production AI](production-ai-interviews.md) + [Scaling](../ai-system-design/scaling-ai-systems.md)
+**Prep:** [Production AI](production-ai-interviews.md) + [Scaling](../ai-system-design/scale-and-interviews/01-scaling-ai-systems.md)
 
 ## What Interviewers Reward
 

@@ -49,7 +49,7 @@ author: hp
 | Broken or fake citations | Citation assembly | ID mapping, prompt instructions |
 | Stale answers | Ingestion lag | Index freshness, versions |
 
-Domain references: [Retrieval Strategies](../rag/retrieval-strategies.md) · [Hallucination Prevention](../rag/hallucination-prevention.md) · [Citations and Grounding](../rag/citations-and-grounding.md) · [RAG Mistakes](../rag/rag-mistakes.md).
+Domain references: [Retrieval Strategies](../rag/retrieval/04-retrieval-strategies.md) · [Hallucination Prevention](../rag/generation-and-grounding/03-hallucination-prevention.md) · [Citations and Grounding](../rag/generation-and-grounding/02-citations-and-grounding.md) · [RAG Mistakes](../rag/evaluation-and-production/04-rag-mistakes.md).
 
 ---
 
@@ -108,7 +108,7 @@ Context is good; answer still invents.
 4. Add a grounding/post-check step (NLI or LLM-as-judge)
 5. Prefer extractive spans for high-stakes fields (prices, dosages, SLAs)
 
-See [Hallucination Prevention](../rag/hallucination-prevention.md).
+See [Hallucination Prevention](../rag/generation-and-grounding/03-hallucination-prevention.md).
 
 ---
 

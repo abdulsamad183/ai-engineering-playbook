@@ -577,7 +577,7 @@ Security testing must be continuous, not a one-time audit.
 | Jailbreak attempts | Monthly red team | Novel attacks |
 | RAG indirect injection | Every RAG prompt change | 30+ embedded attacks |
 
-See [Prompt Testing — Adversarial Testing](prompt-testing.md#adversarial-testing) for test infrastructure.
+See [Prompt Testing — Adversarial Testing](../prompt-operations/03-prompt-testing.md#adversarial-testing) for test infrastructure.
 
 ### Security Regression Gate
 
@@ -662,10 +662,10 @@ security_gates:
 
 | # | Topic | Document |
 |---|-------|----------|
-| 1 | Introduction to Prompt Engineering | [introduction-to-prompt-engineering.md](../../foundations/01-introduction-to-prompt-engineering.md) |
-| 2 | Prompt Anatomy | [prompt-anatomy.md](../../foundations/02-prompt-anatomy.md) |
-| 3 | Message Types | [message-types.md](../../foundations/03-message-types.md) |
-| 4 | Prompt Design Principles | [prompt-design-principles.md](../../foundations/04-prompt-design-principles.md) |
+| 1 | Introduction to Prompt Engineering | [introduction-to-prompt-engineering.md](../foundations/01-introduction-to-prompt-engineering.md) |
+| 2 | Prompt Anatomy | [prompt-anatomy.md](../foundations/02-prompt-anatomy.md) |
+| 3 | Message Types | [message-types.md](../foundations/03-message-types.md) |
+| 4 | Prompt Design Principles | [prompt-design-principles.md](../foundations/04-prompt-design-principles.md) |
 | 5 | Prompt Patterns | [prompt-patterns.md](../craft/01-prompt-patterns.md) |
 | 6 | Prompt Templates Guide | [prompt-templates-guide.md](../craft/02-prompt-templates-guide.md) |
 | 7 | Structured Prompting | [structured-prompting.md](../craft/03-structured-prompting.md) |
@@ -697,7 +697,7 @@ security_gates:
 ## See Also
 
 - [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
-- [Prompt Testing — Adversarial Testing](prompt-testing.md#adversarial-testing)
+- [Prompt Testing — Adversarial Testing](../prompt-operations/03-prompt-testing.md#adversarial-testing)
 - [LLM Security Fundamentals](../../llm-engineering/llm-security-fundamentals.md)
 
 ## Changelog

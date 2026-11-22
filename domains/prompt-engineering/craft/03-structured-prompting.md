@@ -648,7 +648,7 @@ metrics.increment("llm.structured.validation_fail", tags={"field": "email"})
 
 ## See Also
 
-- [Prompt Patterns — Delimiter Prompting](prompt-patterns.md#delimiter-prompting)
+- [Prompt Patterns — Delimiter Prompting](01-prompt-patterns.md#delimiter-prompting)
 - [JSON Output Templates](../../../prompts/templates/README.md)
 
 ## Changelog

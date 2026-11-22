@@ -57,7 +57,7 @@ Section **5**. Postgres is the default **OLTP + metadata** store; often hosts **
 
 ## Further Reading
 
-- [RAG pgvector](../rag/providers/pgvector.md)
+- [RAG pgvector](../rag/providers/04-pgvector.md)
 
 ---
 

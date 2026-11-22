@@ -718,7 +718,7 @@ When switching models, re-evaluate all strategies:
 
 ## See Also
 
-- [Prompt Patterns — Step-by-Step Prompting](prompt-patterns.md#step-by-step-prompting)
+- [Prompt Patterns — Step-by-Step Prompting](01-prompt-patterns.md#step-by-step-prompting)
 - [Prompt Templates](../../../prompts/templates/README.md)
 
 ## Changelog

@@ -108,40 +108,40 @@ Decouple with queues (Celery, SQS) — ingestion spikes must not affect query la
 Source of truth: S3, SharePoint, Git, Confluence. Track `source_uri`, `checksum`, `version`.
 
 ### Cleaning
-Remove boilerplate, normalize whitespace, fix encoding. See [Document Ingestion](document-ingestion-pipeline.md).
+Remove boilerplate, normalize whitespace, fix encoding. See [Document Ingestion](../ingestion/01-document-ingestion-pipeline.md).
 
 ### Parsing
 Extract text preserving structure (headings, tables). PDF/DOCX/HTML parsers differ in quality.
 
 ### Metadata
-`doc_id`, `tenant_id`, `acl`, `created_at`, `tags` — required for filtering. See [Metadata Engineering](metadata-engineering.md).
+`doc_id`, `tenant_id`, `acl`, `created_at`, `tags` — required for filtering. See [Metadata Engineering](../ingestion/03-metadata-engineering.md).
 
 ### Chunking
-Split for retrieval granularity. See [Chunking](chunking.md).
+Split for retrieval granularity. See [Chunking](../ingestion/02-chunking.md).
 
 ### Embeddings
-Dense (+ optional sparse) vectors. See [Embeddings for RAG](embeddings-for-rag.md).
+Dense (+ optional sparse) vectors. See [Embeddings for RAG](../retrieval/01-embeddings-for-rag.md).
 
 ### Vector Database
-ANN index + metadata filters. See [Vector Databases](vector-databases.md).
+ANN index + metadata filters. See [Vector Databases](../retrieval/02-vector-databases.md).
 
 ### Retrieval
-Dense, sparse, hybrid strategies. See [Retrieval Strategies](retrieval-strategies.md).
+Dense, sparse, hybrid strategies. See [Retrieval Strategies](../retrieval/04-retrieval-strategies.md).
 
 ### Ranking
-Rerank top candidates. See [Reranking](reranking.md).
+Rerank top candidates. See [Reranking](../retrieval/06-reranking.md).
 
 ### Compression
-Fit passages to token budget. See [RAG Context Compression](rag-context-compression.md).
+Fit passages to token budget. See [RAG Context Compression](../generation-and-grounding/04-rag-context-compression.md).
 
 ### Prompt Assembly
-Format context + grounding rules. See [RAG Prompt Assembly](rag-prompt-assembly.md).
+Format context + grounding rules. See [RAG Prompt Assembly](../generation-and-grounding/01-rag-prompt-assembly.md).
 
 ### LLM
 Generate answer with [handbook](../../prompt-engineering/README.md) templates.
 
 ### Citations
-Map claims to `chunk_id`. See [Citations and Grounding](citations-and-grounding.md).
+Map claims to `chunk_id`. See [Citations and Grounding](../generation-and-grounding/02-citations-and-grounding.md).
 
 ---
 
@@ -267,11 +267,11 @@ class RAGOrchestrator:
 
 ### Prerequisites
 
-- [Introduction to RAG](introduction-to-rag.md)
+- [Introduction to RAG](01-introduction-to-rag.md)
 
 ### Next
 
-- [Document Ingestion Pipeline](document-ingestion-pipeline.md)
+- [Document Ingestion Pipeline](../ingestion/01-document-ingestion-pipeline.md)
 
 ---
 

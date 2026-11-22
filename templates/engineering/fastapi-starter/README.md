@@ -2,7 +2,7 @@
 
 > Production-ready FastAPI scaffold for AI backends — copy and customize.
 
-**Coming from the offline demo?** Start at [examples/llm-applications/FROM_MINI_TO_STARTER.md](../../examples/llm-applications/FROM_MINI_TO_STARTER.md), then copy this template.
+**Coming from the offline demo?** Start at [examples/llm-applications/FROM_MINI_TO_STARTER.md](../../../examples/llm-applications/FROM_MINI_TO_STARTER.md), then copy this template.
 
 ---
 

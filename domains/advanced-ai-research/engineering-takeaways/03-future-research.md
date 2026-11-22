@@ -299,8 +299,8 @@ Evaluation infrastructure and compound system engineering — these skills compo
 
 ## See Also
 
-- [Research Evolution](research-evolution.md)
-- [Engineering Takeaways](engineering-takeaways.md)
+- [Research Evolution](../systems-papers/03-research-evolution.md)
+- [Engineering Takeaways](01-engineering-takeaways.md)
 - [AI Evaluation](../../ai-evaluation/README.md)
 - [MCP Domain](../../mcp/README.md)
 - [AI Research Timeline Cheat Sheet](../../../cheat-sheets/ai-research-timeline-cheat-sheet.md)

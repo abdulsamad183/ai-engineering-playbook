@@ -48,7 +48,7 @@ timeline
 
 | Year | Milestone | Engineering Impact |
 |------|-----------|-------------------|
-| 2017 | [Attention Is All You Need](attention-is-all-you-need.md) | Foundation architecture |
+| 2017 | [Attention Is All You Need](../landmark-papers/01-attention-is-all-you-need.md) | Foundation architecture |
 | 2018 | BERT (encoder-only) | Embeddings, classification, reranking |
 | 2019 | GPT-2 (decoder-only) | Text generation at scale |
 
@@ -72,7 +72,7 @@ flowchart LR
 
 | Year | Milestone | Engineering Impact |
 |------|-----------|-------------------|
-| 2020 | GPT-3 + [Few-Shot](prompt-engineering-papers.md) | Prompt engineering as discipline |
+| 2020 | GPT-3 + [Few-Shot](../landmark-papers/02-prompt-engineering-papers.md) | Prompt engineering as discipline |
 | 2021 | FLAN (instruction tuning) | Zero-shot task generalization |
 | 2021 | Codex | Code generation from prompts |
 
@@ -98,8 +98,8 @@ flowchart TD
 | Year | Milestone | Engineering Impact |
 |------|-----------|-------------------|
 | 2022 | InstructGPT / RLHF | ChatGPT, aligned assistants |
-| 2022 | [Chain-of-Thought](prompt-engineering-papers.md) | Step-by-step reasoning |
-| 2022 | [ReAct](agent-reasoning-papers.md) | Tool-using agent loop |
+| 2022 | [Chain-of-Thought](../landmark-papers/02-prompt-engineering-papers.md) | Step-by-step reasoning |
+| 2022 | [ReAct](../landmark-papers/04-agent-reasoning-papers.md) | Tool-using agent loop |
 | 2022 | Self-Consistency | Majority vote over reasoning paths |
 
 ```mermaid
@@ -125,10 +125,10 @@ flowchart LR
 | Year | Milestone | Engineering Impact |
 |------|-----------|-------------------|
 | 2023 | RAG (Lewis et al., 2020; production adoption) | Vector DBs, retrieval pipelines |
-| 2023 | [Tree of Thoughts](agent-reasoning-papers.md) | Deliberate search |
-| 2023 | [Reflexion](agent-reasoning-papers.md) | Learning from failure |
-| 2023 | [Voyager](agent-reasoning-papers.md) | Skill libraries |
-| 2023 | [CAMEL](agent-reasoning-papers.md) | Multi-agent role play |
+| 2023 | [Tree of Thoughts](../landmark-papers/04-agent-reasoning-papers.md) | Deliberate search |
+| 2023 | [Reflexion](../landmark-papers/04-agent-reasoning-papers.md) | Learning from failure |
+| 2023 | [Voyager](../landmark-papers/04-agent-reasoning-papers.md) | Skill libraries |
+| 2023 | [CAMEL](../landmark-papers/04-agent-reasoning-papers.md) | Multi-agent role play |
 | 2023 | AutoGPT / BabyAGI | Agent hype cycle begins |
 
 ```mermaid
@@ -153,12 +153,12 @@ flowchart TD
 
 | Year | Milestone | Engineering Impact |
 |------|-----------|-------------------|
-| 2024 | [Self-RAG](retrieval-papers.md) | Retrieval reflection |
-| 2024 | [GraphRAG](retrieval-papers.md) | Knowledge graph retrieval |
-| 2024 | [RAPTOR](retrieval-papers.md) | Hierarchical retrieval |
-| 2024 | [CRAG](retrieval-papers.md) | Corrective retrieval |
-| 2024 | [SWE-Agent](swe-agent.md) | Coding agent ACI |
-| 2024 | [DSPy](dspy.md) | Programmatic prompt optimization |
+| 2024 | [Self-RAG](../landmark-papers/03-retrieval-papers.md) | Retrieval reflection |
+| 2024 | [GraphRAG](../landmark-papers/03-retrieval-papers.md) | Knowledge graph retrieval |
+| 2024 | [RAPTOR](../landmark-papers/03-retrieval-papers.md) | Hierarchical retrieval |
+| 2024 | [CRAG](../landmark-papers/03-retrieval-papers.md) | Corrective retrieval |
+| 2024 | [SWE-Agent](02-swe-agent.md) | Coding agent ACI |
+| 2024 | [DSPy](01-dspy.md) | Programmatic prompt optimization |
 | 2024 | Devin / Cursor Agent | Commercial coding agents |
 
 ```mermaid
@@ -206,7 +206,7 @@ flowchart TD
 
 ## Era 7: Future (2026+)
 
-See [Future Research](future-research.md) for detailed open problems.
+See [Future Research](../engineering-takeaways/03-future-research.md) for detailed open problems.
 
 ```mermaid
 flowchart TD
@@ -280,9 +280,9 @@ Reliable multi-agent orchestration with formal evaluation, or test-time compute 
 
 ## See Also
 
-- [Attention Is All You Need](attention-is-all-you-need.md)
-- [Future Research](future-research.md)
-- [Engineering Takeaways](engineering-takeaways.md)
+- [Attention Is All You Need](../landmark-papers/01-attention-is-all-you-need.md)
+- [Future Research](../engineering-takeaways/03-future-research.md)
+- [Engineering Takeaways](../engineering-takeaways/01-engineering-takeaways.md)
 - [AI Research Timeline Cheat Sheet](../../../cheat-sheets/ai-research-timeline-cheat-sheet.md)
 
 ## Changelog

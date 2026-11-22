@@ -10,5 +10,5 @@ Start with [Vector Database Systems](../embeddings-vector-databases/vector-datab
 
 ## Related
 
-- [Vector databases (RAG handbook)](../rag/vector-databases.md)
+- [Vector databases (RAG handbook)](../rag/retrieval/02-vector-databases.md)
 - [RAG provider primers](../rag/providers/README.md)

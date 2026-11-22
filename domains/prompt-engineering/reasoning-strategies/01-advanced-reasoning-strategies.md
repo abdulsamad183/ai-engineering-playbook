@@ -946,8 +946,8 @@ Add step limits, logging, and eval cases for tool-call correctness.
 
 - [Prompt Chaining](02-prompt-chaining.md) — orchestrate multi-step reasoning
 - [Agent Architectures](../../agent-architectures/README.md)
-- [Multi-Agent Systems](../multi-agent-systems/README.md)
-- [AI Workflows](../ai-workflows/README.md)
+- [Multi-Agent Systems](../../multi-agent-systems/README.md)
+- [AI Workflows](../../ai-workflows/README.md)
 
 ---
 

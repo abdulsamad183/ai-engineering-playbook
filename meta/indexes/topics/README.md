@@ -9,12 +9,12 @@
 
 | Topic | Description | Status |
 |-------|-------------|--------|
-| [Streaming](streaming.md) | Real-time LLM responses, SSE, WebSockets | Planned |
-| [Cost Optimization](cost-optimization.md) | Reducing AI infrastructure and API costs | Planned |
-| [Security](security.md) | Security practices across all AI domains | Planned |
-| [Testing](testing.md) | Testing strategies for AI applications | Planned |
-| [Error Handling](error-handling.md) | Resilience patterns for AI systems | Planned |
-| [Caching](caching.md) | Caching strategies for AI workloads | Planned |
+| Streaming | Real-time LLM responses, SSE, WebSockets | Planned |
+| Cost Optimization | Reducing AI infrastructure and API costs | Planned |
+| Security | Security practices across all AI domains | Planned |
+| Testing | Testing strategies for AI applications | Planned |
+| Error Handling | Resilience patterns for AI systems | Planned |
+| Caching | Caching strategies for AI workloads | Planned |
 
 ---
 

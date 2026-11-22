@@ -48,11 +48,11 @@ The long-context run often cited peripheral chunks (edge cases, outdated annexes
 
 ## Links
 
-- [Citations and Grounding](../../domains/rag/citations-and-grounding.md)
-- [Reranking](../../domains/rag/reranking.md)
-- [Chunking](../../domains/rag/chunking.md)
-- [Hallucination Prevention](../../domains/rag/hallucination-prevention.md)
-- [RAG Prompt Assembly](../../domains/rag/rag-prompt-assembly.md)
+- [Citations and Grounding](../../domains/rag/generation-and-grounding/02-citations-and-grounding.md)
+- [Reranking](../../domains/rag/retrieval/06-reranking.md)
+- [Chunking](../../domains/rag/ingestion/02-chunking.md)
+- [Hallucination Prevention](../../domains/rag/generation-and-grounding/03-hallucination-prevention.md)
+- [RAG Prompt Assembly](../../domains/rag/generation-and-grounding/01-rag-prompt-assembly.md)
 
 ## Changelog
 

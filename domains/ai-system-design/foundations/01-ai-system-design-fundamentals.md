@@ -116,7 +116,7 @@ Set alerts at 2× expected; route cheap model for classification.
 
 ## Navigation
 
-- [Common AI Components](common-ai-components.md)
+- [Common AI Components](02-common-ai-components.md)
 
 ---
 

@@ -50,7 +50,7 @@ author: hp
 | Schema | parse errors | Constrained decoding / repair |
 | Stream abort | incomplete SSE | Reconnect policy; partial UI |
 
-Reliability patterns: [Reliability for AI](../ai-deployment/reliability-for-ai.md).
+Reliability patterns: [Reliability for AI](../ai-deployment/reliability-and-perf/01-reliability-for-ai.md).
 
 ```mermaid
 flowchart TB
@@ -204,7 +204,7 @@ sequenceDiagram
 
 - Prev: [Debugging Agents](debugging-agents.md)
 - Next: [AI Debugging Playbook](ai-debugging-playbook.md)
-- Related: [Reliability for AI](../ai-deployment/reliability-for-ai.md) · [Observability](../ai-deployment/observability-for-ai.md) · [Common Mistakes](../common-mistakes/README.md)
+- Related: [Reliability for AI](../ai-deployment/reliability-and-perf/01-reliability-for-ai.md) · [Observability](../ai-deployment/observability/03-observability-for-ai.md) · [Common Mistakes](../common-mistakes/README.md)
 
 ---
 

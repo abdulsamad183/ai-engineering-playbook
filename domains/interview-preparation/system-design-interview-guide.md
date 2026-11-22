@@ -32,15 +32,15 @@ Section **15** — interview exercises linked to [designs](../ai-system-design/R
 
 | System | Design doc | Key interview focus |
 |--------|------------|---------------------|
-| **ChatGPT** | [design-chatgpt-like](../ai-system-design/design-chatgpt-like-system.md) | Streaming, memory, tools |
-| **Cursor** | [design-cursor-like](../ai-system-design/design-cursor-like-system.md) | Indexing, agent edits |
-| **Copilot** | [design-github-copilot](../ai-system-design/design-github-copilot.md) | Latency, FIM |
-| **Perplexity** | [design-perplexity](../ai-system-design/design-perplexity-ai-search.md) | Citations, web search |
-| **Deep Research** | [design-deep-research](../ai-system-design/design-deep-research-system.md) | Long jobs, multi-agent |
-| **AI Search** | [design-ai-search-engine](../ai-system-design/design-ai-search-engine.md) | Hybrid retrieval |
-| **Support** | [design-ai-customer-support](../ai-system-design/design-ai-customer-support.md) | Escalation, CRM |
-| **PDF Chat** | [design-ai-pdf-chat](../ai-system-design/design-ai-pdf-chat.md) | Ingestion, OCR |
-| **Voice** | [design-ai-voice-agent](../ai-system-design/design-ai-voice-agent.md) | STT/TTS pipeline |
+| **ChatGPT** | [design-chatgpt-like](../ai-system-design/consumer-products/01-design-chatgpt-like-system.md) | Streaming, memory, tools |
+| **Cursor** | [design-cursor-like](../ai-system-design/developer-tools/01-design-cursor-like-system.md) | Indexing, agent edits |
+| **Copilot** | [design-github-copilot](../ai-system-design/developer-tools/02-design-github-copilot.md) | Latency, FIM |
+| **Perplexity** | [design-perplexity](../ai-system-design/consumer-products/02-design-perplexity-ai-search.md) | Citations, web search |
+| **Deep Research** | [design-deep-research](../ai-system-design/consumer-products/04-design-deep-research-system.md) | Long jobs, multi-agent |
+| **AI Search** | [design-ai-search-engine](../ai-system-design/consumer-products/03-design-ai-search-engine.md) | Hybrid retrieval |
+| **Support** | [design-ai-customer-support](../ai-system-design/enterprise-assistants/01-design-ai-customer-support.md) | Escalation, CRM |
+| **PDF Chat** | [design-ai-pdf-chat](../ai-system-design/developer-tools/04-design-ai-pdf-chat.md) | Ingestion, OCR |
+| **Voice** | [design-ai-voice-agent](../ai-system-design/enterprise-assistants/04-design-ai-voice-agent.md) | STT/TTS pipeline |
 
 ## ChatGPT Exercise (sample)
 

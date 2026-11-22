@@ -264,8 +264,8 @@ LangChain orchestrates chains and tools; DSPy optimizes the prompts within those
 
 ## See Also
 
-- [Prompt Engineering Papers](prompt-engineering-papers.md)
-- [Research Comparison Guides](research-comparison-guides.md)
+- [Prompt Engineering Papers](../landmark-papers/02-prompt-engineering-papers.md)
+- [Research Comparison Guides](../engineering-takeaways/02-research-comparison-guides.md)
 - [Prompt Engineering Domain](../../prompt-engineering/README.md)
 - [AI Evaluation](../../ai-evaluation/README.md)
 

@@ -57,7 +57,7 @@ Implement `SET key value EX 300 NX` for distributed lock with expiry.
 
 ## Further Reading
 
-- [Caching for AI](../ai-deployment/caching-for-ai.md)
+- [Caching for AI](../ai-deployment/reliability-and-perf/02-caching-for-ai.md)
 
 ---
 

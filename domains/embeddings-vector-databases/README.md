@@ -100,8 +100,8 @@ flowchart LR
 
 ## Related topics
 
-- [RAG — embeddings for RAG](../rag/embeddings-for-rag.md)
-- [RAG — vector databases](../rag/vector-databases.md)
+- [RAG — embeddings for RAG](../rag/retrieval/01-embeddings-for-rag.md)
+- [RAG — vector databases](../rag/retrieval/02-vector-databases.md)
 - [RAG provider primers](../rag/providers/README.md) (legacy location; prefer this topic’s [providers/](providers/README.md))
 - [LLM Engineering embeddings](../llm-engineering/embeddings-llm-perspective.md)
 

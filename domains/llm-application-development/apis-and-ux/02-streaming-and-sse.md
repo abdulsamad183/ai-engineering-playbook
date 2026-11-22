@@ -56,7 +56,7 @@ sequenceDiagram
   API-->>C: event: done
 ```
 
-> **Prerequisites:** [Sync, Async, and Streaming](../../foundations/03-sync-async-streaming.md) · [Chat APIs](01-chat-apis.md)
+> **Prerequisites:** [Sync, Async, and Streaming](../foundations/03-sync-async-streaming.md) · [Chat APIs](01-chat-apis.md)
 
 ---
 

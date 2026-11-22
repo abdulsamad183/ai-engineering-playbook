@@ -26,5 +26,5 @@ Wire real SDKs by uncommenting imports in `observability.py`.
 
 ## Related
 
-- [AI Evaluation Observability](../../../domains/ai-evaluation/continuous-evaluation.md)
+- [AI Evaluation Observability](../../../domains/ai-evaluation/online-systems/02-continuous-evaluation.md)
 - [LangSmith / Phoenix guides](../../../domains/ai-evaluation/)

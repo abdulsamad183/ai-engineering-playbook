@@ -216,5 +216,5 @@ async def stream(request: Request):
 ### Related topics
 
 - [Retries and Timeouts](../reliability/01-retries-and-timeouts.md)
-- [Sync, Async, and Streaming](../../foundations/03-sync-async-streaming.md)
+- [Sync, Async, and Streaming](../foundations/03-sync-async-streaming.md)
 

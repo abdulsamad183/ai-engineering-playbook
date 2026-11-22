@@ -85,7 +85,7 @@ Attacker content in user messages, uploaded docs, or tool results redirects the 
 - Direct: user chat
 - Indirect: retrieved docs, emails, MCP resources
 
-Deep dive: [Prompt Injection and Jailbreaks](prompt-injection-and-jailbreaks.md).
+Deep dive: [Prompt Injection and Jailbreaks](02-prompt-injection-and-jailbreaks.md).
 
 ### 2. Data Leakage
 
@@ -100,11 +100,11 @@ Pair with [Security for AI Backends](../../security/security-for-ai-backends.md)
 
 ### 3. Harmful Outputs
 
-Jailbreaks and poorly scoped assistants produce disallowed content, medical/legal overclaim, or toxic language. Model refusals alone are not a control — add [Guardrails and Content Filtering](guardrails-and-content-filtering.md).
+Jailbreaks and poorly scoped assistants produce disallowed content, medical/legal overclaim, or toxic language. Model refusals alone are not a control — add [Guardrails and Content Filtering](../guardrails/02-guardrails-and-content-filtering.md).
 
 ### 4. Tool Abuse
 
-Agents and MCP hosts turn text into side effects. Without allowlists, least privilege, and HITL, injection becomes remote action execution. See [Safe Tool Use](safe-tool-use.md), [Agent Security](../../ai-agents/agent-security.md), and [MCP Security](../../mcp/mcp-security.md).
+Agents and MCP hosts turn text into side effects. Without allowlists, least privilege, and HITL, injection becomes remote action execution. See [Safe Tool Use](../secure-tools/02-safe-tool-use.md), [Agent Security](../../ai-agents/eval-security-production/02-agent-security.md), and [MCP Security](../../mcp/production/02-mcp-security.md).
 
 ---
 
@@ -116,7 +116,7 @@ Agents and MCP hosts turn text into side effects. Without allowlists, least priv
 | **Security** | Confidentiality, integrity, availability | AuthZ, secrets, sandboxing, rate limits |
 | **Compliance** | Policy and regulation evidence | Audit logs, retention, DPIA, redaction |
 
-They overlap: injection is both a safety and security issue. Ship with all three in mind; use the [Production AI Safety Checklist](production-ai-safety-checklist.md) at release.
+They overlap: injection is both a safety and security issue. Ship with all three in mind; use the [Production AI Safety Checklist](../production/01-production-ai-safety-checklist.md) at release.
 
 ---
 
@@ -181,7 +181,7 @@ flowchart TB
 
 ## Navigation
 
-- Next: [Prompt Injection and Jailbreaks](prompt-injection-and-jailbreaks.md)
+- Next: [Prompt Injection and Jailbreaks](02-prompt-injection-and-jailbreaks.md)
 - Hub: [AI Safety](README.md)
 - Related: [Prompt Security](../../prompt-engineering/production-and-safety/01-prompt-security.md) · [Security](../../security/README.md) · [AI Agents](../../ai-agents/README.md) · [MCP](../../mcp/README.md)
 

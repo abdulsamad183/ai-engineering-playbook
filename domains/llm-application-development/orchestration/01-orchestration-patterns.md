@@ -52,7 +52,7 @@ flowchart TB
   R --> Flow[Deterministic workflow]
 ```
 
-> **Prerequisites:** [LLM App Architecture](../architecture/01-llm-app-architecture.md) · [App vs Chat vs Agent](../../foundations/01-app-vs-chat-vs-agent.md)
+> **Prerequisites:** [LLM App Architecture](../architecture/01-llm-app-architecture.md) · [App vs Chat vs Agent](../foundations/01-app-vs-chat-vs-agent.md)
 
 ---
 

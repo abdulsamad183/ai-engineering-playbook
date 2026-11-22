@@ -180,11 +180,11 @@ def recursive_split(text: str, chunk_size: int, separators: list[str]) -> list[s
 
 ### Prerequisites
 
-- [Document Ingestion Pipeline](document-ingestion-pipeline.md)
+- [Document Ingestion Pipeline](01-document-ingestion-pipeline.md)
 
 ### Next
 
-- [Metadata Engineering](metadata-engineering.md)
+- [Metadata Engineering](03-metadata-engineering.md)
 
 ---
 

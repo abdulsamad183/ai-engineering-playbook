@@ -59,7 +59,7 @@ flowchart TB
 | **Model** | During generation | System policy, safety-tuned models, structured outputs |
 | **Post-check** | After tokens (or per chunk) | Toxicity, secrets, grounding, schema, tool arg policy |
 
-Injection-specific filters belong with [Prompt Injection and Jailbreaks](prompt-injection-and-jailbreaks.md); tool gates with [Safe Tool Use](safe-tool-use.md).
+Injection-specific filters belong with [Prompt Injection and Jailbreaks](../threats/02-prompt-injection-and-jailbreaks.md); tool gates with [Safe Tool Use](../secure-tools/02-safe-tool-use.md).
 
 ---
 
@@ -118,7 +118,7 @@ If the “output” is a tool call, post-check includes:
 
 - Name ∈ allowlist
 - Args match schema and business rules
-- Destructive → HITL ([Safe Tool Use](safe-tool-use.md), [Agent Security](../../ai-agents/agent-security.md), [MCP Security](../../mcp/mcp-security.md))
+- Destructive → HITL ([Safe Tool Use](../secure-tools/02-safe-tool-use.md), [Agent Security](../../ai-agents/eval-security-production/02-agent-security.md), [MCP Security](../../mcp/production/02-mcp-security.md))
 
 ### Streaming
 
@@ -216,10 +216,10 @@ Wire metrics: `guard.pre.block`, `guard.post.block`, `guard.pii.redactions`.
 
 ## Navigation
 
-- Prev: [Prompt Injection and Jailbreaks](prompt-injection-and-jailbreaks.md)
-- Next: [Safe Tool Use](safe-tool-use.md)
+- Prev: [Prompt Injection and Jailbreaks](../threats/02-prompt-injection-and-jailbreaks.md)
+- Next: [Safe Tool Use](../secure-tools/02-safe-tool-use.md)
 - Hub: [AI Safety](README.md)
-- Related: [Prompt Security](../../prompt-engineering/production-and-safety/01-prompt-security.md) · [Production Checklist](production-ai-safety-checklist.md)
+- Related: [Prompt Security](../../prompt-engineering/production-and-safety/01-prompt-security.md) · [Production Checklist](../production/01-production-ai-safety-checklist.md)
 
 ---
 

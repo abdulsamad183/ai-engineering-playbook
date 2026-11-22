@@ -977,7 +977,7 @@ Add intermediate output validation and per-chunk error handling.
 
 - [Prompt Lifecycle](../prompt-operations/01-prompt-lifecycle.md) — Section 11
 - [Prompt Versioning](../prompt-operations/02-prompt-versioning.md) — Section 12
-- [AI Workflows](../ai-workflows/README.md)
+- [AI Workflows](../../ai-workflows/README.md)
 - [Background Processing for AI](../../backend-engineering/background-processing-for-ai.md)
 
 ### Next Topics

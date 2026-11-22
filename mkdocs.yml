@@ -87,6 +87,13 @@ plugins:
 hooks:
   - hooks/strip_frontmatter.py
 
+# Repository Markdown is mirrored into docs/ with symlinks. MkDocs resolves
+# those links from the virtual docs tree, while the repository-aware checker
+# validates their real targets before this build runs.
+validation:
+  links:
+    not_found: info
+
 markdown_extensions:
   - abbr
   - admonition

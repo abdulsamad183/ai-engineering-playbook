@@ -61,7 +61,7 @@ flowchart LR
     S1 --> S2 --> S3 --> S4
 ```
 
-> **Prerequisites:** [AI Agents](../../ai-agents/README.md) · [RAG](../../rag/README.md) · [Tool Use](../../ai-agents/tool-use.md)
+> **Prerequisites:** [AI Agents](../../ai-agents/README.md) · [RAG](../../rag/README.md) · [Tool Use](../../ai-agents/tools-and-action/01-tool-use.md)
 
 ---
 
@@ -143,7 +143,7 @@ MCP complements [direct function calling](../../llm-engineering/function-calling
 
 ## MCP Terminology
 
-See [Core Concepts](mcp-core-concepts.md) for full glossary. Key: `initialize`, `tools/list`, `tools/call`, `resources/read`, `prompts/get`.
+See [Core Concepts](04-mcp-core-concepts.md) for full glossary. Key: `initialize`, `tools/list`, `tools/call`, `resources/read`, `prompts/get`.
 
 ---
 
@@ -160,7 +160,7 @@ See [Core Concepts](mcp-core-concepts.md) for full glossary. Key: `initialize`, 
 
 ## MCP in AI Agents
 
-Agents become **hosts** — MCP clients discover tools at runtime instead of hardcoding integrations. See [Tool Use](../../ai-agents/tool-use.md).
+Agents become **hosts** — MCP clients discover tools at runtime instead of hardcoding integrations. See [Tool Use](../../ai-agents/tools-and-action/01-tool-use.md).
 
 ---
 
@@ -168,7 +168,7 @@ Agents become **hosts** — MCP clients discover tools at runtime instead of har
 
 - Per-tenant MCP servers with RBAC
 - Central audit of `tools/call`
-- Federated multi-server routing — [Multi-Server MCP](multi-server-mcp.md)
+- Federated multi-server routing — [Multi-Server MCP](../transport-and-auth/04-multi-server-mcp.md)
 
 ---
 
@@ -191,7 +191,7 @@ Treat MCP like **gRPC for AI capabilities** — schema-first, versioned, observa
 - Never expose unconstrained shell via MCP without sandbox
 - Auth at transport + per-tool permissions
 
-See [MCP Security](mcp-security.md).
+See [MCP Security](../production/02-mcp-security.md).
 
 ---
 
@@ -244,7 +244,7 @@ async def list_agent_tools(mcp_client) -> list[dict]:
 
 ### Next
 
-- [MCP Architecture](mcp-architecture.md)
+- [MCP Architecture](02-mcp-architecture.md)
 
 ### Unlocks
 

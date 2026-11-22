@@ -120,7 +120,7 @@ async def run_eval_harness(cases: list, system_fn) -> EvalRun:
 
 ## Navigation
 
-- [Evaluation Datasets](evaluation-datasets.md) · [Production Evaluation](production-evaluation.md)
+- [Evaluation Datasets](03-evaluation-datasets.md) · [Production Evaluation](../online-systems/03-production-evaluation.md)
 
 ---
 

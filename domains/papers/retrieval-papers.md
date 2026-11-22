@@ -348,13 +348,13 @@ CRAG-style retrieval evaluator — a small classifier before generation prevents
 Offline indexing requires entity extraction, graph construction, community detection, and summary generation across the entire corpus.
 
 **Q: How do you evaluate advanced RAG patterns?**
-Measure retrieval precision, answer faithfulness, and end-to-end accuracy separately. Use [RAGAS](../ai-evaluation/frameworks/ragas.md) or custom eval sets per pattern.
+Measure retrieval precision, answer faithfulness, and end-to-end accuracy separately. Use [RAGAS](../ai-evaluation/frameworks/06-ragas.md) or custom eval sets per pattern.
 
 ---
 
 ## See Also
 
-- [Advanced RAG Architectures](../rag/advanced-rag-architectures.md)
+- [Advanced RAG Architectures](../rag/foundations/03-advanced-rag-architectures.md)
 - [Research Comparison Guides](research-comparison-guides.md)
 - [Retrieval Papers Cheat Sheet](../../cheat-sheets/retrieval-papers-cheat-sheet.md)
 - [RAG Domain](../rag/README.md)

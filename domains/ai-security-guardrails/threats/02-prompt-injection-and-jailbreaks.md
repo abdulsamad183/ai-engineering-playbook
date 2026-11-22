@@ -89,7 +89,7 @@ Highest risk in RAG, email agents, browsers, and MCP resources:
 
 Rule: **content that can change model behavior must never have equal privilege to developer instructions.**
 
-Cross-links: [MCP Security](../../mcp/mcp-security.md), [Agent Security](../../ai-agents/agent-security.md).
+Cross-links: [MCP Security](../../mcp/production/02-mcp-security.md), [Agent Security](../../ai-agents/eval-security-production/02-agent-security.md).
 
 ---
 
@@ -107,7 +107,7 @@ Prompt text alone is insufficient. Combine:
 
 - Read tools ≠ write tools
 - Never let the model invent tool names outside a registry
-- Require [Safe Tool Use](safe-tool-use.md) gates before side effects
+- Require [Safe Tool Use](../secure-tools/02-safe-tool-use.md) gates before side effects
 
 ### 3. Dual-channel policy
 
@@ -149,7 +149,7 @@ flowchart TB
 | Language / encoding normalization | Obfuscation resistance |
 | PII detection on ingress | Minimize sensitive context |
 
-Heuristics are bypassable — use them as **signals**, not sole controls. Layer with [Guardrails and Content Filtering](guardrails-and-content-filtering.md).
+Heuristics are bypassable — use them as **signals**, not sole controls. Layer with [Guardrails and Content Filtering](../guardrails/02-guardrails-and-content-filtering.md).
 
 ### Output filtering (post-model)
 
@@ -200,9 +200,9 @@ Alert on anomalous tool use; investigate with traces that store hashes/redaction
 
 ## Navigation
 
-- Prev: [Introduction to AI Safety](introduction-to-ai-safety.md)
-- Next: [Guardrails and Content Filtering](guardrails-and-content-filtering.md)
-- Related: [Prompt Security](../../prompt-engineering/production-and-safety/01-prompt-security.md) · [Safe Tool Use](safe-tool-use.md)
+- Prev: [Introduction to AI Safety](03-introduction-to-ai-safety.md)
+- Next: [Guardrails and Content Filtering](../guardrails/02-guardrails-and-content-filtering.md)
+- Related: [Prompt Security](../../prompt-engineering/production-and-safety/01-prompt-security.md) · [Safe Tool Use](../secure-tools/02-safe-tool-use.md)
 
 ---
 

@@ -218,8 +218,8 @@ Check if context exceeds training length, whether position encoding extrapolates
 
 ## See Also
 
-- [Prompt Engineering Papers](prompt-engineering-papers.md)
-- [Research Evolution](research-evolution.md)
+- [Prompt Engineering Papers](02-prompt-engineering-papers.md)
+- [Research Evolution](../systems-papers/03-research-evolution.md)
 - [LLM Engineering](../../llm-engineering/README.md)
 - [Transformer Concepts Cheat Sheet](../../../cheat-sheets/transformer-concepts-cheat-sheet.md)
 

@@ -8,12 +8,12 @@
 
 | Technology | Category | Status |
 |------------|----------|--------|
-| [FastAPI](fastapi.md) | Web Framework | Planned |
-| [PostgreSQL](postgresql.md) | Database | Planned |
-| [Redis](redis.md) | Cache / Data Store | Planned |
-| [LangGraph](langgraph.md) | Agent Framework | Planned |
-| [OpenAI](openai.md) | LLM Provider | Planned |
-| [Docker](docker.md) | Containerization | Planned |
+| FastAPI | Web Framework | Planned |
+| PostgreSQL | Database | Planned |
+| Redis | Cache / Data Store | Planned |
+| LangGraph | Agent Framework | Planned |
+| OpenAI | LLM Provider | Planned |
+| Docker | Containerization | Planned |
 
 ---
 

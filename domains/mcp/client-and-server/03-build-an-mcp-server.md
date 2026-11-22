@@ -109,7 +109,7 @@ Run MCP over streamable HTTP alongside REST health endpoints — see [examples/m
 
 ## Navigation
 
-- [Build an MCP Client](build-an-mcp-client.md) · [Examples](../../../examples/mcp/)
+- [Build an MCP Client](04-build-an-mcp-client.md) · [Examples](../../../examples/mcp/)
 
 ---
 

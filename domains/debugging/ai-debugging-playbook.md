@@ -166,7 +166,7 @@ Add an offline eval or alert so the failure cannot return silently ([AI Evaluati
 | SEV3 | Single-tenant quality regression | Ticket; next business day fix OK |
 | SEV4 | Cosmetic / rare edge | Backlog |
 
-Never paste raw customer PII into public Slack; use redacted traces ([Observability for AI](../ai-deployment/observability-for-ai.md)).
+Never paste raw customer PII into public Slack; use redacted traces ([Observability for AI](../ai-deployment/observability/03-observability-for-ai.md)).
 
 ---
 
@@ -177,7 +177,7 @@ Never paste raw customer PII into public Slack; use redacted traces ([Observabil
 3. Preventive change owners + dates
 4. Link related domain docs for the next on-call
 
-Cross-links: [RAG](../rag/README.md) · [AI Agents](../ai-agents/README.md) · [AI Deployment](../ai-deployment/README.md) · [Reliability](../ai-deployment/reliability-for-ai.md).
+Cross-links: [RAG](../rag/README.md) · [AI Agents](../ai-agents/README.md) · [AI Deployment](../ai-deployment/README.md) · [Reliability](../ai-deployment/reliability-and-perf/01-reliability-for-ai.md).
 
 ---
 

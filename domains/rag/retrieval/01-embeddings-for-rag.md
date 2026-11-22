@@ -181,7 +181,7 @@ async def embed_batch(client, texts: list[str], model: str) -> list[list[float]]
 
 ### Next
 
-- [Vector Databases](vector-databases.md)
+- [Vector Databases](02-vector-databases.md)
 
 ---
 

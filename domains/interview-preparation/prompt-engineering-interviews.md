@@ -32,7 +32,7 @@ Section **9**.
 
 **Q: How evaluate prompt changes?**
 
-> Golden set regression; A/B online; instruction-following pass rate — [Evaluation phase](../ai-evaluation/prompt-evaluation.md).
+> Golden set regression; A/B online; instruction-following pass rate — [Evaluation phase](../ai-evaluation/surface-areas/01-prompt-evaluation.md).
 
 **Scenario:** Model ignores JSON format.
 

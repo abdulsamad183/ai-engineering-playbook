@@ -55,7 +55,7 @@ flowchart LR
   EXEC --> SYS[(External systems)]
 ```
 
-Without a gate, prompt injection becomes **confused deputy** execution. Pair this doc with [Agent Security](../ai-agents/agent-security.md) and [Tool Use](../ai-agents/tool-use.md).
+Without a gate, prompt injection becomes **confused deputy** execution. Pair this doc with [Agent Security](../ai-agents/eval-security-production/02-agent-security.md) and [Tool Use](../ai-agents/tools-and-action/01-tool-use.md).
 
 ---
 
@@ -101,7 +101,7 @@ def authorize_tool(name: str, principal: Principal) -> None:
 | Minimal network | Egress allowlists for sandboxes |
 | Minimal lifetime | Short-lived tokens per run |
 
-Split **read** servers from **write** servers when using MCP ([MCP Security](../mcp/mcp-security.md)).
+Split **read** servers from **write** servers when using MCP ([MCP Security](../mcp/production/02-mcp-security.md)).
 
 Never give a general assistant:
 
@@ -114,7 +114,7 @@ Never give a general assistant:
 
 ## Human-in-the-Loop
 
-Require HITL when impact is high or confidence is low. See [Human-in-the-Loop](../ai-agents/human-in-the-loop.md).
+Require HITL when impact is high or confidence is low. See [Human-in-the-Loop](../ai-agents/tools-and-action/02-human-in-the-loop.md).
 
 | Risk class | Default gate |
 |------------|--------------|
@@ -162,7 +162,7 @@ For code execution and untrusted tools:
 - CPU, memory, time, and output-size limits
 - Separate network namespaces
 
-Log `principal`, `tool`, `args_hash`, `decision`, `latency`, `outcome` for audit — align with [MCP Security](../mcp/mcp-security.md) audit guidance.
+Log `principal`, `tool`, `args_hash`, `decision`, `latency`, `outcome` for audit — align with [MCP Security](../mcp/production/02-mcp-security.md) audit guidance.
 
 ---
 
@@ -201,7 +201,7 @@ MCP expands discovery: hosts may see many servers.
 
 - Prev: [Guardrails and Content Filtering](guardrails-and-content-filtering.md)
 - Next: [Production AI Safety Checklist](production-ai-safety-checklist.md)
-- Related: [Tool Use](../ai-agents/tool-use.md) · [Agent Security](../ai-agents/agent-security.md) · [MCP Security](../mcp/mcp-security.md)
+- Related: [Tool Use](../ai-agents/tools-and-action/01-tool-use.md) · [Agent Security](../ai-agents/eval-security-production/02-agent-security.md) · [MCP Security](../mcp/production/02-mcp-security.md)
 
 ---
 

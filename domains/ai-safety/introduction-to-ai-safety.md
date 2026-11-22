@@ -104,7 +104,7 @@ Jailbreaks and poorly scoped assistants produce disallowed content, medical/lega
 
 ### 4. Tool Abuse
 
-Agents and MCP hosts turn text into side effects. Without allowlists, least privilege, and HITL, injection becomes remote action execution. See [Safe Tool Use](safe-tool-use.md), [Agent Security](../ai-agents/agent-security.md), and [MCP Security](../mcp/mcp-security.md).
+Agents and MCP hosts turn text into side effects. Without allowlists, least privilege, and HITL, injection becomes remote action execution. See [Safe Tool Use](safe-tool-use.md), [Agent Security](../ai-agents/eval-security-production/02-agent-security.md), and [MCP Security](../mcp/production/02-mcp-security.md).
 
 ---
 

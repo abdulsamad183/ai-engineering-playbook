@@ -8,11 +8,11 @@
 
 | Pattern Collection | Description | Status |
 |-------------------|-------------|--------|
-| [RAG Patterns](rag-patterns.md) | Retrieval augmented generation patterns | Planned |
-| [Agent Patterns](agent-patterns.md) | AI agent design patterns | Planned |
-| [API Patterns](api-patterns.md) | API design patterns for AI services | Planned |
-| [Deployment Patterns](deployment-patterns.md) | Deployment and infrastructure patterns | Planned |
-| [Resilience Patterns](resilience-patterns.md) | Error handling, retry, circuit breaker | Planned |
+| RAG Patterns | Retrieval augmented generation patterns | Planned |
+| Agent Patterns | AI agent design patterns | Planned |
+| API Patterns | API design patterns for AI services | Planned |
+| Deployment Patterns | Deployment and infrastructure patterns | Planned |
+| Resilience Patterns | Error handling, retry, circuit breaker | Planned |
 
 ---
 
@@ -27,5 +27,5 @@
 
 ## See Also
 
-- [Design Patterns Domain](../../domains/design-patterns/)
+- [Design Patterns Domain](../../../domains/design-patterns/)
 - [Comparison Indexes](../comparisons/)

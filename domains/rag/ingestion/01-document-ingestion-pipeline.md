@@ -190,11 +190,11 @@ def parse_pdf(path: str) -> str:
 
 ### Prerequisites
 
-- [End-to-End RAG Architecture](end-to-end-rag-architecture.md)
+- [End-to-End RAG Architecture](../foundations/02-end-to-end-rag-architecture.md)
 
 ### Next
 
-- [Chunking](chunking.md)
+- [Chunking](02-chunking.md)
 
 ---
 

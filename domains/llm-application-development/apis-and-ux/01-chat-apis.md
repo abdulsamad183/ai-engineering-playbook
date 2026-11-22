@@ -50,7 +50,7 @@ flowchart LR
   Client --> Turns[/threads/id/turns]
 ```
 
-> **Prerequisites:** [Request Lifecycle](../../foundations/02-request-lifecycle.md) · [APIs](../../apis/README.md)
+> **Prerequisites:** [Request Lifecycle](../foundations/02-request-lifecycle.md) · [APIs](../../apis/README.md)
 
 ---
 

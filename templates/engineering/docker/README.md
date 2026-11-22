@@ -38,4 +38,4 @@ docker compose -f templates/engineering/docker/docker-compose.yml up --build
 ## Related
 
 - [FastAPI Dockerfile](../fastapi-starter/Dockerfile)
-- [Production Docker Guide](../../../domains/ai-deployment/docker-for-ai.md)
+- [Production Docker Guide](../../../domains/ai-deployment/packaging-and-release/01-docker-for-ai.md)

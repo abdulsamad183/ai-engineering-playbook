@@ -10,5 +10,5 @@ Start with [Embedding Foundations](../embeddings-vector-databases/embedding-foun
 
 ## Related deep dives still in RAG / LLM handbooks
 
-- [Embeddings for RAG](../rag/embeddings-for-rag.md)
+- [Embeddings for RAG](../rag/retrieval/01-embeddings-for-rag.md)
 - [Embeddings (LLM perspective)](../llm-engineering/embeddings-llm-perspective.md)

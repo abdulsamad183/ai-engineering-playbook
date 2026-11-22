@@ -81,7 +81,7 @@ flowchart TB
 
 ## Instrumentation Baseline
 
-Without traces, you are guessing. Prefer [Observability for AI](../ai-deployment/observability-for-ai.md).
+Without traces, you are guessing. Prefer [Observability for AI](../ai-deployment/observability/03-observability-for-ai.md).
 
 Capture per request (redact PII):
 

@@ -118,7 +118,7 @@ If the “output” is a tool call, post-check includes:
 
 - Name ∈ allowlist
 - Args match schema and business rules
-- Destructive → HITL ([Safe Tool Use](safe-tool-use.md), [Agent Security](../ai-agents/agent-security.md), [MCP Security](../mcp/mcp-security.md))
+- Destructive → HITL ([Safe Tool Use](safe-tool-use.md), [Agent Security](../ai-agents/eval-security-production/02-agent-security.md), [MCP Security](../mcp/production/02-mcp-security.md))
 
 ### Streaming
 

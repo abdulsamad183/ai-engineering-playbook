@@ -730,10 +730,10 @@ Prompt: invoice-extraction v2.3.0 | Model: gpt-4.1-mini | Eval: 2026-07-13
 
 | # | Topic | Document |
 |---|-------|----------|
-| 1 | Introduction to Prompt Engineering | [introduction-to-prompt-engineering.md](../../foundations/01-introduction-to-prompt-engineering.md) |
-| 2 | Prompt Anatomy | [prompt-anatomy.md](../../foundations/02-prompt-anatomy.md) |
-| 3 | Message Types | [message-types.md](../../foundations/03-message-types.md) |
-| 4 | Prompt Design Principles | [prompt-design-principles.md](../../foundations/04-prompt-design-principles.md) |
+| 1 | Introduction to Prompt Engineering | [introduction-to-prompt-engineering.md](../foundations/01-introduction-to-prompt-engineering.md) |
+| 2 | Prompt Anatomy | [prompt-anatomy.md](../foundations/02-prompt-anatomy.md) |
+| 3 | Message Types | [message-types.md](../foundations/03-message-types.md) |
+| 4 | Prompt Design Principles | [prompt-design-principles.md](../foundations/04-prompt-design-principles.md) |
 | 5 | Prompt Patterns | [prompt-patterns.md](../craft/01-prompt-patterns.md) |
 | 6 | Prompt Templates Guide | [prompt-templates-guide.md](../craft/02-prompt-templates-guide.md) |
 | 7 | Structured Prompting | [structured-prompting.md](../craft/03-structured-prompting.md) |

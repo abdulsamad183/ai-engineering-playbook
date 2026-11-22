@@ -413,7 +413,7 @@ ReAct with iteration limits, optional Reflexion for tasks with automated evaluat
 
 ## See Also
 
-- [Agent Reasoning Patterns](../ai-agents/agent-reasoning-patterns.md)
+- [Agent Reasoning Patterns](../ai-agents/cognition/01-agent-reasoning-patterns.md)
 - [SWE-Agent](swe-agent.md)
 - [Research Comparison Guides](research-comparison-guides.md)
 - [Reasoning Methods Cheat Sheet](../../cheat-sheets/reasoning-methods-cheat-sheet.md)

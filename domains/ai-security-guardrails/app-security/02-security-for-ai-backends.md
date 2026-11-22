@@ -58,7 +58,7 @@ Standard API security applies, but AI backends introduce **unique attack surface
 | Tool calling | Arbitrary function execution if unchecked |
 | Embedding endpoints | Resource exhaustion at scale |
 
-> **Production Standard:** Identity and access control are in [Authentication and Authorization for AI](authentication-authorization-for-ai.md). This document covers **transport, input, injection, SSRF, and infrastructure hardening** — the layers beneath auth.
+> **Production Standard:** Identity and access control are in [Authentication and Authorization for AI](01-authentication-authorization-for-ai.md). This document covers **transport, input, injection, SSRF, and infrastructure hardening** — the layers beneath auth.
 
 ```mermaid
 graph TB
@@ -253,7 +253,7 @@ response.set_cookie(
 # Validate X-CSRF-Token matches server-issued token on state-changing requests
 ```
 
-> **For JWT-in-header AI APIs:** CSRF is typically not your primary concern. Focus on token theft (XSS), auth bypass, and rate limiting instead. See [Authentication and Authorization for AI](authentication-authorization-for-ai.md).
+> **For JWT-in-header AI APIs:** CSRF is typically not your primary concern. Focus on token theft (XSS), auth bypass, and rate limiting instead. See [Authentication and Authorization for AI](01-authentication-authorization-for-ai.md).
 
 ---
 
@@ -623,7 +623,7 @@ headers = {
 }
 ```
 
-Cross-reference [Authentication and Authorization for AI](authentication-authorization-for-ai.md) for per-tenant quotas and [Redis for AI](../../databases/redis/redis-for-ai.md) for distributed rate limiting.
+Cross-reference [Authentication and Authorization for AI](01-authentication-authorization-for-ai.md) for per-tenant quotas and [Redis for AI](../../databases/redis/redis-for-ai.md) for distributed rate limiting.
 
 ---
 
@@ -774,7 +774,7 @@ graph TB
 ### Prerequisites
 
 - [HTTP Fundamentals for AI](../../apis/http-fundamentals-for-ai.md) — TLS, headers, status codes
-- [Authentication and Authorization for AI](authentication-authorization-for-ai.md) — JWT, RBAC, protected routes
+- [Authentication and Authorization for AI](01-authentication-authorization-for-ai.md) — JWT, RBAC, protected routes
 - [Configuration and Secrets](../../foundations/configuration-and-secrets.md) — secret storage
 
 ### Related Topics

@@ -208,9 +208,9 @@ Specialized agent interfaces (ACI) matter more than model capability alone for d
 
 ## See Also
 
-- [Agent Reasoning Papers](agent-reasoning-papers.md)
-- [Retrieval Papers](retrieval-papers.md)
-- [Engineering Takeaways](engineering-takeaways.md)
+- [Agent Reasoning Papers](../landmark-papers/04-agent-reasoning-papers.md)
+- [Retrieval Papers](../landmark-papers/03-retrieval-papers.md)
+- [Engineering Takeaways](01-engineering-takeaways.md)
 - [Paper Comparison Matrix Cheat Sheet](../../../cheat-sheets/paper-comparison-matrix-cheat-sheet.md)
 
 ## Changelog

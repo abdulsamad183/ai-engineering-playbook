@@ -51,7 +51,7 @@ flowchart TB
   Trace --> Metrics[usage / latency]
 ```
 
-> **Prerequisites:** [Request Lifecycle](../../foundations/02-request-lifecycle.md) · [LLM App Building Checklist](01-llm-app-building-checklist.md)
+> **Prerequisites:** [Request Lifecycle](../foundations/02-request-lifecycle.md) · [LLM App Building Checklist](01-llm-app-building-checklist.md)
 
 ---
 

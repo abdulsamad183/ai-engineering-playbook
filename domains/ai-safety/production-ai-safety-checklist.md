@@ -49,7 +49,7 @@ author: hp
 3. Require security or tech-lead sign-off for anything `risk accepted` involving tools or PII.
 4. Re-run after major prompt, model, tool, or MCP server changes.
 
-Companion deep dives: [Introduction](introduction-to-ai-safety.md) · [Injection](prompt-injection-and-jailbreaks.md) · [Guardrails](guardrails-and-content-filtering.md) · [Safe Tool Use](safe-tool-use.md) · [Production AI Security](../ai-deployment/security-production-ai.md).
+Companion deep dives: [Introduction](introduction-to-ai-safety.md) · [Injection](prompt-injection-and-jailbreaks.md) · [Guardrails](guardrails-and-content-filtering.md) · [Safe Tool Use](safe-tool-use.md) · [Production AI Security](../ai-deployment/security-and-ops/01-security-production-ai.md).
 
 ---
 
@@ -119,7 +119,7 @@ See [Prompt Security](../prompt-engineering/production-and-safety/01-prompt-secu
 - [ ] Sandbox / egress limits for code or shell tools
 - [ ] MCP: only approved servers; new tools not auto-trusted
 
-See [Safe Tool Use](safe-tool-use.md) · [Agent Security](../ai-agents/agent-security.md) · [MCP Security](../mcp/mcp-security.md).
+See [Safe Tool Use](safe-tool-use.md) · [Agent Security](../ai-agents/eval-security-production/02-agent-security.md) · [MCP Security](../mcp/production/02-mcp-security.md).
 
 ---
 
@@ -181,7 +181,7 @@ See [Safe Tool Use](safe-tool-use.md) · [Agent Security](../ai-agents/agent-sec
 
 - Prev: [Safe Tool Use](safe-tool-use.md)
 - Hub: [AI Safety](README.md)
-- Related: [Prompt Security](../prompt-engineering/production-and-safety/01-prompt-security.md) · [Security](../security/README.md) · [AI Agents](../ai-agents/README.md) · [MCP](../mcp/README.md) · [Production AI Security](../ai-deployment/security-production-ai.md)
+- Related: [Prompt Security](../prompt-engineering/production-and-safety/01-prompt-security.md) · [Security](../security/README.md) · [AI Agents](../ai-agents/README.md) · [MCP](../mcp/README.md) · [Production AI Security](../ai-deployment/security-and-ops/01-security-production-ai.md)
 
 ---
 

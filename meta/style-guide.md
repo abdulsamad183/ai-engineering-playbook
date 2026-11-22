@@ -364,7 +364,7 @@ When deprecating a document:
 | Related docs | `related:` in front matter | Documents covering adjacent topics |
 | Inline links | `[text](../path/doc.md)` | Contextual references in body |
 | See Also | Footer section | Additional reading |
-| Glossary | `[term](../glossary.md#term)` | First use of domain-specific terms |
+| Glossary | `[term](glossary.md#term)` | First use of domain-specific terms |
 | Index | Domain `README.md` | Navigation within a domain |
 
 ### Rules

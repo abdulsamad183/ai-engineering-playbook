@@ -262,9 +262,9 @@ Same problem space — all use specialized interfaces, sandboxed execution, and 
 
 ## See Also
 
-- [Agent Reasoning Papers](agent-reasoning-papers.md)
+- [Agent Reasoning Papers](../landmark-papers/04-agent-reasoning-papers.md)
 - [AI Agents Domain](../../ai-agents/README.md)
-- [Research Comparison Guides](research-comparison-guides.md)
+- [Research Comparison Guides](../engineering-takeaways/02-research-comparison-guides.md)
 - [Agent Architectures Cheat Sheet](../../../cheat-sheets/agent-architectures-papers-cheat-sheet.md)
 
 ## Changelog

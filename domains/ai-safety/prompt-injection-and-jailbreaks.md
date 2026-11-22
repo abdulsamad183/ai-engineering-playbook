@@ -89,7 +89,7 @@ Highest risk in RAG, email agents, browsers, and MCP resources:
 
 Rule: **content that can change model behavior must never have equal privilege to developer instructions.**
 
-Cross-links: [MCP Security](../mcp/mcp-security.md), [Agent Security](../ai-agents/agent-security.md).
+Cross-links: [MCP Security](../mcp/production/02-mcp-security.md), [Agent Security](../ai-agents/eval-security-production/02-agent-security.md).
 
 ---
 

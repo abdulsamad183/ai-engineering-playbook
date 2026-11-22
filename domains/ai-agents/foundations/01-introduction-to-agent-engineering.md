@@ -205,7 +205,7 @@ Ship agents like microservices: **SLOs, idempotency, permissions, evals, inciden
 - Tool sandboxing and allowlists
 - Prompt/tool injection defenses
 
-See [Agent Security](agent-security.md).
+See [Agent Security](../eval-security-production/02-agent-security.md).
 
 ---
 
@@ -279,7 +279,7 @@ class MinimalAgent:
 
 ### Next
 
-- [Agent Architecture](agent-architecture.md)
+- [Agent Architecture](03-agent-architecture.md)
 
 ### Unlocks
 

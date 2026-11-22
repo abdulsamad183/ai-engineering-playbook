@@ -53,7 +53,7 @@ Per run, persist an ordered event log:
 | `decision` | continue / stop / HITL |
 | `final` | answer or failure code |
 
-Without this, [Tool Use](../ai-agents/tool-use.md) and planning issues are invisible. Align with [Observability for AI](../ai-deployment/observability-for-ai.md).
+Without this, [Tool Use](../ai-agents/tools-and-action/01-tool-use.md) and planning issues are invisible. Align with [Observability for AI](../ai-deployment/observability/03-observability-for-ai.md).
 
 ```mermaid
 sequenceDiagram
@@ -90,7 +90,7 @@ Mitigations:
 3. Force replan or HITL after N failures
 4. Deduplicate tool results in context (context bloat → worse loops)
 
-See [Agent Engineering Mistakes](../ai-agents/agent-engineering-mistakes.md).
+See [Agent Engineering Mistakes](../ai-agents/eval-security-production/03-agent-engineering-mistakes.md).
 
 ---
 
@@ -114,7 +114,7 @@ Common root causes:
 - Unbounded tool output exploding context
 - Retries on non-idempotent writes
 
-Security angle when tools do surprising things: [Agent Security](../ai-agents/agent-security.md).
+Security angle when tools do surprising things: [Agent Security](../ai-agents/eval-security-production/02-agent-security.md).
 
 ---
 
@@ -122,7 +122,7 @@ Security angle when tools do surprising things: [Agent Security](../ai-agents/ag
 
 Symptoms: unnecessary tools, skipped prerequisites, premature final answer, infinite research.
 
-Debug using [Agent Planning](../ai-agents/agent-planning.md) ideas:
+Debug using [Agent Planning](../ai-agents/cognition/02-agent-planning.md) ideas:
 
 1. Dump the plan (or inferred subgoals) at step 0
 2. Check whether success criteria are explicit and measurable

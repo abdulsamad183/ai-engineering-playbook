@@ -1007,7 +1007,7 @@ Add production failure cases to eval set, iterate through Optimization, re-evalu
 ### Next Topics
 
 - [Prompt Versioning](02-prompt-versioning.md) — version control mechanics
-- [Observability](../observability/README.md)
+- [Observability](../../observability/README.md)
 - [Context Engineering](../../context-engineering/README.md)
 
 ---

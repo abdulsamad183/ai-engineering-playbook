@@ -96,7 +96,7 @@ Curated, versioned evaluation set with ground truth used for regression testing 
 Metric measuring whether generated answers are supported by retrieved context. See [LLM Evaluation Metrics](../domains/ai-evaluation/metrics/02-llm-evaluation-metrics.md).
 
 ### RAGAS
-Retrieval Augmented Generation Assessment framework for RAG pipeline metrics. See [RAGAS Guide](../domains/ai-evaluation/frameworks/ragas.md).
+Retrieval Augmented Generation Assessment framework for RAG pipeline metrics. See [RAGAS Guide](../domains/ai-evaluation/frameworks/06-ragas.md).
 
 ### AI Platform Engineering
 Operational discipline for deploying, monitoring, securing, and scaling LLM applications in production. See [Production AI Handbook](../domains/ai-deployment/README.md).

@@ -49,7 +49,7 @@ Section **12**.
 
 **Q: How evaluate agents?**
 
-> Task completion, tool accuracy, trajectory match — [Agent eval](../ai-evaluation/agent-evaluation.md).
+> Task completion, tool accuracy, trajectory match — [Agent eval](../ai-evaluation/surface-areas/03-agent-evaluation.md).
 
 **Architecture:** Supervisor vs single agent?
 

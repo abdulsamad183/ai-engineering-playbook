@@ -44,7 +44,7 @@ Draw: developer → `docker build` → registry → K8s pull → pod.
 
 ## Further Reading
 
-- [Docker for AI](../ai-deployment/docker-for-ai.md)
+- [Docker for AI](../ai-deployment/packaging-and-release/01-docker-for-ai.md)
 
 ---
 

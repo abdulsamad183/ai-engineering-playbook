@@ -118,13 +118,13 @@ Shard by tenant or hash; replicas for read scaling and HA.
 
 | Database | Guide |
 |----------|-------|
-| FAISS | [providers/faiss.md](providers/faiss.md) |
-| Chroma | [providers/chroma.md](providers/chroma.md) |
-| PGVector | [providers/pgvector.md](providers/pgvector.md) |
-| Pinecone | [providers/pinecone.md](providers/pinecone.md) |
-| Milvus | [providers/milvus.md](providers/milvus.md) |
-| Weaviate | [providers/weaviate.md](providers/weaviate.md) |
-| Qdrant | [providers/qdrant.md](providers/qdrant.md) |
+| FAISS | [../providers/02-faiss.md](../providers/02-faiss.md) |
+| Chroma | [../providers/01-chroma.md](../providers/01-chroma.md) |
+| PGVector | [../providers/04-pgvector.md](../providers/04-pgvector.md) |
+| Pinecone | [../providers/05-pinecone.md](../providers/05-pinecone.md) |
+| Milvus | [../providers/03-milvus.md](../providers/03-milvus.md) |
+| Weaviate | [../providers/07-weaviate.md](../providers/07-weaviate.md) |
+| Qdrant | [../providers/06-qdrant.md](../providers/06-qdrant.md) |
 
 ---
 
@@ -140,7 +140,7 @@ Shard by tenant or hash; replicas for read scaling and HA.
 
 ### Next
 
-- [Retrieval Strategies](retrieval-strategies.md) (after provider guides)
+- [Retrieval Strategies](04-retrieval-strategies.md) (after provider guides)
 
 ---
 

@@ -141,7 +141,7 @@ class ChunkMetadata:
 
 ### Next
 
-- [Embeddings for RAG](embeddings-for-rag.md)
+- [Embeddings for RAG](../retrieval/01-embeddings-for-rag.md)
 
 ---
 

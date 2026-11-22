@@ -117,7 +117,7 @@ Scheduled runs on golden sets + sampled production logs detect:
 - Retrieval index staleness
 - Agent tool failure rate increases
 
-See [Continuous Evaluation](continuous-evaluation.md).
+See [Continuous Evaluation](../online-systems/02-continuous-evaluation.md).
 
 ---
 
@@ -158,7 +158,7 @@ LLMOps extends MLOps for generative systems:
 
 ## Evaluation Architecture
 
-See [Evaluation Architecture](evaluation-architecture.md) for the full pipeline: dataset → system → metrics → monitoring → iteration.
+See [Evaluation Architecture](02-evaluation-architecture.md) for the full pipeline: dataset → system → metrics → monitoring → iteration.
 
 ---
 
@@ -238,11 +238,11 @@ def load_golden_set(path: str) -> list[EvalCase]:
 
 ### Prerequisites
 
-- [RAG Evaluation](../../rag/rag-evaluation.md) · [Agent Evaluation](../../ai-agents/agent-evaluation.md)
+- [RAG Evaluation](../../rag/evaluation-and-production/01-rag-evaluation.md) · [Agent Evaluation](../../ai-agents/eval-security-production/01-agent-evaluation.md)
 
 ### Next
 
-- [Evaluation Architecture](evaluation-architecture.md)
+- [Evaluation Architecture](02-evaluation-architecture.md)
 
 ### Unlocks
 
