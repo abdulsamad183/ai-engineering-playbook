@@ -5,8 +5,8 @@ domain: interview-preparation
 tags: [interview, system-design, whiteboard]
 status: published
 created: 2026-07-13
-updated: 2026-07-13
-version: "1.0"
+updated: 2026-11-22
+version: "1.1"
 related:
   - ../ai-system-design/README.md
   - ../ai-system-design/ai-system-design-interviews.md
@@ -63,6 +63,13 @@ flowchart TB
 
 **Failures:** LLM 503 → fallback model; stream disconnect → resume token.
 
+**Follow-up — reconnect without replaying work:**
+
+- A resume cursor restores event delivery, not execution. Reconnecting must never re-run Send, Stop, a tool call, or an action the user already approved.
+- Keep stable identities for each command, message, and stream, and store the last accepted event sequence. A retried command with a known ID returns the existing result instead of starting new work (see [Idempotency and Dedup](../llm-application-development/reliability/02-idempotency-and-dedup.md#streaming-turns)).
+- Ignore events from superseded turns: if the user stopped, edited, or regenerated, late events from the old turn are dropped rather than rendered.
+- When the client cannot tell whether a turn finished, reconcile from an authoritative server snapshot before offering Retry (see [Web Chat streaming details](../chatbots/channels/01-web-chat.md#streaming-ux-details)).
+
 ## Capacity Estimation Template
 
 ```
@@ -80,4 +87,5 @@ Postgres storage ≈ messages × avg_bytes × retention
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 1.1 | 2026-11-22 | ChatGPT exercise: reconnect follow-up |
 | 1.0 | 2026-07-13 | Section 15 |
